@@ -1,0 +1,36 @@
+{
+  "modules": [
+    {
+      "module": "WeightedPeriodicFourierAverage",
+      "source_sha256": "65c4176d30d02c2ca44876384890f4bda4c1d03514cdc5f1173b5b4d0ed90c0e",
+      "declarations": 6,
+      "kernel_exit": 0
+    },
+    {
+      "module": "WeightedPeriodicFourierSmoothing",
+      "source_sha256": "8f5284b1cc59ce088fcf935b49335532337d9647cefbdbd18c4a68e835fca6a7",
+      "declarations": 9,
+      "kernel_exit": 0
+    },
+    {
+      "module": "WeightedPeriodicFourierApproximation",
+      "source_sha256": "46f0ba712e2cd01d9f905cb7a06a41b2b64cb724360e8841eeac1cae4da25558",
+      "declarations": 4,
+      "kernel_exit": 0
+    },
+    {
+      "module": "WeightedPeriodicFourierClosure",
+      "source_sha256": "7e977d69f50154774bb24ff00111f85375cb270c63ad603c97e316953d42a117",
+      "declarations": 16,
+      "kernel_exit": 0
+    }
+  ],
+  "declarations": 35,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_exit": 0,
+  "lean_toolchain": "leanprover/lean4:v4.32.0"
+}

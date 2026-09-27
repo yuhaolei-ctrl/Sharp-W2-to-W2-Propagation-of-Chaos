@@ -1,0 +1,7 @@
+BrownianFlowTimeEnergy 0
+SwitchCurveTimeEnergy 0
+PrescribedSwitchCommonLabel 0
+RoughFiniteActionInterface 0
+PrescribedSwitchLengthFromAction 0
+MainFiniteActionReduction 0
+PASS: 6 modules, 13 declarations, ['Classical.choice', 'Quot.sound', 'propext']

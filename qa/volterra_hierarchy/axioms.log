@@ -1,0 +1,22 @@
+'SharpWasserstein.VolterraHierarchy.quadraticProfile_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.VolterraHierarchy.quadraticProfile_kernel_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.VolterraHierarchy.quadraticProfile_step_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.VolterraHierarchy.quadraticProfile_rate_supersolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.VolterraHierarchy.quadraticProfile_volterra_supersolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.VolterraHierarchy.quadraticProfile_volterra_boundary' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.VolterraHierarchy.finite_quadratic_bound_variable_rate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.VolterraHierarchy.finite_quadratic_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,41 @@
+'SharpWasserstein.SwitchSourceDerivative.sourcePairing_eq_brownianSourceAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedCurrent_memLp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_lawAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_finite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchCurve.jointEndpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SwitchCurve.jointEndpoint_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SwitchCurve.law_eq_jointEndpoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SwitchCurve.probabilityCurve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SwitchCurve.probabilityCurve_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedEuclideanCurve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedEuclideanCurve_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_clamped_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribedEuclideanCurve_sub_eq_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SwitchSourceDerivative.prescribed_compactDistributionContinuity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

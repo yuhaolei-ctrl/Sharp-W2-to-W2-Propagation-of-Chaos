@@ -1,0 +1,10 @@
+{
+  "module": "Mathlib.Probability.Distributions.Gaussian.HasGaussianLaw.Independence",
+  "status": "resolved by local proof-elaboration repair; compiled and independent kernel replay passed",
+  "failure": "Norm synthesis fails for nested continuous bilinear maps on StrongDual at lines 72 and 121. Fourteen prerequisite modules were successfully compiled. Source agent will use Gaussian characteristic functions from HasGaussianLaw.Basic instead.",
+  "upstream_source": "/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0/Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.lean",
+  "source_modified": false,
+  "upstream_source_modified": false,
+  "local_patch_ledger": "qa/mathlib_source_patches.json",
+  "kernel_replay_exit_code": 0
+}

@@ -1,0 +1,61 @@
+'SharpWasserstein.EulerianTransport.generator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.norm_backward_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.smooth_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.smooth_backward' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.lipschitz_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.lipschitz_fderiv_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.backward_derivative_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.uniform_backward_derivative_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.taylor_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.step_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.WeakContinuity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.generator_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.generator_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.generator_drift_difference_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.integral_generator_drift_difference_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.uniform_generator_expectation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.WeakContinuity.uniform_weak_step_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.integral_step_error_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.WeakContinuity.mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.WeakContinuity.uniform_backward_step_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.WeakContinuity.backward_telescope_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.WeakContinuity.integral_eq_of_same_initial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.WeakContinuity.eq_of_same_initial' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.solution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.solution_joint_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.solution_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.solution_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerianTransport.flowLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.flowLaw_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.flowLaw_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.flowLaw_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.solution_test_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerianTransport.flowLaw_weakContinuity' depends on axioms: [propext, Classical.choice, Quot.sound]

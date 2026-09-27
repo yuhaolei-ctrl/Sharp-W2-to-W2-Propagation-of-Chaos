@@ -1,0 +1,54 @@
+{
+  "scope": "Gaussian sharpness example with actual Dynamics.WeakEvolution",
+  "complete_manuscript_proof": false,
+  "gaussian_sharpness_example_complete": true,
+  "declarations_audited": 135,
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "RankOneTransport": {
+      "source_sha256": "7914894a2593d0beb4877d42d5b57150464246ccd6a7a8740511644f47fbde23",
+      "compiled": true,
+      "independent_kernel_replay_passed": true
+    },
+    "GaussianSharpness": {
+      "source_sha256": "8bcfce77cb0a622f95e248451a7d826d4a811454308683609f1ee2cb9f99e85d",
+      "compiled": true,
+      "independent_kernel_replay_passed": true
+    },
+    "GaussianCovariance": {
+      "source_sha256": "53103567b151afc0e4f3ba8eec7b2bbee2c90ece5cfad65db932f460af496eb3",
+      "compiled": true,
+      "independent_kernel_replay_passed": true
+    },
+    "GaussianHeat": {
+      "source_sha256": "3771bcae5cc98c1c54e575167f5a7434460dbe3aa3fdb6190fa9b9f13e54fb73",
+      "compiled": true,
+      "independent_kernel_replay_passed": true
+    },
+    "GaussianMoments": {
+      "source_sha256": "1d994731c56f532d1359a26bbd923fb6d30e3825815a3c184b8f38e886b15c8b",
+      "compiled": true,
+      "independent_kernel_replay_passed": true
+    },
+    "GaussianStein": {
+      "source_sha256": "fdb03a1879380b3d6fd90aac1f43300cdb42163aecfe6d78e90455c1d1a07317",
+      "compiled": true,
+      "independent_kernel_replay_passed": true
+    },
+    "GaussianHeatCalculus": {
+      "source_sha256": "b94f069e4ab6783dcf497354f6b24c5849d12fbcd1f571a793500984528ddcb4",
+      "compiled": true,
+      "independent_kernel_replay_passed": true
+    },
+    "GaussianHeatWeak": {
+      "source_sha256": "221de65d157547bb58f6f5033325a89a5eeac4dc67bbffa021dbe85421b89870",
+      "compiled": true,
+      "independent_kernel_replay_passed": true
+    }
+  },
+  "axiom_log_sha256": "ead7deb45d4165ac981a65acabbc8f6d261e30fe14f9845aa061750b29e9e3b4"
+}

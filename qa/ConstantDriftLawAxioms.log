@@ -1,0 +1,10 @@
+'SharpWasserstein.BrownianNoise.configurationLaw_eval_flat_hasLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.gaussianVectorLaw_add_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BoundedFlow.flow_constant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_constant_dirac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_constant_dirac' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FrozenGaussian.timeExpectation_sub_eq_integral_bounded_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

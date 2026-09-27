@@ -1,0 +1,61 @@
+{
+  "modules": [
+    {
+      "module": "SharpWasserstein.GaussianHistoryMarginals",
+      "source_sha256": "1340eb24d2a0725eb500b9a3294b09a3d2912b9d1302cf65bb54937b38dd038c",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/GaussianHistoryMarginals.olean SharpWasserstein/GaussianHistoryMarginals.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.GaussianHistoryMarginals",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.GaussianControlledBridge",
+      "source_sha256": "d815b22d0f87d8d9f4a5a089999ff092acf0d65a41e4f3fb2ce90add07559f6f",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/GaussianControlledBridge.olean SharpWasserstein/GaussianControlledBridge.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.GaussianControlledBridge",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.GaussianBridgeCoupling",
+      "source_sha256": "84d222c0b5391194cc62fe757986cb6a953af5b970d14c3de7b5197660a7f826",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/GaussianBridgeCoupling.olean SharpWasserstein/GaussianBridgeCoupling.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.GaussianBridgeCoupling",
+      "kernel_exit_code": 0
+    }
+  ],
+  "axiom_audit_command": "python3 lean_local.py qa/GaussianControlledBridgeAxioms.lean",
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorems": [
+    "SharpWasserstein.gaussianHistoryStepEquiv_symm_label",
+    "SharpWasserstein.gaussianHistoryLaw_map_labels",
+    "SharpWasserstein.gaussianInitialHistory_map_labels",
+    "SharpWasserstein.gaussianHistory_label_integrable",
+    "SharpWasserstein.gaussianHistory_label_integral",
+    "SharpWasserstein.GaussianBridge.measurable_state",
+    "SharpWasserstein.GaussianBridge.measurable_ordinaryMean",
+    "SharpWasserstein.GaussianBridge.measurable_shiftedMean",
+    "SharpWasserstein.GaussianBridge.measurable_displacementSq",
+    "SharpWasserstein.GaussianBridge.displacementSq_nonneg",
+    "SharpWasserstein.GaussianBridge.drift_difference_square_le",
+    "SharpWasserstein.GaussianBridge.transition_cost_le",
+    "SharpWasserstein.GaussianBridge.measurable_transitionCost",
+    "SharpWasserstein.GaussianBridge.transitionCost_integrable",
+    "SharpWasserstein.GaussianBridge.integral_transitionCost_le",
+    "SharpWasserstein.GaussianBridge.history_entropy_le",
+    "SharpWasserstein.GaussianBridge.observation_entropy_le",
+    "SharpWasserstein.configurationFlatten_apply_coordinate",
+    "SharpWasserstein.GaussianBridge.displacementSq_flatten",
+    "SharpWasserstein.GaussianBridge.flattenedCoupling_displacement_integrable",
+    "SharpWasserstein.GaussianBridge.flattenedCoupling_displacement_integral",
+    "SharpWasserstein.GaussianBridge.observation_entropy_le_coupling"
+  ],
+  "scope": "Label marginal invariance of actual Gaussian histories; Euclidean coordinate control square bound with no dimension factor; finite transition cost integrability from actual label displacement moment; exact finite Gaussian history KL gives quarter bridge-rate Riemann sum cost; measurable observation DPI; arbitrary actual P2 configuration coupling obtains all displacement hypotheses from proven moment theorem, and flattening preserves productCost exactly.",
+  "limitations": "This family does not assume or conclude continuous-time law identification. Source agent proves actual Brownian Euler history equality; root proves deterministic Euler limit. EntropyNarrow supplies actual KL LSC, and separate grid coefficient limit is under development."
+}

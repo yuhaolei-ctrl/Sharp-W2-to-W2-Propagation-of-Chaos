@@ -1,0 +1,54 @@
+'SharpWasserstein.FiniteTrialDriftResidual.gradient_drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteTrialDriftResidual.gradient_drift_norm_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteTrialDriftResidual.drift_residual_young' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedFlux.representative_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PropagatedFlux.representative_bounded_smooth_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.generator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.generator_potential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.gradientSquare_potential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.generator_gradientSquare_potential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.matrixGenerator_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.sourceGenerator_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.directionDeriv_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.laplacian_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.generator_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.generator_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.generator_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.euclideanGenerator_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGeneratorCalculus.generator_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourceEquation.Brownian.action_eq_representative_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.integrable_smooth_gradient_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.gradient_fun_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.solution_generator_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

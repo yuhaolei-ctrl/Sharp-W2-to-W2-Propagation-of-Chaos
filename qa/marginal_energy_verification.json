@@ -1,0 +1,252 @@
+{
+  "scope": "Actual periodic prefix lift, genuine convolved density marginal pairing and optimizer orthogonality/Pythagorean energy increment; actual external integral decomposition and Young absorption. MainTheorem remains unproved.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 43,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "PeriodicMarginalLift": {
+      "source_sha256": "a555f68fd5b40721d5f597c942b76d8a6a1911b190a14974a434095b4c93a1fc",
+      "olean_sha256": "4da83045ba8c9425a5fbc9a12fee224f092c77f31e36a6913ef5dcc5a3a44ba7",
+      "independent_kernel_replay": true
+    },
+    "PeriodicMarginalEnergy": {
+      "source_sha256": "68005f9f917bc258730a7f8f8a35c8ac73e91125c127a5ed38584259e2fe4fe2",
+      "olean_sha256": "241937ab6ce2420b9baa82f127d9ba95565825ddd2d906a2682d6ce3a24cb5e3",
+      "independent_kernel_replay": true
+    },
+    "ExternalInteractionEnergy": {
+      "source_sha256": "171340a58f04464c5840aacf48687a72801885defca14a6fc7bff026b2891cbe",
+      "olean_sha256": "0386550a841dc518cda075f19e8276a7cee1cd8e775cc0e9ea0fd564bb9db95c",
+      "independent_kernel_replay": true
+    },
+    "ExternalInteractionEnergyCancellation": {
+      "source_sha256": "5461c36df3ced2c4ced6559ce05e08f1580188dc02e755b215cba883cb7c2a51",
+      "olean_sha256": "fa202c45fe2387fa2421d0cef935fdc3aac8ee1ed1f02c11107449afbf089068",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.PeriodicMarginalLift.prefixCoords_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.coordinate_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.coordinateSymm_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.prefix_measurePreserving": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.cubePoint_prefix_map": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.liftLinear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.liftLinear_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.liftLinear_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.lift_gradientClosure_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.gradientLiftLinear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.gradientLift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.prefixLinear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.prefix_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.prefix_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.gradientLift_gradientVector": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.gradientLift_periodic_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalLift.periodicLift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalEnergy.integral_densityBCF": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalEnergy.densityPairing_lift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalEnergy.marginalFunctional": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalEnergy.densityBCF_positive_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalEnergy.optimizer_residual_orthogonal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalEnergy.optimizer_energy_increment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicMarginalEnergy.optimizer_energy_increment_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.gradientConstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.gradientConstant_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.interaction_gradient_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.integral_interaction_gradient_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.integral_pairing_abs_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.integral_pairing_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.liftedGradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.fluctuation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.fluctuation_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.fluctuation_pairing_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.young_of_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.fluctuation_pairing_young": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.diagonalEnergy_abs_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.diagonalEnergy_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.integral_diagonalEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.lifted_energy_transport_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.integral_external_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.integral_external_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

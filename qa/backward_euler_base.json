@@ -1,0 +1,77 @@
+{
+  "modules": [
+    {
+      "module": "SharpWasserstein.BoundedNoiseAverage",
+      "source_sha256": "4edcd17bbff64fb188dbd6c4d9dc36e545f07869ba55339f6dc48be3626cdb94",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.NoiseAverageDerivatives",
+      "source_sha256": "d2be0856b2798093e8a02dc1f87c2caeb5315b4b3ecc404f87af86004f5a0b84",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.DerivativeCompositionBounds",
+      "source_sha256": "ba32893ab6e6376fc6293b8945fcfa887e092916446e411920b665bd990d768b",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.GaussianEulerBackward",
+      "source_sha256": "7698301dae9700e1cbf0a4b443a27ffe2efa1f43f34054009a9ee2a3f8c695e1",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.GaussianEulerBackwardSecond",
+      "source_sha256": "32012564a375166151c577ad12f1b327922909293f4d2e060934230f7a2e018c",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    }
+  ],
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "theorems": [
+    "SharpWasserstein.NoiseAverage.integrable_translate",
+    "SharpWasserstein.NoiseAverage.norm_average_le",
+    "SharpWasserstein.NoiseAverage.continuous_average",
+    "SharpWasserstein.NoiseAverage.lipschitz_average",
+    "SharpWasserstein.NoiseAverage.hasFDerivAt_average",
+    "SharpWasserstein.NoiseAverage.contDiff_one_average",
+    "SharpWasserstein.NoiseAverage.fderiv_average",
+    "SharpWasserstein.NoiseAverage.lipschitz_fderiv_average",
+    "SharpWasserstein.NoiseAverage.contDiff_two_average",
+    "SharpWasserstein.NoiseAverage.secondFDeriv_average",
+    "SharpWasserstein.NoiseAverage.lipschitz_secondFDeriv_average",
+    "SharpWasserstein.NoiseAverage.contDiff_three_average",
+    "SharpWasserstein.lipschitz_fderiv_comp",
+    "SharpWasserstein.BackwardEuler.noise_stronglyMeasurable",
+    "SharpWasserstein.BackwardEuler.step_eq_integral_transitionLaw",
+    "SharpWasserstein.BackwardEuler.norm_step_le",
+    "SharpWasserstein.BackwardEuler.norm_backward_le",
+    "SharpWasserstein.BackwardEuler.lipschitz_mean",
+    "SharpWasserstein.BackwardEuler.lipschitz_step",
+    "SharpWasserstein.BackwardEuler.lipschitz_backward",
+    "SharpWasserstein.BackwardEuler.hasFDerivAt_step",
+    "SharpWasserstein.BackwardEuler.contDiff_one_step",
+    "SharpWasserstein.BackwardEuler.contDiff_one_backward",
+    "SharpWasserstein.BackwardEuler.fderiv_backward_norm_le",
+    "SharpWasserstein.BackwardEuler.fderiv_mean",
+    "SharpWasserstein.BackwardEuler.lipschitz_fderiv_mean",
+    "SharpWasserstein.BackwardEuler.contDiff_two_step",
+    "SharpWasserstein.BackwardEuler.lipschitz_fderiv_step",
+    "SharpWasserstein.BackwardEuler.lipschitz_fderiv_backward",
+    "SharpWasserstein.BackwardEuler.contDiff_two_backward",
+    "SharpWasserstein.BackwardEuler.secondFDeriv_backward_norm_le",
+    "SharpWasserstein.BackwardEuler.secondBound_le",
+    "SharpWasserstein.BackwardEuler.eulerFactor_pow_le_exp",
+    "SharpWasserstein.BackwardEuler.secondBound_le_exp"
+  ],
+  "scope": "Actual probability translation averages and finite Gaussian Euler backward tests, with first and second derivative identities, Lipschitz recurrences, and exponential growth bounds. No backward PDE or uniqueness conclusion is assumed or claimed."
+}

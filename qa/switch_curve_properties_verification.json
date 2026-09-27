@@ -1,0 +1,67 @@
+{
+  "scope": "Actual P2-continuous switch curve, continuity of every marginal in W2, prescribed-reference specialization from IsLimitEvolution, and exact global interacting/reference endpoints. No sharp length estimate or derivative asserted.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 9,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "SwitchCurveProperties": {
+      "source_sha256": "f94af5f66aa7d2cc791cebb84427953cf4cc689e2c538adc10dd2f8230f8edd3",
+      "olean_sha256": "4f25b417e2d13b4c164adfc62d877106e4b4ce12c9f61d3a50966b2f4260e784",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.SwitchCurve.quadraticCurve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchCurve.continuous_quadraticCurve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchCurve.marginal_wassersteinSq_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchCurve.law_eq_global": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedSwitchCurve.law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedSwitchCurve.law_eq_composition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedSwitchCurve.law_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedSwitchCurve.law_terminal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedSwitchCurve.law_wassersteinSq_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

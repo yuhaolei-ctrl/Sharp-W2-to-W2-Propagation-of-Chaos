@@ -1,0 +1,55 @@
+'SharpWasserstein.CompactGenerator.generator_joint_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompactGenerator.generator_uniform_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.CompactGenerator.generator_uniform_spatial_lipschitz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerTime.node_sum_difference_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTime.node_sum_difference_expectation_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.EulerTime.trajectory_mean_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTime.expected_nodes_riemann_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.mean_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.state' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.state_measurable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.mean_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.state_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.expectation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.expectation_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.expectation_step_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.expectation_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.expectation_eq_brownian_node' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.expectation_telescope_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.EulerTimeWeak.brownian_trajectory_weak_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianFlow.law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_secondMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_restrict' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_horizon_independent' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_probability' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_secondMoment' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_momentIntegral_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_momentBound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_integral_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_boundedExpectation_continuousOn_Icc' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_boundedExpectation_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_testContinuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_generatorIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_timeIntegrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.law_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_weakEvolution' depends on axioms: [propext, Classical.choice, Quot.sound]

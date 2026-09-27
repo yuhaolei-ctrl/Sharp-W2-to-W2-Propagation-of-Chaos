@@ -1,0 +1,7 @@
+import SharpWasserstein.NoiseAverageSmooth
+#print axioms SharpWasserstein.NoiseAverage.AllDerivativesBounded.fderiv
+#print axioms SharpWasserstein.NoiseAverage.AllDerivativesBounded.bounded
+#print axioms SharpWasserstein.NoiseAverage.AllDerivativesBounded.lipschitz
+#print axioms SharpWasserstein.NoiseAverage.contDiff_nat_average_bounded
+#print axioms SharpWasserstein.NoiseAverage.contDiff_infty_average
+#print axioms SharpWasserstein.NoiseAverage.allDerivativesBounded_average

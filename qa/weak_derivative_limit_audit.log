@@ -1,0 +1,2 @@
+WeakDerivativeLimit 0
+PASS: 1 modules, 6 declarations, ['Classical.choice', 'Quot.sound', 'propext']

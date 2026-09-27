@@ -1,0 +1,32 @@
+'SharpWasserstein.PeriodicTorusBridge.toTorus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.haar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.unitCircle_volume_eq_haar' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.torus_volume_eq_haar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.toTorus_openQuotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.toTorus_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.toTorus_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.measurePreserving_toTorus' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.integral_toTorus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.periodic_integer_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.periodic_eq_of_toTorus_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.lift_toTorus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.lift_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.continuousLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.complexLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.complexLift_toTorus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.integral_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.mFourier_toTorus' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.mFourier_toTorus_cosine_sine' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.mFourierCoeff_lift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicTorusBridge.mFourierCoeff_complexLift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

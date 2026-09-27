@@ -1,0 +1,72 @@
+'SharpWasserstein.FiniteGradientTrial.laplacian_const_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.diagonalCoefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.inner_diagonalCoefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.potential_laplacian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.solution_laplacian_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BochnerIdentity.hessian_entry_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BochnerIdentity.hessian_entry_norm_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BochnerIdentity.hessian_square_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.potential_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.potential_gradient_memLp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteGradientTrial.solution_diffusion_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.matrixOperator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.matrixOperator_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.matrixOperator_single' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.matrixOperator_entries' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.matrixOperator_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.matrixOperator_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.coefficientVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.coefficientVector_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.coefficientVector_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientMatrix.coefficientVector_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.gramMatrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.sourceVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.optimizedEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.gramMatrix_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.sourceVector_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.gramMatrix_isUnit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.gramMatrix_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.optimizedEnergy_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedEnergyDerivative.hasDerivWithinAt_inverseSolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedEnergyDerivative.hasDerivWithinAt_optimizedEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.gramMatrix_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.optimizedEnergy_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FiniteCoefficientEnergy.brownian_optimizedEnergy_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

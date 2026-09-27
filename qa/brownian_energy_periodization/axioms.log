@@ -1,0 +1,38 @@
+'SharpWasserstein.BrownianEnergyPeriodization.fullLaw_eq_brownianLawAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.projectedLaw_eq_map_fullLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.projectedSource_eq_imageSource_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.projectedSource_eq_brownianImage' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.projectedLaw_eq_brownianMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.full_energy_le_of_kernel_periods' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.carryingLaw' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.propagatedSource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.prefixEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.prefixEnergy_eq_projectedEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.prefixEnergy_le_of_sine_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.periodic_prefixEnergy_quadratic_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.prefixEnergy_quadratic_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianEnergyPeriodization.projectedSource_quadratic_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,6 @@
+{
+  "source_modules": 30,
+  "forbidden_hits": [],
+  "kernel_checked": true,
+  "verification": "qa/brownian_verification.json"
+}

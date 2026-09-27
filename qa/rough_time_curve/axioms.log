@@ -1,0 +1,40 @@
+'SharpWasserstein.RoughEulerianSmoothing.averagedKernel_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.density_eq_zero_of_norm_gt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.regularizedLaw_quadratic_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_integral_test_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.averagingTime' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.averagingTime_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.averagingTime_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.averagingTime_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_coe' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.compProd_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.hasSecondMoment_configuration_of_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

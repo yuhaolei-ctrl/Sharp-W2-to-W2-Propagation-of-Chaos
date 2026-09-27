@@ -1,0 +1,18 @@
+{
+  "modules": [
+    {
+      "module": "RoughEulerianTransportJointRegularity",
+      "source_sha256": "75fa2e6739530aa3910b50d39deefd0e01b57976bbe37706e347bf723f07cfc4",
+      "declarations": 6,
+      "kernel_exit": 0
+    }
+  ],
+  "declarations": 6,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_exit": 0,
+  "lean_toolchain": "leanprover/lean4:v4.32.0"
+}

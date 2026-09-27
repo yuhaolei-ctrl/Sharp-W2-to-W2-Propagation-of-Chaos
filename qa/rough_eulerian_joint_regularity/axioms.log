@@ -1,0 +1,16 @@
+'SharpWasserstein.RoughEulerianTransport.spatial_inclusion_hasFDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.spatial_fderiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.spatial_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.joint_spatial_regular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.EuclideanCompactWeakContinuity.wassersteinSq_le_finiteAction_of_joint_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.spaceTimeFloorVelocity_spatial_regular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

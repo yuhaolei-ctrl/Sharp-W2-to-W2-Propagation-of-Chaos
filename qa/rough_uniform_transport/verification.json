@@ -1,0 +1,104 @@
+{
+  "scope": "Three modules construct compressed spacetime flux data from an original uniform tangent-objective bound, prove actual regularized-law finite-action Wasserstein bounds, and combine them into uniform T\u00b2E bounds for every spatial/time/floor regularization. Passing to unregularized endpoints and the final manuscript theorem remains outside this scope.",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-18T01:49:55.078762+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/RoughUniformActionData.lean",
+      "sha256": "4261b7c8c6c048c287842aedd48ef7676f714bcbff205ed34b021d63096e28de",
+      "declaration_count": 10,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RoughEulerianRegularizedTransport.lean",
+      "sha256": "e2a0e4d5ea41709dd8f9f6f5f641395ad06a0d194a886c30244196da25bc2df9",
+      "declaration_count": 1,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RoughUniformRegularizedTransport.lean",
+      "sha256": "b8465cfbef750ae10b002bf12dd9f645d20b48a454e766866d66e2fc129d75a0",
+      "declaration_count": 1,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "pinned_direct_foundations": {
+    "RoughEulerianCompressionEquation": "1fe7aa2d157a689f0f1bf1812c5f7db699d1935c3154d66e5d0ea38b93c3da65",
+    "RoughEulerianTimeActionMoments": "8b850d74026a60f9fbdcb5645d0fbbd66d174e306f4023f4751c143be7c2cac9",
+    "RoughEulerianSpaceTimeEquation": "6130c44bb1b4061779902ed1fa640b5500031eedc14752819936dfd3715c645b",
+    "RoughEulerianTimeActionCurveEnergy": "15f978b2c1f00f97e2235a9d328109ae7baf1e59f7977b1b22d2686c6b425638",
+    "RoughEulerianTransportJointRegularity": "75fa2e6739530aa3910b50d39deefd0e01b57976bbe37706e347bf723f07cfc4"
+  },
+  "declarations": {
+    "SharpWasserstein.RoughUniformAction.compressedJoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressedField": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressedJoint_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressedField_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressedField_sq_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressedJoint_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.integral_constant_horizon": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressedField_action_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressedField_restricted_action_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressedField_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_wassersteinSq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughUniformAction.compressed_regularized_wassersteinSq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

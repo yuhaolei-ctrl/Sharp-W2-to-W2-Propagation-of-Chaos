@@ -1,0 +1,32 @@
+{
+  "module": "SharpWasserstein.ExchangeableEntropy",
+  "source_sha256": "34243978975e5b14ad051ae8ffea6764485e1d1b824d2ecb1c65f0ac3088b752",
+  "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/ExchangeableEntropy.olean SharpWasserstein/ExchangeableEntropy.lean",
+  "compile_exit_code": 0,
+  "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.ExchangeableEntropy",
+  "kernel_exit_code": 0,
+  "axiom_audit_command": "python3 lean_local.py qa/ExchangeableEntropyAxioms.lean",
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorems": [
+    "klDiv_map_measurableEquiv",
+    "klDiv_marginals_add_le_product",
+    "toReal_klDiv_marginals_add_le_product",
+    "entropy_second_difference_nonneg_of_equal_kernel_marginals",
+    "entropy_second_difference_nonneg_of_pair_swap",
+    "marginal_tensorLaw",
+    "marginal_klDiv_ne_top",
+    "pairObservation_swap_invariant",
+    "exchangeable_marginal_entropy_second_difference",
+    "marginalEntropy_zero",
+    "exchangeable_entropy_increment_step",
+    "exchangeable_finiteEntropyConditions",
+    "exchangeable_entropy_external_source_bound"
+  ],
+  "scope": "Actual KL product superadditivity, adjacent entropy convexity, concrete finite-coordinate tensor marginals and permutation symmetry, followed by derived finite entropy sequence conditions and external source coefficient bound.",
+  "hypotheses": "Probability law P on Configuration d N, Exchangeable P, probability reference r on Position d, finite KL(P|tensorLaw r N). No entropy-monotonicity assumption. Source corollary additionally takes a quantitative quadratic entropy profile."
+}

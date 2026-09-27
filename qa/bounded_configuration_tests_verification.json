@@ -1,0 +1,42 @@
+{
+  "scope": "Actual bounded iterated derivatives transported to Euclidean coordinates, derived gradient and Laplacian bounds, and configuration-test versions of the weak and frozen Gaussian generator identities",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source modules, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 4,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "BoundedConfigurationTests": {
+      "source_sha256": "e561ee9c36c52457daff04e07b6a34d6dbd98c8214eccddcc21d5bc2f28b598e",
+      "olean_sha256": "245a9b5caf3936a42ba56284aa58cf87a8438d22b4eb977dd9cd9ba5478db28d",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.allDerivativesBounded_euclideanTest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.euclidean_bounds_of_allDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.equation_bounded_configuration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation_sub_eq_integral_bounded_configuration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

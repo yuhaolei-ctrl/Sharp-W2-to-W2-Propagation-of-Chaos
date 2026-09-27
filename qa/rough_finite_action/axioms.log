@@ -1,0 +1,41 @@
+'SharpWasserstein.RoughEulerianTransport.actionUnitScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.actionUnitScale_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.actionUnitScale_le_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.actionUnitScale_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.actionTimeScale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.actionTimeScale_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.actionTimeScale_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.actionTimeScale_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.actionTimeScale_interior' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.euclideanQuadraticLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.compressedMeasure_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.compressedMeasure_configuration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.compressedMeasure_wassersteinSq_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.spaceTimeQuadraticLaw' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.compressed_wassersteinSq_le_uniform_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.wassersteinSq_le_uniform_action' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.uniform_finite_action_transport' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

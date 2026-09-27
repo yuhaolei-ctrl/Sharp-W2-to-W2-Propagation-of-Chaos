@@ -1,0 +1,13 @@
+'SharpWasserstein.Euler.continuous_step_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.riemann_error_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.riemann_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.scaled_sum_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.grid_time_mem_Icc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.nodes_uniform_eventually' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.node_sum_difference_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.bounded_observable_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.node_sum_difference_expectation_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.Euler.trajectory_mean_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.Euler.expected_nodes_riemann_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]

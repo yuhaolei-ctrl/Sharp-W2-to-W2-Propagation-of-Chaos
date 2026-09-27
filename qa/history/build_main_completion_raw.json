@@ -1,0 +1,4598 @@
+{
+  "complete_manuscript_proof": false,
+  "target": "SharpWasserstein",
+  "status": "passed",
+  "modules": [
+    {
+      "module": "SharpWasserstein.CooperativeHierarchy",
+      "source_sha256": "22ad461a632b6c7deaf37a485874df67805ab6891cb3d06dc9b3c09ac174e279",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BoundedNoiseAverage",
+      "source_sha256": "4edcd17bbff64fb188dbd6c4d9dc36e545f07869ba55339f6dc48be3626cdb94",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyDirection",
+      "source_sha256": "ccf13e07961aa0a17c0db8b6d54299bf7c5d320670828ded139ae7acdd5fe4cb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyHierarchy",
+      "source_sha256": "4f4e2631da3467a608699ae6643958e5b094038937fb2a6e3696a1b2f463cce2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyKL",
+      "source_sha256": "a740d0f45bff98d691839bb5054bd0060b33e160a7d4b04a013706ce0f926c46",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.HierarchyAlgebra",
+      "source_sha256": "bed3e76643fff3dd513de22c69694f6018d77805cede10d958e6da04b986f773",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyDataProcessing",
+      "source_sha256": "91f9e97b18865bf8eb8cdf3584ab79c656945435857ce7d234d21c72518ee50a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyVariational",
+      "source_sha256": "ae92522f23ed50bcbc9a4d6e5b39d53c1c8af3ed53a1ff8bce25c89137d8aa02",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.NoiseAverageDerivatives",
+      "source_sha256": "d2be0856b2798093e8a02dc1f87c2caeb5315b4b3ecc404f87af86004f5a0b84",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyDual",
+      "source_sha256": "60f26e63aa35964ef1a1be00e9cdf22ddd24f6381fb60bcc87008d225dd3a8e2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DerivativeCompositionBounds",
+      "source_sha256": "ba32893ab6e6376fc6293b8945fcfa887e092916446e411920b665bd990d768b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyNarrow",
+      "source_sha256": "4a15cb858c8cad1be06ac0ee37b1a800c8f5e0258532863ef2cab8c68b7d070d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DerivativeCompositionThird",
+      "source_sha256": "05f6f723da700f283a390691b71a6d1e873eceb83b08b9335dd1070483122ae4",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyObservable",
+      "source_sha256": "c4280ab5c866c5cfb90e2b3cd9d8f33a940cc72d4055c84af636915f6090cffd",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.NoiseAverageSmooth",
+      "source_sha256": "5ece5ea3280f2d4a58089961031c8ff1f7de5bc343b33aa04b2e815de74090fd",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyObservableVector",
+      "source_sha256": "09f17cb5a38bc107e845cb808b28146d2d57005314d182bf74cc27cd0d4c45e0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BoundedDerivativeComposition",
+      "source_sha256": "4b5fa6d9698e4a531e1604bd9e61950dfd976e860bfd881ce65beea1a0c0b500",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EntropyChainRule",
+      "source_sha256": "c7cf7898bc7a041022632b4d6cb2d800f003896d60be322057069399c4bf4a2f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BoundedDerivativeLinear",
+      "source_sha256": "d76a02f21b5c923eff8ff205455a329bdff8e1b4caa9a0e81fa4cc2fc3c75ae6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianEntropyCost",
+      "source_sha256": "256452633ec3ee210ed6431832198c411085796d11b5136e349222bcd0ce32ed",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ProbabilityLipschitzEstimate",
+      "source_sha256": "d3cd73f837a1573e5d86e3be7057b287e5143bfcd6bbd0015e817434db60fdf2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.Rates",
+      "source_sha256": "a2b2802476ba460982d243a96dc9dd0f425fcbbd67e6c1d388e52626758ade0c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ProbabilityUniformTests",
+      "source_sha256": "aab80b48afe440acf70d90aae233b392f78c6cf69c6482b32d3b817c7ba2aeed",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizationRates",
+      "source_sha256": "734c9f3868a6d74b70fb199ee58ec54bc555b15c7ff1e310eb7337d5671e6730",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimePrimitive",
+      "source_sha256": "004719659b36123156a4543913cf39d5a9b4292412cc4f450c748695a846db37",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianBridgeRate",
+      "source_sha256": "62604dca3a826bfbd4970df72e9f4af1ab86f3330a0fe213a1371f109372f4ae",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeSmoothing",
+      "source_sha256": "42233f7d05f839b034d98b9f8f945dcfa03f204c287c862129c9d2670cedea8e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportKernel",
+      "source_sha256": "56be747a42c28ab425c00f68b6e7d5d13dc9e2cac53ce5afc6b699b84796bc54",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SmoothBoundedCharacteristic",
+      "source_sha256": "09d30912d1792b5abc9e9fdacb915aa26d269c65d418807ae4a3c7874757cbf9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SubGaussianSquare",
+      "source_sha256": "8fea73aa6f27fd49559ffc993914aaa3307d720a9d22992e2f3717cfa8494812",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TangentEnergy",
+      "source_sha256": "00cb58f7978343bec5b291d47b78c2c58784b08e91aea16a7657972cea1f9122",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BoundedIndependentSum",
+      "source_sha256": "4d40cf1506658d06f7c07af52f2ea2666f3f6ccef65d5baf01dbf82f04452066",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.Assembly",
+      "source_sha256": "b97a7a1865ce18839d19b4b3f613c2238019192405039089ea79518901378413",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DenseVariational",
+      "source_sha256": "4e5a84ffa9f45f39df024635e84356a0ca6b22142b17e4a5314248fdb79b9633",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InternalSource",
+      "source_sha256": "1cd9f0892b348186da761f0d6f3355b27eb44dcfa04cb5a7bd884dad86280328",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TorusFourierConvergence",
+      "source_sha256": "96c9907f7dd0e7de9abff28d6b3479035fdfe0ec54cda0998daf79d4aa0536ac",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.Transport",
+      "source_sha256": "340ad4e60b087d317c329278651282449af141cbe0090a676587d30e2b301586",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.UniformBoundedDerivatives",
+      "source_sha256": "bc744eec8465405af21eda0a49aca67892707bca9fcd49b246e4a272841742e2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.Dynamics",
+      "source_sha256": "fd209dcbcde483eb1b7336cee62d1f9e9741d7299033240591d6637b34f545b8",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExchangeableEntropy",
+      "source_sha256": "34243978975e5b14ad051ae8ffea6764485e1d1b824d2ecb1c65f0ac3088b752",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DriftBounds",
+      "source_sha256": "77c307705088dfc19fb3b552cb539f00cd0bf2fc6b8b7e3fc138293921a63ffb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExchangeableConditionalSource",
+      "source_sha256": "3afb04d504ac20bab8d362ac0dfff8ddd656421bedce228daa1ee40b78d89dce",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EuclideanDrift",
+      "source_sha256": "89a37abd46d9c03e8ce64f56fdc3827d7cf7c3e4e0eeb7e91956ca6bfc294cc1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianVectorEntropy",
+      "source_sha256": "1368336bc8b70a1c426d069e651c1b2725cc3632e02b92f8019d6df44d5b8b9c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InternalSourceProfile",
+      "source_sha256": "eb563ed104214cc6d4fd2f2f8de1390cd576be077f0af0414f38edc022e2fc16",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianEntropyChain",
+      "source_sha256": "16c2e2a89ab39b1bb39487c9d113bca36bd9ea51a1db2d50722c16454f8284a7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.MarginalParticleCurrent",
+      "source_sha256": "819c2575aee4221db988f107d5925a9b5935526d501ca79905d180d43aa61525",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianHistoryMarginals",
+      "source_sha256": "1340eb24d2a0725eb500b9a3294b09a3d2912b9d1302cf65bb54937b38dd038c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianHistorySimulation",
+      "source_sha256": "c9ed7ffc0e22498bbc5e505f27f79900d0d36e2f8c2a471454d2beda801fcfb1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.NonlinearDriftContinuity",
+      "source_sha256": "bdafab534bab215fdf2ce9c0e9f2174f9ee6a2b04f0233b1ff600150574dc74e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SinePeriodization",
+      "source_sha256": "5b0d1f67afa7421473d09e9bceb84bc1c8adf178e1694f17cc04293de9baccb7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SynchronousStability",
+      "source_sha256": "5db538e786c57daf5081ec3aab05984f35aef3ba8b608023b32cfc15a94f18b7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicKernelBounds",
+      "source_sha256": "cca1bbf867dafbcd8e777f300951fdc94cc781f4b1488cb38d47322f691fc719",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteTrajectory",
+      "source_sha256": "689af8c5827b554bf91c26c2771698ece371627aeba54d677ac4389d18526ce7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SinePeriodizationDerivative",
+      "source_sha256": "b29b1e1caae53ebdb2a487e271608d5b40ba89c6e852f3e4c7c3ce6ab2d02ee3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ControlledBridge",
+      "source_sha256": "f38f9b490ce47e33267a340e774c2c380c5b41c123ae4744043461efb41b1da0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowDependence",
+      "source_sha256": "b72188d53f366a0e6f1ae8dcc4b5cb541d852a50fc7b9c29d3e9bd82c3d85825",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TransportMoments",
+      "source_sha256": "0b26a5df9c2d433df6feebb2ef5cd448fd6dbf6492dad28f73f2bdfdd3aac3b6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BoundedFlow",
+      "source_sha256": "96393f73a7275b00a9171b40c5335afc157210babcd1abf2c8c5e5552a97950b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.MarginalMoments",
+      "source_sha256": "1eabdaab213946be9413a372fcc5fcd56f50126f58147c170e557bc6b263b481",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerConvergence",
+      "source_sha256": "a9ff0fdaaabf02ba06f5a326ca96082b654218e43d5976d06f9bf939e5f667f1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowCausality",
+      "source_sha256": "5977b7014adceb06812dd9ad373cb19246626fec453feca9227f219945c9ac2c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerBridge",
+      "source_sha256": "4c088f1a841065f7958c421692deca16d0ad4e89686855658e0ca1291e507d57",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowInitialDerivativeLinear",
+      "source_sha256": "c8b3e470b2c30c26ca38ef512f425959f2c69f00c405783cd769914b66c86540",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianControlledBridge",
+      "source_sha256": "d815b22d0f87d8d9f4a5a089999ff092acf0d65a41e4f3fb2ce90add07559f6f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowInitialDerivativeRemainder",
+      "source_sha256": "c09006e0b27a519a582660ec5cc2b04ac7e299fc713b914fc3ed614c4d743cde",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RandomMapTransport",
+      "source_sha256": "2d423f4fcedf4f21d92f6dff68f291484149d5b1d206356963ca2497eb134245",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowInitialDerivative",
+      "source_sha256": "1539c561649f395de89782593e85825e581e059b511fe19ed7feef6a7a1e801d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DecoupledFlow",
+      "source_sha256": "cce2362e3f80bd58305c042d576c115781ad58894c32e9e92f89c6094da5c3d4",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativePathwise",
+      "source_sha256": "33279901fd8e0b45182c62796d726ee054985b4d6dfb682f5cba4a54fdfc1613",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SynchronousTransport",
+      "source_sha256": "6458015f7a6668f523d8908310bff49b12b5b7678d11e95127714a53b2ad23bd",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeShortTime",
+      "source_sha256": "3071668aa527fcc168f4ee99dd7983a4e0a345b696da54622204c78a651caa55",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TransportConvergence",
+      "source_sha256": "dde6b81b67a32f74750665c452b94827d2d3796abc19c60c2f987ceb84cad7ac",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeMovingTest",
+      "source_sha256": "402ac8189421dcbe5be8dcf0d50f378502d4cc8ce9b31e6d81ab9f3e17713250",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TransportTriangle",
+      "source_sha256": "e9597f80fd94489fbbc45120711bec3cbedc09b48b78165650fd21f859852d38",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeMovingExpectation",
+      "source_sha256": "f004e6e28dfff72a30343f35b4d2f3786b20899d4d8379b297d7576a9a2a8eb3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.CouplingMoments",
+      "source_sha256": "8d0ec4777d47ab0932d1a63bf16b86a4ce738308f13571344915991425a5befb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DynamicTransport",
+      "source_sha256": "8e29669e9c408733f5d2ac4fc3773b3871b9559a40206a734627609130f4851a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GeometricEndpointLength",
+      "source_sha256": "e59e5496d94a4c69b50a61de881c14cea2aa7ae7b4dbb2bf0e41ff39c845e4db",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PointwiseTrajectory",
+      "source_sha256": "02df05061f842b9520a649842e646fddb73e099e8a35557a238fb836b5d5b458",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RankOneTransport",
+      "source_sha256": "7914894a2593d0beb4877d42d5b57150464246ccd6a7a8740511644f47fbde23",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerianTransportL2",
+      "source_sha256": "69d5005b6e4bae9ccbc44e80e7355744ae98d0bc4102268eabb15f637b12c258",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianSharpness",
+      "source_sha256": "8bcfce77cb0a622f95e248451a7d826d4a811454308683609f1ee2cb9f99e85d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportLimit",
+      "source_sha256": "056cb53bf14de600bd960a1b7879762073bba338d3b01b54f643f09502cb3eed",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianCovariance",
+      "source_sha256": "53103567b151afc0e4f3ba8eec7b2bbee2c90ece5cfad65db932f460af496eb3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TransportEndpoint",
+      "source_sha256": "5af4c4f034ac564aab0f36e66ca2e2617750daded1ced3f5efabb076164e219e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianHeat",
+      "source_sha256": "3771bcae5cc98c1c54e575167f5a7434460dbe3aa3fdb6190fa9b9f13e54fb73",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianMoments",
+      "source_sha256": "1d994731c56f532d1359a26bbd923fb6d30e3825815a3c184b8f38e886b15c8b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.VolterraHierarchy",
+      "source_sha256": "f2c84a8ffc2e35cebd93541457030ede962bd069d90ee2bdef960f69d8b46b89",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianStein",
+      "source_sha256": "fdb03a1879380b3d6fd90aac1f43300cdb42163aecfe6d78e90455c1d1a07317",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.VolterraEnergyLimit",
+      "source_sha256": "89c1f4e4979438adb1d5971e4294b97b5ed0461a0d665c88e53b5cbc00836c4f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianHeatCalculus",
+      "source_sha256": "b94f069e4ab6783dcf497354f6b24c5849d12fbcd1f571a793500984528ddcb4",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakDerivativeLimit",
+      "source_sha256": "a8fef5607b1ede11727d6f83e095154a2e2579214ea230c7df20001a613eedbd",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianHeatWeak",
+      "source_sha256": "221de65d157547bb58f6f5033325a89a5eeac4dc67bbffa021dbe85421b89870",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicIntegrationByParts",
+      "source_sha256": "5dce698934061af8f656efb57557e049bffb02bf47d237791cd7b5e3b92ac8b7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakDerivativeClosure",
+      "source_sha256": "7a25abd5e2a9fe9d9816643973c2dc5ba09833cdb7b2d2a11f492c19f3c8a5cf",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFourierTests",
+      "source_sha256": "832425d8748fb941474aa38c1a0d47ec2dd6603c8f88498da989b1c69ef96043",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakStrongPairing",
+      "source_sha256": "2427e8dfe7d4a5ae0f780cb1f67a4a7a3321cac89545f3c225641b95c17eb330",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFourierDerivative",
+      "source_sha256": "223edea43233ad2a0faca6a7a1e443982375e068cba54c376caa712ca18fe24c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedConvolutionSmooth",
+      "source_sha256": "85b32cbc75831f9acf47e44c7ab9bd8fb89148c7e9dbb0a8c26304d5441a7570",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFourierPolynomials",
+      "source_sha256": "61599c361a98aaad6cff9cf454beee536424180e9e31220014633f7d905f7ef8",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedIntegralSquare",
+      "source_sha256": "e87548f73fef8f20f8c66c25ecee1bc0f519d962244eca8649a3dbddb9d29985",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicTorusBridge",
+      "source_sha256": "d80bccaee84b22e7e19e2899ec20d420f3b43b6b6e5e4c498cbd2918ec912d0e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingFloor",
+      "source_sha256": "ff682361231d0bc809790d4d8f3b85e0fb88707124d7923e32837db951f21e29",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFourierDensity",
+      "source_sha256": "7c50992a4f25d6b5c3565b783d890493f14a4c8f101a252140fc8f3ed71bde0f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSmoothBounds",
+      "source_sha256": "05fd4f0b3dd8d1e79bc05c380886498f1baa97fbcbce68a652602b3e95bf8574",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionPoincare",
+      "source_sha256": "2875e7ef3f899ad65aca1d83d1c3d187e8efd08e53796a28439a5f21948c09c0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicPositiveKernel",
+      "source_sha256": "ab89af1c255a28f13f8b6ea519976864f08e8d03a4fee42eefed2f7df746d203",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedTangent",
+      "source_sha256": "38c8fecb68c7112b7e7cae2257198968d43946131d49cf32b81a156a69dca231",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionDensity",
+      "source_sha256": "8dd9b56ef59e403e66da51a5ed8404ad558984da03934e9a3c221c29cbfe044d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ConfigurationEuclidean",
+      "source_sha256": "69364623557d58f50d1d713b97698360cd9a5e21070de36cb7f560456994ac41",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PDEPairings",
+      "source_sha256": "69ea415c7461618850652885977d919fc3b9fe85e3f772c51274865dd7534ced",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ConfigurationFlux",
+      "source_sha256": "35c907312aec226052a2ae0e3590e43935970e090195f0df188a24606038f933",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BochnerIdentity",
+      "source_sha256": "56ba0d799e8ac612a89268d92729dded41b4733db2709918e0843846315f1a46",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EuclideanFlow",
+      "source_sha256": "e31dab6cf81960842ad62310f42d7f4b5184341a529efcda26562936e028e7f9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BoundedHessianIntegrability",
+      "source_sha256": "130563820954882a44ed97f55ccec72b4fcda93eac0dd1ba9beba6f81e0186c8",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DriftEnergyIdentity",
+      "source_sha256": "cf1a9fbb0710caa06649fd3bf6bdeac341eb03b25879c544d2224a9ba35afdb2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowMoments",
+      "source_sha256": "d5da7c0a9959733eab22ef6eb6384417b07ea668be96a6d6fd93f0958e4dbe35",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.MarginalSourceTangent",
+      "source_sha256": "d1b474ec00deab83d951329f9d41304c3555a3bbf6176f162098207cc912fa8c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianNoise",
+      "source_sha256": "5694b95b94a6645ec591b010836d37ef44b6f53c39705a12a485408ab4b9dcbe",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ParticleFlow",
+      "source_sha256": "16c23459ca2305e0c2e5fba79c034223d0066582fcb133a02a584221ae1153f0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ContinuousPathLaw",
+      "source_sha256": "5e14f5accc2e161dd61b31f6ca9eb5bdca00b73961dedee705702e5fede4fa85",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.NarrowFlow",
+      "source_sha256": "c075e41a6846844447ad79a8ab93e2d2974892ea7801f6db6c3ada6903b34485",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ParticleFlowPermutation",
+      "source_sha256": "16babf54048ac55892b16e7b7296f5efea41ba193cf294aa8f20d7c0a90c3078",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerLaw",
+      "source_sha256": "84a3bcf23e39118467f507d5d831d101e17452c710653d39ab757c8fc0feb790",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ConfigurationBrownian",
+      "source_sha256": "1d37c95e2321aabe94a12f5f2f78e2daca5fbdaffe28528e6421d74229ceb21e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DriftApproximation",
+      "source_sha256": "b6ffcbce53505770cdb0676d0e549d6019aebbf28f6a77cb88f3f594fe025ced",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianGrid",
+      "source_sha256": "9bb7c5670f6966de987c8cc51fc008fb2b0572c22326dd25da7ed685413d7fd3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianParticle",
+      "source_sha256": "eaaf99c67336f89be39089822981eb21b4ac95226969a4d64341d7060457b5f0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianGaussianHistory",
+      "source_sha256": "e75dc3b9178624e43024edcf77bc272a9bc2f866e22b2fe435896e227ccebcdd",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianHorizon",
+      "source_sha256": "c2aed290a2254e4d5d10b47c75e9afc1fda368d12c25efe85357032c2a144671",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianProductNoise",
+      "source_sha256": "49d58bd2276e27780349a9718352ba73fdda1e57a654aaf39ab45ee2b73ab23b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DecoupledMarginal",
+      "source_sha256": "5ae2f815dcb272fe70f7db53ccdf48dbfad35ddb6519c60d52d1c8789d72fbfc",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianSplit",
+      "source_sha256": "2e991135d8b3912726397c64243e382e91299ab66109e1e1095c821f82ef966c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.DriftFlowConvergence",
+      "source_sha256": "1afaf053d108f28bc434a5fe6485a86d8a3345ed647bd8e46c59f95ae5b2981d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerGaussianHistory",
+      "source_sha256": "b883ad2235c71e8cc233842f15a6e2b98d4e1889802db46e2bb0e00fe47dfd9c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerRiemann",
+      "source_sha256": "d22ff3e4c2aba67cc2fa0c3089c3dc0c6b552577bd626f7d273165453f9a32cb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerBrownianLaw",
+      "source_sha256": "3b0e5c4ddb74adf748e546d9593c9e8e9094bd5ca4e8db92eddb85ff816a046f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerRiemannExpectation",
+      "source_sha256": "e0e54291d8a5573fca3567befa8d66a01370ab38f7fb92237d3b29e454cabe39",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerBrownianGridLaw",
+      "source_sha256": "66a5577258c58382d0062317422da2c42b34baa98bf7a58e18d9871426051604",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerTimeRiemann",
+      "source_sha256": "53193c9f4447357557b510ea0852bc18e8dc673114ac61947a429845324b1ade",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerTransport",
+      "source_sha256": "6682a4666dc8b0bba5a3c3e9ce9ca81f92607ff9d77ff749aaeb0516dd8c580b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowSemigroup",
+      "source_sha256": "46cca234c012da6094354fbcc81e29b4ad455d3c70314d4b76f90ba586497cf1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlattenedEuclidean",
+      "source_sha256": "7fa0b37481ff562b86f0dffd6bff9b85df5f78ad74b7003754f7b6637ed62089",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowInitialDerivativeGlobal",
+      "source_sha256": "4a64c50931e6eb72c9df48eea54172a91040516f0a6ac29a7fa481fba9e434ca",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianBridgeCoupling",
+      "source_sha256": "84d222c0b5391194cc62fe757986cb6a953af5b970d14c3de7b5197660a7f826",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowInitialDerivativeSmooth",
+      "source_sha256": "3eeb19c398031efc7bc5bd83c626932acac3f5d97e2a54ba78ced907653af555",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowJacobianContinuityLocal",
+      "source_sha256": "c08602cbed0860a7605e6414572c2dbd56f95ffec0e68a1efc5fd5a6a9645eec",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowJacobianContinuityGlobal",
+      "source_sha256": "77886dd17a037f6e03bd594c367c9a7edd3643b524fbe054ff0ae392275f2b74",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianBridgeBrownian",
+      "source_sha256": "5657dbace225335d7b980fe157db7a5fd38928a92578a2b47a477d304b1cd9d6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianBridgeLimit",
+      "source_sha256": "873819d0038a17abe373bdbfdef65d2dd4583fac1e49872594818bbe2c3f1107",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowJacobianContinuitySmooth",
+      "source_sha256": "2828bb7dc42c1d09e4a5ab8d4afb9c58661a008e2287e28c2c591ecac9ef1b58",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianEntropyFlow",
+      "source_sha256": "754b6bdafa837ddfb307ec1bddb478839b7b0d1b8a5de987a399186a17f41aff",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowSemigroupDerivative",
+      "source_sha256": "2f1fea47ea799afd3d6ff4823e3afeadbc972d2bdcc0d144b2df3af3dfd75bb9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianEntropyCost",
+      "source_sha256": "c3d9a562131f83686921f927349c396a76832a5a712609d15172422365971cd7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowSemigroupDerivativePairing",
+      "source_sha256": "e04b535dfabbc1841d6526ecfdc5d411336bf9041180ce9478a3e9b507dc44a1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianEntropyTransport",
+      "source_sha256": "1928415e27b34802a3786c506753ddd22a1fb6364cec13d71f6933d8c3663d63",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ParticleMomentBounds",
+      "source_sha256": "14ea238f1c77e4521336c72114908c8a84ff3b526d8d1d3fee88a044fa9a27c6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianDecoupledFlow",
+      "source_sha256": "1224df24ae31fdead9d4a09465c1aa069f60c7fcb8248dc1b672caf69425e9d0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianParticleEntropy",
+      "source_sha256": "fe220755cd8d701ffd1f0c8f673b1381e3fe1a5cad51cb4cacb7be3bb0fa83a7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianTimeMoments",
+      "source_sha256": "8480835e5067b6d3d9ceff3d6311b41d980805cfb757b103b4d3d3fb23de97d0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicBochner",
+      "source_sha256": "a0db7d1b02c132753bc15caf802e92e01542fef1d4ea091b6ee56e23fe1384cf",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionMarginal",
+      "source_sha256": "49864a5d2afbb08a8dcd68ca3ab86d3e9aa6d2f13d3bf213fd549811c06dde30",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicDriftCommutator",
+      "source_sha256": "9422b137d376089f714cd0701ee2cf341b23874302e63873f0f3408f4162e715",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicDriftEnergy",
+      "source_sha256": "3cce32f275b8ae92d9dc94e3cbd3cd82b0f1751f48d730daad40292d603c523f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFluxContraction",
+      "source_sha256": "c3c87fdbb2437d47533565c0cc56c7a99c4aec1885785d46fa303faec4bedbeb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicKernelConcentration",
+      "source_sha256": "81c4bfdcab1f547b98a3f6555961f16bd4c82ecfb698fe7d60dcb2836cb7c2d7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFluxCommutator",
+      "source_sha256": "144bf2807d80c5cf268e9ae763526c4ee8d028c66491aa967657e5c2adb4da67",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionApproximation",
+      "source_sha256": "682c205cec2e697b5be6f15e945181d34e130adc975ad75210444e2c01333508",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFluxSmooth",
+      "source_sha256": "67f03fc200e4ca795039a2ce92b5ee474a5927624c25ac17ec1970777cc2c9a8",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicCommutatorLimit",
+      "source_sha256": "4f8a4c024ceea4c63326406ffee5d92267d5e624ae90d8fd7e014066d7002096",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionPDEIntegral",
+      "source_sha256": "fcbe3259167bf01ee20d1fde7b5ee7e73f6f054cdfbedda670a2e83f65ffa4a9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFluxCommutatorLimit",
+      "source_sha256": "902edf85825c123a0f0d31a56ec6d938857bbeac783844dada4a4bfd7782460d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFluxPairing",
+      "source_sha256": "d9491074ad7ff3b08e9987f2a31d551e016fe557e2b0e237a6562f651d813c66",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParticleApproximation",
+      "source_sha256": "11dd0c7800fd8cfaa47d71cd2497927bf99dd1662680e2483294cadf93cad558",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFluxEuclidean",
+      "source_sha256": "ec422352ad7bb71f580515952188cda6e6b6aa0fe64235752a3a6e764cb45ace",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParticleDerivative",
+      "source_sha256": "e8ee0f7a1eca899d1c88a4a0a540fac97dcf1cf3701c642e4670898511d82928",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedFlux",
+      "source_sha256": "bcfb7339f05f5b56f3756b73ec97207b7acbc392b2da9f6e891ce41f8b764ec0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourceEquationConjugacy",
+      "source_sha256": "536a72ce608581b5710d2f457a42db61ac64b05c6c63926b6d14c0465a38e9d9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedFluxFlow",
+      "source_sha256": "45dfe3f4368b3f2002b9e428c8adc4c1b28912dbc34bfb8a1b0ca8d65018bed0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourceEquationMeasurable",
+      "source_sha256": "6e8d4485b5f46b8284452b172c270fa07be3a1eb7d0a35bd23152259335f54d3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedEntropyProfile",
+      "source_sha256": "b01b1da8710ef2ba59da09fac9854cf3fdc9eacd8999381759e51d6b82e18268",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowJacobianDriftEquation",
+      "source_sha256": "d6c31b0418eca6604ab67dbe0324b11bb38aa7f7aa944b5484757f7f8a2888e2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourceEquationDifferentiation",
+      "source_sha256": "8ef94c6e9e4907d7049f1922f2da501c67cad01bf9dfe849fbfa8abcf642c295",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowJacobianDriftVariation",
+      "source_sha256": "5374841ba6bf724974911a9052a8c79bc33ca322ae2c19cbb1256a0dc10c0e3e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourceEquationIntegration",
+      "source_sha256": "a04d5fa7e5fd3b433d5ae366e9d80418346301a23fb14eaa1b8a07d6a0b47ebb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowJacobianDriftStability",
+      "source_sha256": "497bb6e61a88a194f6fea079b7a63e933fb61a6e8e7a3bb4a33b6778e714f855",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionAction",
+      "source_sha256": "8d1f30a3874f1eb345f3d1b341dc014813859956ca5fd24ae5cf0f90f096a686",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowJacobianDriftConvergence",
+      "source_sha256": "fd8ab0f24226a7bd97f1d9dca248ff29ea111a89869c4e0b515bca30b022ece3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedSource",
+      "source_sha256": "253da87a65031709ac3036afc409fc94afb1b97788a8e62126584dafe9c5b88c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FlowJacobianDriftSmooth",
+      "source_sha256": "ae082eb9603d754325dda21ed3ea734099e99bf6e11544e4d7390967269b65de",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedSourceRates",
+      "source_sha256": "1e17823081c6034df5c839493d157d9da8b7d84e25acfb272dc6397a95f8c51d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionGeometry",
+      "source_sha256": "70d096d8d909923a7076e1e801ed299cc78017be1d4fbaf414192b83b5353aa9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionPushforward",
+      "source_sha256": "65da253a528f180e804bfa4909d3a5be3403ab6d2c4ccd596c7d7668a4f7c831",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionFlux",
+      "source_sha256": "7300c5e261681d6deec6fdd5cad97cd41aef266ab754fab8c7595c055494decc",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionEndpoint",
+      "source_sha256": "44ea41085b3ba24d4e20d070d869b34a1917c227ccdce2b214a4818416ac89c3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportSpaceTime",
+      "source_sha256": "c0df621ff4f76d3cf378b019fbc2154884dc04cc45c6566bf2738d76e4c38746",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SmoothCutoff",
+      "source_sha256": "68ad77b7daaf478407ddf2c825af0c09b83ba21ccdb2a2800aa42c21056cad28",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportLocalization",
+      "source_sha256": "e16a1a963886861c6ac0ea91c72dc5d5f5e49c69a846f6410b115ee4fdf4fc71",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeKernel",
+      "source_sha256": "18bd3705373463dc3fe4d322994eda60814401c47badd7735c400c2dd6e8f7ba",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingKernel",
+      "source_sha256": "d29dbe5a75ba701a9280dd999c70fd033355e7567aacbe7bd60a4cd043985cea",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeActionLaw",
+      "source_sha256": "f31e5d23126df0092de8eb4164369cfa4beba61b2e973fc1fdaa7ce68d3d3edd",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingAction",
+      "source_sha256": "de607ea7b496d8f7445e49f7b822507d35150e53a40286daa2e902c28fed007f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportTimeMixture",
+      "source_sha256": "28c5d9231671048a519a9442b05e18c31f8f623a44f57a117e9871c6670a32fa",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingGaussian",
+      "source_sha256": "75e5cc8838ce2ceb9191a35d9eb036bcae54c7be00cec0b8638f16cd8762d2d3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeActionConvolution",
+      "source_sha256": "d500f66d349dba3241bb3692448792647f7b7d2b22977cfaac156132ffac4dd1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingLaw",
+      "source_sha256": "2c37a34dac585bc82ecd19579b0d888d4bd06c1056e6d6b8fb97d22fb8213766",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SmoothCutoffSecondOrder",
+      "source_sha256": "5ca6280c6d2631558a41a50370024c1c5c8149c5e047e53a001e36b880a4de43",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingCoupling",
+      "source_sha256": "ee2d91ba21d21ddd852312490cfa3a8981e7f9bf2e57bfb39c68f279885c4332",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BoundedWeakTests",
+      "source_sha256": "062a48fd3638ee751cd59567941e523e061672383f8019896d26b36f94f196ec",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingMixture",
+      "source_sha256": "1001d257a15dd2acecc883cac1143e057649b5a3477459d48e1fcc1bcda7dd98",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ConfigurationGeneratorEuclidean",
+      "source_sha256": "502e9effa7487acd7a3473241eee79df9c00c74a6973b7007a29566dead6c77d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingEndpoint",
+      "source_sha256": "9fab1a6484bbe57d74157a1ca8edbc218d8ed9530088481735ae77b5fc716c74",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingTests",
+      "source_sha256": "465ca1725f60fbebe570949afc917d988686ea077b937f58232c25080865a098",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSpaceTimeSmooth",
+      "source_sha256": "38916750bb532f17072800064c019b6ef023480763b3a902c3388a8b929c0d44",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingDuality",
+      "source_sha256": "d241f0f40a5acad632c65b5a55cad6118d33a5dc1b6582008becb7a00de27acf",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeJacobian",
+      "source_sha256": "caae3612603c30d03686c6e0d9230436845a9a758c92d1ed28515469130ba5f6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeRemainingTest",
+      "source_sha256": "eb33c8eef491828e1f6142f86362d866029b678488d0c1a65ab3515647045340",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TestGenerator",
+      "source_sha256": "dc262dccee27a7e0fa53f2f0841fb1b9e738b7757a03fcf133894bb6dfd089ac",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianGlobalProperties",
+      "source_sha256": "c71a4139c469465ef8f5ad145bef5cdff68791f19bb149784cfe62dea74df28b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FrozenGaussianCalculus",
+      "source_sha256": "8254cd13f7ba420da936abc4b860dbaf42821b1f83e27fd8e1c94039ec545396",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FrozenGaussianExpectation",
+      "source_sha256": "71f9f239d997d1b2ab60455863425b58d4bc01553d9fae613273b4f639711ccd",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FrozenGaussianStep",
+      "source_sha256": "37f8fbc34bb106f42082e4692e171210d60f7707ee38cb7bf08dcfc9922005fc",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FrozenGaussianLaw",
+      "source_sha256": "24c45cd9743ea2813853f2229b39a65fdc6b12076e4029b651d86ecaecf7149a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FrozenGeneratorBounds",
+      "source_sha256": "37b73f677f59f9ecc8f80d7990b3aff4cf97886c31328a34aaf1dfc2fdea7601",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FrozenGaussianError",
+      "source_sha256": "5a4838a99ede78118bde3a4a4e3b4f25eb8d1402c44fe85940f7fa61dd32d44f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FrozenGaussianMeasurable",
+      "source_sha256": "448a861faeed7c32ab2259e72811eb517dd8ffcb5351fbfff3a24c014c24b06b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerWeakStep",
+      "source_sha256": "3c9c1bbe7b0bad1a24e3de28a31d48b4b19978754948db1c482e4a2364d3815c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerTimeWeakStep",
+      "source_sha256": "e59ac4e229ed64b3d5ae0631f0dd08ef3be7eb6f32de77d662224860f3776510",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerTimeWeakTelescope",
+      "source_sha256": "d7ed99bc0fa73ccef3775fd3735549cefee43d67ce6889073b0e7cacca762014",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerWeakTelescope",
+      "source_sha256": "7ef947d474f2acb2c400d6c4019d892712f50024708d497600bbdbc7d743acdc",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerWeakLimit",
+      "source_sha256": "d3800b814f055167e01f2a3bb3cdd97ad5ba5d5d36533810b0f218de37a3a75e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianParticleWeak",
+      "source_sha256": "03fcbe61fa2673cf74c5b5a4f4b6b40a474f2a75639819c1e066f3894385a809",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianEulerBackward",
+      "source_sha256": "7698301dae9700e1cbf0a4b443a27ffe2efa1f43f34054009a9ee2a3f8c695e1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianEulerBackwardSecond",
+      "source_sha256": "32012564a375166151c577ad12f1b327922909293f4d2e060934230f7a2e018c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianEulerBackwardSmooth",
+      "source_sha256": "930d49ade4613422d2bc22ebe7cd7987538b5c8aebeede2799e577ee88f85b5a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerianTransportTests",
+      "source_sha256": "76b9b83ca084e7401a0ffd514b1575676b9deace102882b2e41ba8f8de5f7828",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianEulerBackwardThird",
+      "source_sha256": "d62c45ad3e609031f18fe6ee7f0cbf421776e2e9f8eabf49982150ded5b80eeb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BackwardEulerUniform",
+      "source_sha256": "cfdb7a62c6cc2ddc98b8d30e9af5a59d05fe1f71c1d678e611373230afcaffc6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GaussianTimeBackward",
+      "source_sha256": "06be0268dcbdcacc100597cb26ef8f1e38c8212d242a683d59113470bd726d00",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.QuantitativeGenerator",
+      "source_sha256": "409b960c1aafff2def15205c87afcbb2572694f415f662c972dc7329d35f54a2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TimeGenerator",
+      "source_sha256": "6f94becd791fb409caa2dd9cc67a2b72f03f9ff89adff547945d15cb0b9e7edb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerTimeWeakLimit",
+      "source_sha256": "ec8bf38e2509d089d36e19ec3c60b5bd616145dcc8cd5f66c44f445a293aee0b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianFlow",
+      "source_sha256": "d7f17aef0d3975b330a6157c9dd309c4346daec8edb2e09547d3d9390c128741",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianFlowWeak",
+      "source_sha256": "27c0ac1f9bc0c4741e8712dc8d06a0ca1b18ae82c52cf7339c61ad65eaecd2f6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianSemigroup",
+      "source_sha256": "2b068748aa0924721e7d03097eb260772c4fca1f7f73c697d7adc7677ac9d9da",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianTimeTransport",
+      "source_sha256": "ec1941ce70c66abd757f78dbd83fa052a9e9f09c322b8efe88bd59e1ea089841",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianFlowTimeEnergy",
+      "source_sha256": "d5a155bb9f05156c644fadc27ca7435b99055527f1ea1637a342dc479c33eea9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourceEquationBrownian",
+      "source_sha256": "8f29036a066e74d22d4cd8b3485f5b3f856d84633dcdd4c40a5dac3762dff398",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourceEquation",
+      "source_sha256": "cd48a18b7639076283c19f18c0b7d645d2dd9fc4a36b3da37d7db41ff6236b3a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourceEquationDistribution",
+      "source_sha256": "32c8de6c6cb72725632a22cb7ad7aea649e39583fe4cfe7cb41abba7217061e0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourceEquationLaw",
+      "source_sha256": "23468761cbd2c52a88be75a4887b36df1a5853c618f748657c2c1afc797c6d2e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourcePermutation",
+      "source_sha256": "169f5525a8118899f6df4bd0cd65ac0898de6a0439d37e0f1b3238758ecaf9d0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourcePermutationAction",
+      "source_sha256": "d22da1670999c3c31afa20d463922c590ad563a794132dc0e96901e8f0d01964",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeRestart",
+      "source_sha256": "839cc4ed24a8e0ff94213bda4c054b933f63d47e7563657b153366617580d5d2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeLaw",
+      "source_sha256": "81bdfb56c79add96cf465abbe8a8039c59dc444401ce9899e93500fc051cd3d0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeRight",
+      "source_sha256": "7e6a728c129480e33d2a6e737de221548d3fc5aa9f0524927af87ddb19c8ceae",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeEquation",
+      "source_sha256": "dbe92f6680effe0f43cc5cd1535b9b9e0e142220d11e8117244f67ce6cbff7fb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeFlux",
+      "source_sha256": "618edbd70be3df1a49bc7805308b780f426c2e6908347c04b9067d5dc775deeb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakTestContinuity",
+      "source_sha256": "397313d25a19748affa4281db72e2d507812679ad891f17534faed2a66ef1d77",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakEvolutionContinuity",
+      "source_sha256": "b4635636c80667e1b972fdc76d5bdcaf0bda003bfb96893a05a884a48dea8454",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedReference",
+      "source_sha256": "64a4dd6200a944672b43e455d44b041bcccdb5d026c9e6c979ce0a4665ddea2d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ReferenceDriftDerivatives",
+      "source_sha256": "ad270f312168d4e6ababaab5812d9fef1c06b4ec80d58a9dbe972ed4b11e2aac",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchCurve",
+      "source_sha256": "674326b39ebf87a5e849a15004909b8c617fe8c67bcc0dc28db0cc16e225a2e2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchCurveProperties",
+      "source_sha256": "f94af5f66aa7d2cc791cebb84427953cf4cc689e2c538adc10dd2f8230f8edd3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchMetricCurve",
+      "source_sha256": "62a0a3cc00cb3b593460430aab99a4e06c442f23906953599ccc32c10fce8cae",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchCurveNarrow",
+      "source_sha256": "35a49374e48ef641aea3912445af59b977cb8d357ce6dc84e2f61778d525e969",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchCurveTimeEnergy",
+      "source_sha256": "e6686156d83fd660315985dbf5eb809ef6f6bce6ddb67c5619ed693fc3608462",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakEvolutionBoundedTests",
+      "source_sha256": "b5fd1b944921b2e56a86cec4c292ca4b84f1bb53e610c3d463dd8f57f32686c0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakEvolutionTimeTests",
+      "source_sha256": "13a4b1ba152ec5a9968c69f642e90cf7e871d3f9d07deb41ef63defaae159954",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianForwardDerivative",
+      "source_sha256": "009309182f3ec42b50cc445e16ed8a5aa13bdd076822cc9bd8c7f3af106c54a2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ConstantDriftLaw",
+      "source_sha256": "7128fd14f4a4b61713a2a76c46eb1cb36031a0804433c28a4449bc81dc4735a3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BoundedConfigurationTests",
+      "source_sha256": "e561ee9c36c52457daff04e07b6a34d6dbd98c8214eccddcc21d5bc2f28b598e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FrozenGaussianBoundedError",
+      "source_sha256": "c16a276a10ac13d479d05be26205b94c76bdc5a4fcaf644f1ee26e58df15234b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BackwardEulerIntegratedError",
+      "source_sha256": "6a54902b4a34c67bacd6b68b2ac0e848962a2508edcb515720a9bbc418353c75",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ProbabilityParameterIntegral",
+      "source_sha256": "1d217452641a7ddedbe6e6ffd32232d7ff363c586bad4bafd99023ea133f73c9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerianTransportEquation",
+      "source_sha256": "93ed5526068bd123d1412767f5bd87c5d9451fe70bdf5f714bd3f2de542b7719",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerianTransportFlow",
+      "source_sha256": "9de2e81c1481de7f0b5f45e30783c6a3f024fdb24743b7f4011c2c91e481be95",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerianTransportUniqueness",
+      "source_sha256": "eb3bf3da53c88387d0f60370e8dede0ad8ff17bdce00ec664d3313e90d10416d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerianTransportLength",
+      "source_sha256": "3513b2ce5e8a3cdfc410d8992981bee59ea4aa62edb1d9e3a52590b9ba1bc0b2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.EulerianTransportCompact",
+      "source_sha256": "a6cbcbc3285d6bf39d97b63ac411bb39638b718cbd27bcd94667f140a6d2d6c3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportRegular",
+      "source_sha256": "3c1d85bd6cac44acbabc84e44204a08794ac8c596dec621eb1a67c28b199db8a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportRegularCoordinates",
+      "source_sha256": "babee9ca60508eec345b93f07795f5248eb74bb033ef956a886b931f21470c26",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeActionProduct",
+      "source_sha256": "d21e57f7d024bb971fba2be98ed28236b2832b844afdfd32a6fbcdfee91d03a8",
+      "compile_exit_code": 0,
+      "compile_seconds": 4.373,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportJointRegularity",
+      "source_sha256": "75fa2e6739530aa3910b50d39deefd0e01b57976bbe37706e347bf723f07cfc4",
+      "compile_exit_code": 0,
+      "compile_seconds": 5.599,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.TimeGeneratorUniform",
+      "source_sha256": "bc1060311be3e7fb88842d29dc25cf2c74bd3ecb7326a93231958b0894b60273",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakEulerConsistency",
+      "source_sha256": "d1dc2b29d22c57098b137b69593a10386f90f9ddc81a7d4cbedbe7ef83917fd1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakBackwardEulerStep",
+      "source_sha256": "89a44579aabbb57dc1b151d172b655d207a0468ecf98bce4a082557f675896ac",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakBackwardEulerTelescope",
+      "source_sha256": "4b9023d53eef4f0c759db6bc471adf60d02236cbb7fd48249c45a127d11f157b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakAutonomousUniqueness",
+      "source_sha256": "96036cebdc7f1e3fe16096b0d76b04f1112e9aaf5837f66ad06c41a06ba14154",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ParticleWeakIdentification",
+      "source_sha256": "135c98b47e40293b62512e875661ad89f69029a1172feec8b83b80a1f56c91ff",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParticleTangentLimitFlow",
+      "source_sha256": "9c87a80596ba836214234ddc3b4a60d73c2330f3470fd21323f04091df59e05d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParticleTangentLimitSource",
+      "source_sha256": "1980582c3c5ba749697bb45e9e8f39101625f365cb006179db7e1fdfa41c4d4c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParticleTangentLimitLaw",
+      "source_sha256": "912b82ff63c8f9c79a6efea16d72ed9bc6c45c05e862cb4dd14ee22ee94dc268",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedSourcePermutationParticle",
+      "source_sha256": "7b713b758a3eed741ee11e6be668ba8a2b4f0314e761e96f1bd761931b134248",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialSourcePermutation",
+      "source_sha256": "beb3b4dfd00a6eea7268e7f985db2bfc9b2e2386fcdf1815b5a1ddfccd98fbfe",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeParticle",
+      "source_sha256": "384458d44d3add854ac9505e456fe227113563f18e5eca66232f0c1f865aab75",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativePrescribed",
+      "source_sha256": "7167e2ce4360cfd845796dba430fe3b1a11af2c6640277706d7cfad8aee80c77",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakTimeEulerConsistency",
+      "source_sha256": "8e649b17799d5200ea3491eb7e58a980d804cfc911af90033f553be6a28a07f5",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionWeak",
+      "source_sha256": "d0422511e352085abf3a3d0404d490fea70cd4bb85a60d4017193f484d982ed7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionWeakBCF",
+      "source_sha256": "d27277c946f940069c28a190b9c513b9eb348b9e058aa5ddab85abe094a70094",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionPDECalculus",
+      "source_sha256": "1d8f12be39fad04b536ae187a916fa81fbf67b08851049df233fb1e3d1277d56",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionPDE",
+      "source_sha256": "1cc2dbf2489f7a9be7b2bae5304968522a33ecc47c69902f022afcd2f0e6f4c5",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionPrimal",
+      "source_sha256": "4ec3be5b0a7a6478f4b2d6159a63153b6e9ea8bd3bb87ba5bf346f63f2f20b0a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionGenerator",
+      "source_sha256": "584f255d632e8dbb3daba3b4b0d94912259f7a7cb26c754948ef8b5aac895dc4",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionTime",
+      "source_sha256": "f07d22aa30bf0eed9e965e9984cb6d6370588e5b2f656c1b7e150ef49c2f9759",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionUniform",
+      "source_sha256": "95130e45dfb20aff4f8d0004d25e584700db7e3c3c07d97018bb4effc2d77d4b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionSpatial",
+      "source_sha256": "1447b6aa4053d704218f52336020f5d10783218f89387e8adfd2c7bf27d48d22",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionJointBounds",
+      "source_sha256": "95add022a55e14e75ab8f01c31846f22d25c24666b21ba67f1d8c5a5eb96ac51",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionModulus",
+      "source_sha256": "1b4e6cb6af33d1c4ad2e79303d7d958ccc67dcfe2881db274838fd4c08ae0d76",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionBCF",
+      "source_sha256": "97f6d25a47092ebcf7cffe68cb234983ab93fcc8dcb90b4bda98753d88ae001e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakTimeBackwardStep",
+      "source_sha256": "ca3773328ff08019b56fb11b744b12ee6c3cca580870e5ab0b40b1ea7e3de075",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakTimeBackwardTelescope",
+      "source_sha256": "89ebb4e95ad25b57bb39d2a6c502fc7de18dad11ab41a8c2110f1ed7ced892d9",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeakTimeUniqueness",
+      "source_sha256": "39871474538ebf6a24afedf0a70462cd3b0a742e7cbd083e4f5ae84620ece967",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ReferenceWeakIdentification",
+      "source_sha256": "a8585c899495e96dc1748283ed3a1f490598b50a70369f20cc1bddcb62883488",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ReferenceTensorIdentification",
+      "source_sha256": "a817dd966f62652d1d50fafecd486f2393e0379b179c50707469462daa304492",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedEntropyProfile",
+      "source_sha256": "62f795144b400cfe3f35565fe51181ffc27527002bd6acba8fbc2426ad8e0527",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedDecoupledTransport",
+      "source_sha256": "86fbd229869049cb956c7a029601b429bf96e2ff8fc3a1441260e8ef232734df",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedDensity",
+      "source_sha256": "19e20cddb4f96a09ff2a1f5bcbbd1540f6c2f0fbd5fd69b078bc3bba361a4818",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedEnergyDerivative",
+      "source_sha256": "3b7bba91f70b6aa74d0f70d71c88a5cad8250dbf3470b97851b92e47261cc24e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.GalerkinApproximation",
+      "source_sha256": "55d9894d2d6793c2a4efe74f5f5b9ff8c2be8463c30295f66b73e120bc52efa6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialEnergy",
+      "source_sha256": "c0d2006c9f9e316a0bf68bc37130a6bf2f7a8682453fa1ca093c7a0fb3a0d1eb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialConvergence",
+      "source_sha256": "3af0df559b6a652ebed54739f873b832408d862c69b5b1b89c98f6d880ee153d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialConvergenceTime",
+      "source_sha256": "103d08bb07f1c8d73933532b183aff859b469dd5bb4ccea14ba73beed769ee8e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialConvergenceSequence",
+      "source_sha256": "a9bf15a1b5578d843f532b77b060633b1dcffdc0f2174faee364c7a6c77f95b1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialMarginal",
+      "source_sha256": "10ba3803a9ef156318ae6bf503610d471543cce462474ba22bc433ba6b36dbe8",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedEnergyDerivativeWithin",
+      "source_sha256": "0ee8b6b46b097720200979037c4c20cb48f09df2270e5e7d6645645bb9107393",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedGalerkin",
+      "source_sha256": "db92174acc6e2e97f3f65518694f60d41027c1c8d67ba7af2cd29ccc3b066020",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicGalerkin",
+      "source_sha256": "a70d6f25be1e3ba8ee14c24a4596e4f4c00e0782ffeed97c739904421deb553b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicGradientClosure",
+      "source_sha256": "9be9d19685cf247df5b795236465b414808913461ed178b8aeaf12f9ac4e2025",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicDiffusionEnergy",
+      "source_sha256": "b2035d1fb2c26d56ad76a5c093deaf49cae6e7d93513800fa6a39823e83bb8ec",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicFluxOptimizer",
+      "source_sha256": "304a25c05d982016b2f0b28ef228ed239ea9051815db97abba30b152eab02b38",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSmoothGradient",
+      "source_sha256": "5a920a280e69f9a70f0bb60996d2a8d37eb1ffabb11177f91cbf5c3f51fe2d44",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolvedOptimizer",
+      "source_sha256": "5db88d020e86c6392dca8ba2a888eaaacdf6efb1734944e8f4debb9791cfe399",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicHessianBounds",
+      "source_sha256": "a970369000faffe56aa9b6c15b3079ffcb4518b6754975f221f8cacf85161d5b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicOptimizerFunctionalCongruence",
+      "source_sha256": "a75dee26cf64262b7985057c6fbe985321fafa2b719ec3d5d841058c49f06216",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionMass",
+      "source_sha256": "3fe7d7025f0faa785861e5d25771f4de32fdb9882ce1e87fa6107f75dc900ef8",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicTestL2",
+      "source_sha256": "cc1878ccf187fcd94c299a2ea4b53fff20c6b1fff8d45c58ee8aa3390ed867f7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicL2Multiplier",
+      "source_sha256": "84bb0a416b35b241eacc5c81f919bc808e9e09dec2de1512e019d1cc59567950",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicOptimizerProducts",
+      "source_sha256": "4d86114970cdc7d30cc42b824e04448deb09a966539be556252535df1d9eb577",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicJacobianLimit",
+      "source_sha256": "f2002186ae0be48f48d0dd960030ba7d9ca63cbc5faae78434d32ec447ce075b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionPotential",
+      "source_sha256": "1ca98c6215a0b11cd98e72a280457017f2154d920593b70db168f44b0b1948c3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionFunctional",
+      "source_sha256": "550b9feaf156e9edf1c310007331a43cb10033e368fd6107f05ab01ce704f528",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionDual",
+      "source_sha256": "fcea825903941a7eab7ac9673ee8e70fb0a466f18d33d69b6a991b71ffea1f2e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicSourceConvolutionSmooth",
+      "source_sha256": "b22cc1ec8be74b8aa09a13cf86e3be7c3ff5e5f41592bdacebbb4036e306599d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicWeakHessian",
+      "source_sha256": "be163fb5ff8302b22e9f7804ce72d51e37b1010ff83d3961e1cb7b544d972291",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicDriftGradientBound",
+      "source_sha256": "ca3d5eebe4b1ad34e4e9fbe0eaab18da9f9d7615d8bec4012e359f003f18ee30",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicDriftResidual",
+      "source_sha256": "a425cf6ccb6392bcbf5840d46e02965d50b424614a45d2812ce4d37ab8937c19",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicCoefficientBounds",
+      "source_sha256": "143b55d086d415c91d610553801133e9a3610e8487aebba3a66a2d2b68ed9f5d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicHessianConvergence",
+      "source_sha256": "c4bbc9b6e26226d881be129de1dfe3bbb4260a36005f7523d256e3f9fbf2da73",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicHessianDissipation",
+      "source_sha256": "06f8c106fc3ad5dff793ab61ce13bb5e2898b58059124b991aca6a36af409e15",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParabolicEnergy",
+      "source_sha256": "524abf58dc7efc5b0dec0ba7f8d1ac9dcc4f0f03308b722bde342e303f60c01a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParabolicDissipation",
+      "source_sha256": "b4a0e02def9f6def1736ed99eda8679a7a0d54a5ebd03d98b0e294690419d2c1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedGradientApproximation",
+      "source_sha256": "f361d0804f3e3c522357b5008b87960848b58d78038f7f00258087d8913e2594",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteGradientTrial",
+      "source_sha256": "6e6714d8634698031ab2e3582addb2237385a35b4e1842b89c306f4f7d265278",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteGradientTrialPairing",
+      "source_sha256": "cbd89ab5a6d5d2a84c5bba147f586ee74e9ea63fc47850fa640ae9a2338caa0d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteCoefficientMatrix",
+      "source_sha256": "fe8b1d0f9014dac944b18e7b03905ad2d22e8f53e02b353e3d637b6213fdc6aa",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteCoefficientEnergy",
+      "source_sha256": "842af1291fe5ca7cd33787eaad65a1f505befda5f33023e5a9304aef12caedd3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteCoefficientEnergyDerivative",
+      "source_sha256": "eac08749dc00f8be67cba138c97a86ebb42b0d7bd10984e50a75486273fcda00",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteGradientTrialLaplacian",
+      "source_sha256": "aa876d36ef2650e8e9a5b3756e2846be032d0c254f1d6b5bd6bd12bd64f0c714",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteGradientTrialDiffusion",
+      "source_sha256": "28edbcfa4afe8a487e9558756582aa34edce661579b8c679ea541300fad21697",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PropagatedFluxSmoothPairing",
+      "source_sha256": "219f5a289b956eea3e5834a978fd564c001e046b0ed95f2fded45fb123763174",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedMarginal",
+      "source_sha256": "5234cafc4c44c22bf82b0d76514124e257cb8ce5c0fd9c99652d2d527129f560",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.CylinderWeakEvolution",
+      "source_sha256": "5415b5980e0d16b49578cfdc9ea5e24addd14d4b23e4dab8e4f63e8560b44a06",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionGradientBase",
+      "source_sha256": "ed00b7890f017a1bdbb522b6a863071d5a478b664e66c047edbb699974c68bcb",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionGradient",
+      "source_sha256": "0d95d76ec257f3c5a30bac3070073f134c41aba802c9d1530197d4eee6d9a12f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionGradientCancellation",
+      "source_sha256": "240135d19bfe9df1afd237c39760bb0c657a97e1163906db558124d645189a2c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionEnergy",
+      "source_sha256": "171340a58f04464c5840aacf48687a72801885defca14a6fc7bff026b2891cbe",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianPeriodicHierarchyConstants",
+      "source_sha256": "274461cc05db9645536c5f4038556dfe93af091977dd69abe1239a24b0276fd7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionEnergyCancellation",
+      "source_sha256": "5461c36df3ced2c4ced6559ce05e08f1580188dc02e755b215cba883cb7c2a51",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteTrialDriftResidual",
+      "source_sha256": "0f3165b75ca4ce3bc663ef1c6eea99dfa41f70efe2e07e6c298e3b71dbe1dbb8",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialSourceMarginalPairing",
+      "source_sha256": "63fac1d47b50f96452b5e47cf50b79592356bd262215164cc63690acd69d3bb3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialSourceMarginalComposition",
+      "source_sha256": "279073db10b7ea35a9b18f5b3f25482a7e3819e37e06529d59992833c80e2425",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionPrefixTests",
+      "source_sha256": "12e9e0f5086d36a564aaa97bd4bdacaee04244395c7837d146ef0931a71a4622",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionTestGradient",
+      "source_sha256": "26ac8392daf7d4fba9bcd235d0a1d08534b4fa1c3a21c424d61d633255c3d3b3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalLift",
+      "source_sha256": "a555f68fd5b40721d5f597c942b76d8a6a1911b190a14974a434095b4c93a1fc",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalEnergy",
+      "source_sha256": "68005f9f917bc258730a7f8f8a35c8ac73e91125c127a5ed38584259e2fe4fe2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionEnergyLimit",
+      "source_sha256": "2e76ee81fbd4cb3c1cbb723d428213243a954d72a97b055925db6b4310c2be4f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionEnergyLimitWeighted",
+      "source_sha256": "efb8194869b7f735d211db0f47f6eb6d6cddaada99a0961e32550901beb1d9fe",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionEnergyLimitPotentials",
+      "source_sha256": "b4757f26f05b50236bdfacb23c8937f23d1e318d84b0086bde104ef528ef19c2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionEnergyLimitEstimate",
+      "source_sha256": "c89693c445af82835c10c6da90fce7c523ecb4b833b70e04ac8ecefc499403ee",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedMarginalSmoothPairing",
+      "source_sha256": "889957c124a8b9f86d7abc6969cf5cf44cd0902129b9ee77309234c54cbe72e2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionMarginalSource",
+      "source_sha256": "a585e4b25d7f447a48b06421e98bbe7864ad6839c0962efc818a9fdb87cd7bde",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionCoordinateLaw",
+      "source_sha256": "2c627ba3b668f9e5befe3995990adf4a47d65456590b7c9b981c2eb98ae963de",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionMarginalFunctional",
+      "source_sha256": "d5e414cc2c62d168d2257c8e9d812521fbfc899b8351a8e1265a5a3de72d3922",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicConvolutionMarginalEnergy",
+      "source_sha256": "61bbe921ff37515b9eacb2104e153cdc8077d7d5b93bd3c2e780426628bc0499",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicCoefficientEvolution",
+      "source_sha256": "11fdb898ab1af9831133149ccba55b4f52cf317aac786732fa63868d134cf9b4",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteGeneratorCalculus",
+      "source_sha256": "001f1929b38132e8653e9b0b79404fefa855dec41e6482ce4ca0d59a6df09672",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteGeneratorBounds",
+      "source_sha256": "86cb259416078e53863a4f191a8620cda7b59f37c11523f6869749371bb89659",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteGeneratorPairing",
+      "source_sha256": "ba2093f976e0579224441b1e327c13b0965ff0c366ee819c7b9f0360a9d5a043",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteTrialEnergyIdentity",
+      "source_sha256": "1ac819ac0a8cf0d47b8a6c10d24f4faa0b62fa106b4a71977eb17e4e63fc7cfc",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteTrialEnergyEstimate",
+      "source_sha256": "da77f9597e3ddefd0b5a1ea0299e664e6fcedccd76cf3d7f719b12cc7fa2df33",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteTrialEnergyInequality",
+      "source_sha256": "e95f5a4bcee1f5dde41f4ea4f2b9edd3707a358b8af9724abe73e25a6d99d27e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicCoefficientEvolutionBrownian",
+      "source_sha256": "f7615a767944074259f1b37cceeb7137dbacd625fb21b12310afd09c3bc834c6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianSourceSmoothPairing",
+      "source_sha256": "c18eaddb39392671ea7b1b8b274664b287af2a7edcbc99a98efd1a24f922dfae",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteCoefficientBrownianEnergy",
+      "source_sha256": "d2f6032b87e948c6b511f7a8f925cba70d6e3e5ae2b043522201ed198e1feea6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.FiniteCoefficientBrownianGenerator",
+      "source_sha256": "a865417aaf6da17767ada702c01a52953f09dcf9d8f817a312c7d591b3e1f506",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicCoefficientEvolutionFourier",
+      "source_sha256": "978686eb5ca52835ff08f75ce5ccdb4e9eaba98cb03df718b6cf021b469b175a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicFourierAverage",
+      "source_sha256": "65c4176d30d02c2ca44876384890f4bda4c1d03514cdc5f1173b5b4d0ed90c0e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicFourierSmoothing",
+      "source_sha256": "8f5284b1cc59ce088fcf935b49335532337d9647cefbdbd18c4a68e835fca6a7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicFourierApproximation",
+      "source_sha256": "46f0ba712e2cd01d9f905cb7a06a41b2b64cb724360e8841eeac1cae4da25558",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicFourierClosure",
+      "source_sha256": "7e977d69f50154774bb24ff00111f85375cb270c63ad603c97e316953d42a117",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialConvergenceFourier",
+      "source_sha256": "77b4b95d08d1671a5a528a415965314b7f1a9d3077ed3a476d6e013e08b87242",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialConvergencePeriodic",
+      "source_sha256": "52b76016363f307ec4e5416221a975da475cb235f9e1d14104af493d3ac13db7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicFourierScale",
+      "source_sha256": "e95d9a7d73b847d942a0c539d3fe0246a238fe16b464805c6ee49f6c1b019cc5",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicFourierPhysical",
+      "source_sha256": "a7c55112e124b1d38875a81774798dc65b1564c446a03544d9363f6cd07cc75f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PhysicalFourierTrialBounds",
+      "source_sha256": "1850a04b3eefd017150b931639c6c70c5bf539624d6615bbaf2737bdebf9eb5b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialConvergencePhysical",
+      "source_sha256": "28aa937d2af6e330a11a270b409b4ac2f74743aeea28a68af90621274ff3b908",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedTrialConvergencePhysicalTime",
+      "source_sha256": "7a10c59190fa9d5b70ba197e3037bd1441e5bac0922b198a34c3d4cba09ac0b3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.VolterraFourierRecovery",
+      "source_sha256": "6dec0650b657565779568b06dced46febc1bb68138104e31a4f113e57cdef600",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.VolterraFourierLimit",
+      "source_sha256": "ffa659cc5c2495fcb2c43cba0b45cada16d2644dca79f7423b6fe000bcb45884",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.VolterraFourierHierarchy",
+      "source_sha256": "8a5ce397033e99e8720cc99c23f044a292c7e96474119edeaadb3b318fca184b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicTangent",
+      "source_sha256": "3f8b822ba3962f45fd4215418a3fbea12f8cc0282ab9aee2cfd737f5b4aa2941",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicMarginal",
+      "source_sha256": "a8a12058e3170d37da3f4c0fcd89c4c0c672d1fa1ade8b82d6b9a2766728ca0a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicTangentPhysical",
+      "source_sha256": "d5cb27fbdd51c704289a780b69d082fd56aeee8815c296971452b264938cd353",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.VolterraFourierSource",
+      "source_sha256": "c82f2f40b446863b8bc36f2726386c9360a055814dbebd5560fdf18bbdfca09c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.VolterraFourierSourceHierarchy",
+      "source_sha256": "23a1d9d6472a115930f6eae44950941f80e424a17e96054158b6e4f3a9a4ba65",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedPeriodicMarginalPhysical",
+      "source_sha256": "1e699fcabf3383635a69c9d700211ce8575e898b7cc1cc774fd5bedf7883be1a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PhysicalFourierTrialMarginal",
+      "source_sha256": "e38531e1064a1467f74f70c4bdcc53a3eb66007ab0a2283019faaab647780fc2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PhysicalFourierTrialExternal",
+      "source_sha256": "b617c54a187223c07e3346bb677beef2b8a88c4be758d253a2ec2b5df61d4066",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PhysicalFourierTrialHierarchy",
+      "source_sha256": "fb6aec6f70d26ee9b7ffc22d49c6d2efc7a1a4add1c4aaeb25b709bdc8cce166",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedSourceSymmetry",
+      "source_sha256": "17679bb2508941f107aecb3dee556e145dcb980d9299beba1cedbc789d52db20",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionSymmetry",
+      "source_sha256": "11ae0a593bd295afadef917ea027661ffbd1e768f768f4e815e253fcbe340f63",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionSymmetryAverage",
+      "source_sha256": "e08cf65e2a8d0d91979d2f185bbf13651692e248a63b77b42808532474295963",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionSymmetryMarginal",
+      "source_sha256": "96c65e74b42240e8b094bc264e51a52de1fcf7b51d385d070b90989edf5fd4f6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionSymmetryEstimate",
+      "source_sha256": "9e6ce8e579c612df77677e7e1af06740a8d74a72b41ef31e8c9cea3f12e83115",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionPeriodic",
+      "source_sha256": "bfccb49a1aaa61fd1550ba32be968a84aa305619adcf9c59b0b2c3053d628294",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.ExternalInteractionPeriodicSource",
+      "source_sha256": "708525fa5e3b29ebbc99cf41551cb0bfbbcfef4de4ded6e76c8b73b7f1e6ff9d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.CompressionPeriodicTests",
+      "source_sha256": "e84cb7db7195c09e087fe48beb2f2fc95fbdf2cf3564cae28fa6277a82cdad07",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialSourcePermutationPropagation",
+      "source_sha256": "4af89643219b256c7995fc6c853dd95b415110aece9a8e6dff388b2da631a167",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InternalDriftFiniteBounds",
+      "source_sha256": "8b7e2de4630fce7b4262ef860da599be42186184ba202abd2ce65290a198dbfc",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.KernelPeriodMultiples",
+      "source_sha256": "e4c5e87b15096a623bd6edc02ccea5b4e49dcfc5f7353ea7a6b23d4455c0ae4a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicEnergyExhaustion",
+      "source_sha256": "97a40a526b9518484984d458737ee0d14bee7e77d7569c4095d4adce9fc4c34d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianEnergyPeriodizationExhaustion",
+      "source_sha256": "8dea335a5afee13fb225bdcd8ddcb22a534eec4938a82e7ddfad304a26051fa0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PhysicalGeneratorPeriodicity",
+      "source_sha256": "17518392c05e9c4f0d9057942451205a7c445770f24feff0a1d16ffcc77293fa",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WeightedTangentLimit",
+      "source_sha256": "85b08d841dc420015e2a446d3efc27771553d3401721c49d7e3536220a30d1ed",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParticleTangentLimitPairing",
+      "source_sha256": "7de694a9d1253f20690ca9ed457e08ec32f7fcba7d5964db1a125ee4e9b909bf",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParticleTangentLimitMarginal",
+      "source_sha256": "da3047b3b19a8f349dbbda9cb5f3b3c27006598c43965d0e056c9d45a74a6417",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialSourceMarginalConfiguration",
+      "source_sha256": "4f879b4424ccdd7e1a8c79b3cae6fd80a7d7a83f6fd8674fe9572fb5d64a2da7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianSourceInitialFlux",
+      "source_sha256": "711ef174436a717369b2aa6911d6d13bffeb7d2b39816cea70e976e5ab0dfbbf",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianSourceCoordinatePairing",
+      "source_sha256": "5fd075eb36462098ac818e5566480752a92d451fd9f9e0102e86cfbf73c4157b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialCurrentBrownianSource",
+      "source_sha256": "c7c0b4f42447e602f90e6b60bf6c362a9b3b5a009b8f503ef3e9cce9eb92cc07",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialSourceMarginalCurrent",
+      "source_sha256": "e5b827dc8dfce047c0b726bf3bfac8d6f23449c74b54d6192ff151f7495f357e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialSourceMarginalPrefix",
+      "source_sha256": "b54c2f26e2a2affafb3e36262032e5be4f9990871bb3e26b96f46817417e8444",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.InitialSourceMarginalRegularized",
+      "source_sha256": "83ddc58b4b5a312b9dd7a88039915f7fb9ec5a17eb32a03756829530dee9cae4",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionCalculus",
+      "source_sha256": "1f4f377695c92c1c2c2dcef6ee0914ef6d5c51318bfa2bed68c9031a2aaa8bb2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionBrownian",
+      "source_sha256": "4c5350e7adeba768b218a8073a5a1a2f13c22e84b8852be6482cf22d8080f2ba",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionSource",
+      "source_sha256": "51e04144a66e21d57af47961c3133c2db4fc61689dd887183adf5f4b1005defa",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionAverage",
+      "source_sha256": "6d294e26374591b05b92ff17e275afe4229d907f63cb7008efc7948003970cab",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionPhysical",
+      "source_sha256": "95da55b2e54ba6038043a8114bbd9958b99e4ef0b51d46d352f64ba4ab2a02b7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionLaw",
+      "source_sha256": "f0f362a0dbde8e21c479cb8823ba1389e45d80ffd23015a0b5fa8fc1af490261",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency",
+      "source_sha256": "6d5d8c70c7e55030980ed93edb59a58f9a723d5e6d9be6ecf941250b780503f2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianPeriodicHierarchyMarginals",
+      "source_sha256": "1810d18614dd2d74337bfff41e880b312985547cec8811a9b12a493be333ec8d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianPeriodicHierarchyReindex",
+      "source_sha256": "81f4adeaec8b3ef1b419152a2d243f175a9f545c9c93f71412eff38e6a47bf44",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionEnergy",
+      "source_sha256": "c39a1ff3f8aeeb286d7c6e2b8f861d1a9975b3e7c3886c1b47be84a5f1c3df35",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianPeriodicHierarchyRegularity",
+      "source_sha256": "7ee71fd5728c8f8ea0bef2ed2266afaef5d3a359942010f2be59178af4ec8521",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianPeriodicHierarchyRecovery",
+      "source_sha256": "1a81ca612335086fb7dd59df84ac0ae0be6a76b9006e70119ff270b7c31e92e0",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionGenerator",
+      "source_sha256": "756a35e3e2302f83c9184428ca27d0980fd54bc9bc0dc47347e006b2d2556370",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionGeneratorTime",
+      "source_sha256": "9a6833abaa41ef4ecfd1d6498b81c6fcf762bb49c60447387f7299f6e51edfa3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionDecomposition",
+      "source_sha256": "0a3b12f440d91b3ac6e79ebe0c868cf47ad186a67e655b715d4d1a0604f1fda7",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionEstimate",
+      "source_sha256": "4b07147491e3de270e72578d2cb667d25947fd3dc7f7dc9db903c3a3a6d39c0f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionTerminal",
+      "source_sha256": "380bf3ebd5ecaba50840fbf293d922a4e9768b8a0468b8efdc140efe1094f54e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicMarginalCoefficientEvolutionHierarchy",
+      "source_sha256": "db2e764d8048d00e602af082eea5b7345c7bf4e6b2571f6dd25390330d76830a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianPeriodicHierarchyEstimate",
+      "source_sha256": "311ddf93ad4640a2d6810e8e6b782795753fd21da20a6959f190f76b1c30e6e8",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianPeriodicHierarchyProfile",
+      "source_sha256": "7469e8258519bcc2d21ee2a72f3d428d5310aa129725a85eff06147b9730c2ac",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianPeriodicHierarchyInitial",
+      "source_sha256": "d08fb2607fcce8c34f6064c8e34c6b836bc89302758f977bfaa2adf0e47f2455",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PeriodicParticleTangentLimitIdentification",
+      "source_sha256": "7595dd8dd95ba8d45478c48eb14f2a1ea6e4ed2ecc494a5c9023601cc3f18d06",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianEnergyPeriodizationIdentification",
+      "source_sha256": "4f9cbd99afe9ee3d15f8a457d1be21d282313ddd9dbeaf291dfb28ec5d6e048b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianEnergyPeriodizationLimit",
+      "source_sha256": "7f1b34d4384e98ea34e74e83f1621be8728d8dcf3619999e9b999b54da46abd2",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianEnergyPeriodizationPeriodic",
+      "source_sha256": "551bc87e1ee04f36553295273ebaa1ce1cb9b1b1e9007b5f4ddedd6a0db69b2b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.BrownianEnergyPeriodization",
+      "source_sha256": "2d3df415ee0b3e38f904701563381f9ffa7e8f9d7997b9e010c5bf470c13300d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedBrownianSourceCoordinates",
+      "source_sha256": "1ff8ebc2c2cc8ac3a36ccc2a11bcfab256630eea9e097415ee183e89450aebba",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedBrownianSourceData",
+      "source_sha256": "62a1b13ab0b17b0a1d0866396c8ede14bf99176de0efce0f281268d39e375f58",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedBrownianSourceBound",
+      "source_sha256": "fc156a3bcd502d62ae046affc7ea2d598cb864405d84096a1d325bb4dd8aad73",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportEnergy",
+      "source_sha256": "6427d598ef702a8d6a6f35836378f1259c11245ea7cae4456e9f8371451ac659",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportContinuity",
+      "source_sha256": "41a58fd8eef09e57b507768508c25d6d2a64eac06a66dd20b2309b041ddc78b6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionTests",
+      "source_sha256": "f3c9ab332ab6601d325e76b640e72dea5079f9a6c0b0efac0fba370f7ec27dc6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionEquation",
+      "source_sha256": "1fe7aa2d157a689f0f1bf1812c5f7db699d1935c3154d66e5d0ea38b93c3da65",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughCommonLabelLift",
+      "source_sha256": "b8cc0bdd993c1b42bcefc2609169f355e6db381f7e5ac01b16419fbe67012155",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianIntervalRestriction",
+      "source_sha256": "1d45916a9cd846fe8958d80d3c4bbe234e3869d71b5bb6e8e56c84638d9c5842",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeWeak",
+      "source_sha256": "c1e1ee9a8f6aa50e64c4a9f3c6cd5b4bf268899bd98f995e95191d834c5a8322",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughFiniteActionInterface",
+      "source_sha256": "be652b80c65278a75c4317b48fa470c147021db53d13ea223f63060bbc56ca1e",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceBrownianPairing",
+      "source_sha256": "7fdebfd3ca1aadac330243fdc51cff91a54a08eba3b5c72c1c767f70b030507a",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchBrownianSource",
+      "source_sha256": "184b7c0a45c5784ef2d510fcef487057d6fcf964d0609ad0768c245f0553835c",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchBrownianLaw",
+      "source_sha256": "e6ea100014f7d1909883cb8510a6dbe49c3a1e2aed8bceb82b15741e38870d8d",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchContinuity",
+      "source_sha256": "90bd45ff715696c690690839e05e7e65b4199c68f51791db40b55f94bf3af641",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchMarginalSourceAction",
+      "source_sha256": "6959542132b6954718a07dd6337fa2c236c4bd23351f70bc99fe24487b7fb7e3",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchMarginalSource",
+      "source_sha256": "0335025b93f0040adb43250b390bc1644d3090d3e36cd130367c465f6cb34f4b",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchMarginalSourceContinuity",
+      "source_sha256": "d5ac7a4c38adcf5cad47d8d65a335338c017bd9f93767f6c3453aebe571a05c4",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchMetricIdentification",
+      "source_sha256": "7794fb74d636bf7acee1660b99222da5c5997f2be78da8bc92e27036f86a349f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchCommonLabel",
+      "source_sha256": "8c2ebd458d5357aaf4e3f87c60324d67ada48659de85fa003a3f919448366d78",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RegularizedBrownianSourceSwitch",
+      "source_sha256": "137cee7d49a43897bd8bb2c283a9d04c8932ba66cf18a377348822b4581485a6",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchIntervalEnergy",
+      "source_sha256": "17aee34fc4a6a4de296d675fea5422909beb6700218fdb6af7e984f555e4b680",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchLengthFromAction",
+      "source_sha256": "6344667a4025f1a6c6a10e5a686c317ef501d5a90e4b04739b38534c01b6a303",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.WassersteinEndpointConstants",
+      "source_sha256": "688b955cdefb91b51350c9369c6d8930e67c72c85d415890120e1b67e6b2b51f",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.PrescribedSwitchEndpoint",
+      "source_sha256": "1db7c6475c1cb9f997ef409e1e21dc688820492b82e566fa67cd4ea74721feb1",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.MainFiniteActionReduction",
+      "source_sha256": "15012fa5a38c74f4c2d602ddc7d8535a6c917894f1cbdcb93915df1db7e83943",
+      "compile_exit_code": 0,
+      "cached": true,
+      "compile_seconds": 0.0,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeActionIdentification",
+      "source_sha256": "cbd99659d32b8efd6e15d7becdd21ad4b546f4b5150a8277f376a82afaedba5b",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.325,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeActionMoments",
+      "source_sha256": "8b850d74026a60f9fbdcb5645d0fbbd66d174e306f4023f4751c143be7c2cac9",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.574,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSpaceTimePairing",
+      "source_sha256": "eb541a0d1886d0c44a6fdc639c0dad83aa45f61e2e40fc7bbb4597b87a9991ca",
+      "compile_exit_code": 0,
+      "compile_seconds": 3.417,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeActionCurve",
+      "source_sha256": "ab03de0b20c1b735ea3ec942ef67c0dba77b1c3bc737272c30d2c2bf14baf46b",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.432,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportTimeEndpoint",
+      "source_sha256": "d87d39ff504177da4da676e6d39fe2d9b47d69dfcab9daecdd43394827634dab",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.33,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughCommonLabelTimeEndpoint",
+      "source_sha256": "2b87d431da7fd58433ed6cf95afbf3b9278b5516248b5d526a26ef37ce723d3c",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.264,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSpaceTimeEquation",
+      "source_sha256": "6130c44bb1b4061779902ed1fa640b5500031eedc14752819936dfd3715c645b",
+      "compile_exit_code": 0,
+      "compile_seconds": 3.373,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeActionCurveEnergy",
+      "source_sha256": "15f978b2c1f00f97e2235a9d328109ae7baf1e59f7977b1b22d2686c6b425638",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.628,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughUniformActionData",
+      "source_sha256": "4261b7c8c6c048c287842aedd48ef7676f714bcbff205ed34b021d63096e28de",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.338,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianRegularizedTransport",
+      "source_sha256": "e2a0e4d5ea41709dd8f9f6f5f641395ad06a0d194a886c30244196da25bc2df9",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.628,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughFiniteActionEndpoint",
+      "source_sha256": "865d6c3ef0aa8277f4428f8b58e16797f57ca93b84d1823c0c6caebb911b2cc7",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.825,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughUniformRegularizedTransport",
+      "source_sha256": "b8465cfbef750ae10b002bf12dd9f645d20b48a454e766866d66e2fc129d75a0",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.218,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.RoughFiniteAction",
+      "source_sha256": "60dd944156c11cf3ecd38c1963538c15f8a19139e96dad5f5097dce163aad68b",
+      "compile_exit_code": 0,
+      "compile_seconds": 3.478,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein.Main",
+      "source_sha256": "cdb058def9a42f32737c9c637ef91a5eff239867f5fa56b7c5788d8e4160ce7f",
+      "compile_exit_code": 0,
+      "compile_seconds": 4.557,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    },
+    {
+      "module": "SharpWasserstein",
+      "source_sha256": "23ea2a1b58a8e58931fc52a3601c02f1b715c5834d4e117213feca29526fa03f",
+      "compile_exit_code": 0,
+      "compile_seconds": 2.06,
+      "replay_exit_code": 0,
+      "replay_mode": "sequential LeanChecker.replayFromImports"
+    }
+  ]
+}

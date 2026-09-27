@@ -1,0 +1,52 @@
+Missing Mathlib modules: 50
+[1/50] Compiling Mathlib.Algebra.Order.Floor.Extended
+[2/50] Compiling Mathlib.Data.Int.Log
+[3/50] Compiling Mathlib.Analysis.SpecialFunctions.Log.Base
+[4/50] Compiling Mathlib.Data.Set.FiniteExhaustion
+[5/50] Compiling Mathlib.LinearAlgebra.SesquilinearForm.Star
+[6/50] Compiling Mathlib.MeasureTheory.Constructions.ClosedCompactCylinders
+[7/50] Compiling Mathlib.MeasureTheory.Constructions.Projective
+[8/50] Compiling Mathlib.Data.Finset.Pairwise
+[9/50] Compiling Mathlib.Order.Partition.Finpartition
+[10/50] Compiling Mathlib.MeasureTheory.SetSemiring
+[11/50] Compiling Mathlib.MeasureTheory.Measure.AddContent
+[12/50] Compiling Mathlib.MeasureTheory.SetAlgebra
+[13/50] Compiling Mathlib.MeasureTheory.Constructions.ProjectiveFamilyContent
+[14/50] Compiling Mathlib.Algebra.Order.Field.Pointwise
+[15/50] Compiling Mathlib.Analysis.Normed.Module.Ball.RadialEquiv
+[16/50] Compiling Mathlib.MeasureTheory.Constructions.HaarToSphere
+[17/50] Compiling Mathlib.MeasureTheory.Integral.Gamma
+[18/50] Compiling Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
+[19/50] Compiling Mathlib.MeasureTheory.OuterMeasure.OfAddContent
+[20/50] Compiling Mathlib.Order.CompletePartialOrder
+[21/50] Compiling Mathlib.Probability.Distributions.Gaussian.Multivariate
+[22/50] Compiling Mathlib.Probability.BrownianMotion.GaussianProjectiveFamily
+[23/50] Compiling Mathlib.Probability.Distributions.Gaussian.IsGaussianProcess.Def
+[24/50] Compiling Mathlib.Probability.Independence.Process.HasIndepIncrements.Basic
+[25/50] Compiling Mathlib.Probability.Distributions.Gaussian.HasGaussianLaw.Independence
+/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0/Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.lean:72:34: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Norm (StrongDual ℝ (E i) →L[ℝ] StrongDual ℝ (E i) →L[ℝ] ℝ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0/Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.lean:121:29: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Norm (StrongDual ℝ E →L[ℝ] StrongDual ℝ E →L[ℝ] ℝ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0/Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.lean:121:36: error(lean.synthInstanceFailed): failed to synthesize instance of type class
+  Norm (StrongDual ℝ F →L[ℝ] StrongDual ℝ F →L[ℝ] ℝ)
+
+Hint: Type class instance resolution failures can be inspected with the `set_option trace.Meta.synthInstance true` command.
+Traceback (most recent call last):
+  File "/Users/tudou/Desktop/research/lean/sharp_wasserstein/scripts/bootstrap_mathlib.py", line 175, in <module>
+    main()
+    ~~~~^^
+  File "/Users/tudou/Desktop/research/lean/sharp_wasserstein/scripts/bootstrap_mathlib.py", line 171, in main
+    run(modules, dry_run=False)
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tudou/Desktop/research/lean/sharp_wasserstein/scripts/bootstrap_mathlib.py", line 130, in run
+    subprocess.run(args, cwd=ROOT, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/Library/Frameworks/Python.framework/Versions/3.14/bin/python3', '/Users/tudou/Desktop/research/lean/sharp_wasserstein/lean_local.py', '-R', '/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0', '-o', '/Users/tudou/Desktop/research/lean/sharp_wasserstein/.lake/build/lib/lean/Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.olean', '/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0/Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.lean']' returned non-zero exit status 1.

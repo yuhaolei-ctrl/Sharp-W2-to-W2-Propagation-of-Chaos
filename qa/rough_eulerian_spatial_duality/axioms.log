@@ -1,0 +1,67 @@
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeKernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeKernel_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeKernel_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeKernel_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeKernel_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeKernel_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeDensity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeFlux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeDensity_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeDensity_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeFlux_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeFlux_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeFloorVelocity_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.spaceTimeFloorVelocity_regular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.smoothTestFunction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.smoothTestFunction_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.smoothTestFunction_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.smoothTestFunction_compact' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.smoothTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.smoothTest_fderiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.smoothTest_gradient_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.convolvedLaw_test_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.labelFlux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.label_mollifier_smul_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.label_mollifier_mul_joint_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.label_flux_pairing_joint_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianSmoothing.labelFlux_test_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

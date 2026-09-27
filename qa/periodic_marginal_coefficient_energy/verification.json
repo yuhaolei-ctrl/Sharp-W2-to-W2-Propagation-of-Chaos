@@ -1,0 +1,24 @@
+{
+  "modules": [
+    {
+      "module": "PeriodicMarginalCoefficientEvolutionConsistency",
+      "source_sha256": "6d5d8c70c7e55030980ed93edb59a58f9a723d5e6d9be6ecf941250b780503f2",
+      "declarations": 7,
+      "kernel_exit": 0
+    },
+    {
+      "module": "PeriodicMarginalCoefficientEvolutionEnergy",
+      "source_sha256": "c39a1ff3f8aeeb286d7c6e2b8f861d1a9975b3e7c3886c1b47be84a5f1c3df35",
+      "declarations": 5,
+      "kernel_exit": 0
+    }
+  ],
+  "declarations": 12,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_exit": 0,
+  "lean_toolchain": "leanprover/lean4:v4.32.0"
+}

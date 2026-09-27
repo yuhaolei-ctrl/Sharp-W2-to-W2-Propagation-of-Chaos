@@ -1,0 +1,21 @@
+'SharpWasserstein.PhysicalFourierTrialExternal.integral_external_trial_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PhysicalFourierTrialHierarchy.finite_hierarchy_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PhysicalFourierTrialHierarchy.finite_terminal_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_eq_scaled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_lipschitz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_fderiv_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

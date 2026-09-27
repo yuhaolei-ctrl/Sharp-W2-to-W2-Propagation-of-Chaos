@@ -1,0 +1,38 @@
+'SharpWasserstein.WeakEvolution.uniform_generator_expectation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeakEvolution.equation_bounded_configuration_interval' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeakEvolution.uniform_weak_step_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BackwardEuler.uniform_backward_derivative_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BackwardEuler.integral_step_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeakEvolution.uniform_backward_step_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeakEvolution.backward_telescope_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.NoiseAverage.allDerivativesBounded_cos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.NoiseAverage.allDerivativesBounded_sin' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.NoiseAverage.allDerivativesBounded_comp_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.NoiseAverage.measure_eq_of_integral_smooth_bounded_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeakEvolution.integral_eq_of_same_initial_bounded_derivatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeakEvolution.eq_of_same_initial_autonomous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.NoiseAverage.AllDerivativesBounded.comp_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.NoiseAverage.AllDerivativesBounded.linear_comp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.NoiseAverage.AllDerivativesBounded.sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.particleDrift_allDerivativesBounded' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianParticle.eq_globalLaw_of_weakEvolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

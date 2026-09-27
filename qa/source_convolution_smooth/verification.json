@@ -1,0 +1,104 @@
+{
+  "scope": "Two source-convolution spatial smoothness modules only; not a complete manuscript proof",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-17T23:21:49.209427+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/PeriodicSourceConvolutionJointBounds.lean",
+      "sha256": "95add022a55e14e75ab8f01c31846f22d25c24666b21ba67f1d8c5a5eb96ac51",
+      "declaration_count": 6,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/PeriodicSourceConvolutionSmooth.lean",
+      "sha256": "b22cc1ec8be74b8aa09a13cf86e3be7c3ff5e5f41592bdacebbb4036e306599d",
+      "declaration_count": 9,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "declarations": {
+    "SharpWasserstein.PeriodicSourceConvolution.joint_fderiv_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.joint_fderiv_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.joint_euclideanKernelTest_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.joint_coordinateDerivative_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.joint_generator_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.joint_euclideanGenerator_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.action_smooth_param": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.convolvedSource_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.convolvedSource_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.convolvedSource_allDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.convolvedSourceTimeDerivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.convolvedSourceTimeDerivative_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.convolvedSourceTimeDerivative_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.convolvedSourceTimeDerivative_allDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSourceConvolution.convolvedSourceDerivativeBCF_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true
+}

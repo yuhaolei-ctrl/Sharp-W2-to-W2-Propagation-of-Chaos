@@ -1,0 +1,9 @@
+# Constructive rough finite-action theorem
+
+`SharpWasserstein.RoughEulerianTransport.uniform_finite_action_transport` proves the previously stated `UniformFiniteActionTransport` proposition. For every configuration dimension and particle count it bounds the actual unnormalized squared Wasserstein transport cost by `ENNReal.ofReal (T^2 * E)`.
+
+The exact assumptions are nonnegative time T and energy E; a narrowly continuous probability curve satisfying the original integrated compact-test source equation; a genuine common-label realization whose full Euclidean mean-square displacement tends to zero at every time; actual finite second moments (the stronger interface assumes all times, while the core result needs only the two endpoints); and the original uniform compact-test tangent objective bound by E. The common-label realization is separate law data and contains no finite-action estimate. The application to the manuscript's actual switch curve is proved elsewhere.
+
+The proof first constructs the joint measurable L2 source field, pushes it through the actual one-Lipschitz sine compression, applies actual compact time/space convolution with a stationary Gaussian floor, and uses the proved smooth-flow finite-action estimate. Time scale T/(8(n+1)), space scale 1/(n+1), floor proportion 1/(n+1), and interior endpoints 2τ and T−2τ give actual endpoint W2 convergence at fixed compression. A second graph-coupling W2 limit removes compression radius n+1. Zero time is handled directly. The exact coefficient is one, with no dimension-dependent energy factor.
+
+Run `python3 qa/rough_finite_action/verify.py` from the project root. The report records clean compilation, independent kernel replay, source/olean hashes, and the dependencies of every declaration on the standard Lean axioms. This scoped proof is complete; the parent task owns full-main assembly and aggregate verification.

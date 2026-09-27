@@ -1,0 +1,10 @@
+name = "sharp_wasserstein"
+version = "0.1.0"
+defaultTargets = ["SharpWasserstein"]
+
+[[require]]
+name = "mathlib"
+path = "../../rethlas/agents/generation/tmp/mathlib4-4.32.0"
+
+[[lean_lib]]
+name = "SharpWasserstein"

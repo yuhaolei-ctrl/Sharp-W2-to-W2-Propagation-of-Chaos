@@ -1,0 +1,282 @@
+{
+  "scope": "Actual time-dependent weak Fokker--Planck uniqueness by constructed Gaussian backward Euler tests with uniform spatial derivative bounds. All uniform bounds for the prescribed reference drift are derived from the manuscript kernel through actual probability averaging. The supplied weak reference law is identified with the Brownian flow, and its tensor curve satisfies the full weak evolution at every particle level. Tangent evolution and the main propagation theorem remain open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The 11 listed project source modules, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 42,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "ProbabilityParameterIntegral": {
+      "source_sha256": "1d217452641a7ddedbe6e6ffd32232d7ff363c586bad4bafd99023ea133f73c9",
+      "olean_sha256": "43304e8301dbd43db7eeb0616276cf191c57a9fd9952628d724b91bcef6134bd",
+      "independent_kernel_replay": true
+    },
+    "TimeGeneratorUniform": {
+      "source_sha256": "bc1060311be3e7fb88842d29dc25cf2c74bd3ecb7326a93231958b0894b60273",
+      "olean_sha256": "1563325f37e528bb15a39fbdb9f895080182f9e1e4ea1c6cb9865e10e7fe18c3",
+      "independent_kernel_replay": true
+    },
+    "WeakTimeEulerConsistency": {
+      "source_sha256": "8e649b17799d5200ea3491eb7e58a980d804cfc911af90033f553be6a28a07f5",
+      "olean_sha256": "0677204cdea7ddeba585b5aefb2cc8b91cd05bc8f35cdc4a62a0515d74013d8b",
+      "independent_kernel_replay": true
+    },
+    "GaussianTimeBackward": {
+      "source_sha256": "06be0268dcbdcacc100597cb26ef8f1e38c8212d242a683d59113470bd726d00",
+      "olean_sha256": "e424fe16c532646f732c37e779a708643e240aaab51d1258bc2e914a67ead7a1",
+      "independent_kernel_replay": true
+    },
+    "WeakTimeBackwardStep": {
+      "source_sha256": "ca3773328ff08019b56fb11b744b12ee6c3cca580870e5ab0b40b1ea7e3de075",
+      "olean_sha256": "beaf5996581c292a7be7f2ee0ebe7e88979a92f509c510f27898c1ba12343d93",
+      "independent_kernel_replay": true
+    },
+    "WeakTimeBackwardTelescope": {
+      "source_sha256": "89ebb4e95ad25b57bb39d2a6c502fc7de18dad11ab41a8c2110f1ed7ced892d9",
+      "olean_sha256": "74af30ec242c63ed05cc601038e785e68d18814cce1a507418fa891e1cc036c4",
+      "independent_kernel_replay": true
+    },
+    "WeakTimeUniqueness": {
+      "source_sha256": "39871474538ebf6a24afedf0a70462cd3b0a742e7cbd083e4f5ae84620ece967",
+      "olean_sha256": "0d5a9779daa7ac6f931f7992e0fcdb6aad7b8f1c608eb271312e817f70ac283d",
+      "independent_kernel_replay": true
+    },
+    "UniformBoundedDerivatives": {
+      "source_sha256": "bc744eec8465405af21eda0a49aca67892707bca9fcd49b246e4a272841742e2",
+      "olean_sha256": "ec64ee80f20724b5c5e75d886b94ddaa829386c8ccd0ce68fa94708ea82f945e",
+      "independent_kernel_replay": true
+    },
+    "ReferenceDriftDerivatives": {
+      "source_sha256": "ad270f312168d4e6ababaab5812d9fef1c06b4ec80d58a9dbe972ed4b11e2aac",
+      "olean_sha256": "9a9201a55a1d0fd8b34e9c94bc2a033e7b6ee13ac31c4df1970ccf1e2ba113bb",
+      "independent_kernel_replay": true
+    },
+    "ReferenceWeakIdentification": {
+      "source_sha256": "a8585c899495e96dc1748283ed3a1f490598b50a70369f20cc1bddcb62883488",
+      "olean_sha256": "d70b1d99a95e992a20e32d1ceca753556a447f30b977ba36b6aa4a0479aa1d0f",
+      "independent_kernel_replay": true
+    },
+    "ReferenceTensorIdentification": {
+      "source_sha256": "a817dd966f62652d1d50fafecd486f2393e0379b179c50707469462daa304492",
+      "olean_sha256": "b598b4946795499cf6d2875ca33296b68ebd13d777fc21d087b3d6d76c537ed0",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.continuous_integral_parameter_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ProbabilityDriftVariation.variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ProbabilityDriftVariation.continuous_variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ProbabilityDriftVariation.uniform_variation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.generator_drift_difference_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.integral_generator_drift_difference_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.continuous_probabilityCurve_uniform_time_generators": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.uniform_time_generator_expectation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.equation_time_bounded_configuration_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.uniform_time_weak_step_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BackwardEuler.backwardTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BackwardEuler.norm_backwardTime_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BackwardEuler.smooth_backwardTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BackwardEuler.backwardTime_derivative_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BackwardEuler.uniform_backwardTime_derivative_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.uniform_time_backward_step_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.time_backward_telescope_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.integral_eq_of_same_initial_time_bounded_derivatives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.eq_of_same_initial_time_dependent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.UniformAllDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.UniformAllDerivativesBounded.at": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.UniformAllDerivativesBounded.fderiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.UniformAllDerivativesBounded.bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.UniformAllDerivativesBounded.lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.UniformAllDerivativesBounded.comp_linear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.UniformAllDerivativesBounded.linear_comp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.UniformAllDerivativesBounded.sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.norm_iteratedFDeriv_average_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.uniformAllDerivativesBounded_average": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.nonlinearDrift_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.nonlinearDrift_uniformAllDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.DecoupledFlow.liftDrift_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.DecoupledFlow.liftDrift_uniformAllDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.singleDrift_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.singleDrift_uniformAllDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.eq_of_same_initial_uniform_derivatives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.eq_law_of_weakEvolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.singleton_eq_law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.tensorLaw_one_eq_singletonLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.singletonLaw_map_coordinate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.law_tensor_eq_supplied": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.supplied_tensor_weakEvolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

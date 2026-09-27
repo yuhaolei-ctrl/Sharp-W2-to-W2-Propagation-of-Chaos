@@ -1,0 +1,5 @@
+ExternalInteractionEnergyLimit 0
+ExternalInteractionEnergyLimitWeighted 0
+ExternalInteractionEnergyLimitPotentials 0
+ExternalInteractionEnergyLimitEstimate 0
+PASS: 4 modules, 30 declarations, ['Classical.choice', 'Quot.sound', 'propext']

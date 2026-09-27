@@ -1,0 +1,112 @@
+{
+  "scope": "The concrete normalized positive periodic product kernels converge to evaluation at zero against every continuous periodic test. Actual drift commutator identity and weighted pointwise action bound are proved without an inverse minimum-density constant. Integrated commutator convergence, tangent commutators and the main propagation theorem are not asserted.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The 3 listed project source modules, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 16,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "WeightedIntegralSquare": {
+      "source_sha256": "e87548f73fef8f20f8c66c25ecee1bc0f519d962244eca8649a3dbddb9d29985",
+      "olean_sha256": "5137cbe1479763ecd7daa927496cc2cdae694276e9bfa36c5f44e9c660f1b760",
+      "independent_kernel_replay": true
+    },
+    "PeriodicDriftCommutator": {
+      "source_sha256": "9422b137d376089f714cd0701ee2cf341b23874302e63873f0f3408f4162e715",
+      "olean_sha256": "464456fad8cb93c21c0e6a2888871c92026323250f41087d72f5d335b1b83afa",
+      "independent_kernel_replay": true
+    },
+    "PeriodicKernelConcentration": {
+      "source_sha256": "81c4bfdcab1f547b98a3f6555961f16bd4c82ecfb698fe7d60dcb2836cb7c2d7",
+      "olean_sha256": "0a6344e5647f3407fe015dd0b1a30b9347fadb5a0aa7bd4d327a44c746c0ce1f",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.WeightedIntegralSquare.weighted_scalar_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedIntegralSquare.weighted_norm_integral_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.flux": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.commutator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.kernel_smul_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.commutator_eq_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.commutator_action_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.peak": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.peak_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.peak_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.cos_eq_one_iff_circle_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.peak_lt_at_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.peak_pow": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.peak_pow_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel_eq_peak_normalized": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.integral_kernel_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+import SharpWasserstein.TestGenerator
+#check LipschitzWith.add
+#check LipschitzWith.sum
+#check LipschitzWith.sum'
+#check LipschitzWith.finset_sum
+#check LipschitzWith.const_mul
+#check LipschitzWith.const_smul
+#check LipschitzWith.of_le
+#check norm_le_pi_norm
+#check norm_le_pi_norm'
+#check LipschitzWith.norm_sub_le
+#check MeasureTheory.norm_integral_le_integral_norm

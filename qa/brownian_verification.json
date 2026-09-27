@@ -1,0 +1,80 @@
+{
+  "status": "passed",
+  "kernel_modules": 30,
+  "source_build_report": "qa/brownian_build.json",
+  "core_declarations": [
+    {
+      "name": "ProbabilityTheory.gaussianLimit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ProbabilityTheory.isProjectiveLimit_gaussianLimit",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ProbabilityTheory.isPreBrownianReal_preBrownian",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ProbabilityTheory.continuous_brownian",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ProbabilityTheory.isBrownianReal_brownian",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ProbabilityTheory.hasLaw_brownian_eval",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ProbabilityTheory.hasLaw_brownian_sub",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ProbabilityTheory.hasIndepIncrements_brownian",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "ProbabilityTheory.wienerMeasure",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "complete_manuscript_proof": false
+}

@@ -1,0 +1,117 @@
+{
+  "scope": "Actual integrating-factor comparison and L1 error passage without differentiating limiting energy; actual marginal finite Fourier fluctuation identity; physical Fourier bounds/eigenvalues; generator periodicity. Manuscript main theorem remains open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 15,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "VolterraEnergyLimit": {
+      "source_sha256": "89c1f4e4979438adb1d5971e4294b97b5ed0461a0d665c88e53b5cbc00836c4f",
+      "olean_sha256": "29b273ca471ec16c789a7d95a934a784ea4d47707675fe0b5888252f01165e0d",
+      "independent_kernel_replay": true
+    },
+    "RegularizedTrialMarginal": {
+      "source_sha256": "10ba3803a9ef156318ae6bf503610d471543cce462474ba22bc433ba6b36dbe8",
+      "olean_sha256": "946bee5953755af154b96cc8fc1f038733b49f4f37467fd137d482828d58f65d",
+      "independent_kernel_replay": true
+    },
+    "PhysicalFourierTrialMarginal": {
+      "source_sha256": "e38531e1064a1467f74f70c4bdcc53a3eb66007ab0a2283019faaab647780fc2",
+      "olean_sha256": "cb35a90850de48c6bbcedeb1a802b255e22013999d8ac7fb07070c1f81c1e1b0",
+      "independent_kernel_replay": true
+    },
+    "PhysicalFourierTrialBounds": {
+      "source_sha256": "1850a04b3eefd017150b931639c6c70c5bf539624d6615bbaf2737bdebf9eb5b",
+      "olean_sha256": "f717bcd2bb7e2d8c08912c9bcba91c2b5b9f72e50607617f045613d1e6b720ff",
+      "independent_kernel_replay": true
+    },
+    "PhysicalGeneratorPeriodicity": {
+      "source_sha256": "17518392c05e9c4f0d9057942451205a7c445770f24feff0a1d16ffcc77293fa",
+      "olean_sha256": "d308b5f70870924a38edc415428f1be8cb7f94de5e2ba880682fb7fd06502f26",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.VolterraEnergyLimit.integrating_factor_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraEnergyLimit.weighted_error_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraEnergyLimit.limit_integrating_factor_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.lifted_energy_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.lifted_energy_gap_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalFourierTrialMarginal.trial_mem_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalFourierTrialMarginal.trial_representative_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalFourierTrialMarginal.trial_fluctuation_norm_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalFourierTrialMarginal.trial_fluctuation_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedPeriodicFourierPhysical.physicalPotential_allDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedPeriodicFourierPhysical.physicalAtom_laplacian": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedPeriodicFourierPhysical.physicalAtom_eigenvalue_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalGeneratorPeriodicity.directionDeriv_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalGeneratorPeriodicity.laplacian_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalGeneratorPeriodicity.generator_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

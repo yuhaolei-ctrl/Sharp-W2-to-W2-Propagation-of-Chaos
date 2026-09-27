@@ -1,0 +1,4 @@
+PhysicalFourierTrialExternal 0
+PhysicalFourierTrialHierarchy 0
+InternalDriftFiniteBounds 0
+PASS: 3 modules, 7 declarations, ['Classical.choice', 'Quot.sound', 'propext']

@@ -1,0 +1,20 @@
+'SharpWasserstein.RoughEulerianTransport.equivDrift_fderiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.equivDrift_fderiv_lipschitz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.EuclideanCompactWeakContinuity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.configurationVelocity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.configurationCurve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.EuclideanCompactWeakContinuity.toConfiguration' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.configuration_action_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RoughEulerianTransport.EuclideanCompactWeakContinuity.wassersteinSq_le_finiteAction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,25 @@
+'SharpWasserstein.WeightedPeriodicMarginal.liftTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.tangentLift_gradientVector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.tangentLift_periodic_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.periodicLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.periodicLift_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.representative_closed_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.source_liftTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.marginal_representative_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.marginal_energy_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.marginal_energy_increment_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginal.marginal_energy_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,56 @@
+{
+  "modules": [
+    {
+      "module": "SharpWasserstein.DerivativeCompositionThird",
+      "source_sha256": "05f6f723da700f283a390691b71a6d1e873eceb83b08b9335dd1070483122ae4",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.GaussianEulerBackwardThird",
+      "source_sha256": "d62c45ad3e609031f18fe6ee7f0cbf421776e2e9f8eabf49982150ded5b80eeb",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.BoundedDerivativeComposition",
+      "source_sha256": "4b5fa6d9698e4a531e1604bd9e61950dfd976e860bfd881ce65beea1a0c0b500",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.GaussianEulerBackwardSmooth",
+      "source_sha256": "930d49ade4613422d2bc22ebe7cd7987538b5c8aebeede2799e577ee88f85b5a",
+      "compile_exit_code": 0,
+      "kernel_exit_code": 0
+    }
+  ],
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "theorems": [
+    "SharpWasserstein.lipschitz_clm_comp_bounded",
+    "SharpWasserstein.compL_lipschitz_one",
+    "SharpWasserstein.compL_flip_lipschitz_one",
+    "SharpWasserstein.lipschitz_secondFDeriv_comp",
+    "SharpWasserstein.BackwardEuler.secondFDeriv_mean",
+    "SharpWasserstein.BackwardEuler.lipschitz_secondFDeriv_mean",
+    "SharpWasserstein.BackwardEuler.contDiff_three_step",
+    "SharpWasserstein.BackwardEuler.lipschitz_secondFDeriv_step",
+    "SharpWasserstein.BackwardEuler.lipschitz_secondFDeriv_backward",
+    "SharpWasserstein.BackwardEuler.contDiff_three_backward",
+    "SharpWasserstein.BackwardEuler.thirdBound_le",
+    "SharpWasserstein.BackwardEuler.thirdBound_le_exp",
+    "SharpWasserstein.NoiseAverage.allDerivativesBounded_const",
+    "SharpWasserstein.NoiseAverage.AllDerivativesBounded.add",
+    "SharpWasserstein.NoiseAverage.AllDerivativesBounded.const_smul",
+    "SharpWasserstein.NoiseAverage.AllDerivativesBounded.comp_of_fderiv",
+    "SharpWasserstein.BackwardEuler.allDerivativesBounded_fderiv_mean",
+    "SharpWasserstein.BackwardEuler.smooth_step",
+    "SharpWasserstein.BackwardEuler.smooth_backward"
+  ],
+  "scope": "Actual third derivative chain rule and Gaussian backward Euler recurrence with polynomial-exponential growth bound. Actual C-infinity and globally bounded iterated derivatives of every constructed backward Euler test. No backward PDE or uniqueness assumption."
+}

@@ -1,0 +1,22 @@
+{
+  "module": "SharpWasserstein.WeakEvolutionTimeTests",
+  "source_sha256": "13a4b1ba152ec5a9968c69f642e90cf7e871d3f9d07deb41ef63defaae159954",
+  "compile_exit_code": 0,
+  "kernel_exit_code": 0,
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorems": [
+    "SharpWasserstein.continuous_integral_varying_probability",
+    "SharpWasserstein.WeakEvolution.continuous_generator_expectation",
+    "SharpWasserstein.WeakEvolution.continuous_integral_bounded",
+    "SharpWasserstein.WeakEvolution.hasDerivAt_integral_bounded_smooth",
+    "SharpWasserstein.WeakEvolution.equation_timeFactor_bounded_smooth"
+  ],
+  "scope": "Actual generator expectation continuity, bounded observable continuity, positive-time derivative of bounded smooth expectations, and exact weak equation for separated time-dependent tests a(t)f(x). Uses genuine weak probability curve, actual Dirac-time product measure and integral continuity, spatial-temporal cutoff limit, and real FTC.",
+  "hypotheses": "Dynamics.WeakEvolution; jointly continuous globally bounded prescribed drift in Euclidean norm; bounded smooth tests with bounded gradient and Laplacian; time weight differentiable with derivative continuous on finite interval.",
+  "remaining_scope": "General time-dependent spatial tests and full backward duality/uniqueness are not asserted."
+}

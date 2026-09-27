@@ -1,0 +1,23 @@
+import SharpWasserstein.PeriodicTorusBridge
+#print axioms SharpWasserstein.PeriodicTorusBridge.toTorus
+#print axioms SharpWasserstein.PeriodicTorusBridge.haar
+#print axioms SharpWasserstein.PeriodicTorusBridge.unitCircle_volume_eq_haar
+#print axioms SharpWasserstein.PeriodicTorusBridge.torus_volume_eq_haar
+#print axioms SharpWasserstein.PeriodicTorusBridge.toTorus_openQuotient
+#print axioms SharpWasserstein.PeriodicTorusBridge.toTorus_continuous
+#print axioms SharpWasserstein.PeriodicTorusBridge.toTorus_surjective
+#print axioms SharpWasserstein.PeriodicTorusBridge.measurePreserving_toTorus
+#print axioms SharpWasserstein.PeriodicTorusBridge.integral_toTorus
+#print axioms SharpWasserstein.PeriodicTorusBridge.periodic_integer_shift
+#print axioms SharpWasserstein.PeriodicTorusBridge.periodic_eq_of_toTorus_eq
+#print axioms SharpWasserstein.PeriodicTorusBridge.lift
+#print axioms SharpWasserstein.PeriodicTorusBridge.lift_toTorus
+#print axioms SharpWasserstein.PeriodicTorusBridge.lift_continuous
+#print axioms SharpWasserstein.PeriodicTorusBridge.continuousLift
+#print axioms SharpWasserstein.PeriodicTorusBridge.complexLift
+#print axioms SharpWasserstein.PeriodicTorusBridge.complexLift_toTorus
+#print axioms SharpWasserstein.PeriodicTorusBridge.integral_lift
+#print axioms SharpWasserstein.PeriodicTorusBridge.mFourier_toTorus
+#print axioms SharpWasserstein.PeriodicTorusBridge.mFourier_toTorus_cosine_sine
+#print axioms SharpWasserstein.PeriodicTorusBridge.mFourierCoeff_lift
+#print axioms SharpWasserstein.PeriodicTorusBridge.mFourierCoeff_complexLift

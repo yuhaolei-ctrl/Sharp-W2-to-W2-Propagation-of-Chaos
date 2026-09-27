@@ -1,0 +1,24 @@
+import SharpWasserstein.GaussianBridgeCoupling
+
+#print axioms SharpWasserstein.gaussianHistoryStepEquiv_symm_label
+#print axioms SharpWasserstein.gaussianHistoryLaw_map_labels
+#print axioms SharpWasserstein.gaussianInitialHistory_map_labels
+#print axioms SharpWasserstein.gaussianHistory_label_integrable
+#print axioms SharpWasserstein.gaussianHistory_label_integral
+#print axioms SharpWasserstein.GaussianBridge.measurable_state
+#print axioms SharpWasserstein.GaussianBridge.measurable_ordinaryMean
+#print axioms SharpWasserstein.GaussianBridge.measurable_shiftedMean
+#print axioms SharpWasserstein.GaussianBridge.measurable_displacementSq
+#print axioms SharpWasserstein.GaussianBridge.displacementSq_nonneg
+#print axioms SharpWasserstein.GaussianBridge.drift_difference_square_le
+#print axioms SharpWasserstein.GaussianBridge.transition_cost_le
+#print axioms SharpWasserstein.GaussianBridge.measurable_transitionCost
+#print axioms SharpWasserstein.GaussianBridge.transitionCost_integrable
+#print axioms SharpWasserstein.GaussianBridge.integral_transitionCost_le
+#print axioms SharpWasserstein.GaussianBridge.history_entropy_le
+#print axioms SharpWasserstein.GaussianBridge.observation_entropy_le
+#print axioms SharpWasserstein.configurationFlatten_apply_coordinate
+#print axioms SharpWasserstein.GaussianBridge.displacementSq_flatten
+#print axioms SharpWasserstein.GaussianBridge.flattenedCoupling_displacement_integrable
+#print axioms SharpWasserstein.GaussianBridge.flattenedCoupling_displacement_integral
+#print axioms SharpWasserstein.GaussianBridge.observation_entropy_le_coupling

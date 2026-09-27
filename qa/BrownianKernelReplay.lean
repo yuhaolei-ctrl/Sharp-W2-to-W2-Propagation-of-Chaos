@@ -1,0 +1,7 @@
+import LeanChecker
+
+#eval do
+  Lean.initSearchPath (← Lean.findSysroot)
+  for name in ["BrownianMotion.Auxiliary.HasLaw", "BrownianMotion.Auxiliary.Topology", "BrownianMotion.Auxiliary.DenseCountable", "BrownianMotion.Continuity.LimitModification", "BrownianMotion.Auxiliary.FiniteInf", "BrownianMotion.Auxiliary.MeanInequalities", "BrownianMotion.Auxiliary.ENNReal", "BrownianMotion.Continuity.Chaining", "BrownianMotion.Auxiliary.Algebra", "BrownianMotion.Auxiliary.Metric", "BrownianMotion.Auxiliary.MeasureTheory", "BrownianMotion.Auxiliary.Nat", "BrownianMotion.Continuity.CoveringNumber", "BrownianMotion.Continuity.HasBoundedInternalCoveringNumber", "BrownianMotion.Continuity.IsKolmogorovProcess", "BrownianMotion.Continuity.KolmogorovChentsovInequality", "BrownianMotion.Gaussian.StochasticProcesses", "BrownianMotion.Continuity.KolmogorovChentsov", "BrownianMotion.Auxiliary.LinearAlgebra", "BrownianMotion.Auxiliary.ContinuousBilinForm", "BrownianMotion.Gaussian.CovMatrix", "BrownianMotion.Gaussian.GaussianProcess", "BrownianMotion.Gaussian.Moment", "BrownianMotion.Auxiliary.NNReal", "BrownianMotion.Gaussian.Gaussian", "KolmogorovExtension4.CompactSystem", "KolmogorovExtension4.RegularContent", "KolmogorovExtension4.KolmogorovExtension", "BrownianMotion.Gaussian.ProjectiveLimit", "BrownianMotion.Gaussian.BrownianMotion"] do
+    IO.println ("replaying " ++ name)
+    replayFromImports name.toName

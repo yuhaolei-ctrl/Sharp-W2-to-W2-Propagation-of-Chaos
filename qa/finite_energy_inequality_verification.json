@@ -1,0 +1,67 @@
+{
+  "scope": "Actual Brownian finite coefficient derivative identified with literal generator integrals; integrated drift residual absorption; exact actual residual energy gap; finite energy inequality retaining negative Hessian dissipation and isolating auxiliary supremum constants in the vanishing gap. Actual marginal hierarchy, rough transport, and manuscript theorem remain open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 7,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "FiniteCoefficientBrownianGenerator": {
+      "source_sha256": "a865417aaf6da17767ada702c01a52953f09dcf9d8f817a312c7d591b3e1f506",
+      "olean_sha256": "2485ee2d2087a9a72f31786605821e7c1c67a9701a9af937ae8ff6c693ba8262",
+      "independent_kernel_replay": true
+    },
+    "FiniteTrialEnergyEstimate": {
+      "source_sha256": "da77f9597e3ddefd0b5a1ea0299e664e6fcedccd76cf3d7f719b12cc7fa2df33",
+      "olean_sha256": "253809c89ef1c88e617c223405bc2b1a2ce9e77618fb1b8ae3a88533036ac775",
+      "independent_kernel_replay": true
+    },
+    "FiniteTrialEnergyInequality": {
+      "source_sha256": "e95f5a4bcee1f5dde41f4ea4f2b9edd3707a358b8af9724abe73e25a6d99d27e",
+      "olean_sha256": "b2d2fdfe0c60ce851343fca14d5373685b4ffad4ea9adae564ddc88387a39ed0",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.FiniteCoefficientEnergy.brownian_optimizedEnergy_generator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.integrable_memLp_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.integral_drift_residual_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.solution_residual_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.solution_residual_integral_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.jacobian_integral_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.solution_generator_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

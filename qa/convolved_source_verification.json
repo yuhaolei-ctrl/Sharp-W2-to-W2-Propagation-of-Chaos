@@ -1,0 +1,252 @@
+{
+  "scope": "Actual smooth source from arbitrary integrable vector measures, true Euclidean norm conversion, initial convolution test convergence, and actual periodic optimizer energy contraction. Time propagation and sharp marginal hierarchy remain open; MainTheorem is unproved.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 42,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "WeightedConvolutionSmooth": {
+      "source_sha256": "85b32cbc75831f9acf47e44c7ab9bd8fb89148c7e9dbb0a8c26304d5441a7570",
+      "olean_sha256": "7222138493e2842f010fc6c3e8ee495194d4c8b980ce38f8fdb9bf47328f55e0",
+      "independent_kernel_replay": true
+    },
+    "PeriodicFluxSmooth": {
+      "source_sha256": "67f03fc200e4ca795039a2ce92b5ee474a5927624c25ac17ec1970777cc2c9a8",
+      "olean_sha256": "c6751631729211544b762d1b901ec94886c8d8705d3b2f58e50d0041ff02be49",
+      "independent_kernel_replay": true
+    },
+    "PeriodicFluxEuclidean": {
+      "source_sha256": "ec422352ad7bb71f580515952188cda6e6b6aa0fe64235752a3a6e764cb45ace",
+      "olean_sha256": "792f10154092209483a29efce8cdff8acca2d2342500767ea0df7a6d92d37895",
+      "independent_kernel_replay": true
+    },
+    "PeriodicFluxOptimizer": {
+      "source_sha256": "304a25c05d982016b2f0b28ef228ed239ea9051815db97abba30b152eab02b38",
+      "olean_sha256": "cc6c945ef32a970f6139327d6452aa91eb75e0cd0e22031cd556b30cdc635bdf",
+      "independent_kernel_replay": true
+    },
+    "PeriodicConvolvedOptimizer": {
+      "source_sha256": "5db88d020e86c6392dca8ba2a888eaaacdf6efb1734944e8f4debb9791cfe399",
+      "olean_sha256": "cc52851c49a2627250717fd98c8fd5351528f8de7f9881b98b9abe58e222afba",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.WeightedConvolution.operatorAverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedConvolution.operatorIntegrand_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedConvolution.operatorIntegrand_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedConvolution.continuous_operatorAverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedConvolution.hasFDerivAt_operatorAverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedConvolution.fderiv_operatorAverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedConvolution.contDiff_nat_operatorAverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeightedConvolution.contDiff_infty_operatorAverage": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.flux_smooth_of_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.hasFDerivAt_flux_of_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fderiv_flux_of_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.allDerivativesBounded_flux_of_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxSource_smooth_of_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxSource_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.integral_fluxSource_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.integral_fluxSource_eq_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.allDerivativesBounded_fluxSource_of_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxVelocity_smooth_of_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.euclidean_flux_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.euclideanGradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.euclideanGradient_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.euclideanGradient_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.euclideanGradient_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.integral_fluxSource_euclidean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.integral_fluxSource_convolved_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.integral_fluxSource_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.integral_euclidean_fluxVelocity_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicFluxOptimizer.functional": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicFluxOptimizer.functional_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicFluxOptimizer.integrable_fluxAction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicFluxOptimizer.weighted_young": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicFluxOptimizer.optimizer_energy_le_fluxAction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.densityBCF": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.densityBCF_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.convolvedFlux_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.convolvedFluxLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.convolvedFluxLp_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.convolvedFunctional": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.convolvedFunctional_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.convolvedFunctional_trialGradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.convolved_optimizer_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

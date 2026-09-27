@@ -1,0 +1,92 @@
+{
+  "scope": "Actual prescribed mean-field reference weak evolution derived from the supplied limit weak evolution",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source modules, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 14,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "PrescribedReference": {
+      "source_sha256": "64a4dd6200a944672b43e455d44b041bcccdb5d026c9e6c979ce0a4665ddea2d",
+      "olean_sha256": "cd5ba94088f6fc7a7e3168217be1d6825617cfd78d4b7df017e3dc2bfe09a755",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.WeakEvolution.congr_nonnegDrift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.IsLimitEvolution.probabilityCurve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.IsLimitEvolution.continuous_probabilityCurve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.IsLimitEvolution.initial_integrable_positionSq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.singleDrift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.singleDrift_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.singleDrift_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.singleDrift_lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.law_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.law_weakEvolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.tensor_initial_weakEvolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.law_eq_decoupled": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PrescribedReference.law_tensor": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

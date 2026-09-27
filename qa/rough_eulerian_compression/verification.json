@@ -1,0 +1,626 @@
+{
+  "timestamp_utc": "2026-09-18T00:32:06.996745+00:00",
+  "scope": "Actual compact-test extension, smooth Euclidean compression, pushed flux/action contraction, continuity equation and endpoint transport convergence; not yet a rough Wasserstein length theorem.",
+  "modules": [
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionGeometry",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "source_sha256": "70d096d8d909923a7076e1e801ed299cc78017be1d4fbaf414192b83b5353aa9",
+      "olean_sha256": "395109686857448ac64f0c8b4abcc31697ab35ee5d12be697aa8084caf05e7f7",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionTests",
+      "source": "SharpWasserstein/RoughEulerianCompressionTests.lean",
+      "source_sha256": "f3c9ab332ab6601d325e76b640e72dea5079f9a6c0b0efac0fba370f7ec27dc6",
+      "olean_sha256": "c101f193e025f44e67d915e45fc2433fa5058721ebce694a0a001c26f0cdb885",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionPushforward",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "source_sha256": "65da253a528f180e804bfa4909d3a5be3403ab6d2c4ccd596c7d7668a4f7c831",
+      "olean_sha256": "0a1d29c0d91427514f6d100328df97973e89ba8b37cb312e3636cc6bf25b3a63",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionFlux",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "source_sha256": "7300c5e261681d6deec6fdd5cad97cd41aef266ab754fab8c7595c055494decc",
+      "olean_sha256": "9500c34a5053e7995810015258e201bfdc0f0dc49dc3123848ff4f0c4cfe2331",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionEndpoint",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "source_sha256": "44ea41085b3ba24d4e20d070d869b34a1917c227ccdce2b214a4818416ac89c3",
+      "olean_sha256": "7563f87281eb94a6d40265aa0c2a5342c7b7c61193bc4bcf63983fd12a898c39",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianCompressionEquation",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "source_sha256": "1fe7aa2d157a689f0f1bf1812c5f7db699d1935c3154d66e5d0ea38b93c3da65",
+      "olean_sha256": "3fc795e9fd1b764c879fb8620ab00902dcc5e921d1b48146cacb69424afa5a9e",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    }
+  ],
+  "declarations": [
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.euclideanCoordinates",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 13,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 17,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_apply",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 20,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_zero",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 23,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_contDiff",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 27,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_lipschitz",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 32,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_norm_le",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 47,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_range_bound",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 52,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_range_subset",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 70,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_fderiv_norm_le",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 76,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_fderiv_apply_norm_le",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 81,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_tendsto",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 87,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_displacement_bound",
+      "source": "SharpWasserstein/RoughEulerianCompressionGeometry.lean",
+      "line": 94,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.curveSpaceTimeMeasure_finite",
+      "source": "SharpWasserstein/RoughEulerianCompressionTests.lean",
+      "line": 16,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.bounded_gradient_joint_integrable",
+      "source": "SharpWasserstein/RoughEulerianCompressionTests.lean",
+      "line": 21,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.bounded_gradient_time_integrable",
+      "source": "SharpWasserstein/RoughEulerianCompressionTests.lean",
+      "line": 34,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.joint_pairing_eq_interval",
+      "source": "SharpWasserstein/RoughEulerianCompressionTests.lean",
+      "line": 44,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.bounded_smooth_continuity_equation",
+      "source": "SharpWasserstein/RoughEulerianCompressionTests.lean",
+      "line": 59,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.fluxPullback",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "line": 14,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.pushFunctional",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "line": 17,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.pushFunctional_norm_le",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "line": 20,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.pushedFlux",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "line": 27,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.pushedFlux_norm_le",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "line": 30,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.pushedFlux_inner",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "line": 35,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.pushedFlux_pairing",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "line": 42,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.pushedFlux_energy_le",
+      "source": "SharpWasserstein/RoughEulerianCompressionPushforward.lean",
+      "line": 63,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressionMap",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 17,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressionMap_measurable",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 19,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressionVector",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 23,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressionVector_memLp",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 26,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressionVectorLp",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 34,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressionVectorLp_ae",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 37,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedFlux",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 42,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedFlux_stronglyMeasurable",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 46,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedFlux_energy_le",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 50,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedFlux_pairing",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 63,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressionMap_compProd",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 75,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedMeasure_outside_ball",
+      "source": "SharpWasserstein/RoughEulerianCompressionFlux.lean",
+      "line": 82,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.configurationCompression",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "line": 16,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.configurationCompression_continuous",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "line": 19,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.configurationCompression_cost",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "line": 24,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.configurationCompression_cost_bound",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "line": 30,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.configurationCompression_cost_integrable",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "line": 36,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.configurationCompression_cost_tendsto",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "line": 48,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.configurationCompression_wassersteinSq_tendsto",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "line": 71,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_probability_tendsto",
+      "source": "SharpWasserstein/RoughEulerianCompressionEndpoint.lean",
+      "line": 88,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compression_gradient_pairing",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 17,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressed_test_bounds",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 26,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedFlux_localized_gradient",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 41,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedCurve",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 72,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedCurve_continuous",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 76,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressedCurve_jointMeasure",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 84,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressed_curve_joint_equation",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 96,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressed_curve_pairing_integrable",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 121,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressed_curve_continuity_equation",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 137,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianCompression.compressed_curve_action_le",
+      "source": "SharpWasserstein/RoughEulerianCompressionEquation.lean",
+      "line": 176,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "commands": {
+    "compile": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/<Module>.olean SharpWasserstein/<Module>.lean",
+    "kernel": "python3 lean_local.py --kernel SharpWasserstein.<Module>",
+    "axioms": "python3 lean_local.py qa/rough_eulerian_compression/Axioms.lean"
+  }
+}

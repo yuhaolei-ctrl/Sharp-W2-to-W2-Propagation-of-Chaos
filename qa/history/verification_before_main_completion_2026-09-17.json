@@ -1,0 +1,1709 @@
+{
+  "status": "passed_component_audit",
+  "complete_manuscript_proof": false,
+  "audit_scope": "Project component declarations only; MainTheorem remains an unproved definition",
+  "timestamp_utc": "2026-09-17T03:39:16.189207+00:00",
+  "audit_script_sha256": "e886f319d038d0a6eb396fabdd22f316ae1f329530a9c5a96e925414b7a112f9",
+  "provenance": {
+    "manuscript": {
+      "path": "/Users/tudou/Desktop/research/rethlas/manuscripts/sharp_wasserstein_bounded_kernel_open/sharp_wasserstein_propagation.tex",
+      "sha256": "856930e7153f9e752fd54efaef4d31f008f6281887f67bcd276b6024623ff0c8"
+    },
+    "lean_toolchain": {
+      "path": "lean-toolchain",
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e",
+      "contents": "leanprover/lean4:v4.32.0"
+    },
+    "lakefile": {
+      "path": "lakefile.toml",
+      "sha256": "4ad9294f30195d1cf36ade0521d8960f02ea04746425aac2a27933f38203de96"
+    }
+  },
+  "scanner_scope": {
+    "included": [
+      "SharpWasserstein.lean",
+      "SharpWasserstein/Assembly.lean",
+      "SharpWasserstein/CooperativeHierarchy.lean",
+      "SharpWasserstein/Dynamics.lean",
+      "SharpWasserstein/EntropyDirection.lean",
+      "SharpWasserstein/EntropyHierarchy.lean",
+      "SharpWasserstein/HierarchyAlgebra.lean",
+      "SharpWasserstein/Rates.lean",
+      "SharpWasserstein/RegularizationRates.lean",
+      "SharpWasserstein/TangentEnergy.lean",
+      "SharpWasserstein/Transport.lean",
+      "SharpWasserstein/TransportMoments.lean"
+    ],
+    "excluded": [
+      "Mathlib and external dependencies",
+      "qa generated Lean files",
+      "Python tooling"
+    ],
+    "method": "Token scan after removing nested /- -/ comments, -- comments, and string literals",
+    "forbidden_tokens": [
+      "sorry",
+      "admit",
+      "axiom",
+      "unsafe",
+      "native_decide"
+    ],
+    "limitations": "Simple project syntax only; this lexical scan is not a Lean parser. Kernel axiom inspection is a separate check."
+  },
+  "sources": [
+    {
+      "path": "SharpWasserstein.lean",
+      "sha256": "b8930f58eaa9a2f4ca7d235ada8393e5d9b07fa5be2eebbdef0552c22b75f996",
+      "declaration_counts": {}
+    },
+    {
+      "path": "SharpWasserstein/Assembly.lean",
+      "sha256": "b97a7a1865ce18839d19b4b3f613c2238019192405039089ea79518901378413",
+      "declaration_counts": {
+        "theorem": 4,
+        "def": 1
+      }
+    },
+    {
+      "path": "SharpWasserstein/CooperativeHierarchy.lean",
+      "sha256": "22ad461a632b6c7deaf37a485874df67805ab6891cb3d06dc9b3c09ac174e279",
+      "declaration_counts": {
+        "theorem": 9,
+        "def": 1
+      }
+    },
+    {
+      "path": "SharpWasserstein/Dynamics.lean",
+      "sha256": "fd209dcbcde483eb1b7336cee62d1f9e9741d7299033240591d6637b34f545b8",
+      "declaration_counts": {
+        "def": 13,
+        "structure": 3
+      }
+    },
+    {
+      "path": "SharpWasserstein/EntropyDirection.lean",
+      "sha256": "ccf13e07961aa0a17c0db8b6d54299bf7c5d320670828ded139ae7acdd5fe4cb",
+      "declaration_counts": {
+        "theorem": 4
+      }
+    },
+    {
+      "path": "SharpWasserstein/EntropyHierarchy.lean",
+      "sha256": "4f4e2631da3467a608699ae6643958e5b094038937fb2a6e3696a1b2f463cce2",
+      "declaration_counts": {
+        "def": 1,
+        "theorem": 13,
+        "structure": 1
+      }
+    },
+    {
+      "path": "SharpWasserstein/HierarchyAlgebra.lean",
+      "sha256": "bed3e76643fff3dd513de22c69694f6018d77805cede10d958e6da04b986f773",
+      "declaration_counts": {
+        "def": 2,
+        "theorem": 12
+      }
+    },
+    {
+      "path": "SharpWasserstein/Rates.lean",
+      "sha256": "a2b2802476ba460982d243a96dc9dd0f425fcbbd67e6c1d388e52626758ade0c",
+      "declaration_counts": {
+        "def": 2,
+        "theorem": 5
+      }
+    },
+    {
+      "path": "SharpWasserstein/RegularizationRates.lean",
+      "sha256": "734c9f3868a6d74b70fb199ee58ec54bc555b15c7ff1e310eb7337d5671e6730",
+      "declaration_counts": {
+        "def": 3,
+        "theorem": 8
+      }
+    },
+    {
+      "path": "SharpWasserstein/TangentEnergy.lean",
+      "sha256": "00cb58f7978343bec5b291d47b78c2c58784b08e91aea16a7657972cea1f9122",
+      "declaration_counts": {
+        "def": 4,
+        "theorem": 21
+      }
+    },
+    {
+      "path": "SharpWasserstein/Transport.lean",
+      "sha256": "340ad4e60b087d317c329278651282449af141cbe0090a676587d30e2b301586",
+      "declaration_counts": {
+        "abbrev": 2,
+        "def": 9,
+        "theorem": 15
+      }
+    },
+    {
+      "path": "SharpWasserstein/TransportMoments.lean",
+      "sha256": "0b26a5df9c2d433df6feebb2ef5cd448fd6dbf6492dad28f73f2bdfdd3aac3b6",
+      "declaration_counts": {
+        "theorem": 5
+      }
+    }
+  ],
+  "forbidden_token_hits": [],
+  "main_target": {
+    "name": "SharpWasserstein.MainTheorem",
+    "kind": "def",
+    "source": "SharpWasserstein/Dynamics.lean",
+    "line": 103,
+    "proof_status": "open proposition; no proof asserted"
+  },
+  "stale_or_missing_compiled_sources": [],
+  "build_manifest": {
+    "path": "qa/build_SharpWasserstein.json",
+    "sha256": "08c5e8e7faf4c1c15c8c98ca6561330d752b39d5c8e88e7c0dbe0c1f34b28858",
+    "status": "passed",
+    "all_source_hashes_match": true,
+    "all_modules_kernel_replayed": true
+  },
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)",
+  "axiom_inspection": {
+    "command": [
+      "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "/Users/tudou/Desktop/research/lean/sharp_wasserstein/lean_local.py",
+      "/Users/tudou/Desktop/research/lean/sharp_wasserstein/qa/AxiomAudit.lean"
+    ],
+    "exit_code": 0,
+    "generated_source": "qa/AxiomAudit.lean",
+    "source_sha256": "ef13ce7e145cc3d609de396ec47758963ab087df4f2760d03d089221f6a3612a",
+    "log": "qa/axiom_audit.log",
+    "allowed_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "unexpected_axioms": {}
+  },
+  "declaration_counts": {
+    "theorem": 96,
+    "def": 36,
+    "structure": 4,
+    "abbrev": 2
+  },
+  "audited_declaration_count": 138,
+  "source_file_count": 12,
+  "declarations": [
+    {
+      "name": "SharpWasserstein.propagated_source_energy",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Assembly.lean",
+      "line": 37,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.propagated_riesz_energy",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Assembly.lean",
+      "line": 71,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.endpointConstant",
+      "kind": "def",
+      "source": "SharpWasserstein/Assembly.lean",
+      "line": 105,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.endpointConstant_nonneg",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Assembly.lean",
+      "line": 108,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.metric_endpoint_assembly",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Assembly.lean",
+      "line": 118,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.scalar_le_zero_of_deriv_le_mul",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 20,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.scalar_comparison",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 35,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.finite_cooperative_comparison",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 55,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.quadraticProfile",
+      "kind": "def",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 96,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.quadraticProfile_initial",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 99,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.hasDerivAt_quadraticProfile",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 104,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.quadraticProfile_nonneg",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 114,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.quadraticProfile_supersolution",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 120,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.quadraticProfile_boundary",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 142,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.finite_cooperative_quadratic_bound",
+      "kind": "theorem",
+      "source": "SharpWasserstein/CooperativeHierarchy.lean",
+      "line": 153,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.coordinateVector",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 16,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.coordinateDerivative",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 19,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.laplacian",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 23,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.particleDrift",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 26,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.nonlinearDrift",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 30,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.generator",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 34,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SmoothCompactTest",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 38,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.WeakEvolution",
+      "kind": "structure",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 43,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.BoundedSmoothKernel",
+      "kind": "structure",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 60,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.KernelBounds",
+      "kind": "structure",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 69,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.IsParticleEvolution",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 75,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.singletonLaw",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 80,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.IsLimitEvolution",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 83,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.InitialHierarchy",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 88,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.PropagatedHierarchy",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 94,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.MainTheorem",
+      "kind": "def",
+      "source": "SharpWasserstein/Dynamics.lean",
+      "line": 103,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.reverse_absoluteContinuous_of_exponential_density",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyDirection.lean",
+      "line": 31,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.llr_reverse_of_exponential_density",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyDirection.lean",
+      "line": 47,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.integrable_llr_reverse_of_exponential_density",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyDirection.lean",
+      "line": 60,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.integral_llr_reverse_of_exponential_density",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyDirection.lean",
+      "line": 70,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropyIncrement",
+      "kind": "def",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 19,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropy_block_telescope",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 22,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.FiniteEntropyConditions",
+      "kind": "structure",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 42,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropy_increment_nonneg",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 48,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropy_level_nonneg",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 53,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropy_increment_block",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 61,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropy_increment_low",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 71,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropy_increment_high",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 82,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.external_coefficient_le_one",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 92,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.external_source_high_algebra",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 101,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.quadratic_profile_le_constant",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 118,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropy_external_source_bound",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 129,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.entropy_internal_source_bound",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 177,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.combine_source_energy_bounds",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 191,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.source_energy_from_entropy_profile",
+      "kind": "theorem",
+      "source": "SharpWasserstein/EntropyHierarchy.lean",
+      "line": 202,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.matrixAction",
+      "kind": "def",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 28,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.frobeniusSq",
+      "kind": "def",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 32,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.matrixAction_apply",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 36,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.symmetric_hessian_pairing",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 40,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.external_hessian_cancellation",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 48,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.external_lifted_remainder",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 56,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.matrixAction_norm_sq_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 64,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.frobeniusSq_nonneg",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 74,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.matrixAction_norm_sq_le_of_norm_sq_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 80,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.hessian_plus_remainder_norm_sq_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 88,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.block_norm_sq_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 102,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.block_norm_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 116,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.block_pairing_bound",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 129,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HierarchyAlgebra.block_pairing_sq_bound",
+      "kind": "theorem",
+      "source": "SharpWasserstein/HierarchyAlgebra.lean",
+      "line": 139,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.localRate",
+      "kind": "def",
+      "source": "SharpWasserstein/Rates.lean",
+      "line": 12,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.localRate_nonneg",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Rates.lean",
+      "line": 14,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.triangle_sq_bound",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Rates.lean",
+      "line": 18,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.gaussianModeCost",
+      "kind": "def",
+      "source": "SharpWasserstein/Rates.lean",
+      "line": 26,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.gaussianModeCost_rationalized",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Rates.lean",
+      "line": 28,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.gaussianModeCost_initial_upper",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Rates.lean",
+      "line": 38,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.gaussianModeCost_lower",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Rates.lean",
+      "line": 48,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.bridgeRate",
+      "kind": "def",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 25,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.bridgeCost",
+      "kind": "def",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 28,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.speedRate",
+      "kind": "def",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 31,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.integral_affine_square",
+      "kind": "theorem",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 34,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.intervalIntegrable_bridgeRate_sq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 59,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.integral_bridgeRate_sq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 67,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.intervalIntegrable_inv_sqrt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 80,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.intervalIntegrable_speedRate",
+      "kind": "theorem",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 85,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.integral_inv_sqrt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 90,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.integral_speedRate",
+      "kind": "theorem",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 98,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RegularizationRates.integral_speedRate_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/RegularizationRates.lean",
+      "line": 106,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.dualObjective",
+      "kind": "def",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 29,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.dualEnergy",
+      "kind": "def",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 32,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.rieszRepresentative",
+      "kind": "def",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 39,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.inner_rieszRepresentative",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 43,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.existsUnique_rieszRepresentative",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 48,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.dualObjective_eq_sub_sq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 58,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.dualObjective_isGreatest",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 67,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.dualEnergy_eq_norm_sq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 76,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.dualEnergy_eq_dual_norm_sq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 81,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.dualEnergy_nonneg",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 87,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.dualObjective_eq_energy_iff",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 92,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.continuous_of_bounded_variationalObjective",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 107,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.continuousTangentOfBound",
+      "kind": "def",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 127,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.continuousTangentOfBound_apply",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 132,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.existsUnique_riesz_of_bounded_variationalObjective",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 137,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.linear_variationalEnergy_eq_norm_sq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 144,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.projection_energy_increment",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 155,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.projection_energy_mono",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 163,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.projection_eq_of_consistent_pairings",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 169,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.consistent_energy_increment",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 177,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.consistent_energy_mono",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 184,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.closedSubspace_energy_increment",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 193,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.young_absorption",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 199,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.two_term_young_absorption",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 204,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.TangentEnergy.inner_young_absorption",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TangentEnergy.lean",
+      "line": 210,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.Position",
+      "kind": "abbrev",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 19,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.Configuration",
+      "kind": "abbrev",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 20,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.productCost",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 22,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.productCost_nonneg",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 25,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.productCost_self",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 29,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.productCost_symm",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 32,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.IsCoupling",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 41,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.transportCost",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 45,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.wassersteinSq",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 51,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.wassersteinSq_le_cost",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 55,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.HasSecondMoment",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 60,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.tensorLaw",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 63,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.restrictCoordinates",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 66,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.marginal",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 69,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.Exchangeable",
+      "kind": "def",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 72,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.measurable_restrictCoordinates",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 75,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.measurable_productCost",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 79,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.diagonal_isCoupling",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 84,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.wassersteinSq_self",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 95,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.coupling_swap",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 108,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.transportCost_swap",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 118,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.wassersteinSq_symm",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 125,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.productCost_restrict_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 136,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.coupling_marginal",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 149,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.transportCost_marginal_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 167,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.wassersteinSq_marginal_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/Transport.lean",
+      "line": 184,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.product_isCoupling",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TransportMoments.lean",
+      "line": 13,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.productCost_le_moments",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TransportMoments.lean",
+      "line": 18,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.measurable_secondMoment",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TransportMoments.lean",
+      "line": 27,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.transportCost_product_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TransportMoments.lean",
+      "line": 31,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.wassersteinSq_lt_top",
+      "kind": "theorem",
+      "source": "SharpWasserstein/TransportMoments.lean",
+      "line": 62,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+'SharpWasserstein.RegularizedTrialConvergence.synthesis' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.synthesis_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.synthesis_coefficients' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.coefficients_norm_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.exists_finite_recovery' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.energy_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.energy_error_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePeriodic.atomTest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePeriodic.frequency_image_mem_span' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePeriodic.iSup_trialRange_eq_atomSpan' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePeriodic.closed_trialRange_eq_atomClosure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.Atom' does not depend on any axioms
+'SharpWasserstein.RegularizedTrialConvergenceFourier.atomPotential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.atomPotential_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.atomPotential_gradient_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.atomVector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.frequency_gradient_mem_atomSpan' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.periodic_mem_atomClosure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.trial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.trial_eq_synthesis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergenceFourier.energy_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.energy_aestronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.integral_energy_error_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.integral_norm_energy_error_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.integral_norm_energy_error_tendsto_of_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.mem_exhaustion' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.exhaustion_monotone' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.eventually_mem_exhaustion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.penalty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.penalty_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.penalty_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergence.canonical_energy_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePhysical.atomVector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePhysical.periodic_mem_atomClosure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePhysical.trial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePhysical.trial_eq_synthesis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePhysical.energy_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePhysical.integral_norm_energy_error_tendsto_of_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.RegularizedTrialConvergencePhysical.canonical_integral_norm_energy_error_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

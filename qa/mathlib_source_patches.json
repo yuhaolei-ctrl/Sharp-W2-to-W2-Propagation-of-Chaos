@@ -1,0 +1,46 @@
+[
+  {
+    "module": "Mathlib.MeasureTheory.VectorMeasure.Decomposition.Jordan",
+    "upstream_source": "/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0/Mathlib/MeasureTheory/VectorMeasure/Decomposition/Jordan.lean",
+    "upstream_sha256": "b2cd9c8c514582073bc563eb6dba9c2514c9e88dd9aeb3356520100f705a1ade",
+    "local_source": "vendor/mathlib/Mathlib/MeasureTheory/VectorMeasure/Decomposition/Jordan.lean",
+    "local_sha256": "bb8bd2f6b350d14e830fa03ec9b5dc8abd08d30f1f83e4fce01a23008519104c",
+    "reason": "Pinned source fails to rewrite neg_smul at two negative real scalar proof steps. Supply explicit scalar and vector arguments instead; statements unchanged.",
+    "replacement_count": 2,
+    "old": "show r \u2022 s = -(-r \u2022 s) by rw [neg_smul, neg_neg]",
+    "new": "show r \u2022 s = -(-r \u2022 s) by simpa only [neg_neg] using (neg_smul (-r) s)"
+  },
+  {
+    "module": "Mathlib.MeasureTheory.VectorMeasure.Decomposition.Lebesgue",
+    "upstream_source": "/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0/Mathlib/MeasureTheory/VectorMeasure/Decomposition/Lebesgue.lean",
+    "upstream_sha256": "caf45a98949883b514acde6dbdf1ba372638cffe1bca376bbf2a8f9f7a012573",
+    "local_source": "vendor/mathlib/Mathlib/MeasureTheory/VectorMeasure/Decomposition/Lebesgue.lean",
+    "local_sha256": "f1f3bbb7b0778c30d8465ae0153612b84f77c5bed5a2919b809dd0dca9174d52",
+    "reason": "Pinned source fails scalar-action rewrites on signed measures. Prove the same equality pointwise on measurable sets, reducing it to scalar ring algebra; statements unchanged.",
+    "replacement_count": 1,
+    "old": "    rw [toSignedMeasure_smul, toSignedMeasure_smul, \u2190 neg_sub, \u2190 smul_sub, NNReal.smul_def,\n      \u2190 neg_smul, Real.coe_toNNReal _ (le_of_lt (neg_pos.mpr hr)), neg_neg]",
+    "new": "    rw [toSignedMeasure_smul, toSignedMeasure_smul]\n    ext a ha\n    simp only [_root_.sub_apply, _root_.smul_apply, NNReal.smul_def, smul_eq_mul,\n      Real.coe_toNNReal _ (le_of_lt (neg_pos.mpr hr))]\n    ring"
+  },
+  {
+    "module": "Mathlib.Probability.Distributions.Gaussian.HasGaussianLaw.Independence",
+    "upstream_source": "/Users/tudou/Desktop/research/rethlas/agents/generation/tmp/mathlib4-4.32.0/Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.lean",
+    "upstream_sha256": "cb56dfb7a40e2760685788f382f0cbf89b2d1e89221018b4d2ff4c7e932b0336",
+    "local_source": "vendor/mathlib/Mathlib/Probability/Distributions/Gaussian/HasGaussianLaw/Independence.lean",
+    "local_sha256": "2b2f68eb61cf427035b6dafef7fd9fb77e30c5f48b191efe4507bf78c5c0764a",
+    "reason": "Elaboration repair: explicitly cache the same inferred normed group/space instances inside two definition bodies; fixes nested-dual operator norm instance synthesis. No declaration statement or mathematical function changed.",
+    "replacements": [
+      {
+        "old": "  letI g : LinearMap.BilinForm \u211d (StrongDual \u211d (\u03a0 i, E i)) := LinearMap.mk\u2082 \u211d",
+        "new": "  letI (i : \u03b9) : NormedAddCommGroup (StrongDual \u211d (E i)) := inferInstance\n  letI (i : \u03b9) : NormedSpace \u211d (StrongDual \u211d (E i)) := inferInstance\n  letI (i : \u03b9) : NormedAddCommGroup (StrongDual \u211d (E i) \u2192L[\u211d] \u211d) := inferInstance\n  letI (i : \u03b9) : NormedSpace \u211d (StrongDual \u211d (E i) \u2192L[\u211d] \u211d) := inferInstance\n  letI g : LinearMap.BilinForm \u211d (StrongDual \u211d (\u03a0 i, E i)) := LinearMap.mk\u2082 \u211d",
+        "count": 1
+      },
+      {
+        "old": "  letI g : LinearMap.BilinForm \u211d (StrongDual \u211d (E \u00d7 F)) := LinearMap.mk\u2082 \u211d",
+        "new": "  letI : NormedAddCommGroup (StrongDual \u211d E) := inferInstance\n  letI : NormedSpace \u211d (StrongDual \u211d E) := inferInstance\n  letI : NormedAddCommGroup (StrongDual \u211d E \u2192L[\u211d] \u211d) := inferInstance\n  letI : NormedSpace \u211d (StrongDual \u211d E \u2192L[\u211d] \u211d) := inferInstance\n  letI : NormedAddCommGroup (StrongDual \u211d F) := inferInstance\n  letI : NormedSpace \u211d (StrongDual \u211d F) := inferInstance\n  letI : NormedAddCommGroup (StrongDual \u211d F \u2192L[\u211d] \u211d) := inferInstance\n  letI : NormedSpace \u211d (StrongDual \u211d F \u2192L[\u211d] \u211d) := inferInstance\n  letI g : LinearMap.BilinForm \u211d (StrongDual \u211d (E \u00d7 F)) := LinearMap.mk\u2082 \u211d",
+        "count": 1
+      }
+    ],
+    "verification_status": "compiled and independent LeanChecker replay passed",
+    "kernel_replay_exit_code": 0
+  }
+]

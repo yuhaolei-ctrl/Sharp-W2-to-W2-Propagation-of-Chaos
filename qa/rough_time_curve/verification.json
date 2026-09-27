@@ -1,0 +1,124 @@
+{
+  "scope": "Three modules prove actual averaged-law support, regularized quadratic moment and uniform bound, globally clamped probability curve and derived narrow continuity, exact shifted law-weighted finite-action contraction, and Euclidean-to-configuration second moment. No continuity equation or final manuscript theorem is asserted by this scope.",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-18T01:43:11.561317+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/RoughEulerianTimeActionMoments.lean",
+      "sha256": "8b850d74026a60f9fbdcb5645d0fbbd66d174e306f4023f4751c143be7c2cac9",
+      "declaration_count": 4,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RoughEulerianTimeActionCurve.lean",
+      "sha256": "ab03de0b20c1b735ea3ec942ef67c0dba77b1c3bc737272c30d2c2bf14baf46b",
+      "declaration_count": 9,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RoughEulerianTimeActionCurveEnergy.lean",
+      "sha256": "15f978b2c1f00f97e2235a9d328109ae7baf1e59f7977b1b22d2686c6b425638",
+      "declaration_count": 3,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "pinned_direct_foundations": {
+    "RoughEulerianTimeActionIdentification": "cbd99659d32b8efd6e15d7becdd21ad4b546f4b5150a8277f376a82afaedba5b",
+    "RoughEulerianTimeActionProduct": "d21e57f7d024bb971fba2be98ed28236b2832b844afdfd32a6fbcdfee91d03a8",
+    "RoughEulerianSmoothingLaw": "2c37a34dac585bc82ecd19579b0d888d4bd06c1056e6d6b8fb97d22fb8213766",
+    "WeakTestContinuity": "397313d25a19748affa4281db72e2d507812679ad891f17534faed2a66ef1d77",
+    "RoughEulerianTransportRegularCoordinates": "babee9ca60508eec345b93f07795f5248eb74bb033ef956a886b931f21470c26"
+  },
+  "declarations": {
+    "SharpWasserstein.RoughEulerianSmoothing.averagedKernel_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.density_eq_zero_of_norm_gt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.regularizedLaw_quadratic_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_integral_test_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.averagingTime": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.averagingTime_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.averagingTime_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.averagingTime_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_coe": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_action": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.compProd_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.hasSecondMoment_configuration_of_quadratic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

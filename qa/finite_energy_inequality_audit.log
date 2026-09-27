@@ -1,0 +1,4 @@
+FiniteCoefficientBrownianGenerator 0
+FiniteTrialEnergyEstimate 0
+FiniteTrialEnergyInequality 0
+PASS: 3 modules, 7 declarations, ['Classical.choice', 'Quot.sound', 'propext']

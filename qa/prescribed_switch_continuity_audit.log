@@ -1,0 +1,6 @@
+SwitchSourceBrownianPairing 0
+PrescribedSwitchBrownianSource 0
+PrescribedSwitchBrownianLaw 0
+SwitchCurveNarrow 0
+PrescribedSwitchContinuity 0
+PASS: 5 modules, 17 declarations, ['Classical.choice', 'Quot.sound', 'propext']

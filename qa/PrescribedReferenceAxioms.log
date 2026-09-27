@@ -1,0 +1,20 @@
+'SharpWasserstein.WeakEvolution.congr_nonnegDrift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.IsLimitEvolution.probabilityCurve' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.IsLimitEvolution.continuous_probabilityCurve' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.IsLimitEvolution.initial_integrable_positionSq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PrescribedReference.singleDrift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedReference.singleDrift_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedReference.singleDrift_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedReference.singleDrift_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedReference.law' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedReference.law_initial' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedReference.law_weakEvolution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedReference.tensor_initial_weakEvolution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PrescribedReference.law_eq_decoupled' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedReference.law_tensor' depends on axioms: [propext, Classical.choice, Quot.sound]

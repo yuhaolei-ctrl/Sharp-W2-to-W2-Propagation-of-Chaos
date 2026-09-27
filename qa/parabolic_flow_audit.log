@@ -1,0 +1,12 @@
+PeriodicDriftGradientBound 0
+PeriodicDriftResidual 0
+PeriodicJacobianLimit 0
+PeriodicCoefficientBounds 0
+PeriodicParabolicEnergy 0
+FlowInitialDerivativeLinear 0
+FlowInitialDerivativeRemainder 0
+FlowInitialDerivative 0
+FlowInitialDerivativeGlobal 0
+FlowInitialDerivativeSmooth 0
+PeriodicConvolutionWeak 0
+PASS: 11 modules, 82 declarations, ['Classical.choice', 'Quot.sound', 'propext']

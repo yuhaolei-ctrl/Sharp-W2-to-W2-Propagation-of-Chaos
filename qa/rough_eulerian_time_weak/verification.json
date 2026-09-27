@@ -1,0 +1,300 @@
+{
+  "timestamp_utc": "2026-09-18T01:19:04.613845+00:00",
+  "scope": "Genuine L1 primitive Fubini/integration by parts, normalized time kernel, differentiated original compact-test weak equation with actual joint Riesz flux; no completed smoothed law or rough transport theorem claimed.",
+  "modules": [
+    {
+      "module": "SharpWasserstein.RoughEulerianTimePrimitive",
+      "source": "SharpWasserstein/RoughEulerianTimePrimitive.lean",
+      "source_sha256": "004719659b36123156a4543913cf39d5a9b4292412cc4f450c748695a846db37",
+      "olean_sha256": "79b799492b68381efa4c0cc933d328c98b6e818f4eef1c0983a339f1e643161e",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeSmoothing",
+      "source": "SharpWasserstein/RoughEulerianTimeSmoothing.lean",
+      "source_sha256": "42233f7d05f839b034d98b9f8f945dcfa03f204c287c862129c9d2670cedea8e",
+      "olean_sha256": "a9f7f53bb1b57d4f09070a192f6764c2d50b74d69eb6c8614747fe88a6ee63d5",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeKernel",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "source_sha256": "18bd3705373463dc3fe4d322994eda60814401c47badd7735c400c2dd6e8f7ba",
+      "olean_sha256": "d1d92eb750b5be2edded69a31674e925a50cf45963a56e14d6a84a1a0d35384f",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTimeWeak",
+      "source": "SharpWasserstein/RoughEulerianTimeWeak.lean",
+      "source_sha256": "c1e1ee9a8f6aa50e64c4a9f3c6cd5b4bf268899bd98f995e95191d834c5a8322",
+      "olean_sha256": "f8f208aaaca1f56280bbd2d806f5a2045ddfcd26533339c0bda645e80187b277",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    }
+  ],
+  "declarations": [
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.integral_primitive_swap",
+      "source": "SharpWasserstein/RoughEulerianTimePrimitive.lean",
+      "line": 15,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.integral_derivative_mul_primitive",
+      "source": "SharpWasserstein/RoughEulerianTimePrimitive.lean",
+      "line": 52,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.integral_derivative_mul_weak_curve",
+      "source": "SharpWasserstein/RoughEulerianTimePrimitive.lean",
+      "line": 72,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeConvolution",
+      "source": "SharpWasserstein/RoughEulerianTimeSmoothing.lean",
+      "line": 12,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeConvolution_hasDerivAt",
+      "source": "SharpWasserstein/RoughEulerianTimeSmoothing.lean",
+      "line": 17,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeConvolution_derivative_eq_source",
+      "source": "SharpWasserstein/RoughEulerianTimeSmoothing.lean",
+      "line": 42,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeConvolution_hasDerivAt_source",
+      "source": "SharpWasserstein/RoughEulerianTimeSmoothing.lean",
+      "line": 59,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeBump",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 15,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 18,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_nonneg",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 20,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_smooth",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 23,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_compact",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 26,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_integrable",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 29,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_integral",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 32,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_neg",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 35,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_eq_zero",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 38,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_hasDerivAt",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 43,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_deriv_continuous",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 47,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_bounds",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 50,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_window_normalization",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 56,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.timeKernel_hasDerivAt_source",
+      "source": "SharpWasserstein/RoughEulerianTimeKernel.lean",
+      "line": 72,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.compactTestBCF",
+      "source": "SharpWasserstein/RoughEulerianTimeWeak.lean",
+      "line": 14,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.continuous_compact_test_pairing",
+      "source": "SharpWasserstein/RoughEulerianTimeWeak.lean",
+      "line": 20,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.compact_curve_timeKernel_hasDerivAt",
+      "source": "SharpWasserstein/RoughEulerianTimeWeak.lean",
+      "line": 25,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTime.compact_curve_timeKernel_hasDerivAt_flux",
+      "source": "SharpWasserstein/RoughEulerianTimeWeak.lean",
+      "line": 40,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "commands": {
+    "compile": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/<Module>.olean SharpWasserstein/<Module>.lean",
+    "kernel": "python3 lean_local.py --kernel SharpWasserstein.<Module>",
+    "axioms": "python3 lean_local.py qa/rough_eulerian_time_weak/Axioms.lean"
+  }
+}

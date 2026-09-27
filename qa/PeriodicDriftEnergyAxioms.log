@@ -1,0 +1,13 @@
+'SharpWasserstein.PeriodicDriftEnergy.vectorPullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicDriftEnergy.drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicDriftEnergy.divergence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicDriftEnergy.jacobianForm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicDriftEnergy.inner_vector_gradient_pullback' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicDriftEnergy.drift_energy_integrand' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicDriftEnergy.smooth_drift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicDriftEnergy.integral_divergence_mul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicDriftEnergy.integral_drift_energy' depends on axioms: [propext, Classical.choice, Quot.sound]

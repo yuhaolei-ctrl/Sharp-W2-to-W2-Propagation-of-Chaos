@@ -1,0 +1,272 @@
+{
+  "scope": "Seven actual regularized finite-trial recovery, physical Fourier identification, and scalar dominated-convergence modules only; not a complete manuscript proof",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-18T00:00:24.954856+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/RegularizedTrialConvergence.lean",
+      "sha256": "3af0df559b6a652ebed54739f873b832408d862c69b5b1b89c98f6d880ee153d",
+      "declaration_count": 8,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedTrialConvergencePeriodic.lean",
+      "sha256": "52b76016363f307ec4e5416221a975da475cb235f9e1d14104af493d3ac13db7",
+      "declaration_count": 4,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedTrialConvergenceFourier.lean",
+      "sha256": "77b4b95d08d1671a5a528a415965314b7f1a9d3077ed3a476d6e013e08b87242",
+      "declaration_count": 10,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedTrialConvergenceTime.lean",
+      "sha256": "103d08bb07f1c8d73933532b183aff859b469dd5bb4ccea14ba73beed769ee8e",
+      "declaration_count": 4,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedTrialConvergenceSequence.lean",
+      "sha256": "a9bf15a1b5578d843f532b77b060633b1dcffdc0f2174faee364c7a6c77f95b1",
+      "declaration_count": 8,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedTrialConvergencePhysical.lean",
+      "sha256": "28aa937d2af6e330a11a270b409b4ac2f74743aeea28a68af90621274ff3b908",
+      "declaration_count": 5,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedTrialConvergencePhysicalTime.lean",
+      "sha256": "7a10c59190fa9d5b70ba197e3037bd1441e5bac0922b198a34c3d4cba09ac0b3",
+      "declaration_count": 2,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "pinned_direct_foundations": {
+    "RegularizedTrialEnergy": "c0d2006c9f9e316a0bf68bc37130a6bf2f7a8682453fa1ca093c7a0fb3a0d1eb",
+    "FiniteGradientTrial": "6e6714d8634698031ab2e3582addb2237385a35b4e1842b89c306f4f7d265278",
+    "WeightedPeriodicFourierClosure": "7e977d69f50154774bb24ff00111f85375cb270c63ad603c97e316953d42a117",
+    "WeightedPeriodicFourierPhysical": "a7c55112e124b1d38875a81774798dc65b1564c446a03544d9363f6cd07cc75f"
+  },
+  "declarations": {
+    "SharpWasserstein.RegularizedTrialConvergence.synthesis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.synthesis_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.synthesis_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.coefficients_norm_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.exists_finite_recovery": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.energy_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.energy_error_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePeriodic.atomTest": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePeriodic.frequency_image_mem_span": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePeriodic.iSup_trialRange_eq_atomSpan": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePeriodic.closed_trialRange_eq_atomClosure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.Atom": [],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.atomPotential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.atomPotential_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.atomPotential_gradient_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.atomVector": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.frequency_gradient_mem_atomSpan": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.periodic_mem_atomClosure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.trial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.trial_eq_synthesis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergenceFourier.energy_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.energy_aestronglyMeasurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.integral_energy_error_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.integral_norm_energy_error_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.integral_norm_energy_error_tendsto_of_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.exhaustion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.mem_exhaustion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.exhaustion_monotone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.eventually_mem_exhaustion": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.penalty": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.penalty_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.penalty_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergence.canonical_energy_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePhysical.atomVector": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePhysical.periodic_mem_atomClosure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePhysical.trial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePhysical.trial_eq_synthesis": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePhysical.energy_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePhysical.integral_norm_energy_error_tendsto_of_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialConvergencePhysical.canonical_integral_norm_energy_error_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

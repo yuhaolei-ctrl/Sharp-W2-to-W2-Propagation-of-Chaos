@@ -1,0 +1,65 @@
+{
+  "modules": [
+    {
+      "module": "SharpWasserstein.SubGaussianSquare",
+      "source_sha256": "8fea73aa6f27fd49559ffc993914aaa3307d720a9d22992e2f3717cfa8494812",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/SubGaussianSquare.olean SharpWasserstein/SubGaussianSquare.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.SubGaussianSquare",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.BoundedIndependentSum",
+      "source_sha256": "4d40cf1506658d06f7c07af52f2ea2666f3f6ccef65d5baf01dbf82f04452066",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/BoundedIndependentSum.olean SharpWasserstein/BoundedIndependentSum.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.BoundedIndependentSum",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.InternalSource",
+      "source_sha256": "1cd9f0892b348186da761f0d6f3355b27eb44dcfa04cb5a7bd884dad86280328",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/InternalSource.olean SharpWasserstein/InternalSource.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.InternalSource",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.InternalSourceProfile",
+      "source_sha256": "eb563ed104214cc6d4fd2f2f8de1390cd576be077f0af0414f38edc022e2fc16",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/InternalSourceProfile.olean SharpWasserstein/InternalSourceProfile.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.InternalSourceProfile",
+      "kernel_exit_code": 0
+    }
+  ],
+  "axiom_audit_command": "python3 lean_local.py qa/InternalSourceAxioms.lean",
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorems": [
+    "integrable_exp_square_standardGaussian",
+    "integral_exp_square_standardGaussian",
+    "integral_exp_square_le_of_subGaussian",
+    "centeredProductSum_subGaussian",
+    "centeredProductSum_abs_le",
+    "shifted_centeredProductSum_exp_square_le",
+    "internalScalarCurrent_exp_square_le",
+    "internalScalarCurrent_sq_le_entropy",
+    "internal_source_energy_le_entropy",
+    "internalCurrentSquare_exp_le",
+    "internal_source_marginal_energy_le_profile",
+    "subGaussianSquare_gaussian_density_identity",
+    "internalSource_convex_exp_mean_le"
+  ],
+  "scope": "Bounded coordinate observables under genuine finite product probability law imply centered-sum Hoeffding parameter n M^2. Gaussian-mixture Fubini proves uniform square-exponential moment. Actual tagged interaction rows retain j=i diagonal; measure-preserving coordinate split proves row exponential moment. Entropy variational inequality yields actual vector source energy <=d K(M) m^2/N^2 (1+KL). Jensen yields full-vector exponential moment. Actual marginal profile specialization gives <=d K(M)(1+H)m^2/N^2.",
+  "constants": {
+    "lambda_M": "1/(16*(M+1)^2)",
+    "C_exp": "exp(1)*squareExponentialConstant; squareExponentialConstant=(sqrt(2*pi))^(-1)*sqrt(4*pi)",
+    "K_M": "(1+abs(log(C_exp)))/lambda_M"
+  },
+  "hypotheses": "Measurable interaction kernel; component bound |b(x,y,a)|<=M with M>=0; probability reference r and current law P; finite actual KL(P|r^m). No assumed independence beyond proven coordinate independence of reference product, and no assumed concentration or Pinsker inequality. Full-vector exponential theorem d>0. Marginal source corollary adds full finite KL and quadratic entropy profile."
+}

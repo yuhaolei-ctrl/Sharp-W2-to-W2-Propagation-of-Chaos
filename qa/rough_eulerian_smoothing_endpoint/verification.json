@@ -1,0 +1,302 @@
+{
+  "timestamp_utc": "2026-09-18T01:05:36.490537+00:00",
+  "scope": "Actual additive-noise identification, finite Euclidean mixture coupling, exact configuration transport bound and endpoint W2 convergence; no time smoothing or rough Wasserstein length theorem claimed.",
+  "modules": [
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingCoupling",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "source_sha256": "ee2d91ba21d21ddd852312490cfa3a8981e7f9bf2e57bfb39c68f279885c4332",
+      "olean_sha256": "27ee9abf5b68996a96fd28701a46fffe876855dd42c88f5a223b71146e484a84",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingMixture",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "source_sha256": "1001d257a15dd2acecc883cac1143e057649b5a3477459d48e1fcc1bcda7dd98",
+      "olean_sha256": "c23ed1632212ae78259d348d823154e239338098f0e55897fed1055f2d9f57e3",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSmoothingEndpoint",
+      "source": "SharpWasserstein/RoughEulerianSmoothingEndpoint.lean",
+      "source_sha256": "9fab1a6484bbe57d74157a1ca8edbc218d8ed9530088481735ae77b5fc716c74",
+      "olean_sha256": "817c636d11d377ed8106587572bc93f46fa825dad3ef6036afa3b83808c3011c",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    }
+  ],
+  "declarations": [
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.mollifierLaw",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 14,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.mollifierLaw_probability",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 17,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.convolvedLaw",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 24,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.convolvedLaw_probability",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 27,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.mollifierLaw_quadratic_integrable",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 34,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.mollifierLaw_quadratic_le",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 43,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.convolvedLaw_eq_map_add",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 62,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.convolutionCoupling",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 94,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.convolutionCoupling_isCoupling",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 97,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.convolutionCoupling_cost_integrable",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 109,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.convolutionCoupling_cost_le",
+      "source": "SharpWasserstein/RoughEulerianSmoothingCoupling.lean",
+      "line": 123,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.gaussianFloorLaw",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 13,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.gaussianFloorLaw_probability",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 15,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.gaussianFloorLaw_quadratic_integrable",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 21,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.regularizedLaw_eq_mixture",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 29,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.euclidean_displacement_sq_le",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 48,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.product_displacement_integrable",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 52,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.product_displacement_integral_le",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 63,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.regularizationCoupling",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 80,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.regularizationCoupling_isCoupling",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 84,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.regularizationCoupling_cost_integrable",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 100,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.regularizationCoupling_cost_le",
+      "source": "SharpWasserstein/RoughEulerianSmoothingMixture.lean",
+      "line": 107,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.coupling_map",
+      "source": "SharpWasserstein/RoughEulerianSmoothingEndpoint.lean",
+      "line": 14,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.wassersteinSq_euclidean_coupling_le",
+      "source": "SharpWasserstein/RoughEulerianSmoothingEndpoint.lean",
+      "line": 31,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.regularizedLaw_wassersteinSq_le",
+      "source": "SharpWasserstein/RoughEulerianSmoothingEndpoint.lean",
+      "line": 51,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.regularizedLaw_wassersteinSq_tendsto",
+      "source": "SharpWasserstein/RoughEulerianSmoothingEndpoint.lean",
+      "line": 63,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "commands": {
+    "compile": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/<Module>.olean SharpWasserstein/<Module>.lean",
+    "kernel": "python3 lean_local.py --kernel SharpWasserstein.<Module>",
+    "axioms": "python3 lean_local.py qa/rough_eulerian_smoothing_endpoint/Axioms.lean"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "timestamp_utc": "2026-09-18T01:47:02.738722+00:00",
+  "scope": "Actual differentiated and integrated compact-test continuity equation for the constructed time-space regularized probability curve and its actual floor velocity, derived from the original rough integrated flux equation.",
+  "modules": [
+    {
+      "module": "SharpWasserstein.RoughEulerianSpaceTimePairing",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimePairing.lean",
+      "source_sha256": "eb541a0d1886d0c44a6fdc639c0dad83aa45f61e2e40fc7bbb4597b87a9991ca",
+      "olean_sha256": "32ae96d3e979cd3ec8b9df54c18990874aab2ccd704059433983572d9363447a",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianSpaceTimeEquation",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimeEquation.lean",
+      "source_sha256": "6130c44bb1b4061779902ed1fa640b5500031eedc14752819936dfd3715c645b",
+      "olean_sha256": "c70aa08a5f5fe2600151d9b1fb6d563bcdf39f063195bd999725ca6a94f824c3",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    }
+  ],
+  "declarations": [
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.spaceTimeFlux_test_pairing",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimePairing.lean",
+      "line": 15,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.regularizedLaw_test_pairing",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimePairing.lean",
+      "line": 32,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.time_weighted_joint_pairing_integrable",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimePairing.lean",
+      "line": 48,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_test_pairing",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimePairing.lean",
+      "line": 63,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_flux_pairing",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimePairing.lean",
+      "line": 93,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.spaceTimeVelocity",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimeEquation.lean",
+      "line": 15,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.joint_gradient_pairing_integrable",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimeEquation.lean",
+      "line": 20,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_flux_continuous",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimeEquation.lean",
+      "line": 29,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_hasDerivAt",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimeEquation.lean",
+      "line": 55,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianSmoothing.spaceTimeProbabilityCurve_equation",
+      "source": "SharpWasserstein/RoughEulerianSpaceTimeEquation.lean",
+      "line": 98,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "commands": {
+    "compile": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/<Module>.olean SharpWasserstein/<Module>.lean",
+    "kernel": "python3 lean_local.py --kernel SharpWasserstein.<Module>",
+    "axioms": "python3 lean_local.py qa/rough_eulerian_smoothed_equation/Axioms.lean"
+  }
+}

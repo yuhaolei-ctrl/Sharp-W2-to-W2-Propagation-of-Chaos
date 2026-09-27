@@ -1,0 +1,67 @@
+{
+  "modules": [
+    {
+      "module": "SharpWasserstein.WeakTestContinuity",
+      "source_sha256": "397313d25a19748affa4281db72e2d507812679ad891f17534faed2a66ef1d77",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/WeakTestContinuity.olean SharpWasserstein/WeakTestContinuity.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.WeakTestContinuity",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.WeakEvolutionContinuity",
+      "source_sha256": "b4635636c80667e1b972fdc76d5bdcaf0bda003bfb96893a05a884a48dea8454",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/WeakEvolutionContinuity.olean SharpWasserstein/WeakEvolutionContinuity.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.WeakEvolutionContinuity",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.ConfigurationGeneratorEuclidean",
+      "source_sha256": "502e9effa7487acd7a3473241eee79df9c00c74a6973b7007a29566dead6c77d",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/ConfigurationGeneratorEuclidean.olean SharpWasserstein/ConfigurationGeneratorEuclidean.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.ConfigurationGeneratorEuclidean",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.WeakEvolutionBoundedTests",
+      "source_sha256": "b5fd1b944921b2e56a86cec4c292ca4b84f1bb53e610c3d463dd8f57f32686c0",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/WeakEvolutionBoundedTests.olean SharpWasserstein/WeakEvolutionBoundedTests.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.WeakEvolutionBoundedTests",
+      "kernel_exit_code": 0
+    }
+  ],
+  "axiom_audit_command": "python3 lean_local.py qa/WeakEvolutionBridgesAxioms.lean",
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorems": [
+    "SharpWasserstein.WeakTestContinuity.cutoff_eq_one_of_norm_le",
+    "SharpWasserstein.WeakTestContinuity.cutoff_error_le_moment",
+    "SharpWasserstein.WeakTestContinuity.integral_cutoff_error_le",
+    "SharpWasserstein.WeakTestContinuity.continuous_integral_smooth_of_uniformMoment",
+    "SharpWasserstein.WeakTestContinuity.continuous_integral_lipschitz_of_uniformMoment",
+    "SharpWasserstein.WeakTestContinuity.continuous_probabilityMeasure_of_uniformMoment",
+    "SharpWasserstein.integrable_norm_sq_euclideanLaw",
+    "SharpWasserstein.integral_norm_sq_euclideanLaw",
+    "SharpWasserstein.WeakEvolution.continuous_clippedEuclideanCurve",
+    "SharpWasserstein.WeakEvolution.continuous_euclideanProbabilityCurve",
+    "SharpWasserstein.WeakEvolution.continuous_probabilityCurve",
+    "SharpWasserstein.coordinateDerivative_pullback",
+    "SharpWasserstein.coordinateDerivative_twice_pullback",
+    "SharpWasserstein.laplacian_pullback",
+    "SharpWasserstein.generator_pullback",
+    "SharpWasserstein.generator_pullback_norm_le",
+    "SharpWasserstein.integral_generator_pullback_norm_le",
+    "SharpWasserstein.integrable_generator_pullback",
+    "SharpWasserstein.WeakEvolution.equation_bounded_smooth"
+  ],
+  "scope": "Every Dynamics.WeakEvolution has actual narrow probability-curve continuity, proved from its compact-smooth test continuity and finite-horizon moment bound. Genuine smooth convolution approximation and quantitative cutoff errors justify the criterion. Exact Euclidean generator change of coordinates is proved without dimension factors. Actual weak equation and temporal integrability extend to bounded smooth tests with bounded gradient and Laplacian by spatial and temporal dominated convergence.",
+  "additional_hypotheses_for_test_extension": "Spatially measurable actual drift and a uniform bound on its genuine Euclidean norm on nonnegative times. No extended weak equation, occupation measure, or test-limit convergence is assumed.",
+  "remaining_scope": "Time-dependent tests, actual backward semigroup regularity, and uniqueness of all weak solutions are not asserted here."
+}

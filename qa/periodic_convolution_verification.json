@@ -1,0 +1,237 @@
+{
+  "scope": "Actual normalized strictly positive C-infinity product periodic kernels, global bounds on every derivative, and strictly positive normalized smooth convolution densities for arbitrary possibly singular probability laws. Approximate identity convergence, equation commutators, dynamic transport, and the main propagation theorem are not asserted.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The 3 listed project source modules, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 41,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "PeriodicSmoothBounds": {
+      "source_sha256": "05fd4f0b3dd8d1e79bc05c380886498f1baa97fbcbce68a652602b3e95bf8574",
+      "olean_sha256": "bf3cf521ab476746b948b62c91af8af4e1b7c462d9a2c79c3942450a777efcf5",
+      "independent_kernel_replay": true
+    },
+    "PeriodicPositiveKernel": {
+      "source_sha256": "ab89af1c255a28f13f8b6ea519976864f08e8d03a4fee42eefed2f7df746d203",
+      "olean_sha256": "1698f2e9662de9d58474a9ac6127c206fab2e4b89f02e720c81f52cfe7572abf",
+      "independent_kernel_replay": true
+    },
+    "PeriodicConvolutionDensity": {
+      "source_sha256": "8dd9b56ef59e403e66da51a5ed8404ad558984da03934e9a3c221c29cbfe044d",
+      "olean_sha256": "5772f85c7a7b8966635bfd504d0d627d9fdae9e191b77d8bffb62cb269b02dae",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.PeriodicSmoothBounds.norm_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSmoothBounds.periodic_iteratedFDeriv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSmoothBounds.periodic_fderiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSmoothBounds.iteratedFDeriv_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicSmoothBounds.exists_lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.weight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.normalizer": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.scalar": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.weight_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.weight_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.weight_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.weight_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.weight_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.normalizer_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.normalizer_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.scalar_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.scalar_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.scalar_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.scalar_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.scalar_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.scalar_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicPositiveKernel.kernel_derivatives_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.toTorus_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.integral_cube_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.density": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.kernel_translate_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.density_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.density_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.density_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.density_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.density_derivatives_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.density_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.smoothLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.smoothLaw_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

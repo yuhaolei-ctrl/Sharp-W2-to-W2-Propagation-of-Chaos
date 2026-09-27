@@ -1,0 +1,31 @@
+{
+  "modules": {
+    "EntropyKL": {
+      "source_sha256": "a740d0f45bff98d691839bb5054bd0060b33e160a7d4b04a013706ce0f926c46",
+      "compile_exit_code": 0,
+      "kernel_check_exit_code": 0
+    },
+    "EntropyDataProcessing": {
+      "source_sha256": "91f9e97b18865bf8eb8cdf3584ab79c656945435857ce7d234d21c72518ee50a",
+      "compile_exit_code": 0,
+      "kernel_check_exit_code": 0
+    }
+  },
+  "axiom_audit_command": "python3 lean_local.py qa/EntropyKLAxioms.lean",
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "claims": [
+    "Actual KL reverse exponential-density identity for probability measures, finite KL, and real-valued cost identity.",
+    "Actual KL data processing for every measurable map of finite measures, including infinite KL cases.",
+    "Extended-real and real-valued observed-law entropy-cost bounds."
+  ],
+  "proof_route": "Mathlib RN pushforward conditional expectation; conditional Jensen for klFun; preservation of integral by conditional expectation.",
+  "missing_analytic_bridge": "The controlled diffusion construction must still supply the exponential-density and zero-mean hypotheses.",
+  "bootstrap": "scripts/bootstrap_mathlib.py",
+  "dependency_ledger": "qa/mathlib_dependencies.json",
+  "upstream_proof_repairs": "qa/mathlib_source_patches.json"
+}

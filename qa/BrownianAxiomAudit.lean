@@ -1,0 +1,10 @@
+import BrownianMotion.Gaussian.BrownianMotion
+#print axioms ProbabilityTheory.gaussianLimit
+#print axioms ProbabilityTheory.isProjectiveLimit_gaussianLimit
+#print axioms ProbabilityTheory.isPreBrownianReal_preBrownian
+#print axioms ProbabilityTheory.continuous_brownian
+#print axioms ProbabilityTheory.isBrownianReal_brownian
+#print axioms ProbabilityTheory.hasLaw_brownian_eval
+#print axioms ProbabilityTheory.hasLaw_brownian_sub
+#print axioms ProbabilityTheory.hasIndepIncrements_brownian
+#print axioms ProbabilityTheory.wienerMeasure

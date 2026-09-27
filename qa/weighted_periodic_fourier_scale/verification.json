@@ -1,0 +1,18 @@
+{
+  "modules": [
+    {
+      "module": "WeightedPeriodicFourierScale",
+      "source_sha256": "e95d9a7d73b847d942a0c539d3fe0246a238fe16b464805c6ee49f6c1b019cc5",
+      "declarations": 19,
+      "kernel_exit": 0
+    }
+  ],
+  "declarations": 19,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_exit": 0,
+  "lean_toolchain": "leanprover/lean4:v4.32.0"
+}

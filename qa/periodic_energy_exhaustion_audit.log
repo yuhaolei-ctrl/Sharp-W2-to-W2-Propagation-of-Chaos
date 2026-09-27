@@ -1,0 +1,4 @@
+CompressionPeriodicTests 0
+PeriodicEnergyExhaustion 0
+KernelPeriodMultiples 0
+PASS: 3 modules, 13 declarations, ['Classical.choice', 'Quot.sound', 'propext']

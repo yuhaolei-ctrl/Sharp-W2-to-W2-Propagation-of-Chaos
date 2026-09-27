@@ -1,0 +1,10 @@
+import SharpWasserstein.PeriodicDriftEnergy
+#print axioms SharpWasserstein.PeriodicDriftEnergy.vectorPullback
+#print axioms SharpWasserstein.PeriodicDriftEnergy.drift
+#print axioms SharpWasserstein.PeriodicDriftEnergy.divergence
+#print axioms SharpWasserstein.PeriodicDriftEnergy.jacobianForm
+#print axioms SharpWasserstein.PeriodicDriftEnergy.inner_vector_gradient_pullback
+#print axioms SharpWasserstein.PeriodicDriftEnergy.drift_energy_integrand
+#print axioms SharpWasserstein.PeriodicDriftEnergy.smooth_drift
+#print axioms SharpWasserstein.PeriodicDriftEnergy.integral_divergence_mul
+#print axioms SharpWasserstein.PeriodicDriftEnergy.integral_drift_energy

@@ -1,0 +1,62 @@
+'SharpWasserstein.PropagatedSourcePermutation.pullTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.pullTest_gradient_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.flow_covariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.flow_fderiv_covariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.expectation_covariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.expectation_fderiv_covariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.source_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.euclideanPermutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.euclideanPermutation_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.euclideanPermutation_norm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.euclideanPermutationIsometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.euclideanPermutation_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.particle_equivDrift_covariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.equivPath_permutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.euclideanBrownianPathLaw_permutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.euclideanLaw_permutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PropagatedSourcePermutation.particle_sourceAt_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedSourceSymmetry.measurePreserving_isometry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedSourceSymmetry.pullVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedSourceSymmetry.pullVector_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedSourceSymmetry.pullVector_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedSourceSymmetry.source_invariant_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedSourceSymmetry.pullVector_representative_divergence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedSourceSymmetry.representative_equivariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

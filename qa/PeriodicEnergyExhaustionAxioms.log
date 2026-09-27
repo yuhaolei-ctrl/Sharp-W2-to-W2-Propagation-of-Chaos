@@ -1,0 +1,35 @@
+'SharpWasserstein.CompressionPeriodicTests.compression_scaled' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompressionPeriodicTests.compression_scaled_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompressionPeriodicTests.compression_fderiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompressionPeriodicTests.compression_scaled_fderiv_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompressionPeriodicTests.compressed_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompressionPeriodicTests.compressed_gradient_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompressionPeriodicTests.compressed_gradient_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompressionPeriodicTests.compression_coordinates' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.CompressionPeriodicTests.compressed_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicEnergyExhaustion.smooth_periodic_objective_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicEnergyExhaustion.full_energy_le_of_periodic_multiples' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.KernelPeriodMultiples.first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.KernelPeriodMultiples.second' depends on axioms: [propext, Classical.choice, Quot.sound]

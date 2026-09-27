@@ -1,0 +1,39 @@
+import SharpWasserstein.BoundedNoiseAverage
+import SharpWasserstein.NoiseAverageDerivatives
+import SharpWasserstein.DerivativeCompositionBounds
+import SharpWasserstein.GaussianEulerBackward
+import SharpWasserstein.GaussianEulerBackwardSecond
+#print axioms SharpWasserstein.NoiseAverage.integrable_translate
+#print axioms SharpWasserstein.NoiseAverage.norm_average_le
+#print axioms SharpWasserstein.NoiseAverage.continuous_average
+#print axioms SharpWasserstein.NoiseAverage.lipschitz_average
+#print axioms SharpWasserstein.NoiseAverage.hasFDerivAt_average
+#print axioms SharpWasserstein.NoiseAverage.contDiff_one_average
+#print axioms SharpWasserstein.NoiseAverage.fderiv_average
+#print axioms SharpWasserstein.NoiseAverage.lipschitz_fderiv_average
+#print axioms SharpWasserstein.NoiseAverage.contDiff_two_average
+#print axioms SharpWasserstein.NoiseAverage.secondFDeriv_average
+#print axioms SharpWasserstein.NoiseAverage.lipschitz_secondFDeriv_average
+#print axioms SharpWasserstein.NoiseAverage.contDiff_three_average
+#print axioms SharpWasserstein.lipschitz_fderiv_comp
+#print axioms SharpWasserstein.BackwardEuler.noise_stronglyMeasurable
+#print axioms SharpWasserstein.BackwardEuler.step_eq_integral_transitionLaw
+#print axioms SharpWasserstein.BackwardEuler.norm_step_le
+#print axioms SharpWasserstein.BackwardEuler.norm_backward_le
+#print axioms SharpWasserstein.BackwardEuler.lipschitz_mean
+#print axioms SharpWasserstein.BackwardEuler.lipschitz_step
+#print axioms SharpWasserstein.BackwardEuler.lipschitz_backward
+#print axioms SharpWasserstein.BackwardEuler.hasFDerivAt_step
+#print axioms SharpWasserstein.BackwardEuler.contDiff_one_step
+#print axioms SharpWasserstein.BackwardEuler.contDiff_one_backward
+#print axioms SharpWasserstein.BackwardEuler.fderiv_backward_norm_le
+#print axioms SharpWasserstein.BackwardEuler.fderiv_mean
+#print axioms SharpWasserstein.BackwardEuler.lipschitz_fderiv_mean
+#print axioms SharpWasserstein.BackwardEuler.contDiff_two_step
+#print axioms SharpWasserstein.BackwardEuler.lipschitz_fderiv_step
+#print axioms SharpWasserstein.BackwardEuler.lipschitz_fderiv_backward
+#print axioms SharpWasserstein.BackwardEuler.contDiff_two_backward
+#print axioms SharpWasserstein.BackwardEuler.secondFDeriv_backward_norm_le
+#print axioms SharpWasserstein.BackwardEuler.secondBound_le
+#print axioms SharpWasserstein.BackwardEuler.eulerFactor_pow_le_exp
+#print axioms SharpWasserstein.BackwardEuler.secondBound_le_exp

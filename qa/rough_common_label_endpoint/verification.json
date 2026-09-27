@@ -1,0 +1,36 @@
+{
+  "modules": [
+    {
+      "module": "RoughEulerianTransportTimeMixture",
+      "source_sha256": "28c5d9231671048a519a9442b05e18c31f8f623a44f57a117e9871c6670a32fa",
+      "declarations": 8,
+      "kernel_exit": 0
+    },
+    {
+      "module": "RoughEulerianTransportTimeEndpoint",
+      "source_sha256": "d87d39ff504177da4da676e6d39fe2d9b47d69dfcab9daecdd43394827634dab",
+      "declarations": 3,
+      "kernel_exit": 0
+    },
+    {
+      "module": "RoughCommonLabelLift",
+      "source_sha256": "b8cc0bdd993c1b42bcefc2609169f355e6db381f7e5ac01b16419fbe67012155",
+      "declarations": 5,
+      "kernel_exit": 0
+    },
+    {
+      "module": "RoughCommonLabelTimeEndpoint",
+      "source_sha256": "2b87d431da7fd58433ed6cf95afbf3b9278b5516248b5d526a26ef37ce723d3c",
+      "declarations": 2,
+      "kernel_exit": 0
+    }
+  ],
+  "declarations": 18,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_exit": 0,
+  "lean_toolchain": "leanprover/lean4:v4.32.0"
+}

@@ -1,0 +1,36 @@
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.prefix_comp_observation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.prefix_observation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.marginalLaw_observation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.marginalDistribution_observedSource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.observedSource_eq_imageSource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.prefixSource_eq_imageSource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.periodic_marginalEnergy_observedSource' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.periodicPrefixField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.observed_trialEnergy_eq_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.brownian_marginal_optimizedEnergy_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.brownian_periodic_sourceVector_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.brownian_periodic_trialEnergy_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

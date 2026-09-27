@@ -1,0 +1,11 @@
+import SharpWasserstein.RegularizedSourceRates
+#print axioms SharpWasserstein.configurationTestObjective_neg
+#print axioms SharpWasserstein.configurationTestObjective_range_neg
+#print axioms SharpWasserstein.configurationFiniteEnergy_neg_iff
+#print axioms SharpWasserstein.configurationTangentEnergy_neg
+#print axioms SharpWasserstein.DecoupledFlow.exists_regularized_marginal_source
+#print axioms SharpWasserstein.DecoupledFlow.exists_regularized_full_source
+#print axioms SharpWasserstein.RegularizationRates.bridgeCost_le_horizonFactor_div
+#print axioms SharpWasserstein.RegularizationRates.affine_bridgeCost_le
+#print axioms SharpWasserstein.RegularizationRates.source_coefficient_le_singular
+#print axioms SharpWasserstein.RegularizationRates.full_source_coefficient_le_singular

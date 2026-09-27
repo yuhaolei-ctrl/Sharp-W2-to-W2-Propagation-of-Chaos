@@ -1,0 +1,21 @@
+'SharpWasserstein.hasDerivWithinAt_nonneg_of_integral_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeakEvolution.hasDerivWithinAt_integral_bounded_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_generatorExpectation_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_hasDerivWithinAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_hasDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_hasDerivWithinAt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianFlow.transition_hasDerivWithinAt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianFlow.globalLaw_remainingTime_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BrownianFlow.transition_iterated_hasDerivWithinAt_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

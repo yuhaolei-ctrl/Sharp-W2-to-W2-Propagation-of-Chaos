@@ -1,0 +1,22 @@
+import SharpWasserstein.SwitchCurve
+#print axioms SharpWasserstein.BrownianNoise.scalarLaw_increment_secondMoment
+#print axioms SharpWasserstein.BrownianNoise.configurationLaw_increment_cost_integrable
+#print axioms SharpWasserstein.BrownianNoise.configurationLaw_coordinate_increment_secondMoment
+#print axioms SharpWasserstein.BrownianNoise.configurationLaw_increment_momentIntegral
+#print axioms SharpWasserstein.productCost_sub_zero
+#print axioms SharpWasserstein.FiniteAdditiveTrajectory.increment_equation
+#print axioms SharpWasserstein.FiniteAdditiveTrajectory.increment_productCost_le
+#print axioms SharpWasserstein.BrownianFlow.timeCost
+#print axioms SharpWasserstein.BrownianFlow.timeCost_nonneg
+#print axioms SharpWasserstein.BrownianFlow.timeCost_continuous
+#print axioms SharpWasserstein.BrownianFlow.timeCost_self
+#print axioms SharpWasserstein.BrownianFlow.law_time_wassersteinSq_le
+#print axioms SharpWasserstein.BrownianFlow.law_time_wassersteinSq_tendsto
+#print axioms SharpWasserstein.BrownianParticle.law_time_wassersteinSq_le
+#print axioms SharpWasserstein.SwitchCurve.law
+#print axioms SharpWasserstein.SwitchCurve.law_probability
+#print axioms SharpWasserstein.SwitchCurve.law_secondMoment
+#print axioms SharpWasserstein.SwitchCurve.law_zero
+#print axioms SharpWasserstein.SwitchCurve.law_terminal
+#print axioms SharpWasserstein.SwitchCurve.law_root_modulus
+#print axioms SharpWasserstein.SwitchCurve.law_wassersteinSq_tendsto

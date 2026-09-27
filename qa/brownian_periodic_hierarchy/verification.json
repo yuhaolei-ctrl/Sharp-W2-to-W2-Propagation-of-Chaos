@@ -1,0 +1,339 @@
+{
+  "scope": "Eight actual Brownian periodic hierarchy modules: true prefix energies, observation reindexing, derived scalar regularity and L1 Fourier recovery, proved finite inequalities, sharp propagated profile and kernel-independent initial flux; not a complete manuscript proof",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-18T00:58:53.234163+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/BrownianPeriodicHierarchyConstants.lean",
+      "sha256": "274461cc05db9645536c5f4038556dfe93af091977dd69abe1239a24b0276fd7",
+      "declaration_count": 13,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/BrownianPeriodicHierarchyMarginals.lean",
+      "sha256": "1810d18614dd2d74337bfff41e880b312985547cec8811a9b12a493be333ec8d",
+      "declaration_count": 12,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/BrownianPeriodicHierarchyReindex.lean",
+      "sha256": "81f4adeaec8b3ef1b419152a2d243f175a9f545c9c93f71412eff38e6a47bf44",
+      "declaration_count": 10,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/BrownianPeriodicHierarchyRegularity.lean",
+      "sha256": "7ee71fd5728c8f8ea0bef2ed2266afaef5d3a359942010f2be59178af4ec8521",
+      "declaration_count": 6,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/BrownianPeriodicHierarchyRecovery.lean",
+      "sha256": "1a81ca612335086fb7dd59df84ac0ae0be6a76b9006e70119ff270b7c31e92e0",
+      "declaration_count": 3,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/BrownianPeriodicHierarchyEstimate.lean",
+      "sha256": "311ddf93ad4640a2d6810e8e6b782795753fd21da20a6959f190f76b1c30e6e8",
+      "declaration_count": 4,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/BrownianPeriodicHierarchyProfile.lean",
+      "sha256": "7469e8258519bcc2d21ee2a72f3d428d5310aa129725a85eff06147b9730c2ac",
+      "declaration_count": 1,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/BrownianPeriodicHierarchyInitial.lean",
+      "sha256": "d08fb2607fcce8c34f6064c8e34c6b836bc89302758f977bfaa2adf0e47f2455",
+      "declaration_count": 2,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "pinned_direct_foundations": {
+    "VolterraFourierSourceHierarchy": "23a1d9d6472a115930f6eae44950941f80e424a17e96054158b6e4f3a9a4ba65",
+    "VolterraFourierSource": "c82f2f40b446863b8bc36f2726386c9360a055814dbebd5560fdf18bbdfca09c",
+    "PeriodicMarginalCoefficientEvolutionHierarchy": "db2e764d8048d00e602af082eea5b7345c7bf4e6b2571f6dd25390330d76830a",
+    "PeriodicMarginalCoefficientEvolutionEnergy": "c39a1ff3f8aeeb286d7c6e2b8f861d1a9975b3e7c3886c1b47be84a5f1c3df35",
+    "PeriodicMarginalCoefficientEvolutionConsistency": "6d5d8c70c7e55030980ed93edb59a58f9a723d5e6d9be6ecf941250b780503f2",
+    "PropagatedSourceEquationDistribution": "32c8de6c6cb72725632a22cb7ad7aea649e39583fe4cfe7cb41abba7217061e0",
+    "BrownianSourceInitialFlux": "711ef174436a717369b2aa6911d6d13bffeb7d2b39816cea70e976e5ab0dfbbf",
+    "WeightedPeriodicTangentPhysical": "d5cb27fbdd51c704289a780b69d082fd56aeee8815c296971452b264938cd353",
+    "RegularizedTrialConvergencePhysical": "28aa937d2af6e330a11a270b409b4ac2f74743aeea28a68af90621274ff3b908",
+    "InitialSourceMarginalPairing": "63fac1d47b50f96452b5e47cf50b79592356bd262215164cc63690acd69d3bb3"
+  },
+  "declarations": {
+    "SharpWasserstein.BrownianPeriodicHierarchy.driftLipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.baseline": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.comparisonConstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.externalFraction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.rate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.driftLipschitz_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.baseline_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.comparisonConstant_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.baseline_le_comparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.terminal_le_comparison": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.externalFraction_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.rate_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.rate_top": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelProjection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelProjection_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelProjection_norm_le_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelLaw_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelSource_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelSource_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.imageSource_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelSource_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownian_level_energy_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownian_level_energy_bound_flux": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.coordinateCast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.coordinateCast_rfl": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.imageSource_id": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.periodicEnergy_measure_congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.periodicEnergy_coordinateCast": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.nextCoordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.observation_eq_nextProjection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.observed_nextLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.observed_nextSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.observed_nextEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.trialEnergy_measure_congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.sourceFiniteEnergy_level_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianFiniteEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianFiniteEnergy_hasDerivWithinAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianFiniteEnergy_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianFiniteEnergy_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianPeriodicEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianPeriodicEnergy_intervalIntegrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianPeriodicEnergy_gap_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.periodicEnergy_level_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.gapCoefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianFiniteEnergy_deriv_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownianFiniteEnergy_terminal_deriv_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownian_periodic_quadratic_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.levelEnergy_measure_congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianPeriodicHierarchy.brownian_periodic_quadratic_bound_initial_flux": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

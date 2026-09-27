@@ -1,0 +1,28 @@
+{
+  "module": "SharpWasserstein.EntropyChainRule",
+  "source_sha256": "c7cf7898bc7a041022632b4d6cb2d800f003896d60be322057069399c4bf4a2f",
+  "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/EntropyChainRule.olean SharpWasserstein/EntropyChainRule.lean",
+  "compile_exit_code": 0,
+  "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.EntropyChainRule",
+  "kernel_exit_code": 0,
+  "axiom_audit_command": "python3 lean_local.py qa/EntropyChainRuleAxioms.lean",
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorems": [
+    "measurable_kernel_klDiv",
+    "rnDeriv_compProd_same_base_eq_kernel",
+    "lintegral_kernel_klDiv_eq_compProd",
+    "ae_kernel_klDiv_ne_top",
+    "integrable_kernel_klDiv_toReal",
+    "integral_kernel_klDiv_toReal_eq_compProd",
+    "conditional_joint_klDiv_ne_top",
+    "integral_kernel_klDiv_eq_entropy_increment",
+    "integrated_kernel_norm_difference_sq_le_entropy_increment"
+  ],
+  "scope": "Actual measurable kernel KL and its extended-real integral under joint absolute continuity; finite full joint KL yields AE finite conditional KL, integrability, and real conditional entropy = full joint entropy minus marginal entropy. Actual integrated vector conditional Pinsker follows.",
+  "hypotheses": "Finite base measures and finite kernels, CountableOrCountablyGenerated A B. Markov kernels for entropy-increment chain rule. Finite full joint KL. For the vector bound: real complete Hilbert target, joint strong measurability, nonnegative M and AE conditional norm bound. No desired chain-rule or monotonicity assumption."
+}

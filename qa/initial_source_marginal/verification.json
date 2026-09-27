@@ -1,0 +1,242 @@
+{
+  "scope": "Six genuine initial-source marginal consistency and sharp all-level regularized energy-profile modules only; not a complete manuscript proof",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-18T00:20:58.578838+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/InitialSourceMarginalPairing.lean",
+      "sha256": "63fac1d47b50f96452b5e47cf50b79592356bd262215164cc63690acd69d3bb3",
+      "declaration_count": 7,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/InitialSourceMarginalComposition.lean",
+      "sha256": "279073db10b7ea35a9b18f5b3f25482a7e3819e37e06529d59992833c80e2425",
+      "declaration_count": 1,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/InitialSourceMarginalConfiguration.lean",
+      "sha256": "4f879b4424ccdd7e1a8c79b3cae6fd80a7d7a83f6fd8674fe9572fb5d64a2da7",
+      "declaration_count": 8,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/InitialSourceMarginalCurrent.lean",
+      "sha256": "e5b827dc8dfce047c0b726bf3bfac8d6f23449c74b54d6192ff151f7495f357e",
+      "declaration_count": 11,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/InitialSourceMarginalPrefix.lean",
+      "sha256": "b54c2f26e2a2affafb3e36262032e5be4f9990871bb3e26b96f46817417e8444",
+      "declaration_count": 5,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/InitialSourceMarginalRegularized.lean",
+      "sha256": "83ddc58b4b5a312b9dd7a88039915f7fb9ec5a17eb32a03756829530dee9cae4",
+      "declaration_count": 2,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "pinned_direct_foundations": {
+    "RegularizedSource": "253da87a65031709ac3036afc409fc94afb1b97788a8e62126584dafe9c5b88c",
+    "RegularizedSourceRates": "1e17823081c6034df5c839493d157d9da8b7d84e25acfb272dc6397a95f8c51d",
+    "MarginalSourceTangent": "d1b474ec00deab83d951329f9d41304c3555a3bbf6176f162098207cc912fa8c",
+    "MarginalParticleCurrent": "819c2575aee4221db988f107d5925a9b5935526d501ca79905d180d43aa61525",
+    "ConfigurationFlux": "35c907312aec226052a2ae0e3590e43935970e090195f0df188a24606038f933",
+    "ConfigurationEuclidean": "69364623557d58f50d1d713b97698360cd9a5e21070de36cb7f560456994ac41",
+    "InitialSourcePermutation": "beb3b4dfd00a6eea7268e7f985db2bfc9b2e2386fcdf1815b5a1ddfccd98fbfe",
+    "WeightedMarginal": "5234cafc4c44c22bf82b0d76514124e257cb8ce5c0fd9c99652d2d527129f560",
+    "WeightedTangent": "38c8fecb68c7112b7e7cae2257198968d43946131d49cf32b81a156a69dca231",
+    "WeightedGradientApproximation": "f361d0804f3e3c522357b5008b87960848b58d78038f7f00258087d8913e2594",
+    "PropagatedFluxSmoothPairing": "219f5a289b956eea3e5834a978fd564c001e046b0ed95f2fded45fb123763174",
+    "PeriodicParticleTangentLimitMarginal": "da3047b3b19a8f349dbbda9cb5f3b3c27006598c43965d0e056c9d45a74a6417"
+  },
+  "declarations": {
+    "SharpWasserstein.InitialSourceMarginal.representative_bounded_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.imageSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.imageSource_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.imageSource_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.cylinder_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.imageSource_eq_flux_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.imageSource_prefix_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.imageSource_comp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.map_marginalProjection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.configurationMarginalSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.euclideanDistribution_configurationMarginalSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.configurationMarginalSource_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.initialCurrent_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.source_eq_configurationFlux": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.configurationMarginalSource_apply_current": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.configurationMarginalSource_self": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.integrable_bounded_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.reference_coordinate_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.reference_coordinate_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.particle_coordinate_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.particle_coordinate_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.conditional_coordinate_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.conditional_coordinate_bounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.integral_current_eq_conditional": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.bounded_sub": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.configurationMarginalSource_generator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.configurationMarginalSource_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.dimensionReindex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.prefix_comp_dimensionReindex": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.marginalDistribution_reindexed_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.marginalLaw_reindexed_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.marginal_energy_reindexed_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.exists_regularized_consistent_source": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourceMarginal.exists_regularized_weighted_marginal_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

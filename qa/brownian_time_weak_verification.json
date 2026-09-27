@@ -1,0 +1,267 @@
+{
+  "scope": "Actual constructed time-dependent Brownian weak evolution via independent Gaussian Euler steps and limiting expected Riemann sums",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The 7 listed project source modules, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 43,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "TimeGenerator": {
+      "source_sha256": "6f94becd791fb409caa2dd9cc67a2b72f03f9ff89adff547945d15cb0b9e7edb",
+      "olean_sha256": "e372607e54c9a6d606f5e8adc635c13c7dcd4c7893d75a021c4df3c1e5292861",
+      "independent_kernel_replay": true
+    },
+    "EulerTimeRiemann": {
+      "source_sha256": "53193c9f4447357557b510ea0852bc18e8dc673114ac61947a429845324b1ade",
+      "olean_sha256": "be49458b643a6040fc49c1cc9063baa12b60192a1553660d9594f79c29e57d92",
+      "independent_kernel_replay": true
+    },
+    "EulerTimeWeakStep": {
+      "source_sha256": "e59ac4e229ed64b3d5ae0631f0dd08ef3be7eb6f32de77d662224860f3776510",
+      "olean_sha256": "0e0f7edf046ffb2fe5a5294193194892cc9b9515fd54e306f6a2bac5b415f0ba",
+      "independent_kernel_replay": true
+    },
+    "EulerTimeWeakTelescope": {
+      "source_sha256": "d7ed99bc0fa73ccef3775fd3735549cefee43d67ce6889073b0e7cacca762014",
+      "olean_sha256": "742fdf6fa7bfe081d778f8002969e2968cbf9c3410322fb6c7428157894fab5f",
+      "independent_kernel_replay": true
+    },
+    "EulerTimeWeakLimit": {
+      "source_sha256": "ec8bf38e2509d089d36e19ec3c60b5bd616145dcc8cd5f66c44f445a293aee0b",
+      "olean_sha256": "4f7b4b377f4198e7a09311fe79091daa34cb54033497985d3b5c6cee75f1df5d",
+      "independent_kernel_replay": true
+    },
+    "BrownianFlow": {
+      "source_sha256": "d7f17aef0d3975b330a6157c9dd309c4346daec8edb2e09547d3d9390c128741",
+      "olean_sha256": "7bb4e99948d7576d29928caff60dc7cf120c3669b50100e13ab4770ccc93984d",
+      "independent_kernel_replay": true
+    },
+    "BrownianFlowWeak": {
+      "source_sha256": "27c0ac1f9bc0c4741e8712dc8d06a0ca1b18ae82c52cf7339c61ad65eaecd2f6",
+      "olean_sha256": "53205191b9ba983405e418190788bc1fb6c22af29a675cfdc208cc1027817bcb",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.CompactGenerator.generator_joint_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.generator_uniform_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.generator_uniform_spatial_lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTime.node_sum_difference_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTime.node_sum_difference_expectation_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTime.trajectory_mean_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTime.expected_nodes_riemann_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.mean_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.state": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.state_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.mean_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.state_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.expectation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.expectation_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.expectation_step_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.expectation_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.expectation_eq_brownian_node": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.expectation_telescope_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerTimeWeak.brownian_trajectory_weak_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law_secondMoment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law_restrict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law_horizon_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_secondMoment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law_momentIntegral_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_momentBound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law_integral_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_boundedExpectation_continuousOn_Icc": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_boundedExpectation_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_testContinuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_generatorIntegrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_timeIntegrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.law_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianFlow.globalLaw_weakEvolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

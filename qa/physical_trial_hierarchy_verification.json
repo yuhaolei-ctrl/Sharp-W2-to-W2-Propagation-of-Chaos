@@ -1,0 +1,67 @@
+{
+  "scope": "Actual finite physical Fourier external estimate and absorbed hierarchy/top-level bounds with only vanishing auxiliary gap; true internal drift scale identity and N-independent Euclidean Jacobian bound. Actual evolution-to-hierarchy assembly and manuscript main theorem remain open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 7,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "PhysicalFourierTrialExternal": {
+      "source_sha256": "b617c54a187223c07e3346bb677beef2b8a88c4be758d253a2ec2b5df61d4066",
+      "olean_sha256": "cc3346d5496a6a6cfead0f9a33429f70ba8d9fa5370f754ebc4beba470f90e65",
+      "independent_kernel_replay": true
+    },
+    "PhysicalFourierTrialHierarchy": {
+      "source_sha256": "fb6aec6f70d26ee9b7ffc22d49c6d2efc7a1a4add1c4aaeb25b709bdc8cce166",
+      "olean_sha256": "d12264f07976e19aebff1db10ae47667041717cdb9635357f7815d7afbf7ee91",
+      "independent_kernel_replay": true
+    },
+    "InternalDriftFiniteBounds": {
+      "source_sha256": "8b7e2de4630fce7b4262ef860da599be42186184ba202abd2ce65290a198dbfc",
+      "olean_sha256": "389f60174b1c6aec9ab2bf7da5e142d72f0a9defd0f7a10b418d321c0a165918",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.PhysicalFourierTrialExternal.integral_external_trial_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalFourierTrialHierarchy.finite_hierarchy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PhysicalFourierTrialHierarchy.finite_terminal_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteractionPeriodic.internalDrift_eq_scaled": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteractionPeriodic.internalDrift_allDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteractionPeriodic.internalDrift_lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteractionPeriodic.internalDrift_fderiv_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

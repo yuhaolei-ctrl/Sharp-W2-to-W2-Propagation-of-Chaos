@@ -1,0 +1,8 @@
+FiniteTrialDriftResidual 0
+PropagatedFluxSmoothPairing 0
+FiniteGeneratorCalculus 0
+FiniteGeneratorPairing 0
+FiniteGeneratorBounds 0
+BrownianSourceSmoothPairing 0
+FiniteTrialEnergyIdentity 0
+PASS: 7 modules, 22 declarations, ['Classical.choice', 'Quot.sound', 'propext']

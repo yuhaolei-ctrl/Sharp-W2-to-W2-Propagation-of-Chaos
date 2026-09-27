@@ -1,0 +1,134 @@
+{
+  "scope": "Four actual regularized-current source modules: prescribed-reference data and one-source initial profile from original Wasserstein assumptions; sharp original-kernel propagated energy; exact source-energy identification on the prescribed switch curve; not a complete manuscript proof",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-18T01:07:22.970846+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/RegularizedBrownianSourceCoordinates.lean",
+      "sha256": "1ff8ebc2c2cc8ac3a36ccc2a11bcfab256630eea9e097415ee183e89450aebba",
+      "declaration_count": 3,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedBrownianSourceData.lean",
+      "sha256": "62a1b13ab0b17b0a1d0866396c8ede14bf99176de0efce0f281268d39e375f58",
+      "declaration_count": 6,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedBrownianSourceBound.lean",
+      "sha256": "fc156a3bcd502d62ae046affc7ea2d598cb864405d84096a1d325bb4dd8aad73",
+      "declaration_count": 4,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RegularizedBrownianSourceSwitch.lean",
+      "sha256": "137cee7d49a43897bd8bb2c283a9d04c8932ba66cf18a377348822b4581485a6",
+      "declaration_count": 3,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "pinned_direct_foundations": {
+    "InitialSourceMarginalRegularized": "83ddc58b4b5a312b9dd7a88039915f7fb9ec5a17eb32a03756829530dee9cae4",
+    "InitialSourceMarginalConfiguration": "4f879b4424ccdd7e1a8c79b3cae6fd80a7d7a83f6fd8674fe9572fb5d64a2da7",
+    "InitialCurrentBrownianSource": "c7c0b4f42447e602f90e6b60bf6c362a9b3b5a009b8f503ef3e9cce9eb92cc07",
+    "PrescribedEntropyProfile": "62f795144b400cfe3f35565fe51181ffc27527002bd6acba8fbc2426ad8e0527",
+    "BrownianPeriodicHierarchyInitial": "d08fb2607fcce8c34f6064c8e34c6b836bc89302758f977bfaa2adf0e47f2455",
+    "BrownianEnergyPeriodization": "2d3df415ee0b3e38f904701563381f9ffa7e8f9d7997b9e010c5bf470c13300d",
+    "PrescribedSwitchBrownianSource": "184b7c0a45c5784ef2d510fcef487057d6fcf964d0609ad0768c245f0553835c",
+    "PrescribedSwitchBrownianLaw": "e6ea100014f7d1909883cb8510a6dbe49c3a1e2aed8bceb82b15741e38870d8d"
+  },
+  "declarations": {
+    "SharpWasserstein.RegularizedBrownianSource.energy_measure_congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.levelEnergy_eq_configurationMarginal": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.initialCurrent_distribution_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.law_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.law_secondMoment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.law_exchangeable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.current_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.current_covariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.exists_initial_profile": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.propagationConstant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.sourceHorizonConstant_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.propagationConstant_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.prefixEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.imageEnergy_measure_congr": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.prescribed_marginal_energy_eq_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedBrownianSource.prescribed_marginal_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

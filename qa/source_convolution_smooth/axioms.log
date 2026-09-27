@@ -1,0 +1,43 @@
+'SharpWasserstein.PeriodicSourceConvolution.joint_fderiv_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_fderiv_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_euclideanKernelTest_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_coordinateDerivative_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_generator_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_euclideanGenerator_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.action_smooth_param' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSource_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSource_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSource_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceTimeDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceTimeDerivative_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceTimeDerivative_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceTimeDerivative_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceDerivativeBCF_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

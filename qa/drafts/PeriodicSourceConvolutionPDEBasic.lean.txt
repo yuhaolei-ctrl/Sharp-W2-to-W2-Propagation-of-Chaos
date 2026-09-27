@@ -1,0 +1,117 @@
+import SharpWasserstein.PeriodicSourceConvolutionSmooth
+import SharpWasserstein.PeriodicConvolutionPDECalculus
+
+/-! Exact reflection and differentiation identities for the source PDE. The
+Jacobian term and the second-divergence term arise from the genuine derivative
+of the reflected diffusion generator, with all signs computed here. -/
+noncomputable section
+open scoped ContDiff BigOperators
+namespace SharpWasserstein.PeriodicSourceConvolution
+open WeightedTangent NoiseAverage PropagatedSourceEquation FlowSemigroupDerivative
+open PeriodicIntegrationByParts PeriodicPositiveKernel PeriodicBochner PeriodicFourierTests
+
+variable {n : ℕ}
+
+theorem coordinatePartial_twice_eq_fderiv {f : Coordinates n → ℝ}
+    (hf : ContDiff ℝ 2 f) (i j : Fin n) (x : Coordinates n) :
+    coordinatePartial (coordinatePartial f j) i x =
+      fderiv ℝ (fderiv ℝ f) x (Pi.single i 1) (Pi.single j 1) := by
+  have hd : Differentiable ℝ (fderiv ℝ f) :=
+    (hf.fderiv_right (m := 1) (by norm_num)).differentiable (by simp)
+  unfold coordinatePartial
+  rw [fderiv_clm_apply (hd x) (differentiableAt_const (Pi.single j 1))]
+  simp
+
+theorem coordinatePartial_commute {f : Coordinates n → ℝ} (hf : ContDiff ℝ 2 f)
+    (i j : Fin n) (x : Coordinates n) :
+    coordinatePartial (coordinatePartial f j) i x = coordinatePartial (coordinatePartial f i) j x := by
+  rw [coordinatePartial_twice_eq_fderiv hf,coordinatePartial_twice_eq_fderiv hf]
+  exact hf.contDiffAt.isSymmSndFDerivAt (by simp) _ _
+
+theorem coordinatePartial_sum {ι : Type*} (s : Finset ι) (f : ι → Coordinates n → ℝ)
+    (hf : ∀ i ∈ s,Differentiable ℝ (f i)) (j : Fin n) (x : Coordinates n) :
+    coordinatePartial (fun y => ∑ i ∈ s,f i y) j x = ∑ i ∈ s,coordinatePartial (f i) j x := by
+  unfold coordinatePartial
+  rw [fderiv_fun_sum (fun i hi => hf i hi x),sum_apply]
+
+/-- True spatial coordinate derivatives commute with the unit diffusion Laplacian. -/
+theorem coordinatePartial_laplacian {f : Coordinates n → ℝ} (hf : ContDiff ℝ ∞ f)
+    (i : Fin n) (x : Coordinates n) :
+    coordinatePartial (PeriodicIntegrationByParts.laplacian f) i x =
+      PeriodicIntegrationByParts.laplacian (coordinatePartial f i) x := by
+  unfold PeriodicIntegrationByParts.laplacian
+  rw [coordinatePartial_sum Finset.univ _ (fun j _ =>
+    (smooth_coordinatePartial (smooth_coordinatePartial hf j) j).differentiable (by simp))]
+  apply Finset.sum_congr rfl
+  intro j _
+  rw [coordinatePartial_commute
+    ((smooth_coordinatePartial hf j).of_le (ENat.natCast_le_of_coe_top_le_withTop le_rfl 2))]
+  have he : coordinatePartial (coordinatePartial f j) i = coordinatePartial (coordinatePartial f i) j := by
+    funext y
+    exact coordinatePartial_commute (hf.of_le (ENat.natCast_le_of_coe_top_le_withTop le_rfl 2)) i j y
+  rw [he]
+
+/-- The literal reflected-coordinate generator. -/
+def reflectedGenerator (B : Coordinates n → Coordinates n) (f : Coordinates n → ℝ)
+    (x y : Coordinates n) : ℝ :=
+  PeriodicIntegrationByParts.laplacian f (x-y)-fderiv ℝ f (x-y) (B y)
+
+/-- Differentiating the true generator reveals both Jacobian and Hessian terms. -/
+theorem fderiv_reflectedGenerator {f : Coordinates n → ℝ} (hf : ContDiff ℝ ∞ f)
+    {B : Coordinates n → Coordinates n} (hB : Differentiable ℝ B)
+    (x y V : Coordinates n) :
+    fderiv ℝ (reflectedGenerator B f x) y V =
+      -fderiv ℝ (PeriodicIntegrationByParts.laplacian f) (x-y) V+
+        fderiv ℝ (fderiv ℝ f) (x-y) V (B y)-fderiv ℝ f (x-y) (fderiv ℝ B y V) := by
+  have hD : ContDiff ℝ ∞ (fderiv ℝ f) := (contDiff_infty_iff_fderiv.mp hf).2
+  have hA := ((hD.differentiable (by simp)) (x-y)).hasFDerivAt.comp y
+    ((hasFDerivAt_id y).const_sub x)
+  have hL := (((PeriodicBochner.smooth_laplacian hf).differentiable (by simp)) (x-y)).hasFDerivAt.comp y
+    ((hasFDerivAt_id y).const_sub x)
+  have he := hL.sub (hA.clm_apply (hB y).hasFDerivAt)
+  simp only [Function.comp_def,Pi.sub_apply] at he
+  change fderiv ℝ (fun z => PeriodicIntegrationByParts.laplacian f (x-z)-fderiv ℝ f (x-z) (B z)) y V = _
+  rw [he.fderiv]
+  simp only [ContinuousLinearMap.sub_apply,ContinuousLinearMap.add_apply,ContinuousLinearMap.comp_apply,
+    ContinuousLinearMap.neg_apply,ContinuousLinearMap.id_apply,map_neg,ContinuousLinearMap.flip_apply,
+    ContinuousLinearMap.smulRight_apply]
+  ring
+
+/-- Actual Euclidean-coordinate generator equals the reflected flattened one. -/
+theorem euclideanGenerator_kernel_eq_reflected {d N : ℕ}
+    (b : Configuration d N → Configuration d N) (κ : ℝ) (x : Coordinates (N*d))
+    (y : Point (N*d)) :
+    euclideanGenerator b (euclideanKernelTest κ x) y =
+      reflectedGenerator (PeriodicConvolution.flattenedDrift b) (kernel κ) x (coordinateEquiv (N*d) y) := by
+  have he : euclideanKernelTest (n := N*d) κ x ∘ configurationEuclidean d N =
+      PeriodicConvolution.kernelTest κ x := by
+    funext z
+    unfold euclideanKernelTest PeriodicConvolution.kernelTest
+    rw [Function.comp_apply,configurationFlatten_eq_euclidean]
+    rfl
+  unfold euclideanGenerator
+  rw [he]
+  simp only [Function.comp_apply]
+  rw [PeriodicConvolution.generator_kernelTest]
+  have hx : configurationFlatten d N ((configurationEuclidean d N).symm y) = coordinateEquiv (N*d) y := by
+    rw [configurationFlatten_eq_euclidean,ContinuousLinearEquiv.apply_symm_apply]
+    rfl
+  rw [hx]
+  unfold reflectedGenerator
+  congr 1
+  rw [← hx,PeriodicConvolution.flattenedDrift_at_flatten]
+
+/-- The source generator derivative in actual physical coordinates. -/
+theorem fderiv_euclideanGenerator_kernel {d N : ℕ}
+    (b : Configuration d N → Configuration d N)
+    (κ : ℝ) (x : Coordinates (N*d)) (y V : Point (N*d)) :
+    fderiv ℝ (euclideanGenerator b (euclideanKernelTest κ x)) y V =
+      fderiv ℝ (reflectedGenerator (PeriodicConvolution.flattenedDrift b) (kernel κ) x)
+        (coordinateEquiv (N*d) y) (coordinateEquiv (N*d) V) := by
+  have he : euclideanGenerator b (euclideanKernelTest κ x) =
+      reflectedGenerator (PeriodicConvolution.flattenedDrift b) (kernel κ) x ∘ coordinateEquiv (N*d) :=
+    funext (euclideanGenerator_kernel_eq_reflected b κ x)
+  rw [he,(coordinateEquiv (N*d)).comp_right_fderiv]
+  rfl
+
+end SharpWasserstein.PeriodicSourceConvolution

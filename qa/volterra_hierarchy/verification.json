@@ -1,0 +1,63 @@
+{
+  "scope": "One finite positive-kernel integral hierarchy comparison module only; not a complete manuscript proof or a proof that actual energies satisfy its integral inequalities",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-17T23:44:37.741237+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/VolterraHierarchy.lean",
+      "sha256": "f2c84a8ffc2e35cebd93541457030ede962bd069d90ee2bdef960f69d8b46b89",
+      "declaration_count": 8,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "declarations": {
+    "SharpWasserstein.VolterraHierarchy.quadraticProfile_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraHierarchy.quadraticProfile_kernel_identity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraHierarchy.quadraticProfile_step_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraHierarchy.quadraticProfile_rate_supersolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraHierarchy.quadraticProfile_volterra_supersolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraHierarchy.quadraticProfile_volterra_boundary": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraHierarchy.finite_quadratic_bound_variable_rate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraHierarchy.finite_quadratic_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

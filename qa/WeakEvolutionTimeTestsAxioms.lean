@@ -1,0 +1,6 @@
+import SharpWasserstein.WeakEvolutionTimeTests
+#print axioms SharpWasserstein.continuous_integral_varying_probability
+#print axioms SharpWasserstein.WeakEvolution.continuous_generator_expectation
+#print axioms SharpWasserstein.WeakEvolution.continuous_integral_bounded
+#print axioms SharpWasserstein.WeakEvolution.hasDerivAt_integral_bounded_smooth
+#print axioms SharpWasserstein.WeakEvolution.equation_timeFactor_bounded_smooth

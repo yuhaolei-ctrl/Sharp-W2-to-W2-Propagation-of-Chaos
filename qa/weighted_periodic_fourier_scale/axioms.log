@@ -1,0 +1,41 @@
+'SharpWasserstein.WeightedPeriodicFourierScale.PeriodicOf' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.dilation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.rescale' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.rescaleLinear' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.rescale_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.rescale_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.rescale_inverse' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.rescale_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.rescale_inverse_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.coordinatePartial_rescale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.partial_rescale_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.laplacian_rescale' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.frequencySpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.atom' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.atom_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.atom_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.laplacian_atom' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.frequencySpace_properties' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierScale.exists_frequencySpace_uniform_C1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

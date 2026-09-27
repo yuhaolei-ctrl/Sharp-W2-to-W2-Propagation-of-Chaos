@@ -1,0 +1,2 @@
+PeriodicDriftEnergy 0
+PASS: 1 modules, 9 declarations, ['Classical.choice', 'Quot.sound', 'propext']

@@ -1,0 +1,18 @@
+{
+  "modules": [
+    {
+      "module": "WeightedPeriodicMarginal",
+      "source_sha256": "a8a12058e3170d37da3f4c0fcd89c4c0c672d1fa1ade8b82d6b9a2766728ca0a",
+      "declarations": 11,
+      "kernel_exit": 0
+    }
+  ],
+  "declarations": 11,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_exit": 0,
+  "lean_toolchain": "leanprover/lean4:v4.32.0"
+}

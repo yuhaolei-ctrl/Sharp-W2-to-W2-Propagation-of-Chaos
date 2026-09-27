@@ -1,0 +1,127 @@
+{
+  "scope": "Actual prescribed switch curve: probability and narrow continuity from common Brownian paths, exact carrying-law identity, real reference-minus-particle current and propagated distribution, finite energy, scalar source continuity, and complete integrated compact-test continuity equation. Main theorem remains open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 17,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "SwitchSourceBrownianPairing": {
+      "source_sha256": "7fdebfd3ca1aadac330243fdc51cff91a54a08eba3b5c72c1c767f70b030507a",
+      "olean_sha256": "66af42592dd0517479243459e28fdc0b1506fb6ceb969c6f35009bb6e9f73cc4",
+      "independent_kernel_replay": true
+    },
+    "PrescribedSwitchBrownianSource": {
+      "source_sha256": "184b7c0a45c5784ef2d510fcef487057d6fcf964d0609ad0768c245f0553835c",
+      "olean_sha256": "e69e424e6951caf652727a8545acee4743e2ac0a8a5df478b076779b449c44e2",
+      "independent_kernel_replay": true
+    },
+    "PrescribedSwitchBrownianLaw": {
+      "source_sha256": "e6ea100014f7d1909883cb8510a6dbe49c3a1e2aed8bceb82b15741e38870d8d",
+      "olean_sha256": "c2f5922cfe7dbc7ef6c464e58ede52ee34867fcde8bc3517c90cc34602d4b5ba",
+      "independent_kernel_replay": true
+    },
+    "SwitchCurveNarrow": {
+      "source_sha256": "35a49374e48ef641aea3912445af59b977cb8d357ce6dc84e2f61778d525e969",
+      "olean_sha256": "3a1983bcc20e22ded891e681d90cbd61603415f905ad85de07c6c917c7be66b9",
+      "independent_kernel_replay": true
+    },
+    "PrescribedSwitchContinuity": {
+      "source_sha256": "90bd45ff715696c690690839e05e7e65b4199c68f51791db40b55f94bf3af641",
+      "olean_sha256": "4a8d71dcd225b19d8655f07641f8a904ee3eb90e917e0d1865f400054ae6c4d8",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.SwitchSourceDerivative.sourcePairing_eq_brownianSourceAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedCurrent_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_lawAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchCurve.jointEndpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchCurve.jointEndpoint_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchCurve.law_eq_jointEndpoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchCurve.probabilityCurve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchCurve.probabilityCurve_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedEuclideanCurve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedEuclideanCurve_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_clamped_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedBrownianSource_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedEuclideanCurve_sub_eq_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribed_compactDistributionContinuity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+import SharpWasserstein.EntropyDirection
+
+#print axioms SharpWasserstein.reverse_absoluteContinuous_of_exponential_density
+#print axioms SharpWasserstein.llr_reverse_of_exponential_density
+#print axioms SharpWasserstein.integrable_llr_reverse_of_exponential_density
+#print axioms SharpWasserstein.integral_llr_reverse_of_exponential_density

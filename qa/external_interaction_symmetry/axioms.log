@@ -1,0 +1,82 @@
+'SharpWasserstein.ExternalInteractionSymmetry.observation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observation_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observation_positions' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observation_external' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observation_permutation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.external_swap_fixes_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observation_test_swap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.particleInteraction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.particleInteraction_eq_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.particleInteraction_fderiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.pairing_invariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.external_pairing_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.external_card' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.external_pairing_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.external_pairing_meanField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.external_pairing_terminal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.canonical_external_pairing_meanField' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.randomSource_closed_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.randomSource_bounded_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observedVelocity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observedVelocity_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observedSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observedSource_finiteEnergy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observedSource_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.observedSource_bounded_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.external_pairing_meanField_marginal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.interaction_bounded_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.compact_interaction_bounded_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionSymmetry.external_interaction_meanField_marginal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

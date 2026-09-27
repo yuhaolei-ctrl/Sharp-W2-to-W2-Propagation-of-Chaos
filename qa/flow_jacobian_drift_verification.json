@@ -1,0 +1,132 @@
+{
+  "scope": "Actual global variational equation, Jacobian time continuity, and uniform-in-time initial Jacobian convergence from genuine drift and first-derivative approximation. No Jacobian convergence is assumed; MainTheorem remains unproved.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 18,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "FlowJacobianDriftEquation": {
+      "source_sha256": "d6c31b0418eca6604ab67dbe0324b11bb38aa7f7aa944b5484757f7f8a2888e2",
+      "olean_sha256": "301b5a57f84225b5c369280c48719c54b59422cd78504006b128411bb8dced52",
+      "independent_kernel_replay": true
+    },
+    "FlowJacobianDriftVariation": {
+      "source_sha256": "5374841ba6bf724974911a9052a8c79bc33ca322ae2c19cbb1256a0dc10c0e3e",
+      "olean_sha256": "a5370bd1775f2bbdb71f305c9f8fa088cab7080353ad72be257d36f798624ea3",
+      "independent_kernel_replay": true
+    },
+    "FlowJacobianDriftStability": {
+      "source_sha256": "497bb6e61a88a194f6fea079b7a63e933fb61a6e8e7a3bb4a33b6778e714f855",
+      "olean_sha256": "52f6efc8cfbb1258c177dc05aad823b2fea6003b90f7965fe4a8258b510e1fc7",
+      "independent_kernel_replay": true
+    },
+    "FlowJacobianDriftConvergence": {
+      "source_sha256": "fd8ab0f24226a7bd97f1d9dca248ff29ea111a89869c4e0b515bca30b022ece3",
+      "olean_sha256": "a91e88479ac4a481e8d54542d1a16b1915ad719257b14fc6d5be8aca26d514d6",
+      "independent_kernel_replay": true
+    },
+    "FlowJacobianDriftSmooth": {
+      "source_sha256": "ae082eb9603d754325dda21ed3ea734099e99bf6e11544e4d7390967269b65de",
+      "olean_sha256": "617af85da0bae81285a618827bf9d50b2feedcb1b901245d1df05d195a72cf70",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.FlowJacobianDrift.jacobian": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.driftIntegral_hasFDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.jacobian_eq_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.jacobian_continuousOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.jacobian_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.coefficient_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.jacobian_linearVariation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.coefficient_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.variation_integral_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.variation_difference_le_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.coefficient_error_integral_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.variation_tendstoUniformlyOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.jacobian_tendstoUniformlyOn": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.fderiv_flow_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.jacobian_tendstoUniformlyOn_of_boundedSmooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.jacobian_tendstoUniformlyOn_of_locallyUniform_boundedSmooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FlowJacobianDrift.fderiv_flow_tendsto_of_locallyUniform_boundedSmooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

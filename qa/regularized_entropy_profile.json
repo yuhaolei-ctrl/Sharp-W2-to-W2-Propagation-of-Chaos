@@ -1,0 +1,80 @@
+{
+  "modules": [
+    {
+      "module": "SharpWasserstein.BrownianProductNoise",
+      "source_sha256": "49d58bd2276e27780349a9718352ba73fdda1e57a654aaf39ab45ee2b73ab23b",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/BrownianProductNoise.olean SharpWasserstein/BrownianProductNoise.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.BrownianProductNoise",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.DecoupledMarginal",
+      "source_sha256": "5ae2f815dcb272fe70f7db53ccdf48dbfad35ddb6519c60d52d1c8789d72fbfc",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/DecoupledMarginal.olean SharpWasserstein/DecoupledMarginal.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.DecoupledMarginal",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.BrownianDecoupledFlow",
+      "source_sha256": "1224df24ae31fdead9d4a09465c1aa069f60c7fcb8248dc1b672caf69425e9d0",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/BrownianDecoupledFlow.olean SharpWasserstein/BrownianDecoupledFlow.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.BrownianDecoupledFlow",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.MarginalMoments",
+      "source_sha256": "1eabdaab213946be9413a372fcc5fcd56f50126f58147c170e557bc6b263b481",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/MarginalMoments.olean SharpWasserstein/MarginalMoments.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.MarginalMoments",
+      "kernel_exit_code": 0
+    },
+    {
+      "module": "SharpWasserstein.RegularizedEntropyProfile",
+      "source_sha256": "b01b1da8710ef2ba59da09fac9854cf3fdc9eacd8999381759e51d6b82e18268",
+      "compile_command": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/RegularizedEntropyProfile.olean SharpWasserstein/RegularizedEntropyProfile.lean",
+      "compile_exit_code": 0,
+      "kernel_command": "python3 lean_local.py --kernel SharpWasserstein.RegularizedEntropyProfile",
+      "kernel_exit_code": 0
+    }
+  ],
+  "axiom_audit_command": "python3 lean_local.py qa/RegularizedEntropyProfileAxioms.lean",
+  "axiom_audit_exit_code": 0,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "theorems": [
+    "SharpWasserstein.BrownianNoise.positionPath_measurable",
+    "SharpWasserstein.BrownianNoise.assemblePositionPaths_measurable",
+    "SharpWasserstein.BrownianNoise.configurationLaw_eq_position_product",
+    "SharpWasserstein.probability_pi_map_prefix",
+    "SharpWasserstein.DecoupledFlow.law_marginal",
+    "SharpWasserstein.DecoupledFlow.law_exchangeable",
+    "SharpWasserstein.DecoupledFlow.liftDrift_continuous",
+    "SharpWasserstein.DecoupledFlow.liftDrift_bound",
+    "SharpWasserstein.DecoupledFlow.liftDrift_lipschitz",
+    "SharpWasserstein.DecoupledFlow.liftDrift_quadratic",
+    "SharpWasserstein.DecoupledFlow.liftDrift_euclidean_lipschitz",
+    "SharpWasserstein.DecoupledFlow.liftDrift_nodes_coordinate",
+    "SharpWasserstein.DecoupledFlow.liftDrift_flow_coordinate",
+    "SharpWasserstein.DecoupledFlow.brownian_flowLaw_eq",
+    "SharpWasserstein.hasSecondMoment_iff_integrable",
+    "SharpWasserstein.hasSecondMoment_marginal",
+    "SharpWasserstein.hasSecondMoment_tensorLaw",
+    "SharpWasserstein.DecoupledFlow.brownianLaw_tensor",
+    "SharpWasserstein.DecoupledFlow.brownianLaw_marginal",
+    "SharpWasserstein.DecoupledFlow.brownianLaw_exchangeable",
+    "SharpWasserstein.DecoupledFlow.brownianLaw_entropy_le",
+    "SharpWasserstein.DecoupledFlow.brownianLaw_entropy_finite",
+    "SharpWasserstein.DecoupledFlow.brownianLaw_finiteEntropyConditions",
+    "SharpWasserstein.DecoupledFlow.regularized_marginal_klDiv_le",
+    "SharpWasserstein.DecoupledFlow.regularized_entropy_profile"
+  ],
+  "scope": "Actual all-level entropy regularization for the constructed independent-Brownian decoupled flow from the initial quadratic Wasserstein profile. Product Brownian law, tensorization, marginal commutation, exchangeability, finite moments, finite KL and nondecreasing entropy increments are proved rather than assumed. Lifted Euclidean Lipschitz constant is exactly the one-particle constant without a particle-count factor.",
+  "hypotheses": "Continuous globally bounded time/state one-particle drift; sup-norm and Euclidean global Lipschitz bounds; positive time; probability P2 initial full law and reference; initial all-level quadratic W2-squared profile. Exchangeability is needed only for entropy-increment monotonicity/source specialization."
+}

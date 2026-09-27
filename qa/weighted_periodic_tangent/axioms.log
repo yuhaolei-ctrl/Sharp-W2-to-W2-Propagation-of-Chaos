@@ -1,0 +1,37 @@
+'SharpWasserstein.WeightedPeriodicTangent.source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.representative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.gradientIntoPeriodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.dense_gradientIntoPeriodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.source_eq_full_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.representative_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.gradientVector_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.representative_divergence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.source_eq_flux_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.exists_compact_source_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.objective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.gradient_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.objective_eq_dense' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.objective_bddAbove' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.energy_eq_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.energy_le_full' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.energy_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangent.full_energy_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

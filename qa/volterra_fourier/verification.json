@@ -1,0 +1,200 @@
+{
+  "scope": "Five actual physical Fourier recovery, scalar integrability, finite-to-Volterra limit, and periodic source hierarchy assembly modules only; finite derivative inequalities remain an explicit interface; not a complete manuscript proof",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-18T00:34:18.839706+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/VolterraFourierRecovery.lean",
+      "sha256": "6dec0650b657565779568b06dced46febc1bb68138104e31a4f113e57cdef600",
+      "declaration_count": 13,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/VolterraFourierLimit.lean",
+      "sha256": "ffa659cc5c2495fcb2c43cba0b45cada16d2644dca79f7423b6fe000bcb45884",
+      "declaration_count": 3,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/VolterraFourierHierarchy.lean",
+      "sha256": "8a5ce397033e99e8720cc99c23f044a292c7e96474119edeaadb3b318fca184b",
+      "declaration_count": 4,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/VolterraFourierSource.lean",
+      "sha256": "c82f2f40b446863b8bc36f2726386c9360a055814dbebd5560fdf18bbdfca09c",
+      "declaration_count": 7,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/VolterraFourierSourceHierarchy.lean",
+      "sha256": "23a1d9d6472a115930f6eae44950941f80e424a17e96054158b6e4f3a9a4ba65",
+      "declaration_count": 1,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "pinned_direct_foundations": {
+    "VolterraEnergyLimit": "89c1f4e4979438adb1d5971e4294b97b5ed0461a0d665c88e53b5cbc00836c4f",
+    "VolterraHierarchy": "f2c84a8ffc2e35cebd93541457030ede962bd069d90ee2bdef960f69d8b46b89",
+    "RegularizedTrialEnergy": "c0d2006c9f9e316a0bf68bc37130a6bf2f7a8682453fa1ca093c7a0fb3a0d1eb",
+    "RegularizedTrialConvergencePhysical": "28aa937d2af6e330a11a270b409b4ac2f74743aeea28a68af90621274ff3b908",
+    "RegularizedTrialConvergencePhysicalTime": "7a10c59190fa9d5b70ba197e3037bd1441e5bac0922b198a34c3d4cba09ac0b3",
+    "RegularizedTrialConvergenceSequence": "a9bf15a1b5578d843f532b77b060633b1dcffdc0f2174faee364c7a6c77f95b1",
+    "WeightedPeriodicTangentPhysical": "d5cb27fbdd51c704289a780b69d082fd56aeee8815c296971452b264938cd353"
+  },
+  "declarations": {
+    "SharpWasserstein.VolterraFourier.finiteEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.totalEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.finiteEnergy_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.finiteEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.gap_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.finiteEnergy_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.totalEnergy_aestronglyMeasurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.totalEnergy_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.finiteEnergy_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.gap_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.integral_norm_gap_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.integral_norm_mul_gap_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.totalEnergy_intervalIntegrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.intervalIntegral_norm_mul_gap_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.volterra_bound_of_finite_derivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.intervalIntegrable_prefix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.hierarchy_of_finite_derivatives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.quadratic_bound_of_finite_derivatives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.quadratic_bound_of_finite_derivatives_bounded_coefficients": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.sourceRepresentative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.sourceFiniteEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.sourceRepresentative_mem": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.totalEnergy_sourceRepresentative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.sourceEnergy_aestronglyMeasurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.sourceEnergy_integrable_of_full_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.source_gap_tendsto_of_full_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.VolterraFourier.source_quadratic_bound_of_finite_derivatives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

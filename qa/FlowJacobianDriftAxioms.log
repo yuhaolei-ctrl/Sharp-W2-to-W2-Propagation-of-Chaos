@@ -1,0 +1,34 @@
+'SharpWasserstein.FlowJacobianDrift.jacobian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.driftIntegral_hasFDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.jacobian_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.jacobian_continuousOn' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.jacobian_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.coefficient_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.jacobian_linearVariation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.coefficient_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.variation_integral_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.variation_difference_le_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.coefficient_error_integral_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.variation_tendstoUniformlyOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.jacobian_tendstoUniformlyOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.fderiv_flow_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.jacobian_tendstoUniformlyOn_of_boundedSmooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.jacobian_tendstoUniformlyOn_of_locallyUniform_boundedSmooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowJacobianDrift.fderiv_flow_tendsto_of_locallyUniform_boundedSmooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

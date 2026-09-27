@@ -1,0 +1,15 @@
+import SharpWasserstein.ExchangeableEntropy
+
+#print axioms SharpWasserstein.klDiv_map_measurableEquiv
+#print axioms SharpWasserstein.klDiv_marginals_add_le_product
+#print axioms SharpWasserstein.toReal_klDiv_marginals_add_le_product
+#print axioms SharpWasserstein.entropy_second_difference_nonneg_of_equal_kernel_marginals
+#print axioms SharpWasserstein.entropy_second_difference_nonneg_of_pair_swap
+#print axioms SharpWasserstein.marginal_tensorLaw
+#print axioms SharpWasserstein.marginal_klDiv_ne_top
+#print axioms SharpWasserstein.pairObservation_swap_invariant
+#print axioms SharpWasserstein.exchangeable_marginal_entropy_second_difference
+#print axioms SharpWasserstein.marginalEntropy_zero
+#print axioms SharpWasserstein.exchangeable_entropy_increment_step
+#print axioms SharpWasserstein.exchangeable_finiteEntropyConditions
+#print axioms SharpWasserstein.exchangeable_entropy_external_source_bound

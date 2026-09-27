@@ -1,0 +1,30 @@
+{
+  "modules": [
+    {
+      "module": "PrescribedSwitchMarginalSourceAction",
+      "source_sha256": "6959542132b6954718a07dd6337fa2c236c4bd23351f70bc99fe24487b7fb7e3",
+      "declarations": 2,
+      "kernel_exit": 0
+    },
+    {
+      "module": "PrescribedSwitchMarginalSource",
+      "source_sha256": "0335025b93f0040adb43250b390bc1644d3090d3e36cd130367c465f6cb34f4b",
+      "declarations": 5,
+      "kernel_exit": 0
+    },
+    {
+      "module": "PrescribedSwitchMarginalSourceContinuity",
+      "source_sha256": "d5ac7a4c38adcf5cad47d8d65a335338c017bd9f93767f6c3453aebe571a05c4",
+      "declarations": 9,
+      "kernel_exit": 0
+    }
+  ],
+  "declarations": 16,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_exit": 0,
+  "lean_toolchain": "leanprover/lean4:v4.32.0"
+}

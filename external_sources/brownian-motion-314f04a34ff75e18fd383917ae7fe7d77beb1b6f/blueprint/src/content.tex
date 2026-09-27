@@ -1,0 +1,60 @@
+% In this file you should put the actual content of the blueprint.
+% It will be used both by the web and the print version.
+% It should *not* include the \begin{document}
+%
+% If you want to split the blueprint content into several files then
+% the current file can be a simple sequence of \input. Otherwise It
+% can start with a \section or \chapter for instance.
+
+\part{Brownian motion}
+
+\textbf{Overview}
+
+This part of the blueprint is a guide to the formalization of a standard Brownian motion in Lean using Mathlib. There are two main parts to this formalization:
+\begin{itemize}
+  \item a development of the theory of Gaussian distributions, the construction of a projective family of Gaussian distributions and its projective limit by the Kolmogorov extension theorem,
+  \item a proof of a Kolmogorov-Chentsov continuity theorem, following \cite{kratschmer2023kolmogorov}.
+\end{itemize}
+
+Putting the two sides together, we then build a stochastic process that fits the definition of a Brownian motion on the real line.
+
+\textbf{Status} The formalization is complete.
+
+\textbf{Blueprint authors} Rémy Degenne, Peter Pfaffelhuber.
+
+\textbf{Formalization authors} Rémy Degenne, Markus Himmel, David Ledvinka, Etienne Marion, Peter Pfaffelhuber.
+
+With additional contributions from Jonas Bayer, Lorenzo Loccioli, Pietro Monticone, Alessio Rondelli and Jérémy Scanvic.
+
+\input{chapters/characteristic_function.tex}
+\input{chapters/process.tex}
+\input{chapters/gaussian.tex}
+\input{chapters/projective_family.tex}
+\input{chapters/kolmogorov_chentsov.tex}
+\input{chapters/brownian.tex}
+
+\putbib
+
+\part{Stochastic integral}
+
+\textbf{Overview}
+
+We describe the construction of a stochastic integral.
+
+\textbf{Status} The formalization is ongoing.
+
+\textbf{Blueprint authors} Rémy Degenne, Lorenzo Luccioli, Etienne Marion, Alessio Rondelli, Kexing Ying. Anyone is welcome to contribute!
+
+\textbf{Formalization authors} Anyone is welcome to contribute!
+
+\input{chapters/filtration_martingale.tex}
+\input{chapters/debut.tex}
+\input{chapters/local_martingales.tex}
+\input{chapters/elementary.tex}
+\input{chapters/cadlag.tex}
+\input{chapters/doob_meyer.tex}
+\input{chapters/martingale_classes.tex}
+\input{chapters/quasimartingales.tex}
+\input{chapters/stochastic_integral.tex}
+
+\putbib

@@ -1,0 +1,63 @@
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.cylinder_potential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.splitGenerator_potential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.splitGenerator_gradientSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.splitGenerator_smooth_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.matrix_splitGenerator_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.source_splitGenerator_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.brownian_periodic_trialEnergy_splitGenerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.potential_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.localEnergyTerm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.externalEnergyTerm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.splitEnergyDerivative_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.localEnergyTerm_observation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.internalAmplitude' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.internalAmplitude_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.internalAmplitude_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.observed_solution_eq_prefix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.finite_splitHierarchy_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.terminal_splitEnergyDerivative_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.finite_terminal_splitHierarchy_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.brownian_periodic_trialEnergy_derivative_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicMarginalCoefficientEvolution.brownian_periodic_trialEnergy_terminal_derivative_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

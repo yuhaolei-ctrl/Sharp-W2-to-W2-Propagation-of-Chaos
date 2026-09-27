@@ -1,0 +1,127 @@
+'SharpWasserstein.PeriodicConvolution.kernelTest_eq_translate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.lipschitz_translate' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.kernelTest_uniform_lipschitz' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensity_uniform_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensity_uniform_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensity_generator_continuous_space' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensity_generator_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensityBCF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensityBCF_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionGeneratorBCF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionGeneratorBCF_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensityBCF_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensityBCF_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionGeneratorBCF_uniformContinuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionGeneratorBCF_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensityBCF_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.evolutionDensityBCF_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.kernel_smul_integrable_of_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.flux_continuous_of_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.flux_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.kernel_mul_integrable_of_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.flux_action_le_of_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.kernel_normsq_joint_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.integral_flux_action_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.fluxVelocity' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.fluxVelocity_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.fluxVelocity_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.fluxVelocity_sq_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.fluxVelocity_memLp' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.density_smul_fluxVelocity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.integral_fluxVelocity_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.flux_pairing_joint_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.integral_inner_flux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.integral_inner_fluxVelocity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.integral_inner_flux_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.exists_flow_variation_short' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.LinearVariation.difference_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.autonomousFlow_fderiv_lipschitz_short' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.BoundedFlow.restrictPath_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.BoundedFlow.shiftPath_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.autonomousFlow_fderiv_continuous_multiple' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.autonomousFlow_endpoint_fderiv_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.autonomousFlow_fderiv_continuous' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.autonomousFlow_fderiv_continuous_of_boundedSmooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.boundedFlow_fderiv_continuous_of_boundedSmooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.boundedFlow_fderiv_measurable_of_boundedSmooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.boundedFlow_fderiv_apply_aestronglyMeasurable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.boundedFlow_fderiv_apply_memLp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.FlowInitialDerivative.boundedFlow_fderiv_apply_energy_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

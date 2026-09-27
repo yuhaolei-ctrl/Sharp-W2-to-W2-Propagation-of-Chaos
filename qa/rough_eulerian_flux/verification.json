@@ -1,0 +1,525 @@
+{
+  "timestamp_utc": "2026-09-18T00:12:32.401341+00:00",
+  "scope": "Actual measurable space-time Riesz flux and compact-test continuity; not a rough Wasserstein transport theorem.",
+  "modules": [
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportKernel",
+      "source": "SharpWasserstein/RoughEulerianTransportKernel.lean",
+      "source_sha256": "56be747a42c28ab425c00f68b6e7d5d13dc9e2cac53ce5afc6b699b84796bc54",
+      "olean_sha256": "da58147bfe08dad92b6b1314481c2cde652055459a8f13d93d97aa4900d70060",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportSpaceTime",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "source_sha256": "c0df621ff4f76d3cf378b019fbc2154884dc04cc45c6566bf2738d76e4c38746",
+      "olean_sha256": "e34e1680124a3084bc8f3b273e768e54d0a5628b42672a754945c87601d7f0be",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportLocalization",
+      "source": "SharpWasserstein/RoughEulerianTransportLocalization.lean",
+      "source_sha256": "e16a1a963886861c6ac0ea91c72dc5d5f5e49c69a846f6410b115ee4fdf4fc71",
+      "olean_sha256": "84329e248c6ec1e6f76978c04efd4cba0a81587b013c2cf27765497a1cf602ff",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportEnergy",
+      "source": "SharpWasserstein/RoughEulerianTransportEnergy.lean",
+      "source_sha256": "6427d598ef702a8d6a6f35836378f1259c11245ea7cae4456e9f8371451ac659",
+      "olean_sha256": "2e1690a8064b721a8225ac2436ccf7198738db946a9c2a4608dc10eb347e8cd8",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.RoughEulerianTransportContinuity",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "source_sha256": "41a58fd8eef09e57b507768508c25d6d2a64eac06a66dd20b2309b041ddc78b6",
+      "olean_sha256": "fa42094dad0a105a12a515b66e1e5ceb4adc4c6f4e37a61c570201350da02ad0",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    }
+  ],
+  "declarations": [
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.measurable_measure_of_continuous_probability",
+      "source": "SharpWasserstein/RoughEulerianTransportKernel.lean",
+      "line": 16,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.probabilityCurveKernel",
+      "source": "SharpWasserstein/RoughEulerianTransportKernel.lean",
+      "line": 29,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.probabilityCurveKernel_apply",
+      "source": "SharpWasserstein/RoughEulerianTransportKernel.lean",
+      "line": 33,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.probabilityCurveKernel_markov",
+      "source": "SharpWasserstein/RoughEulerianTransportKernel.lean",
+      "line": 36,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradient",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 20,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradient_add",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 24,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradient_smul",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 30,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradient_zero",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 36,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldSpace",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 42,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.Field",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 62,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldAction",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 65,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradientLp",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 73,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradientLp_ae",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 77,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradientLinear",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 80,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldClosure",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 98,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldClosure_completeSpace",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 101,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldIntoClosure",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 105,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.dense_fieldIntoClosure",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 110,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradientLp_norm_sq",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 125,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.field_objective_le_integral",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 139,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.spaceTimeRepresentative",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 155,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.spaceTimeFlux",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 159,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.spaceTimeFlux_pairing",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 163,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.spaceTimeFlux_energy_le",
+      "source": "SharpWasserstein/RoughEulerianTransportSpaceTime.lean",
+      "line": 185,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.localizedTest",
+      "source": "SharpWasserstein/RoughEulerianTransportLocalization.lean",
+      "line": 18,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.fieldGradient_localizedTest",
+      "source": "SharpWasserstein/RoughEulerianTransportLocalization.lean",
+      "line": 21,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.localizedField",
+      "source": "SharpWasserstein/RoughEulerianTransportLocalization.lean",
+      "line": 31,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.spaceTimeFlux_localized_pairing",
+      "source": "SharpWasserstein/RoughEulerianTransportLocalization.lean",
+      "line": 47,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.spaceTimeFlux_test_integrable",
+      "source": "SharpWasserstein/RoughEulerianTransportLocalization.lean",
+      "line": 71,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.spaceTimeFlux_set_pairing",
+      "source": "SharpWasserstein/RoughEulerianTransportLocalization.lean",
+      "line": 82,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.objective_le_energy_of_finite",
+      "source": "SharpWasserstein/RoughEulerianTransportLocalization.lean",
+      "line": 96,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.lowerSemicontinuous_extendedEnergy",
+      "source": "SharpWasserstein/RoughEulerianTransportEnergy.lean",
+      "line": 17,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.measurable_extendedEnergy",
+      "source": "SharpWasserstein/RoughEulerianTransportEnergy.lean",
+      "line": 28,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.measurable_finite_energy",
+      "source": "SharpWasserstein/RoughEulerianTransportEnergy.lean",
+      "line": 34,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.CompactDistributionContinuity",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 16,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.curveSpaceTimeMeasure",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 28,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.curveFlux",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 32,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.curveFlux_stronglyMeasurable",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 36,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.source_integrable_horizon",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 42,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.curveFlux_energy_le",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 49,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.curveFlux_pairing_integrable",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 56,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.curveFlux_continuity_equation",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 66,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.exists_measurable_finiteAction_flux",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 89,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.exists_flux_of_finite_tangent_energy",
+      "source": "SharpWasserstein/RoughEulerianTransportContinuity.lean",
+      "line": 105,
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.CompactDistributionContinuity.mk",
+      "generated_by": "structure CompactDistributionContinuity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.CompactDistributionContinuity.continuous",
+      "generated_by": "structure CompactDistributionContinuity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.RoughEulerianTransport.CompactDistributionContinuity.equation",
+      "generated_by": "structure CompactDistributionContinuity",
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  ],
+  "allowed_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "commands": {
+    "compile": "python3 lean_local.py -o .lake/build/lib/lean/SharpWasserstein/<Module>.olean SharpWasserstein/<Module>.lean",
+    "kernel": "python3 lean_local.py --kernel SharpWasserstein.<Module>",
+    "axioms": "python3 lean_local.py qa/rough_eulerian_flux/Axioms.lean"
+  }
+}

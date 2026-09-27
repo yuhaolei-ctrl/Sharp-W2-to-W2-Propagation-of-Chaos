@@ -1,0 +1,133 @@
+'SharpWasserstein.WeightedPeriodicFourierPhysical.physicalPotential' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.physicalPotential_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.physicalPotential_gradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.physicalPotential_gradient_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.physicalPotential_value_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.physicalPotential_gradient_sub_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.exists_normalized_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.physical_gradient_memLp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.gradientVector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.gradientVector_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.periodicGradientMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.trialGradient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.trialSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.periodicSpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.trialSpace_le_periodicSpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.gradientVector_norm_sub_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.gradientVector_mem_periodicSpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourierPhysical.periodicSpace_eq_smoothGradientClosure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.source' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.representative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.gradientIntoPeriodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.dense_gradientIntoPeriodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.source_eq_full_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.representative_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.gradientVector_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.representative_divergence' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.source_eq_flux_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.exists_compact_source_approximation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.objective' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.gradient_norm_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.objective_eq_dense' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.objective_bddAbove' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.energy_eq_norm_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.energy_le_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.energy_eq_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicTangentPhysical.full_energy_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.tangentLift_gradientVector' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.tangentLift_periodic_mem' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.periodicLift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.periodicLift_ae' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.representative_closed_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.source_liftTest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.marginal_representative_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.marginal_energy_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.marginal_energy_increment_integral' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicMarginalPhysical.marginal_energy_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

@@ -1,0 +1,7 @@
+{
+  "url": "https://github.com/RemyDegenne/kolmogorov_extension4",
+  "commit": "f33cbc388e5d444606dffa7eec507a26b62c15bb",
+  "archive_sha256": "fa610082f010e3d8bc3b5a2bb102d91d67ce36529d8347159d62a9d64e1e419f",
+  "use": "Compiled unmodified pinned source closure, independently kernel replayed; imported by SharpWasserstein.BrownianNoise",
+  "verification": "qa/brownian_verification.json"
+}

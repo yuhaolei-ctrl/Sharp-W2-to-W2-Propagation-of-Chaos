@@ -1,0 +1,11 @@
+import SharpWasserstein.SinePeriodization
+#check ContinuousLinearMap.single
+#check ContinuousLinearMap.proj
+#check hasFDerivAt_apply
+#check HasFDerivAt.pi
+#check HasDerivAt.comp_hasFDerivAt
+#check ContinuousLinearMap.pi
+#check ContinuousLinearMap.pi_apply
+#check ContinuousLinearMap.single_apply
+#check ContinuousLinearMap.comp_apply
+#check Tendsto.clm_comp

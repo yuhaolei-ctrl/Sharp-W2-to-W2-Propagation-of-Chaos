@@ -1,0 +1,97 @@
+{
+  "scope": "Actual smooth sine-compressed periodic tests recover compact gradients with a uniform Euclidean gradient bound; dominated objective convergence proves that uniform energy bounds at growing period multiples imply full Euclidean energy bounds. Kernel periodicity at integer multiples is derived. Main theorem remains open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 13,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "CompressionPeriodicTests": {
+      "source_sha256": "e84cb7db7195c09e087fe48beb2f2fc95fbdf2cf3564cae28fa6277a82cdad07",
+      "olean_sha256": "81c10e6c27d02922bb065f0183554ec90b28acd106df0e4a4f65b59672319cca",
+      "independent_kernel_replay": true
+    },
+    "PeriodicEnergyExhaustion": {
+      "source_sha256": "97a40a526b9518484984d458737ee0d14bee7e77d7569c4095d4adce9fc4c34d",
+      "olean_sha256": "8aca16cb1ec1a5c97923594fffedf5f3fe08e5a74726701661d0a9db3bbf1345",
+      "independent_kernel_replay": true
+    },
+    "KernelPeriodMultiples": {
+      "source_sha256": "e4c5e87b15096a623bd6edc02ccea5b4e49dcfc5f7353ea7a6b23d4455c0ae4a",
+      "olean_sha256": "1f8f6f8e6ff40f7ba7452ae66a92b21f92ad941e43091438852172cbbf56f762",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.CompressionPeriodicTests.compression_scaled": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompressionPeriodicTests.compression_scaled_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompressionPeriodicTests.compression_fderiv": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompressionPeriodicTests.compression_scaled_fderiv_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompressionPeriodicTests.compressed_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompressionPeriodicTests.compressed_gradient_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompressionPeriodicTests.compressed_gradient_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompressionPeriodicTests.compression_coordinates": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompressionPeriodicTests.compressed_periodic": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicEnergyExhaustion.smooth_periodic_objective_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicEnergyExhaustion.full_energy_le_of_periodic_multiples": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.KernelPeriodMultiples.first": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.KernelPeriodMultiples.second": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

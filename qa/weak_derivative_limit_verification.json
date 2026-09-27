@@ -1,0 +1,52 @@
+{
+  "scope": "A strong Hilbert-space limit and uniform derivative bounds with actual eventual test pairings produce a weak derivative of the limit, with the same norm bound. Constructed by a bounded extension on the closure of the test-value range and Riesz; no weak limit or compactness assumed.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 6,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "WeakDerivativeLimit": {
+      "source_sha256": "a8fef5607b1ede11727d6f83e095154a2e2579214ea230c7df20001a613eedbd",
+      "olean_sha256": "c63f464e2ac1f375a87cff187239fa06db80ebd6d516057fd565eccad07debbf",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.WeakDerivativeLimit.testClosure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakDerivativeLimit.intoClosure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakDerivativeLimit.dense_intoClosure": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakDerivativeLimit.exists_representative_of_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakDerivativeLimit.distribution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakDerivativeLimit.exists_weakDerivative_of_strong_limit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

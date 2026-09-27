@@ -1,0 +1,735 @@
+{
+  "timestamp_utc": "2026-09-17T23:48:42.352559+00:00",
+  "scope": "Actual switch source derivative; does not assert the main sharp bound.",
+  "modules": [
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativePathwise",
+      "source": "SharpWasserstein/SwitchSourceDerivativePathwise.lean",
+      "source_sha256": "33279901fd8e0b45182c62796d726ee054985b4d6dfb682f5cba4a54fdfc1613",
+      "olean_sha256": "2dc1039ec1f24d059f8e706e88776d96af23cd2b767013349d30e5b1ca2706eb",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeShortTime",
+      "source": "SharpWasserstein/SwitchSourceDerivativeShortTime.lean",
+      "source_sha256": "3071668aa527fcc168f4ee99dd7983a4e0a345b696da54622204c78a651caa55",
+      "olean_sha256": "94a630fc2b472135558580841bd7af3784e73e89f2cc5a84636b8d0153e661d4",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeRestart",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRestart.lean",
+      "source_sha256": "839cc4ed24a8e0ff94213bda4c054b933f63d47e7563657b153366617580d5d2",
+      "olean_sha256": "4851248407e331bc412c66a8ccac75967df64866fb22fe859648a02182ba10a9",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeJacobian",
+      "source": "SharpWasserstein/SwitchSourceDerivativeJacobian.lean",
+      "source_sha256": "caae3612603c30d03686c6e0d9230436845a9a758c92d1ed28515469130ba5f6",
+      "olean_sha256": "cc28f9c1a2876c2ef393f979f468cf1399a056727251977f07d5cf14fc9fe2a1",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeMovingTest",
+      "source": "SharpWasserstein/SwitchSourceDerivativeMovingTest.lean",
+      "source_sha256": "402ac8189421dcbe5be8dcf0d50f378502d4cc8ce9b31e6d81ab9f3e17713250",
+      "olean_sha256": "144c1d9bd3ead26747f8e5da9dc08b98da8531b81ce4bec61d7b50bc88887bd2",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeMovingExpectation",
+      "source": "SharpWasserstein/SwitchSourceDerivativeMovingExpectation.lean",
+      "source_sha256": "f004e6e28dfff72a30343f35b4d2f3786b20899d4d8379b297d7576a9a2a8eb3",
+      "olean_sha256": "86d7096c60d3fcb5074193cdc371b6ee1ac9dfba6f841c91fa6c077d54628e1a",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeRemainingTest",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRemainingTest.lean",
+      "source_sha256": "eb33c8eef491828e1f6142f86362d866029b678488d0c1a65ab3515647045340",
+      "olean_sha256": "5d77917bbdb4b34cea30d296e4acba036bf65f6ebb19d91edbfc92d9bb33c75d",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeLaw",
+      "source": "SharpWasserstein/SwitchSourceDerivativeLaw.lean",
+      "source_sha256": "81bdfb56c79add96cf465abbe8a8039c59dc444401ce9899e93500fc051cd3d0",
+      "olean_sha256": "898eb1c9574ea0e62a94a71d8983efc53ddc25aa6612a6fd9c7ecc9a50c647e1",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeRight",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRight.lean",
+      "source_sha256": "7e6a728c129480e33d2a6e737de221548d3fc5aa9f0524927af87ddb19c8ceae",
+      "olean_sha256": "d867425579ebd5739a075464ac40cae643ba81b2d1a604bb6784c4def9f5a0a7",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeEquation",
+      "source": "SharpWasserstein/SwitchSourceDerivativeEquation.lean",
+      "source_sha256": "dbe92f6680effe0f43cc5cd1535b9b9e0e142220d11e8117244f67ce6cbff7fb",
+      "olean_sha256": "5341e82b229c1f28ff2a067fff896f73c0dd5b86fc994348322dcb85d18e7811",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeParticle",
+      "source": "SharpWasserstein/SwitchSourceDerivativeParticle.lean",
+      "source_sha256": "384458d44d3add854ac9505e456fe227113563f18e5eca66232f0c1f865aab75",
+      "olean_sha256": "5b9d1cdcefdd030832fcee30865f095965165b47876af9ca0facc3ddfa64a099",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativePrescribed",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "source_sha256": "7167e2ce4360cfd845796dba430fe3b1a11af2c6640277706d7cfad8aee80c77",
+      "olean_sha256": "e866978f0a4881acfc283aa297d85f15b1dc4f967d96ed3fcffb2d608217025b",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    },
+    {
+      "module": "SharpWasserstein.SwitchSourceDerivativeFlux",
+      "source": "SharpWasserstein/SwitchSourceDerivativeFlux.lean",
+      "source_sha256": "618edbd70be3df1a49bc7805308b780f426c2e6908347c04b9067d5dc775deeb",
+      "olean_sha256": "8bace7cf47b1a346cef34b000924ba89d9158f90a680f829b8ede143aca8f16a",
+      "compile_exit": 0,
+      "kernel_replay_exit": 0
+    }
+  ],
+  "declaration_count": 56,
+  "source_token_scan": "passed",
+  "declarations": [
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.strict_test_difference_hasDerivWithinAt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePathwise.lean",
+      "line": 17,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.trajectory_difference_hasDerivWithinAt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePathwise.lean",
+      "line": 38,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.trajectory_test_difference_hasDerivWithinAt_zero",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePathwise.lean",
+      "line": 50,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.trajectory_difference_norm_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePathwise.lean",
+      "line": 68,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.trajectory_test_difference_norm_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePathwise.lean",
+      "line": 90,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.flowTestDifference",
+      "kind": "def",
+      "source": "SharpWasserstein/SwitchSourceDerivativeShortTime.lean",
+      "line": 25,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.flowTestDifference_zero",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeShortTime.lean",
+      "line": 31,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.flowTestDifference_continuous",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeShortTime.lean",
+      "line": 40,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.flowTestDifference_norm_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeShortTime.lean",
+      "line": 48,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.flowTestDifference_hasDerivWithinAt_zero",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeShortTime.lean",
+      "line": 59,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.integral_flowTestDifference_hasDerivWithinAt_zero",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeShortTime.lean",
+      "line": 72,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.shiftedDrift",
+      "kind": "def",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRestart.lean",
+      "line": 14,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.shiftedDrift_continuous",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRestart.lean",
+      "line": 17,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.trajectory_shift",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRestart.lean",
+      "line": 23,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.flow_add_shift",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRestart.lean",
+      "line": 57,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.brownianLaw_add_shift",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRestart.lean",
+      "line": 91,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.brownianGlobalLaw_add_shift",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRestart.lean",
+      "line": 133,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.flow_fderiv_joint_continuous",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeJacobian.lean",
+      "line": 22,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.expectation_fderiv_joint_continuous",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeJacobian.lean",
+      "line": 51,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.test_sub_eq_integral_fderiv",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeMovingTest.lean",
+      "line": 14,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.trajectory_moving_test_difference_hasDerivWithinAt_zero",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeMovingTest.lean",
+      "line": 30,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.integral_moving_flowTestDifference_hasDerivWithinAt_zero",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeMovingExpectation.lean",
+      "line": 22,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.remainingTest",
+      "kind": "def",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRemainingTest.lean",
+      "line": 18,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.remainingTest_contDiff_one",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRemainingTest.lean",
+      "line": 27,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.remainingTest_norm_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRemainingTest.lean",
+      "line": 34,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.remainingTest_continuous",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRemainingTest.lean",
+      "line": 42,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.remainingTest_fderiv_joint_continuous",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRemainingTest.lean",
+      "line": 49,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.remainingTest_fderiv_norm_le",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRemainingTest.lean",
+      "line": 56,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.remainingTest_eq_transition",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeLaw.lean",
+      "line": 20,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.integral_remainingTest_eq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeLaw.lean",
+      "line": 30,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switchLaw",
+      "kind": "def",
+      "source": "SharpWasserstein/SwitchSourceDerivativeLaw.lean",
+      "line": 49,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switch_integral_increment_eq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeLaw.lean",
+      "line": 55,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.sourcePairing",
+      "kind": "def",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRight.lean",
+      "line": 20,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switch_increment_hasDerivWithinAt_zero",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRight.lean",
+      "line": 33,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switch_integral_hasDerivWithinAt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRight.lean",
+      "line": 69,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switch_integral_hasDerivWithinAt_right",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeRight.lean",
+      "line": 82,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.sourcePairing_continuousOn",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeEquation.lean",
+      "line": 25,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switch_integral_continuousOn",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeEquation.lean",
+      "line": 43,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switch_integral_sub_eq_integral",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeEquation.lean",
+      "line": 60,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switch_integral_hasDerivAt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeEquation.lean",
+      "line": 77,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.particleSourcePairing",
+      "kind": "def",
+      "source": "SharpWasserstein/SwitchSourceDerivativeParticle.lean",
+      "line": 21,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.particle_switchLaw_eq",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeParticle.lean",
+      "line": 26,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.particle_switch_hasDerivAt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeParticle.lean",
+      "line": 35,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.particle_switch_sub_eq_integral",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeParticle.lean",
+      "line": 51,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.particleRemainingTest",
+      "kind": "def",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 17,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.prescribedSourcePairing",
+      "kind": "def",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 23,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.prescribedSourcePairing_eq_current",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 31,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.prescribedSourcePairing_eq_generator_difference",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 44,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.prescribed_switch_hasDerivAt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 58,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.prescribed_switch_sub_eq_integral",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 67,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.configuration_compact_test_bounds",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 78,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.prescribed_switch_compact_hasDerivAt",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 85,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.prescribed_switch_compact_sub_eq_integral",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativePrescribed.lean",
+      "line": 96,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.driftDifference_memLp",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeFlux.lean",
+      "line": 22,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.switch_flux_pairing_integrable",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeFlux.lean",
+      "line": 36,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    {
+      "name": "SharpWasserstein.SwitchSourceDerivative.sourcePairing_eq_integral_JV",
+      "kind": "theorem",
+      "source": "SharpWasserstein/SwitchSourceDerivativeFlux.lean",
+      "line": 53,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    }
+  ],
+  "commands": {
+    "compile": "python3 lean_local.py -o .lake/build/lib/lean/<module/path>.olean <module/path>.lean",
+    "replay": "python3 lean_local.py --kernel <module>",
+    "axioms": "python3 lean_local.py qa/switch_source_derivative/Axioms.lean"
+  }
+}

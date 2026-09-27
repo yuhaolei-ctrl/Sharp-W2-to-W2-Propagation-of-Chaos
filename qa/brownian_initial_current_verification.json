@@ -1,0 +1,62 @@
+{
+  "scope": "Actual Brownian law/source at time zero identified with original law and real initial flux; Euclidean initial-current covariance and generator-source identity; exact source pairing under configuration/Euclidean semigroup conjugacy. No canonical-field propagation replacement assumed; main theorem remains open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 6,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "BrownianSourceInitialFlux": {
+      "source_sha256": "711ef174436a717369b2aa6911d6d13bffeb7d2b39816cea70e976e5ab0dfbbf",
+      "olean_sha256": "6df5f3cfd8db4b6fe57a0fddceae07a5db041d429d482f20f1d9ead2f5d29500",
+      "independent_kernel_replay": true
+    },
+    "InitialCurrentBrownianSource": {
+      "source_sha256": "c7c0b4f42447e602f90e6b60bf6c362a9b3b5a009b8f503ef3e9cce9eb92cc07",
+      "olean_sha256": "d49ae8c449731e383f12104d31b71f6c9703f49198632973b6cc9b7acebffcc2",
+      "independent_kernel_replay": true
+    },
+    "BrownianSourceCoordinatePairing": {
+      "source_sha256": "5fd075eb36462098ac818e5566480752a92d451fd9f9e0102e86cfbf73c4157b",
+      "olean_sha256": "f8c8926b4de0c1733c34951629a8eb09bba24532de045a93e74a212590aa69d6",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.PropagatedSourceEquation.Brownian.sourceAt_zero_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PropagatedSourceEquation.Brownian.sourceAt_zero_of_divergence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PropagatedSourceEquation.Brownian.lawAt_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourcePermutation.euclidean_initialCurrent_covariant": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.InitialSourcePermutation.current_sourceAt_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PropagatedSourceEquation.Brownian.sourceAt_configuration_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

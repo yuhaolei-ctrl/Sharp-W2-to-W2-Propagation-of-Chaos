@@ -1,0 +1,67 @@
+{
+  "scope": "Actual periodic drift-energy cancellation for smooth periodic potentials and smooth periodic drifts, with exact Euclidean Jacobian and genuine fundamental-domain integration by parts. The rough optimizer limit, tangent-energy propagation and main theorem remain open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 9,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "PeriodicDriftEnergy": {
+      "source_sha256": "3cce32f275b8ae92d9dc94e3cbd3cd82b0f1751f48d730daad40292d603c523f",
+      "olean_sha256": "3d203df8ca90c6bf14fede4c72d028dad6036ebe54bb053adaba210250f16737",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.PeriodicDriftEnergy.vectorPullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicDriftEnergy.drift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicDriftEnergy.divergence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicDriftEnergy.jacobianForm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicDriftEnergy.inner_vector_gradient_pullback": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicDriftEnergy.drift_energy_integrand": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicDriftEnergy.smooth_drift": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicDriftEnergy.integral_divergence_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicDriftEnergy.integral_drift_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

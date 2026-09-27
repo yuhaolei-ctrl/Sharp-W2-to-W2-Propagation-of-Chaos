@@ -1,0 +1,26 @@
+import SharpWasserstein.RegularizedEntropyProfile
+#print axioms SharpWasserstein.BrownianNoise.positionPath_measurable
+#print axioms SharpWasserstein.BrownianNoise.assemblePositionPaths_measurable
+#print axioms SharpWasserstein.BrownianNoise.configurationLaw_eq_position_product
+#print axioms SharpWasserstein.probability_pi_map_prefix
+#print axioms SharpWasserstein.DecoupledFlow.law_marginal
+#print axioms SharpWasserstein.DecoupledFlow.law_exchangeable
+#print axioms SharpWasserstein.DecoupledFlow.liftDrift_continuous
+#print axioms SharpWasserstein.DecoupledFlow.liftDrift_bound
+#print axioms SharpWasserstein.DecoupledFlow.liftDrift_lipschitz
+#print axioms SharpWasserstein.DecoupledFlow.liftDrift_quadratic
+#print axioms SharpWasserstein.DecoupledFlow.liftDrift_euclidean_lipschitz
+#print axioms SharpWasserstein.DecoupledFlow.liftDrift_nodes_coordinate
+#print axioms SharpWasserstein.DecoupledFlow.liftDrift_flow_coordinate
+#print axioms SharpWasserstein.DecoupledFlow.brownian_flowLaw_eq
+#print axioms SharpWasserstein.hasSecondMoment_iff_integrable
+#print axioms SharpWasserstein.hasSecondMoment_marginal
+#print axioms SharpWasserstein.hasSecondMoment_tensorLaw
+#print axioms SharpWasserstein.DecoupledFlow.brownianLaw_tensor
+#print axioms SharpWasserstein.DecoupledFlow.brownianLaw_marginal
+#print axioms SharpWasserstein.DecoupledFlow.brownianLaw_exchangeable
+#print axioms SharpWasserstein.DecoupledFlow.brownianLaw_entropy_le
+#print axioms SharpWasserstein.DecoupledFlow.brownianLaw_entropy_finite
+#print axioms SharpWasserstein.DecoupledFlow.brownianLaw_finiteEntropyConditions
+#print axioms SharpWasserstein.DecoupledFlow.regularized_marginal_klDiv_le
+#print axioms SharpWasserstein.DecoupledFlow.regularized_entropy_profile

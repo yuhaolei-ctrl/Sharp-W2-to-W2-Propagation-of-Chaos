@@ -1,0 +1,7 @@
+import SharpWasserstein.ConstantDriftLaw
+#print axioms SharpWasserstein.BrownianNoise.configurationLaw_eval_flat_hasLaw
+#print axioms SharpWasserstein.gaussianVectorLaw_add_mean
+#print axioms SharpWasserstein.BoundedFlow.flow_constant
+#print axioms SharpWasserstein.BrownianFlow.law_constant_dirac
+#print axioms SharpWasserstein.BrownianFlow.globalLaw_constant_dirac
+#print axioms SharpWasserstein.FrozenGaussian.timeExpectation_sub_eq_integral_bounded_smooth

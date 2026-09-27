@@ -1,0 +1,212 @@
+{
+  "scope": "Actual first-order weak continuity equation uniqueness by constructed backward Euler tests, and actual bounded characteristic flow law satisfying that equation via interval FTC and bounded Fubini. Rough finite-energy continuity/transport and MainTheorem remain unproved.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 35,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "EulerianTransportTests": {
+      "source_sha256": "76b9b83ca084e7401a0ffd514b1575676b9deace102882b2e41ba8f8de5f7828",
+      "olean_sha256": "2339e76167647a9692dc1512a4f53725b8684170bdf91fdf8998edb71329bb3b",
+      "independent_kernel_replay": true
+    },
+    "EulerianTransportEquation": {
+      "source_sha256": "93ed5526068bd123d1412767f5bd87c5d9451fe70bdf5f714bd3f2de542b7719",
+      "olean_sha256": "2b306931efd6969b344a61932359ff7454765a2055d7447be4c6b78596bc0b8b",
+      "independent_kernel_replay": true
+    },
+    "EulerianTransportUniqueness": {
+      "source_sha256": "eb3bf3da53c88387d0f60370e8dede0ad8ff17bdce00ec664d3313e90d10416d",
+      "olean_sha256": "8686efc6aee891f7cfc61f077fe2f870ac8fda9131c780ab1d0bc39b4840ad39",
+      "independent_kernel_replay": true
+    },
+    "EulerianTransportFlow": {
+      "source_sha256": "9de2e81c1481de7f0b5f45e30783c6a3f024fdb24743b7f4011c2c91e481be95",
+      "olean_sha256": "a71a6ca813bf50d735861cf1f1e7f74ec131b3bcda4bdc7c1d16f1fa4af459de",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.EulerianTransport.generator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.backward": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.norm_backward_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.smooth_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.smooth_backward": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.lipschitz_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.lipschitz_fderiv_step": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.backward_derivative_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.uniform_backward_derivative_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.taylor_error_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.step_error_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.WeakContinuity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.generator_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.generator_lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.generator_drift_difference_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.integral_generator_drift_difference_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.uniform_generator_expectation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.WeakContinuity.uniform_weak_step_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.integral_step_error_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.WeakContinuity.mono": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.WeakContinuity.uniform_backward_step_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.WeakContinuity.backward_telescope_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.WeakContinuity.integral_eq_of_same_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.WeakContinuity.eq_of_same_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.solution_joint_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.solution_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.solution_hasDerivWithinAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.flowLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.flowLaw_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.flowLaw_initial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.flowLaw_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.solution_test_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerianTransport.flowLaw_weakContinuity": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

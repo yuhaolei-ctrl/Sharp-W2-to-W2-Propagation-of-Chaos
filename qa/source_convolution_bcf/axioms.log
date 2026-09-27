@@ -1,0 +1,165 @@
+'SharpWasserstein.PeriodicSourceConvolution.action' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.action_of_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.action_eq_randomFlux' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.norm_action_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.action_interval_eq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.action_sub_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.brownian_primal_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.euclidean_brownian_primal_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.NoiseAverage.AllDerivativesBounded.clm_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.coordinateDerivative_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.coordinateDerivative_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.generator_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.generator_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.euclideanGenerator_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.euclideanGenerator_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.euclideanKernelTest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.euclideanKernelTest_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.euclideanKernelTest_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.fderiv_euclideanKernelTest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.brownian_action_equation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.brownian_action_lipschitzOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.brownian_action_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.brownian_action_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSource' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSource_eq_randomFlux' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSource_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSource_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.UniformDerivatives' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.UniformDerivatives.at' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.UniformDerivatives.bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.UniformDerivatives.fderiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.UniformDerivatives.add' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.uniform_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.UniformDerivatives.sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.UniformDerivatives.clm_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.UniformDerivatives.comp_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.euclideanKernelTest_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.uniform_coordinateDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.uniform_generator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.uniform_euclideanGenerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_fderiv' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_coordinateDerivative' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_generator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_euclideanGenerator' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.joint_euclideanKernelTest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.action_continuous_param' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.uniform_action_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.uniform_action_increment' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.uniform_action_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.action_clamped' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.action_continuous_param_all_time' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.actionBCF' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.actionBCF_apply' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.actionBCF_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.actionBCF_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.pointKernelTest' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.pointKernelTest_joint_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.pointKernelTest_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceBCF' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceDerivativeBCF' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceBCF_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceBCF_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicSourceConvolution.convolvedSourceBCF_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

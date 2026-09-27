@@ -1,0 +1,312 @@
+{
+  "scope": "Actual full weighted weak-Hessian lower semicontinuity and retained parabolic dissipation; genuine external interaction gradient bound linear in marginal size and exact lifted D1b cancellation. MainTheorem remains unproved.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 54,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "PeriodicHessianDissipation": {
+      "source_sha256": "06f8c106fc3ad5dff793ab61ce13bb5e2898b58059124b991aca6a36af409e15",
+      "olean_sha256": "f7afd6fd64b133f377ef97517b13d40c0ad50b79fa638c52d079599907007572",
+      "independent_kernel_replay": true
+    },
+    "PeriodicParabolicDissipation": {
+      "source_sha256": "b4a0e02def9f6def1736ed99eda8679a7a0d54a5ebd03d98b0e294690419d2c1",
+      "olean_sha256": "b4f9b70fae2460a7e4085bc197e6c1adcf511335db80c055ad41fa1f449c5648",
+      "independent_kernel_replay": true
+    },
+    "ExternalInteractionGradientBase": {
+      "source_sha256": "ed00b7890f017a1bdbb522b6a863071d5a478b664e66c047edbb699974c68bcb",
+      "olean_sha256": "52f4fde960d2ac10ee770d3c61f16496abb72bb0d1f822aa1a476e067c8a22bb",
+      "independent_kernel_replay": true
+    },
+    "ExternalInteractionGradient": {
+      "source_sha256": "0d95d76ec257f3c5a30bac3070073f134c41aba802c9d1530197d4eee6d9a12f",
+      "olean_sha256": "a5cadbc857b4f2f6e0948c325b9f1ed96db4abf6a8c8239c96d24b39fd956d3b",
+      "independent_kernel_replay": true
+    },
+    "ExternalInteractionGradientCancellation": {
+      "source_sha256": "240135d19bfe9df1afd237c39760bb0c657a97e1163906db558124d645189a2c",
+      "olean_sha256": "af3a9db605a536f0b912be1aeba4f2b9ce4901030e9111e6fce339482b23ebe8",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.PeriodicHessianDissipation.inner_multiplier": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.weighted_product_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.inner_multiplier_self": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.inner_multiplier_symmetric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.weighted_square_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.weighted_square_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.weighted_hessianEntry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.weighted_hessianMatrix": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.weighted_potential_hessian_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicHessianDissipation.exists_optimizer_hessian_weighted_liminf": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicParabolicDissipation.IsWeakHessian": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicParabolicDissipation.dissipation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicParabolicDissipation.potential_hessian_integral_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicParabolicDissipation.exists_derivativePairing_le_dissipation_jacobian": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicParabolicDissipation.exists_derivativePairing_le_dissipation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicParabolicDissipation.exists_deriv_energy_le_dissipation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.suffixProjection": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.prefix_suffix_norm_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.prefix_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.suffix_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.positions": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.externalPosition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.externalPosition_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force_difference_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force_difference_sq_le_uniform": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force_fderiv_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.sum_coordinate_vectors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.directionDeriv_coordinate_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.fderiv_gradient_matrixAction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.fderiv_gradient_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.interaction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.interaction_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.interaction_eq_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.fderiv_interaction": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.interaction_gradient_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.interaction_gradient_norm_sq_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.interaction_gradient_norm_sq_le_combined": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.positionMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.externalMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.forceDerivative": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force_hasFDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.uncurry_fderiv_first": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.externalMap_prefixEmbedding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force_fderiv_prefixEmbedding": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.diagonalEnergy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.force_prefix_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.liftedForce": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.lifted_interaction_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.lifted_hessian_cancellation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.diagonalEnergy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.ExternalInteraction.lifted_hessian_cancellation_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

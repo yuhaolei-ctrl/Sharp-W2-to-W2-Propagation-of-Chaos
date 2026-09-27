@@ -1,0 +1,186 @@
+{
+  "scope": "Four modules construct actual time-averaged kernels and interior probability laws, prove exact normalized space-time convolution Fubini identities and action contraction, and identify the resulting actual law-weighted finite action. No continuity equation or final manuscript theorem is asserted by this scope.",
+  "complete_manuscript_proof": false,
+  "generated_utc": "2026-09-18T01:34:33.717726+00:00",
+  "modules": [
+    {
+      "file": "SharpWasserstein/RoughEulerianTimeActionLaw.lean",
+      "sha256": "f31e5d23126df0092de8eb4164369cfa4beba61b2e973fc1fdaa7ce68d3d3edd",
+      "declaration_count": 10,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RoughEulerianTimeActionConvolution.lean",
+      "sha256": "d500f66d349dba3241bb3692448792647f7b7d2b22977cfaac156132ffac4dd1",
+      "declaration_count": 5,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RoughEulerianTimeActionProduct.lean",
+      "sha256": "d21e57f7d024bb971fba2be98ed28236b2832b844afdfd32a6fbcdfee91d03a8",
+      "declaration_count": 5,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    },
+    {
+      "file": "SharpWasserstein/RoughEulerianTimeActionIdentification.lean",
+      "sha256": "cbd99659d32b8efd6e15d7becdd21ad4b546f4b5150a8277f376a82afaedba5b",
+      "declaration_count": 7,
+      "compile_exit_code": 0,
+      "independent_kernel_replay_exit_code": 0
+    }
+  ],
+  "pinned_direct_foundations": {
+    "RoughEulerianTimeKernel": "18bd3705373463dc3fe4d322994eda60814401c47badd7735c400c2dd6e8f7ba",
+    "RoughEulerianTransportKernel": "56be747a42c28ab425c00f68b6e7d5d13dc9e2cac53ce5afc6b699b84796bc54",
+    "RoughEulerianSmoothingAction": "de607ea7b496d8f7445e49f7b822507d35150e53a40286daa2e902c28fed007f",
+    "RoughEulerianSpaceTimeSmooth": "38916750bb532f17072800064c019b6ef023480763b3a902c3388a8b929c0d44",
+    "RoughEulerianSmoothingLaw": "2c37a34dac585bc82ecd19579b0d888d4bd06c1056e6d6b8fb97d22fb8213766"
+  },
+  "declarations": {
+    "SharpWasserstein.RoughEulerianTime.timeWeight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.timeWeight_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.weightedTimeKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.weightedTimeKernel_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.averagedKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.averagedKernel_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.integral_weightedTimeKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.integral_averagedKernel": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.averagedKernel_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.averagedKernel_support": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.kernel_smul_joint_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.integral_kernel_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.kernel_mul_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.kernel_floor_action_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTime.kernel_floor_action_integrable_and_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeKernel_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeKernel_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.integral_spaceTimeKernel_mul": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeFloor_action_integrable_and_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeFloor_action_time_restrict": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeDensity_eq_averaged": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeFlux_eq_weighted": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_probability": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_action_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianSmoothing.spaceTimeRegularizedLaw_action_integrable_and_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "forbidden_token_scanner_clear": true,
+  "lean_version": "Lean (version 4.32.0, arm64-apple-darwin24.6.0, commit 8c9756b28d64dab099da31a4c09229a9e6a2ef35, Release)"
+}

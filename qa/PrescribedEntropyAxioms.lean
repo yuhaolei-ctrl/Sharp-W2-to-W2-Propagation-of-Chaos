@@ -1,0 +1,4 @@
+import SharpWasserstein.PrescribedEntropyProfile
+#print axioms SharpWasserstein.euclideanDrift_lipschitz_of_sup
+#print axioms SharpWasserstein.PrescribedReference.singleBrownianLaw_eq_supplied
+#print axioms SharpWasserstein.PrescribedReference.marginal_klDiv_le_initial_profile

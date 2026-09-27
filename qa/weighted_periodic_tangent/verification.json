@@ -1,0 +1,18 @@
+{
+  "modules": [
+    {
+      "module": "WeightedPeriodicTangent",
+      "source_sha256": "3f8b822ba3962f45fd4215418a3fbea12f8cc0282ab9aee2cfd737f5b4aa2941",
+      "declarations": 19,
+      "kernel_exit": 0
+    }
+  ],
+  "declarations": 19,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_audit_exit": 0,
+  "lean_toolchain": "leanprover/lean4:v4.32.0"
+}

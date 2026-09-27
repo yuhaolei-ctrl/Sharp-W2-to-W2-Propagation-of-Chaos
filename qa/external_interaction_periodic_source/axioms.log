@@ -1,0 +1,79 @@
+'SharpWasserstein.ExternalInteractionPeriodic.lattice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.euclideanLattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.coordinate_lattice_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.euclidean_lattice_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.gradient_lattice_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.of_euclidean_lattice_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.kernel_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.positions_lattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.externalPosition_lattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.prefixProjection_lattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.force_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.interaction_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_lattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_pairing_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.sine_interaction_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_eq_particleDrift' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_pairing_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_pairing_eq_fderiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.physicalPotential_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.exists_physical_test' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.physical_test_bounds' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.periodic_representative_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.observedSource_periodic_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.external_pairing_meanField_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.external_interaction_meanField_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.canonical_external_interaction_meanField_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteractionPeriodic.internalDrift_periodic_representative_pairing' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

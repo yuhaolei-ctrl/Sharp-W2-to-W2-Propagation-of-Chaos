@@ -1,0 +1,10 @@
+'SharpWasserstein.WeakDerivativeLimit.testClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeakDerivativeLimit.intoClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeakDerivativeLimit.dense_intoClosure' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeakDerivativeLimit.exists_representative_of_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeakDerivativeLimit.distribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeakDerivativeLimit.exists_weakDerivative_of_strong_limit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

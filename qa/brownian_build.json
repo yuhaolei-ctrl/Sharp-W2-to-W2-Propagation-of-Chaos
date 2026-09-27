@@ -1,0 +1,219 @@
+{
+  "status": "kernel_replayed",
+  "source_release": "v4.32.0",
+  "complete_manuscript_proof": false,
+  "modules": [
+    {
+      "module": "BrownianMotion.Auxiliary.HasLaw",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/HasLaw.lean",
+      "source_sha256": "8990633ee9f46231cad43abc0b9db39c45a30c53b7d6b27e4020badf160b6a3a",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.Topology",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/Topology.lean",
+      "source_sha256": "ce23e4180f97416196f30f05f52756ecc46c99737ec9bb674c9ed3f16014e2b6",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.DenseCountable",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/DenseCountable.lean",
+      "source_sha256": "a80476377e6c0e2b573816f728db930ccbd8bc2469709ea3b7f03615474c8b58",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Continuity.LimitModification",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Continuity/LimitModification.lean",
+      "source_sha256": "f0a9a0980aecb5ab251bb2db14c34f08c9ba3614caaabb6ce6e30937e8ae0302",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.FiniteInf",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/FiniteInf.lean",
+      "source_sha256": "6991f6cd67c5c63e5fac895de93c11e99dcf922b25f9fd43afb4aec645e29289",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.MeanInequalities",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/MeanInequalities.lean",
+      "source_sha256": "67995c387870e772e8882dea0c7a45168946489d6ffb30c2ba870a2c8b23c50d",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.ENNReal",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/ENNReal.lean",
+      "source_sha256": "108c7c5320e163d18e1c250d83a7170e1b80b5b631983f87298df5787c569af6",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Continuity.Chaining",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Continuity/Chaining.lean",
+      "source_sha256": "705bf609ae98ad8227985830f9f50fdfef86a01cdc0c925142bbcca4507a047b",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.Algebra",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/Algebra.lean",
+      "source_sha256": "0111c4b2b59fae49cd76ef1d604b0ef89b96fdec27080da2ef0c77bb8594fd6f",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.Metric",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/Metric.lean",
+      "source_sha256": "13f5040961175788f8631ba4551a00ef4671a0c172ba85f145c57b025f7b7d9e",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.MeasureTheory",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/MeasureTheory.lean",
+      "source_sha256": "f6780b26ed35b27da081d87353a846ff182580d3cec61b8f4284f39de306658d",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.Nat",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/Nat.lean",
+      "source_sha256": "637f1fa12fb1cd584ce886f06b9a5167b5a7e96415740112e0ed60157916be10",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Continuity.CoveringNumber",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Continuity/CoveringNumber.lean",
+      "source_sha256": "89829da52abf33125f18c30f82f2b76d89516682483c1a5cc3caa65d3a649f9d",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Continuity.HasBoundedInternalCoveringNumber",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Continuity/HasBoundedInternalCoveringNumber.lean",
+      "source_sha256": "9ef856fc863cf9e55ff00b78e7bb78e19cd2b58fb8eb8b6ebb5b0b4e6ddbd621",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Continuity.IsKolmogorovProcess",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Continuity/IsKolmogorovProcess.lean",
+      "source_sha256": "ccaf301535d27035bba97ea42f7a7be3a8d8c0d60fa65915d105b5b76c3836b6",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Continuity.KolmogorovChentsovInequality",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Continuity/KolmogorovChentsovInequality.lean",
+      "source_sha256": "56462926ea7a8c915bfeaf97774b411f36715cc443451403013f88d025f19dc9",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Gaussian.StochasticProcesses",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Gaussian/StochasticProcesses.lean",
+      "source_sha256": "c5fc98b72eb3044fe49add5b47ce10ec8a9aeb1e47aa11aa32a91a2e0c393f81",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Continuity.KolmogorovChentsov",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Continuity/KolmogorovChentsov.lean",
+      "source_sha256": "a3cf714a4b31d47c29d78f246f8690621f48a9c767d253b5f5973364178b09bb",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.LinearAlgebra",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/LinearAlgebra.lean",
+      "source_sha256": "3e2d3872b29f374aafe4706a914ec1073ca417deef2be6c463fe6af74c2aba2d",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.ContinuousBilinForm",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/ContinuousBilinForm.lean",
+      "source_sha256": "0587669ba731f73c4a51d9e4f2c044d500e29a3bc98cd46c080982f4a7ec9619",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Gaussian.CovMatrix",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Gaussian/CovMatrix.lean",
+      "source_sha256": "89ec93a4bbf3671bc6eb34803c1000777ec00a600732b878d4623cd0457d7ea8",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Gaussian.GaussianProcess",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Gaussian/GaussianProcess.lean",
+      "source_sha256": "0a51f1274533938eb90b61d2f038ce6edf1fe5000f883cfbae45542eda123dfe",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Gaussian.Moment",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Gaussian/Moment.lean",
+      "source_sha256": "1ec420407465231b2bdee35a8923b5786c22336ca4c7efcf07cef05eab9fbb3c",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Auxiliary.NNReal",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Auxiliary/NNReal.lean",
+      "source_sha256": "554c33c81f8f9dc12bfc8f883f14cef529cdfbc23ca5943860e96bbcb9935e9a",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Gaussian.Gaussian",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Gaussian/Gaussian.lean",
+      "source_sha256": "0b31a4cc32d44362533a03d3aec7ba4e124f49e69b2d9b38850b1d2f835e22c1",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "KolmogorovExtension4.CompactSystem",
+      "source": "external_sources/kolmogorov_extension4-f33cbc388e5d444606dffa7eec507a26b62c15bb/KolmogorovExtension4/CompactSystem.lean",
+      "source_sha256": "b5c9e085528a7dac8d822449a5b62050eb8e819e59a17e256ca1995ee534f7d1",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "KolmogorovExtension4.RegularContent",
+      "source": "external_sources/kolmogorov_extension4-f33cbc388e5d444606dffa7eec507a26b62c15bb/KolmogorovExtension4/RegularContent.lean",
+      "source_sha256": "fbd5badca4a85ef33655e8a9051183b3158ad38dbae5e24b49f6699be20c1a6b",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "KolmogorovExtension4.KolmogorovExtension",
+      "source": "external_sources/kolmogorov_extension4-f33cbc388e5d444606dffa7eec507a26b62c15bb/KolmogorovExtension4/KolmogorovExtension.lean",
+      "source_sha256": "9b419bfdeb56ff6f94282df80280b4378db220dd55226c7e5ad6cd7f1d286169",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Gaussian.ProjectiveLimit",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Gaussian/ProjectiveLimit.lean",
+      "source_sha256": "9c3d83b71437173c2184b36278381f56aa337c650876b6161812d1a4a6273325",
+      "compile_exit_code": 0,
+      "cached": true
+    },
+    {
+      "module": "BrownianMotion.Gaussian.BrownianMotion",
+      "source": "external_sources/brownian-motion-bbf1359d13a51c5da77ad3db520f1da76ffe669e/BrownianMotion/Gaussian/BrownianMotion.lean",
+      "source_sha256": "60418ac9f3e5e05c32d17b91e622e5b30cc203e666a0d1b722272feafae0aecc",
+      "compile_exit_code": 0,
+      "cached": true
+    }
+  ],
+  "kernel_replay_exit_code": 0,
+  "missing_replay_modules": []
+}

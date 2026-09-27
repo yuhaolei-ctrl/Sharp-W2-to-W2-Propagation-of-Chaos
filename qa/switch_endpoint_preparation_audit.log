@@ -1,0 +1,6 @@
+GeometricEndpointLength 0
+RoughEulerianIntervalRestriction 0
+PrescribedSwitchMetricCurve 0
+PrescribedSwitchMetricIdentification 0
+PrescribedSwitchIntervalEnergy 0
+PASS: 5 modules, 17 declarations, ['Classical.choice', 'Quot.sound', 'propext']

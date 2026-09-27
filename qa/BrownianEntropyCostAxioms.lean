@@ -1,0 +1,10 @@
+import SharpWasserstein.BrownianEntropyCost
+
+#print axioms SharpWasserstein.BrownianEntropy.labelEulerLaw_tendsto
+#print axioms SharpWasserstein.BrownianEntropy.labelFlowLaw_eq_flowLaw_map
+#print axioms SharpWasserstein.BrownianEntropy.ordinaryObservation_eq_labelEulerLaw
+#print axioms SharpWasserstein.BrownianEntropy.shiftedObservation_eq_labelEulerLaw
+#print axioms SharpWasserstein.BrownianEntropy.label_flow_entropy_le
+#print axioms SharpWasserstein.BrownianEntropy.flattenedCoupling_map_initialX
+#print axioms SharpWasserstein.BrownianEntropy.flattenedCoupling_map_initialY
+#print axioms SharpWasserstein.BrownianEntropy.flow_entropy_le_coupling

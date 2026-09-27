@@ -1,0 +1,7 @@
+PeriodicConvolutionWeakBCF 0
+PeriodicFluxContraction 0
+PeriodicFluxPairing 0
+FlowJacobianContinuityLocal 0
+FlowJacobianContinuityGlobal 0
+FlowJacobianContinuitySmooth 0
+PASS: 6 modules, 49 declarations, ['Classical.choice', 'Quot.sound', 'propext']

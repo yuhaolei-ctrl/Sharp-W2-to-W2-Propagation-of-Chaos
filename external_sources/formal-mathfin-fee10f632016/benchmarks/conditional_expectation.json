@@ -1,0 +1,87 @@
+{
+  "description": "Conditional expectation properties from Saporito Ch 2.1 (measure_theory).",
+  "theorems": [
+    {
+      "id": "ce-prop-2.1.5-linearity",
+      "name": "Linearity of Conditional Expectation",
+      "description": "Proposition 2.1.5(2): E[αX + Y | G] = αE[X|G] + E[Y|G] a.s.",
+      "domain": "measure_theory",
+      "code": {
+        "lean": "import Mathlib.MeasureTheory.Function.ConditionalExpectation.Basic\n\nopen MeasureTheory\n\n-- Linearity of conditional expectation: μ[c•f + g | m] =ᵐ[μ] c•μ[f|m] + μ[g|m]\n-- Uses Mathlib's `condExp_add` and `condExp_smul`.\ntheorem condexp_linear {α : Type*} {m m₀ : MeasurableSpace α} {μ : Measure α}\n    (f g : α → ℝ) (c : ℝ)\n    (hf : Integrable f μ) (hg : Integrable g μ) :\n    μ[c • f + g | m] =ᵐ[μ] c • μ[f | m] + μ[g | m] := by\n  have h1 : μ[c • f + g | m] =ᵐ[μ] μ[c • f | m] + μ[g | m] :=\n    condExp_add (hf.smul c) hg m\n  have h2 : μ[c • f | m] =ᵐ[μ] c • μ[f | m] := condExp_smul c f m\n  filter_upwards [h1, h2] with x hx1 hx2\n  rw [hx1, Pi.add_apply, hx2]\n  rfl"
+      },
+      "metadata": {
+        "chapter": 2,
+        "reference": "Proposition 2.1.5(2)",
+        "difficulty": "foundational",
+        "formalization_status": "library_wrapper",
+        "formalization_scope": "Direct Lean wrapper around an existing library theorem closely matching the benchmark statement."
+      }
+    },
+    {
+      "id": "ce-prop-2.1.11-tower",
+      "name": "Tower Property",
+      "description": "Proposition 2.1.11(6), the TOWER direction: for H ⊆ G ⊆ F, E[E[X|G] | H] = E[X|H] a.s. The companion equality E[E[X|H] | G] = E[X|H] (pulling out the coarser conditioning) is not delivered by this entry.",
+      "domain": "measure_theory",
+      "code": {
+        "lean": "import Mathlib.MeasureTheory.Function.ConditionalExpectation.Basic\n\nopen MeasureTheory\n\n-- Tower property: μ[μ[f|m₂]|m₁] =ᵐ[μ] μ[f|m₁] for m₁ ≤ m₂.\n-- (Mathlib statement is almost-everywhere equality.)\ntheorem condexp_tower {α : Type*} {m₁ m₂ m₀ : MeasurableSpace α} {μ : Measure α}\n    (hm₁₂ : m₁ ≤ m₂) (hm₂ : m₂ ≤ m₀) [SigmaFinite (μ.trim hm₂)]\n    {f : α → ℝ} :\n    μ[μ[f | m₂] | m₁] =ᵐ[μ] μ[f | m₁] :=\n  condExp_condExp_of_le hm₁₂ hm₂"
+      },
+      "metadata": {
+        "chapter": 2,
+        "reference": "Proposition 2.1.11(6)",
+        "difficulty": "intermediate",
+        "formalization_status": "library_wrapper",
+        "formalization_scope": "Direct Lean wrapper around an existing library theorem closely matching the benchmark statement."
+      }
+    },
+    {
+      "id": "ce-prop-2.1.11-pull-out",
+      "name": "Pulling Out What's Known",
+      "description": "Proposition 2.1.11(7): If Y is G-measurable and XY ∈ L¹, then E[XY | G] = Y · E[X | G]",
+      "domain": "measure_theory",
+      "code": {
+        "lean": "import Mathlib\n\nopen MeasureTheory\n\n-- Pulling out a known factor: μ[f * g | m] =ᵐ[μ] f * μ[g | m]\n-- when f is m-strongly-measurable. Uses Mathlib's `condExp_mul_of_stronglyMeasurable_left`.\ntheorem condexp_pull_out {α : Type*} {m m₀ : MeasurableSpace α} {μ : Measure α}\n    {f g : α → ℝ}\n    (hf : StronglyMeasurable[m] f) (hfg : Integrable (f * g) μ) (hg : Integrable g μ) :\n    μ[f * g | m] =ᵐ[μ] f * μ[g | m] :=\n  condExp_mul_of_stronglyMeasurable_left hf hfg hg"
+      },
+      "metadata": {
+        "chapter": 2,
+        "reference": "Proposition 2.1.11(7)",
+        "difficulty": "intermediate",
+        "formalization_status": "library_wrapper",
+        "formalization_scope": "Direct Lean wrapper around an existing library theorem closely matching the benchmark statement."
+      }
+    },
+    {
+      "id": "ce-prop-2.1.11-independence",
+      "name": "Independence Implies E[X|G] = E[X]",
+      "description": "Proposition 2.1.11(8): If X is independent of G, then E[X | G] = E[X] a.s.",
+      "domain": "measure_theory",
+      "code": {
+        "lean": "import Mathlib.Probability.ConditionalExpectation\n\nopen MeasureTheory ProbabilityTheory\n\n-- Independence ⇒ μ[f | m₂] =ᵐ[μ] (fun _ => ∫ x, f x ∂μ).\n-- Mathlib's `condExp_indep_eq` requires: f is m₁-measurable and m₁ ⊥ m₂.\ntheorem condexp_indep {Ω E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]\n    [CompleteSpace E]\n    {m₁ m₂ m : MeasurableSpace Ω} {μ : Measure Ω} {f : Ω → E}\n    (hle₁ : m₁ ≤ m) (hle₂ : m₂ ≤ m) [SigmaFinite (μ.trim hle₂)]\n    (hf : StronglyMeasurable[m₁] f) (hindp : Indep m₁ m₂ μ) :\n    μ[f | m₂] =ᵐ[μ] fun _ => μ[f] :=\n  condExp_indep_eq hle₁ hle₂ hf hindp"
+      },
+      "metadata": {
+        "chapter": 2,
+        "reference": "Proposition 2.1.11(8)",
+        "difficulty": "foundational",
+        "formalization_status": "library_wrapper",
+        "formalization_scope": "Direct Lean wrapper around an existing library theorem closely matching the benchmark statement."
+      }
+    },
+    {
+      "id": "ce-prop-2.1.11-jensen",
+      "name": "Conditional Jensen's Inequality",
+      "description": "Proposition 2.1.11(9): For convex φ: ℝ → ℝ, E[φ(X) | G] ≥ φ(E[X | G]) a.s.",
+      "domain": "measure_theory",
+      "code": {
+        "lean": "import Mathlib\n\nopen MeasureTheory\n\n/-- Proposition 2.1.11(9), conditional Jensen's inequality: for convex\n    `φ : ℝ → ℝ` with `X` and `φ ∘ X` integrable,\n    `φ(E[X | m]) ≤ᵐ E[φ(X) | m]`. Direct invocation of Mathlib's\n    `ConvexOn.map_condExp_le_of_finiteDimensional` at `E = ℝ` — bare convexity\n    suffices (convex functions on a finite-dimensional space are continuous,\n    hence lower-semicontinuous); Mathlib does the real work. -/\ntheorem conditional_jensen_inequality\n    {α : Type*} {m₀ : MeasurableSpace α} {μ : Measure α} [IsFiniteMeasure μ]\n    {m : MeasurableSpace α} (hm : m ≤ m₀) {φ : ℝ → ℝ} {X : α → ℝ}\n    (hφ_cvx : ConvexOn ℝ Set.univ φ)\n    (hX_int : Integrable X μ)\n    (hφX_int : Integrable (φ ∘ X) μ) :\n    φ ∘ μ[X | m] ≤ᵐ[μ] μ[φ ∘ X | m] := by\n  haveI : SigmaFinite (μ.trim hm) := inferInstance\n  exact hφ_cvx.map_condExp_le_of_finiteDimensional hm hX_int hφX_int\n"
+      },
+      "metadata": {
+        "chapter": 2,
+        "reference": "Proposition 2.1.11(9)",
+        "difficulty": "intermediate",
+        "lean_status": "library_wrapper",
+        "lean_note": "Wraps Mathlib's ConvexOn.map_condExp_le_of_finiteDimensional at E = ℝ. The former in-repo explicit-subgradient derivation (Foundations/CondExpJensen.lean) was removed in the 2026-06-03 audit: Mathlib's CondJensen proves the textbook statement from bare convexity (no subgradient API needed), and the subgradient version (bounded g ⇒ Lipschitz φ only) was strictly weaker.",
+        "formalization_status": "library_wrapper",
+        "formalization_scope": "Direct Lean wrapper around Mathlib's conditional Jensen (ConvexOn.map_condExp_le_of_finiteDimensional), statement-identical to the textbook proposition. Relabeled full->library_wrapper in the 2026-06-03 audit; the library does the real work."
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gradient_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gramTest' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gramTest_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gramTest_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gramEntry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gramTest_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.integral_map_euclidean' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.observable_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.observable_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gramEntry_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gramEntry_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.gramEntry_derivative_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.brownian_observable_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.brownian_observable_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.brownian_gramEntry_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.brownian_gramEntry_hasDerivAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.brownian_gramEntry_derivative_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.brownian_source_derivative_continuousOn' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.brownian_coefficients_hasDerivWithinAt' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.periodic_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.periodic_pullback_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.atom_pullback_smooth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.atom_pullback_allDerivativesBounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.frequencySpace_pullback_smooth_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicCoefficientEvolution.frequencySpace_gramTest_smooth_bounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

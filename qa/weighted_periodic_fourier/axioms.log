@@ -1,0 +1,83 @@
+'SharpWasserstein.WeightedPeriodicFourier.continuous_integrable_cube_banach' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.translatedLift' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.translatedLift_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.translatedLift_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.translatedLift_integral_apply' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_uniform_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_cosine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_sine' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_frequencySpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.continuous_memLp_two_cube' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_eq_shifted' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_abs_le_L2' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.smoothedPolynomial_uniform_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.smoothedPolynomial_partial_uniform_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.testAverage_partial_uniform_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.exists_frequencySpace_uniform_C1' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.pullback_gradient_component' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.pullback_gradient_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.pullback_value_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.pullback_gradient_sub_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.periodic_gradient_memLp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.gradientVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.gradientVector_ae' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.periodicGradientMap' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.frequencyTestInclusion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.trialGradient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.trialSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.periodicSpace' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.trialSpace_le_periodicSpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.gradientVector_norm_sub_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.gradientVector_mem_periodicSpace' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedPeriodicFourier.periodicSpace_eq_smoothGradientClosure' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

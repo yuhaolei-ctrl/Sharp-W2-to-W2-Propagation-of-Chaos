@@ -1,0 +1,47 @@
+'SharpWasserstein.SinePeriodization.scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.scalar_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.coordinates_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_contDiff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.scalar_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.scalar_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.coordinates_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.scalar_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.coordinates_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_value_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_first_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_second_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.coordinates_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_periodic_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_periodic_second' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_uniformOn_ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_locallyUniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.latticeVector' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.representative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.latticeIndex' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.representative_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.representative_add_lattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SinePeriodization.coordinates_lattice' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_lattice_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_derivative_lattice_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.SinePeriodization.kernel_boundedSmooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParticle.interaction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParticle.interaction_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParticle.interaction_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParticle.particleDrift_kernel_error' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicParticle.drift_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParticle.drift_uniformOn_ball' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParticle.drift_locallyUniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParticle.law_wassersteinSq_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParticle.brownianLaw_wassersteinSq_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

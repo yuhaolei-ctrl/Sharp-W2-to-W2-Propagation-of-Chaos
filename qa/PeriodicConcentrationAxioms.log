@@ -1,0 +1,26 @@
+'SharpWasserstein.WeightedIntegralSquare.weighted_scalar_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WeightedIntegralSquare.weighted_norm_integral_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicConvolution.flux' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.commutator' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.kernel_smul_integrable' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.commutator_eq_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicConvolution.commutator_action_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.peak' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.peak_continuous' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.peak_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.cos_eq_one_iff_circle_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.peak_lt_at_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.peak_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.peak_pow_integral' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.kernel_eq_peak_normalized' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicPositiveKernel.integral_kernel_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

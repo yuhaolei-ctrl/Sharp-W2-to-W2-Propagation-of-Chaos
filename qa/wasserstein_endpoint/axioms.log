@@ -1,0 +1,43 @@
+'SharpWasserstein.PrescribedDecoupledTransport.coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PrescribedDecoupledTransport.coefficient_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PrescribedDecoupledTransport.initial_le_coefficient' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PrescribedDecoupledTransport.marginal_wassersteinSq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PrescribedDecoupledTransport.marginal_profile_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.wassersteinSq_zero_particles' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.initialHierarchy_allLevels' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.sourceHorizonConstant_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.propagationConstant_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.switchLengthCoefficient_mono' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.coefficient_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.transport_triangle_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.switch_zero_eq_supplied' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.bound_of_switch_length' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.bound_of_local_switch_length' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.WassersteinEndpoint.propagatedHierarchy_of_switch_lengths' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

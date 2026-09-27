@@ -1,0 +1,152 @@
+{
+  "scope": "Uniqueness of actual arbitrary weak evolutions for autonomous smooth globally bounded drifts with all derivatives bounded, proved by genuine backward Gaussian Euler comparison and characteristic-function measure separation. The particle specialization derives all required smoothness from the manuscript kernel and identifies every stated weak particle law with the constructed Brownian law. Time-dependent reference uniqueness, tangent evolution and the main propagation theorem remain open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The 9 listed project source modules, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 18,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "WeakEulerConsistency": {
+      "source_sha256": "d1dc2b29d22c57098b137b69593a10386f90f9ddc81a7d4cbedbe7ef83917fd1",
+      "olean_sha256": "45dfbcb66e0fec06a0e420cd8c1eca0d841dd2bf2d81a537c03665c4de6ac290",
+      "independent_kernel_replay": true
+    },
+    "BackwardEulerUniform": {
+      "source_sha256": "cfdb7a62c6cc2ddc98b8d30e9af5a59d05fe1f71c1d678e611373230afcaffc6",
+      "olean_sha256": "3cb31026c4bf87cb869260f48539752c0f1d9eed515b64f3acc644720f3ceb91",
+      "independent_kernel_replay": true
+    },
+    "BackwardEulerIntegratedError": {
+      "source_sha256": "6a54902b4a34c67bacd6b68b2ac0e848962a2508edcb515720a9bbc418353c75",
+      "olean_sha256": "b2ac7493fddd7f147c34ead968673c5c3aabca9a48819b5a1a3ad9a12c0eee09",
+      "independent_kernel_replay": true
+    },
+    "WeakBackwardEulerStep": {
+      "source_sha256": "89a44579aabbb57dc1b151d172b655d207a0468ecf98bce4a082557f675896ac",
+      "olean_sha256": "a7ff4017c6d7272a1baea6bbbc2df5e00e4a2ec47ad2daafc441a7097f0aea17",
+      "independent_kernel_replay": true
+    },
+    "WeakBackwardEulerTelescope": {
+      "source_sha256": "4b9023d53eef4f0c759db6bc471adf60d02236cbb7fd48249c45a127d11f157b",
+      "olean_sha256": "32941a276079fad565d103e2d623e8309434ce833da72a28d18e2ebd6d84fb0e",
+      "independent_kernel_replay": true
+    },
+    "SmoothBoundedCharacteristic": {
+      "source_sha256": "09d30912d1792b5abc9e9fdacb915aa26d269c65d418807ae4a3c7874757cbf9",
+      "olean_sha256": "2ba3d55c837735525e087a8d38c297a6e9f01d412cfc4222700ac12139e8e750",
+      "independent_kernel_replay": true
+    },
+    "WeakAutonomousUniqueness": {
+      "source_sha256": "96036cebdc7f1e3fe16096b0d76b04f1112e9aaf5837f66ad06c41a06ba14154",
+      "olean_sha256": "b4bb81c3c54b7f2fea1e0ae6f04c573ccfcd3490433988ce7bacf76099a3de39",
+      "independent_kernel_replay": true
+    },
+    "BoundedDerivativeLinear": {
+      "source_sha256": "d76a02f21b5c923eff8ff205455a329bdff8e1b4caa9a0e81fa4cc2fc3c75ae6",
+      "olean_sha256": "cae6ade666e61553fd9b23b4175962524c80445d8bd93e6537c22fa0a0ca2e5a",
+      "independent_kernel_replay": true
+    },
+    "ParticleWeakIdentification": {
+      "source_sha256": "135c98b47e40293b62512e875661ad89f69029a1172feec8b83b80a1f56c91ff",
+      "olean_sha256": "e19b0bef6e6076b834732f99ed6913f8a91b71d22ab4f10e562425456fd16b7d",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.WeakEvolution.uniform_generator_expectation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.equation_bounded_configuration_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.uniform_weak_step_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BackwardEuler.uniform_backward_derivative_bounds": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BackwardEuler.integral_step_error_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.uniform_backward_step_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.backward_telescope_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.allDerivativesBounded_cos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.allDerivativesBounded_sin": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.allDerivativesBounded_comp_linear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.measure_eq_of_integral_smooth_bounded_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.integral_eq_of_same_initial_bounded_derivatives": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.WeakEvolution.eq_of_same_initial_autonomous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.AllDerivativesBounded.comp_linear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.AllDerivativesBounded.linear_comp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.NoiseAverage.AllDerivativesBounded.sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.particleDrift_allDerivativesBounded": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianParticle.eq_globalLaw_of_weakEvolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

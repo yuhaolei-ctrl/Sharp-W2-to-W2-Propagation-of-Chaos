@@ -1,0 +1,106 @@
+'SharpWasserstein.PeriodicHessianDissipation.inner_multiplier' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.weighted_product_integrable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.inner_multiplier_self' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.inner_multiplier_symmetric' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.weighted_square_nonneg' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.weighted_square_support' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.weighted_hessianEntry' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.weighted_hessianMatrix' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.weighted_potential_hessian_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicHessianDissipation.exists_optimizer_hessian_weighted_liminf' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicParabolicDissipation.IsWeakHessian' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParabolicDissipation.dissipation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.PeriodicParabolicDissipation.potential_hessian_integral_tendsto' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicParabolicDissipation.exists_derivativePairing_le_dissipation_jacobian' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicParabolicDissipation.exists_derivativePairing_le_dissipation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.PeriodicParabolicDissipation.exists_deriv_energy_le_dissipation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.suffixProjection' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.prefix_suffix_norm_sq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.prefix_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.suffix_norm_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.positions' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.externalPosition' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.force' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.force_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.force_norm_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.externalPosition_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.force_difference_sq_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.force_difference_sq_le_uniform' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.force_fderiv_norm_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.sum_coordinate_vectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.directionDeriv_coordinate_sum' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.fderiv_gradient_matrixAction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.fderiv_gradient_norm_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.interaction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.interaction_smooth' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.interaction_eq_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.fderiv_interaction' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.interaction_gradient_norm_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.interaction_gradient_norm_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.interaction_gradient_norm_sq_le_combined' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.positionMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.externalMap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.forceDerivative' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.force_hasFDerivAt' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.uncurry_fderiv_first' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.externalMap_prefixEmbedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.force_fderiv_prefixEmbedding' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.diagonalEnergy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.force_prefix_pairing' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.liftedForce' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.lifted_interaction_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.lifted_hessian_cancellation' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'SharpWasserstein.ExternalInteraction.diagonalEnergy_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+'SharpWasserstein.ExternalInteraction.lifted_hessian_cancellation_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

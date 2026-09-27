@@ -1,0 +1,15 @@
+import SharpWasserstein.PrescribedReference
+#print axioms SharpWasserstein.WeakEvolution.congr_nonnegDrift
+#print axioms SharpWasserstein.IsLimitEvolution.probabilityCurve
+#print axioms SharpWasserstein.IsLimitEvolution.continuous_probabilityCurve
+#print axioms SharpWasserstein.IsLimitEvolution.initial_integrable_positionSq
+#print axioms SharpWasserstein.PrescribedReference.singleDrift
+#print axioms SharpWasserstein.PrescribedReference.singleDrift_continuous
+#print axioms SharpWasserstein.PrescribedReference.singleDrift_bound
+#print axioms SharpWasserstein.PrescribedReference.singleDrift_lipschitz
+#print axioms SharpWasserstein.PrescribedReference.law
+#print axioms SharpWasserstein.PrescribedReference.law_initial
+#print axioms SharpWasserstein.PrescribedReference.law_weakEvolution
+#print axioms SharpWasserstein.PrescribedReference.tensor_initial_weakEvolution
+#print axioms SharpWasserstein.PrescribedReference.law_eq_decoupled
+#print axioms SharpWasserstein.PrescribedReference.law_tensor

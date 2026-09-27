@@ -1,0 +1,77 @@
+{
+  "scope": "Actual operator-coefficient commutator for finite-energy vector measures, its weighted Jensen estimate and vanishing weighted action without a uniform density lower bound. This does not discharge all density/Hessian energy errors; MainTheorem remains unproved.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 10,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "PeriodicFluxCommutator": {
+      "source_sha256": "144bf2807d80c5cf268e9ae763526c4ee8d028c66491aa967657e5c2adb4da67",
+      "olean_sha256": "8593a2271e56e7a906b04ef18d7e6ed6bd85e6fe2ff3770aabc4ce74ec07426f",
+      "independent_kernel_replay": true
+    },
+    "PeriodicFluxCommutatorLimit": {
+      "source_sha256": "902edf85825c123a0f0d31a56ec6d938857bbeac783844dada4a4bfd7782460d",
+      "olean_sha256": "d4d78cb53ac877a160bbdf05d1dbe894dc545894aa6c89c88cbeafa5dc164838",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.PeriodicConvolution.fluxCommutator": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.coefficient_apply_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.coefficient_apply_normsq_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxCommutator_eq_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxCommutator_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxCommutator_action_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxCommutator_action_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.coefficient_flux_difference_joint_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.integrated_coefficient_flux_difference_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.PeriodicConvolution.fluxCommutator_action_tendsto": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

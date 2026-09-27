@@ -1,0 +1,10 @@
+import SharpWasserstein.SwitchCurveProperties
+#print axioms SharpWasserstein.SwitchCurve.quadraticCurve
+#print axioms SharpWasserstein.SwitchCurve.continuous_quadraticCurve
+#print axioms SharpWasserstein.SwitchCurve.marginal_wassersteinSq_tendsto
+#print axioms SharpWasserstein.SwitchCurve.law_eq_global
+#print axioms SharpWasserstein.PrescribedSwitchCurve.law
+#print axioms SharpWasserstein.PrescribedSwitchCurve.law_eq_composition
+#print axioms SharpWasserstein.PrescribedSwitchCurve.law_zero
+#print axioms SharpWasserstein.PrescribedSwitchCurve.law_terminal
+#print axioms SharpWasserstein.PrescribedSwitchCurve.law_wassersteinSq_tendsto

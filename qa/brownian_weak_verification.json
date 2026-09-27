@@ -1,0 +1,477 @@
+{
+  "scope": "Actual constructed Brownian particle weak evolution via independent Gaussian Euler steps and limiting expected Riemann sums",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The 13 listed project source modules, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 79,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "TestGenerator": {
+      "source_sha256": "dc262dccee27a7e0fa53f2f0841fb1b9e738b7757a03fcf133894bb6dfd089ac",
+      "olean_sha256": "1342d4a60bd2deee28879514166df8f860c180197d7f0520aa11aa7021f25bfc",
+      "independent_kernel_replay": true
+    },
+    "FrozenGaussianCalculus": {
+      "source_sha256": "8254cd13f7ba420da936abc4b860dbaf42821b1f83e27fd8e1c94039ec545396",
+      "olean_sha256": "48de03bc79fd0da29bd0c27bda472d7cefa44e593ad359b1df07fef5455dc922",
+      "independent_kernel_replay": true
+    },
+    "FrozenGaussianExpectation": {
+      "source_sha256": "71f9f239d997d1b2ab60455863425b58d4bc01553d9fae613273b4f639711ccd",
+      "olean_sha256": "b7c0d27198b125ba6c737bf6d55de59e22e80c7892f1d71322f25898cb1d6945",
+      "independent_kernel_replay": true
+    },
+    "FrozenGaussianStep": {
+      "source_sha256": "37f8fbc34bb106f42082e4692e171210d60f7707ee38cb7bf08dcfc9922005fc",
+      "olean_sha256": "f4b825fa8b8aa132eb934b8af20aa3f23a53d5b52908451580d52ef305536a81",
+      "independent_kernel_replay": true
+    },
+    "FrozenGaussianLaw": {
+      "source_sha256": "24c45cd9743ea2813853f2229b39a65fdc6b12076e4029b651d86ecaecf7149a",
+      "olean_sha256": "ce25b236f62e89846d3b29b1fe4dc68f1cddc2be8a3ae0bfeb316e750fa3e1e3",
+      "independent_kernel_replay": true
+    },
+    "FrozenGeneratorBounds": {
+      "source_sha256": "37b73f677f59f9ecc8f80d7990b3aff4cf97886c31328a34aaf1dfc2fdea7601",
+      "olean_sha256": "e3a81d2e84a8deda6d3197ec05baf9bdcbeb0dc52d3621529437e51d905e4c28",
+      "independent_kernel_replay": true
+    },
+    "FrozenGaussianError": {
+      "source_sha256": "5a4838a99ede78118bde3a4a4e3b4f25eb8d1402c44fe85940f7fa61dd32d44f",
+      "olean_sha256": "b8614184054b32805109f1ed8fa4e4f7bbbb71ca4036bfc796ce54793bdc1d3f",
+      "independent_kernel_replay": true
+    },
+    "FrozenGaussianMeasurable": {
+      "source_sha256": "448a861faeed7c32ab2259e72811eb517dd8ffcb5351fbfff3a24c014c24b06b",
+      "olean_sha256": "ea9fe7472010476f40743d7638c0ae71c72f87ef148ce339ffb9238069433f28",
+      "independent_kernel_replay": true
+    },
+    "EulerBrownianGridLaw": {
+      "source_sha256": "66a5577258c58382d0062317422da2c42b34baa98bf7a58e18d9871426051604",
+      "olean_sha256": "0c6271ed7cfb643e20f1424f65dc9190032b8c756237c5eb62d268c79fe4e8d9",
+      "independent_kernel_replay": true
+    },
+    "EulerWeakStep": {
+      "source_sha256": "3c9c1bbe7b0bad1a24e3de28a31d48b4b19978754948db1c482e4a2364d3815c",
+      "olean_sha256": "32c89caac4af5a4b33e39270cec98e2dad5cdb0f574ebd1063bf4fe017e6a12d",
+      "independent_kernel_replay": true
+    },
+    "EulerWeakTelescope": {
+      "source_sha256": "7ef947d474f2acb2c400d6c4019d892712f50024708d497600bbdbc7d743acdc",
+      "olean_sha256": "b51ee96932fef5d70b25ba4882e52a06a6d70684ed9289575770ff66c040ee7a",
+      "independent_kernel_replay": true
+    },
+    "EulerWeakLimit": {
+      "source_sha256": "d3800b814f055167e01f2a3bb3cdd97ad5ba5d5d36533810b0f218de37a3a75e",
+      "olean_sha256": "dc83acfb7d7ab76a16654e169af6b04321522b3ed2f2f5a44a455c34e16089e7",
+      "independent_kernel_replay": true
+    },
+    "BrownianParticleWeak": {
+      "source_sha256": "03fcbe61fa2673cf74c5b5a4f4b6b40a474f2a75639819c1e066f3894385a809",
+      "olean_sha256": "c424119e0391af0a1e869ca6f308029c81ce7b310db501c5312dd5ca37578c20",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.CompactGenerator.coordinate_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.laplacian_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.generator_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.generator_compact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.expectation_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.generator_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.test_lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.CompactGenerator.generator_lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.noiseMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.noiseMap_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.noiseMap_single": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.vector_decomposition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_joint_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_insert_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.test_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.test_insert_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.coordinate_stein": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.compact_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.expectation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.velocityPairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.expectation_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.expectation_hasDerivAt_raw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.integrable_comp_label": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.integral_velocityPairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.expectation_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.constant_generator_test": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation_hasDerivAt": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation_sub_eq_integral": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.flatten_noiseMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_flat_hasLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_hasLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.transitionLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_time_hasLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.integral_transitionLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.generator_uniform_lipschitz": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.noiseMap_memLp": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.noiseFirstMoment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.noiseFirstMoment_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_displacement_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_displacement_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.label_displacement_integral_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation_deviation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.step_error_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation_comp_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FrozenGaussian.timeExpectation_norm_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianNoise.linearGrid": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianNoise.linearGrid_monotone": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianNoise.linearGrid_variance": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianNoise.flattenedGridIncrement_linear": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.configurationEuler_simulator_grid_eq_nodes": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.configurationEuler_brownian_grid_hasLaw": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.gaussianHistory_integral_last": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.mean": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.mean_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.law": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.state": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.state_measurable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.mean_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.state_integrable": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.expectation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.expectation_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.expectation_step_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.expectation_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.expectation_eq_brownian_node": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.expectation_telescope_error": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.EulerWeak.brownian_trajectory_weak_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.particleDrift_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianParticle.law_integral_eq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianParticle.law_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianParticle.globalLaw_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianParticle.globalLaw_weakEvolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.BrownianParticle.globalLaw_isParticleEvolution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

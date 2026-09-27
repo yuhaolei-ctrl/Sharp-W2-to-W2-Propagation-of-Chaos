@@ -1,0 +1,127 @@
+{
+  "scope": "Geometric finite-action endpoint summation, exact time restriction of compact continuity, actual P2/Wasserstein-continuous switch marginal, exact Euclidean/configuration carrying-law identity, and genuine interval source-objective bounds from original initial Wasserstein data. Rough finite-action transport and final MainTheorem remain open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 17,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "GeometricEndpointLength": {
+      "source_sha256": "e59e5496d94a4c69b50a61de881c14cea2aa7ae7b4dbb2bf0e41ff39c845e4db",
+      "olean_sha256": "dd44e15c967aee088ef91790e023f2b4bb99a26626b447d8506241509d937d39",
+      "independent_kernel_replay": true
+    },
+    "RoughEulerianIntervalRestriction": {
+      "source_sha256": "1d45916a9cd846fe8958d80d3c4bbe234e3869d71b5bb6e8e56c84638d9c5842",
+      "olean_sha256": "229a929b72f642e6ca41a312705bd8cb1920bd81636e84fa6687d6d120565be9",
+      "independent_kernel_replay": true
+    },
+    "PrescribedSwitchMetricCurve": {
+      "source_sha256": "62a0a3cc00cb3b593460430aab99a4e06c442f23906953599ccc32c10fce8cae",
+      "olean_sha256": "33fb454e1bd1dddb263a59fefbfe3a9110fac3896cc03289378839c146ce8c33",
+      "independent_kernel_replay": true
+    },
+    "PrescribedSwitchMetricIdentification": {
+      "source_sha256": "7794fb74d636bf7acee1660b99222da5c5997f2be78da8bc92e27036f86a349f",
+      "olean_sha256": "61f6385a80546871d6070031ce3ad5155b49674b25cc81de460900af897d8204",
+      "independent_kernel_replay": true
+    },
+    "PrescribedSwitchIntervalEnergy": {
+      "source_sha256": "17aee34fc4a6a4de296d675fea5422909beb6700218fdb6af7e984f555e4b680",
+      "olean_sha256": "d14242c345b216a7545ba1f9edd2338a5c2751ac60c129c1378001c53dbed981",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.GeometricEndpointLength.time": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.GeometricEndpointLength.time_pos": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.GeometricEndpointLength.time_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.GeometricEndpointLength.time_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.GeometricEndpointLength.sqrt_time_succ": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.GeometricEndpointLength.endpoint_of_geometric_action": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.GeometricEndpointLength.endpoint_of_local_action": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RoughEulerianTransport.CompactDistributionContinuity.translate": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalMetricCurve": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalMetricCurve_continuous": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalMetricCurve_distance_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalCurve_eq_metric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalCurve_map_configuration": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalCurve_secondMoment": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalSource_finite": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalCurve_energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.SwitchSourceDerivative.prescribedMarginalCurve_testObjective_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "scope": "Actual coefficient Gram operator plus positive coefficient penalty, constructed inverse, exact energy gap and recovery bound, and true weighted finite-gradient map and literal Gram/source entries. Actual time derivative and hierarchy assembly remain open.",
+  "complete_manuscript_proof": false,
+  "forbidden_tokens": [],
+  "forbidden_token_scan_scope": "The listed project source module, with nested comments and strings removed. Dependencies are checked by axiom closure; generated QA and vendor sources are outside token scan.",
+  "independent_kernel_replay": true,
+  "audited_declarations": 29,
+  "axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "modules": {
+    "RegularizedTrialEnergy": {
+      "source_sha256": "c0d2006c9f9e316a0bf68bc37130a6bf2f7a8682453fa1ca093c7a0fb3a0d1eb",
+      "olean_sha256": "254c4825c39fd8843595de955f2d4260fdc54dda652b86e96d9a324fb9b73b81",
+      "independent_kernel_replay": true
+    },
+    "FiniteGradientTrial": {
+      "source_sha256": "6e6714d8634698031ab2e3582addb2237385a35b4e1842b89c306f4f7d265278",
+      "olean_sha256": "208aa8b2432bcf2ea89c86020448319875e0b0ce7f4ce58b848c06051eb5ba43",
+      "independent_kernel_replay": true
+    },
+    "FiniteGradientTrialPairing": {
+      "source_sha256": "cbd89ab5a6d5d2a84c5bba147f586ee74e9ea63fc47850fa640ae9a2338caa0d",
+      "olean_sha256": "4bec8b36e51dd96389092bdda6b8c333fd7fdb877c3c2ee38293297914580d34",
+      "independent_kernel_replay": true
+    }
+  },
+  "declarations": {
+    "SharpWasserstein.RegularizedTrialEnergy.gram": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.gram_inner": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.gram_symmetric": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.gram_coercive": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.gram_isUnit": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.solution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.solution_equation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.solution_tested": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.energy_eq_penalized_norm": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.energy_nonneg": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.energy_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.energy_le": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.RegularizedTrialEnergy.energy_gap_le_trial": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.atomGradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.atomGradient_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gradientMap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gradientMap_apply": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.potential": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.potential_smooth": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.potential_gradient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gradientMap_ae": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gradientMap_norm_sq": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gradientMap_single": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gradientMap_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gradientMap_source_pairing": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.adjoint_source_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gram_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SharpWasserstein.FiniteGradientTrial.gram_matrix_entry": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+import SharpWasserstein.BrownianSemigroup
+#print axioms SharpWasserstein.continuousPath_measurableSpace_eq_comap
+#print axioms SharpWasserstein.continuousPath_coe_measurable
+#print axioms SharpWasserstein.continuousPath_map_coe_injective
+#print axioms SharpWasserstein.continuousPath_indepFun_of_coe
+#print axioms SharpWasserstein.BoundedFlow.shiftPath
+#print axioms SharpWasserstein.BoundedFlow.shiftPath_measurable
+#print axioms SharpWasserstein.BoundedFlow.splitPath
+#print axioms SharpWasserstein.BoundedFlow.splitPath_measurable
+#print axioms SharpWasserstein.BrownianNoise.shiftedScalarPath_hasLaw
+#print axioms SharpWasserstein.BrownianNoise.scalarPath_indep_shift
+#print axioms SharpWasserstein.BrownianNoise.scalarLaw_split
+#print axioms SharpWasserstein.BrownianNoise.coordinateLaw_split
+#print axioms SharpWasserstein.BrownianNoise.pathLabels_split
+#print axioms SharpWasserstein.BrownianNoise.configurationLaw_split
+#print axioms SharpWasserstein.FiniteAdditiveTrajectory.shift_autonomous
+#print axioms SharpWasserstein.BoundedFlow.flow_add
+#print axioms SharpWasserstein.BrownianFlow.law_add
+#print axioms SharpWasserstein.BrownianFlow.globalLaw_add
+#print axioms SharpWasserstein.BrownianFlow.globalLaw_add_integral
+#print axioms SharpWasserstein.BrownianParticle.globalLaw_add
+#print axioms SharpWasserstein.BrownianParticle.globalLaw_add_integral

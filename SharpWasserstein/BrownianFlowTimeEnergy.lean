@@ -1,4 +1,9 @@
-import SharpWasserstein.BrownianTimeTransport
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianTimeTransport
+
+@[expose] public section
 
 /-! Actual common-label Brownian flow increment energy, before taking the
 transport infimum. This supplies explicit couplings for time averaging. -/

@@ -1,6 +1,11 @@
-import SharpWasserstein.EntropyDual
-import Mathlib.MeasureTheory.Function.ContinuousMapDense
-import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyDual
+public import Mathlib.MeasureTheory.Function.ContinuousMapDense
+public import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+
+@[expose] public section
 
 /-! # Relative entropy bounds under narrow convergence
 Bounded continuous tests are proved to characterize finite KL bounds, using

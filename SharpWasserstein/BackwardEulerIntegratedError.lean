@@ -1,4 +1,9 @@
-import SharpWasserstein.FrozenGaussianBoundedError
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGaussianBoundedError
+
+@[expose] public section
 
 /-! The actual backward Euler Gaussian consistency estimate integrated
 against an arbitrary probability law, including singular and correlated laws. -/

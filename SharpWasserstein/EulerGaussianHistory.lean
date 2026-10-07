@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianGaussianHistory
-import SharpWasserstein.EulerConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianGaussianHistory
+public import SharpWasserstein.EulerConvergence
+
+@[expose] public section
 
 /-! The deterministic Gaussian-history simulator is exactly the explicit Euler
 recurrence driven by the supplied path increments. -/

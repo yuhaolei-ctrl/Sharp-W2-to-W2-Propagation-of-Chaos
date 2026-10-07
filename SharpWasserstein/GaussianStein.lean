@@ -1,6 +1,11 @@
-import SharpWasserstein.GaussianMoments
-import Mathlib.MeasureTheory.Integral.IntegralEqImproper
-import Mathlib.Analysis.Calculus.ParametricIntegral
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianMoments
+public import Mathlib.MeasureTheory.Integral.IntegralEqImproper
+public import Mathlib.Analysis.Calculus.ParametricIntegral
+
+@[expose] public section
 
 /-!
 # Genuine Gaussian integration by parts

@@ -1,5 +1,10 @@
-import SharpWasserstein.SinePeriodization
-import Mathlib.Algebra.Order.Floor.Ring
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SinePeriodization
+public import Mathlib.Algebra.Order.Floor.Ring
+
+@[expose] public section
 
 /-! All derivatives of the smooth sine-periodized interaction are globally
 bounded. The proof reduces every derivative to a compact fundamental domain

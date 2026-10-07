@@ -1,6 +1,11 @@
-import SharpWasserstein.BrownianSemigroup
-import SharpWasserstein.BrownianFlowWeak
-import SharpWasserstein.WeakEvolutionTimeTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianSemigroup
+public import SharpWasserstein.BrownianFlowWeak
+public import SharpWasserstein.WeakEvolutionTimeTests
+
+@[expose] public section
 
 /-! Actual forward time derivatives of the constructed Brownian laws. The
 initial right derivative is included. Reversing the remaining time gives a

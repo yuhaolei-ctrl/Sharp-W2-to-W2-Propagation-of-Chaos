@@ -1,4 +1,9 @@
-import SharpWasserstein.WeightedPeriodicFourierSmoothing
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicFourierSmoothing
+
+@[expose] public section
 
 /-! Genuine uniform C¹ approximation of a smooth periodic potential by
 finite real trigonometric polynomials. No absolute continuity of any later

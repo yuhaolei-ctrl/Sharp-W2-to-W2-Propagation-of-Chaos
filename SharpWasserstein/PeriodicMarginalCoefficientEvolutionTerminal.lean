@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionEstimate
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionEstimate
+
+@[expose] public section
 
 /-! The genuine terminal marginal has no external interaction contribution.
 Its actual finite energy uses the same constructed prefix source as every

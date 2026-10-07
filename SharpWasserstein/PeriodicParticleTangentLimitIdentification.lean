@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicParticleTangentLimitMarginal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicParticleTangentLimitMarginal
+
+@[expose] public section
 
 /-! Identify the full random-flux source used for approximation with the
 previously proved actual Brownian source evolution. -/
@@ -25,9 +30,8 @@ theorem fullSource_eq_brownianSourceAt
       hT (particleDrift_smooth hb) (particleDrift_allDerivativesBounded hb) μ u hu t := by
   ext φ
   rw [source_apply]
-  simp only [Brownian.sourceAt,projIcc_of_mem _ ht,PropagatedFlux.Flow.source_apply,
-    ContinuousLinearMap.id_apply]
-  rfl
+  simp only [Brownian.sourceAt,projIcc_of_mem _ ht,ContinuousLinearMap.id_apply]
+  exact (PropagatedFlux.Flow.source_apply _ _ _ _ _ _ _ _ _ _ _ _).symm
 
 /-- Test convergence for the very Brownian source evolution used elsewhere
 in the proof chain, with no replacement distribution. -/

@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedPeriodicTangentPhysical
-import SharpWasserstein.WeightedPeriodicMarginal
-import SharpWasserstein.PeriodicMarginalLift
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicTangentPhysical
+public import SharpWasserstein.WeightedPeriodicMarginal
+public import SharpWasserstein.PeriodicMarginalLift
+
+@[expose] public section
 
 /-! Actual prefix lifting between physical-period tangent spaces for arbitrary finite
 carrying measures, and the exact energy increment of genuine source marginals. -/

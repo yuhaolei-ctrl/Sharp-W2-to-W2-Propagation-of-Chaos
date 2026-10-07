@@ -1,5 +1,10 @@
-import SharpWasserstein.GaussianCovariance
-import SharpWasserstein.Dynamics
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianCovariance
+public import SharpWasserstein.Dynamics
+
+@[expose] public section
 
 /-!
 # Heat convolution for the Gaussian sharpness example

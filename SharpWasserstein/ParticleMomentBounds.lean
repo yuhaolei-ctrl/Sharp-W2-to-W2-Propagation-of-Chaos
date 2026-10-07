@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianParticle
-import SharpWasserstein.TransportConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianParticle
+public import SharpWasserstein.TransportConvergence
+
+@[expose] public section
 
 /-! Quantitative compact-time second-moment control for the actual constructed
 particle laws. No maximal Brownian inequality is needed. -/

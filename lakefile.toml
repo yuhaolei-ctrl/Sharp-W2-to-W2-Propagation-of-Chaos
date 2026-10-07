@@ -1,10 +1,26 @@
-name = "sharp_wasserstein"
+name = "SharpWasserstein"
 version = "0.1.0"
-defaultTargets = ["SharpWasserstein"]
+defaultTargets = ["SharpWasserstein", "Challenge", "Solution"]
 
 [[require]]
 name = "mathlib"
-path = "../../rethlas/agents/generation/tmp/mathlib4-4.32.0"
+git = "https://github.com/leanprover-community/mathlib4.git"
+rev = "v4.35.0-rc3"
 
 [[lean_lib]]
 name = "SharpWasserstein"
+globs = ["SharpWasserstein", "SharpWasserstein.+"]
+
+[[lean_lib]]
+name = "BrownianMotion"
+globs = ["BrownianMotion.+"]
+
+[[lean_lib]]
+name = "KolmogorovExtension4"
+globs = ["KolmogorovExtension4.+"]
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"

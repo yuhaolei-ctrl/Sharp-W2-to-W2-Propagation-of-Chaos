@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicKernelBounds
-import SharpWasserstein.DriftFlowConvergence
-import SharpWasserstein.BrownianParticle
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicKernelBounds
+public import SharpWasserstein.DriftFlowConvergence
+public import SharpWasserstein.BrownianParticle
+
+@[expose] public section
 
 /-! Actual periodic particle approximations and their quadratic transport limit.
 The zeroth and first derivative constants are uniform in the period and in N. -/

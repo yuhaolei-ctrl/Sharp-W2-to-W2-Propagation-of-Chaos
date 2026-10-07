@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicConvolutionDensity
-import SharpWasserstein.WeightedIntegralSquare
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicConvolutionDensity
+public import SharpWasserstein.WeightedIntegralSquare
+
+@[expose] public section
 
 /-! The actual drift flux of a convolved probability law, its exact
 commutator, and the weighted quadratic bound. The estimate does not divide

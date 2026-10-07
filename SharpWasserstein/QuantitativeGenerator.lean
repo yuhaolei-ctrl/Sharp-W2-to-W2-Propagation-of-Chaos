@@ -1,5 +1,10 @@
-import SharpWasserstein.GaussianEulerBackwardThird
-import SharpWasserstein.ConfigurationEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEulerBackwardThird
+public import SharpWasserstein.ConfigurationEuclidean
+
+@[expose] public section
 
 /-! Explicit norm and Lipschitz bounds on the actual diffusion generator from
 bounds on the first three derivatives of a test. -/

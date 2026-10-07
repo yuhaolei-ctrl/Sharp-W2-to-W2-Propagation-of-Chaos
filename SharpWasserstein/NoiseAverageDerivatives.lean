@@ -1,5 +1,10 @@
-import SharpWasserstein.BoundedNoiseAverage
-import Mathlib.Analysis.Calculus.ContDiff.Comp
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedNoiseAverage
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+
+@[expose] public section
 
 /-! Genuine second and third derivative regularity for probability translation
 averages. Derivative identities and Lipschitz bounds are proved for the actual

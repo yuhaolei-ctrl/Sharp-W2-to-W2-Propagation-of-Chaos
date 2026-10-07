@@ -1,0 +1,975 @@
+\documentclass[11pt]{amsart}
+
+\usepackage[margin=1.15in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=green!35!black,urlcolor=blue!50!black]{hyperref}
+
+\numberwithin{equation}{section}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\W}{W_2}
+\newcommand{\HS}{\mathrm{HS}}
+\newcommand{\op}{\mathrm{op}}
+\newcommand{\Lip}{\mathrm{Lip}}
+\newcommand{\Law}{\mathrm{Law}}
+\newcommand{\dd}{\mathrm{d}}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\one}{\mathbf 1}
+\DeclareMathOperator{\dv}{div}
+
+\begin{document}
+
+\title{Sharp Wasserstein propagation of chaos from correlated initial data}
+
+\author{Yuhao Lei}
+\address{Department of Mathematical Sciences, Carnegie Mellon University, Pittsburgh, PA 15213, USA}
+\email{yuhaolei@andrew.cmu.edu}
+
+\subjclass[2020]{Primary 60K35; Secondary 82C22, 60H10, 35Q84, 49Q22}
+\keywords{Propagation of chaos, McKean--Vlasov equation, Wasserstein distance, BBGKY hierarchy, Kac's chaos, Yule process}
+
+\begin{abstract}
+We study mean field diffusions with a globally Lipschitz one-body drift and a bounded, globally Lipschitz pairwise interaction. Suppose that every $k$-particle marginal of the initial law lies within squared quadratic Wasserstein distance $C_0(k/N)^2$ of the corresponding power of the limiting law. We prove that the same holds on every finite time interval, with an explicit constant that depends neither on $N$ nor on the dimension. The initial law may be correlated and singular, as for the uniform distribution on Kac's sphere, and neither an entropy bound nor a transport inequality is assumed. For bounded interactions this answers the time-marginal version of a question of Lacker. The proof combines an entropy--cost regularization of an independent reference dynamics with a BBGKY-type hierarchy for Wasserstein tangent energies, which is closed by comparison with a Yule process.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Consider $N$ particles in $\R^d$ evolving according to
+\begin{equation}\label{eq:particles}
+\dd X^N_i(t)=\Big(a\big(X^N_i(t)\big)+\frac1N\sum_{j=1}^N K\big(X^N_i(t),X^N_j(t)\big)\Big)\dd t+\sqrt2\,\dd W_i(t),\qquad 1\le i\le N,
+\end{equation}
+where $W_1,\dots,W_N$ are independent Brownian motions and the initial law $P_{N,0}$ on $(\R^d)^N$ is exchangeable. As $N\to\infty$, each particle is expected to follow the McKean--Vlasov equation
+\begin{equation}\label{eq:MV}
+\dd X(t)=B_t\big(X(t)\big)\dd t+\sqrt2\,\dd W(t),\qquad \mu_t=\Law\big(X(t)\big),
+\end{equation}
+where $B_t(x)=a(x)+\int K(x,y)\,\mu_t(\dd y)$. Let $P_{N,t}$ be the law of \eqref{eq:particles} at time $t$ and $P^{(k)}_{N,t}$ the joint law of the first $k$ particles. Propagation of chaos means that $P^{(k)}_{N,t}$ is close to $\mu_t^{\otimes k}$ whenever this holds at time zero \cite{Kac56,McK66,Gar88,Szn91}. This paper is concerned with the size of $\W(P^{(k)}_{N,t},\mu_t^{\otimes k})$, as a function of $k$ and $N$, when the initial law is correlated and possibly singular.
+
+For Lipschitz coefficients and independent initial positions, synchronous coupling, which drives the particles and $N$ independent copies of \eqref{eq:MV} by the same Brownian motions, gives $\W^2(P^{(k)}_{N,t},\mu_t^{\otimes k})=O(k/N)$ on bounded time intervals \cite{Szn91}. The optimal order is $(k/N)^2$, as the Gaussian example of \cite[Example~2.8]{Lac23} shows. Two particles are correlated at order $1/N$, so the covariance of $k$ particles differs from that of $\mu_t^{\otimes k}$ by a perturbation of size $k/N$ in the direction of $(1,\dots,1)$, and $\W^2$ is quadratic in such a perturbation; Proposition~\ref{prop:centred} computes this exactly for a Gaussian sample recentred at its empirical mean. Lacker \cite{Lac23} proved that the relative entropy of the law of the first $k$ trajectories on $[0,T]$ with respect to the law of $k$ independent solutions of \eqref{eq:MV} is $O((k/N)^2)$ whenever the same bound holds at time zero; in particular $H(P^{(k)}_{N,t}\,|\,\mu_t^{\otimes k})=O((k/N)^2)$. He obtained this by comparing consecutive marginals through the BBGKY hierarchy, and deduced the corresponding path-space bound for $\W^2$ for Lipschitz coefficients from a quadratic transport inequality for the limit \cite{Tal96,OV00,GL10}. After \cite[Corollary~2.7]{Lac23} he asked whether this path-space Wasserstein bound can be propagated from its analogue at time zero, without assuming entropic chaos initially.
+
+We answer this question for time marginals when the interaction is bounded. Theorem~\ref{thm:main} states that if $a$ and $K$ are Lipschitz, $K$ is bounded, and
+\begin{equation}\label{eq:intro-initial}
+\W^2\big(P^{(k)}_{N,0},\mu_0^{\otimes k}\big)\le C_0\frac{k^2}{N^2},\qquad 1\le k\le N,
+\end{equation}
+then $\W^2(P^{(k)}_{N,t},\mu_t^{\otimes k})\le C_Tk^2/N^2$ for $0\le t\le T$ and $1\le k\le N$. The constant $C_T$ is explicit and depends only on $C_0$, $T$, the Lipschitz constants of $a$ and $K$, and $\sup|K|$. It does not depend on $N$, on the dimension, or on moments of the initial laws.
+
+Condition \eqref{eq:intro-initial} involves no entropy. It holds for the microcanonical laws of Section~\ref{sec:examples}: the uniform distribution on the sphere $\{\sum_i|x_i|^2=dN\}$, which for $d=1$ is Kac's sphere \cite{Kac56}, and the law of a Gaussian sample recentred at its empirical mean. Both laws are singular with respect to $\mu_0^{\otimes N}$, so the entropic hypothesis of \cite{Lac23} fails at level $N$. For independent initial positions, Theorem~\ref{thm:main} only requires a finite second moment of $\mu_0$, whereas the passage from entropy to $\W$ in \cite[Corollary~2.7]{Lac23} uses a quadratic transport inequality for $\mu_0$. The order $(k/N)^2$ also controls correlations: for bounded Lipschitz $f$, the covariance of $f(X^N_1(t))$ and $f(X^N_2(t))$ is $O(1/N)$ (Corollary~\ref{cor:observables}), while the same argument based on the order $k/N$ gives $O(N^{-1/2})$. Interactions that grow in the second variable, such as $K(x,y)=y-x$, are not covered; we return to them in Section~\ref{sec:further}.
+
+\subsection{Main ideas}
+Lacker's argument rests on the chain rule for relative entropy: the increment $H(P^{(k+1)}\,|\,\mu^{\otimes(k+1)})-H(P^{(k)}\,|\,\mu^{\otimes k})$ is the averaged entropy of the conditional law of a further particle given $k$ others, and this conditional law is what enters the drift of the $k$-particle marginal. Wasserstein distances have no such structure. If $X_1$ is uniform on $[0,1]$ and $X_2$ is the fractional part of $MX_1$, then as $M\to\infty$ the law of $(X_1,X_2)$ converges weakly, hence in $\W$ on the unit square, to the uniform law, while the conditional law of $X_2$ given $X_1$ is a Dirac mass for every $M$. Closeness of joint laws in $\W$ gives no control of conditional laws.
+
+We therefore keep the Wasserstein distance for the comparison of the particle system with its limit, and use relative entropy only for an explicit reference law. Let $R^N_s$ be the law at time $s$ of $N$ independent copies of the linear diffusion with drift $B$, started from $P_{N,0}$. It keeps the correlations of the initial law, while the noise regularizes each particle, and an entropy--cost inequality turns \eqref{eq:intro-initial} into
+\[
+H\big(R^{(k)}_s\,\big|\,\mu_s^{\otimes k}\big)\le\frac{C_0D_T}{s}\,\frac{k^2}{N^2},\qquad 0<s\le T,
+\]
+where $D_T$ depends only on $T$ and the Lipschitz constants. The particle law is compared with $R^N_t$ along the curve $\nu_s=S^{N,*}_{t-s}R^N_s$, $0\le s\le t$, which follows the reference dynamics up to time $s$ and the particle dynamics afterwards; here $S^{N,*}$ is the particle semigroup acting on measures. The velocity of this curve at time $s$ is the difference of the two generators applied to $R^N_s$, transported by the linearized particle flow over the remaining time $t-s$. We measure the velocity of the $k$-particle marginal in the tangent space of the Wasserstein space at that marginal, that is, in a negative Sobolev norm weighted by the marginal itself, so that no density is needed. Since lengths are integrals of speeds, only the square root of the factor $s^{-1}$ is integrated, and it is integrable at $s=0$.
+
+The order $k^2/N^2$ comes from conditioning. The generator difference is the vector field $U_s(x)_i=-N^{-1}\sum_jc_s(x_i,x_j)$, where $c_s$ is the interaction centred with respect to $\mu_s$. Under $\mu_s^{\otimes N}$ each component of $U_s$ has size of order $N^{-1/2}$, so that $\E|(U_s)_{1:k}|^2$ is of order $k/N$. Only the conditional expectation of $(U_s)_{1:k}$ given the first $k$ particles acts on the $k$-particle marginal, and its mean square is $O(k^2/N^2)$ (Lemmas~\ref{lem:internal} and~\ref{lem:external}). The tangent energy of the $k$-particle marginal is the squared norm of the gradient part of this conditional expectation (Lemmas~\ref{lem:energy} and~\ref{lem:marginal-energy}).
+
+It remains to follow the tangent energies $E_k(r)$ of the velocity as it is transported. They satisfy a hierarchy of BBGKY type, which in differential form reads
+\[
+E_k'\le D\,E_k+q_k\,(E_{k+1}-E_k),\qquad q_k=\lambda k\Big(1-\frac kN\Big),
+\]
+with constants $D$ and $\lambda$ depending only on the Lipschitz constants and $\sup|K|$, and which is proved in integrated form in Proposition~\ref{prop:hierarchy}. The coupling term $E_{k+1}-E_k$ is the squared norm of the part of the $(k+1)$-particle representative that is orthogonal to the $k$-particle one (Lemma~\ref{lem:marginal-energy}), so it is nonnegative. The inequality is the backward equation of a pure-birth process with rates $q_k$, which is dominated by a Yule process, and the profile $k^2/N^2$ is preserved up to a factor $e^{\omega r}$. Since the laws carrying the velocities may be singular, the hierarchy is derived from a Galerkin approximation by trigonometric polynomials (Section~\ref{sec:hierarchy} and Appendix~\ref{app:galerkin}).
+
+\subsection{Related work}
+We refer to the surveys of Chaintron and Diez \cite{CD22a,CD22b} for the many approaches to propagation of chaos and mention only work close to the present one. Coupling methods go back to Dobrushin \cite{Dob79} and Sznitman \cite{Szn91}, and give time-uniform bounds under convexity, see for instance \cite{Mal03}. Relative entropy methods were developed by Jabin and Wang \cite{JW16,JW18} for bounded and $W^{-1,\infty}$ interactions; see also \cite{Lac18,Jab19,FW26}. These works estimate the entropy of the whole configuration, and subadditivity then yields the order $k/N$ for $k$-particle marginals.
+
+The local approach of \cite{Lac23} has been extended to time-uniform estimates \cite{LL23,MRW24}, to $L^p$ and singular interactions \cite{Han22,Wan26}, to higher-order expansions \cite{HR25}, to non-constant diffusion coefficients \cite{GGP25} and to nonlinear dependence on the empirical measure \cite{AL26}. For non-exchangeable systems, Lacker, Yeung and Zhou \cite{LYZ24} use a hierarchy indexed by subsets of particles together with first-passage percolation, and in the mean field case their comparison process is a Yule process \cite[Section~1.5]{LYZ24}. Sharp marginal bounds also enter the fluctuation theory of \cite{SY26}. The size of correlations between particles is studied in \cite{PPS19,Due21}. High-temperature mean field Gibbs measures satisfy the entropic analogue of \eqref{eq:intro-initial} \cite{Lac22}, and the creation of chaos from correlated data is studied in \cite{RS25,BDM26}. Kac's chaos for measures on spheres is quantified in \cite{HM14,Car15}; see also \cite{DF87} for the comparison of spherical and Gaussian marginals.
+
+Differentiation along the curve $\nu_s$ gives a Duhamel formula, as in the consistency--stability method of Mischler, Mouhot and Wennberg \cite{MMW15} and in weak error expansions \cite{CST22,DT25}. Here the consistency error is evaluated on the explicit reference law $R^N_s$, and stability comes from the linearized particle flow, measured in marginal tangent energies. For the tangent space of the Wasserstein space we follow \cite{Ott01,AGS08}; comparisons between $\W$ and weighted $\dot H^{-1}$ norms appear in \cite{Loe06,Pey18}. For Coulomb and Riesz interactions, modulated energy and modulated free energy methods \cite{Due16,Ser20,NRS22,BJW23,RS26,CRS25} exploit the structure of the interaction instead of Lipschitz bounds.
+
+\subsection{Organization}
+Section~\ref{sec:main} contains the main theorem, its consequences and the examples. Section~\ref{sec:structure} introduces tangent energies, the reference evolution and the interpolating curve, and proves Theorem~\ref{thm:main} from three intermediate results, which are established in Sections~\ref{sec:source}, \ref{sec:hierarchy} and~\ref{sec:switch}; Section~\ref{sec:approx} contains the approximation lemmas with which Section~\ref{sec:proof-main} removes the smoothness assumptions. Section~\ref{sec:further} discusses extensions, and Appendix~\ref{app:galerkin} contains the Galerkin approximation.
+
+\section{Main results}\label{sec:main}
+
+\subsection{Notation and assumptions}
+All vector norms are Euclidean, and the norm on a product $(\R^d)^k$ is the unnormalized one, $|x|^2=\sum_{i=1}^k|x_i|^2$; matrix norms are operator norms unless indicated otherwise, and $|\cdot|_\HS$ is the Hilbert--Schmidt norm. For $x\in(\R^d)^N$ we write $x_{1:m}=(x_1,\dots,x_m)$, and for a law $\rho$ on $(\R^d)^N$ we write $\rho_m$ or $\rho^{(m)}$ for the law of $x_{1:m}$. A law on $(\R^d)^N$ is exchangeable if it is invariant under permutations of the $N$ coordinates. We denote by $\cP_2(\R^n)$ the probability measures with finite second moment, by
+\[
+\W^2(\rho,\eta)=\inf_{\pi\in\Pi(\rho,\eta)}\int|x-y|^2\,\pi(\dd x,\dd y)
+\]
+the quadratic Wasserstein distance, by $\rho(f)=\int f\,\dd\rho$ the integral of $f$, and by $H(\rho\,|\,\eta)=\int\log(\dd\rho/\dd\eta)\,\dd\rho$ the relative entropy, with $H(\rho\,|\,\eta)=+\infty$ if $\rho\not\ll\eta$. The space $C^1_b(\R^n)$ consists of bounded $C^1$ functions with bounded gradient, $C^2_b$ of bounded $C^2$ functions with bounded first and second derivatives, and $C^\infty_b$ of smooth functions which are bounded together with all their derivatives; $C^1_c(I)$ denotes compactly supported $C^1$ functions on an open interval $I$, and $C^{1,2}$ refers to functions of $(u,x)$ that are $C^1$ in $u$ and $C^2$ in $x$. For $K\colon\R^d\times\R^d\to\R^d$ of class $C^1$, $D_xK$ and $D_yK$ are the Jacobian matrices in the first and in the second variable.
+
+\medskip
+\noindent\textbf{Assumption A.} There are constants $L_a,L_1,L_2,M\ge0$ such that for all $x,x',y,y'\in\R^d$,
+\begin{align}
+|a(x)-a(x')|&\le L_a|x-x'|,\label{eq:A1}\\
+|K(x,y)|&\le M,\label{eq:A2}\\
+|K(x,y)-K(x',y')|&\le L_1|x-x'|+L_2|y-y'|.\label{eq:A3}
+\end{align}
+
+\subsection{The main theorem}
+
+\begin{theorem}\label{thm:main}
+Suppose that Assumption~A holds. Let $N\ge1$, let $\mu_0\in\cP_2(\R^d)$, let $P_{N,0}\in\cP_2((\R^d)^N)$ be exchangeable, and let $C_0\ge0$ be such that
+\begin{equation}\label{eq:initial}
+\W^2\big(P^{(k)}_{N,0},\mu_0^{\otimes k}\big)\le C_0\frac{k^2}{N^2},\qquad 1\le k\le N.
+\end{equation}
+Let $P_{N,t}$ and $\mu_t$ be the laws at time $t$ of the solutions of \eqref{eq:particles} and \eqref{eq:MV}. Then, for every $T>0$,
+\begin{equation}\label{eq:conclusion}
+\sup_{0\le t\le T}\W^2\big(P^{(k)}_{N,t},\mu_t^{\otimes k}\big)\le C_T\frac{k^2}{N^2},\qquad 1\le k\le N,
+\end{equation}
+where $C_T$ is given by \eqref{eq:CT}.
+\end{theorem}
+
+The constants are
+\begin{gather}
+L=L_a+L_1,\qquad \Lambda=L_a+L_1+L_2,\qquad L_c=2L_1+L_2,\label{eq:const1}\\
+G=2L_1^2+L_2^2+2M^2,\qquad \lambda=2G,\qquad D=2\Lambda+2L_1+1,\qquad \omega=D+3\lambda,\label{eq:const2}\\
+D_T=\frac{1+LT+L^2T^2/3}{4},\qquad A_0=2M+L_ce^{LT}\sqrt{C_0},\qquad A_1=\sqrt8\,M\sqrt{C_0D_T},\label{eq:const3}\\
+C_T=\Big[e^{LT}\sqrt{C_0}+e^{\omega T/2}\big(A_0T+2A_1\sqrt T\big)\Big]^2.\label{eq:CT}
+\end{gather}
+Thus $C_T$ depends only on $C_0$, $T$, $L_a$, $L_1$, $L_2$ and $M$. It does not depend on $N$ or on the dimension $d$, and it involves neither $a(0)$, nor moments of $P_{N,0}$ and $\mu_0$, nor derivatives of the coefficients. The bound \eqref{eq:conclusion} at level $k$ uses \eqref{eq:initial} at all levels between $k$ and $N$, through Proposition~\ref{prop:profile} and Lemma~\ref{lem:increments}.
+
+\subsection{Consequences}
+
+\begin{corollary}\label{cor:iid}
+Suppose that Assumption~A holds and $P_{N,0}=\mu_0^{\otimes N}$ with $\mu_0\in\cP_2(\R^d)$. Then, for every $T>0$,
+\[
+\sup_{0\le t\le T}\W^2\big(P^{(k)}_{N,t},\mu_t^{\otimes k}\big)\le4M^2T^2e^{\omega T}\,\frac{k^2}{N^2},\qquad 1\le k\le N.
+\]
+\end{corollary}
+
+\begin{proof}
+This is Theorem~\ref{thm:main} with $C_0=0$, for which $A_0=2M$, $A_1=0$ and $C_T=4M^2T^2e^{\omega T}$.
+\end{proof}
+
+In this case the reference law $R^N_s$ of Section~\ref{sec:structure} equals $\mu_s^{\otimes N}$, the external term of Lemma~\ref{lem:external} vanishes, and no entropy estimate enters the proof.
+
+\begin{corollary}\label{cor:observables}
+Under the hypotheses of Theorem~\ref{thm:main}, let $X^N(t)$ be the solution of \eqref{eq:particles} and $0\le t\le T$. For $1\le k\le N$, every Lipschitz function $F\colon(\R^d)^k\to\R$ satisfies
+\begin{equation}\label{eq:obs1}
+\Big|\E F\big(X^N_1(t),\dots,X^N_k(t)\big)-\int F\,\dd\mu_t^{\otimes k}\Big|\le\sqrt{C_T}\,\Lip(F)\,\frac kN.
+\end{equation}
+If $N\ge2$, every bounded Lipschitz function $f\colon\R^d\to\R$ satisfies
+\begin{equation}\label{eq:obs2}
+\Big|\mathrm{Cov}\big(f(X^N_1(t)),f(X^N_2(t))\big)\Big|\le\frac{4\sqrt2\,\sqrt{C_T}\,\|f\|_\infty\Lip(f)}{N}+\frac{C_T\Lip(f)^2}{N^2}.
+\end{equation}
+\end{corollary}
+
+\begin{proof}
+The first Wasserstein distance is bounded by $\W$, so \eqref{eq:obs1} follows from Theorem~\ref{thm:main} and the Kantorovich--Rubinstein duality. For \eqref{eq:obs2}, write $X_i=X^N_i(t)$, $m=\mu_t(f)$ and $g(x_1,x_2)=(f(x_1)-m)(f(x_2)-m)$. Since $X_1$ and $X_2$ have the same law,
+\[
+\mathrm{Cov}\big(f(X_1),f(X_2)\big)=\E g(X_1,X_2)-\big(\E f(X_1)-m\big)^2.
+\]
+The function $g$ satisfies $\int g\,\dd\mu_t^{\otimes2}=0$ and
+\[
+|g(x)-g(y)|\le2\|f\|_\infty\Lip(f)\big(|x_1-y_1|+|x_2-y_2|\big)\le2\sqrt2\,\|f\|_\infty\Lip(f)\,|x-y|,
+\]
+so \eqref{eq:obs1} with $k=2$ gives $|\E g(X_1,X_2)|\le4\sqrt2\sqrt{C_T}\,\|f\|_\infty\Lip(f)/N$, while \eqref{eq:obs1} with $k=1$ gives $|\E f(X_1)-m|\le\sqrt{C_T}\Lip(f)/N$.
+\end{proof}
+
+The boundedness assumption concerns only the fluctuating part $y\mapsto K(x,y)$ of the interaction: a linear confinement may be placed inside the pairwise drift, whereas interactions growing in the second variable, such as $y-x$, are excluded.
+
+\begin{proposition}\label{prop:intrinsic}
+Let $b\colon\R^d\times\R^d\to\R^d$ satisfy
+\begin{equation}\label{eq:b-assump}
+|b(x,y)-b(x',y')|\le\ell_x|x-x'|+\ell_y|y-y'|,\qquad \sup_{x,y,z}|b(x,y)-b(x,z)|\le M_b.
+\end{equation}
+Then Theorem~\ref{thm:main} applies to the particle drift $N^{-1}\sum_jb(x_i,x_j)$ with $L_a=\ell_x$, $L_1=2\ell_x$, $L_2=\ell_y$ and $M=M_b$. Conversely, if $b(x,y)=a(x)+K(x,y)$ with $a$ and $K$ satisfying Assumption~A, then \eqref{eq:b-assump} holds with $\ell_x=L_a+L_1$, $\ell_y=L_2$ and $M_b=2M$.
+\end{proposition}
+
+\begin{proof}
+Put $a(x)=b(x,0)$ and $K(x,y)=b(x,y)-b(x,0)$. Then $|K|\le M_b$, $a$ is $\ell_x$-Lipschitz, and $|K(x,y)-K(x',y')|\le|b(x,y)-b(x',y')|+|b(x,0)-b(x',0)|\le2\ell_x|x-x'|+\ell_y|y-y'|$. Since the diagonal term is included and the normalization is $1/N$, we have $N^{-1}\sum_ja(x_i)=a(x_i)$, so the two particle systems coincide. The converse follows from the triangle inequality and \eqref{eq:A1}--\eqref{eq:A3}.
+\end{proof}
+
+The mean field normalization $(N-1)^{-1}\sum_{j\ne i}$ without diagonal term, used in \cite{Lac23}, only changes the constant.
+
+\begin{proposition}\label{prop:offdiag}
+Let $N\ge2$, and let $\tilde P_{N,t}$ be the law at time $t$ of the system obtained from \eqref{eq:particles} by replacing $N^{-1}\sum_{j=1}^NK(X^N_i,X^N_j)$ with $(N-1)^{-1}\sum_{j\ne i}K(X^N_i,X^N_j)$, started from the same initial law. Under the hypotheses of Theorem~\ref{thm:main},
+\[
+\sup_{0\le t\le T}\W\big(\tilde P^{(k)}_{N,t},\mu_t^{\otimes k}\big)\le\big(\sqrt{C_T}+2MTe^{\Lambda T}\big)\frac kN,\qquad 1\le k\le N.
+\]
+\end{proposition}
+
+\begin{proof}
+The drift of the modified system is $b_N+e$, where $b_N$ is the drift of \eqref{eq:particles} and $e_i(x)=\big(N(N-1)\big)^{-1}\sum_{j\ne i}K(x_i,x_j)-N^{-1}K(x_i,x_i)$, so that $|e_i|\le2M/N$ and $|e|\le2M/\sqrt N$. Couple both systems through the same initial vector and Brownian motions, and let $\Delta=\tilde X-X$. Since $\Lip(b_N)\le\Lambda$ by Lemma~\ref{lem:wellposed}, $|\Delta_t|\le\int_0^t\big(\Lambda|\Delta_u|+2M/\sqrt N\big)\dd u$, hence $|\Delta_t|\le2MTe^{\Lambda T}/\sqrt N$ for $t\le T$. Both equations are invariant under permutations of the coordinates, and the initial law and the noise are exchangeable, so the $|\Delta_i(t)|^2$ are identically distributed and $\E|\Delta_{1:k}(t)|^2=\frac kN\E|\Delta(t)|^2\le4M^2T^2e^{2\Lambda T}k/N^2\le(2MTe^{\Lambda T}k/N)^2$. The triangle inequality and Theorem~\ref{thm:main} conclude.
+\end{proof}
+
+\begin{remark}\label{rem:weak}
+Theorem~\ref{thm:main} also applies to narrowly continuous probability solutions $(P_{N,t})$ and $(\mu_t)$ of the forward Kolmogorov equations associated with \eqref{eq:particles} and \eqref{eq:MV}, provided their second moments are locally bounded in time. Indeed, the drifts have linear growth, so by the superposition principle \cite{Tre16,BRS21} such solutions are time marginals of martingale solutions of the corresponding linear equations, and these are unique in law because the coefficients are Lipschitz \cite[Sections~5.2--5.4]{KS91}. Applied first to the drift $B_t$ built from $(\mu_t)$, this shows that $(\mu_t)$ solves \eqref{eq:MV}, and both curves coincide with the laws of the strong solutions of Lemma~\ref{lem:wellposed}. A constant noise intensity $\sigma\,\dd W$ with $\sigma>0$ reduces to $\sqrt2\,\dd W$ through the time change $t\mapsto2t/\sigma^2$, which multiplies $a$ and $K$ by $2/\sigma^2$.
+\end{remark}
+
+\subsection{Microcanonical initial laws}\label{sec:examples}
+We write $\cN_n$ for the standard Gaussian measure on $\R^n$ and take $\mu_0=\cN_d$, so that $\mu_0^{\otimes k}=\cN_{dk}$. The following initial laws satisfy \eqref{eq:initial} and are singular with respect to $\mu_0^{\otimes N}$.
+
+\begin{proposition}\label{prop:centred}
+Let $Z_1,\dots,Z_N$ be independent with law $\cN_d$, let $\bar Z=N^{-1}\sum_jZ_j$, and let $P_{N,0}$ be the law of $(Z_i-\bar Z)_{1\le i\le N}$. Then $P_{N,0}$ is exchangeable and concentrated on the subspace $\{x:\sum_ix_i=0\}$, so that $H(P_{N,0}\,|\,\mu_0^{\otimes N})=+\infty$, while for $1\le k<N$
+\begin{equation}\label{eq:centred-H}
+H\big(P^{(k)}_{N,0}\,\big|\,\mu_0^{\otimes k}\big)=\frac d2\Big(-\frac kN-\log\Big(1-\frac kN\Big)\Big).
+\end{equation}
+Moreover \eqref{eq:initial} holds with $C_0=d$. If $a=0$ and $K=0$, then for all $t\ge0$ and $1\le k\le N$, with $v_t=1+2t$,
+\begin{equation}\label{eq:centred-W}
+\W^2\big(P^{(k)}_{N,t},\mu_t^{\otimes k}\big)=\frac{d\,(k/N)^2}{\big(\sqrt{v_t}+\sqrt{v_t-k/N}\big)^2}\ \ge\ \frac{d}{4v_t}\,\frac{k^2}{N^2}.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Exchangeability is clear. The vector $(Z_i-\bar Z)_{i\le k}$ is centred Gaussian with covariance $\Sigma_k=(I_k-N^{-1}\one\one^{\top})\otimes I_d$, where $\one\in\R^k$ is the vector of ones. The matrix $\Sigma_k$ has the eigenvalue $1-k/N$ with multiplicity $d$, on the span of the vectors $\one\otimes e$, $e\in\R^d$, and the eigenvalue $1$ with multiplicity $d(k-1)$. For $k=N$ the eigenvalue $0$ shows that $P_{N,0}$ is carried by the subspace $\{\sum_ix_i=0\}$, which is Lebesgue-null, so $P_{N,0}$ and $\mu_0^{\otimes N}$ are mutually singular. For $k<N$, \eqref{eq:centred-H} is the formula $H(\cN(0,\Sigma)\,|\,\cN_n)=\frac12(\operatorname{tr}\Sigma-n-\log\det\Sigma)$. If $a=K=0$, then $X^N_i(t)=Z_i-\bar Z+\sqrt2W_i(t)$, so that $P^{(k)}_{N,t}$ is centred Gaussian with covariance $(v_tI_k-N^{-1}\one\one^{\top})\otimes I_d$, while $\mu_t=\cN(0,v_tI_d)$. The two covariance matrices commute, and the formula for the quadratic Wasserstein distance between Gaussian measures with commuting covariances \cite{DL82,GS84} gives $\W^2=d(\sqrt{v_t}-\sqrt{v_t-k/N})^2$, which is \eqref{eq:centred-W}. At $t=0$ this equals $d(1-\sqrt{1-k/N})^2\le dk^2/N^2$, because $1-\sqrt{1-x}\le x$ for $0\le x\le1$.
+\end{proof}
+
+\begin{proposition}\label{prop:sphere}
+Let $P_{N,0}=\varpi_N$ be the uniform probability measure on the sphere $\{x\in(\R^d)^N:\sum_{i=1}^N|x_i|^2=dN\}$. Then $\varpi_N$ is exchangeable and singular with respect to $\mu_0^{\otimes N}$, and
+\begin{equation}\label{eq:sphere}
+\W^2\big(\varpi_N^{(k)},\mu_0^{\otimes k}\big)\le32\,\frac{k^2}{N^2},\qquad 1\le k\le N.
+\end{equation}
+\end{proposition}
+
+\begin{proof}
+Permutations of the particles are orthogonal maps of $(\R^d)^N$ that preserve the sphere, so $\varpi_N$ is exchangeable, and it is singular with respect to $\mu_0^{\otimes N}$ because the sphere is Lebesgue-null. Put $n=dN$ and $j=dk$, and let $Z$ have law $\cN_n$. Then $X=\sqrt n\,Z/|Z|$ has law $\varpi_N$, and $\varpi_N^{(k)}$ is the law of the first $j$ coordinates of $X$.
+
+If $4k\ge N$, the coupling $(X,Z)$ gives
+\[
+\W^2(\varpi_N,\cN_n)\le\E\big(|Z|-\sqrt n\big)^2\le\frac1n\E\big(|Z|^2-n\big)^2=2,
+\]
+since $|\sqrt r-\sqrt n|\le|r-n|/\sqrt n$ for $r\ge0$. Projection onto the first $j$ coordinates does not increase $\W$, so $\W^2(\varpi_N^{(k)},\cN_j)\le2\le32k^2/N^2$.
+
+Suppose now that $4k<N$. Then $N\ge5$, and $p:=(n-j)/2\ge2$. The vector $Y=X_{1:j}$ is rotation invariant in $\R^j$, and $|Y|^2/n=|Z_{1:j}|^2/|Z|^2$ has the $\mathrm{Beta}(j/2,p)$ distribution, since $|Z_{1:j}|^2$ and $|Z|^2-|Z_{1:j}|^2$ are independent with $\chi^2_j$ and $\chi^2_{n-j}$ laws. Writing the density of $Y$ in polar coordinates, we find that $Y$ has the density
+\[
+y\mapsto\frac{\Gamma(n/2)}{\Gamma(p)\,(\pi n)^{j/2}}\Big(1-\frac{|y|^2}n\Big)^{p-1},\qquad |y|^2<n.
+\]
+Moreover $\E|Y|^2=j$, because the $n$ coordinates of $X$ are exchangeable and $|X|^2=n$, and $\E\log(1-|Y|^2/n)=\psi(p)-\psi(n/2)$, where $\psi=\Gamma'/\Gamma$; the latter follows by differentiating $\log\int_0^1u^{p-1}(1-u)^{j/2-1}\,\dd u=\log\Gamma(p)+\log\Gamma(j/2)-\log\Gamma(n/2)$ in $p$. A direct computation gives $H(\varpi_N^{(k)}\,|\,\cN_j)=\mathcal I(p,j/2)$, where
+\[
+\mathcal I(p,\beta)=\log\Gamma(p+\beta)-\log\Gamma(p)-\beta\log(p+\beta)+\beta+(p-1)\big(\psi(p)-\psi(p+\beta)\big),\qquad\beta\ge0.
+\]
+We use the inequalities
+\begin{equation}\label{eq:digamma}
+\psi(x)<\log x-\frac1{2x},\qquad \psi'(x)>\frac1x+\frac1{2x^2},\qquad x>0.
+\end{equation}
+The second follows from $\psi'(x)=\sum_{l\ge0}(x+l)^{-2}$ \cite[Section~5.15]{DLMF} and the inequality $\sum_{l\ge0}g(l)-\frac12g(0)>\int_0^\infty g$ for the strictly convex function $g(u)=(x+u)^{-2}$, which follows by comparing each trapezoid with the integral over $[l,l+1]$. The first follows from the second, because $x\mapsto\log x-\frac1{2x}-\psi(x)$ then has a negative derivative and tends to $0$ as $x\to\infty$ \cite[Section~5.11]{DLMF}.
+
+Now $\mathcal I(p,0)=0$ and, for $\beta\ge0$ and $x=p+\beta$,
+\[
+\partial_\beta\mathcal I(p,\beta)=\psi(x)-\log x-\frac\beta x+1-(p-1)\psi'(x)<-\frac1{2x}-\frac\beta x+1-(p-1)\Big(\frac1x+\frac1{2x^2}\Big)=\frac{\beta+1}{2x^2},
+\]
+where we used \eqref{eq:digamma}, $p\ge1$ and $(p-1)/x=1-(\beta+1)/x$. Since $x\ge p$, integration over $\beta\in[0,j/2]$ gives
+\[
+H\big(\varpi_N^{(k)}\,\big|\,\cN_j\big)<\frac{j^2/4+j}{4p^2}=\frac{j^2+4j}{4(n-j)^2}<\frac49\,\frac{j^2+4j}{n^2}\le\frac{20}9\,\frac{k^2}{N^2},
+\]
+because $n-j>3n/4$, $j^2/n^2=k^2/N^2$ and $4j/n^2=4k/(dN^2)\le4k^2/N^2$. Talagrand's inequality $\W^2(\nu,\cN_j)\le2H(\nu\,|\,\cN_j)$ \cite{Tal96} gives $\W^2(\varpi_N^{(k)},\cN_j)\le\frac{40}9k^2/N^2$.
+\end{proof}
+
+In both examples $H(P_{N,0}\,|\,\mu_0^{\otimes N})=+\infty$, so the hypothesis \cite[(2.6)]{Lac23} fails at level $k=N$, while Theorem~\ref{thm:main} applies for all $a$ and $K$ satisfying Assumption~A. Proposition~\ref{prop:centred} also shows that the order $k^2/N^2$ in Theorem~\ref{thm:main} cannot be improved.
+
+\section{Tangent energies and the structure of the proof}\label{sec:structure}
+
+\subsection{The dynamics}
+Write
+\begin{equation}\label{eq:generators}
+b_N(x)_i=a(x_i)+\frac1N\sum_{j=1}^NK(x_i,x_j),\qquad \cL_N=\Delta+b_N\cdot\nabla,\qquad \cL^N_0(s)=\Delta+\sum_{i=1}^NB_s(x_i)\cdot\nabla_i.
+\end{equation}
+The diagonal term $j=i$ is always retained. We write $S^N_r$ for the semigroup of \eqref{eq:particles} acting on functions and $S^{N,*}_r$ for its action on measures. The transition family of the linear equation $\dd Y=B_s(Y)\dd s+\sqrt2\,\dd W$ is denoted $Q_{u,s}$; it acts on measures from the right.
+
+\begin{lemma}\label{lem:wellposed}
+Under Assumption~A, equations \eqref{eq:particles} and \eqref{eq:MV} have unique strong solutions for initial laws in $\cP_2$, and $t\mapsto P_{N,t}$, $t\mapsto\mu_t$ are continuous in $\W$. The map $(t,x)\mapsto B_t(x)$ is continuous, $\mu_t=\mu_0Q_{0,t}$, and
+\begin{equation}\label{eq:lip}
+\Lip(b_N)\le\Lambda,\qquad \Lip(B_t)\le L
+\end{equation}
+uniformly in $N$ and $t$. The law $P_{N,t}$ is exchangeable. If moreover $a,K\in C^\infty_b$, the flow $F_r(x,W)$ of \eqref{eq:particles} is smooth in $x$ and $J_r=D_xF_r$ satisfies $\|J_r\|_\op\le e^{\Lambda r}$.
+\end{lemma}
+
+\begin{proof}
+For $\eta,\tilde\eta\in\cP_2(\R^d)$, \eqref{eq:A1} and \eqref{eq:A3} give
+\[
+\Big|a(x)+\int K(x,y)\,\eta(\dd y)-a(x')-\int K(x',y)\,\tilde\eta(\dd y)\Big|\le L|x-x'|+L_2\W(\eta,\tilde\eta),
+\]
+and the drift has linear growth. Well-posedness of \eqref{eq:MV} in $\cP_2$, with a $\W$-continuous flow of time marginals, is then classical; see \cite[Theorem~4.21]{CD18}, and \cite[Chapter~I]{Szn91} for bounded interactions. Continuity of $B$ follows from $|B_t(x)-B_s(x)|\le L_2\W(\mu_t,\mu_s)$. The process $X$ solves the linear equation with drift $B$, whose law is unique, so $\mu_t=\mu_0Q_{0,t}$.
+
+For $u=x-x'$, the $i$-th component of $b_N(x)-b_N(x')$ is bounded by $(L_a+L_1)|u_i|+L_2N^{-1}\sum_j|u_j|$; Minkowski's inequality in the product norm and $\sum_j|u_j|\le\sqrt N|u|$ give $\Lip(b_N)\le\Lambda$. Integrating \eqref{eq:A3} in $y$ gives $\Lip(B_t)\le L$. Hence \eqref{eq:particles} has a unique strong solution, and its law is exchangeable because the equation and the law of the driving noise are invariant under permutations of the coordinates. For smooth coefficients with bounded derivatives the flow is smooth in $x$ \cite[Chapter~4]{Kun90}, and $J_r=I+\int_0^rDb_N(F_u)J_u\,\dd u$ with $\|Db_N\|_\op\le\Lambda$, so Gronwall's inequality gives the bound on $J_r$.
+\end{proof}
+
+\subsection{Tangent energies}\label{sec:tangent}
+Let $\rho\in\cP(\R^n)$ and let $\cH_\rho$ be the closure in $L^2(\rho;\R^n)$ of $\{\nabla\varphi:\varphi\in C^\infty_c(\R^n)\}$, with orthogonal projection $\Pi_\rho$. For $V\in L^2(\rho;\R^n)$ we define the linear functional $\sigma=-\dv(\rho V)$ on $C^1_b(\R^n)$ by
+\[
+\sigma(\varphi)=\int\nabla\varphi\cdot V\,\dd\rho,
+\]
+and call it a source carried by $\rho$ and represented by $V$. Its tangent energy is
+\begin{equation}\label{eq:energy-def}
+\cE_\rho(\sigma)=\sup_{\varphi\in C^\infty_c(\R^n)}\Big(2\sigma(\varphi)-\int|\nabla\varphi|^2\,\dd\rho\Big).
+\end{equation}
+In the language of \cite[Section~8.4]{AGS08}, $\cH_\rho$ is the tangent space of $\cP_2(\R^n)$ at $\rho$, a source is a tangent vector written in divergence form, and $\cE_\rho(\sigma)$ is the square of its norm, that is, of the $\dot H^{-1}$ norm weighted by $\rho$; see also \cite{Ott01,Loe06,Pey18}.
+
+\begin{lemma}\label{lem:energy}
+Let $\sigma$ be a source carried by $\rho$ and represented by $V$, and let $w=\Pi_\rho V$. Then $\nabla\varphi\in\cH_\rho$ for every $\varphi\in C^1_b(\R^n)$, and $\sigma(\varphi)=\int\nabla\varphi\cdot w\,\dd\rho$ for all such $\varphi$. Moreover $w$ is the only element of $\cH_\rho$ with this property for all $\varphi\in C^\infty_c$,
+\begin{equation}\label{eq:energy-pyth}
+\cE_\rho(\sigma)=\|w\|^2_{L^2(\rho)},\qquad \|V\|^2_{L^2(\rho)}=\cE_\rho(\sigma)+\|V-w\|^2_{L^2(\rho)},
+\end{equation}
+the supremum in \eqref{eq:energy-def} is unchanged if $C^\infty_c$ is replaced by $C^1_b$, and $|\sigma(\varphi)|\le\cE_\rho(\sigma)^{1/2}\|\nabla\varphi\|_{L^2(\rho)}$ for $\varphi\in C^1_b$.
+\end{lemma}
+
+\begin{proof}
+Let $\chi\in C^\infty_c(\R^n)$ be equal to $1$ on the unit ball and put $\chi_R=\chi(\cdot/R)$. For $\varphi\in C^1_b$, $\nabla(\chi_R\varphi)=\chi_R\nabla\varphi+\varphi\nabla\chi_R\to\nabla\varphi$ in $L^2(\rho)$ by dominated convergence, since $|\varphi\nabla\chi_R|\le\|\varphi\|_\infty\|\nabla\chi\|_\infty/R$. Mollifications of $\chi_R\varphi$ have gradients converging uniformly, with supports in a fixed compact set, so $\nabla(\chi_R\varphi)\in\cH_\rho$ and hence $\nabla\varphi\in\cH_\rho$. Consequently $\sigma(\varphi)=\la V,\nabla\varphi\ra=\la w,\nabla\varphi\ra$, and an element of $\cH_\rho$ is determined by its pairings with the dense set $\nabla C^\infty_c$. Since $2\la w,g\ra-\|g\|^2=\|w\|^2-\|w-g\|^2$ for $g\in\cH_\rho$, the supremum of this expression over the dense subset $\nabla C^\infty_c$ of $\cH_\rho$, or over the intermediate set $\nabla C^1_b\subset\cH_\rho$, equals $\|w\|^2$. The second identity in \eqref{eq:energy-pyth} is Pythagoras' theorem, and the last bound is the Cauchy--Schwarz inequality.
+\end{proof}
+
+\begin{lemma}\label{lem:marginal-energy}
+Let $\rho\in\cP((\R^d)^N)$, $V\in L^2(\rho;(\R^d)^N)$, and for $1\le m\le N$ define
+\begin{equation}\label{eq:marginal-source}
+\sigma_m(\varphi)=\int\sum_{i=1}^m\nabla_i\varphi(x_{1:m})\cdot V_i(x)\,\rho(\dd x),\qquad \varphi\in C^1_b((\R^d)^m).
+\end{equation}
+Then $\sigma_m$ is a source carried by $\rho_m$, represented by the conditional expectation $\E_\rho[V_{1:m}\,|\,x_{1:m}]$. Let $w_m=\Pi_{\rho_m}\E_\rho[V_{1:m}\,|\,x_{1:m}]$ and $E_m=\cE_{\rho_m}(\sigma_m)$. Then $E_m\le\|V\|^2_{L^2(\rho)}$ and, for $m<N$,
+\begin{equation}\label{eq:increment}
+\la w_{m+1},(w_m,0)\ra_{L^2(\rho_{m+1})}=E_m,\qquad \|w_{m+1}-(w_m,0)\|^2_{L^2(\rho_{m+1})}=E_{m+1}-E_m.
+\end{equation}
+In particular $E_m\le E_{m+1}$.
+\end{lemma}
+
+\begin{proof}
+The representation follows by conditioning on $x_{1:m}$, and $E_m\le\|V\|^2$ by Lemma~\ref{lem:energy} and Jensen's inequality. A function $\varphi\in C^1_b((\R^d)^m)$, regarded as a function of $x_{1:m+1}$, has gradient $(\nabla\varphi,0)$, so $\sigma_{m+1}(\varphi)=\sigma_m(\varphi)$, that is, $\la w_{m+1},(\nabla\varphi,0)\ra_{L^2(\rho_{m+1})}=\la w_m,\nabla\varphi\ra_{L^2(\rho_m)}$. Choose $\varphi_k\in C^\infty_c$ with $\nabla\varphi_k\to w_m$ in $L^2(\rho_m)$; since $\rho_m$ is the marginal of $\rho_{m+1}$, $(\nabla\varphi_k,0)\to(w_m,0)$ in $L^2(\rho_{m+1})$, which gives the first identity in \eqref{eq:increment}. As $\|(w_m,0)\|^2_{L^2(\rho_{m+1})}=E_m$, expanding the square gives the second.
+\end{proof}
+
+The next lemma converts tangent energies into transport lengths. It is a form of the Benamou--Brenier formula \cite{BB00} and relies on the characterization of absolutely continuous curves in $(\cP_2,\W)$ by the continuity equation \cite[Theorem~8.3.1]{AGS08}.
+
+\begin{lemma}\label{lem:length}
+Let $(\rho_s)_{s\in[0,t]}$ be a $\W$-continuous curve in $\cP_2(\R^n)$. Assume that for every $\varphi\in C^\infty_c(\R^n)$ the map $s\mapsto\rho_s(\varphi)$ is continuously differentiable on $(0,t)$ and
+\begin{equation}\label{eq:speed-hyp}
+\Big|\frac{\dd}{\dd s}\rho_s(\varphi)\Big|\le g(s)\,\|\nabla\varphi\|_{L^2(\rho_s)},\qquad 0<s<t,
+\end{equation}
+where $g\ge0$ is continuous on $(0,t]$ and integrable on $(0,t)$. Then $\W(\rho_0,\rho_t)\le\int_0^tg(s)\,\dd s$.
+\end{lemma}
+
+\begin{proof}
+Fix $0<s_1<s_2<t$, write $\ell_s(\varphi)=\frac{\dd}{\dd s}\rho_s(\varphi)$, and let $\mathbb L=L^2([s_1,s_2]\times\R^n,\dd s\,\rho_s(\dd x);\R^n)$. On the space $\cT$ of finite sums $\xi=\sum_k\chi_k(s)\nabla\varphi_k(x)$ with $\chi_k\in C([s_1,s_2])$ and $\varphi_k\in C^\infty_c$, define $\Psi(\xi)=\int_{s_1}^{s_2}\sum_k\chi_k(s)\ell_s(\varphi_k)\,\dd s$. For each $s$, $\sum_k\chi_k(s)\ell_s(\varphi_k)=\ell_s(\sum_k\chi_k(s)\varphi_k)$ is bounded by $g(s)\|\xi(s,\cdot)\|_{L^2(\rho_s)}$, so by the Cauchy--Schwarz inequality $|\Psi(\xi)|\le \mathcal G\|\xi\|_{\mathbb L}$ with $\mathcal G^2=\int_{s_1}^{s_2}g^2$. Hence $\Psi$ is well defined on the closure of $\cT$ in $\mathbb L$, and the Riesz representation theorem provides $v$ in this closure with $\|v\|_{\mathbb L}\le \mathcal G$ and $\Psi(\xi)=\int\!\!\int v\cdot\xi\,\dd\rho_s\,\dd s$. Taking $\xi=\chi(s)\nabla\varphi$ with $\chi\in C^1_c((s_1,s_2))$ gives
+\[
+-\int_{s_1}^{s_2}\chi'(s)\rho_s(\varphi)\,\dd s=\int_{s_1}^{s_2}\chi(s)\int v_s\cdot\nabla\varphi\,\dd\rho_s\,\dd s,
+\]
+so $\partial_s\rho_s+\dv(\rho_sv_s)=0$ in the sense of distributions on $(s_1,s_2)\times\R^n$, linear combinations of products $\chi(s)\varphi(x)$ being dense in $C^\infty_c((s_1,s_2)\times\R^n)$. Since $\int_{s_1}^{s_2}\|v_s\|_{L^2(\rho_s)}\dd s\le(s_2-s_1)^{1/2}\mathcal G<\infty$, \cite[Theorem~8.3.1]{AGS08} shows that $(\rho_s)$ is absolutely continuous on $[s_1,s_2]$ with metric derivative at most $\|v_s\|_{L^2(\rho_s)}$, whence
+\[
+\W(\rho_{s_1},\rho_{s_2})\le\int_{s_1}^{s_2}\|v_s\|_{L^2(\rho_s)}\dd s\le(s_2-s_1)^{1/2}\mathcal G\le(s_2-s_1)\max_{[s_1,s_2]}g.
+\]
+Summing over a partition of $[\varepsilon,t-\varepsilon]$ and letting the mesh tend to zero gives $\W(\rho_\varepsilon,\rho_{t-\varepsilon})\le\int_\varepsilon^{t-\varepsilon}g$, because $g$ is continuous on $[\varepsilon,t-\varepsilon]$. Letting $\varepsilon\downarrow0$ and using the continuity of the curve at its endpoints completes the proof.
+\end{proof}
+
+\subsection{The reference evolution, the source and the interpolation}\label{sec:objects}
+In this subsection Assumption~A and \eqref{eq:initial} hold. For $0\le s\le T$ let
+\[
+R^N_s=P_{N,0}Q_{0,s}^{\otimes N}
+\]
+be the law at time $s$ of $N$ independent solutions of the linear equation $\dd Y=B_s(Y)\dd s+\sqrt2\,\dd W$ started from $P_{N,0}$. It belongs to $\cP_2$, it is exchangeable, and its marginals are $R^{(m)}_s=P^{(m)}_{N,0}Q_{0,s}^{\otimes m}$.
+
+\begin{lemma}\label{lem:reference-W}
+For $0\le s\le T$ and $1\le m\le N$, $\W(R^{(m)}_s,\mu_s^{\otimes m})\le e^{Ls}\sqrt{C_0}\,m/N$.
+\end{lemma}
+
+\begin{proof}
+By Lemma~\ref{lem:wellposed}, $\mu_s^{\otimes m}=\mu_0^{\otimes m}Q_{0,s}^{\otimes m}$. Run an optimal coupling of $P^{(m)}_{N,0}$ and $\mu_0^{\otimes m}$ through the reference dynamics, with the same Brownian motion in each pair of coupled coordinates. The difference of two coupled coordinates solves $\frac{\dd}{\dd r}(Y_r-Y'_r)=B_r(Y_r)-B_r(Y'_r)$, so $|Y_s-Y'_s|\le e^{Ls}|Y_0-Y'_0|$, and \eqref{eq:initial} gives the claim.
+\end{proof}
+
+Let
+\[
+\bar K_s(x)=\int K(x,y)\,\mu_s(\dd y),\qquad c_s(x,y)=K(x,y)-\bar K_s(x),\qquad \alpha_m=1-\frac mN.
+\]
+Then $\int c_s(x,y)\,\mu_s(\dd y)=0$, $|c_s|\le2M$, and $c_s$ is $2L_1$-Lipschitz in $x$ and $L_2$-Lipschitz in $y$. Define $U_s\colon(\R^d)^N\to(\R^d)^N$ by
+\begin{equation}\label{eq:U}
+(U_s)_i(x)=B_s(x_i)-b_N(x)_i=-\frac1N\sum_{j=1}^Nc_s(x_i,x_j),
+\end{equation}
+so that $\cL^N_0(s)-\cL_N=U_s\cdot\nabla$. The field $U_s$ is permutation equivariant, in the sense that $U_s(x_\pi)=U_s(x)_\pi$ for every permutation $\pi$, where $(x_\pi)_i=x_{\pi(i)}$, and $|U_s|\le2M\sqrt N$. We call $\zeta^N_s=-\dv(R^N_sU_s)$ the source at time $s$, and write $\zeta^{(m)}_s$ for its marginal sources \eqref{eq:marginal-source}, which are carried by $R^{(m)}_s$. Section~\ref{sec:source} is devoted to the proof of the following estimate.
+
+\begin{proposition}\label{prop:source}
+For $0<s\le T$ and $1\le m\le N$,
+\[
+\cE_{R^{(m)}_s}\big(\zeta^{(m)}_s\big)\le A(s)\frac{m^2}{N^2},\qquad A(s)=\Big(A_0+\frac{A_1}{\sqrt s}\Big)^2.
+\]
+\end{proposition}
+
+The source is transported by the linearization of the particle flow. Assume, in addition, that $a\in C^\infty_b(\R^d;\R^d)$ and $K\in C^\infty_b(\R^d\times\R^d;\R^d)$, and let $F_r(x,W)$ and $J_r=D_xF_r$ be as in Lemma~\ref{lem:wellposed}. Let $\rho_{N,0}\in\cP_2((\R^d)^N)$ be exchangeable and let $V\in L^2(\rho_{N,0};(\R^d)^N)$ be permutation equivariant, that is, $V(x_\pi)=V(x)_\pi$ for $\rho_{N,0}$-a.e.\ $x$ and every permutation $\pi$. For $X_0\sim\rho_{N,0}$ independent of $W$ we set
+\begin{align}
+\rho_{N,r}&=\Law\big(F_r(X_0,W)\big),\label{eq:propagated}\\
+\sigma_{N,r}(\varphi)&=\E\big[\nabla\varphi(F_r(X_0,W))\cdot J_r(X_0,W)V(X_0)\big],\qquad\varphi\in C^1_b((\R^d)^N),\notag
+\end{align}
+so that $\sigma_{N,r}(\varphi)$ is the derivative at $\varepsilon=0$ of $\E\varphi(F_r(X_0+\varepsilon V(X_0),W))$. By Lemma~\ref{lem:propagated}, $\sigma_{N,r}$ is a source carried by $\rho_{N,r}$. Its marginal sources $\sigma_{m,r}$ are carried by the marginals $\rho_{m,r}$, and we put $E_m(r)=\cE_{\rho_{m,r}}(\sigma_{m,r})$. The following proposition is proved in Section~\ref{sec:hierarchy}.
+
+\begin{proposition}\label{prop:profile}
+In this setting, if $E_m(0)\le A\,m^2/N^2$ for $1\le m\le N$ and some $A\ge0$, then
+\[
+E_m(r)\le A\,e^{\omega r}\frac{m^2}{N^2},\qquad r\ge0,\ 1\le m\le N.
+\]
+\end{proposition}
+
+Finally, for $0<t\le T$ we interpolate between $P_{N,t}$ and $R^N_t$ by
+\begin{equation}\label{eq:switch}
+\nu^{N,t}_s=S^{N,*}_{t-s}R^N_s,\qquad 0\le s\le t,
+\end{equation}
+so that $\nu^{N,t}_0=P_{N,t}$ and $\nu^{N,t}_t=R^N_t$. For $0<s<t$ we write $\rho^{[s]}_{m,r}$, $\sigma^{[s]}_{m,r}$ and $E^{[s]}_m(r)$ for the objects of \eqref{eq:propagated} built from $\rho_{N,0}=R^N_s$ and $V=U_s$; these data are admissible, since $R^N_s$ is exchangeable and $U_s$ is bounded and permutation equivariant. Lemma~\ref{lem:switch} is proved in Section~\ref{sec:switch}.
+
+\begin{lemma}\label{lem:switch}
+Assume that $a\in C^\infty_b$ and $K\in C^\infty_b$ satisfy Assumption~A, and let $0<t\le T$. The curve $s\mapsto\nu^{N,t}_s$ is continuous in $\W$ on $[0,t]$, and $\nu^{N,t}_s=\rho^{[s]}_{N,t-s}$ for $0<s<t$. For $\varphi\in C^\infty_b((\R^d)^N)$ the map $s\mapsto\nu^{N,t}_s(\varphi)$ is continuously differentiable on $(0,t)$, and
+\begin{equation}\label{eq:switch-derivative}
+\frac{\dd}{\dd s}\nu^{N,t}_s(\varphi)=R^N_s\big(U_s\cdot\nabla S^N_{t-s}\varphi\big)=\sigma^{[s]}_{N,t-s}(\varphi).
+\end{equation}
+\end{lemma}
+
+\subsection{Proof of Theorem~\ref{thm:main}}\label{sec:proof-main}
+Suppose first that $a\in C^\infty_b$ and $K\in C^\infty_b$ satisfy Assumption~A. Fix $0<t\le T$ and $1\le m\le N$, and let $\nu^{N,t,(m)}_s$ be the $m$-th marginal of $\nu^{N,t}_s$. For $\varphi\in C^\infty_c((\R^d)^m)$, regarded as a function on $(\R^d)^N$, Lemma~\ref{lem:switch} shows that $s\mapsto\nu^{N,t,(m)}_s(\varphi)$ is continuously differentiable on $(0,t)$, with derivative $\sigma^{[s]}_{m,t-s}(\varphi)$, and $\sigma^{[s]}_{m,t-s}$ is a source carried by $\rho^{[s]}_{m,t-s}=\nu^{N,t,(m)}_s$. At $r=0$ the transported source is $\sigma^{[s]}_{N,0}=\zeta^N_s$, so Proposition~\ref{prop:source} gives $E^{[s]}_m(0)\le A(s)m^2/N^2$ for all $m$, and Proposition~\ref{prop:profile} gives $E^{[s]}_m(t-s)\le e^{\omega(t-s)}A(s)m^2/N^2$. By Lemma~\ref{lem:energy},
+\[
+\Big|\frac{\dd}{\dd s}\nu^{N,t,(m)}_s(\varphi)\Big|\le g(s)\,\|\nabla\varphi\|_{L^2(\nu^{N,t,(m)}_s)},\qquad g(s)=e^{\omega(t-s)/2}\Big(A_0+\frac{A_1}{\sqrt s}\Big)\frac mN.
+\]
+The curve $s\mapsto\nu^{N,t,(m)}_s$ is continuous in $\W$ by Lemma~\ref{lem:switch}, and $g$ is continuous on $(0,t]$ and integrable, so Lemma~\ref{lem:length} gives
+\[
+\W\big(P^{(m)}_{N,t},R^{(m)}_t\big)\le\int_0^tg(s)\,\dd s\le e^{\omega T/2}\big(A_0T+2A_1\sqrt T\big)\frac mN.
+\]
+Together with Lemma~\ref{lem:reference-W} at $s=t$, this proves \eqref{eq:conclusion} for $0<t\le T$. For $t=0$, \eqref{eq:conclusion} is \eqref{eq:initial}, since $C_T\ge C_0$.
+
+For general coefficients, let $a^n$ and $K^n$ be the approximations of Lemma~\ref{lem:mollify}, and let $P^n_{N,t}$ and $\mu^n_t$ be the corresponding laws, with the same initial laws. The constants in Assumption~A, and hence $C_T$, do not depend on $n$, so the smooth case gives $\W(P^{n,(m)}_{N,t},(\mu^n_t)^{\otimes m})\le\sqrt{C_T}\,m/N$. Projections do not increase $\W$, and the product coupling gives $\W((\mu^n_t)^{\otimes m},\mu_t^{\otimes m})\le\sqrt m\,\W(\mu^n_t,\mu_t)$. Hence, by the triangle inequality and Lemma~\ref{lem:stability},
+\[
+\W\big(P^{(m)}_{N,t},\mu_t^{\otimes m}\big)\le\sqrt{C_T}\frac mN+\W(P^n_{N,t},P_{N,t})+\sqrt m\,\W(\mu^n_t,\mu_t)\longrightarrow\sqrt{C_T}\frac mN
+\]
+as $n\to\infty$, uniformly in $t\le T$. This proves Theorem~\ref{thm:main}.
+
+\section{Entropy and the source estimate}\label{sec:source}
+Throughout this section Assumption~A and \eqref{eq:initial} hold; no smoothness of $a$ and $K$ is needed.
+
+\subsection{Entropy}
+The entropy--cost inequality below is proved by the coupling by change of measure of Arnaudon, Thalmaier and Wang \cite{ATW06}; see also \cite{RW10,Wan13}. Its constant does not depend on the number of coordinates.
+
+\begin{lemma}\label{lem:entropy-cost}
+Let $\mathfrak b\colon[0,s]\times\R^d\to\R^d$ be continuous, $L$-Lipschitz in space uniformly in time, and of linear growth, and let $Q$ be the transition family of $\dd Z_r=\mathfrak b_r(Z_r)\dd r+\sqrt2\,\dd W_r$. For $m\ge1$ and $\rho,\eta\in\cP_2((\R^d)^m)$,
+\begin{equation}\label{eq:entropy-cost}
+H\big(\rho Q_{0,s}^{\otimes m}\,\big|\,\eta Q_{0,s}^{\otimes m}\big)\le\beta_L(s)\,\W^2(\rho,\eta),\qquad \beta_L(s)=\frac{1+Ls+L^2s^2/3}{4s}.
+\end{equation}
+In particular $\beta_L(s)\le D_T/s$ for $0<s\le T$.
+\end{lemma}
+
+\begin{proof}
+The block drift on $(\R^d)^m$ is again $L$-Lipschitz, so it suffices to treat $m=1$ in dimension $dm$. Fix $x,y$, put $u=y-x$ and $u_r=(1-r/s)u$, and let $\tilde{\mathfrak b}_r(z)=\mathfrak b_r(z+u_r)+u/s$. If $\tilde Z$ solves the equation with drift $\tilde{\mathfrak b}$ from $x$, then $\tilde Z_r+u_r$ solves the original equation from $y$, and $u_s=0$; hence the law of $\tilde Z_s$ is $Q_{0,s}(y,\cdot)$. Moreover $|\mathfrak b_r(z)-\tilde{\mathfrak b}_r(z)|\le(L(1-r/s)+s^{-1})|u|$ for all $r,z$. Since this bound is deterministic, Novikov's condition holds, and Girsanov's theorem, together with uniqueness in law for both equations, gives for the path laws $P_x$ and $\tilde P_{x,y}$ started at $x$
+\[
+H(P_x\,|\,\tilde P_{x,y})=\frac14\E_{P_x}\int_0^s|\mathfrak b_r(Z_r)-\tilde{\mathfrak b}_r(Z_r)|^2\dd r\le\frac14\int_0^s\Big(L\Big(1-\frac rs\Big)+\frac1s\Big)^2\dd r\,|u|^2=\beta_L(s)|x-y|^2,
+\]
+the factor $1/4$ reflecting the noise covariance $2I$. Projection to the endpoint does not increase entropy, so $H(Q_{0,s}(x,\cdot)\,|\,Q_{0,s}(y,\cdot))\le\beta_L(s)|x-y|^2$. Integrating against a coupling $\pi\in\Pi(\rho,\eta)$ and using the joint convexity of relative entropy gives \eqref{eq:entropy-cost} after taking the infimum over $\pi$.
+\end{proof}
+
+The following two facts are standard; see \cite{CT06} and \cite[Section~4.3]{Lac23}. Let $\mu\in\cP(\R^d)$ and let $\rho_{m+1}(\dd x,\dd y)=\rho_m(\dd x)\gamma_x(\dd y)$ be a law on $(\R^d)^m\times\R^d$. The chain rule reads
+\begin{equation}\label{eq:chain}
+H\big(\rho_{m+1}\,\big|\,\mu^{\otimes(m+1)}\big)-H\big(\rho_m\,\big|\,\mu^{\otimes m}\big)=\int H(\gamma_x\,|\,\mu)\,\rho_m(\dd x)
+\end{equation}
+whenever the left side is defined, and for every measurable $F\colon\R^d\to\R^d$ with $|F|\le M$, Pinsker's inequality gives
+\begin{equation}\label{eq:pinsker}
+\Big|\int F\,\dd(\gamma-\mu)\Big|^2\le2M^2H(\gamma\,|\,\mu).
+\end{equation}
+
+\begin{lemma}\label{lem:increments}
+Let $R\in\cP((\R^d)^N)$ be exchangeable, $\mu\in\cP(\R^d)$, $h_j=H(R_j\,|\,\mu^{\otimes j})$, $h_0=0$, and assume $h_N<\infty$. Then $\delta_j=h_j-h_{j-1}$ is nonnegative and nondecreasing in $j$. Consequently $\delta_{m+1}\le h_{2m}/m$ if $2m\le N$, and $\delta_{m+1}\le h_N/(N-m)$ if $m<N$. If $h_j\le H_*j^2/N^2$ for all $j$, then
+\begin{equation}\label{eq:increments}
+\Big(1-\frac mN\Big)^2m\,\delta_{m+1}\le4H_*\frac{m^2}{N^2},\qquad 1\le m<N.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+All $h_j$ are finite because entropy does not increase under projection, and $\delta_{m+1}=\E\,H(\Law(X_{m+1}\,|\,X_{1:m})\,|\,\mu)\ge0$ by \eqref{eq:chain}. The conditional law of $X_{m+1}$ given $X_{1:m-1}$ is the conditional expectation, given $X_{1:m-1}$, of its conditional law given $X_{1:m}$, so by convexity of $H(\cdot\,|\,\mu)$,
+\[
+\E\,H\big(\Law(X_{m+1}\,|\,X_{1:m-1})\,\big|\,\mu\big)\le\delta_{m+1}.
+\]
+By exchangeability the left side equals $\E\,H(\Law(X_m\,|\,X_{1:m-1})\,|\,\mu)=\delta_m$. Monotonicity gives $m\delta_{m+1}\le\sum_{j=m+1}^{2m}\delta_j\le h_{2m}$ and $(N-m)\delta_{m+1}\le h_N$. For \eqref{eq:increments}: if $2m\le N$, then $m\delta_{m+1}\le h_{2m}\le4H_*m^2/N^2$; if $2m>N$, then $(1-m/N)^2m\delta_{m+1}\le H_*m(N-m)/N^2\le H_*m^2/N^2$.
+\end{proof}
+
+For laws with densities, the monotonicity of $\delta_j$ is the relative entropy counterpart of the fact that $H(X_n\,|\,X_{n-1},\dots,X_1)$ is nonincreasing in $n$ for stationary sequences \cite[Theorem~4.2.2]{CT06}.
+
+\subsection{Proof of Proposition~\ref{prop:source}}
+Fix $0<s\le T$, and recall the notation of Section~\ref{sec:objects}.
+
+\begin{lemma}\label{lem:reference-H}
+For $1\le m\le N$,
+\begin{equation}\label{eq:ref-H}
+h_m(s):=H\big(R^{(m)}_s\,\big|\,\mu_s^{\otimes m}\big)\le C_0\beta_L(s)\frac{m^2}{N^2}\le\frac{C_0D_T}{s}\frac{m^2}{N^2}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Since $\mu_s^{\otimes m}=\mu_0^{\otimes m}Q_{0,s}^{\otimes m}$ and $R^{(m)}_s=P^{(m)}_{N,0}Q_{0,s}^{\otimes m}$, this is Lemma~\ref{lem:entropy-cost} with $\mathfrak b=B$, combined with \eqref{eq:initial}.
+\end{proof}
+
+In particular $h_N(s)<\infty$, even when $H(P_{N,0}\,|\,\mu_0^{\otimes N})=+\infty$, as in Section~\ref{sec:examples}.
+
+\begin{lemma}\label{lem:source-rep}
+For $\varphi\in C^2_b((\R^d)^N)$, $\zeta^N_s(\varphi)=R^N_s((\cL^N_0(s)-\cL_N)\varphi)$. For $1\le m\le N$, the marginal source $\zeta^{(m)}_s$ is represented in $L^2(R^{(m)}_s)$ by
+\begin{equation}\label{eq:g}
+g^{(m)}_s(x)_i=-\frac1N\sum_{j=1}^mc_s(x_i,x_j)-\alpha_m\,\E_{R^N_s}\big[c_s(x_i,X_{m+1})\,\big|\,X_{1:m}=x\big],\qquad 1\le i\le m,
+\end{equation}
+where the second term is absent if $m=N$.
+\end{lemma}
+
+\begin{proof}
+The Laplacians and the one-body drifts cancel in $\cL^N_0(s)-\cL_N$, which equals $U_s\cdot\nabla$; the representation \eqref{eq:U} of $U_s$ through $c_s$ uses $\bar K_s(x_i)=N^{-1}\sum_j\bar K_s(x_i)$. By exchangeability of $R^N_s$, for each $j>m$ the conditional law of $X_j$ given $X_{1:m}$ equals that of $X_{m+1}$, so $\E[(U_s)_i\,|\,X_{1:m}=x]=g^{(m)}_s(x)_i$, and Lemma~\ref{lem:marginal-energy} applies.
+\end{proof}
+
+\begin{lemma}\label{lem:internal}
+Let $\Xi_s(x)_i=\sum_{j=1}^mc_s(x_i,x_j)$ for $x\in(\R^d)^m$, and $I_m(s)=N^{-2}\int|\Xi_s|^2\,\dd R^{(m)}_s$. Then $\sqrt{I_m(s)}\le A_0\,m/N$ for $1\le m\le N$.
+\end{lemma}
+
+\begin{proof}
+Let $Y\sim\mu_s^{\otimes m}$. Conditionally on $Y_i$, the variables $c_s(Y_i,Y_j)$, $j\ne i$, are independent and centred, with conditional second moment at most $\E|K(Y_i,Y_j)|^2\le M^2$; the diagonal term satisfies $|c_s(Y_i,Y_i)|\le2M$, and its conditional covariance with the off-diagonal sum vanishes. Hence $\E|\Xi_s(Y)_i|^2\le4M^2+(m-1)M^2$ and $\E|\Xi_s(Y)|^2\le m(m+3)M^2\le4M^2m^2$. For $x,y\in(\R^d)^m$ and $u=x-y$,
+\[
+|\Xi_s(x)_i-\Xi_s(y)_i|\le2mL_1|u_i|+L_2\sum_{j=1}^m|u_j|,
+\]
+so $|\Xi_s(x)-\Xi_s(y)|\le mL_c|u|$. For any coupling of $X\sim R^{(m)}_s$ and $Y$, Minkowski's inequality gives $\sqrt{I_m(s)}\le N^{-1}\big(2Mm+mL_c\,\E[|X-Y|^2]^{1/2}\big)$. Optimizing the coupling and using Lemma~\ref{lem:reference-W}, $m\le N$ and $s\le T$ gives the claim.
+\end{proof}
+
+\begin{lemma}\label{lem:external}
+For $m<N$ let $\mathcal X_m(s)=\alpha_m^2\sum_{i=1}^m\E_{R^N_s}\big|\E_{R^N_s}[c_s(X_i,X_{m+1})\,|\,X_{1:m}]\big|^2$, and let $\mathcal X_N(s)=0$. Then
+\[
+\mathcal X_m(s)\le8M^2C_0\beta_L(s)\frac{m^2}{N^2}\le\frac{A_1^2}{s}\frac{m^2}{N^2},\qquad 1\le m\le N.
+\]
+\end{lemma}
+
+\begin{proof}
+Under $R^N_s$, let $\gamma_x$ denote the conditional law of $X_{m+1}$ given $X_{1:m}=x$. Since $c_s(x_i,\cdot)$ has mean zero under $\mu_s$,
+\[
+\E_{R^N_s}\big[c_s(x_i,X_{m+1})\,\big|\,X_{1:m}=x\big]=\int K(x_i,y)\,(\gamma_x-\mu_s)(\dd y).
+\]
+By \eqref{eq:pinsker}, summation over $i\le m$ and \eqref{eq:chain},
+\[
+\mathcal X_m(s)\le2M^2\alpha_m^2m\,\big(h_{m+1}(s)-h_m(s)\big).
+\]
+Lemma~\ref{lem:increments} with $H_*=C_0\beta_L(s)$, which is admissible by \eqref{eq:ref-H}, gives the first inequality, and $\beta_L(s)\le D_T/s$ gives the second.
+\end{proof}
+
+\begin{proof}[Proof of Proposition~\ref{prop:source}]
+By Lemma~\ref{lem:energy}, the energy is at most $\|g^{(m)}_s\|^2_{L^2(R^{(m)}_s)}$. The two terms in \eqref{eq:g} have $L^2$ norms $\sqrt{I_m(s)}$ and $\sqrt{\mathcal X_m(s)}$, so Minkowski's inequality and Lemmas~\ref{lem:internal} and~\ref{lem:external} give the claim.
+\end{proof}
+
+\section{The tangent hierarchy}\label{sec:hierarchy}
+In this section $a\in C^\infty_b(\R^d;\R^d)$ and $K\in C^\infty_b(\R^d\times\R^d;\R^d)$ satisfy Assumption~A, and $\rho_{N,0}$, $V$, $\rho_{m,r}$, $\sigma_{m,r}$ and $E_m(r)$ are as in Section~\ref{sec:objects}. The constants $D$, $\lambda$ and $\omega$ do not depend on $\|a\|_\infty$ or on derivatives of order higher than one.
+
+\subsection{Marginal equations}
+For $1\le m\le N$, $x\in(\R^d)^m$ and $y\in\R^d$, put
+\begin{gather}
+b^{[m]}_i(x)=a(x_i)+\frac1N\sum_{j=1}^mK(x_i,x_j),\qquad \cL_m=\Delta+b^{[m]}\cdot\nabla,\label{eq:Bm-Phi}\\
+\Phi\psi(x,y)=\sum_{i=1}^mK(x_i,y)\cdot\nabla_i\psi(x).\notag
+\end{gather}
+
+\begin{lemma}\label{lem:propagated}
+The source $\sigma_{N,r}$ is carried by $\rho_{N,r}$ and represented by $\E[J_rV(X_0)\,|\,F_r(X_0,W)=\cdot\,]$; it is exchangeable in the sense that $\sigma_{N,r}(\varphi\circ\pi)=\sigma_{N,r}(\varphi)$ for every permutation $\pi$ of the coordinates. In particular
+\begin{equation}\label{eq:energy-apriori}
+E_m(r)\le e^{2\Lambda r}\|V\|^2_{L^2(\rho_{N,0})}.
+\end{equation}
+For $\psi\in C^\infty_b((\R^d)^m)$ the maps $r\mapsto\rho_{m,r}(\psi)$ and $r\mapsto\sigma_{m,r}(\psi)$ are continuously differentiable, and for $m<N$
+\begin{align}
+\frac{\dd}{\dd r}\rho_{m,r}(\psi)&=\rho_{m,r}(\cL_m\psi)+\alpha_m\,\rho_{m+1,r}(\Phi\psi),\label{eq:rho-eq}\\
+\frac{\dd}{\dd r}\sigma_{m,r}(\psi)&=\sigma_{m,r}(\cL_m\psi)+\alpha_m\,\sigma_{m+1,r}(\Phi\psi),\label{eq:sigma-eq}
+\end{align}
+while for $m=N$ the terms with $\alpha_N=0$ are absent.
+\end{lemma}
+
+\begin{proof}
+Conditioning gives the representation, and its $L^2$ norm is at most $e^{\Lambda r}\|V\|$ by Lemma~\ref{lem:wellposed}; \eqref{eq:energy-apriori} then follows from Lemma~\ref{lem:marginal-energy}. Exchangeability follows from $F_r(x_\pi,W_\pi)=F_r(x,W)_\pi$, the corresponding identity for $J_r$, the exchangeability of $X_0$ and $W$, and the equivariance of $V$.
+
+By It\^o's formula, $\frac{\dd}{\dd r}\rho_{N,r}(\varphi)=\rho_{N,r}(\cL_N\varphi)$ for $\varphi\in C^\infty_b$. With $Z_r=J_rV(X_0)$ we have $\dd Z_r=Db_N(F_r)Z_r\,\dd r$, and It\^o's formula applied to $\nabla\varphi(F_r)\cdot Z_r$, with the noise covariance $2I$, gives
+\[
+\frac{\dd}{\dd r}\sigma_{N,r}(\varphi)=\E\big[\big(D^2\varphi\,b_N+\nabla\Delta\varphi+(Db_N)^{\top}\nabla\varphi\big)(F_r)\cdot Z_r\big]=\sigma_{N,r}(\cL_N\varphi),
+\]
+the stochastic integral being a martingale because all integrands are bounded by constants times $e^{\Lambda r}|V(X_0)|$. The right sides are continuous in $r$ by dominated convergence. For $\psi$ depending on $x_{1:m}$ we have $\cL_N\psi=\cL_m\psi+N^{-1}\sum_{j>m}\Phi\psi(x_{1:m},x_j)$, and exchangeability of $\rho_{N,r}$ and $\sigma_{N,r}$ replaces each term $j>m$ by the term $j=m+1$. This gives \eqref{eq:rho-eq} and \eqref{eq:sigma-eq}.
+\end{proof}
+
+\subsection{Pointwise identities}
+
+\begin{lemma}\label{lem:pointwise}
+Let $f\in C^\infty_b((\R^d)^m)$ and set $\bar A_m=\sqrt m\,(\|a\|_\infty+M)$. Then, pointwise,
+\begin{align}
+2\nabla f\cdot\nabla\Delta f-\Delta|\nabla f|^2&=-2|D^2f|_\HS^2,\label{eq:bochner}\\
+2\nabla f\cdot\nabla(b^{[m]}\cdot\nabla f)-b^{[m]}\cdot\nabla|\nabla f|^2&=2\nabla f\cdot(Db^{[m]})^{\top}\nabla f\le2\Lambda|\nabla f|^2,\label{eq:drift-id}\\
+2\nabla f\cdot\nabla_x\Phi f-\Phi\big(|\nabla f|^2\big)&=2\sum_{i=1}^m\nabla_if\cdot\big(D_xK(x_i,y)\big)^{\top}\nabla_if\le2L_1|\nabla f|^2,\label{eq:cancel}\\
+|\nabla_{(x,y)}\Phi f|^2&\le mG\big(|\nabla f|^2+|D^2f|^2_\HS\big),\label{eq:Phi-grad}\\
+|\nabla(b^{[m]}\cdot\nabla f)|&\le\Lambda|\nabla f|+\bar A_m|D^2f|_\HS.\label{eq:Bgrad}
+\end{align}
+\end{lemma}
+
+\begin{proof}
+Identity \eqref{eq:bochner} is Bochner's formula in flat space. Since $\nabla(b^{[m]}\cdot\nabla f)=(Db^{[m]})^{\top}\nabla f+D^2f\,b^{[m]}$ and $\nabla|\nabla f|^2=2D^2f\,\nabla f$, the Hessian terms cancel in \eqref{eq:drift-id}; the estimate $\|Db^{[m]}\|_\op\le\Lambda$ follows exactly as the bound on $\Lip(b_N)$ in Lemma~\ref{lem:wellposed}, and $|b^{[m]}|\le \bar A_m$ gives \eqref{eq:Bgrad}. Next,
+\[
+\nabla_{x_i}\Phi f=\big(D_xK(x_i,y)\big)^{\top}\nabla_if+\sum_{k=1}^mD^2_{ik}f\,K(x_k,y),\qquad \Phi(|\nabla f|^2)=2\sum_{i,k=1}^m\nabla_if\cdot D^2_{ik}f\,K(x_k,y),
+\]
+where $D^2_{ik}f$ is the block $\partial_{x_i}\partial_{x_k}f$; this gives \eqref{eq:cancel}, with $\|D_xK\|_\op\le L_1$. From the same formula, $|\nabla_x\Phi f|^2\le2L_1^2|\nabla f|^2+2|D^2f|^2_\HS\,|(K(x_k,y))_k|^2\le2L_1^2|\nabla f|^2+2mM^2|D^2f|^2_\HS$, while $\nabla_y\Phi f=\sum_k(D_yK(x_k,y))^{\top}\nabla_kf$ gives $|\nabla_y\Phi f|^2\le mL_2^2|\nabla f|^2$. Since $m\ge1$, adding yields \eqref{eq:Phi-grad}.
+\end{proof}
+
+\subsection{The integrated hierarchy}
+Fix $1\le m\le N$, and let $(\tau_k)_{k\ge1}$ be the trigonometric functions on $(\R^d)^m$ introduced in Appendix~\ref{app:galerkin}, with $\Delta\tau_k=-\kappa_k\tau_k$. For $j\ge1$ and $r\ge0$, define $\mathsf G(r)$, $\mathsf l(r)$, $c(r)$, $f$ and $\epsilon_{m,j}(r)$ by \eqref{eq:galerkin} with $\rho=\rho_{m,r}$ and $\sigma=\sigma_{m,r}$, and let $w_m(r)\in\cH_{\rho_{m,r}}$ be the representative of $\sigma_{m,r}$. By the definition \eqref{eq:marginal-source}, $\sigma_{m+1,r}(\varphi)=\sigma_{m,r}(\varphi)$ for $\varphi\in C^1_b((\R^d)^m)$, so Lemma~\ref{lem:galerkin}, applied with $\rho'=\rho_{m+1,r}$ and $\sigma'=\sigma_{m+1,r}$, gives
+\begin{gather}
+\epsilon_{m,j}=\rho_{m,r}(|\nabla f|^2)+\eta_j|c|^2,\qquad E_m-\epsilon_{m,j}=\|w_m-\nabla f\|^2_{L^2(\rho_{m,r})}+\eta_j|c|^2,\label{eq:gal1}\\
+\|w_{m+1}-(\nabla f,0)\|^2_{L^2(\rho_{m+1,r})}\le E_{m+1}-\epsilon_{m,j}\quad\text{if }m<N,\label{eq:gal2}
+\end{gather}
+together with $0\le\epsilon_{m,j}(r)\le E_m(r)$ and $\epsilon_{m,j}(r)\to E_m(r)$ as $j\to\infty$.
+
+\begin{lemma}\label{lem:gal-ode}
+The functions $\epsilon_{m,j}$ are continuously differentiable, and with $q_m=\lambda m\alpha_m$ and $C_m=2(\Lambda^2+\bar A_m^2)$,
+\begin{equation}\label{eq:gal-ode}
+\epsilon'_{m,j}\le D\,\epsilon_{m,j}+q_m\big(E_{m+1}-\epsilon_{m,j}\big)+C_m\big(E_m-\epsilon_{m,j}\big),\qquad m<N,
+\end{equation}
+and $\epsilon'_{N,j}\le D\,\epsilon_{N,j}+C_N(E_N-\epsilon_{N,j})$.
+\end{lemma}
+
+\begin{proof}
+By Lemma~\ref{lem:propagated}, $\mathsf G$ and $\mathsf l$ are continuously differentiable, hence so is $\epsilon_{m,j}=\mathsf l^{\top}(\mathsf G+\eta_jI)^{-1}\mathsf l$, and
+\[
+\epsilon'_{m,j}=2\mathsf l'\cdot c-c^{\top}\mathsf G'c.
+\]
+Freezing $f$ at time $r$ and inserting \eqref{eq:rho-eq}--\eqref{eq:sigma-eq}, with $\mathsf l'\cdot c=\frac{\dd}{\dd r}\sigma_{m,r}(f)$ and $c^{\top}\mathsf G'c=\frac{\dd}{\dd r}\rho_{m,r}(|\nabla f|^2)$, we obtain $\epsilon'_{m,j}=\mathrm{I}+\mathrm{II}+\alpha_m\mathrm{III}$, where
+\begin{align*}
+\mathrm I&=2\sigma_{m,r}(\Delta f)-\rho_{m,r}(\Delta|\nabla f|^2),\qquad \mathrm{II}=2\sigma_{m,r}(b^{[m]}\cdot\nabla f)-\rho_{m,r}(b^{[m]}\cdot\nabla|\nabla f|^2),\\
+\mathrm{III}&=2\sigma_{m+1,r}(\Phi f)-\rho_{m+1,r}\big(\Phi(|\nabla f|^2)\big).
+\end{align*}
+Write $\epsilon=\epsilon_{m,j}$, $\vartheta=E_m-\epsilon$, $P=\rho_{m,r}(|\nabla f|^2)\le\epsilon$ and $\mathsf H=\rho_{m,r}(|D^2f|^2_\HS)$.
+
+Since $\Delta f=-\sum_k\kappa_kc_k\tau_k$ lies in the span of $\tau_1,\dots,\tau_j$, the normal equation $(\mathsf G+\eta_jI)c=\mathsf l$ gives $\sigma_{m,r}(\Delta f)=\rho_{m,r}(\nabla f\cdot\nabla\Delta f)-\eta_j\sum_k\kappa_kc_k^2$, so by \eqref{eq:bochner}, $\mathrm I=-2\mathsf H-2\eta_j\sum_k\kappa_kc_k^2\le-2\mathsf H$.
+
+For $\mathrm{II}$ write $w_m=\nabla f+v$, so that $\|v\|^2_{L^2(\rho_{m,r})}\le\vartheta$ by \eqref{eq:gal1}. By \eqref{eq:drift-id} and \eqref{eq:Bgrad},
+\[
+\mathrm{II}\le2\Lambda P+2\sqrt\vartheta\big(\Lambda\sqrt P+\bar A_m\sqrt{\mathsf H}\big)\le\Big(2\Lambda+\frac12\Big)P+\frac12\mathsf H+C_m\vartheta.
+\]
+For $\mathrm{III}$ write $w_{m+1}=(\nabla f,0)+z$, so that $\|z\|^2_{L^2(\rho_{m+1,r})}\le E_{m+1}-\epsilon$ by \eqref{eq:gal2}. By \eqref{eq:cancel}, \eqref{eq:Phi-grad} and Young's inequality,
+\[
+\mathrm{III}\le2L_1P+2\sqrt{E_{m+1}-\epsilon}\,\sqrt{mG(P+\mathsf H)}\le\Big(2L_1+\frac12\Big)P+\frac12\mathsf H+2mG\,(E_{m+1}-\epsilon).
+\]
+Multiplying by $\alpha_m\le1$ and adding, we find that the coefficient of $\mathsf H$ is at most $-1$ and the coefficient of $P\le\epsilon$ is at most $D$, while $2mG\alpha_m=q_m$. This proves \eqref{eq:gal-ode}. For $m=N$ the term $\mathrm{III}$ is absent.
+\end{proof}
+
+\begin{proposition}\label{prop:hierarchy}
+The energies $E_m$ are measurable and locally bounded. For $0\le r_0\le r$ and $m<N$,
+\begin{equation}\label{eq:hierarchy}
+E_m(r)\le e^{(D-q_m)(r-r_0)}E_m(r_0)+q_m\int_{r_0}^re^{(D-q_m)(r-v)}E_{m+1}(v)\,\dd v,
+\end{equation}
+and $E_N(r)\le e^{D(r-r_0)}E_N(r_0)$.
+\end{proposition}
+
+\begin{proof}
+Measurability holds because $E_m$ is a pointwise limit of the continuous functions $\epsilon_{m,j}$, and local boundedness follows from \eqref{eq:energy-apriori}. Integrating \eqref{eq:gal-ode} against the factor $e^{(D-q_m)(r-v)}$ gives
+\[
+\epsilon_{m,j}(r)\le e^{(D-q_m)(r-r_0)}\epsilon_{m,j}(r_0)+\int_{r_0}^re^{(D-q_m)(r-v)}\big(q_mE_{m+1}(v)+C_m(E_m(v)-\epsilon_{m,j}(v))\big)\dd v.
+\]
+As $j\to\infty$, $\epsilon_{m,j}\to E_m$ pointwise and $0\le E_m-\epsilon_{m,j}\le E_m$ is bounded on $[r_0,r]$, so dominated convergence gives \eqref{eq:hierarchy}. The level $N$ is treated in the same way with $q_N=0$.
+\end{proof}
+
+The constant $C_m$, which depends on $\|a\|_\infty$, does not survive the limit $j\to\infty$.
+
+\subsection{Proof of Proposition~\ref{prop:profile}}
+Let $u_m(r)=Ae^{\omega r}m^2/N^2$. Since $q_m\le\lambda m$ and $\omega-D=3\lambda$,
+\[
+u_m'-(D-q_m)u_m-q_mu_{m+1}=\frac{Ae^{\omega r}}{N^2}\big(3\lambda m^2-q_m(2m+1)\big)\ge0,
+\]
+so by variation of constants $u_m(r)\ge e^{(D-q_m)r}u_m(0)+q_m\int_0^re^{(D-q_m)(r-v)}u_{m+1}(v)\,\dd v$ for $m<N$, and $u_N(r)\ge e^{Dr}u_N(0)$. We prove $E_m\le u_m$ by descending induction on $m$. At $m=N$ this follows from Proposition~\ref{prop:hierarchy} with $r_0=0$. If $E_{m+1}\le u_{m+1}$, then \eqref{eq:hierarchy} with $r_0=0$, the positivity of its kernel, $E_m(0)\le u_m(0)$ and the preceding inequality give $E_m\le u_m$. \qed
+
+\begin{remark}\label{rem:yule}
+Let $Z$ be the pure-birth chain on $\{1,\dots,N\}$ that jumps from $j$ to $j+1$ at rate $q_j$, and put $\tilde u_m(r)=Ae^{Dr}\E_m[Z_r^2]/N^2$. By the backward equation of $Z$, $\tilde u$ satisfies \eqref{eq:hierarchy} with $r_0=0$ and with equality, and the induction above, with $\tilde u$ in place of $u$, gives $E_m\le\tilde u_m$. Since $q_j\le\lambda j\le\lambda k$ for $j\le k$, the chain $Z$ can be coupled with a Yule process $Y$ of rates $\lambda k$ in such a way that $Z$ jumps only when $Y$ does; then $Z_r\le\min(Y_r,N)$, and $\E_mY_r^2=m^2e^{2\lambda r}+m(e^{2\lambda r}-e^{\lambda r})\le m^2e^{3\lambda r}$. Hence
+\[
+E_m(r)\le Ae^{Dr}\min\big(m^2e^{3\lambda r},N^2\big)/N^2.
+\]
+The same comparison for the entropy hierarchy is discussed in \cite[Section~1.5]{LYZ24}. The rates $q_m$ are of order $m$. Because the coupling term in \eqref{eq:gal-ode} is $E_{m+1}-\epsilon_{m,j}$ rather than $E_{m+1}$, they act as jump rates of $Z$ and not as growth rates of $E_m$.
+\end{remark}
+
+\section{The interpolating curve}\label{sec:switch}
+
+\begin{proof}[Proof of Lemma~\ref{lem:switch}]
+For smooth coefficients with bounded derivatives, the flow $F_u(x,W)$ is twice continuously differentiable in $x$, with first and second derivatives bounded in every $L^p$ uniformly in $u\le T$ \cite[Chapter~4]{Kun90}. Hence, for $\varphi\in C^\infty_b$, $S^N_u\varphi\in C^2_b$ with bounds uniform in $u\le T$, its derivatives are continuous in $(u,x)$, and $\nabla S^N_u\varphi(x)=\E[J_u(x,W)^{\top}\nabla\varphi(F_u(x,W))]$. By the Markov property and It\^o's formula, $S^N_{u+h}\varphi-S^N_u\varphi=\int_u^{u+h}S^N_v(\cL_N\varphi)\,\dd v=\int_0^hS^N_v(\cL_NS^N_u\varphi)\,\dd v$, so $u\mapsto S^N_u\varphi(x)$ is continuously differentiable with $\partial_uS^N_u\varphi=S^N_u(\cL_N\varphi)=\cL_NS^N_u\varphi$; thus $(u,x)\mapsto S^N_u\varphi(x)$ is of class $C^{1,2}$ with bounded derivatives on $[0,T]\times(\R^d)^N$.
+
+Let $Y$ be the reference process with $\Law(Y_0)=P_{N,0}$, so that $\nu^{N,t}_s(\varphi)=\E[\psi_s(Y_s)]$ with $\psi_s=S^N_{t-s}\varphi$. It\^o's formula gives
+\[
+\frac{\dd}{\dd s}\E[\psi_s(Y_s)]=\E\big[(\partial_s\psi_s+\cL^N_0(s)\psi_s)(Y_s)\big]=\E\big[\big((\cL^N_0(s)-\cL_N)\psi_s\big)(Y_s)\big]=R^N_s(U_s\cdot\nabla\psi_s),
+\]
+and the formula for $\nabla\psi_s$ yields
+\[
+R^N_s(U_s\cdot\nabla\psi_s)=\E\big[\nabla\varphi\big(F_{t-s}(Y_s,W)\big)\cdot J_{t-s}(Y_s,W)\,U_s(Y_s)\big]=\sigma^{[s]}_{N,t-s}(\varphi),
+\]
+with $W$ independent of $Y_s$. This is \eqref{eq:switch-derivative}, and the same representation shows that $\nu^{N,t}_s$ is the law of $F_{t-s}(Y_s,W)$, that is, $\nu^{N,t}_s=\rho^{[s]}_{N,t-s}$. Continuity of the derivative in $s$ follows by dominated convergence from the boundedness of $U_s$ and $\nabla\varphi$, the bound on $J$, and the continuity of $s\mapsto Y_s$, $s\mapsto U_s$ and of the flow.
+
+For the continuity of the curve, take $X_0\sim P_{N,0}$ and independent Brownian motions $W^1,W^2$ on one probability space, let $\Theta_s$ be the flow of the reference dynamics from time $0$ to $s$, and put
+\[
+X_s=F_{t-s}\big(\Theta_s(X_0,W^1),W^2\big),
+\]
+whose law is $\nu^{N,t}_s$. Both drifts are bounded by $\bar M=\|a\|_\infty+M$ in each coordinate, so for either flow, with fixed starting point and fixed noise,
+\[
+\E|F_u-F_v|^2\le2N\bar M^2|u-v|^2+4dN|u-v|.
+\]
+Splitting $X_s-X_{s'}$ into a change of the starting point and a change of the interacting duration, and using \eqref{eq:lip}, we obtain
+\[
+\E|X_s-X_{s'}|^2\le4N\big(e^{2\Lambda T}+1\big)\big(\bar M^2|s-s'|^2+2d|s-s'|\big),
+\]
+which proves that $s\mapsto\nu^{N,t}_s$ is continuous in $\W$.
+\end{proof}
+
+\section{Smooth approximation}\label{sec:approx}
+
+\begin{lemma}\label{lem:mollify}
+Under Assumption~A there are $a^n\in C^\infty_b(\R^d;\R^d)$ and $K^n\in C^\infty_b(\R^d\times\R^d;\R^d)$ satisfying Assumption~A with the same constants $L_a,L_1,L_2,M$, such that $a^n\to a$ locally uniformly, $K^n\to K$ uniformly, and $|a^n(x)|\le|a(0)|+L_a(|x|+1)$ for all $n$ and $x$.
+\end{lemma}
+
+\begin{proof}
+Let $\eta_\varepsilon$ be a smooth probability density supported in the ball of radius $\varepsilon$ (in the relevant dimension), let $\theta^n(x)_l=n\sin(x_l/n)$ coordinatewise, and set $a^n=(a\circ\theta^n)*\eta_{1/n}$ and $K^n=K*\eta_{1/n}$. The map $\theta^n$ is $1$-Lipschitz with bounded image and $|\theta^n(x)|\le|x|$, so $a\circ\theta^n$ is bounded and $L_a$-Lipschitz; convolution preserves these properties as well as \eqref{eq:A2}--\eqref{eq:A3}, and produces bounded derivatives of all orders. Since $\theta^n\to\mathrm{id}$ locally uniformly, $a^n\to a$ locally uniformly, while $|K^n-K|\le(L_1+L_2)/n$. Finally $|\theta^n(x-z)|\le|x|+1$ for $|z|\le1/n$.
+\end{proof}
+
+\begin{lemma}\label{lem:stability}
+Let $P^n_{N,t}$ and $\mu^n_t$ be the laws of \eqref{eq:particles} and \eqref{eq:MV} with coefficients $a^n,K^n$ from Lemma~\ref{lem:mollify} and the same initial laws. For every fixed $N$,
+\[
+\sup_{t\le T}\W(P^n_{N,t},P_{N,t})\to0,\qquad \sup_{t\le T}\W(\mu^n_t,\mu_t)\to0.
+\]
+\end{lemma}
+
+\begin{proof}
+Couple the particle systems through the same initial vector and Brownian motions, and let $b^n_N$ be the particle drift built from $a^n,K^n$. Since $\Lip(b^n_N)\le\Lambda$, Gronwall's and the Cauchy--Schwarz inequalities give
+\[
+\E\sup_{t\le T}|X^n_t-X_t|^2\le Te^{2\Lambda T}\int_0^T\E|b^n_N(X_u)-b_N(X_u)|^2\,\dd u.
+\]
+For fixed $N$ the integrand tends to zero pointwise and is bounded by a constant times $N+|X_u|^2$, which is integrable uniformly in $u\le T$; dominated convergence proves the first claim.
+
+For the nonlinear equations, couple $X^n$ and $X$ through the same initial point and Brownian motion, let $(\bar Y^n,\bar Y)$ be an independent copy of the pair, and put $z_n(t)=\E[\sup_{u\le t}|X^n_u-X_u|^2]^{1/2}$ and
+\[
+\varepsilon_n(u)=\|a^n(X_u)-a(X_u)\|_{L^2}+\|K^n(X_u,\bar Y_u)-K(X_u,\bar Y_u)\|_{L^2}.
+\]
+Writing $B^n_u(X^n_u)-B_u(X_u)=\E'[K^n(X^n_u,\bar Y^n_u)-K^n(X_u,\bar Y_u)]+a^n(X^n_u)-a^n(X_u)+\big(a^n(X_u)-a(X_u)+\E'[K^n(X_u,\bar Y_u)-K(X_u,\bar Y_u)]\big)$, where $\E'$ integrates out the copy, and using $\|\bar Y^n_u-\bar Y_u\|_{L^2}=\|X^n_u-X_u\|_{L^2}$, Minkowski's inequality gives $z_n(t)\le\Lambda\int_0^tz_n+\int_0^t\varepsilon_n$. The growth bound of Lemma~\ref{lem:mollify}, local uniform convergence and the second moments of $X$ give $\int_0^T\varepsilon_n\to0$ by dominated convergence, and Gronwall's inequality concludes.
+\end{proof}
+
+\section{Further directions}\label{sec:further}
+
+\subsection*{Interactions growing in the second variable}
+The constant $M$ of \eqref{eq:A2} enters $C_T$ through Lemmas~\ref{lem:internal} and~\ref{lem:external} and through \eqref{eq:Phi-grad}. If $K$ is Lipschitz but unbounded, the first two can be adapted. In Lemma~\ref{lem:internal} one may use $|c_s(x,y)|\le L_2\int|y-y'|\,\mu_s(\dd y')$ and second moments of $\mu_s$. In Lemma~\ref{lem:external}, since $y\mapsto e\cdot K(x,y)$ is $L_2$-Lipschitz for every unit vector $e$, Pinsker's inequality can be replaced by a transport inequality $W_1(\nu,\mu_s)^2\le C\,H(\nu\,|\,\mu_s)$, which holds for some $C$ if and only if $\mu_s$ has a Gaussian moment \cite{BG99,DGW04}. In \eqref{eq:Phi-grad}, however, $|K(x_k,y)|$ multiplies the Hessian of the test function and is integrated in $y$ against the conditional law of a hidden particle given the observed ones; for unbounded $K$ this calls for bounds on conditional second moments, which are not available for general carrying laws. Interactions that are linear in the second variable, as in the Gaussian example of \cite[Example~2.8]{Lac23}, are a natural first case.
+
+\subsection*{Path space}
+The question in \cite{Lac23} concerns laws of trajectories on $[0,T]$. The interpolation \eqref{eq:switch} is built from the semigroups $S^N$ and $Q$ and acts on time marginals; a path-space version would require a tangent hierarchy for laws on $C([0,T];\R^d)^k$.
+
+\subsection*{Long times}
+By Remark~\ref{rem:yule}, $E_m(r)\le Ae^{Dr}\min(m^2e^{3\lambda r},N^2)/N^2$, since the comparison chain is absorbed at $N$. For a confining one-body drift one would like to replace $D$ by a negative rate. The approximation of Section~\ref{sec:approx} replaces $a$ by bounded drifts and destroys confinement, so this requires a version of Lemma~\ref{lem:gal-ode} for unbounded drifts, in which $C_m$ is not available.
+
+\subsection*{Entropy at positive times}
+Theorem~\ref{thm:main} gives no information in total variation. A bound $H(P^{(k)}_{N,t}\,|\,\mu_t^{\otimes k})\le C_tk^2/N^2$ for $t>0$ under \eqref{eq:initial} would give $\|P^{(k)}_{N,t}-\mu_t^{\otimes k}\|_{\mathrm{TV}}=O(k/N)$ by Pinsker's inequality. The bound $A(s)$ of Proposition~\ref{prop:source} is of order $s^{-1}$ as $s\to0$, and Section~\ref{sec:proof-main} integrates only its square root.
+
+\subsection*{Non-exchangeable systems}
+The proof of Lemma~\ref{lem:marginal-energy} applies to any increasing sequence of coordinate sets. Exchangeability is used to reduce the $N-m$ hidden particles to a single one in Lemmas~\ref{lem:source-rep} and~\ref{lem:propagated}, and in Lemma~\ref{lem:increments}. For heterogeneous interactions it would be natural to combine tangent energies with the subset-indexed hierarchy of \cite{LYZ24}.
+
+\appendix
+\section{Galerkin approximation}\label{app:galerkin}
+Fix $n\ge1$ and enumerate the nonconstant real trigonometric functions $\cos(\xi\cdot x)$, $\sin(\xi\cdot x)$, $\xi\in\Q^n\setminus\{0\}$, as $(\tau_k)_{k\ge1}$. Each $\tau_k$ belongs to $C^\infty_b(\R^n)$, and $\Delta\tau_k=-\kappa_k\tau_k$ with $\kappa_k=|\xi|^2$. In Section~\ref{sec:hierarchy} these functions are used with $n=dm$.
+
+\begin{lemma}\label{lem:trig-dense}
+For every $\rho\in\cP(\R^n)$, the gradients of finite linear combinations of the $\tau_k$ are dense in $\cH_\rho$.
+\end{lemma}
+
+\begin{proof}
+These gradients lie in $\cH_\rho$ by Lemma~\ref{lem:energy}. Let $\varphi\in C^\infty_c$ and, for an integer $p$ so large that $\operatorname{supp}\varphi$ lies in the interior of $[-\pi p,\pi p]^n$, let $\varphi_p$ be the $2\pi p$-periodic extension of $\varphi|_{[-\pi p,\pi p]^n}$. Then $\|\nabla\varphi_p\|_\infty=\|\nabla\varphi\|_\infty$ and $\nabla\varphi_p\to\nabla\varphi$ pointwise, hence in $L^2(\rho)$. Fej\'er means of $\varphi_p$ converge to $\varphi_p$ in $C^1$, and they are trigonometric polynomials with frequencies in $p^{-1}\mathbb Z^n\subset\Q^n$.
+\end{proof}
+
+Let $\rho\in\cP(\R^n)$, and let $\sigma$ be a source carried by $\rho$ with representative $w\in\cH_\rho$. For $j\ge1$ put $\eta_j=1/(j+1)$ and
+\begin{equation}\label{eq:galerkin}
+\mathsf G_{pq}=\rho(\nabla\tau_p\cdot\nabla\tau_q),\quad \mathsf l_p=\sigma(\tau_p),\quad c=(\mathsf G+\eta_jI)^{-1}\mathsf l,\quad f=\sum_{p=1}^jc_p\tau_p,\quad \epsilon_j=\mathsf l\cdot c,
+\end{equation}
+where $1\le p,q\le j$.
+
+\begin{lemma}\label{lem:galerkin}
+With this notation, $\epsilon_j=\rho(|\nabla f|^2)+\eta_j|c|^2$ and $\cE_\rho(\sigma)-\epsilon_j=\|w-\nabla f\|^2_{L^2(\rho)}+\eta_j|c|^2$; moreover $0\le\epsilon_j\le\cE_\rho(\sigma)$ and $\epsilon_j\to\cE_\rho(\sigma)$ as $j\to\infty$. Let $\rho'\in\cP(\R^n\times\R^{n'})$ have first marginal $\rho$, and let $\sigma'$ be a source carried by $\rho'$, with representative $w'\in\cH_{\rho'}$, such that $\sigma'(\varphi)=\sigma(\varphi)$ for every $\varphi\in C^1_b(\R^n)$, regarded as a function on $\R^n\times\R^{n'}$. Then $\|w'-(\nabla f,0)\|^2_{L^2(\rho')}\le\cE_{\rho'}(\sigma')-\epsilon_j$.
+\end{lemma}
+
+\begin{proof}
+The normal equation $(\mathsf G+\eta_jI)c=\mathsf l$ gives $\sigma(f)=\mathsf l\cdot c=\epsilon_j=c^{\top}\mathsf Gc+\eta_j|c|^2$, and $c^{\top}\mathsf Gc=\rho(|\nabla f|^2)$; this is the first identity. Expanding $\|w-\nabla f\|^2=\cE_\rho(\sigma)-2\sigma(f)+\rho(|\nabla f|^2)$ gives the second. Since $f\in C^1_b$, Lemma~\ref{lem:energy} gives $\la w',(\nabla f,0)\ra_{L^2(\rho')}=\sigma'(f)=\sigma(f)=\epsilon_j$, and $\|(\nabla f,0)\|^2_{L^2(\rho')}=\rho(|\nabla f|^2)$ because $\rho$ is the first marginal of $\rho'$; expanding the square gives $\|w'-(\nabla f,0)\|^2=\cE_{\rho'}(\sigma')-\epsilon_j-\eta_j|c|^2$. Finally, $c$ maximizes $z\mapsto2\mathsf l\cdot z-z^{\top}\mathsf Gz-\eta_j|z|^2$ on $\R^j$, with maximal value $\epsilon_j\ge0$. If $g=\sum_pz_p\tau_p$ is a fixed trigonometric polynomial, then for all large $j$ the same completion of squares gives $0\le\cE_\rho(\sigma)-\epsilon_j\le\|w-\nabla g\|^2+\eta_j|z|^2$. Letting $j\to\infty$ and then using Lemma~\ref{lem:trig-dense} proves the convergence.
+\end{proof}
+
+\section*{Statement on the use of AI}
+The author used Claude (Anthropic), a large language model, during the preparation of this manuscript, for editing the exposition and for checking computations, constants and references. The author verified all mathematical content and takes full responsibility for the paper.
+
+\begin{thebibliography}{99}
+
+\bibitem{AGS08}
+L.~Ambrosio, N.~Gigli, and G.~Savar\'e, \emph{Gradient flows in metric spaces and in the space of probability measures}, 2nd ed., Lectures in Mathematics ETH Z\"urich, Birkh\"auser, Basel, 2008.
+
+\bibitem{ATW06}
+M.~Arnaudon, A.~Thalmaier, and F.-Y.~Wang, \emph{Harnack inequality and heat kernel estimates on manifolds with curvature unbounded below}, Bull. Sci. Math. \textbf{130} (2006), no.~3, 223--233.
+
+\bibitem{AL26}
+M.~Arnese and D.~Lacker, \emph{Sharp propagation of chaos for mean field Langevin dynamics, control, and games}, preprint, arXiv:2603.10988, 2026.
+
+\bibitem{BB00}
+J.-D.~Benamou and Y.~Brenier, \emph{A computational fluid mechanics solution to the Monge--Kantorovich mass transfer problem}, Numer. Math. \textbf{84} (2000), no.~3, 375--393.
+
+\bibitem{BDM26}
+A.~Bernou, M.~Duerinckx, and M.~M\'enard, \emph{Creation of chaos for interacting Brownian particles}, Stochastic Process. Appl. \textbf{193} (2026), 104849.
+
+\bibitem{BG99}
+S.~G.~Bobkov and F.~G\"otze, \emph{Exponential integrability and transportation cost related to logarithmic Sobolev inequalities}, J. Funct. Anal. \textbf{163} (1999), no.~1, 1--28.
+
+\bibitem{BRS21}
+V.~I.~Bogachev, M.~R\"ockner, and S.~V.~Shaposhnikov, \emph{On the Ambrosio--Figalli--Trevisan superposition principle for probability solutions to Fokker--Planck--Kolmogorov equations}, J. Dynam. Differential Equations \textbf{33} (2021), no.~2, 715--739.
+
+\bibitem{BJW23}
+D.~Bresch, P.-E.~Jabin, and Z.~Wang, \emph{Mean field limit and quantitative estimates with singular attractive kernels}, Duke Math. J. \textbf{172} (2023), no.~13, 2591--2641.
+
+\bibitem{CD18}
+R.~Carmona and F.~Delarue, \emph{Probabilistic theory of mean field games with applications I. Mean field FBSDEs, control, and games}, Probability Theory and Stochastic Modelling, vol.~83, Springer, Cham, 2018.
+
+\bibitem{Car15}
+K.~Carrapatoso, \emph{Quantitative and qualitative Kac's chaos on the Boltzmann's sphere}, Ann. Inst. Henri Poincar\'e Probab. Stat. \textbf{51} (2015), no.~3, 993--1039.
+
+\bibitem{CD22a}
+L.-P.~Chaintron and A.~Diez, \emph{Propagation of chaos: a review of models, methods and applications. I. Models and methods}, Kinet. Relat. Models \textbf{15} (2022), no.~6, 895--1015.
+
+\bibitem{CD22b}
+L.-P.~Chaintron and A.~Diez, \emph{Propagation of chaos: a review of models, methods and applications. II. Applications}, Kinet. Relat. Models \textbf{15} (2022), no.~6, 1017--1173.
+
+\bibitem{CST22}
+J.-F.~Chassagneux, \L.~Szpruch, and A.~Tse, \emph{Weak quantitative propagation of chaos via differential calculus on the space of measures}, Ann. Appl. Probab. \textbf{32} (2022), no.~3, 1929--1969.
+
+\bibitem{CRS25}
+A.~Chodron de Courcel, M.~Rosenzweig, and S.~Serfaty, \emph{Sharp uniform-in-time mean-field convergence for singular periodic Riesz flows}, Ann. Inst. H. Poincar\'e C Anal. Non Lin\'eaire \textbf{42} (2025), no.~2, 391--472.
+
+\bibitem{CT06}
+T.~M.~Cover and J.~A.~Thomas, \emph{Elements of information theory}, 2nd ed., Wiley-Interscience, Hoboken, NJ, 2006.
+
+\bibitem{DT25}
+F.~Delarue and A.~Tse, \emph{Uniform in time weak propagation of chaos on the torus}, Ann. Inst. Henri Poincar\'e Probab. Stat. \textbf{61} (2025), no.~2, 1021--1074.
+
+\bibitem{DF87}
+P.~Diaconis and D.~Freedman, \emph{A dozen de Finetti-style results in search of a theory}, Ann. Inst. H. Poincar\'e Probab. Statist. \textbf{23} (1987), no.~2, suppl., 397--423.
+
+\bibitem{DGW04}
+H.~Djellout, A.~Guillin, and L.~Wu, \emph{Transportation cost-information inequalities and applications to random dynamical systems and diffusions}, Ann. Probab. \textbf{32} (2004), no.~3B, 2702--2732.
+
+\bibitem{Dob79}
+R.~L.~Dobrushin, \emph{Vlasov equations}, Funct. Anal. Appl. \textbf{13} (1979), no.~2, 115--123.
+
+\bibitem{DL82}
+D.~C.~Dowson and B.~V.~Landau, \emph{The Fr\'echet distance between multivariate normal distributions}, J. Multivariate Anal. \textbf{12} (1982), no.~3, 450--455.
+
+\bibitem{Due16}
+M.~Duerinckx, \emph{Mean-field limits for some Riesz interaction gradient flows}, SIAM J. Math. Anal. \textbf{48} (2016), no.~3, 2269--2300.
+
+\bibitem{Due21}
+M.~Duerinckx, \emph{On the size of chaos via Glauber calculus in the classical mean-field dynamics}, Comm. Math. Phys. \textbf{382} (2021), no.~1, 613--653.
+
+\bibitem{FW26}
+X.~Feng and Z.~Wang, \emph{Quantitative propagation of chaos for 2D viscous vortex model on the whole space}, Peking Math. J. (2026), doi:10.1007/s42543-025-00118-x.
+
+\bibitem{Gar88}
+J.~G\"artner, \emph{On the McKean--Vlasov limit for interacting diffusions}, Math. Nachr. \textbf{137} (1988), 197--248.
+
+\bibitem{GS84}
+C.~R.~Givens and R.~M.~Shortt, \emph{A class of Wasserstein metrics for probability distributions}, Michigan Math. J. \textbf{31} (1984), no.~2, 231--240.
+
+\bibitem{GL10}
+N.~Gozlan and C.~L\'eonard, \emph{Transport inequalities. A survey}, Markov Process. Related Fields \textbf{16} (2010), no.~4, 635--736.
+
+\bibitem{GGP25}
+J.~Grass, A.~Guillin, and C.~Poquet, \emph{Sharp propagation of chaos for McKean--Vlasov equation with non constant diffusion coefficient}, Electron. Commun. Probab. \textbf{30} (2025), Paper No.~55.
+
+\bibitem{Han22}
+Y.~Han, \emph{Entropic propagation of chaos for mean field diffusion with $L^p$ interactions via hierarchy, linear growth and fractional noise}, preprint, arXiv:2205.02772, 2022.
+
+\bibitem{HM14}
+M.~Hauray and S.~Mischler, \emph{On Kac's chaos and related problems}, J. Funct. Anal. \textbf{266} (2014), no.~10, 6055--6157.
+
+\bibitem{HR25}
+E.~Hess-Childs and K.~Rowan, \emph{Higher-order propagation of chaos in $L^2$ for interacting diffusions}, Probab. Math. Phys. \textbf{6} (2025), no.~2, 581--646.
+
+\bibitem{Jab19}
+J.-F.~Jabir, \emph{Rate of propagation of chaos for diffusive stochastic particle systems via Girsanov transformation}, preprint, arXiv:1907.09096, 2019.
+
+\bibitem{JW16}
+P.-E.~Jabin and Z.~Wang, \emph{Mean field limit and propagation of chaos for Vlasov systems with bounded forces}, J. Funct. Anal. \textbf{271} (2016), no.~12, 3588--3627.
+
+\bibitem{JW18}
+P.-E.~Jabin and Z.~Wang, \emph{Quantitative estimates of propagation of chaos for stochastic systems with $W^{-1,\infty}$ kernels}, Invent. Math. \textbf{214} (2018), no.~1, 523--591.
+
+\bibitem{Kac56}
+M.~Kac, \emph{Foundations of kinetic theory}, Proceedings of the Third Berkeley Symposium on Mathematical Statistics and Probability, vol.~III, University of California Press, Berkeley, 1956, pp.~171--197.
+
+\bibitem{KS91}
+I.~Karatzas and S.~E.~Shreve, \emph{Brownian motion and stochastic calculus}, 2nd ed., Graduate Texts in Mathematics, vol.~113, Springer, New York, 1991.
+
+\bibitem{Kun90}
+H.~Kunita, \emph{Stochastic flows and stochastic differential equations}, Cambridge Studies in Advanced Mathematics, vol.~24, Cambridge University Press, Cambridge, 1990.
+
+\bibitem{Lac18}
+D.~Lacker, \emph{On a strong form of propagation of chaos for McKean--Vlasov equations}, Electron. Commun. Probab. \textbf{23} (2018), Paper No.~45.
+
+\bibitem{Lac22}
+D.~Lacker, \emph{Quantitative approximate independence for continuous mean field Gibbs measures}, Electron. J. Probab. \textbf{27} (2022), Paper No.~15.
+
+\bibitem{Lac23}
+D.~Lacker, \emph{Hierarchies, entropy, and quantitative propagation of chaos for mean field diffusions}, Probab. Math. Phys. \textbf{4} (2023), no.~2, 377--432.
+
+\bibitem{LL23}
+D.~Lacker and L.~Le Flem, \emph{Sharp uniform-in-time propagation of chaos}, Probab. Theory Related Fields \textbf{187} (2023), no.~1--2, 443--480.
+
+\bibitem{LYZ24}
+D.~Lacker, L.~C.~Yeung, and F.~Zhou, \emph{Quantitative propagation of chaos for non-exchangeable diffusions via first-passage percolation}, preprint, arXiv:2409.08882v2, 2026.
+
+\bibitem{Loe06}
+G.~Loeper, \emph{Uniqueness of the solution to the Vlasov--Poisson system with bounded density}, J. Math. Pures Appl. (9) \textbf{86} (2006), no.~1, 68--79.
+
+\bibitem{Mal03}
+F.~Malrieu, \emph{Convergence to equilibrium for granular media equations and their Euler schemes}, Ann. Appl. Probab. \textbf{13} (2003), no.~2, 540--560.
+
+\bibitem{McK66}
+H.~P.~McKean, Jr., \emph{A class of Markov processes associated with nonlinear parabolic equations}, Proc. Natl. Acad. Sci. USA \textbf{56} (1966), no.~6, 1907--1911.
+
+\bibitem{MMW15}
+S.~Mischler, C.~Mouhot, and B.~Wennberg, \emph{A new approach to quantitative propagation of chaos for drift, diffusion and jump processes}, Probab. Theory Related Fields \textbf{161} (2015), no.~1--2, 1--59.
+
+\bibitem{MRW24}
+P.~Monmarch\'e, Z.~Ren, and S.~Wang, \emph{Time-uniform log-Sobolev inequalities and applications to propagation of chaos}, Electron. J. Probab. \textbf{29} (2024), Paper No.~154.
+
+\bibitem{NRS22}
+Q.-H.~Nguyen, M.~Rosenzweig, and S.~Serfaty, \emph{Mean-field limits of Riesz-type singular flows}, Ars Inven. Anal. (2022), Paper No.~4.
+
+\bibitem{DLMF}
+F.~W.~J.~Olver, A.~B.~Olde Daalhuis, D.~W.~Lozier, B.~I.~Schneider, R.~F.~Boisvert, C.~W.~Clark, B.~R.~Miller, B.~V.~Saunders, H.~S.~Cohl, and M.~A.~McClain (eds.), \emph{NIST Digital Library of Mathematical Functions}, \url{https://dlmf.nist.gov/}.
+
+\bibitem{Ott01}
+F.~Otto, \emph{The geometry of dissipative evolution equations: the porous medium equation}, Comm. Partial Differential Equations \textbf{26} (2001), no.~1--2, 101--174.
+
+\bibitem{OV00}
+F.~Otto and C.~Villani, \emph{Generalization of an inequality by Talagrand and links with the logarithmic Sobolev inequality}, J. Funct. Anal. \textbf{173} (2000), no.~2, 361--400.
+
+\bibitem{PPS19}
+T.~Paul, M.~Pulvirenti, and S.~Simonella, \emph{On the size of chaos in the mean field dynamics}, Arch. Ration. Mech. Anal. \textbf{231} (2019), no.~1, 285--317.
+
+\bibitem{Pey18}
+R.~Peyre, \emph{Comparison between $W_2$ distance and $\dot H^{-1}$ norm, and localization of Wasserstein distance}, ESAIM Control Optim. Calc. Var. \textbf{24} (2018), no.~4, 1489--1501.
+
+\bibitem{RW10}
+M.~R\"ockner and F.-Y.~Wang, \emph{Log-Harnack inequality for stochastic differential equations in Hilbert spaces and its consequences}, Infin. Dimens. Anal. Quantum Probab. Relat. Top. \textbf{13} (2010), no.~1, 27--37.
+
+\bibitem{RS25}
+M.~Rosenzweig and S.~Serfaty, \emph{Modulated logarithmic Sobolev inequalities and generation of chaos}, Ann. Fac. Sci. Toulouse Math. (6) \textbf{34} (2025), no.~1, 107--134.
+
+\bibitem{RS26}
+M.~Rosenzweig and S.~Serfaty, \emph{Sharp commutator estimates of all order for Coulomb and Riesz modulated energies}, Comm. Pure Appl. Math. \textbf{79} (2026), no.~2, 207--292.
+
+\bibitem{Ser20}
+S.~Serfaty, \emph{Mean field limit for Coulomb-type flows}, Duke Math. J. \textbf{169} (2020), no.~15, 2887--2935.
+
+\bibitem{SY26}
+M.~Shkolnikov and L.~C.~Yeung, \emph{Universal central limit theorem for non-exchangeable interacting diffusions}, preprint, arXiv:2607.07598, 2026.
+
+\bibitem{Szn91}
+A.-S.~Sznitman, \emph{Topics in propagation of chaos}, \'Ecole d'\'Et\'e de Probabilit\'es de Saint-Flour XIX---1989, Lecture Notes in Math., vol.~1464, Springer, Berlin, 1991, pp.~165--251.
+
+\bibitem{Tal96}
+M.~Talagrand, \emph{Transportation cost for Gaussian and other product measures}, Geom. Funct. Anal. \textbf{6} (1996), no.~3, 587--600.
+
+\bibitem{Tre16}
+D.~Trevisan, \emph{Well-posedness of multidimensional diffusion processes with weakly differentiable coefficients}, Electron. J. Probab. \textbf{21} (2016), Paper No.~22.
+
+\bibitem{Wan13}
+F.-Y.~Wang, \emph{Harnack inequalities for stochastic partial differential equations}, SpringerBriefs in Mathematics, Springer, New York, 2013.
+
+\bibitem{Wan26}
+S.~Wang, \emph{Sharp local propagation of chaos for mean field particles with $W^{-1,\infty}$ kernels}, J. Funct. Anal. \textbf{290} (2026), no.~3, 111240.
+
+\end{thebibliography}
+
+\end{document}

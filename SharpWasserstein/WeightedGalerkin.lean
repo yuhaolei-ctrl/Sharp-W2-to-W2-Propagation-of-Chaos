@@ -1,4 +1,9 @@
-import SharpWasserstein.GalerkinApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GalerkinApproximation
+
+@[expose] public section
 
 /-! Genuine smooth test-potential Galerkin approximations of the constructed
 weighted elliptic optimizer. The limiting optimizer is not assumed smooth.
@@ -22,7 +27,7 @@ instance testSpan_finiteDimensional (s : Finset (Test d)) :
   FiniteDimensional.span_of_finite ℝ (s.finite_toSet.image _)
 
 instance testSpan_complete (s : Finset (Test d)) : CompleteSpace (testSpan μ s) :=
-  FiniteDimensional.complete ℝ _
+  (Submodule.complete_of_finiteDimensional (testSpan μ s)).completeSpace_coe
 
 /-- Every vector in the trial space is the gradient of an actual smooth compact test. -/
 theorem testSpan_le_range (s : Finset (Test d)) :
@@ -164,9 +169,12 @@ theorem hasDerivAt_galerkinEnergy
         ∫ x, ρ' x * ‖(galerkinVector μ (ρ t) (ℓ t) s : Lp (Point d) 2 μ) x‖ ^ 2 ∂μ) t := by
   have hA : HasDerivAt (fun r => weightedOperator μ (ρ r)) (weightedOperator μ ρ') t :=
     HasFDerivAt.comp_hasDerivAt (F := Point d →ᵇ ℝ)
-      (E := gradientClosure μ →L[ℝ] gradientClosure μ) t (weightedOperator μ).hasFDerivAt hρ
+      (E := gradientClosure μ →L[ℝ] gradientClosure μ) t
+      (ContinuousLinearMap.hasFDerivAt (F := gradientClosure μ →L[ℝ] gradientClosure μ)
+        (weightedOperator μ)) hρ
   have hf := HasFDerivAt.comp_hasDerivAt (F := gradientClosure μ →L[ℝ] ℝ)
-    (E := gradientClosure μ) t (rieszMap μ).hasFDerivAt hℓ
+    (E := gradientClosure μ) t
+    (ContinuousLinearMap.hasFDerivAt (F := gradientClosure μ) (rieszMap μ)) hℓ
   have h := GalerkinApproximation.hasDerivAt_energy (testSpan μ s) hA hf ha
     (weightedOperator_lower_bound μ (ρ t) hp) (weightedOperator_symmetric μ (ρ t))
   simpa only [Function.comp_apply, rieszMap_apply, TangentEnergy.inner_rieszRepresentative,

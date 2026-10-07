@@ -1,5 +1,10 @@
-import SharpWasserstein.PrescribedSwitchBrownianLaw
-import SharpWasserstein.BrownianSourceSmoothPairing
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedSwitchBrownianLaw
+public import SharpWasserstein.BrownianSourceSmoothPairing
+
+@[expose] public section
 
 /-! The actual Brownian source action on bounded, noncompact observables
 has the same coordinate-conjugacy formula as compact tests. This supplies

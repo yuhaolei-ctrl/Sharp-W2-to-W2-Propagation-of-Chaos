@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerBrownianLaw
-import SharpWasserstein.ConfigurationEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerBrownianLaw
+public import SharpWasserstein.ConfigurationEuclidean
+
+@[expose] public section
 
 /-! The probabilistic coordinate flattening uses exactly the same unnormalized
 Euclidean coordinates as the transport and drift estimates. -/

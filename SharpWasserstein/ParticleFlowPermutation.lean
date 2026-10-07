@@ -1,4 +1,9 @@
-import SharpWasserstein.ParticleFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ParticleFlow
+
+@[expose] public section
 
 /-! Permutation covariance of the constructed particle flow and preservation
 of exchangeability under permutation-invariant continuous noise. -/

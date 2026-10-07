@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizedEntropyProfile
-import SharpWasserstein.MarginalSourceTangent
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedEntropyProfile
+public import SharpWasserstein.MarginalSourceTangent
+
+@[expose] public section
 
 /-! # The actual regularized generator source
 The initial Wasserstein profile now yields the real weighted negative-Sobolev

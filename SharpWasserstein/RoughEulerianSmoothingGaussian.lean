@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianSmoothingAction
-import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingAction
+public import Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
+
+@[expose] public section
 
 /-! A concrete stationary probability floor: the normalized Euclidean
 Gaussian exponential. Positivity, smoothness, normalization, and finite

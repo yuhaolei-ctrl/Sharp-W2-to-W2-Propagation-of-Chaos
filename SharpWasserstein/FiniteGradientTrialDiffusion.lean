@@ -1,5 +1,10 @@
-import SharpWasserstein.FiniteGradientTrialLaplacian
-import SharpWasserstein.BoundedHessianIntegrability
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteGradientTrialLaplacian
+public import SharpWasserstein.BoundedHessianIntegrability
+
+@[expose] public section
 
 /-! Exact diffusion dissipation for the coefficient-regularized optimizer
 under an arbitrary finite measure. No density, density derivative, or

@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianCompressionEquation
-import SharpWasserstein.RoughEulerianTimeActionMoments
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianCompressionEquation
+public import SharpWasserstein.RoughEulerianTimeActionMoments
+
+@[expose] public section
 
 /-! A uniform bound on the original tangent objectives supplies every genuine
 compressed joint-flux datum used by smoothing. No flux, action, measurability,
@@ -33,7 +38,7 @@ theorem compressedField_sq_integrable {R : ℝ} (hR : R ≠ 0) :
     Integrable (fun z => ‖compressedField h hR z‖^2) (compressedJoint h R) := by
   rw [compressedJoint_eq]
   exact (memLp_two_iff_integrable_sq_norm
-    (Lp.memLp (compressedFlux (curveSpaceTimeMeasure h) hR (curveFlux h))).1).mp
+    (Lp.memLp (compressedFlux (curveSpaceTimeMeasure h) hR (curveFlux h))).aestronglyMeasurable).mp
     (Lp.memLp (compressedFlux (curveSpaceTimeMeasure h) hR (curveFlux h)))
 
 theorem compressedJoint_support (R : ℝ) :

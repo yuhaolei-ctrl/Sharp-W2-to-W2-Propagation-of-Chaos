@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerianTransportLength
-import SharpWasserstein.BoundedConfigurationTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerianTransportLength
+public import SharpWasserstein.BoundedConfigurationTests
+
+@[expose] public section
 
 /-! Compact smooth tests suffice for the regular Eulerian transport theorem.
 Actual compact cutoffs converge locally together with their first derivatives;

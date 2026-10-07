@@ -1,5 +1,10 @@
-import SharpWasserstein.BoundedDerivativeLinear
-import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedDerivativeLinear
+public import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+
+@[expose] public section
 
 /-! Uniform bounds on the actual spatial derivatives of parameterized
 functions. These bounds are preserved by probability averaging and the

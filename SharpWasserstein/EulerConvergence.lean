@@ -1,5 +1,10 @@
-import SharpWasserstein.BoundedFlow
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedFlow
+public import Mathlib.Analysis.SpecificLimits.Basic
+
+@[expose] public section
 
 /-! Explicit Euler nodes for continuous additive forcing and their convergence
 to the actual integral solution. Local errors are derived from the trajectory

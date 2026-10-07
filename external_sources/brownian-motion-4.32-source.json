@@ -1,8 +1,0 @@
-{
-  "url": "https://github.com/RemyDegenne/brownian-motion",
-  "commit": "bbf1359d13a51c5da77ad3db520f1da76ffe669e",
-  "tag": "v4.32.0",
-  "archive_sha256": "9c5b26e4e1c86a1fbfd5cc10bb3aff0c8961b2c3603e6f85647fa82df4388c92",
-  "use": "Compiled unmodified pinned source closure, independently kernel replayed; imported by SharpWasserstein.BrownianNoise",
-  "verification": "qa/brownian_verification.json"
-}

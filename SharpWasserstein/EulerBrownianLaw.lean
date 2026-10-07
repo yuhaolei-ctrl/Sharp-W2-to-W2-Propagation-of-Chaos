@@ -1,6 +1,11 @@
-import SharpWasserstein.EulerGaussianHistory
-import SharpWasserstein.EulerLaw
-import SharpWasserstein.GaussianHistoryMarginals
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerGaussianHistory
+public import SharpWasserstein.EulerLaw
+public import SharpWasserstein.GaussianHistoryMarginals
+
+@[expose] public section
 
 /-! The Euler endpoints under genuine independent initial/Brownian inputs are
 observations of the constructed Gaussian transition histories. -/

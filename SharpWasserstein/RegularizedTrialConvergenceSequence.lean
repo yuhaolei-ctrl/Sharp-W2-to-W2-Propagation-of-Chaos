@@ -1,7 +1,12 @@
-import SharpWasserstein.RegularizedTrialConvergenceTime
-import Mathlib.Analysis.SpecificLimits.Basic
-import Mathlib.Data.Finset.Image
-import Mathlib.Logic.Encodable.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialConvergenceTime
+public import Mathlib.Analysis.SpecificLimits.Basic
+public import Mathlib.Data.Finset.Image
+public import Mathlib.Logic.Encodable.Basic
+
+@[expose] public section
 
 /-! An actual countable nested trial exhaustion and strictly positive
 vanishing regularization, so the sequential recovery theorem needs no supplied

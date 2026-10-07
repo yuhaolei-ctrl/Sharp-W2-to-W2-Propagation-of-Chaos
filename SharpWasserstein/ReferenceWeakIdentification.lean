@@ -1,5 +1,10 @@
-import SharpWasserstein.WeakTimeUniqueness
-import SharpWasserstein.ReferenceDriftDerivatives
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakTimeUniqueness
+public import SharpWasserstein.ReferenceDriftDerivatives
+
+@[expose] public section
 
 /-! The actual supplied weak reference evolution is identified with the
 constructed time-dependent Brownian flow. All auxiliary spatial bounds used

@@ -1,6 +1,11 @@
-import SharpWasserstein.EulerianTransportTests
-import SharpWasserstein.ProbabilityParameterIntegral
-import SharpWasserstein.ProbabilityUniformTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerianTransportTests
+public import SharpWasserstein.ProbabilityParameterIntegral
+public import SharpWasserstein.ProbabilityUniformTests
+
+@[expose] public section
 
 /-! The actual weak continuity equation with bounded smooth tests. Narrow
 continuity yields the uniform test modulus needed for deterministic Euler

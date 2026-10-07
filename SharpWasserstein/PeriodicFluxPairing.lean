@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicFluxContraction
-import SharpWasserstein.PeriodicConvolutionApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicFluxContraction
+public import SharpWasserstein.PeriodicConvolutionApproximation
+
+@[expose] public section
 
 /-! The convolved finite-energy flux acts on actual periodic test fields by
 convolving the tests. This exact Fubini identity gives convergence of source

@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicParticleTangentLimitSource
-import SharpWasserstein.WeightedTangentLimit
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicParticleTangentLimitSource
+public import SharpWasserstein.WeightedTangentLimit
+
+@[expose] public section
 
 /-! Actual convergence of projected JV pairings and their carrying laws.
 Only after both limits are proved is a supplied uniform energy bound passed

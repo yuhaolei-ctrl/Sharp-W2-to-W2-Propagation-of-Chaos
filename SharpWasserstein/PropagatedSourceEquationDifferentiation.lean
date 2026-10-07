@@ -1,4 +1,9 @@
-import SharpWasserstein.PropagatedSourceEquationMeasurable
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquationMeasurable
+
+@[expose] public section
 
 /-! Actual spatial differentiation under the finite time integral of the
 constructed probability expectation. The primal weak identity can therefore

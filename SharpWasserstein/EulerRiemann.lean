@@ -1,4 +1,9 @@
-import SharpWasserstein.EulerLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerLaw
+
+@[expose] public section
 
 /-! Riemann sums along the actual Euler trajectories. The time mesh and
 Gaussian increments used by the weak-generator proof are kept explicit. -/

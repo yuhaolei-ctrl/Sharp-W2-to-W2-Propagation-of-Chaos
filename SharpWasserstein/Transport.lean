@@ -1,10 +1,15 @@
-import Mathlib.MeasureTheory.Constructions.Pi
-import Mathlib.MeasureTheory.Measure.Prod
-import Mathlib.MeasureTheory.Integral.Lebesgue.Map
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Tactic.Positivity
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.FunProp
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.MeasureTheory.Constructions.Pi
+public import Mathlib.MeasureTheory.Measure.Prod
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Map
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.FunProp
+
+@[expose] public section
 
 /-! The actual unnormalized quadratic transport cost on particle configurations.
 The surrounding Pi type has its usual sup norm; that norm is deliberately NOT
@@ -74,7 +79,7 @@ def Exchangeable {d N : ℕ} (P : Measure (Configuration d N)) : Prop :=
 
 theorem measurable_restrictCoordinates {d k N : ℕ} (h : k ≤ N) :
     Measurable (restrictCoordinates (d := d) h) := by
-  exact measurable_pi_lambda _ fun i => measurable_pi_apply _
+  exact Measurable.of_eval fun i => measurable_pi_apply _
 
 theorem measurable_productCost {d N : ℕ} :
     Measurable (fun z : Configuration d N × Configuration d N => productCost z.1 z.2) := by

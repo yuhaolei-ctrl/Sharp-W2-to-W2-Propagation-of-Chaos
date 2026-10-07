@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionLaw
-import SharpWasserstein.InitialSourceMarginalComposition
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionLaw
+public import SharpWasserstein.InitialSourceMarginalComposition
+
+@[expose] public section
 
 /-! Exact consistency of the next-particle observation and the prefix source.
 The current law, canonical source, periodic projection, and finite trial energy

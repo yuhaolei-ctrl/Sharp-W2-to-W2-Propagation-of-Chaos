@@ -1,0 +1,99 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sources:
+    name: Check sources and metadata
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Check Lean source requirements (module headers, file sizes)
+        run: python3 scripts/check-lean-sources.py
+      - name: Check that the solution's definitions are copied verbatim from Challenge.lean
+        run: python3 scripts/sync-statement.py --check
+      - name: Check proof hygiene
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The only deliberate `sorry` is the statement surface in Challenge.lean.
+          if grep -REn --include='*.lean' --exclude-dir='.lake' \
+              '(^|[^[:alnum:]_.])(sorry|admit)([^[:alnum:]_]|$)|native_decide|Lean\.ofReduceBool|implemented_by|^[[:space:]]*(private[[:space:]]+)?axiom([^[:alnum:]_]|$)' \
+              . | grep -v '^./Challenge.lean:'; then
+            echo "Forbidden construct found."
+            exit 1
+          fi
+      - uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b
+        with:
+          ruby-version: "3.3.12"
+          bundler-cache: true
+      - name: Validate formalization.yaml
+        run: ruby scripts/validate-formalization.rb
+      - name: Detect the repository licence
+        run: |
+          bundle exec licensee detect LICENSE --json --no-packages --no-readme > "$RUNNER_TEMP/license.json"
+          ruby -rjson -e '
+            report = JSON.parse(File.read(ARGV.fetch(0)))
+            identifiers = report.fetch("licenses").map { |item| item.fetch("spdx_id") }
+            abort "LICENSE is not detected exactly as Apache-2.0" unless identifiers == ["Apache-2.0"]
+          ' "$RUNNER_TEMP/license.json"
+
+  build:
+    name: Build with Lean
+    needs: sources
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          auto-config: false
+          use-github-cache: true
+          use-mathlib-cache: true
+      - name: Build the development, the statement and the solution
+        run: lake build SharpWasserstein Challenge Solution
+      - name: Print the axioms of the main theorem
+        run: |
+          printf 'import Solution\n#print axioms SharpWasserstein.sharp_propagation_of_chaos\n' > "$RUNNER_TEMP/Axioms.lean"
+          lake env lean "$RUNNER_TEMP/Axioms.lean" | tee "$RUNNER_TEMP/axioms.log"
+          grep -F "depends on axioms: [propext, Classical.choice, Quot.sound]" "$RUNNER_TEMP/axioms.log"
+
+  comparator:
+    name: Check statement against solution (lake comparator)
+    needs: sources
+    # A fresh runner: the comparator builds the solution itself inside its sandbox.
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: leanprover/lean-action@38fbc41a8c28c4cbaec22d7f7de508ec2e7c0dd9
+        with:
+          auto-config: false
+          use-github-cache: false
+          use-mathlib-cache: true
+      - name: Install bubblewrap for lake comparator's sandbox
+        # Ubuntu 24.04 restricts unprivileged user namespaces through AppArmor,
+        # which `bwrap` needs for the sandbox; the runner is disposable.
+        run: |
+          sudo apt-get update -qq >/dev/null
+          sudo apt-get install -y -qq bubblewrap >/dev/null
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+      - name: Run the toolchain's lake comparator
+        run: ./scripts/verify-comparator.sh

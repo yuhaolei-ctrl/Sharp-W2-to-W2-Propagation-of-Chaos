@@ -1,5 +1,10 @@
-import SharpWasserstein.WeightedPeriodicCoefficientEvolution
-import SharpWasserstein.PropagatedSourceEquationLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicCoefficientEvolution
+public import SharpWasserstein.PropagatedSourceEquationLaw
+
+@[expose] public section
 
 /-! Gram and source coefficient equations on the very same constructed
 Brownian carrying law. This supplies literal scalar derivatives for finite

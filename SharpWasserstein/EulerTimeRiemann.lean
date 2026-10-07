@@ -1,4 +1,9 @@
-import SharpWasserstein.EulerRiemannExpectation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerRiemannExpectation
+
+@[expose] public section
 
 /-! Expected Riemann sums for the actual Euler scheme. The proof uses only
 the proved pathwise approximation, bounded domination and finite-sum Fubini. -/

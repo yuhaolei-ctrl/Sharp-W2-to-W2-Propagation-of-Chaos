@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedGradientApproximation
-import Mathlib.Analysis.Calculus.FDeriv.Linear
-import Mathlib.Analysis.Calculus.FDeriv.Comp
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedGradientApproximation
+public import Mathlib.Analysis.Calculus.FDeriv.Linear
+public import Mathlib.Analysis.Calculus.FDeriv.Comp
+
+@[expose] public section
 
 /-! Actual coordinate marginal lifting in weighted Euclidean `L²`.
 The measure on the lower-dimensional space is the genuine pushforward by the
@@ -19,6 +24,9 @@ def prefixProjection (n m : ℕ) : Point (n + m) →L[ℝ] Point n where
   map_smul' c x := rfl
   cont := (PiLp.continuous_toLp 2 (fun _ : Fin n => ℝ)).comp (by fun_prop)
 
+theorem prefixProjection_apply (n m : ℕ) (x : Point (n + m)) :
+    prefixProjection n m x = WithLp.toLp 2 (fun i => x (i.castAdd m)) := rfl
+
 /-- Extend a lower-dimensional vector by zero in the remaining coordinates. -/
 def prefixEmbedding (n m : ℕ) : Point n →ₗᵢ[ℝ] Point (n + m) where
   toFun v := WithLp.toLp 2 (Fin.addCases (fun i => v i) (fun _ => 0))
@@ -31,12 +39,12 @@ def prefixEmbedding (n m : ℕ) : Point n →ₗᵢ[ℝ] Point (n + m) where
 /-- Coordinate restriction and zero-extension are adjoint in the true Euclidean inner product. -/
 theorem inner_prefixEmbedding (n m : ℕ) (v : Point n) (x : Point (n + m)) :
     ⟪prefixEmbedding n m v, x⟫_ℝ = ⟪v, prefixProjection n m x⟫_ℝ := by
-  simp [prefixEmbedding, prefixProjection, PiLp.inner_apply, Fin.sum_univ_add]
+  simp [prefixEmbedding, prefixProjection_apply, PiLp.inner_apply, Fin.sum_univ_add]
 
 @[simp] theorem prefixProjection_embedding (n m : ℕ) (v : Point n) :
     prefixProjection n m (prefixEmbedding n m v) = v := by
   ext i
-  simp [prefixProjection, prefixEmbedding]
+  simp [prefixProjection_apply, prefixEmbedding]
 
 /-- The genuine gradient of a lifted test is its zero-extended marginal gradient. -/
 theorem gradient_comp_prefixProjection {n m : ℕ} {φ : Point n → ℝ}
@@ -94,7 +102,7 @@ theorem vectorLiftLinear_norm (μ : Measure (Point (n + m)))
         (measurePreserving_prefix μ) v‖ := by
           simp only [Lp.norm_def]
           congr 1
-          exact eLpNorm_congr_norm_ae hnorm
+          exact eLpNorm_congr_norm_ae (Lp.aestronglyMeasurable _) (Lp.aestronglyMeasurable _) hnorm
     _ = ‖v‖ := Lp.norm_compMeasurePreserving _ _
 
 /-- The actual coordinate lift as a linear isometry of weighted Hilbert spaces. -/

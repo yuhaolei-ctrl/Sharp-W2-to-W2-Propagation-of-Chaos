@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizedBrownianSourceBound
-import SharpWasserstein.PrescribedSwitchBrownianLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedBrownianSourceBound
+public import SharpWasserstein.PrescribedSwitchBrownianLaw
+
+@[expose] public section
 
 /-! The singular source-energy bound on the actual prescribed switch curve,
 with the actual source already identified as its scalar time derivative. -/

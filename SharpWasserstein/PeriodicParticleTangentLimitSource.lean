@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicParticleTangentLimitFlow
-import SharpWasserstein.PropagatedFlux
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicParticleTangentLimitFlow
+public import SharpWasserstein.PropagatedFlux
+
+@[expose] public section
 
 /-! Actual projected particle-flow laws and JV source distributions. Every
 source is defined by a genuine L² random flux under the original input law. -/
@@ -92,7 +97,7 @@ theorem pairing_integrable {F : Point m → ℝ} (hF : ContDiff ℝ 1 F) {L : �
     ((hF.continuous_fderiv (by norm_num)).comp
       (A.continuous.comp (endpoint_continuous hN hb hbound hM hL₁ hL₂ hT ht))).aestronglyMeasurable
   apply Integrable.mono' ((hp.integrable (by norm_num)).norm.const_mul (L:ℝ))
-    ((continuous_fst.clm_apply continuous_snd).comp_aestronglyMeasurable (hm.prodMk hp.1))
+    ((continuous_fst.clm_apply continuous_snd).comp_aestronglyMeasurable (hm.prodMk hp.aestronglyMeasurable))
   exact Eventually.of_forall (fun q => (ContinuousLinearMap.le_opNorm _ _).trans
     (mul_le_mul_of_nonneg_right (hL _) (norm_nonneg _)))
 

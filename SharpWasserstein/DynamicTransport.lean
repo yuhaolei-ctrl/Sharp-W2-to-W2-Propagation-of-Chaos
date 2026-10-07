@@ -1,6 +1,11 @@
-import SharpWasserstein.TransportTriangle
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TransportTriangle
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+
+@[expose] public section
 
 /-!
 # Transport length of a common-label L² trajectory

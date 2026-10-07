@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicFluxSmooth
-import SharpWasserstein.PeriodicFluxPairing
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicFluxSmooth
+public import SharpWasserstein.PeriodicFluxPairing
+
+@[expose] public section
 
 /-! Euclidean identification of the periodic convolved source and its quadratic
 action. Coordinate arrays carry a sup norm in Lean; every energy statement

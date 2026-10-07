@@ -1,5 +1,10 @@
-import SharpWasserstein.SwitchSourceDerivativeParticle
-import SharpWasserstein.InitialSourcePermutation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeParticle
+public import SharpWasserstein.InitialSourcePermutation
+
+@[expose] public section
 
 /-! The manuscript's prescribed nonlinear reference is used literally.
 The resulting derivative has reference-minus-particle direction and is the

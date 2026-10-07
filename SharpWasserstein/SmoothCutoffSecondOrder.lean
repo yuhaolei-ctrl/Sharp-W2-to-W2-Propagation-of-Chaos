@@ -1,6 +1,11 @@
-import SharpWasserstein.SmoothCutoff
-import SharpWasserstein.BochnerIdentity
-import Mathlib.Analysis.Calculus.FDeriv.Equiv
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SmoothCutoff
+public import SharpWasserstein.BochnerIdentity
+public import Mathlib.Analysis.Calculus.FDeriv.Equiv
+
+@[expose] public section
 
 /-! Second-order bounds for the actual smooth cutoff sequence. The true second
 Fréchet derivative decays as the inverse radius squared; consequently the actual

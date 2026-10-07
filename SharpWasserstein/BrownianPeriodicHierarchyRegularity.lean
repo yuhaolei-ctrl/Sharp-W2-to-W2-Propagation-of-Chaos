@@ -1,6 +1,11 @@
-import SharpWasserstein.BrownianPeriodicHierarchyMarginals
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionEnergy
-import SharpWasserstein.VolterraFourierSource
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianPeriodicHierarchyMarginals
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionEnergy
+public import SharpWasserstein.VolterraFourierSource
+
+@[expose] public section
 
 /-! Actual scalar regularity of the physical Fourier trial energies along the
 Brownian source flow. Only the initial current is supplied as an L² function;
@@ -44,7 +49,6 @@ theorem sourceFiniteEnergy_level_eq {d N m : ℕ} (P : ℝ) (hm : m ≤ N)
   simp only [sourceFiniteEnergy,finiteEnergy,sourceRepresentative,levelLaw,levelSource,
     periodicPrefixField,prefixSource_eq_imageSource]
   convert hh using 1
-  rfl
 
 variable {d N m : ℕ} {b : Position d → Position d → Position d} {M K M' K' : ℝ≥0}
   (hv : Continuous (Function.uncurry (fun _ : ℝ => (particleDrift b : Configuration d N → _))))

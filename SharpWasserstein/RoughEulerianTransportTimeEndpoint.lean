@@ -1,7 +1,12 @@
-import SharpWasserstein.RoughEulerianTransportTimeMixture
-import SharpWasserstein.RoughEulerianSmoothingEndpoint
-import SharpWasserstein.RoughEulerianTimeActionMoments
-import SharpWasserstein.TransportTriangle
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportTimeMixture
+public import SharpWasserstein.RoughEulerianSmoothingEndpoint
+public import SharpWasserstein.RoughEulerianTimeActionMoments
+public import SharpWasserstein.TransportTriangle
+
+@[expose] public section
 
 /-! Endpoint removal for genuine space-time regularizations of common-label
 curves. Time, spatial-convolution, and Gaussian-floor scales can vanish

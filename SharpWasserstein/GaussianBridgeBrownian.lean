@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerBrownianLaw
-import SharpWasserstein.GaussianBridgeCoupling
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerBrownianLaw
+public import SharpWasserstein.GaussianBridgeCoupling
+
+@[expose] public section
 
 /-! Gaussian meeting-bridge endpoint observations are the actual Brownian Euler
 endpoint laws, in the exact direction used for entropy-cost comparison. -/

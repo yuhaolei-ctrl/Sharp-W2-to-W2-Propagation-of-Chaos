@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizedTrialConvergencePhysical
-import SharpWasserstein.RegularizedTrialConvergenceSequence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialConvergencePhysical
+public import SharpWasserstein.RegularizedTrialConvergenceSequence
+
+@[expose] public section
 
 /-! Actual `L¹` recovery for physical Fourier trial energies along varying
 finite carrying measures. Only the finite scalar energies must be measurable;

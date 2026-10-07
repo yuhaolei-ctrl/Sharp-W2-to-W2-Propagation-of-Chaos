@@ -1,6 +1,11 @@
-import SharpWasserstein.ExchangeableEntropy
-import SharpWasserstein.EuclideanDrift
-import SharpWasserstein.TransportMoments
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExchangeableEntropy
+public import SharpWasserstein.EuclideanDrift
+public import SharpWasserstein.TransportMoments
+
+@[expose] public section
 
 /-! Genuine second moments for coordinate marginals and product reference laws. -/
 noncomputable section

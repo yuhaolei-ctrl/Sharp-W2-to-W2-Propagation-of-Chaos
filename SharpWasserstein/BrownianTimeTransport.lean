@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianTimeMoments
-import SharpWasserstein.BrownianFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianTimeMoments
+public import SharpWasserstein.BrownianFlow
+
+@[expose] public section
 
 /-! A quantitative time modulus for the actual Brownian flow law, measured
 with the unnormalized Euclidean quadratic transport cost. -/

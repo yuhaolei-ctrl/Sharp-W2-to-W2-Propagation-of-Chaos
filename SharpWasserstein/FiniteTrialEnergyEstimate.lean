@@ -1,4 +1,9 @@
-import SharpWasserstein.FiniteTrialEnergyIdentity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteTrialEnergyIdentity
+
+@[expose] public section
 
 /-! Integrated drift residual absorption for actual finite weighted trial
 potentials. Coefficients involving the drift supremum multiply only the
@@ -33,8 +38,8 @@ theorem integral_drift_residual_le {f : Point n → ℝ}
     exact bounded_smooth_gradient_memLp μ g hg ⟨B,hB⟩
   have hg := memG hf hBf
   have hr := (Lp.memLp U).sub hg
-  have hgs := (memLp_two_iff_integrable_sq_norm hg.1).mp hg
-  have hrs := (memLp_two_iff_integrable_sq_norm hr.1).mp hr
+  have hgs := (memLp_two_iff_integrable_sq_norm hg.aestronglyMeasurable).mp hg
+  have hrs := (memLp_two_iff_integrable_sq_norm hr.aestronglyMeasurable).mp hr
   have hH := hessian_square_integrable μ hf hBf
   have hD := hb.inner ℝ (smooth_gradient hf)
   have hBD : AllDerivativesBounded (fun y => ⟪b y,gradient f y⟫_ℝ) := by

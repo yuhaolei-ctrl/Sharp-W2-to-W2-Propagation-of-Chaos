@@ -1,7 +1,12 @@
-import SharpWasserstein.SwitchSourceDerivativeRemainingTest
-import SharpWasserstein.SwitchSourceDerivativeShortTime
-import SharpWasserstein.SwitchSourceDerivativeRestart
-import SharpWasserstein.PropagatedSourceEquationBrownian
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeRemainingTest
+public import SharpWasserstein.SwitchSourceDerivativeShortTime
+public import SharpWasserstein.SwitchSourceDerivativeRestart
+public import SharpWasserstein.PropagatedSourceEquationBrownian
+
+@[expose] public section
 
 /-! Exact law algebra for the actual switch curve. Restart of the reference
 law and the particle semigroup convert its increment into a synchronous
@@ -22,8 +27,8 @@ theorem remainingTest_eq_transition {F : Configuration d N → ℝ} (hF : Contin
     remainingTest hb hLip hT (BrownianNoise.configurationLaw d N T) F τ r x =
       ∫ z,F z ∂BrownianFlow.globalLaw (v := fun _ : ℝ => b) (hLip.continuous.comp continuous_snd)
         (fun _ => hb) (fun _ => hLip) (Measure.dirac x) (τ-r) := by
-  rw [remainingTest,clampedExpectation_of_mem _ _ _ _ _ _ hr]
-  exact brownianExpectation_eq_globalLaw _ _ _ hT x hF hr
+  exact (congrFun (clampedExpectation_of_mem _ _ _ _ _ _ hr) x).trans
+    (brownianExpectation_eq_globalLaw _ _ _ hT x hF hr)
 
 /-- Integrating the remaining test against any actual initial probability
 law gives its true future transition expectation. -/
@@ -35,8 +40,10 @@ theorem integral_remainingTest_eq {F : Configuration d N → ℝ} (hF : Continuo
         (fun _ => hb) (fun _ => hLip) ν (τ-r) := by
   have he := BrownianFlow.globalLaw_add_integral (hLip.continuous.comp continuous_snd)
     (fun _ => hb) (fun _ => hLip) (show (0:ℝ) ≤ 0 from le_rfl) hr.1 ν hF hC
-  simp only [zero_add,BrownianFlow.globalLaw_initial] at he
-  rw [he]
+  have h0 := BrownianFlow.globalLaw_initial (v := fun _ : ℝ => b)
+    (hLip.continuous.comp continuous_snd) (fun _ => hb) (fun _ => hLip) ν
+  simp only [zero_add] at he
+  rw [he, h0]
   apply integral_congr_ae
   filter_upwards [] with x
   exact remainingTest_eq_transition hb hLip hT hF hr x
@@ -101,8 +108,10 @@ theorem switch_integral_increment_eq
     (fun _ => hb) (fun _ => hLip) hT ν hrT
   change (∫ x,f x ∂BrownianFlow.globalLaw _ _ _ ν r)-
     (∫ x,f x ∂BrownianFlow.globalLaw _ _ _ ν r) = _
-  rw [hvEq,hbEq,BrownianFlow.law_integral_eq _ _ _ hT ν hf hrT,
-    BrownianFlow.law_integral_eq _ _ _ hT ν hf hrT]
+  rw [hvEq,hbEq,BrownianFlow.law_integral_eq (shiftedDrift_continuous hv s)
+      (fun u => hbv (s+u)) (fun u => hlv (s+u)) hT ν hf hrT,
+    BrownianFlow.law_integral_eq (v := fun _ : ℝ => b) (hLip.continuous.comp continuous_snd)
+      (fun _ => hb) (fun _ => hLip) hT ν hf hrT]
   have hi₁ : Integrable (fun p : Configuration d N × C(Icc 0 T,Configuration d N) =>
       f (BoundedFlow.flow (shiftedDrift_continuous hv s)
         (fun u => hbv (s+u)) (fun u => hlv (s+u)) hT p.1 p.2 r))

@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianPeriodicHierarchyEstimate
-import SharpWasserstein.VolterraFourierSourceHierarchy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianPeriodicHierarchyEstimate
+public import SharpWasserstein.VolterraFourierSourceHierarchy
+
+@[expose] public section
 
 /-! Sharp quadratic periodic marginal source profile for the actual Brownian
 law and actual propagated current. The finite trial differential inequalities,

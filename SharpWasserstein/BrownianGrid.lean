@@ -1,6 +1,11 @@
-import SharpWasserstein.ConfigurationBrownian
-import SharpWasserstein.GaussianEntropyChain
-import Mathlib.Probability.ProductMeasure
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ConfigurationBrownian
+public import SharpWasserstein.GaussianEntropyChain
+public import Mathlib.Probability.ProductMeasure
+
+@[expose] public section
 
 /-!
 # Actual finite-grid Brownian innovations
@@ -112,14 +117,14 @@ theorem configurationLaw_grid_hasLaw {T : ℝ} {n d N : ℕ} (τ : Fin (n+1) →
     (fun _ : Fin N => Measure.pi fun j : Fin n => gaussianVectorLaw (0 : Position d)
       (2 * nndist (τ j.succ : ℝ) (τ j.castSucc : ℝ)))
     (fun _ => (coordinateLaw_grid_hasLaw τ hτ).measurePreserving
-      (measurable_pi_lambda _ fun j => measurable_pi_lambda _ fun i =>
+      (Measurable.of_eval fun j => Measurable.of_eval fun i =>
         ((by fun_prop : Continuous (fun w : C(Icc 0 T, ℝ) => w (τ j.succ))).measurable.comp (measurable_pi_apply i)).sub
         ((by fun_prop : Continuous (fun w : C(Icc 0 T, ℝ) => w (τ j.castSucc))).measurable.comp (measurable_pi_apply i))))
   have h₂ := (measurePreserving_pi_transpose (fun (_ : Fin N) (j : Fin n) =>
     gaussianVectorLaw (0 : Position d) (2 * nndist (τ j.succ : ℝ) (τ j.castSucc : ℝ)))).comp h₁
   have hm : Measurable (fun w : C(Icc 0 T, Configuration d N) =>
       fun j : Fin n => w (τ j.succ) - w (τ j.castSucc)) :=
-    measurable_pi_lambda _ fun j =>
+    Measurable.of_eval fun j =>
       (by fun_prop : Continuous (fun w : C(Icc 0 T, Configuration d N) => w (τ j.succ) - w (τ j.castSucc))).measurable
   refine ⟨hm.aemeasurable, ?_⟩
   rw [configurationLaw, Measure.map_map hm configurationPath_measurable]

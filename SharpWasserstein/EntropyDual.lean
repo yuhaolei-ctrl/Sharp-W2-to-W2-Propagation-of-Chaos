@@ -1,5 +1,10 @@
-import SharpWasserstein.EntropyVariational
-import Mathlib.MeasureTheory.Integral.Lebesgue.Add
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyVariational
+public import Mathlib.MeasureTheory.Integral.Lebesgue.Add
+
+@[expose] public section
 
 /-! # Bounded measurable dual characterization of actual relative entropy
 The reverse variational bound is derived from truncated log densities and Fatou.

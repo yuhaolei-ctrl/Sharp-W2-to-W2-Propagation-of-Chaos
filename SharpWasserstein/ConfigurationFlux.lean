@@ -1,4 +1,9 @@
-import SharpWasserstein.ConfigurationEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ConfigurationEuclidean
+
+@[expose] public section
 
 /-! Actual configuration vector fluxes define weighted negative-Sobolev sources.
 The norm used below is always the Euclidean coordinate square sum. -/

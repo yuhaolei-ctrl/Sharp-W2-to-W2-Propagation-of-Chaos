@@ -1,5 +1,10 @@
-import SharpWasserstein.FiniteTrialDriftResidual
-import SharpWasserstein.FiniteGeneratorBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteTrialDriftResidual
+public import SharpWasserstein.FiniteGeneratorBounds
+
+@[expose] public section
 
 /-! The complete static generator energy identity for the actual finite
 coefficient optimizer. The underlying finite measure is arbitrary, and the

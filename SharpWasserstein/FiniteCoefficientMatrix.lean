@@ -1,6 +1,11 @@
-import SharpWasserstein.FiniteGradientTrialPairing
-import Mathlib.Analysis.Calculus.Deriv.Add
-import Mathlib.Analysis.Calculus.Deriv.Mul
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteGradientTrialPairing
+public import Mathlib.Analysis.Calculus.Deriv.Add
+public import Mathlib.Analysis.Calculus.Deriv.Mul
+
+@[expose] public section
 
 /-! Actual assembly of finite scalar matrix entries into bounded Euclidean
 operators. Entrywise derivatives give genuine operator-norm derivatives. -/

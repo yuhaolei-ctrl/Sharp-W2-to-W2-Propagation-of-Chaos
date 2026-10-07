@@ -1,9 +1,14 @@
-import SharpWasserstein.RoughEulerianTimeSmoothing
-import SharpWasserstein.SmoothCutoff
-import Mathlib.Analysis.Calculus.BumpFunction.Normed
-import Mathlib.Analysis.Calculus.Deriv.Support
-import Mathlib.Analysis.Calculus.ContDiff.Deriv
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeSmoothing
+public import SharpWasserstein.SmoothCutoff
+public import Mathlib.Analysis.Calculus.BumpFunction.Normed
+public import Mathlib.Analysis.Calculus.Deriv.Support
+public import Mathlib.Analysis.Calculus.ContDiff.Deriv
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 
 /-! A concrete normalized compact smooth time kernel. Its value and derivative
 bounds, support, and interior-window normalization are all proved. -/

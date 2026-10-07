@@ -1,4 +1,9 @@
-import SharpWasserstein.ProbabilityLipschitzEstimate
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ProbabilityLipschitzEstimate
+
+@[expose] public section
 
 /-! Narrowly continuous probability curves control an entire uniformly bounded
 Lipschitz family of observables uniformly on compact time intervals. -/

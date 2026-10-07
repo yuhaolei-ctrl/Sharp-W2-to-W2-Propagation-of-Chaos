@@ -1,4 +1,9 @@
-import SharpWasserstein.PropagatedSourcePermutation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourcePermutation
+
+@[expose] public section
 
 /-! Equivariance of the actual minimum-energy tangent representative is
 derived from symmetry of the law and scalar source. The proof uses the
@@ -36,7 +41,7 @@ theorem pullVector_norm (v : Lp (Point n) 2 μ) : ‖pullVector μ L hμ v‖ = 
     _ = ‖Lp.compMeasurePreserving L (measurePreserving_isometry μ L hμ) v‖ := by
       simp only [Lp.norm_def]
       congr 1
-      exact eLpNorm_congr_norm_ae he
+      exact eLpNorm_congr_norm_ae (Lp.aestronglyMeasurable _) (Lp.aestronglyMeasurable _) he
     _ = _ := Lp.norm_compMeasurePreserving _ _
 
 omit [MeasurableSpace (Point n)] [BorelSpace (Point n)] in

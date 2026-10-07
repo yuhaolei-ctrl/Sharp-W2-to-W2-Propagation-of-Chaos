@@ -1,6 +1,11 @@
-import SharpWasserstein.PrescribedSwitchMarginalSourceContinuity
-import SharpWasserstein.RegularizedBrownianSourceSwitch
-import SharpWasserstein.RoughEulerianIntervalRestriction
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedSwitchMarginalSourceContinuity
+public import SharpWasserstein.RegularizedBrownianSourceSwitch
+public import SharpWasserstein.RoughEulerianIntervalRestriction
+
+@[expose] public section
 
 /-! Actual compact-test action bounds on positive switch-time intervals.
 The only quantitative input is the original Wasserstein hierarchy; the

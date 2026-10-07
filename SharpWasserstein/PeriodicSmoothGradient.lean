@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicFourierDensity
-import SharpWasserstein.PeriodicGradientClosure
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicFourierDensity
+public import SharpWasserstein.PeriodicGradientClosure
+
+@[expose] public section
 
 /-! Every genuine smooth periodic gradient belongs to the constructed Fourier
 closure. This follows from actual `H¹` Fourier approximation, not from a density

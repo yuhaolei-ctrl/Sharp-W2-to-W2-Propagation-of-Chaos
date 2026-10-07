@@ -1,4 +1,9 @@
-import SharpWasserstein.GaussianVectorEntropy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianVectorEntropy
+
+@[expose] public section
 
 /-!
 # Finite Gaussian-history entropy cost

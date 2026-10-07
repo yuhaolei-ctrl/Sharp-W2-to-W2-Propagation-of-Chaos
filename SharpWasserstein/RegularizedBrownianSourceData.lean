@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizedBrownianSourceCoordinates
-import SharpWasserstein.PrescribedEntropyProfile
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedBrownianSourceCoordinates
+public import SharpWasserstein.PrescribedEntropyProfile
+
+@[expose] public section
 
 /-! The supplied nonlinear reference law supplies all initial data for the
 sharp Brownian source hierarchy. Entropy regularization, current covariance,

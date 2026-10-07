@@ -1,4 +1,9 @@
-import SharpWasserstein.SwitchCurve
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchCurve
+
+@[expose] public section
 
 /-! P₂ continuity, marginal endpoint continuity and identification of the
 switch construction with the prescribed reference and particle global laws. -/

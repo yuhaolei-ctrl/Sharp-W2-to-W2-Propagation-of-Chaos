@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowSemigroupDerivative
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowSemigroupDerivative
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 
 /-! The differentiated probability expectation acts on an actual finite-energy
 initial vector field by the integral of the pushed Jacobian vector. -/
@@ -35,7 +40,7 @@ theorem integrable_differential_pairing
       fderiv ℝ F (BoundedFlow.flow hv hb hl hT q.1 q.2 t)
         (fderiv ℝ (fun y => BoundedFlow.flow hv hb hl hT y q.2 t) q.1 (u q.1))) (μ.prod ξ) :=
     (continuous_fst.clm_apply continuous_snd).comp_aestronglyMeasurable
-      ((differential_continuous hv hb hl hT ht hbs hB hF).aestronglyMeasurable.prodMk hup.1)
+      ((differential_continuous hv hb hl hT ht hbs hB hF).aestronglyMeasurable.prodMk hup.aestronglyMeasurable)
   apply Integrable.mono' (((hup.integrable (by norm_num)).norm).const_mul ((L:ℝ)*Real.exp ((K:ℝ)*t))) hm
   filter_upwards [] with q
   have hJ := (boundedFlow_hasFDerivAt_and_norm_of_boundedSmooth hv hb hl hbs hB hT q.2 q.1 ht).2

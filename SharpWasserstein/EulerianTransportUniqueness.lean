@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerianTransportEquation
-import SharpWasserstein.SmoothBoundedCharacteristic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerianTransportEquation
+public import SharpWasserstein.SmoothBoundedCharacteristic
+
+@[expose] public section
 
 /-! Uniqueness of the genuine zero-diffusion weak continuity equation.
 Deterministic Euler characteristic tests are constructed explicitly, their

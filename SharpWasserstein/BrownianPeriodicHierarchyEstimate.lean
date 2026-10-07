@@ -1,7 +1,12 @@
-import SharpWasserstein.BrownianPeriodicHierarchyRecovery
-import SharpWasserstein.BrownianPeriodicHierarchyReindex
-import SharpWasserstein.BrownianPeriodicHierarchyConstants
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionHierarchy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianPeriodicHierarchyRecovery
+public import SharpWasserstein.BrownianPeriodicHierarchyReindex
+public import SharpWasserstein.BrownianPeriodicHierarchyConstants
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionHierarchy
+
+@[expose] public section
 
 /-! The proved Brownian finite coefficient inequality, expressed for the
 canonical exhaustion energies and genuine consecutive particle levels. -/

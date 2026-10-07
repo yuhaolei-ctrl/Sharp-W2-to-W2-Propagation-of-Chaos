@@ -1,5 +1,10 @@
-import Mathlib.MeasureTheory.Measure.LevyProkhorovMetric
-import Mathlib.Topology.ContinuousMap.Bounded.Normed
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.MeasureTheory.Measure.LevyProkhorovMetric
+public import Mathlib.Topology.ContinuousMap.Bounded.Normed
+
+@[expose] public section
 
 /-! Quantitative control of bounded Lipschitz observables by the actual
 Lévy–Prokhorov distance, for uniform families of weak tests. -/

@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianSpaceTimeEquation
-import SharpWasserstein.RoughEulerianTimeActionCurveEnergy
-import SharpWasserstein.RoughEulerianTransportJointRegularity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSpaceTimeEquation
+public import SharpWasserstein.RoughEulerianTimeActionCurveEnergy
+public import SharpWasserstein.RoughEulerianTransportJointRegularity
+
+@[expose] public section
 
 /-! The actual jointly smoothed probability curve satisfies the coefficient-one
 finite-action transport estimate. The original rough flux equation is the only

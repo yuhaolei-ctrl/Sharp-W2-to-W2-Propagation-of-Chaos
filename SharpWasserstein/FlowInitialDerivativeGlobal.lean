@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowInitialDerivative
-import SharpWasserstein.FlowSemigroup
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowInitialDerivative
+public import SharpWasserstein.FlowSemigroup
+
+@[expose] public section
 
 /-! Global finite-horizon initial-value differentiability, obtained by composing
 the constructed short-time differentiable flows. The sharp derivative bound

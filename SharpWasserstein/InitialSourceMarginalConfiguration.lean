@@ -1,6 +1,11 @@
-import SharpWasserstein.InitialSourceMarginalPairing
-import SharpWasserstein.InitialSourcePermutation
-import SharpWasserstein.PeriodicParticleTangentLimitMarginal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.InitialSourceMarginalPairing
+public import SharpWasserstein.InitialSourcePermutation
+public import SharpWasserstein.PeriodicParticleTangentLimitMarginal
+
+@[expose] public section
 
 /-! Particle-coordinate marginals of the actual full discrepancy source.
 The source is defined by projecting its canonical tangent, and then identified
@@ -62,9 +67,9 @@ theorem initialCurrent_memLp (hN : 0 < N)
     change nonlinearDrift b q (x i) a - particleDrift b x i a = _
     linarith
   apply memLp_euclideanFlux μ
-  · apply measurable_pi_lambda
+  · apply Measurable.of_eval
     intro i
-    apply measurable_pi_lambda
+    apply Measurable.of_eval
     intro a
     simp_rw [he]
     exact measurable_const.mul (measurable_internalScalarCurrent (r := q)

@@ -1,4 +1,9 @@
-import SharpWasserstein.FlowJacobianContinuityLocal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianContinuityLocal
+
+@[expose] public section
 
 /-! Joint continuity of the genuine initial Jacobian for arbitrary finite
 horizons, obtained by composing the actual short-interval flows. -/

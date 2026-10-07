@@ -1,4 +1,9 @@
-import SharpWasserstein.PropagatedSourceEquationDifferentiation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquationDifferentiation
+
+@[expose] public section
 
 /-! Integrating the differentiated primal identity against a genuine L²
 initial vector field, with joint measurability and time Fubini proved. -/
@@ -28,7 +33,7 @@ theorem integrable_initial_pairing
     ((clampedExpectation_fderiv_measurable hv hb hl hT ξ hF.continuous hC).comp
     (measurable_const.prodMk measurable_id)).aestronglyMeasurable
   apply Integrable.mono' ((hu.integrable (by norm_num)).norm.const_mul ((L:ℝ)*Real.exp ((K:ℝ)*T)))
-    ((continuous_fst.clm_apply continuous_snd).comp_aestronglyMeasurable (hm.prodMk hu.1))
+    ((continuous_fst.clm_apply continuous_snd).comp_aestronglyMeasurable (hm.prodMk hu.aestronglyMeasurable))
   exact Eventually.of_forall (fun x => (ContinuousLinearMap.le_opNorm _ _).trans
     (mul_le_mul_of_nonneg_right
       (clampedExpectation_fderiv_norm_le hv hb hl hT ξ hbs hB hF hC hL r x) (norm_nonneg _)))
@@ -50,7 +55,7 @@ theorem integrable_time_initial_pairing
       ((volume.restrict (uIoc s t)).prod μ) :=
     (clampedExpectation_fderiv_measurable hv hb hl hT ξ hF.continuous hC).aestronglyMeasurable
   apply Integrable.mono' ((hup.integrable (by norm_num)).norm.const_mul ((L:ℝ)*Real.exp ((K:ℝ)*T)))
-    ((continuous_fst.clm_apply continuous_snd).comp_aestronglyMeasurable (hm.prodMk hup.1))
+    ((continuous_fst.clm_apply continuous_snd).comp_aestronglyMeasurable (hm.prodMk hup.aestronglyMeasurable))
   exact Eventually.of_forall (fun q => (ContinuousLinearMap.le_opNorm _ _).trans
     (mul_le_mul_of_nonneg_right
       (clampedExpectation_fderiv_norm_le hv hb hl hT ξ hbs hB hF hC hL q.1 q.2) (norm_nonneg _)))

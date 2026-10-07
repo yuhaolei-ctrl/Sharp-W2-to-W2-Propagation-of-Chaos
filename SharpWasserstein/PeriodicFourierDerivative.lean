@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicFourierTests
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicFourierTests
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 
 /-! Genuine periodic derivative identities for Fourier coefficients, obtained
 from integration by parts on the actual fundamental cube. These are the

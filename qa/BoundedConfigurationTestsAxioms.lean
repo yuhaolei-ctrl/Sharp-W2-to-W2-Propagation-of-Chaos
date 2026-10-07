@@ -1,5 +1,0 @@
-import SharpWasserstein.BoundedConfigurationTests
-#print axioms SharpWasserstein.allDerivativesBounded_euclideanTest
-#print axioms SharpWasserstein.euclidean_bounds_of_allDerivativesBounded
-#print axioms SharpWasserstein.WeakEvolution.equation_bounded_configuration
-#print axioms SharpWasserstein.FrozenGaussian.timeExpectation_sub_eq_integral_bounded_configuration

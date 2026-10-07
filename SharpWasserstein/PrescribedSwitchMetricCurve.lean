@@ -1,5 +1,10 @@
-import SharpWasserstein.SwitchCurveProperties
-import SharpWasserstein.GeometricEndpointLength
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchCurveProperties
+public import SharpWasserstein.GeometricEndpointLength
+
+@[expose] public section
 
 /-! The actual switch marginal as a continuous curve in the quadratic
 transport pseudometric. Its distance uses the manuscript's unnormalized

@@ -1,4 +1,9 @@
-import SharpWasserstein.ExternalInteractionGradient
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionGradient
+
+@[expose] public section
 
 /-! Exact lifted external-Hessian cancellation. The remaining diagonal term is
 the actual first-argument derivative of the original interaction kernel. -/
@@ -19,6 +24,8 @@ def externalMap : Point (m*d+d) →L[ℝ] Position d where
   map_add' x y := rfl
   map_smul' c x := rfl
   cont := by unfold externalPosition; fun_prop
+
+theorem externalMap_apply (z : Point (m*d+d)) : externalMap z = externalPosition z := rfl
 
 /-- The genuine full Jacobian of the assembled external-force field. -/
 def forceDerivative (b : Position d → Position d → Position d) (z : Point (m*d+d)) :
@@ -53,7 +60,7 @@ theorem uncurry_fderiv_first {b : Position d → Position d → Position d}
 theorem externalMap_prefixEmbedding (w : Point (m*d)) :
     externalMap (prefixEmbedding (m*d) d w) = (0 : Position d) := by
   ext a
-  simp [externalMap,externalPosition,suffixProjection,prefixEmbedding]
+  simp [externalMap_apply,externalPosition,suffixProjection_apply,prefixEmbedding]
 
 /-- The derivative in a lifted marginal direction is the actual block-diagonal
 first-argument kernel derivative. -/
@@ -71,7 +78,7 @@ theorem force_fderiv_prefixEmbedding {b : Position d → Position d → Position
     (positionMap i (prefixEmbedding (m*d) d w),externalMap (prefixEmbedding (m*d) d w)) = _
   rw [externalMap_prefixEmbedding]
   have hp : positionMap i (prefixEmbedding (m*d) d w) = (configurationEuclidean d m).symm w i := by
-    simp [positionMap]
+    simp [positionMap, prefixEmbedding, prefixProjection_apply]
   rw [hp,uncurry_fderiv_first hb]
 
 /-- The diagonal term is a genuine coordinate sum of `D₁b`, with no Hessian. -/

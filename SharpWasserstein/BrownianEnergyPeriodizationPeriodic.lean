@@ -1,6 +1,11 @@
-import SharpWasserstein.BrownianEnergyPeriodizationLimit
-import SharpWasserstein.BrownianEnergyPeriodizationExhaustion
-import SharpWasserstein.BrownianPeriodicHierarchyInitial
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianEnergyPeriodizationLimit
+public import SharpWasserstein.BrownianEnergyPeriodizationExhaustion
+public import SharpWasserstein.BrownianPeriodicHierarchyInitial
+
+@[expose] public section
 
 /-! A fixed smooth periodic interaction kernel propagates the sharp profile
 in the full Euclidean tangent space. The proved Brownian periodic hierarchy

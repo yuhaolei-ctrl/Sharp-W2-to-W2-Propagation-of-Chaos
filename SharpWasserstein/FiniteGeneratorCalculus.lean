@@ -1,6 +1,11 @@
-import SharpWasserstein.FiniteGradientTrialDiffusion
-import SharpWasserstein.BoundedWeakTests
-import SharpWasserstein.WeightedPeriodicCoefficientEvolution
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteGradientTrialDiffusion
+public import SharpWasserstein.BoundedWeakTests
+public import SharpWasserstein.WeightedPeriodicCoefficientEvolution
+
+@[expose] public section
 
 /-! Exact finite-sum calculus for the actual Euclidean generator, used to
 identify the differentiated coefficient energy with its literal diffusion

@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicFourierDerivative
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicFourierDerivative
+
+@[expose] public section
 
 /-! Concrete real Fourier partial sums with differentiation compatibility.
 All coefficients are the actual fundamental-cube integrals. -/

@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicSourceConvolutionTime
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicSourceConvolutionTime
+
+@[expose] public section
 
 /-! Actual scalar Gram coefficients for a weighted Fourier/Galerkin problem.
 All derivatives of gradient products are proved bounded from those of the

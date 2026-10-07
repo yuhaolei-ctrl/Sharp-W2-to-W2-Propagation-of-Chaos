@@ -1,6 +1,11 @@
-import SharpWasserstein.FlowMoments
-import SharpWasserstein.EuclideanFlow
-import SharpWasserstein.RandomMapTransport
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowMoments
+public import SharpWasserstein.EuclideanFlow
+public import SharpWasserstein.RandomMapTransport
+
+@[expose] public section
 
 /-! Constructed particle solution maps, probability laws, moment propagation,
 and genuine Wasserstein stability. Brownian distributional properties and

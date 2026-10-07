@@ -1,6 +1,11 @@
-import SharpWasserstein.SwitchSourceBrownianPairing
-import SharpWasserstein.SwitchSourceDerivativePrescribed
-import SharpWasserstein.PeriodicParticleTangentLimitFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceBrownianPairing
+public import SharpWasserstein.SwitchSourceDerivativePrescribed
+public import SharpWasserstein.PeriodicParticleTangentLimitFlow
+
+@[expose] public section
 
 /-! The prescribed switch curve's scalar derivative is its actual Euclidean
 Brownian propagated reference-minus-particle current. All L² hypotheses for
@@ -60,7 +65,9 @@ theorem prescribedBrownianSource_pairing {s : ℝ} (hs : s ∈ Icc 0 T) (φ : Te
   rw [Brownian.sourceAt_configuration_pairing (M := NNReal.mk M hM)
     ((particleDrift_lipschitz hN hb hbound hL₁ hL₂).continuous.comp continuous_snd)
     (fun _ => particleDrift_norm_bound hN hbound hM) (fun _ => particleDrift_lipschitz hN hb hbound hL₁ hL₂)
-    _ _ _ hT (particleDrift_smooth hb) (particleDrift_allDerivativesBounded hb) _ _
+    ((drift_lipschitz hN hb hbound hL₁ hL₂).continuous.comp continuous_snd)
+    (fun _ => drift_norm_le hN hbound hM) (fun _ => drift_lipschitz hN hb hbound hL₁ hL₂)
+    hT (particleDrift_smooth hb) (particleDrift_allDerivativesBounded hb) _ _
     (show T-s ∈ Icc 0 T from ⟨sub_nonneg.mpr hs.2,sub_le_self _ hs.1⟩)]
   rw [prescribedSourcePairing_eq_current hN hb hbound hM hL₁ hL₂ hμ hT P _ hs.1]
   have he := clampedExpectation_of_mem (M := NNReal.mk M hM)

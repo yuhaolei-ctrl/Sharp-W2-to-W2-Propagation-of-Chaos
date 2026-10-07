@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTimePrimitive
-import Mathlib.Analysis.Calculus.ParametricIntegral
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimePrimitive
+public import Mathlib.Analysis.Calculus.ParametricIntegral
+
+@[expose] public section
 
 /-! Differentiating an actual time convolution of a continuous weak curve.
 The original source is only integrable. Its convolution is proved to be the

@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicHessianBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicHessianBounds
+
+@[expose] public section
 
 /-! Actual scalar test values, derivatives, and vector coordinates in the
 fundamental cube's `L²` spaces. These maps make the distributional Hessian

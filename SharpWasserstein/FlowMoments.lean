@@ -1,7 +1,12 @@
-import SharpWasserstein.BoundedFlow
-import SharpWasserstein.ConfigurationEuclidean
-import SharpWasserstein.TransportMoments
-import Mathlib.MeasureTheory.Function.L2Space
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedFlow
+public import SharpWasserstein.ConfigurationEuclidean
+public import SharpWasserstein.TransportMoments
+public import Mathlib.MeasureTheory.Function.L2Space
+
+@[expose] public section
 
 /-! Moment propagation for the actual continuous-forcing trajectories. The
 noise needs only a second moment at the time in question, not a moment of its
@@ -49,7 +54,7 @@ theorem hasSecondMoment_map_of_memLp {Ω : Type*} [MeasurableSpace Ω]
     {P : Measure Ω} {d N : ℕ} {F : Ω → Configuration d N}
     (hF : Measurable F) (h₂ : MemLp F 2 P) : HasSecondMoment (Measure.map F P) := by
   have hE := (configurationEuclidean d N).toContinuousLinearMap.comp_memLp' h₂
-  have hI := (memLp_two_iff_integrable_sq_norm hE.1).mp hE
+  have hI := (memLp_two_iff_integrable_sq_norm hE.aestronglyMeasurable).mp hE
   unfold HasSecondMoment
   rw [lintegral_map measurable_secondMoment hF]
   have hI' : Integrable (fun ω => productCost (F ω) 0) P := by

@@ -1,6 +1,11 @@
-import SharpWasserstein.EntropyKL
-import Mathlib.MeasureTheory.Function.ConditionalExpectation.CondJensen
-import Mathlib.MeasureTheory.Function.ConditionalExpectation.RadonNikodym
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyKL
+public import Mathlib.MeasureTheory.Function.ConditionalExpectation.CondJensen
+public import Mathlib.MeasureTheory.Function.ConditionalExpectation.RadonNikodym
+
+@[expose] public section
 
 /-!
 # Relative entropy decreases under measurable maps

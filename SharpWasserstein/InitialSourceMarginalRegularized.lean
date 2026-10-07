@@ -1,6 +1,11 @@
-import SharpWasserstein.InitialSourceMarginalCurrent
-import SharpWasserstein.InitialSourceMarginalPrefix
-import SharpWasserstein.RegularizedSourceRates
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.InitialSourceMarginalCurrent
+public import SharpWasserstein.InitialSourceMarginalPrefix
+public import SharpWasserstein.RegularizedSourceRates
+
+@[expose] public section
 
 /-! One regularized full discrepancy distribution has the sharp all-level
 initial energy profile. Marginal compatibility is proved from its actual

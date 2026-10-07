@@ -1,6 +1,11 @@
-import SharpWasserstein.PDEPairings
-import SharpWasserstein.HierarchyAlgebra
-import Mathlib.Analysis.Calculus.FDeriv.Symmetric
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PDEPairings
+public import SharpWasserstein.HierarchyAlgebra
+public import Mathlib.Analysis.Calculus.FDeriv.Symmetric
+
+@[expose] public section
 
 /-! Genuine Euclidean differential identities behind the tangent-energy dissipation.
 The Hessian is built from actual derivatives; its symmetry follows from `C²`

@@ -1,5 +1,10 @@
-import SharpWasserstein.ExternalInteractionGradientCancellation
-import SharpWasserstein.PointwiseTrajectory
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionGradientCancellation
+public import SharpWasserstein.PointwiseTrajectory
+
+@[expose] public section
 
 /-! Actual joint-law external energy estimates. The measure can be any weighted
 law, including a density against periodic volume. The fluctuation is the literal

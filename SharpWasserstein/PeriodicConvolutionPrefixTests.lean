@@ -1,7 +1,12 @@
-import SharpWasserstein.PeriodicConvolutionMarginal
-import SharpWasserstein.PeriodicConvolutionApproximation
-import SharpWasserstein.PeriodicFluxPairing
-import SharpWasserstein.WeightedMarginal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicConvolutionMarginal
+public import SharpWasserstein.PeriodicConvolutionApproximation
+public import SharpWasserstein.PeriodicFluxPairing
+public import SharpWasserstein.WeightedMarginal
+
+@[expose] public section
 
 /-! Product-kernel averaging of actual cylinder tests commutes with prefix
 projection and Euclidean zero-extension. These identities preserve genuine

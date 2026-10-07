@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedTangent
-import SharpWasserstein.SmoothCutoff
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangent
+public import SharpWasserstein.SmoothCutoff
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 
 /-! Actual dominated `L²` convergence for Euclidean vector fields, and its
 application to membership in the closed space of compact smooth gradients.
@@ -27,7 +32,7 @@ theorem tendsto_toLp_of_bounded_pointwise
   have hsq : Tendsto (fun n => ∫ x, ‖fs n x - f x‖ ^ 2 ∂μ) atTop (𝓝 0) := by
     have h := tendsto_integral_of_dominated_convergence (μ := μ) (fun _ : Point d => (2 * C) ^ 2)
       (F := fun n x => ‖fs n x - f x‖ ^ 2) (f := fun _ => (0 : ℝ))
-      (fun n => ((hfs n).1.sub hf.1).norm.pow 2) (integrable_const _) ?_ ?_
+      (fun n => ((hfs n).aestronglyMeasurable.sub hf.aestronglyMeasurable).norm.pow 2) (integrable_const _) ?_ ?_
     · simpa using h
     · intro n
       filter_upwards [] with x

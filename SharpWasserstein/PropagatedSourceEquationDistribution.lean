@@ -1,4 +1,9 @@
-import SharpWasserstein.PropagatedSourceEquation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquation
+
+@[expose] public section
 
 /-! The actual Brownian-propagated finite-energy distribution: initial value,
 weak homogeneous evolution, and the full Euclidean energy estimate. -/

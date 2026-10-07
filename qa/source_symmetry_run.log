@@ -1,4 +1,0 @@
-PropagatedSourcePermutation 0
-PropagatedSourcePermutationParticle 0
-WeightedSourceSymmetry 0
-PASS: 3 modules, 24 declarations, ['Classical.choice', 'Quot.sound', 'propext']

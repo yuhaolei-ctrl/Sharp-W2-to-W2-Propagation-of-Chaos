@@ -1,5 +1,10 @@
-import SharpWasserstein.PrescribedSwitchMetricCurve
-import SharpWasserstein.PrescribedSwitchMarginalSourceContinuity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedSwitchMetricCurve
+public import SharpWasserstein.PrescribedSwitchMarginalSourceContinuity
+
+@[expose] public section
 
 /-! Exact identification of the Eulerian Euclidean marginal and the actual
 configuration transport curve, with every needed P₂ hypothesis derived from

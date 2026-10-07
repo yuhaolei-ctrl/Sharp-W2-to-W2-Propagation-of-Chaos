@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicTorusBridge
-import Mathlib.Analysis.Calculus.MeanValue
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicTorusBridge
+public import Mathlib.Analysis.Calculus.MeanValue
+
+@[expose] public section
 
 /-! Global derivative bounds for actual smooth coordinate-periodic functions.
 Compactness belongs to the genuine quotient torus, with explicit descent. -/

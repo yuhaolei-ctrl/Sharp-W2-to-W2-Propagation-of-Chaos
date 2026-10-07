@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowSemigroup
-import SharpWasserstein.BrownianFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowSemigroup
+public import SharpWasserstein.BrownianFlow
+
+@[expose] public section
 
 /-! The Markov semigroup identity for the actually constructed autonomous
 Brownian flow, obtained from independent path increments and pathwise flow

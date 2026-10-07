@@ -1,3 +1,5 @@
-.lake/
+/.cache/
+/.lake/
+/docbuild/.lake/
 __pycache__/
 *.pyc

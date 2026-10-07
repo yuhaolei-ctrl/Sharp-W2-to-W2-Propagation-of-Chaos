@@ -1,6 +1,12 @@
-import SharpWasserstein.EntropyObservableVector
-import Mathlib.InformationTheory.KullbackLeibler.ChainRule
-import Mathlib.Probability.Kernel.CompProdEqIff
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyObservableVector
+public import Mathlib.InformationTheory.KullbackLeibler.ChainRule
+public import Mathlib.Probability.Kernel.CompProdEqIff
+public import Mathlib.Probability.Kernel.Composition.WithDensity
+
+@[expose] public section
 
 /-!
 # Integrated conditional relative entropy

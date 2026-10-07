@@ -1,5 +1,10 @@
-import SharpWasserstein.WeakTimeBackwardStep
-import SharpWasserstein.GaussianTimeBackward
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakTimeBackwardStep
+public import SharpWasserstein.GaussianTimeBackward
+
+@[expose] public section
 
 /-! Discrete backward comparison for arbitrary time-dependent weak solutions.
 All tests are genuine Gaussian Euler expectations with the correct drift

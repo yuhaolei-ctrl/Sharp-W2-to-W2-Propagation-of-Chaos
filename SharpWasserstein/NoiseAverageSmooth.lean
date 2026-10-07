@@ -1,4 +1,9 @@
-import SharpWasserstein.NoiseAverageDerivatives
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.NoiseAverageDerivatives
+
+@[expose] public section
 
 /-! Probability translation averages preserve actual smoothness of every order
 and global bounds on all iterated Fréchet derivatives. This is a dominated

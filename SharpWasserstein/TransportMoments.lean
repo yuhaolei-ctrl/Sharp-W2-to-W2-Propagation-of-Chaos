@@ -1,5 +1,10 @@
-import SharpWasserstein.Transport
-import Mathlib.Tactic.Linarith
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.Transport
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 
 /-! Finite-cost probability couplings for the actual transport infimum.
 This proves finiteness on P₂; the gluing and metric triangle arguments remain open. -/

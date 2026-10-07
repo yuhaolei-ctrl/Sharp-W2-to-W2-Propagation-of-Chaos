@@ -1,7 +1,12 @@
-import SharpWasserstein.BrownianFlowWeak
-import SharpWasserstein.BrownianDecoupledFlow
-import SharpWasserstein.NonlinearDriftContinuity
-import SharpWasserstein.WeakEvolutionContinuity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianFlowWeak
+public import SharpWasserstein.BrownianDecoupledFlow
+public import SharpWasserstein.NonlinearDriftContinuity
+public import SharpWasserstein.WeakEvolutionContinuity
+
+@[expose] public section
 
 /-! Prescribed mean-field reference drifts, using the actual narrow continuity
 of a supplied limit weak evolution. The constructed reference evolution is
@@ -86,13 +91,13 @@ theorem singleDrift_continuous : Continuous (Function.uncurry (singleDrift (b :=
   nonlinearDrift_continuous_curve hb hbound hL₁ (IsLimitEvolution.continuous_probabilityCurve hμ)
 
 include hbound hμ in
-theorem singleDrift_bound : ∀ t x, ‖singleDrift (b := b) (μ := μ) t x‖ ≤ (⟨M,hM⟩ : ℝ≥0) := by
+theorem singleDrift_bound : ∀ t x, ‖singleDrift (b := b) (μ := μ) t x‖ ≤ NNReal.mk M hM := by
   intro t x
   letI := hμ.1 (max 0 t) (le_max_left _ _)
   exact nonlinearDrift_bound hbound (μ (max 0 t)) x
 
 include hb hbound hμ in
-theorem singleDrift_lipschitz : ∀ t, LipschitzWith (⟨L₁,hL₁⟩ : ℝ≥0) (singleDrift (b := b) (μ := μ) t) := by
+theorem singleDrift_lipschitz : ∀ t, LipschitzWith (NNReal.mk L₁ hL₁) (singleDrift (b := b) (μ := μ) t) := by
   intro t
   letI := hμ.1 (max 0 t) (le_max_left _ _)
   exact nonlinearDrift_lipschitz hb hbound hL₁ (μ (max 0 t))

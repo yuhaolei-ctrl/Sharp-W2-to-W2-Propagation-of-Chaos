@@ -1,5 +1,10 @@
-import SharpWasserstein.NoiseAverageDerivatives
-import Mathlib.Analysis.Normed.Operator.Mul
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.NoiseAverageDerivatives
+public import Mathlib.Analysis.Normed.Operator.Mul
+
+@[expose] public section
 
 /-! Quantitative chain-rule bounds for genuine Fréchet derivatives. -/
 noncomputable section

@@ -1,5 +1,10 @@
-import SharpWasserstein.InitialSourceMarginalComposition
-import SharpWasserstein.InitialSourceMarginalConfiguration
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.InitialSourceMarginalComposition
+public import SharpWasserstein.InitialSourceMarginalConfiguration
+
+@[expose] public section
 
 /-! Exact identification with the existing prefix `marginalDistribution`.
 Only the arithmetic dimension reindexing N*d = k*d+(N-k)*d is used; all

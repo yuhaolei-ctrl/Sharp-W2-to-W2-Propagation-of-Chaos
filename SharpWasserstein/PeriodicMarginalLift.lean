@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicConvolutionMarginal
-import SharpWasserstein.PeriodicOptimizerProducts
-import SharpWasserstein.WeightedMarginal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicConvolutionMarginal
+public import SharpWasserstein.PeriodicOptimizerProducts
+public import SharpWasserstein.WeightedMarginal
+
+@[expose] public section
 
 /-! Actual prefix lifting for periodic gradient fields on the product cube.
 The reference measure, Euclidean zero-extension, and L² isometry are derived
@@ -73,7 +78,7 @@ theorem liftLinear_norm (u : Lp (Point n) 2 (cubePoint (n := n))) :
     _ = ‖Lp.compMeasurePreserving (prefixProjection n m) prefix_measurePreserving u‖ := by
       simp only [Lp.norm_def]
       congr 1
-      exact eLpNorm_congr_norm_ae hn
+      exact eLpNorm_congr_norm_ae (Lp.aestronglyMeasurable _) (Lp.aestronglyMeasurable _) hn
     _ = _ := Lp.norm_compMeasurePreserving _ _
 
 def lift : Lp (Point n) 2 (cubePoint (n := n)) →ₗᵢ[ℝ]

@@ -1,5 +1,10 @@
-import SharpWasserstein.UniformBoundedDerivatives
-import SharpWasserstein.PrescribedReference
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.UniformBoundedDerivatives
+public import SharpWasserstein.PrescribedReference
+
+@[expose] public section
 
 /-! Spatial smoothness and uniform derivative bounds for the actual averaged
 reference drift, derived from the manuscript's kernel for arbitrary probability

@@ -1,4 +1,9 @@
-import SharpWasserstein.ExternalInteractionEnergy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionEnergy
+
+@[expose] public section
 
 /-! Separation of the actual external flux into a lifted marginal cancellation
 and an L² fluctuation. Integrability follows from the literal field energies. -/

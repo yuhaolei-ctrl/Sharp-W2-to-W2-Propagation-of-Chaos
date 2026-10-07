@@ -1,4 +1,9 @@
-import SharpWasserstein.FrozenGaussianLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGaussianLaw
+
+@[expose] public section
 
 /-! Uniform Lipschitz control of the frozen generators, obtained from genuine
 bounded derivatives of compact smooth tests. -/

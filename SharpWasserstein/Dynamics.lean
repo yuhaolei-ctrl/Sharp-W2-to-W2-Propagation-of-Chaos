@@ -1,6 +1,11 @@
-import SharpWasserstein.Transport
-import Mathlib.Analysis.Calculus.ContDiff.Defs
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.Transport
+public import Mathlib.Analysis.Calculus.ContDiff.Defs
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+
+@[expose] public section
 
 /-! Concrete analytic target of the manuscript. `MainTheorem` below is a
 proposition to be proved, NOT a theorem or an axiom. Weak Fokker--Planck

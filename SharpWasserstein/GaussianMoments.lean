@@ -1,4 +1,9 @@
-import SharpWasserstein.GaussianCovariance
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianCovariance
+
+@[expose] public section
 
 /-! Exact means and covariances of the Gaussian sharpness construction. -/
 

@@ -1,7 +1,0 @@
-import SharpWasserstein.WeakDerivativeLimit
-#print axioms SharpWasserstein.WeakDerivativeLimit.testClosure
-#print axioms SharpWasserstein.WeakDerivativeLimit.intoClosure
-#print axioms SharpWasserstein.WeakDerivativeLimit.dense_intoClosure
-#print axioms SharpWasserstein.WeakDerivativeLimit.exists_representative_of_bound
-#print axioms SharpWasserstein.WeakDerivativeLimit.distribution
-#print axioms SharpWasserstein.WeakDerivativeLimit.exists_weakDerivative_of_strong_limit

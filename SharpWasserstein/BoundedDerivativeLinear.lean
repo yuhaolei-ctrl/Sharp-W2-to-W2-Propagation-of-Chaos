@@ -1,4 +1,9 @@
-import SharpWasserstein.BoundedDerivativeComposition
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedDerivativeComposition
+
+@[expose] public section
 
 /-! Finite sums and linear coordinate changes preserve actual bounded
 derivatives of every order. -/

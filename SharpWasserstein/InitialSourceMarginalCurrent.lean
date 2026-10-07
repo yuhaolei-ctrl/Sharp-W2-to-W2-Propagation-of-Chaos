@@ -1,4 +1,9 @@
-import SharpWasserstein.InitialSourceMarginalConfiguration
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.InitialSourceMarginalConfiguration
+
+@[expose] public section
 
 /-! The tested reference-minus-particle current disintegrates to the genuine
 conditional marginal drift. Exchangeability is used only in the already proved

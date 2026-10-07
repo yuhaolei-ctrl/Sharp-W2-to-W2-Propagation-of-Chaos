@@ -1,4 +1,9 @@
-import SharpWasserstein.ExternalInteractionPeriodic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionPeriodic
+
+@[expose] public section
 
 /-! Genuine periodic interaction kernels remain periodic at every positive
 integer multiple of their physical period. This is used before recovering

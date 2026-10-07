@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTimeActionCurve
-import SharpWasserstein.RoughEulerianTransportRegularCoordinates
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeActionCurve
+public import SharpWasserstein.RoughEulerianTransportRegularCoordinates
+
+@[expose] public section
 
 /-! Exact local-time action and genuine configuration second moments for the
 constructed clamped smoothing curve. These are the quantitative inputs of

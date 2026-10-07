@@ -1,7 +1,12 @@
-import SharpWasserstein.Dynamics
-import SharpWasserstein.ExchangeableConditionalSource
-import SharpWasserstein.InternalSourceProfile
-import Mathlib.MeasureTheory.SpecificCodomains.Pi
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.Dynamics
+public import SharpWasserstein.ExchangeableConditionalSource
+public import SharpWasserstein.InternalSourceProfile
+public import Mathlib.MeasureTheory.SpecificCodomains.Pi
+
+@[expose] public section
 
 /-! Actual marginal particle currents from exchangeability and disintegration.
 The full particle drift retains self-interaction. Its tested conditional current
@@ -39,7 +44,7 @@ theorem map_particleObservation_external {d m N : ℕ} (hm : m < N)
   let a : Fin N := ⟨m, hm⟩
   let e := Equiv.swap a j
   have he : Measurable (fun x : Configuration d N => fun i => x (e i)) :=
-    measurable_pi_lambda _ (fun i => measurable_pi_apply (e i))
+    Measurable.of_eval (fun i => measurable_pi_apply (e i))
   have hfun : particleObservation hm.le a ∘ (fun x : Configuration d N => fun i => x (e i)) =
       particleObservation hm.le j := by
     funext x

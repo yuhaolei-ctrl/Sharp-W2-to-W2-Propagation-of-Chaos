@@ -1,5 +1,10 @@
-import SharpWasserstein.PropagatedSourcePermutation
-import SharpWasserstein.ParticleWeakIdentification
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourcePermutation
+public import SharpWasserstein.ParticleWeakIdentification
+
+@[expose] public section
 
 /-! The actual independent Brownian path law and self-interacting particle
 vector field satisfy the source covariance hypotheses in genuine Euclidean

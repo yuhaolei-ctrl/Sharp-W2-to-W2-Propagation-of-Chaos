@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionPhysical
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionPhysical
+
+@[expose] public section
 
 /-! The actual carrying-law part of the marginal coefficient equations.
 External labels are averaged using the genuine exchangeable full law, so

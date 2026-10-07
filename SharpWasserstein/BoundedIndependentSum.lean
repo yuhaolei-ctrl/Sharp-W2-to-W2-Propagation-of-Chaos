@@ -1,4 +1,9 @@
-import SharpWasserstein.SubGaussianSquare
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SubGaussianSquare
+
+@[expose] public section
 
 /-!
 # Bounded independent sums under a finite product law
@@ -34,8 +39,8 @@ theorem centeredProductSum_subGaussian {A ι : Type*} [MeasurableSpace A] [Finty
       change (‖M - -M‖ / 2) ^ 2 = M ^ 2
       rw [Real.norm_eq_abs, abs_of_nonneg (by linarith : 0 ≤ M - -M)]
       ring
-    convert h using 1
-    exact hc.symm
+    rw [← hc]
+    exact h
   have hcoord (i : ι) : HasSubgaussianMGF
       (fun x : ι → A ↦ f i (x i) - ∫ z, f i z ∂r) ⟨M ^ 2, sq_nonneg M⟩
       (Measure.pi fun _ : ι ↦ r) := by
@@ -51,8 +56,9 @@ theorem centeredProductSum_subGaussian {A ι : Type*} [MeasurableSpace A] [Finty
       (Measure.pi fun _ : ι ↦ r) :=
     iIndepFun_pi (fun i ↦ ((hf i).sub measurable_const).aemeasurable)
   change HasSubgaussianMGF (fun x : ι → A ↦ ∑ i, (f i (x i) - ∫ z, f i z ∂r)) _ _
-  simpa only [Finset.sum_const, Finset.card_univ, nsmul_eq_mul] using
-    HasSubgaussianMGF.sum_of_iIndepFun (s := Finset.univ) hind (fun i _ ↦ hcoord i)
+  have hsum := HasSubgaussianMGF.sum_of_iIndepFun (s := Finset.univ)
+    (c := fun _ ↦ NNReal.mk (M ^ 2) (sq_nonneg M)) hind (fun i _ ↦ hcoord i)
+  rwa [Finset.sum_const, Finset.card_univ, nsmul_eq_mul] at hsum
 
 theorem integral_bounded_observable_abs_le {A : Type*} [MeasurableSpace A]
     {r : Measure A} [IsProbabilityMeasure r] {f : A → ℝ} {M : ℝ}

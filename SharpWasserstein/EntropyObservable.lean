@@ -1,5 +1,10 @@
-import SharpWasserstein.EntropyVariational
-import Mathlib.Probability.Moments.SubGaussian
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyVariational
+public import Mathlib.Probability.Moments.SubGaussian
+
+@[expose] public section
 
 /-!
 # Bounded-observable Pinsker inequalities

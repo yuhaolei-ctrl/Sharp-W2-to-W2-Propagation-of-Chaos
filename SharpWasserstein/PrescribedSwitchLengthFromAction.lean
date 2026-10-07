@@ -1,7 +1,12 @@
-import SharpWasserstein.RoughFiniteActionInterface
-import SharpWasserstein.PrescribedSwitchIntervalEnergy
-import SharpWasserstein.PrescribedSwitchMetricIdentification
-import SharpWasserstein.PrescribedSwitchCommonLabel
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughFiniteActionInterface
+public import SharpWasserstein.PrescribedSwitchIntervalEnergy
+public import SharpWasserstein.PrescribedSwitchMetricIdentification
+public import SharpWasserstein.PrescribedSwitchCommonLabel
+
+@[expose] public section
 
 /-! Exact reduction of the manuscript's interpolation length to the rough
 finite-action transport theorem. No source-energy, entropy, metric-continuity,

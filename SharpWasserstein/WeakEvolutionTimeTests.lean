@@ -1,7 +1,12 @@
-import SharpWasserstein.WeakEvolutionBoundedTests
-import Mathlib.MeasureTheory.Measure.FiniteMeasureProd
-import Mathlib.MeasureTheory.Measure.DiracProba
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakEvolutionBoundedTests
+public import Mathlib.MeasureTheory.Measure.FiniteMeasureProd
+public import Mathlib.MeasureTheory.Measure.DiracProba
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+
+@[expose] public section
 
 /-! Genuine time derivatives of bounded smooth observables of weak solutions.
 The time dependence of the generator expectation is justified by narrow

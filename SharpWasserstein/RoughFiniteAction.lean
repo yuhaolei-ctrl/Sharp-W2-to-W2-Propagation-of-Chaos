@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughFiniteActionEndpoint
-import SharpWasserstein.RoughUniformRegularizedTransport
-import SharpWasserstein.RoughFiniteActionInterface
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughFiniteActionEndpoint
+public import SharpWasserstein.RoughUniformRegularizedTransport
+public import SharpWasserstein.RoughFiniteActionInterface
+
+@[expose] public section
 
 /-! The uniform finite-action transport theorem is proved by actual
 compression, joint smoothing, the classical smooth-flow estimate, and two

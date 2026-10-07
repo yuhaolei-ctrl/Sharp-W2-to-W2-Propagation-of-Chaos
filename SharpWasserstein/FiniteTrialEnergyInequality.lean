@@ -1,4 +1,9 @@
-import SharpWasserstein.FiniteTrialEnergyEstimate
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteTrialEnergyEstimate
+
+@[expose] public section
 
 /-! The full finite coefficient energy inequality, retaining the negative
 Hessian term and isolating all auxiliary drift-supremum dependence in the
@@ -19,7 +24,7 @@ theorem jacobian_integral_le {f : Point n → ℝ}
       L*(∫ x,‖gradient f x‖^2 ∂μ) := by
   obtain ⟨B,hB,hBg⟩ := (WeightedPeriodicCoefficientEvolution.gradient_allDerivativesBounded hf hBf).bounded
   have hg := bounded_smooth_gradient_memLp μ f hf ⟨B,hBg⟩
-  have hgs := (memLp_two_iff_integrable_sq_norm hg.1).mp hg
+  have hgs := (memLp_two_iff_integrable_sq_norm hg.aestronglyMeasurable).mp hg
   have hi : Integrable (fun x => ⟪fderiv ℝ b x (gradient f x),gradient f x⟫_ℝ) μ := by
     apply Integrable.of_bound
       (((hb.continuous_fderiv (by simp)).clm_apply (smooth_gradient hf).continuous).inner

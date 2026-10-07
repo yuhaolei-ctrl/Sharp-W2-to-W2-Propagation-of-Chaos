@@ -1,3 +1,0 @@
-PeriodicFluxCommutator 0
-PeriodicFluxCommutatorLimit 0
-PASS: 2 modules, 10 declarations, ['Classical.choice', 'Quot.sound', 'propext']

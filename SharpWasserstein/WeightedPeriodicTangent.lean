@@ -1,4 +1,9 @@
-import SharpWasserstein.WeightedPeriodicFourierClosure
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicFourierClosure
+
+@[expose] public section
 
 /-! The genuine periodic tangent of an arbitrary finite-energy distribution.
 The periodic test action is the uniquely continuous extension obtained from

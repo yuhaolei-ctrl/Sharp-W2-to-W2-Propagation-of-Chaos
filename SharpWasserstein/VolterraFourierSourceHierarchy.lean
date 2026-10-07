@@ -1,4 +1,9 @@
-import SharpWasserstein.VolterraFourierSource
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.VolterraFourierSource
+
+@[expose] public section
 
 /-! The actual periodic variational source hierarchy is obtained from finite
 physical Fourier trial inequalities. Only full source finiteness, a coarse

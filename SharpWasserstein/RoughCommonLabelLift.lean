@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianTransportTimeMixture
-import SharpWasserstein.RoughEulerianCompressionEndpoint
-import SharpWasserstein.RoughEulerianCompressionEquation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportTimeMixture
+public import SharpWasserstein.RoughEulerianCompressionEndpoint
+public import SharpWasserstein.RoughEulerianCompressionEquation
+
+@[expose] public section
 
 /-! A genuine common-label realization and its actual quadratic continuity.
 This is independent curve data, not a transport conclusion or a choice of

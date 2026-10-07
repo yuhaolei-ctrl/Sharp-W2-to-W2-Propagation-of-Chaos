@@ -1,5 +1,10 @@
-import SharpWasserstein.SmoothCutoffSecondOrder
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SmoothCutoffSecondOrder
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 
 /-! Extension of actual compact-smooth weak evolution identities to bounded
 smooth tests with bounded first derivatives and Laplacian. The generator is

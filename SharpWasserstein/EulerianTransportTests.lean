@@ -1,4 +1,9 @@
-import SharpWasserstein.GaussianEulerBackwardSmooth
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEulerBackwardSmooth
+
+@[expose] public section
 
 /-! Deterministic backward Euler tests for the genuine zero-diffusion continuity
 operator. The maps are explicitly composed Euler characteristics; smoothness,

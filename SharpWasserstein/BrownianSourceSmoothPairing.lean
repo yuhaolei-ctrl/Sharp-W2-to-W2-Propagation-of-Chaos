@@ -1,5 +1,10 @@
-import SharpWasserstein.PropagatedFluxSmoothPairing
-import SharpWasserstein.WeightedPeriodicCoefficientEvolutionBrownian
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedFluxSmoothPairing
+public import SharpWasserstein.WeightedPeriodicCoefficientEvolutionBrownian
+
+@[expose] public section
 
 /-! Actual Brownian source action on bounded smooth tests equals pairing
 with the canonical tangent of its actual carrying law. This extends the

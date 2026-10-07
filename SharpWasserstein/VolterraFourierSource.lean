@@ -1,5 +1,10 @@
-import SharpWasserstein.VolterraFourierHierarchy
-import SharpWasserstein.WeightedPeriodicTangentPhysical
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.VolterraFourierHierarchy
+public import SharpWasserstein.WeightedPeriodicTangentPhysical
+
+@[expose] public section
 
 /-! The Fourier recovery interface specialized to the actual periodic
 representative of a finite-energy distribution. Physical periodic membership

@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianCompressionGeometry
-import SharpWasserstein.RoughEulerianCompressionPushforward
-import Mathlib.Probability.Kernel.Composition.Lemmas
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianCompressionGeometry
+public import SharpWasserstein.RoughEulerianCompressionPushforward
+public import Mathlib.Probability.Kernel.Composition.Lemmas
+
+@[expose] public section
 
 /-! Actual spatial compression of a joint L² vector flux. The Jacobian field is
 pushed under (t,x)↦(t,θ_R x) by the proved full-L² Riesz construction. -/
@@ -51,9 +56,9 @@ theorem compressedFlux_energy_le {R : ℝ} (hR : R ≠ 0) (U : Lp (Point d) 2 ρ
     (∫ z,‖compressedFlux ρ hR U z‖^2 ∂ρ.map (compressionMap R)) ≤ ∫ z,‖U z‖^2 ∂ρ := by
   apply (pushedFlux_energy_le ρ (compressionMap R) (compressionMap_measurable R)
     (compressionVectorLp ρ hR U)).trans
-  have hiV := (memLp_two_iff_integrable_sq_norm (Lp.memLp (compressionVectorLp ρ hR U)).1).mp
+  have hiV := (memLp_two_iff_integrable_sq_norm (Lp.memLp (compressionVectorLp ρ hR U)).aestronglyMeasurable).mp
     (Lp.memLp (compressionVectorLp ρ hR U))
-  have hiU := (memLp_two_iff_integrable_sq_norm (Lp.memLp U).1).mp (Lp.memLp U)
+  have hiU := (memLp_two_iff_integrable_sq_norm (Lp.memLp U).aestronglyMeasurable).mp (Lp.memLp U)
   apply integral_mono_ae hiV hiU
   filter_upwards [compressionVectorLp_ae ρ hR U] with z hz
   rw [hz]

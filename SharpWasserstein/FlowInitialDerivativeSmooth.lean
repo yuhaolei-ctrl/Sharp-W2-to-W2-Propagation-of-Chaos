@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowInitialDerivativeGlobal
-import SharpWasserstein.NoiseAverageSmooth
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowInitialDerivativeGlobal
+public import SharpWasserstein.NoiseAverageSmooth
+
+@[expose] public section
 
 /-! The initial-data derivative result applies to genuine C_b^infinity drifts:
 the Lipschitz bound on the first derivative is derived from the actual globally

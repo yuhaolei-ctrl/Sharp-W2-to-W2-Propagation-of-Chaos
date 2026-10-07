@@ -1,4 +1,9 @@
-import SharpWasserstein.BrownianPeriodicHierarchyRegularity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianPeriodicHierarchyRegularity
+
+@[expose] public section
 
 /-! Integrability and actual L¹ Fourier recovery for the propagated periodic
 marginal source energies, derived from scalar trial continuity and the actual

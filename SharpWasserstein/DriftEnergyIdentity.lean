@@ -1,5 +1,10 @@
-import SharpWasserstein.BochnerIdentity
-import Mathlib.Analysis.InnerProductSpace.Calculus
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BochnerIdentity
+public import Mathlib.Analysis.InnerProductSpace.Calculus
+
+@[expose] public section
 
 /-! Actual differential and integral identities for the internal drift contribution
 to weighted tangent energy. Symmetry is derived from the potential, and the test

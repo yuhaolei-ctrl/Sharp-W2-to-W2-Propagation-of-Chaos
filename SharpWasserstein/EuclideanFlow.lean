@@ -1,6 +1,11 @@
-import SharpWasserstein.FiniteTrajectory
-import SharpWasserstein.ConfigurationEuclidean
-import SharpWasserstein.EuclideanDrift
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteTrajectory
+public import SharpWasserstein.ConfigurationEuclidean
+public import SharpWasserstein.EuclideanDrift
+
+@[expose] public section
 
 /-! The pathwise stability estimates use the actual Euclidean configuration
 norm, so their constants have no hidden dependence on the particle number. -/

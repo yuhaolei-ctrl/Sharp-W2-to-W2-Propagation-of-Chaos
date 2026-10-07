@@ -1,6 +1,11 @@
-import SharpWasserstein.SinePeriodization
-import Mathlib.Analysis.Normed.Operator.Bilinear
-import Mathlib.Analysis.Normed.Operator.Prod
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SinePeriodization
+public import Mathlib.Analysis.Normed.Operator.Bilinear
+public import Mathlib.Analysis.Normed.Operator.Prod
+
+@[expose] public section
 
 /-! Actual first derivatives of the sine periodization converge in operator
 norm, also along moving points. This is needed for tangent-source limits,

@@ -1,5 +1,10 @@
-import SharpWasserstein.ConstantDriftLaw
-import SharpWasserstein.BoundedDerivativeComposition
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ConstantDriftLaw
+public import SharpWasserstein.BoundedDerivativeComposition
+
+@[expose] public section
 
 /-! Bounded smooth configuration tests are admitted by the actual weak and
 Gaussian generator equations. The required Euclidean gradient and Laplacian

@@ -1,5 +1,10 @@
-import SharpWasserstein.TimeGeneratorUniform
-import SharpWasserstein.BoundedConfigurationTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TimeGeneratorUniform
+public import SharpWasserstein.BoundedConfigurationTests
+
+@[expose] public section
 
 /-! Uniform one-step consistency for actual weak evolutions with jointly
 continuous bounded time-dependent drifts. -/

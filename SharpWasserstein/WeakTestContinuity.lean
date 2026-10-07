@@ -1,7 +1,12 @@
-import SharpWasserstein.BoundedWeakTests
-import Mathlib.Analysis.Calculus.BumpFunction.SmoothApprox
-import Mathlib.MeasureTheory.Measure.Portmanteau
-import Mathlib.Topology.UniformSpace.UniformApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedWeakTests
+public import Mathlib.Analysis.Calculus.BumpFunction.SmoothApprox
+public import Mathlib.MeasureTheory.Measure.Portmanteau
+public import Mathlib.Topology.UniformSpace.UniformApproximation
+
+@[expose] public section
 
 /-! Actual narrow continuity from compact-smooth tests and a uniform second moment.
 The cutoff estimates are quantitative, so no weak topology assumption is hidden

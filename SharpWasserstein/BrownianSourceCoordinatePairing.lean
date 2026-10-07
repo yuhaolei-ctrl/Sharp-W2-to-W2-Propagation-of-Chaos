@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianSourceInitialFlux
-import SharpWasserstein.PropagatedSourceEquationConjugacy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianSourceInitialFlux
+public import SharpWasserstein.PropagatedSourceEquationConjugacy
+
+@[expose] public section
 
 /-! Exact coordinate bridge from the actual Euclidean Brownian JV source
 to the configuration semigroup/current pairing used by the switch curve. -/

@@ -1,6 +1,11 @@
-import SharpWasserstein.PrescribedSwitchBrownianLaw
-import SharpWasserstein.SwitchCurveNarrow
-import SharpWasserstein.RoughEulerianTransportContinuity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedSwitchBrownianLaw
+public import SharpWasserstein.SwitchCurveNarrow
+public import SharpWasserstein.RoughEulerianTransportContinuity
+
+@[expose] public section
 
 /-! The actual prescribed switch curve satisfies the compact-test continuity
 equation with precisely the Brownian-propagated current whose energy is

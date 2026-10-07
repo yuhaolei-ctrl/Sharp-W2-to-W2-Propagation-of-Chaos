@@ -1,9 +1,14 @@
-import SharpWasserstein.TransportMoments
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
-import Mathlib.Probability.Kernel.Composition.MeasureCompProd
-import Mathlib.Probability.Kernel.Disintegration.StandardBorel
-import Mathlib.Tactic.FunProp
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TransportMoments
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+public import Mathlib.Probability.Kernel.Composition.MeasureCompProd
+public import Mathlib.Probability.Kernel.Disintegration.StandardBorel
+public import Mathlib.Tactic.FunProp
+
+@[expose] public section
 
 /-!
 # The triangle inequality for the actual quadratic transport infimum
@@ -45,7 +50,7 @@ theorem transportCost_root_eq_eLpNorm {d N : ℕ}
     (γ : Measure (Configuration d N × Configuration d N)) :
     transportCost γ ^ (1 / 2 : ℝ) = eLpNorm transportDisplacement 2 γ := by
   rw [eLpNorm_eq_lintegral_rpow_enorm_toReal (by norm_num : (2 : ℝ≥0∞) ≠ 0)
-    (by norm_num : (2 : ℝ≥0∞) ≠ ∞)]
+    (by norm_num : (2 : ℝ≥0∞) ≠ ∞) continuous_transportDisplacement.aestronglyMeasurable]
   norm_num only [ENNReal.toReal_ofNat]
   congr 1
   apply lintegral_congr
@@ -89,7 +94,7 @@ theorem transportCost_triple_triangle {d N : ℕ}
         measurable_fst.aemeasurable]
     rfl
   rw [hfst, hsum]
-  exact eLpNorm_add_le hf hg (by norm_num)
+  exact eLpNorm_add_le (by norm_num)
 
 /-- Positive powers preserve infima in the extended nonnegative reals. -/
 theorem ennreal_rpow_iInf {ι : Sort*} (f : ι → ℝ≥0∞) {p : ℝ} (hp : 0 < p) :

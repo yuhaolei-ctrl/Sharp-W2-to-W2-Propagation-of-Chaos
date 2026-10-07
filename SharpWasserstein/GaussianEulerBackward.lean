@@ -1,5 +1,10 @@
-import SharpWasserstein.BoundedNoiseAverage
-import SharpWasserstein.FrozenGaussianLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedNoiseAverage
+public import SharpWasserstein.FrozenGaussianLaw
+
+@[expose] public section
 
 /-! Actual backward Gaussian Euler tests. These are the integrals of the real
 Gaussian transition law, not an assumed backward equation. The uniform value,

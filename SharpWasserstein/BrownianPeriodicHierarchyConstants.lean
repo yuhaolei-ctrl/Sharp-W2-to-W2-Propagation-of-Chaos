@@ -1,4 +1,9 @@
-import SharpWasserstein.ExternalInteractionEnergy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionEnergy
+
+@[expose] public section
 
 /-! The sharp finite hierarchy uses a comparison coefficient depending only
 on spatial dimension and the stated value/first-derivative kernel bounds. -/

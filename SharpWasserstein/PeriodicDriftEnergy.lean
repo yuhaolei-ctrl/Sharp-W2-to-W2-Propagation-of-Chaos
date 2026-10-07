@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicBochner
-import SharpWasserstein.DriftEnergyIdentity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicBochner
+public import SharpWasserstein.DriftEnergyIdentity
+
+@[expose] public section
 
 /-! The actual drift-energy cancellation on the periodic fundamental cube.
 There are no boundary terms, and the surviving expression uses the genuine

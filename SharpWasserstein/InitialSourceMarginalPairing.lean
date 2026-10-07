@@ -1,5 +1,10 @@
-import SharpWasserstein.PropagatedFluxSmoothPairing
-import SharpWasserstein.WeightedMarginal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedFluxSmoothPairing
+public import SharpWasserstein.WeightedMarginal
+
+@[expose] public section
 
 /-! Genuine linear-image marginals of one finite-energy source. The canonical
 representative is projected as an actual L² field. Compact cutoff density

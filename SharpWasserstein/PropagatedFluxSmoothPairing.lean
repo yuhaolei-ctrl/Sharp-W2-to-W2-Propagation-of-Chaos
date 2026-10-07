@@ -1,5 +1,10 @@
-import SharpWasserstein.PropagatedFlux
-import SharpWasserstein.WeightedGradientApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedFlux
+public import SharpWasserstein.WeightedGradientApproximation
+
+@[expose] public section
 
 /-! The constructed random-map distribution pairs with bounded smooth
 gradients exactly through its canonical representative. Compact cutoff

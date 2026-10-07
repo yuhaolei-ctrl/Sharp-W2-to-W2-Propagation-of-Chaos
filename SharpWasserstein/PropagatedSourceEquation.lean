@@ -1,7 +1,12 @@
-import SharpWasserstein.PropagatedSourceEquationBrownian
-import SharpWasserstein.PropagatedSourceEquationIntegration
-import SharpWasserstein.PropagatedFluxFlow
-import SharpWasserstein.BoundedDerivativeLinear
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquationBrownian
+public import SharpWasserstein.PropagatedSourceEquationIntegration
+public import SharpWasserstein.PropagatedFluxFlow
+public import SharpWasserstein.BoundedDerivativeLinear
+
+@[expose] public section
 
 /-! The actual Brownian-propagated Jacobian flux solves the integrated
 homogeneous source equation. Its state norm is the genuine Euclidean norm;

@@ -1,5 +1,10 @@
-import SharpWasserstein.CompressionPeriodicTests
-import SharpWasserstein.WeightedGradientApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.CompressionPeriodicTests
+public import SharpWasserstein.WeightedGradientApproximation
+
+@[expose] public section
 
 /-! Uniform bounds for arbitrarily large actual physical periods imply the
 full Euclidean source energy bound. The proof recovers compact tests by

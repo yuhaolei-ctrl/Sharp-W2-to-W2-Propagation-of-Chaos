@@ -1,4 +1,9 @@
-import SharpWasserstein.BrownianSplit
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianSplit
+
+@[expose] public section
 
 /-! Pathwise composition of the actual bounded autonomous additive flow.
 The driving path is split into its past and its restarted increment path. -/

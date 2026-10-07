@@ -1,5 +1,10 @@
-import SharpWasserstein.MarginalParticleCurrent
-import SharpWasserstein.ConfigurationFlux
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.MarginalParticleCurrent
+public import SharpWasserstein.ConfigurationFlux
+
+@[expose] public section
 
 /-! The actual disintegrated particle current produces a genuine negative-Sobolev
 source distribution and the sharp quadratic source energy profile. This is a
@@ -55,8 +60,8 @@ theorem exists_marginalSourceDistribution {d m N : ℕ} {H M : ℝ}
           (m : ℝ) ^ 2 / (N : ℝ) ^ 2 := by
   let v : Configuration d m → Configuration d m := fun x i a =>
     marginalSourceCurrent hm P r b i a x
-  have hvmeas : Measurable v := measurable_pi_lambda _ (fun i =>
-    measurable_pi_lambda _ (fun a => measurable_marginalSourceCurrent hm P r hb i a))
+  have hvmeas : Measurable v := Measurable.of_eval (fun i =>
+    Measurable.of_eval (fun a => measurable_marginalSourceCurrent hm P r hb i a))
   have hsq := marginalSourceSquare_integrable_and_le_profile hm0 hm hex hfinite
     hH hM hb hbound hprofile
   have hv : MemLp (euclideanFlux v) 2 (euclideanLaw (marginal hm.le P)) :=
@@ -95,9 +100,9 @@ theorem exists_fullSourceDistribution {d N : ℕ} {H M : ℝ}
       fun x => (N : ℝ)⁻¹ * internalScalarCurrent r (fun u w => b u w a) i x :=
     funext (fun x => fullSourceCurrent_eq_internal hN r hb hbound x i a)
   have hvmeas : Measurable v := by
-    apply measurable_pi_lambda
+    apply Measurable.of_eval
     intro i
-    apply measurable_pi_lambda
+    apply Measurable.of_eval
     intro a
     rw [hvcoord i a]
     exact measurable_const.mul (measurable_internalScalarCurrent (r := r)

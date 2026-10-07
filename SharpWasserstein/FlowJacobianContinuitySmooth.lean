@@ -1,7 +1,12 @@
-import SharpWasserstein.FlowJacobianContinuityGlobal
-import SharpWasserstein.FlowInitialDerivativeSmooth
-import Mathlib.MeasureTheory.Constructions.BorelSpace.ContinuousLinearMap
-import Mathlib.MeasureTheory.Function.LpSeminorm.Monotonicity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianContinuityGlobal
+public import SharpWasserstein.FlowInitialDerivativeSmooth
+public import Mathlib.MeasureTheory.Constructions.BorelSpace.ContinuousLinearMap
+public import Mathlib.MeasureTheory.Function.LpSeminorm.Monotonicity
+
+@[expose] public section
 
 /-! Measurable actual Jacobians for bounded smooth autonomous drifts, together
 with preservation of integrability when they act on a random tangent vector. -/
@@ -82,7 +87,7 @@ theorem boundedFlow_fderiv_apply_memLp
     MemLp (fun q =>
       fderiv ℝ (fun y => BoundedFlow.flow hv hb hl hT y q.2 t) q.1 (u q)) p ρ := by
   apply hu.of_le_mul (c := Real.exp ((K:ℝ)*t))
-    (boundedFlow_fderiv_apply_aestronglyMeasurable hv hb hl hbs hB hT ht ρ hu.1)
+    (boundedFlow_fderiv_apply_aestronglyMeasurable hv hb hl hbs hB hT ht ρ hu.aestronglyMeasurable)
   filter_upwards [] with q
   exact (ContinuousLinearMap.le_opNorm _ _).trans
     (mul_le_mul_of_nonneg_right
@@ -102,8 +107,8 @@ theorem boundedFlow_fderiv_apply_energy_le
     (∫ q, ‖fderiv ℝ (fun y => BoundedFlow.flow hv hb hl hT y q.2 t) q.1 (u q)‖^2 ∂ρ) ≤
       Real.exp ((K:ℝ)*t)^2 * ∫ q, ‖u q‖^2 ∂ρ := by
   have hj := boundedFlow_fderiv_apply_memLp hv hb hl hbs hB hT ht ρ hu
-  have hi := (memLp_two_iff_integrable_sq_norm hu.1).mp hu
-  have hji := (memLp_two_iff_integrable_sq_norm hj.1).mp hj
+  have hi := (memLp_two_iff_integrable_sq_norm hu.aestronglyMeasurable).mp hu
+  have hji := (memLp_two_iff_integrable_sq_norm hj.aestronglyMeasurable).mp hj
   rw [← integral_const_mul]
   apply integral_mono_ae hji (hi.const_mul _)
   filter_upwards [] with q

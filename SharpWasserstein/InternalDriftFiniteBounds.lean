@@ -1,7 +1,12 @@
-import SharpWasserstein.ExternalInteractionPeriodic
-import SharpWasserstein.EuclideanFlow
-import SharpWasserstein.ParticleWeakIdentification
-import SharpWasserstein.PropagatedSourceEquation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionPeriodic
+public import SharpWasserstein.EuclideanFlow
+public import SharpWasserstein.ParticleWeakIdentification
+public import SharpWasserstein.PropagatedSourceEquation
+
+@[expose] public section
 
 /-! The finite hierarchy's actual internal drift is a scaled genuine
 m-particle drift. Its Euclidean Jacobian bound is independent of N and m

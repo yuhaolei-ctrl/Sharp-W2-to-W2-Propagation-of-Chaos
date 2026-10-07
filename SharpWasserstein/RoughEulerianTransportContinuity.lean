@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianTransportLocalization
-import SharpWasserstein.RoughEulerianTransportEnergy
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportLocalization
+public import SharpWasserstein.RoughEulerianTransportEnergy
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.Basic
+
+@[expose] public section
 
 /-! A finite-energy distributional continuity equation supplies an actual measurable
 space-time flux, including singular varying probability measures. This closes the

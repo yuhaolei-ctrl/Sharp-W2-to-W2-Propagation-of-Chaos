@@ -1,4 +1,9 @@
-import SharpWasserstein.BoundedFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedFlow
+
+@[expose] public section
 
 /-! Causality and horizon consistency of the constructed additive solution.
 These remove any dependence of the selected solution on future input values. -/

@@ -1,7 +1,12 @@
-import SharpWasserstein.PeriodicSourceConvolutionAction
-import SharpWasserstein.PropagatedSourceEquationBrownian
-import SharpWasserstein.WeakTimeEulerConsistency
-import SharpWasserstein.BoundedDerivativeLinear
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicSourceConvolutionAction
+public import SharpWasserstein.PropagatedSourceEquationBrownian
+public import SharpWasserstein.WeakTimeEulerConsistency
+public import SharpWasserstein.BoundedDerivativeLinear
+
+@[expose] public section
 
 /-! The actual Brownian primal equation on bounded smooth tests, including
 periodic convolution kernels. It follows from the constructed weak law and

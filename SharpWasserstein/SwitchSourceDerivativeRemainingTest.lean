@@ -1,4 +1,9 @@
-import SharpWasserstein.SwitchSourceDerivativeJacobian
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeJacobian
+
+@[expose] public section
 
 /-! The actual continuous semigroup supplies the moving C¹ tests needed for
 the switch comparison. All their regularity and bounds are proved here. -/

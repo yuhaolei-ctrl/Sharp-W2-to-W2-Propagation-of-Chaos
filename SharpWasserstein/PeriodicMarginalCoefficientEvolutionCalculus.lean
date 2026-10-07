@@ -1,7 +1,12 @@
-import SharpWasserstein.PeriodicParticleTangentLimitMarginal
-import SharpWasserstein.ExternalInteractionPeriodicSource
-import SharpWasserstein.CylinderWeakEvolution
-import SharpWasserstein.FiniteGeneratorBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicParticleTangentLimitMarginal
+public import SharpWasserstein.ExternalInteractionPeriodicSource
+public import SharpWasserstein.CylinderWeakEvolution
+public import SharpWasserstein.FiniteGeneratorBounds
+
+@[expose] public section
 
 /-! Literal cylinder calculus for particle marginals. The normalization uses
 full N, includes diagonal interactions, and leaves the external sum explicit.

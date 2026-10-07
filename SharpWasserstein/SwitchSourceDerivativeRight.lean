@@ -1,5 +1,10 @@
-import SharpWasserstein.SwitchSourceDerivativeLaw
-import SharpWasserstein.SwitchSourceDerivativeMovingExpectation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeLaw
+public import SharpWasserstein.SwitchSourceDerivativeMovingExpectation
+
+@[expose] public section
 
 /-! The actual switch law has the derived right derivative
  ∫ D(P_{T-s}F)(x)(v(s,x)-b(x)) dR_s(x).

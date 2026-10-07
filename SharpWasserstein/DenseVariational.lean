@@ -1,6 +1,11 @@
-import SharpWasserstein.TangentEnergy
-import Mathlib.Analysis.Normed.Operator.Extend
-import Mathlib.Tactic.FunProp
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TangentEnergy
+public import Mathlib.Analysis.Normed.Operator.Extend
+public import Mathlib.Tactic.FunProp
+
+@[expose] public section
 
 /-! Dense-range variational representation, used by the actual compact-test
 weighted gradient construction in `WeightedTangent`. The test vector space

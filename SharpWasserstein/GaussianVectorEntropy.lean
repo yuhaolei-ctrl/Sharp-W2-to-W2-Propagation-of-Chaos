@@ -1,6 +1,11 @@
-import SharpWasserstein.GaussianEntropyCost
-import SharpWasserstein.ExchangeableEntropy
-import Mathlib.Probability.Kernel.Composition.Prod
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEntropyCost
+public import SharpWasserstein.ExchangeableEntropy
+public import Mathlib.Probability.Kernel.Composition.Prod
+
+@[expose] public section
 
 /-!
 # Gaussian vector transition entropy
@@ -93,7 +98,7 @@ theorem measurable_gaussianVectorLaw (d : ℕ) (v : ℝ≥0) :
     exact measurable_const
   | succ n ih =>
     let pre : (Fin (n + 1) → ℝ) → Fin n → ℝ := fun a i ↦ a i.castSucc
-    have hp : Measurable pre := measurable_pi_lambda _ (fun i ↦ measurable_pi_apply i.castSucc)
+    have hp : Measurable pre := Measurable.of_eval (fun i ↦ measurable_pi_apply i.castSucc)
     let κ : Kernel (Fin (n + 1) → ℝ) (Fin n → ℝ) := ⟨fun a ↦ gaussianVectorLaw (pre a) v, ih.comp hp⟩
     haveI : IsMarkovKernel κ := ⟨fun a ↦ by change IsProbabilityMeasure (gaussianVectorLaw (pre a) v); infer_instance⟩
     let η := gaussianMeanKernel (fun a : Fin (n + 1) → ℝ ↦ a (Fin.last n)) (measurable_pi_apply _) v

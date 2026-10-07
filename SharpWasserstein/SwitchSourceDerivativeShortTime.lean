@@ -1,7 +1,12 @@
-import SharpWasserstein.SwitchSourceDerivativePathwise
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
-import Mathlib.MeasureTheory.Integral.Prod
-import Mathlib.Analysis.Calculus.Deriv.Slope
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativePathwise
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+public import Mathlib.MeasureTheory.Integral.Prod
+public import Mathlib.Analysis.Calculus.Deriv.Slope
+
+@[expose] public section
 
 /-! An actual first-order difference of transition expectations, proved from
 synchronous continuous-input flows and dominated convergence. The test is

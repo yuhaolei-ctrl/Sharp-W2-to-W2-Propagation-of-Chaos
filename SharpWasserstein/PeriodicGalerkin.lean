@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicBochner
-import SharpWasserstein.WeightedGalerkin
-import SharpWasserstein.SmoothCutoff
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicBochner
+public import SharpWasserstein.WeightedGalerkin
+public import SharpWasserstein.SmoothCutoff
+
+@[expose] public section
 
 /-! Construct the actual Fourier Galerkin elliptic potentials by coercive
 operator inversion. A fixed cutoff equal to one near the entire period cube
@@ -96,7 +101,7 @@ instance trialSpace_finiteDimensional (s : Finset ((Fin n → ℤ) × Bool)) :
   LinearMap.finiteDimensional_range (trialGradient s)
 
 instance trialSpace_complete (s : Finset ((Fin n → ℤ) × Bool)) : CompleteSpace (trialSpace s) :=
-  FiniteDimensional.complete ℝ _
+  (Submodule.complete_of_finiteDimensional (trialSpace s)).completeSpace_coe
 
 def vector (ρ : Point n →ᵇ ℝ) (ℓ : gradientClosure (cubePoint (n := n)) →L[ℝ] ℝ)
     (s : Finset ((Fin n → ℤ) × Bool)) : gradientClosure (cubePoint (n := n)) :=

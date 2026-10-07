@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTransportRegularCoordinates
-import SharpWasserstein.RoughEulerianSpaceTimeSmooth
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportRegularCoordinates
+public import SharpWasserstein.RoughEulerianSpaceTimeSmooth
+
+@[expose] public section
 
 /-! Uniform spatial hypotheses for the actual joint regularized velocity.
 Every spatial derivative is obtained by the affine slice inclusion; the

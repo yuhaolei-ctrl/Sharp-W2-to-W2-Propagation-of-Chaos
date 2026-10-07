@@ -1,4 +1,9 @@
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+
+@[expose] public section
 
 /-! Weighted Cauchy--Schwarz for actual Bochner integrals, with no lower-bound
 constant on the weight. This form controls convolution commutators even when

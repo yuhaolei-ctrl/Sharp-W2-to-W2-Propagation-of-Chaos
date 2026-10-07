@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTimeActionMoments
-import SharpWasserstein.WeakTestContinuity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeActionMoments
+public import SharpWasserstein.WeakTestContinuity
+
+@[expose] public section
 
 /-! An actual global probability curve for an interior smoothing interval.
 Narrow continuity follows from dominated compact-test integrals and an

@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTransportRegular
-import SharpWasserstein.PropagatedSourceEquation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportRegular
+public import SharpWasserstein.PropagatedSourceEquation
+
+@[expose] public section
 
 /-! Exact Euclidean-coordinate adapter for the regular finite-action theorem.
 Coordinate norm constants occur only in regularity of the constructed drift;
@@ -38,7 +43,7 @@ theorem equivDrift_fderiv_lipschitz (L : E ≃L[ℝ] F) {v : E → E}
       apply mul_le_mul_of_nonneg_left _ (norm_nonneg _)
       apply mul_le_mul_of_nonneg_right _ (norm_nonneg _)
       simpa only [dist_eq_norm,coe_nnnorm] using (hK.dist_le_mul _ _).trans
-        (mul_le_mul_of_nonneg_left (L.symm.lipschitz.dist_le_mul x y) K.coe_nonneg)
+        (mul_le_mul_of_nonneg_left (L.symm.lipschitzWith.dist_le_mul x y) K.coe_nonneg)
     _ = _ := by simp only [NNReal.coe_mul,NNReal.coe_pow,coe_nnnorm]; ring
 end Linear
 
@@ -58,7 +63,7 @@ def configurationVelocity (v : ℝ → Point (N*d) → Point (N*d)) (t : ℝ) :
 
 def configurationCurve (μ : ℝ → ProbabilityMeasure (Point (N*d))) (t : ℝ) :
     ProbabilityMeasure (Configuration d N) :=
-  (μ t).map (configurationEuclidean d N).symm.continuous.measurable.aemeasurable
+  (μ t).map (configurationEuclidean d N).symm
 
 /-- The literal Euclidean flux equation becomes exactly the configuration
 compact-test weak equation, with the genuine test pullback. -/
@@ -94,10 +99,10 @@ theorem EuclideanCompactWeakContinuity.toConfiguration
 theorem configuration_action_eq (v : ℝ → Point (N*d) → Point (N*d))
     (μ : ProbabilityMeasure (Point (N*d))) (t : ℝ) :
     (∫ x,productCost (configurationVelocity v t x) 0
-      ∂(μ.map (configurationEuclidean d N).symm.continuous.measurable.aemeasurable : Measure _)) =
+      ∂(μ.map (configurationEuclidean d N).symm : Measure _)) =
       ∫ y,‖v t y‖^2 ∂(μ : Measure _) := by
   rw [show (∫ x,productCost (configurationVelocity v t x) 0
-      ∂(μ.map (configurationEuclidean d N).symm.continuous.measurable.aemeasurable : Measure _)) =
+      ∂(μ.map (configurationEuclidean d N).symm : Measure _)) =
     ∫ y,productCost (configurationVelocity v t ((configurationEuclidean d N).symm y)) 0
       ∂(μ : Measure _) from integral_map_equiv
         (configurationEuclidean d N).symm.toHomeomorph.toMeasurableEquiv _]
@@ -135,7 +140,7 @@ theorem EuclideanCompactWeakContinuity.wassersteinSq_le_finiteAction
     apply LipschitzWith.of_dist_le_mul
     intro x y
     simpa only [mul_assoc,configurationVelocity,equivDrift,Function.comp_def,L,dist_eq_norm] using
-      (L.lipschitz.comp ((hl t).comp L.symm.lipschitz)).dist_le_mul x y
+      (L.lipschitzWith.comp ((hl t).comp L.symm.lipschitzWith)).dist_le_mul x y
   have hd' (t : ℝ) := equivDrift_fderiv_lipschitz L ((hvs t).differentiable (by simp)) (hv₁ t)
   apply regular_wassersteinSq_le_finiteAction h.toConfiguration hc hb' hl' hT
     (fun t => equivDrift_smooth L (hvs t)) (fun t => equivDrift_allDerivativesBounded L (hvs t) (hvB t))

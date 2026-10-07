@@ -1,5 +1,10 @@
-import SharpWasserstein.PrescribedDecoupledTransport
-import SharpWasserstein.RegularizedBrownianSourceBound
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedDecoupledTransport
+public import SharpWasserstein.RegularizedBrownianSourceBound
+
+@[expose] public section
 
 /-! Quantifier and horizon adapters for the manuscript's original target.
 Level zero is discharged from the actual zero-dimensional transport cost;

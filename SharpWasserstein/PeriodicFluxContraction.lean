@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicDriftCommutator
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicDriftCommutator
+
+@[expose] public section
 
 /-! Genuine convolution of an arbitrary finite-energy flux. The velocity is
 constructed from the convolved flux and positive density, and its actual

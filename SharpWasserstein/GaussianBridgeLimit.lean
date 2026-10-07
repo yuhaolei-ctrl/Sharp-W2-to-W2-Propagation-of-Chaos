@@ -1,6 +1,11 @@
-import SharpWasserstein.GaussianBridgeCoupling
-import SharpWasserstein.GaussianBridgeRate
-import SharpWasserstein.EntropyNarrow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianBridgeCoupling
+public import SharpWasserstein.GaussianBridgeRate
+public import SharpWasserstein.EntropyNarrow
+
+@[expose] public section
 
 /-! Passage from the proved finite Gaussian bridge bound to limits of the
 actual observed history laws. Convergence hypotheses are explicit; Brownian

@@ -1,5 +1,10 @@
-import SharpWasserstein.BochnerIdentity
-import SharpWasserstein.BoundedDerivativeLinear
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BochnerIdentity
+public import SharpWasserstein.BoundedDerivativeLinear
+
+@[expose] public section
 
 /-! True Hessian-square integrability for bounded smooth potentials under
 arbitrary finite measures, including singular ones. -/

@@ -1,8 +1,13 @@
-import SharpWasserstein.RoughEulerianCompressionGeometry
-import SharpWasserstein.ConfigurationEuclidean
-import SharpWasserstein.TransportConvergence
-import SharpWasserstein.MarginalMoments
-import SharpWasserstein.EulerLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianCompressionGeometry
+public import SharpWasserstein.ConfigurationEuclidean
+public import SharpWasserstein.TransportConvergence
+public import SharpWasserstein.MarginalMoments
+public import SharpWasserstein.EulerLaw
+
+@[expose] public section
 
 /-! Actual endpoint transport convergence of the smooth compressions. A graph
 coupling has exactly the Euclidean compression displacement cost. -/
@@ -87,9 +92,9 @@ theorem configurationCompression_wassersteinSq_tendsto (μ : Measure (Configurat
 /-- Narrow convergence needs no moment assumption. -/
 theorem compression_probability_tendsto {m : ℕ} [MeasurableSpace (Point m)] [BorelSpace (Point m)]
     (μ : ProbabilityMeasure (Point m)) :
-    Tendsto (fun k : ℕ => μ.map (compression_contDiff ((k:ℝ)+1)).continuous.measurable.aemeasurable)
+    Tendsto (fun k : ℕ => μ.map (compression ((k:ℝ)+1)))
       atTop (𝓝 μ) := by
-  have he : μ.map (measurable_id.aemeasurable) = μ := by
+  have he : μ.map id = μ := by
     apply Subtype.ext
     exact Measure.map_id
   have ht := probabilityMeasure_map_tendsto μ

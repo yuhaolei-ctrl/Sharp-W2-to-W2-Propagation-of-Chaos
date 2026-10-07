@@ -1,5 +1,10 @@
-import SharpWasserstein.GaussianStein
-import SharpWasserstein.GaussianHeat
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianStein
+public import SharpWasserstein.GaussianHeat
+
+@[expose] public section
 
 /-! Calculus of compact smooth tests along explicit Gaussian labels. -/
 noncomputable section

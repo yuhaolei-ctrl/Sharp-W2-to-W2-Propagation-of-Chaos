@@ -1,7 +1,12 @@
-import SharpWasserstein.BrownianEntropyTransport
-import SharpWasserstein.BrownianProductNoise
-import SharpWasserstein.DecoupledMarginal
-import SharpWasserstein.FlattenedEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianEntropyTransport
+public import SharpWasserstein.BrownianProductNoise
+public import SharpWasserstein.DecoupledMarginal
+public import SharpWasserstein.FlattenedEuclidean
+
+@[expose] public section
 
 /-! The actual Brownian configuration flow for a coordinatewise drift is the
 concrete decoupled flow, with exact tensor and marginal identities. -/

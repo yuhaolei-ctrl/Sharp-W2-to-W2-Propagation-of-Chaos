@@ -1,5 +1,10 @@
-import SharpWasserstein.FiniteCoefficientEnergy
-import SharpWasserstein.WeightedEnergyDerivativeWithin
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteCoefficientEnergy
+public import SharpWasserstein.WeightedEnergyDerivativeWithin
+
+@[expose] public section
 
 /-! Genuine differentiability of the regularized finite energy in a fixed
 coefficient Hilbert space. The underlying measures may change or be singular;

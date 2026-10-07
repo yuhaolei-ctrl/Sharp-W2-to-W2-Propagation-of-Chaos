@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerianTransportEquation
-import SharpWasserstein.NarrowFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerianTransportEquation
+public import SharpWasserstein.NarrowFlow
+
+@[expose] public section
 
 /-! The actual bounded deterministic characteristic flow produces a narrowly
 continuous probability law and satisfies the first-order weak equation.

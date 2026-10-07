@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughCommonLabelTimeEndpoint
-import SharpWasserstein.RoughEulerianTimeActionCurveEnergy
-import SharpWasserstein.RoughEulerianTransportLimit
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughCommonLabelTimeEndpoint
+public import SharpWasserstein.RoughEulerianTimeActionCurveEnergy
+public import SharpWasserstein.RoughEulerianTransportLimit
+
+@[expose] public section
 
 /-! Explicit positive vanishing regularization scales and actual quadratic
 endpoint laws used when removing time-space smoothing and then compression. -/

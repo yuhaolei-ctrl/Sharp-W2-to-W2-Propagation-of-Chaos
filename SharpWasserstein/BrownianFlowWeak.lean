@@ -1,4 +1,9 @@
-import SharpWasserstein.BrownianFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianFlow
+
+@[expose] public section
 
 /-! Complete weak evolution for genuine Brownian-driven laws of a bounded,
 continuous time-dependent drift with a uniform spatial Lipschitz constant. -/
@@ -23,7 +28,7 @@ theorem globalLaw_boundedExpectation_continuousOn_Icc
   apply continuousOn_iff_continuous_restrict.mpr
   convert h.restrict using 1
   funext t
-  dsimp only [Set.restrict]
+  dsimp only [Set.domRestrict]
   rw [globalLaw_eq hv hb hl hT μ t.property]
   exact law_integral_eq hv hb hl hT μ (hg.comp (continuous_const.prodMk continuous_id)) t.property
 

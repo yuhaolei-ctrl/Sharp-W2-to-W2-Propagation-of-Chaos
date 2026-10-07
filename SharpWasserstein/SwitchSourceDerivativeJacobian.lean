@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowJacobianDriftSmooth
-import SharpWasserstein.FlowSemigroupDerivative
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianDriftSmooth
+public import SharpWasserstein.FlowSemigroupDerivative
+
+@[expose] public section
 
 /-! Joint space/path/time continuity of the actual initial Jacobian and of
 its probability-averaged test differential. These are derived from the global

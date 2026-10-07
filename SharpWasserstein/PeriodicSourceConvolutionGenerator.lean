@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicSourceConvolutionPrimal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicSourceConvolutionPrimal
+
+@[expose] public section
 
 /-! Actual bounded derivatives are preserved by the genuine diffusion
 operator with bounded smooth drift. This permits repeated primal equations

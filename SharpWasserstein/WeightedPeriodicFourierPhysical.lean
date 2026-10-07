@@ -1,5 +1,10 @@
-import SharpWasserstein.WeightedPeriodicFourierClosure
-import SharpWasserstein.WeightedPeriodicFourierScale
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicFourierClosure
+public import SharpWasserstein.WeightedPeriodicFourierScale
+
+@[expose] public section
 
 /-! Physical-period periodic gradients in an unchanged Euclidean carrying law.
 The scalar test is evaluated at x/P, while vector values and their weighted

@@ -1,5 +1,10 @@
-import SharpWasserstein.SynchronousStability
-import Mathlib.Analysis.ODE.ExistUnique
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SynchronousStability
+public import Mathlib.Analysis.ODE.ExistUnique
+
+@[expose] public section
 
 /-! Actual existence of continuous-forcing integral solutions on every finite
 horizon for globally bounded, globally Lipschitz drifts. Picard--Lindelöf is

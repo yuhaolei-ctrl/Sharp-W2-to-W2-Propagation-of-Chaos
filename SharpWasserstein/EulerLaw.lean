@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerConvergence
-import SharpWasserstein.NarrowFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerConvergence
+public import SharpWasserstein.NarrowFlow
+
+@[expose] public section
 
 /-! Measurable Euler laws and their genuine narrow convergence to the
 constructed continuous-forcing solution law. -/
@@ -15,14 +20,14 @@ theorem probabilityMeasure_map_tendsto {Ω E : Type*} [MeasurableSpace Ω]
     (P : ProbabilityMeasure Ω) {F : ℕ → Ω → E} {f : Ω → E}
     (hF : ∀ n, Measurable (F n)) (hf : Measurable f)
     (hlim : ∀ᵐ ω ∂(P : Measure Ω), Tendsto (fun n => F n ω) atTop (nhds (f ω))) :
-    Tendsto (fun n => P.map (hF n).aemeasurable) atTop (nhds (P.map hf.aemeasurable)) := by
+    Tendsto (fun n => P.map (F n)) atTop (nhds (P.map f)) := by
   apply ProbabilityMeasure.tendsto_iff_forall_integral_tendsto.mpr
   intro φ
-  have hleft : (fun n => ∫ x, φ x ∂(P.map (hF n).aemeasurable)) =
+  have hleft : (fun n => ∫ x, φ x ∂(P.map (F n))) =
       (fun n => ∫ ω, φ (F n ω) ∂P) := by
     funext n
     exact integral_map (hF n).aemeasurable φ.continuous.measurable.aestronglyMeasurable
-  have hright : (∫ x, φ x ∂(P.map hf.aemeasurable)) = ∫ ω, φ (f ω) ∂P :=
+  have hright : (∫ x, φ x ∂(P.map f)) = ∫ ω, φ (f ω) ∂P :=
     integral_map hf.aemeasurable φ.continuous.measurable.aestronglyMeasurable
   rw [hleft, hright]
   apply tendsto_integral_of_dominated_convergence (fun _ => ‖φ‖)
@@ -67,9 +72,8 @@ theorem endpointLaw_tendsto [CompleteSpace E]
     (hv : Continuous (Function.uncurry v)) (hb : ∀ t x, ‖v t x‖ ≤ M)
     (hl : ∀ t, LipschitzWith K (v t)) (hT : 0 < T)
     (P : ProbabilityMeasure (E × C(Icc 0 T, E))) :
-    Tendsto (fun n => P.map (endpointMap_measurable hT.le
-      (fun t => (hl t).continuous.measurable) n).aemeasurable) atTop
-      (nhds (P.map (BoundedFlow.flow_continuous hv hb hl hT.le ⟨hT.le,le_rfl⟩).measurable.aemeasurable)) := by
+    Tendsto (fun n => P.map (endpointMap hT.le v n)) atTop
+      (nhds (P.map (fun p : E × C(Icc 0 T, E) => BoundedFlow.flow hv hb hl hT.le p.1 p.2 T))) := by
   apply probabilityMeasure_map_tendsto P
     (fun n => endpointMap_measurable hT.le (fun t => (hl t).continuous.measurable) n)
     (BoundedFlow.flow_continuous hv hb hl hT.le ⟨hT.le,le_rfl⟩).measurable

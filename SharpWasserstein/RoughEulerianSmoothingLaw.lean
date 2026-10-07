@@ -1,4 +1,9 @@
-import SharpWasserstein.RoughEulerianSmoothingGaussian
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingGaussian
+
+@[expose] public section
 
 /-! Actual probability-law regularization by compact convolution and a
 stationary Gaussian floor. The constructed smooth velocity carries exactly

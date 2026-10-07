@@ -1,5 +1,10 @@
-import SharpWasserstein.BoundedIndependentSum
-import SharpWasserstein.EntropyVariational
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedIndependentSum
+public import SharpWasserstein.EntropyVariational
+
+@[expose] public section
 
 /-!
 # The internal entropy source from bounded interactions

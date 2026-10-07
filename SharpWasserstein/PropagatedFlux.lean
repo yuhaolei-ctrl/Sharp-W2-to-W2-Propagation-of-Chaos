@@ -1,4 +1,9 @@
-import SharpWasserstein.WeightedTangent
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangent
+
+@[expose] public section
 
 /-! A genuine random-map flux defines a continuous functional on the weighted
 output tangent space. Pullback is the actual measure-preserving L² isometry;

@@ -1,6 +1,11 @@
-import SharpWasserstein.FrozenGaussianMeasurable
-import SharpWasserstein.EulerBrownianGridLaw
-import Mathlib.Probability.Kernel.Composition.IntegralCompProd
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGaussianMeasurable
+public import SharpWasserstein.EulerBrownianGridLaw
+public import Mathlib.Probability.Kernel.Composition.IntegralCompProd
+
+@[expose] public section
 
 /-! Actual one-step weak expectation estimates along Gaussian Euler histories. -/
 noncomputable section

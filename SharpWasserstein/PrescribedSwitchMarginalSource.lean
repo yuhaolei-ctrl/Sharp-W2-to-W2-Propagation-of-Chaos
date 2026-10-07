@@ -1,7 +1,12 @@
-import SharpWasserstein.PrescribedSwitchMarginalSourceAction
-import SharpWasserstein.InitialSourceMarginalPairing
-import SharpWasserstein.PeriodicParticleTangentLimitMarginal
-import SharpWasserstein.RoughEulerianSmoothingFloor
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedSwitchMarginalSourceAction
+public import SharpWasserstein.InitialSourceMarginalPairing
+public import SharpWasserstein.PeriodicParticleTangentLimitMarginal
+public import SharpWasserstein.RoughEulerianSmoothingFloor
+
+@[expose] public section
 
 /-! The true marginal switch source is the canonical linear image of the
 actual Brownian propagated current. Compact marginal tests are admitted via
@@ -28,6 +33,18 @@ variable {d N : ℕ} [MeasurableSpace (Point (N*d))] [BorelSpace (Point (N*d))]
   (hM : 0 ≤ M) (hL₁ : 0 ≤ L₁) (hL₂ : 0 ≤ L₂)
   {μ : ℝ → Measure (Position d)} (hμ : IsLimitEvolution b μ)
   {T : ℝ} (hT : 0 ≤ T) (P : Measure (Configuration d N)) [IsProbabilityMeasure P]
+
+/-- Instance shortcut (port to Lean 4.35): typeclass search no longer unifies the continuity
+proof `(drift_lipschitz ..).continuous.comp continuous_snd : Continuous (drift b ∘ Prod.snd)`
+with the expected `Continuous (Function.uncurry ..)` at instance transparency, so the general
+instance `Brownian.lawAt_isFiniteMeasure` is restated with the hypotheses in that form. -/
+instance driftLawAt_isFiniteMeasure {b' : Position d → Position d → Position d} {M' K' : ℝ≥0}
+    (hv' : Continuous (drift (N := N) b' ∘ Prod.snd))
+    (hb' : ∀ (_ : ℝ) (y : Point (N*d)), ‖drift b' y‖ ≤ M')
+    (hl' : ∀ _ : ℝ, LipschitzWith K' (drift (N := N) b')) {T' : ℝ} (hT' : 0 ≤ T')
+    (ν : Measure (Point (N*d))) [IsFiniteMeasure ν] (t : ℝ) :
+    IsFiniteMeasure (Brownian.lawAt hv' hb' hl' hT' ν t) :=
+  Brownian.lawAt_isFiniteMeasure _ _ _ hT' ν t
 
 /-- Genuine canonical source pairing for bounded smooth Euclidean tests,
 including noncompact cylinders. -/

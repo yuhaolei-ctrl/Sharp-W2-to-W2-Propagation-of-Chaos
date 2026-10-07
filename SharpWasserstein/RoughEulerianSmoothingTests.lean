@@ -1,4 +1,9 @@
-import SharpWasserstein.RoughEulerianSmoothingCoupling
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingCoupling
+
+@[expose] public section
 
 /-! Compact smooth tests are preserved by the actual compact noise average.
 The derivative and law-pairing identities are proved for the real convolution,

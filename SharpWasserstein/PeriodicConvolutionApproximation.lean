@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicKernelConcentration
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicKernelConcentration
+
+@[expose] public section
 
 /-! Approximation of every probability law by its actual positive periodic
 convolution densities, tested against continuous periodic functions. -/

@@ -1,4 +1,9 @@
-import SharpWasserstein.DynamicTransport
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DynamicTransport
+
+@[expose] public section
 
 /-!
 # Exact transport cost of stretching one common mode
@@ -112,14 +117,14 @@ theorem coupling_root_cost_lower {d N : ℕ} (u : Vector d N) (hu : ‖u‖ = 1)
     rw [← hν, ← hγ.2.2, eLpNorm_map_measure
       (continuous_mode u).stronglyMeasurable.aestronglyMeasurable measurable_snd.aemeasurable]
     rfl
-  have ht := eLpNorm_add_le (hf.sub hg) hg (by norm_num : (1 : ℝ≥0∞) ≤ 2)
+  have ht := eLpNorm_add_le (f := f - g) (g := g) (μ := γ) (by norm_num : (1 : ℝ≥0∞) ≤ 2)
   rw [sub_add_cancel, hfn, hgn] at ht
   have hl : ENNReal.ofReal (β - α) ≤ eLpNorm (f - g) 2 γ := by
     rw [ENNReal.ofReal_sub β hα]
     exact tsub_le_iff_right.mpr ht
   apply hl.trans
   rw [transportCost_root_eq_eLpNorm]
-  apply eLpNorm_mono_ae
+  apply eLpNorm_mono_ae (hf.sub hg)
   filter_upwards [] with z
   change ‖mode u z.1 - mode u z.2‖ ≤ ‖transportDisplacement z‖
   rw [mode_sub]
@@ -145,6 +150,9 @@ theorem stretch_scale_commonLabel_cost {Ω : Type*} [MeasurableSpace Ω] {d N : 
       (stretchLabel α β u Z ω, scaleLabel α Z ω)) 2 P =
       eLpNorm ((β - α) • (fun ω => ⟪u, Z ω⟫_ℝ)) 2 P := by
     apply eLpNorm_congr_norm_ae
+      (continuous_transportDisplacement.comp_aestronglyMeasurable
+        ((measurable_stretchLabel α β u hZ).prodMk (measurable_scaleLabel α hZ)).aestronglyMeasurable)
+      (by fun_prop)
     filter_upwards [] with ω
     rw [stretch_scale_displacement, norm_smul, hu, mul_one]
     rfl

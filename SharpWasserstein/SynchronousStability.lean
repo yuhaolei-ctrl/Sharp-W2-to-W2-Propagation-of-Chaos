@@ -1,6 +1,11 @@
-import SharpWasserstein.DriftBounds
-import Mathlib.Analysis.ODE.Gronwall
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DriftBounds
+public import Mathlib.Analysis.ODE.Gronwall
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+
+@[expose] public section
 
 /-! Pathwise stability for genuine integral equations with a common additive
 forcing. The forcing cancels; it is never differentiated. This applies to

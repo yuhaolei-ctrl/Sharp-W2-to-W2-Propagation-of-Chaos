@@ -1,6 +1,11 @@
-import SharpWasserstein.BrownianTimeTransport
-import SharpWasserstein.TransportTriangle
-import SharpWasserstein.PrescribedReference
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianTimeTransport
+public import SharpWasserstein.TransportTriangle
+public import SharpWasserstein.PrescribedReference
+
+@[expose] public section
 
 /-! The genuine switch-time probability curve: first the prescribed reference
 flow, then the interacting flow for the remaining time. Its endpoints are

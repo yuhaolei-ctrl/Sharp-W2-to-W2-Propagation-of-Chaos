@@ -1,4 +1,9 @@
-import SharpWasserstein.FlowJacobianDriftStability
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianDriftStability
+
+@[expose] public section
 
 /-! Dominated convergence of actual drift-derivative coefficients and the
 resulting uniform-in-time operator convergence of genuine flow Jacobians. -/

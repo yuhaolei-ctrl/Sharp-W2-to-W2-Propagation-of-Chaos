@@ -1,4 +1,9 @@
-import SharpWasserstein.ReferenceWeakIdentification
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ReferenceWeakIdentification
+
+@[expose] public section
 
 /-! The constructed reference from product initial data is exactly the
 manuscript's supplied tensor curve at every nonnegative time. -/

@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicPositiveKernel
-import SharpWasserstein.NoiseAverageSmooth
-import Mathlib.MeasureTheory.Group.Integral
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicPositiveKernel
+public import SharpWasserstein.NoiseAverageSmooth
+public import Mathlib.MeasureTheory.Group.Integral
+
+@[expose] public section
 
 /-! Actual strictly positive smooth periodic convolution densities for every
 probability law, including singular laws. Normalization is an exact Fubini

@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowDependence
-import Mathlib.Topology.ContinuousMap.Compact
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowDependence
+public import Mathlib.Topology.ContinuousMap.Compact
+
+@[expose] public section
 
 /-! A measurable solution map is constructed, rather than assumed, for every
 bounded globally Lipschitz drift and every continuous additive input. -/

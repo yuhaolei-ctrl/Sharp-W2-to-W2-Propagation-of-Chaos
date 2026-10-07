@@ -1,7 +1,0 @@
-'SharpWasserstein.euclideanDrift_lipschitz_of_sup' depends on axioms: [propext, Classical.choice, Quot.sound]
-'SharpWasserstein.PrescribedReference.singleBrownianLaw_eq_supplied' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'SharpWasserstein.PrescribedReference.marginal_klDiv_le_initial_profile' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

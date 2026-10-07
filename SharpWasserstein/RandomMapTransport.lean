@@ -1,4 +1,9 @@
-import SharpWasserstein.TransportMoments
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TransportMoments
+
+@[expose] public section
 
 /-! Synchronous coupling of genuine random maps. A pointwise quadratic-cost
 bound is transported through a common-noise coupling and the infimum over

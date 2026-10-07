@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianEntropyFlow
-import SharpWasserstein.GaussianBridgeBrownian
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianEntropyFlow
+public import SharpWasserstein.GaussianBridgeBrownian
+
+@[expose] public section
 
 /-! # Entropy cost for the actually constructed Brownian flow
 The finite Gaussian identity, deterministic meeting bridge, actual Brownian

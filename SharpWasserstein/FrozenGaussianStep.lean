@@ -1,4 +1,9 @@
-import SharpWasserstein.FrozenGaussianExpectation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGaussianExpectation
+
+@[expose] public section
 
 /-! The exact frozen-drift generator formula integrated from time zero. -/
 noncomputable section

@@ -1,5 +1,10 @@
-import SharpWasserstein.EntropyChainRule
-import Mathlib.Probability.Distributions.Gaussian.Real
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyChainRule
+public import Mathlib.Probability.Distributions.Gaussian.Real
+
+@[expose] public section
 
 /-!
 # Entropy cost of Gaussian mean shifts

@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionCalculus
-import SharpWasserstein.WeightedPeriodicCoefficientEvolutionBrownian
-import SharpWasserstein.BrownianSourceSmoothPairing
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionCalculus
+public import SharpWasserstein.WeightedPeriodicCoefficientEvolutionBrownian
+public import SharpWasserstein.BrownianSourceSmoothPairing
+
+@[expose] public section
 
 /-! Genuine marginal Gram and source scalar derivatives under the constructed
 full Brownian particle evolution. Marginal laws are actual pushforwards;

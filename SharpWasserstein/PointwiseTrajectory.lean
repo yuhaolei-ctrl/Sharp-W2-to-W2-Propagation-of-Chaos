@@ -1,5 +1,10 @@
-import SharpWasserstein.DynamicTransport
-import Mathlib.MeasureTheory.Integral.Prod
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DynamicTransport
+public import Mathlib.MeasureTheory.Integral.Prod
+
+@[expose] public section
 
 /-!
 # Lifting pointwise trajectories to L²
@@ -66,10 +71,10 @@ theorem integrable_inner_product {T : Type*} [MeasurableSpace T]
 omit [InnerProductSpace ℝ E] in
 theorem integral_norm_le_l2norm [IsProbabilityMeasure P] {f : Ω → E} (hf : MemLp f 2 P) :
     (∫ ω, ‖f ω‖ ∂P) ≤ ‖hf.toLp f‖ := by
-  rw [Lp.norm_toLp, integral_norm_eq_lintegral_enorm hf.1,
-    ← eLpNorm_one_eq_lintegral_enorm]
-  exact ENNReal.toReal_mono hf.2.ne
-    (eLpNorm_le_eLpNorm_of_exponent_le (by norm_num : (1 : ℝ≥0∞) ≤ 2) hf.1)
+  rw [Lp.norm_toLp, integral_norm_eq_lintegral_enorm hf.aestronglyMeasurable,
+    ← eLpNorm_one_eq_lintegral_enorm hf.aestronglyMeasurable]
+  exact ENNReal.toReal_mono hf.eLpNorm_lt_top.ne
+    (eLpNorm_le_eLpNorm_of_exponent_le (by norm_num : (1 : ℝ≥0∞) ≤ 2))
 
 omit [InnerProductSpace ℝ E] in
 /-- Time-L¹, label-L² integrability implies genuine joint Bochner integrability. -/

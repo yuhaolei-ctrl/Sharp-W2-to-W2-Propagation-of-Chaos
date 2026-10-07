@@ -1,4 +1,10 @@
-import SharpWasserstein.FiniteCoefficientMatrix
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+public import SharpWasserstein.FiniteCoefficientMatrix
+
+@[expose] public section
 
 /-! The actual finite weighted Gram matrix is coercive for every finite
 measure, including singular measures. Its inverse energy equals the energy

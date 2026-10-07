@@ -1,4 +1,9 @@
-import SharpWasserstein.WeightedEnergyDerivative
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedEnergyDerivative
+
+@[expose] public section
 
 /-! Endpoint differentiation of the actual coercive inverse energy on a
 closed time interval. No extension of the evolution past its endpoints is

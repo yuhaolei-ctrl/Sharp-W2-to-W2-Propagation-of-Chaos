@@ -1,4 +1,9 @@
-import SharpWasserstein.TransportTriangle
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TransportTriangle
+
+@[expose] public section
 
 /-! Removing actual endpoint regularizations in the true unnormalized
 Wasserstein cost. All measures have their actual finite second moments; no

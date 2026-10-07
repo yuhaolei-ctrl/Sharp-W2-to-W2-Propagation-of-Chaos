@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTimeActionLaw
-import SharpWasserstein.RoughEulerianSmoothingAction
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeActionLaw
+public import SharpWasserstein.RoughEulerianSmoothingAction
+
+@[expose] public section
 
 /-! Exact joint Euclidean action contraction for a normalized nonnegative
 space-time convolution kernel. The concrete product time/space kernel will

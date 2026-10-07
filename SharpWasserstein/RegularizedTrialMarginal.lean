@@ -1,4 +1,9 @@
-import SharpWasserstein.RegularizedTrialEnergy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialEnergy
+
+@[expose] public section
 
 /-! Exact finite-trial marginal fluctuation identity. The positive coefficient
 penalty improves the bound, so it can safely be removed only in this direction. -/

@@ -1,5 +1,10 @@
-import SharpWasserstein.ContinuousPathLaw
-import SharpWasserstein.BrownianHorizon
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ContinuousPathLaw
+public import SharpWasserstein.BrownianHorizon
+
+@[expose] public section
 
 /-! Independent past and shifted future for the actual continuous Brownian
 path law. Process independence is transported through the evaluation-generated
@@ -21,7 +26,7 @@ def shiftPath {S T : ℝ} (hS : 0 ≤ S) (hT : 0 ≤ T)
 omit [NormedSpace ℝ E] in
 theorem shiftPath_measurable [MeasurableSpace E] [BorelSpace E] [SecondCountableTopology E]
     {S T : ℝ} (hS : 0 ≤ S) (hT : 0 ≤ T) : Measurable (shiftPath (E := E) hS hT) := by
-  apply (ContinuousMap.measurable_iff_eval _).mpr
+  apply ContinuousMap.measurable_iff_eval.mpr
   intro t
   change Measurable (fun w : C(Icc 0 (S+T),E) =>
     w ⟨S+t,add_nonneg hS t.property.1,add_le_add_right t.property.2 S⟩ -
@@ -52,7 +57,7 @@ theorem shiftedScalarPath_hasLaw {S T : ℝ} (hS : 0 ≤ S) (hT : 0 ≤ T) :
   have hF : Measurable F := by unfold F; fun_prop
   have hFlaw : HasLaw F (gaussianLimit.map F) gaussianLimit := ⟨hF.aemeasurable,rfl⟩
   have hs := (isBrownianReal_brownian.toIsPreBrownianReal.shift ⟨S,hS⟩).hasLaw_gaussianLimit
-    (by apply Measurable.aemeasurable; apply measurable_pi_lambda; intro t; fun_prop)
+    (by apply Measurable.aemeasurable; apply Measurable.of_eval; intro t; fun_prop)
   have hmap := (hFlaw.comp hs).map_eq.trans (hFlaw.comp hasLaw_brownian).map_eq.symm
   convert hmap using 1
   · congr 1

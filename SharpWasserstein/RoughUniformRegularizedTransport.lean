@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughUniformActionData
-import SharpWasserstein.RoughEulerianRegularizedTransport
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughUniformActionData
+public import SharpWasserstein.RoughEulerianRegularizedTransport
+
+@[expose] public section
 
 /-! A single uniform objective bound for the original source yields the
 actual smoothed compressed endpoint cost bound `T² E`, independent of every

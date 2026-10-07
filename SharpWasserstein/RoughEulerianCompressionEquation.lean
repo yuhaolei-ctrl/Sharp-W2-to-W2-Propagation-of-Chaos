@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianCompressionTests
-import SharpWasserstein.RoughEulerianCompressionFlux
-import SharpWasserstein.RoughEulerianCompressionEndpoint
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianCompressionTests
+public import SharpWasserstein.RoughEulerianCompressionFlux
+public import SharpWasserstein.RoughEulerianCompressionEndpoint
+
+@[expose] public section
 
 /-! The compressed probability curve and actual pushed flux satisfy the literal
 compact-test continuity equation. Its action bound and endpoint convergence
@@ -71,7 +76,7 @@ theorem compressedFlux_localized_gradient {α : Type*} [MeasurableSpace α]
 /-- The genuinely compressed probability law at each time. -/
 def compressedCurve (R : ℝ) (μ : ℝ → ProbabilityMeasure (Point d)) (t : ℝ) :
     ProbabilityMeasure (Point d) :=
-  (μ t).map (compression_contDiff R).continuous.measurable.aemeasurable
+  (μ t).map (compression R)
 
 theorem compressedCurve_continuous (R : ℝ) {μ : ℝ → ProbabilityMeasure (Point d)}
     (hμ : Continuous μ) : Continuous (compressedCurve R μ) :=

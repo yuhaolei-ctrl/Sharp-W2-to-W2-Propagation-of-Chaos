@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughCommonLabelLift
-import SharpWasserstein.SwitchCurveTimeEnergy
-import SharpWasserstein.PrescribedSwitchMetricIdentification
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughCommonLabelLift
+public import SharpWasserstein.SwitchCurveTimeEnergy
+public import SharpWasserstein.PrescribedSwitchMetricIdentification
+
+@[expose] public section
 
 /-! Actual common probability labels for every clamped switch marginal.
 The mean-square continuity is proved from Brownian increments on the same

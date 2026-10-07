@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionTerminal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionTerminal
+
+@[expose] public section
 
 /-! The sharp finite Fourier hierarchy along the actual Brownian law and
 its actual propagated source. Both the optimized coefficient derivative and

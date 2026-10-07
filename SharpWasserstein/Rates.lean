@@ -1,6 +1,11 @@
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecialFunctions.ExpDeriv
-import Mathlib.Tactic
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecialFunctions.ExpDeriv
+public import Mathlib.Tactic
+
+@[expose] public section
 
 /-! Algebraic estimates with the manuscript's genuine real-valued constants.
 These lemmas do not assert that a diffusion or a Gaussian law realizes them. -/

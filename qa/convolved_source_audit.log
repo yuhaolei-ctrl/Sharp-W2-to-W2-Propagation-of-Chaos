@@ -1,6 +1,0 @@
-WeightedConvolutionSmooth 0
-PeriodicFluxSmooth 0
-PeriodicFluxEuclidean 0
-PeriodicFluxOptimizer 0
-PeriodicConvolvedOptimizer 0
-PASS: 5 modules, 42 declarations, ['Classical.choice', 'Quot.sound', 'propext']

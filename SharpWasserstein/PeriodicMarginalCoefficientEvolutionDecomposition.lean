@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionGeneratorTime
-import SharpWasserstein.PhysicalFourierTrialHierarchy
-import SharpWasserstein.InternalDriftFiniteBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionGeneratorTime
+public import SharpWasserstein.PhysicalFourierTrialHierarchy
+public import SharpWasserstein.InternalDriftFiniteBounds
+
+@[expose] public section
 
 /-! Exact generator energy decomposition before applying the finite hierarchy
 estimate. Prefix source consistency identifies every law and representative. -/

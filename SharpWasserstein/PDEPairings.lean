@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedTangent
-import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
-import Mathlib.Analysis.Calculus.ParametricIntegral
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangent
+public import Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+public import Mathlib.Analysis.Calculus.ParametricIntegral
+
+@[expose] public section
 
 /-! Genuine integration-by-parts identities for the Euclidean Fokker–Planck
 operator, tested against actual compact smooth functions. -/

@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianSourceCoordinatePairing
-import SharpWasserstein.SwitchSourceDerivativeFlux
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianSourceCoordinatePairing
+public import SharpWasserstein.SwitchSourceDerivativeFlux
+
+@[expose] public section
 
 /-! The actual scalar switch derivative equals the same Euclidean Brownian
 propagated current whose sharp energy is estimated by the finite hierarchy. -/

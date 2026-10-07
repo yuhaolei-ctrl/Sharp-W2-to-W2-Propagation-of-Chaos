@@ -1,4 +1,9 @@
-import SharpWasserstein.RoughEulerianTransportContinuity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportContinuity
+
+@[expose] public section
 
 /-! Restriction and time translation of the genuine compact-test continuity
 equation. This allows finite-action transport on every positive-time interval

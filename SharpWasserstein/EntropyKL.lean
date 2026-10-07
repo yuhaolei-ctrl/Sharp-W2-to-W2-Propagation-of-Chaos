@@ -1,5 +1,10 @@
-import SharpWasserstein.EntropyDirection
-import Mathlib.InformationTheory.KullbackLeibler.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyDirection
+public import Mathlib.InformationTheory.KullbackLeibler.Basic
+
+@[expose] public section
 
 /-!
 # The corrected entropy-cost identity for the actual KL divergence

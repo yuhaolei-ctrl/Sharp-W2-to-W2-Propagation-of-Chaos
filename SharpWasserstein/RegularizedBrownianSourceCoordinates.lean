@@ -1,6 +1,11 @@
-import SharpWasserstein.InitialSourceMarginalRegularized
-import SharpWasserstein.BrownianPeriodicHierarchyInitial
-import SharpWasserstein.InitialCurrentBrownianSource
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.InitialSourceMarginalRegularized
+public import SharpWasserstein.BrownianPeriodicHierarchyInitial
+public import SharpWasserstein.InitialCurrentBrownianSource
+
+@[expose] public section
 
 /-! Exact coordinate conversion of the one-source regularized initial profile.
 The source sign is the actual reference-minus-particle current, and every

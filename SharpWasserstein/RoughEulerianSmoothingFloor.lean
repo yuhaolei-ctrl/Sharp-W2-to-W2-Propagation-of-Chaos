@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedIntegralSquare
-import SharpWasserstein.WeightedConvolutionSmooth
-import Mathlib.Analysis.Calculus.ContDiff.Operations
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedIntegralSquare
+public import SharpWasserstein.WeightedConvolutionSmooth
+public import Mathlib.Analysis.Calculus.ContDiff.Operations
+
+@[expose] public section
 
 /-! Adding a stationary positive density to an actual convolved density and
 flux. The denominator is proved positive, the flux is preserved exactly, and

@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizedTrialConvergence
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialConvergence
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 
 /-! Dominated convergence of the genuine regularized energy residuals.
 Only scalar energies are assumed measurable. The optimizer vector may live

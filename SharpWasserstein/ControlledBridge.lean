@@ -1,5 +1,10 @@
-import SharpWasserstein.FiniteTrajectory
-import SharpWasserstein.RegularizationRates
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteTrajectory
+public import SharpWasserstein.RegularizationRates
+
+@[expose] public section
 
 /-! The actual deterministic bridge and its control energy. Its trajectory
 and terminal meeting are proved directly from the integral equation; no

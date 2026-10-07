@@ -1,5 +1,10 @@
-import SharpWasserstein.ReferenceTensorIdentification
-import SharpWasserstein.RegularizedEntropyProfile
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ReferenceTensorIdentification
+public import SharpWasserstein.RegularizedEntropyProfile
+
+@[expose] public section
 
 /-! Entropy regularization relative to the manuscript's supplied reference
 law. The reference identification and the dimension-dependent Euclidean
@@ -11,7 +16,7 @@ namespace SharpWasserstein
 
 theorem euclideanDrift_lipschitz_of_sup {d : ℕ} {v : ℝ → Position d → Position d}
     {K : ℝ≥0} (hv : ∀ t, LipschitzWith K (v t)) (t : ℝ) :
-    LipschitzWith (⟨Real.sqrt (d:ℝ)*(K:ℝ),by positivity⟩ : ℝ≥0)
+    LipschitzWith (NNReal.mk (Real.sqrt (d:ℝ)*(K:ℝ)) (by positivity))
       (GaussianBridge.euclideanDrift v t) := by
   apply LipschitzWith.of_dist_le_mul
   intro x y

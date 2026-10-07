@@ -1,5 +1,10 @@
-import SharpWasserstein.PropagatedSourceEquation
-import SharpWasserstein.ParticleFlowPermutation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquation
+public import SharpWasserstein.ParticleFlowPermutation
+
+@[expose] public section
 
 /-! Covariance of actual differentiated flow expectations and their propagated
 finite-energy sources. The initial field is only required to be equivariant

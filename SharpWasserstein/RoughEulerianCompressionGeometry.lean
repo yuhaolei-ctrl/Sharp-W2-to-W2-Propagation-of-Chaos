@@ -1,5 +1,10 @@
-import SharpWasserstein.SinePeriodizationDerivative
-import SharpWasserstein.WeightedTangent
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SinePeriodizationDerivative
+public import SharpWasserstein.WeightedTangent
+
+@[expose] public section
 
 /-! Smooth bounded-range compressions of actual Euclidean space, with exact
 one-Lipschitz and Jacobian bounds. No sup-norm conversion loss enters the energy. -/

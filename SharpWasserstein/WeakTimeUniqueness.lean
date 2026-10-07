@@ -1,5 +1,10 @@
-import SharpWasserstein.WeakTimeBackwardTelescope
-import SharpWasserstein.SmoothBoundedCharacteristic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakTimeBackwardTelescope
+public import SharpWasserstein.SmoothBoundedCharacteristic
+
+@[expose] public section
 
 /-! Uniqueness of actual weak Fokker--Planck evolutions for jointly continuous
 bounded time-dependent drifts with uniform spatial derivative bounds. The

@@ -1,6 +1,11 @@
-import SharpWasserstein.TransportTriangle
-import Mathlib.Analysis.SpecialFunctions.Pow.Real
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TransportTriangle
+public import Mathlib.Analysis.SpecialFunctions.Pow.Real
+public import Mathlib.Analysis.SpecificLimits.Basic
+
+@[expose] public section
 
 /-! Summing genuine finite-action bounds on geometrically shrinking intervals
 removes the nonintegrable energy singularity 1/s. The resulting length is finite

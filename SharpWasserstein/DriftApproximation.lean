@@ -1,7 +1,12 @@
-import SharpWasserstein.FlowDependence
-import SharpWasserstein.FlowCausality
-import SharpWasserstein.EulerLaw
-import Mathlib.Topology.UniformSpace.LocallyUniformConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowDependence
+public import SharpWasserstein.FlowCausality
+public import SharpWasserstein.EulerLaw
+public import Mathlib.Topology.UniformSpace.LocallyUniformConvergence
+
+@[expose] public section
 
 /-! Stability under approximation of the drift. The error is required only
 along the limiting trajectory, so locally uniform drift approximation suffices. -/

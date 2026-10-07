@@ -1,6 +1,11 @@
-import SharpWasserstein.EulerianTransportFlow
-import SharpWasserstein.EulerianTransportUniqueness
-import SharpWasserstein.EulerianTransportL2
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerianTransportFlow
+public import SharpWasserstein.EulerianTransportUniqueness
+public import SharpWasserstein.EulerianTransportL2
+
+@[expose] public section
 
 /-! A genuine Eulerian-to-Wasserstein bridge for bounded smooth spatially
 Lipschitz velocities. The weak equation determines the constructed characteristic

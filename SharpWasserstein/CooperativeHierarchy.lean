@@ -1,7 +1,12 @@
-import Mathlib.Analysis.ODE.Gronwall
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
-import Mathlib.Tactic.NormNum
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.ODE.Gronwall
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.NormNum
+
+@[expose] public section
 
 /-!
 # Finite cooperative hierarchy comparison

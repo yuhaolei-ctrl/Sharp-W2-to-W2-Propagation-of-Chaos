@@ -1,4 +1,9 @@
-import SharpWasserstein.BrownianEnergyPeriodizationPeriodic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianEnergyPeriodizationPeriodic
+
+@[expose] public section
 
 /-! Genuine full Euclidean propagation of the quadratic marginal source
 profile for the original nonperiodic bounded smooth interaction kernel.

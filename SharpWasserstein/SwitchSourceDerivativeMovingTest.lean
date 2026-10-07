@@ -1,4 +1,9 @@
-import SharpWasserstein.SwitchSourceDerivativeShortTime
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeShortTime
+
+@[expose] public section
 
 /-! The synchronous comparison allows the observable itself to vary with
 remaining time. Joint continuity of its first spatial differential suffices;

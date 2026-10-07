@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizedTrialEnergy
-import SharpWasserstein.WeightedGradientApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialEnergy
+public import SharpWasserstein.WeightedGradientApproximation
+
+@[expose] public section
 
 /-! A finite family of actual smooth potentials gives a bounded coefficient
 map into the true weighted Euclidean L² space of any finite measure. This

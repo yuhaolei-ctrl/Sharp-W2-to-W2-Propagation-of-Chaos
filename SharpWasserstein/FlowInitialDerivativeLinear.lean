@@ -1,5 +1,10 @@
-import SharpWasserstein.BoundedFlow
-import Mathlib.Analysis.Calculus.FDeriv.CompCLM
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedFlow
+public import Mathlib.Analysis.Calculus.FDeriv.CompCLM
+
+@[expose] public section
 
 /-! Constructed short-time variational equations for continuous operator fields.
 No solution of the variational equation is postulated: Picard–Lindelöf constructs

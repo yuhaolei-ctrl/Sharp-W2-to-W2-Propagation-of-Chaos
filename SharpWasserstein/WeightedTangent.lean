@@ -1,12 +1,18 @@
-import SharpWasserstein.DenseVariational
-import Mathlib.Analysis.Calculus.Gradient.Basic
-import Mathlib.Analysis.Calculus.ContDiff.Basic
-import Mathlib.Analysis.Calculus.FDeriv.Const
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.Analysis.Normed.Operator.Extend
-import Mathlib.MeasureTheory.Function.L2Space
-import Mathlib.MeasureTheory.Function.LpSpace.Indicator
-import Mathlib.Tactic.FunProp
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DenseVariational
+public import Mathlib.Analysis.Calculus.Gradient.Basic
+public import Mathlib.Analysis.Calculus.ContDiff.Basic
+public import Mathlib.Analysis.Calculus.ContDiff.Operations
+public import Mathlib.Analysis.Calculus.FDeriv.Const
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Analysis.Normed.Operator.Extend
+public import Mathlib.MeasureTheory.Function.L2Space
+public import Mathlib.MeasureTheory.Function.LpSpace.Indicator
+public import Mathlib.Tactic.FunProp
+
+@[expose] public section
 
 /-!
 # Weighted negative-Sobolev tangents on Euclidean space
@@ -64,7 +70,7 @@ theorem test_gradient_memLp (φ : Test d) :
 /-- The squared gradient energy is an integrable function, so its integral is not totalized. -/
 theorem integrable_test_gradient_sq (φ : Test d) :
     Integrable (fun x => ‖gradient (φ : Point d → ℝ) x‖ ^ 2) μ :=
-  (memLp_two_iff_integrable_sq_norm (test_gradient_memLp μ φ).1).mp
+  (memLp_two_iff_integrable_sq_norm (test_gradient_memLp μ φ).aestronglyMeasurable).mp
     (test_gradient_memLp μ φ)
 
 /-- The actual test gradient as an equivalence class in weighted `L²`. -/
@@ -122,6 +128,15 @@ def gradientClosure : Submodule ℝ (Lp (Point d) 2 μ) :=
 instance gradientClosure_completeSpace : CompleteSpace (gradientClosure μ) := by
   unfold gradientClosure
   infer_instance
+
+/-- Shortcut instance: lets instance search see the normed structure of `gradientClosure μ`
+directly when it is the ambient space of a further submodule. -/
+instance (priority := 10) gradientClosure_normedAddCommGroup : NormedAddCommGroup (gradientClosure μ) :=
+  Submodule.normedAddCommGroup _
+
+/-- Shortcut instance, see `gradientClosure_normedAddCommGroup`. -/
+instance (priority := 10) gradientClosure_innerProductSpace : InnerProductSpace ℝ (gradientClosure μ) :=
+  Submodule.innerProductSpace _
 
 /-- The test gradient regarded as a vector in its closed tangent space. -/
 def gradientIntoClosure : Test d →ₗ[ℝ] gradientClosure μ :=

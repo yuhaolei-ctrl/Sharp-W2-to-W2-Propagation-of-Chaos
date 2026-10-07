@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicSmoothGradient
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicSmoothGradient
+
+@[expose] public section
 
 /-! Genuine `L²` Hessian columns of smooth periodic potentials. The compact
 representatives agree to every derivative near the full fundamental cube, so

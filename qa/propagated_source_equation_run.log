@@ -1,9 +1,0 @@
-PropagatedSourceEquationMeasurable 0
-PropagatedSourceEquationDifferentiation 0
-PropagatedSourceEquationIntegration 0
-PropagatedSourceEquationConjugacy 0
-PropagatedSourceEquationBrownian 0
-PropagatedSourceEquation 0
-PropagatedSourceEquationDistribution 0
-PropagatedSourceEquationLaw 0
-PASS: 8 modules, 42 declarations, ['Classical.choice', 'Quot.sound', 'propext']

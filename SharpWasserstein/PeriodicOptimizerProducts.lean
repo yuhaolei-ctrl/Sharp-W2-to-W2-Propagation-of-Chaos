@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicL2Multiplier
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicL2Multiplier
+
+@[expose] public section
 
 /-! Actual optimizer coordinates and their smooth periodic multiples lie in
 closed scalar test-value spaces. This makes weak Hessian convergence usable

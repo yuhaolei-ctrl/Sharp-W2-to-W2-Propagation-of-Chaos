@@ -1,5 +1,10 @@
-import SharpWasserstein.GaussianEulerBackwardSecond
-import SharpWasserstein.DerivativeCompositionThird
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEulerBackwardSecond
+public import SharpWasserstein.DerivativeCompositionThird
+
+@[expose] public section
 
 /-! Third-order regularity and derivative bounds of genuine Gaussian Euler
 backward tests, derived by averaging and the actual chain rule. -/

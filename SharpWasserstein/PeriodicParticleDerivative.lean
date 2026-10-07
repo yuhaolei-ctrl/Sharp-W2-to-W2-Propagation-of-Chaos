@@ -1,6 +1,11 @@
-import SharpWasserstein.SinePeriodizationDerivative
-import SharpWasserstein.PeriodicParticleApproximation
-import SharpWasserstein.ConfigurationEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SinePeriodizationDerivative
+public import SharpWasserstein.PeriodicParticleApproximation
+public import SharpWasserstein.ConfigurationEuclidean
+
+@[expose] public section
 
 /-! Genuine particle-drift Jacobian convergence for the actual smooth
 periodization, including the Euclidean-coordinate version used by tangent

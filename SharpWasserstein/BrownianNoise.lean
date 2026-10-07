@@ -1,5 +1,10 @@
-import BrownianMotion.Gaussian.BrownianMotion
-import SharpWasserstein.FlowMoments
+module
+
+public import SharpWasserstein.Compat
+public import BrownianMotion.Gaussian.BrownianMotion
+public import SharpWasserstein.FlowMoments
+
+@[expose] public section
 
 /-! Concrete continuous Brownian input, with the sqrt(2) normalization of the
 manuscript. The source is the pinned, independently replayed Brownian library;
@@ -20,7 +25,7 @@ def scalarPath {T : ℝ} (ω : Sample) : C(Icc 0 T, ℝ) :=
       (continuous_subtype_val.subtype_mk _))⟩
 
 theorem scalarPath_measurable {T : ℝ} : Measurable (scalarPath (T := T)) := by
-  apply (ContinuousMap.measurable_iff_eval _).mpr
+  apply ContinuousMap.measurable_iff_eval.mpr
   intro t
   exact measurable_const.mul (measurable_brownian _)
 

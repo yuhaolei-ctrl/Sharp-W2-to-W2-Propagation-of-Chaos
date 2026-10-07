@@ -1,4 +1,9 @@
-import SharpWasserstein.EulerBrownianLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerBrownianLaw
+
+@[expose] public section
 
 /-! Actual Euler history laws for every prefix of a fixed time grid. -/
 noncomputable section

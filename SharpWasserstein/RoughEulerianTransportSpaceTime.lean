@@ -1,5 +1,10 @@
-import SharpWasserstein.WeightedTangent
-import Mathlib.Probability.Kernel.Composition.IntegralCompProd
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangent
+public import Mathlib.Probability.Kernel.Composition.IntegralCompProd
+
+@[expose] public section
 
 /-! An actual space-time L² flux from scalar distribution pairings. The construction
 uses one Riesz theorem in the joint measure, with no measurable choice of a
@@ -126,7 +131,7 @@ theorem fieldGradientLp_norm_sq (φ : Field ν κ σ) :
     ‖fieldGradientLp ν κ σ φ‖ ^ 2 =
       ∫ t, ∫ x, ‖gradient (φ.val t : Point d → ℝ) x‖ ^ 2 ∂κ t ∂ν := by
   rw [← real_inner_self_eq_norm_sq,L2.inner_def]
-  have hi := (memLp_two_iff_integrable_sq_norm φ.property.1.1).mp φ.property.1
+  have hi := (memLp_two_iff_integrable_sq_norm φ.property.1.aestronglyMeasurable).mp φ.property.1
   calc
     _ = ∫ z, ‖fieldGradient φ.val z‖ ^ 2 ∂(ν ⊗ₘ κ) := by
       apply integral_congr_ae
@@ -142,7 +147,7 @@ theorem field_objective_le_integral {E : α → ℝ} (hE : Integrable E ν)
     DenseVariational.objective (fieldAction ν κ σ) (fieldIntoClosure ν κ σ) φ ≤ ∫ t, E t ∂ν := by
   change 2*(∫ t, σ t (φ.val t) ∂ν)-‖fieldGradientLp ν κ σ φ‖^2 ≤ _
   rw [fieldGradientLp_norm_sq]
-  have hi := (memLp_two_iff_integrable_sq_norm φ.property.1.1).mp φ.property.1
+  have hi := (memLp_two_iff_integrable_sq_norm φ.property.1.aestronglyMeasurable).mp φ.property.1
   have he := (Measure.integrable_compProd_iff hi.1).mp hi
   have hn : Integrable (fun t => ∫ x, ‖gradient (φ.val t : Point d → ℝ) x‖^2 ∂κ t) ν := by
     simpa only [fieldGradient,Real.norm_eq_abs,abs_pow,abs_norm] using he.2

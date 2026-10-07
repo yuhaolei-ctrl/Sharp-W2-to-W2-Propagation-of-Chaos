@@ -1,6 +1,11 @@
-import SharpWasserstein.BoundedDerivativeComposition
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
-import Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedDerivativeComposition
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+public import Mathlib.MeasureTheory.Measure.CharacteristicFunction.Basic
+
+@[expose] public section
 
 /-! Smooth globally bounded tests with bounded derivatives separate finite
 measures. The proof uses actual sine and cosine of continuous linear

@@ -1,4 +1,9 @@
-import SharpWasserstein.BrownianSemigroup
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianSemigroup
+
+@[expose] public section
 
 /-! Actual time-dependent restart. Both the pathwise composition and the
 law identity are derived from the constructed trajectories and independent

@@ -1,9 +1,14 @@
-import SharpWasserstein.EntropyChainRule
-import SharpWasserstein.EntropyDataProcessing
-import SharpWasserstein.EntropyHierarchy
-import SharpWasserstein.Transport
-import Mathlib.Probability.Kernel.Disintegration.StandardBorel
-import Mathlib.Probability.Kernel.Composition.Lemmas
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyChainRule
+public import SharpWasserstein.EntropyDataProcessing
+public import SharpWasserstein.EntropyHierarchy
+public import SharpWasserstein.Transport
+public import Mathlib.Probability.Kernel.Disintegration.StandardBorel
+public import Mathlib.Probability.Kernel.Composition.Lemmas
+
+@[expose] public section
 
 /-!
 # Entropy increments of exchangeable laws
@@ -297,7 +302,7 @@ theorem pairObservation_swap_invariant {d n N : ℕ} (h : n + 2 ≤ N)
   let b : Fin N := ⟨n + 1, by omega⟩
   let e := Equiv.swap a b
   have he : Measurable (fun x : Configuration d N ↦ fun i ↦ x (e i)) := by
-    exact measurable_pi_lambda _ (fun i ↦ measurable_pi_apply (e i))
+    exact Measurable.of_eval (fun i ↦ measurable_pi_apply (e i))
   have hfun : (Prod.map id Prod.swap) ∘ pairObservation h =
       pairObservation h ∘ (fun x : Configuration d N ↦ fun i ↦ x (e i)) := by
     funext x

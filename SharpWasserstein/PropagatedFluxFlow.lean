@@ -1,5 +1,10 @@
-import SharpWasserstein.PropagatedFlux
-import SharpWasserstein.FlowSemigroupDerivativePairing
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedFlux
+public import SharpWasserstein.FlowSemigroupDerivativePairing
+
+@[expose] public section
 
 /-! Actual fixed-time propagation of a finite-energy source by the constructed
 flow semigroup. The flux is J_t(x,w)u(x), under the genuine product input law. -/
@@ -129,7 +134,7 @@ theorem distribution_finiteEnergy_and_energy_le (σ : Test d →ₗ[ℝ] ℝ)
 exactly the original finite-energy source as initial value. -/
 theorem distribution_zero (hzero : ∀ᵐ w ∂ξ, w ⟨0,le_rfl,hT⟩ = 0)
     (σ : Test d →ₗ[ℝ] ℝ) (hσ : FiniteEnergy μ σ) :
-    distribution hv hb hl hT ξ (t := 0) ⟨le_rfl,hT⟩ hbs hB μ σ = σ := by
+    distribution hv hb hl hT ξ (t := 0) (left_mem_Icc.2 hT) hbs hB μ σ = σ := by
   ext φ
   rw [distribution_apply,expectation_zero hv hb hl hT ξ hzero]
   rw [representative_divergence μ σ hσ φ]

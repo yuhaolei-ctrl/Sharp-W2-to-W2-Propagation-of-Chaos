@@ -1,4 +1,9 @@
-import SharpWasserstein.RoughEulerianTimeActionProduct
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeActionProduct
+
+@[expose] public section
 
 /-! The jointly smoothed density is the density of a genuine averaged
 probability law. Its law-weighted kinetic action is exactly the previously

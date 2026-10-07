@@ -1,4 +1,9 @@
-import SharpWasserstein.PropagatedSourceEquationDistribution
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquationDistribution
+
+@[expose] public section
 
 /-! Exact identification of the measure carrying the propagated source with
 the already constructed Brownian flow law in Euclidean coordinates. -/

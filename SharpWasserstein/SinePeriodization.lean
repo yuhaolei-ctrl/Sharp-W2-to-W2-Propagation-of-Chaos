@@ -1,6 +1,11 @@
-import SharpWasserstein.DriftBounds
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
-import Mathlib.Topology.UniformSpace.LocallyUniformConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DriftBounds
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+public import Mathlib.Topology.UniformSpace.LocallyUniformConvergence
+
+@[expose] public section
 
 /-! Smooth periodic approximation by coordinate sine maps. Unlike wrapping a
 cutoff across a seam, this construction is globally smooth from its definition. -/

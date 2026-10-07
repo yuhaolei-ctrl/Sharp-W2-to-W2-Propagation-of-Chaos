@@ -1,4 +1,9 @@
-import SharpWasserstein.FlowInitialDerivativeRemainder
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowInitialDerivativeRemainder
+
+@[expose] public section
 
 /-! Actual short-time initial-value differentiability of bounded autonomous
 continuous-input flows. The Jacobian is constructed by Picard–Lindelöf, and

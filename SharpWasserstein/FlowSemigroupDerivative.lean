@@ -1,6 +1,11 @@
-import SharpWasserstein.FlowJacobianContinuitySmooth
-import SharpWasserstein.BoundedNoiseAverage
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianContinuitySmooth
+public import SharpWasserstein.BoundedNoiseAverage
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 
 /-! Differentiating the genuine continuous-input flow expectation. The
 initial-value derivative is constructed previously; the derivative of the

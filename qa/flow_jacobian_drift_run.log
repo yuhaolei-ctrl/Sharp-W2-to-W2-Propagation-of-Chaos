@@ -1,6 +1,0 @@
-FlowJacobianDriftEquation 0
-FlowJacobianDriftVariation 0
-FlowJacobianDriftStability 0
-FlowJacobianDriftConvergence 0
-FlowJacobianDriftSmooth 0
-PASS: 5 modules, 18 declarations, ['Classical.choice', 'Quot.sound', 'propext']

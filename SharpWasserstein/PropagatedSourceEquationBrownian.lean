@@ -1,6 +1,11 @@
-import SharpWasserstein.PropagatedSourceEquationConjugacy
-import SharpWasserstein.PropagatedSourceEquationMeasurable
-import SharpWasserstein.BrownianFlowWeak
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquationConjugacy
+public import SharpWasserstein.PropagatedSourceEquationMeasurable
+public import SharpWasserstein.BrownianFlowWeak
+
+@[expose] public section
 
 /-! The primal integral identity for the actual Brownian input law, first in
 configuration coordinates and then under the exact Euclidean coordinate map. -/

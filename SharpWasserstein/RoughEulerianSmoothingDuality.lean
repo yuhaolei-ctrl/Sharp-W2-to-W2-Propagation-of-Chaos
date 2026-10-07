@@ -1,4 +1,9 @@
-import SharpWasserstein.RoughEulerianSmoothingTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingTests
+
+@[expose] public section
 
 /-! Exact compact-test duality for convolution of a genuine integrable
 vector field with arbitrary measurable labels. The label formulation applies

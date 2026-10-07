@@ -1,5 +1,10 @@
-import SharpWasserstein.WeakBackwardEulerTelescope
-import SharpWasserstein.SmoothBoundedCharacteristic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakBackwardEulerTelescope
+public import SharpWasserstein.SmoothBoundedCharacteristic
+
+@[expose] public section
 
 /-! Uniqueness of the stated weak Fokker--Planck evolution for an autonomous
 smooth drift with bounded derivatives. The proof compares two arbitrary weak

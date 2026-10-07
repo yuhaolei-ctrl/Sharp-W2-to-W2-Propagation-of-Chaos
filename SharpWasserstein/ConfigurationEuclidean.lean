@@ -1,7 +1,12 @@
-import SharpWasserstein.Dynamics
-import SharpWasserstein.WeightedTangent
-import Mathlib.Analysis.Calculus.FDeriv.Equiv
-import Mathlib.Logic.Equiv.Fin.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.Dynamics
+public import SharpWasserstein.WeightedTangent
+public import Mathlib.Analysis.Calculus.FDeriv.Equiv
+public import Mathlib.Logic.Equiv.Fin.Basic
+
+@[expose] public section
 
 /-!
 # Explicit Euclidean coordinates for particle configurations

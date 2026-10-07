@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTimeKernel
-import SharpWasserstein.RoughEulerianSmoothingLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeKernel
+public import SharpWasserstein.RoughEulerianSmoothingLaw
+
+@[expose] public section
 
 /-! Actual joint space-time convolution of the original finite carrying
 measure and integrable flux. A compact product kernel and a stationary

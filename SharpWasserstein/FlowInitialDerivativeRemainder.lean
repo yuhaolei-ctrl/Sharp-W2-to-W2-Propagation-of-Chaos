@@ -1,6 +1,11 @@
-import SharpWasserstein.FlowInitialDerivativeLinear
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Analysis.Calculus.Deriv.Mul
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowInitialDerivativeLinear
+public import Mathlib.Analysis.Calculus.MeanValue
+public import Mathlib.Analysis.Calculus.Deriv.Mul
+
+@[expose] public section
 
 /-! Actual linearization error of two continuous-forcing trajectories, obtained
 from a genuine variational ODE, Taylor's inequality, and Grönwall. -/

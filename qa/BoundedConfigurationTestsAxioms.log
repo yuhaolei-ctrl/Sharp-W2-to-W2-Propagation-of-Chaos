@@ -1,8 +1,0 @@
-'SharpWasserstein.allDerivativesBounded_euclideanTest' depends on axioms: [propext, Classical.choice, Quot.sound]
-'SharpWasserstein.euclidean_bounds_of_allDerivativesBounded' depends on axioms: [propext, Classical.choice, Quot.sound]
-'SharpWasserstein.WeakEvolution.equation_bounded_configuration' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]
-'SharpWasserstein.FrozenGaussian.timeExpectation_sub_eq_integral_bounded_configuration' depends on axioms: [propext,
- Classical.choice,
- Quot.sound]

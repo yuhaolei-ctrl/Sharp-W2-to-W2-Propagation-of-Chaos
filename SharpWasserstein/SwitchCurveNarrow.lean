@@ -1,4 +1,9 @@
-import SharpWasserstein.SwitchCurveProperties
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchCurveProperties
+
+@[expose] public section
 
 /-! Narrow continuity of the actual switch law, proved by a common probability
 space with two independent Brownian path inputs. No regularity of densities is

@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTimeKernel
-import SharpWasserstein.RoughEulerianTransportContinuity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeKernel
+public import SharpWasserstein.RoughEulerianTransportContinuity
+
+@[expose] public section
 
 /-! The actual compact-test probability curve and its constructed joint L²
 flux satisfy the genuine differentiated time-mollified weak equation. There

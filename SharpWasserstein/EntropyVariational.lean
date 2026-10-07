@@ -1,5 +1,10 @@
-import SharpWasserstein.EntropyKL
-import Mathlib.Algebra.QuadraticDiscriminant
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyKL
+public import Mathlib.Algebra.QuadraticDiscriminant
+
+@[expose] public section
 
 /-!
 # The entropy variational inequality

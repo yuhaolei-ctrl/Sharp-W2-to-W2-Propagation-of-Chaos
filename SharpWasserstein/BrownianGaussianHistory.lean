@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianGrid
-import SharpWasserstein.GaussianHistorySimulation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianGrid
+public import SharpWasserstein.GaussianHistorySimulation
+
+@[expose] public section
 
 /-! Actual configuration Brownian increments, with independent initial labels,
 generate the Gaussian transition-history law after flattening finite coordinates. -/
@@ -34,7 +39,7 @@ def flattenedGridIncrement {T : ℝ} {n d N : ℕ} (τ : Fin (n+1) → Icc 0 T)
 
 theorem flattenedGridIncrement_measurable {T : ℝ} {n d N : ℕ}
     (τ : Fin (n+1) → Icc 0 T) : Measurable (flattenedGridIncrement (d := d) (N := N) τ) :=
-  measurable_pi_lambda _ fun j => (configurationFlatten d N).measurable.comp
+  Measurable.of_eval fun j => (configurationFlatten d N).measurable.comp
     (by fun_prop : Continuous (fun w : C(Icc 0 T, Configuration d N) =>
       w (τ j.succ) - w (τ j.castSucc))).measurable
 
@@ -44,7 +49,7 @@ theorem configurationLaw_flattenedGrid_hasLaw {T : ℝ} {n d N : ℕ}
       (Measure.pi fun j : Fin n => gaussianVectorLaw (0 : Position (N*d))
         (2 * nndist (τ j.succ : ℝ) (τ j.castSucc : ℝ))) (configurationLaw d N T) := by
   have h := (configurationLaw_grid_hasLaw (d := d) (N := N) τ hτ).measurePreserving
-    (measurable_pi_lambda _ fun j => (by fun_prop : Continuous (fun w : C(Icc 0 T, Configuration d N) =>
+    (Measurable.of_eval fun j => (by fun_prop : Continuous (fun w : C(Icc 0 T, Configuration d N) =>
       w (τ j.succ) - w (τ j.castSucc))).measurable)
   exact ((measurePreserving_pi _ _ fun j : Fin n => configurationFlatten_gaussian
     (d := d) (N := N) (2 * nndist (τ j.succ : ℝ) (τ j.castSucc : ℝ))).comp h).hasLaw

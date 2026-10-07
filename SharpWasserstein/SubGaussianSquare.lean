@@ -1,5 +1,10 @@
-import SharpWasserstein.EntropyObservable
-import Mathlib.Probability.Distributions.Gaussian.Real
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyObservable
+public import Mathlib.Probability.Distributions.Gaussian.Real
+
+@[expose] public section
 
 /-!
 # Uniform square-exponential moments from sub-Gaussian moment bounds

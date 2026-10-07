@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTimeActionConvolution
-import SharpWasserstein.RoughEulerianSpaceTimeSmooth
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeActionConvolution
+public import SharpWasserstein.RoughEulerianSpaceTimeSmooth
+
+@[expose] public section
 
 /-! Exact normalization and action contraction for the actual product
 space-time mollifier. The total action estimate concerns the original joint

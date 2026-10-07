@@ -1,6 +1,11 @@
-import SharpWasserstein.ExternalInteractionSymmetryAverage
-import SharpWasserstein.PropagatedFlux
-import SharpWasserstein.WeightedGradientApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionSymmetryAverage
+public import SharpWasserstein.PropagatedFlux
+public import SharpWasserstein.WeightedGradientApproximation
+
+@[expose] public section
 
 /-! The representative extra-coordinate source is constructed from the actual
 observation and projected L² flux. Its canonical tangent pairs correctly with

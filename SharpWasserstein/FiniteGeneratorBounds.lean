@@ -1,5 +1,10 @@
-import SharpWasserstein.FiniteGeneratorCalculus
-import SharpWasserstein.ConfigurationGeneratorEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteGeneratorCalculus
+public import SharpWasserstein.ConfigurationGeneratorEuclidean
+
+@[expose] public section
 
 /-! Genuine global derivative bounds for the physical Euclidean generator;
 these discharge the integrability in the finite coefficient identities. -/

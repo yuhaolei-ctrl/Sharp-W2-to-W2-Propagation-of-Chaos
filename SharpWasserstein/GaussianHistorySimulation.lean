@@ -1,4 +1,9 @@
-import SharpWasserstein.GaussianEntropyChain
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEntropyChain
+
+@[expose] public section
 
 /-! Actual Gaussian innovations generate the iterated state-dependent Gaussian
 transition measure. This supplies the probabilistic law identity used for Euler

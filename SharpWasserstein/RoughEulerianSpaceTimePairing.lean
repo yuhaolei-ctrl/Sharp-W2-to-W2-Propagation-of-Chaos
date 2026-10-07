@@ -1,7 +1,12 @@
-import SharpWasserstein.RoughEulerianSmoothingDuality
-import SharpWasserstein.RoughEulerianSmoothingMixture
-import SharpWasserstein.RoughEulerianTimeActionIdentification
-import SharpWasserstein.RoughEulerianTimeWeak
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingDuality
+public import SharpWasserstein.RoughEulerianSmoothingMixture
+public import SharpWasserstein.RoughEulerianTimeActionIdentification
+public import SharpWasserstein.RoughEulerianTimeWeak
+
+@[expose] public section
 
 /-! Actual law and flux pairings of the joint regularization. Compact spatial
 tests are pulled back before invoking the original integrated weak equation. -/

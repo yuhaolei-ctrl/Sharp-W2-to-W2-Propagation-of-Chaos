@@ -1,5 +1,11 @@
-import SharpWasserstein.RoughEulerianCompressionGeometry
-import SharpWasserstein.ExternalInteractionPeriodicSource
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+public import SharpWasserstein.RoughEulerianCompressionGeometry
+public import SharpWasserstein.ExternalInteractionPeriodicSource
+
+@[expose] public section
 
 /-! Actual physical-period smooth tests approximating every compact Euclidean
 test in value and gradient, at arbitrarily large integer multiples of any

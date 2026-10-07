@@ -1,4 +1,9 @@
-import SharpWasserstein.RegularizedSource
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedSource
+
+@[expose] public section
 
 /-! Uniform finite-horizon constants for the actual regularized source estimate.
 The coefficient is independent of both the full and the marginal particle count. -/

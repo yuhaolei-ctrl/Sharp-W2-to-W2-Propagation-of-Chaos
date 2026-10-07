@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicTestL2
-import SharpWasserstein.WeakDerivativeLimit
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicTestL2
+public import SharpWasserstein.WeakDerivativeLimit
+
+@[expose] public section
 
 /-! Actual multiplication by bounded smooth periodic coefficients in scalar
 `L²`, preserving the closed periodic test-value space. This supplies the

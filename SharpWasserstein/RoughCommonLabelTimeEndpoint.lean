@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughCommonLabelLift
-import SharpWasserstein.RoughEulerianTransportTimeEndpoint
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughCommonLabelLift
+public import SharpWasserstein.RoughEulerianTransportTimeEndpoint
+
+@[expose] public section
 
 /-! Direct endpoint adapters from the actual common-label curve data to the
 exact time-averaged and space-time-regularized laws used by the rough

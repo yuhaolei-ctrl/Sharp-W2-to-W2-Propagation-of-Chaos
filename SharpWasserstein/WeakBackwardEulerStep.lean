@@ -1,5 +1,10 @@
-import SharpWasserstein.WeakEulerConsistency
-import SharpWasserstein.BackwardEulerIntegratedError
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakEulerConsistency
+public import SharpWasserstein.BackwardEulerIntegratedError
+
+@[expose] public section
 
 /-! Direct comparison of an arbitrary weak solution with the actual
 Gaussian Euler step, uniformly over a bounded smooth test family. -/

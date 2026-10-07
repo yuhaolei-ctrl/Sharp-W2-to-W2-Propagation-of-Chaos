@@ -1,4 +1,9 @@
-import SharpWasserstein.ExternalInteractionPeriodic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionPeriodic
+
+@[expose] public section
 
 /-! Exact external source averaging against the actual physical-period
 representative. Full Euclidean source action is restricted through genuine

@@ -1,4 +1,9 @@
-import SharpWasserstein.WeakEvolutionTimeTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakEvolutionTimeTests
+
+@[expose] public section
 
 /-! Jointly continuous bounded parameterized integrals against actual narrow
 probability curves, including a two-time drift-variation modulus. -/

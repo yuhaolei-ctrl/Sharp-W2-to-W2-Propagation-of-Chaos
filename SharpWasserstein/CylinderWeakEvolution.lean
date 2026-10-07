@@ -1,5 +1,10 @@
-import SharpWasserstein.BoundedWeakTests
-import SharpWasserstein.WeightedMarginal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedWeakTests
+public import SharpWasserstein.WeightedMarginal
+
+@[expose] public section
 
 /-! Genuine Euclidean cylinder calculus and weak marginalization. Compact tests
 in the retained coordinates become noncompact cylinder functions in the full
@@ -33,12 +38,12 @@ theorem directionDeriv_twice_comp_linear {n k : ℕ} (L : Point k →L[ℝ] Poin
 @[simp] theorem prefixProjection_single_left (n m : ℕ) (i : Fin n) :
     prefixProjection n m (EuclideanSpace.single (i.castAdd m) 1) = EuclideanSpace.single i 1 := by
   ext k
-  simp [prefixProjection, EuclideanSpace.single, PiLp.single_apply]
+  simp [prefixProjection_apply, EuclideanSpace.single, PiLp.single_apply]
 
 @[simp] theorem prefixProjection_single_right (n m : ℕ) (i : Fin m) :
     prefixProjection n m (EuclideanSpace.single (i.natAdd n) 1) = 0 := by
   ext k
-  simp [prefixProjection, EuclideanSpace.single, PiLp.single_apply]
+  simp [prefixProjection_apply, EuclideanSpace.single, PiLp.single_apply]
   intro h
   have hh := congrArg Fin.val h
   simp only [Fin.val_castAdd, Fin.val_natAdd] at hh

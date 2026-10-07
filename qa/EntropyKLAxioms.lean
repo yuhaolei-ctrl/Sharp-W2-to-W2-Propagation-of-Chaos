@@ -1,8 +1,0 @@
-import SharpWasserstein.EntropyDataProcessing
-
-#print axioms SharpWasserstein.klDiv_reverse_of_exponential_density
-#print axioms SharpWasserstein.klDiv_reverse_ne_top_of_exponential_density
-#print axioms SharpWasserstein.toReal_klDiv_reverse_of_exponential_density
-#print axioms SharpWasserstein.klDiv_map_le
-#print axioms SharpWasserstein.klDiv_map_le_cost_of_exponential_density
-#print axioms SharpWasserstein.toReal_klDiv_map_le_cost_of_exponential_density

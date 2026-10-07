@@ -1,10 +1,15 @@
-import SharpWasserstein.WeightedTangent
-import SharpWasserstein.WeightedDensity
-import Mathlib.Analysis.InnerProductSpace.LaxMilgram
-import Mathlib.Analysis.InnerProductSpace.Calculus
-import Mathlib.Analysis.Calculus.Deriv.Mul
-import Mathlib.Analysis.Calculus.FDeriv.Mul
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangent
+public import SharpWasserstein.WeightedDensity
+public import Mathlib.Analysis.InnerProductSpace.LaxMilgram
+public import Mathlib.Analysis.InnerProductSpace.Calculus
+public import Mathlib.Analysis.Calculus.Deriv.Mul
+public import Mathlib.Analysis.Calculus.FDeriv.Mul
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 
 /-! Differentiation of variational tangents through the actual inverse of a
 coercive weighted operator. Optimizer differentiability is proved from
@@ -262,11 +267,14 @@ theorem hasDerivAt_densitySolution
   obtain ⟨u, hu⟩ := weightedOperator_isUnit μ (ρ t) ha hp
   have hA : HasDerivAt (fun s => weightedOperator μ (ρ s)) (weightedOperator μ ρ') t := by
     exact HasFDerivAt.comp_hasDerivAt (F := Point d →ᵇ ℝ)
-      (E := gradientClosure μ →L[ℝ] gradientClosure μ) t (weightedOperator μ).hasFDerivAt hρ
+      (E := gradientClosure μ →L[ℝ] gradientClosure μ) t
+      (ContinuousLinearMap.hasFDerivAt (F := gradientClosure μ →L[ℝ] gradientClosure μ)
+        (weightedOperator μ)) hρ
   have hf : HasDerivAt (fun s => TangentEnergy.rieszRepresentative (ℓ s))
       (TangentEnergy.rieszRepresentative ℓ') t := by
     exact HasFDerivAt.comp_hasDerivAt (F := gradientClosure μ →L[ℝ] ℝ)
-      (E := gradientClosure μ) t (rieszMap μ).hasFDerivAt hℓ
+      (E := gradientClosure μ) t
+      (ContinuousLinearMap.hasFDerivAt (F := gradientClosure μ) (rieszMap μ)) hℓ
   convert! hasDerivAt_inverseSolution hA hf u hu.symm using 1
   simp only [← hu, Ring.inverse_unit]
   rfl
@@ -294,11 +302,14 @@ theorem hasDerivAt_densityEnergy
   obtain ⟨u, hu⟩ := weightedOperator_isUnit μ (ρ t) ha hp
   have hA : HasDerivAt (fun s => weightedOperator μ (ρ s)) (weightedOperator μ ρ') t := by
     exact HasFDerivAt.comp_hasDerivAt (F := Point d →ᵇ ℝ)
-      (E := gradientClosure μ →L[ℝ] gradientClosure μ) t (weightedOperator μ).hasFDerivAt hρ
+      (E := gradientClosure μ →L[ℝ] gradientClosure μ) t
+      (ContinuousLinearMap.hasFDerivAt (F := gradientClosure μ →L[ℝ] gradientClosure μ)
+        (weightedOperator μ)) hρ
   have hf : HasDerivAt (fun s => TangentEnergy.rieszRepresentative (ℓ s))
       (TangentEnergy.rieszRepresentative ℓ') t := by
     exact HasFDerivAt.comp_hasDerivAt (F := gradientClosure μ →L[ℝ] ℝ)
-      (E := gradientClosure μ) t (rieszMap μ).hasFDerivAt hℓ
+      (E := gradientClosure μ) t
+      (ContinuousLinearMap.hasFDerivAt (F := gradientClosure μ) (rieszMap μ)) hℓ
   have he := hasDerivAt_optimizedEnergy hA hf u hu.symm (weightedOperator_symmetric μ (ρ t))
   have he' : HasDerivAt (fun s => ℓ s (densitySolution μ (ρ s) (ℓ s)))
       (2 * ℓ' (densitySolution μ (ρ t) (ℓ t)) -

@@ -1,5 +1,10 @@
-import SharpWasserstein.GaussianEulerBackwardSecond
-import SharpWasserstein.BoundedDerivativeComposition
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEulerBackwardSecond
+public import SharpWasserstein.BoundedDerivativeComposition
+
+@[expose] public section
 
 /-! Every finite Gaussian Euler backward test is genuinely C∞ with bounded
 iterated derivatives when the drift and terminal test have that regularity. -/

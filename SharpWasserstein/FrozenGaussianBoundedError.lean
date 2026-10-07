@@ -1,6 +1,11 @@
-import SharpWasserstein.QuantitativeGenerator
-import SharpWasserstein.BoundedConfigurationTests
-import SharpWasserstein.FrozenGaussianError
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.QuantitativeGenerator
+public import SharpWasserstein.BoundedConfigurationTests
+public import SharpWasserstein.FrozenGaussianError
+
+@[expose] public section
 
 /-! Quantitative frozen Gaussian consistency for actual bounded smooth tests,
 with an explicit coefficient determined by their first three derivatives. -/

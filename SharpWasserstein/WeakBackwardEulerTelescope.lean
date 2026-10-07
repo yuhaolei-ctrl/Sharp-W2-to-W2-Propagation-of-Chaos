@@ -1,5 +1,10 @@
-import SharpWasserstein.WeakBackwardEulerStep
-import SharpWasserstein.BackwardEulerUniform
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakBackwardEulerStep
+public import SharpWasserstein.BackwardEulerUniform
+
+@[expose] public section
 
 /-! Discrete backward comparison for every actual weak solution. All tests
 are constructed Gaussian Euler expectations; their uniform regularity and

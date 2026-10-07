@@ -1,4 +1,9 @@
-import SharpWasserstein.FlowJacobianDriftVariation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianDriftVariation
+
+@[expose] public section
 
 /-! Quantitative stability of the genuine variational equations under an
 integrated coefficient error. This requires no uniform derivative convergence. -/

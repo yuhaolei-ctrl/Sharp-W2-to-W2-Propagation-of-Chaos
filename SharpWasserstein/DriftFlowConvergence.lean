@@ -1,5 +1,10 @@
-import SharpWasserstein.DriftApproximation
-import SharpWasserstein.TransportConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DriftApproximation
+public import SharpWasserstein.TransportConvergence
+
+@[expose] public section
 
 /-! Local uniform drift approximation implies genuine narrow and quadratic
 transport convergence of the constructed continuous-noise flows. -/
@@ -32,8 +37,8 @@ theorem flow_drift_tendsto
 theorem flow_driftLaw_tendsto
     (hd : TendstoLocallyUniformly (fun n => Function.uncurry (u n)) (Function.uncurry v) atTop)
     (P : ProbabilityMeasure (E × C(Icc 0 T,E))) {t : ℝ} (ht : t ∈ Icc 0 T) :
-    Tendsto (fun n => P.map (flow_continuous (huc n) (hub n) (hul n) hT ht).measurable.aemeasurable)
-      atTop (𝓝 (P.map (flow_continuous hvc hvb hvl hT ht).measurable.aemeasurable)) := by
+    Tendsto (fun n => P.map (fun p : E × C(Icc 0 T,E) => flow (huc n) (hub n) (hul n) hT p.1 p.2 t))
+      atTop (𝓝 (P.map (fun p : E × C(Icc 0 T,E) => flow hvc hvb hvl hT p.1 p.2 t))) := by
   apply probabilityMeasure_map_tendsto P
     (fun n => (flow_continuous (huc n) (hub n) (hul n) hT ht).measurable)
     (flow_continuous hvc hvb hvl hT ht).measurable

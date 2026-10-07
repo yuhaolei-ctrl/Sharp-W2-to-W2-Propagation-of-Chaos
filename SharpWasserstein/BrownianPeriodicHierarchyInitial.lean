@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianPeriodicHierarchyProfile
-import SharpWasserstein.BrownianSourceInitialFlux
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianPeriodicHierarchyProfile
+public import SharpWasserstein.BrownianSourceInitialFlux
+
+@[expose] public section
 
 /-! The sharp periodic propagated profile is initialized from one genuine
 initial flux distribution and its actual marginal energies. This formulation

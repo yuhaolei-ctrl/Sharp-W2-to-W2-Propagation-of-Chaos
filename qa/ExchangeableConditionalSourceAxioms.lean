@@ -1,9 +1,0 @@
-import SharpWasserstein.ExchangeableConditionalSource
-
-#print axioms SharpWasserstein.nextParticleJoint_fst
-#print axioms SharpWasserstein.nextParticleJoint_klDiv
-#print axioms SharpWasserstein.conditional_klDiv_eq_marginal_entropy_increment
-#print axioms SharpWasserstein.integrable_conditional_discrepancy_sq
-#print axioms SharpWasserstein.conditional_discrepancy_sq_le_marginal_entropy_increment
-#print axioms SharpWasserstein.conditional_discrepancy_sum_le_entropy_increment
-#print axioms SharpWasserstein.exchangeable_conditional_source_quadratic_bound

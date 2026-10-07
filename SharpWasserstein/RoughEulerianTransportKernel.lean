@@ -1,6 +1,11 @@
-import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
-import Mathlib.Probability.Kernel.Basic
-import Mathlib.MeasureTheory.Measure.HasOuterApproxClosed
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+public import Mathlib.Probability.Kernel.Basic
+public import Mathlib.MeasureTheory.Measure.HasOuterApproxClosed
+
+@[expose] public section
 
 /-! Narrowly continuous probability curves give genuine measurable Markov kernels.
 No measurability of a tangent field is included in this construction. -/

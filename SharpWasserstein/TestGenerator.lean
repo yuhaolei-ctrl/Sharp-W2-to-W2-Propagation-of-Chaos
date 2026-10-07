@@ -1,6 +1,11 @@
-import SharpWasserstein.BrownianParticle
-import Mathlib.Analysis.Calculus.ContDiff.Operations
-import Mathlib.Analysis.Calculus.MeanValue
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianParticle
+public import Mathlib.Analysis.Calculus.ContDiff.Operations
+public import Mathlib.Analysis.Calculus.MeanValue
+
+@[expose] public section
 
 /-! Compact-test generator bounds and continuity for actual finite-horizon
 particle laws. These analytic facts do not assert the still separate weak

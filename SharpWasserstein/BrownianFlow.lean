@@ -1,6 +1,11 @@
-import SharpWasserstein.EulerTimeWeakLimit
-import SharpWasserstein.BrownianHorizon
-import SharpWasserstein.ParticleMomentBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerTimeWeakLimit
+public import SharpWasserstein.BrownianHorizon
+public import SharpWasserstein.ParticleMomentBounds
+
+@[expose] public section
 
 /-! Actual global laws of bounded, jointly continuous, uniformly spatially
 Lipschitz time-dependent drifts driven by independent sqrt-two Brownian paths.

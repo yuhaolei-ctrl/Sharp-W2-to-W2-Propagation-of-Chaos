@@ -1,5 +1,10 @@
-import SharpWasserstein.TransportMoments
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TransportMoments
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+
+@[expose] public section
 
 /-! Actual transport convergence from common-label mean-square convergence. -/
 

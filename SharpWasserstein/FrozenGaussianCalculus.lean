@@ -1,6 +1,11 @@
-import SharpWasserstein.TestGenerator
-import SharpWasserstein.GaussianHeatCalculus
-import SharpWasserstein.FlattenedEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TestGenerator
+public import SharpWasserstein.GaussianHeatCalculus
+public import SharpWasserstein.FlattenedEuclidean
+
+@[expose] public section
 
 /-! Genuine frozen-drift Gaussian calculus for arbitrary particle and spatial
 dimensions. The extra unused scalar label keeps the finite Stein API uniform. -/

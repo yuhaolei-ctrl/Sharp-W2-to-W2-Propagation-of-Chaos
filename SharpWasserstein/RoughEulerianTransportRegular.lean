@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerianTransportCompact
-import SharpWasserstein.WeightedIntegralSquare
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerianTransportCompact
+public import SharpWasserstein.WeightedIntegralSquare
+
+@[expose] public section
 
 /-! Exact finite-action transport for genuine regular Eulerian curves.
 The time factor follows from an actual Cauchy--Schwarz estimate, retaining

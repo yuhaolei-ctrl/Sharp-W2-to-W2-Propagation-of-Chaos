@@ -1,5 +1,10 @@
-import SharpWasserstein.BoundedFlow
-import Mathlib.Analysis.Calculus.ContDiff.RCLike
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedFlow
+public import Mathlib.Analysis.Calculus.ContDiff.RCLike
+
+@[expose] public section
 
 /-! Synchronous first-order comparison. The additive input may be nowhere
  differentiable: it cancels before the derivative is taken. A C¹ observable

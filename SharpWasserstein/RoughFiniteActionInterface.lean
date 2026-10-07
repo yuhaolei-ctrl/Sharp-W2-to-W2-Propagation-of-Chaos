@@ -1,8 +1,13 @@
-import SharpWasserstein.RoughEulerianTransportContinuity
-import SharpWasserstein.RoughCommonLabelLift
-import SharpWasserstein.ConfigurationEuclidean
-import SharpWasserstein.TransportTriangle
-import Mathlib.Analysis.Normed.Lp.MeasurableSpace
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportContinuity
+public import SharpWasserstein.RoughCommonLabelLift
+public import SharpWasserstein.ConfigurationEuclidean
+public import SharpWasserstein.TransportTriangle
+public import Mathlib.Analysis.Normed.Lp.MeasurableSpace
+
+@[expose] public section
 
 /-! Exact constant-action interface needed by the final manuscript assembly.
 This is a proposition, not an assertion of a rough transport theorem. Its

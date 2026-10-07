@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianSmoothingLaw
-import SharpWasserstein.Transport
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingLaw
+public import SharpWasserstein.Transport
+
+@[expose] public section
 
 /-! The compact convolution law is identified with an actual independent
 additive-noise law. Its explicit coupling with the original measure has

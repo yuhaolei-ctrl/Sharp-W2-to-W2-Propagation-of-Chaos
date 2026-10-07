@@ -1,4 +1,9 @@
-import SharpWasserstein.WeightedPeriodicFourierPhysical
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicFourierPhysical
+
+@[expose] public section
 
 /-! The genuine physical-period tangent of an arbitrary finite-energy distribution.
 All fields retain the original physical Euclidean norm and carrying measure.

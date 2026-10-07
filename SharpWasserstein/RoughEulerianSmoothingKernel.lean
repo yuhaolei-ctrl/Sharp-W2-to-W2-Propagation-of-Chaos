@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianSmoothingFloor
-import SharpWasserstein.SmoothCutoff
-import Mathlib.Analysis.Calculus.BumpFunction.Normed
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingFloor
+public import SharpWasserstein.SmoothCutoff
+public import Mathlib.Analysis.Calculus.BumpFunction.Normed
+
+@[expose] public section
 
 /-! An actual nonnegative, normalized compact smooth Euclidean mollifier and
 its density/flux convolutions. Bounded support of the original carrying law

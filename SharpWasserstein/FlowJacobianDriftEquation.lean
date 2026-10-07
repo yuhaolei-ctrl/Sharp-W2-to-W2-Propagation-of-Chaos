@@ -1,5 +1,10 @@
-import SharpWasserstein.PropagatedSourceEquationMeasurable
-import SharpWasserstein.FlowJacobianContinuityLocal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquationMeasurable
+public import SharpWasserstein.FlowJacobianContinuityLocal
+
+@[expose] public section
 
 /-! The global variational integral equation is derived by differentiating
 the constructed flow equation, not postulated as an additional flow property. -/

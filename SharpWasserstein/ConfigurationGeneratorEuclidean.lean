@@ -1,5 +1,10 @@
-import SharpWasserstein.ConfigurationEuclidean
-import SharpWasserstein.BoundedWeakTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ConfigurationEuclidean
+public import SharpWasserstein.BoundedWeakTests
+
+@[expose] public section
 
 /-! Exact transport of the genuine coordinate generator to Euclidean space.
 No factor of the number of particles is introduced by this coordinate change. -/

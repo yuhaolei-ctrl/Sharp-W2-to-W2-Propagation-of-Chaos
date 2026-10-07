@@ -1,7 +1,12 @@
-import SharpWasserstein.EuclideanDrift
-import SharpWasserstein.ConfigurationEuclidean
-import SharpWasserstein.WeightedMarginal
-import SharpWasserstein.DriftEnergyIdentity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EuclideanDrift
+public import SharpWasserstein.ConfigurationEuclidean
+public import SharpWasserstein.WeightedMarginal
+public import SharpWasserstein.DriftEnergyIdentity
+
+@[expose] public section
 
 /-! Actual Euclidean external-force field. Configuration blocks use the existing
 kernel on coordinate spaces; every stated norm is the true Euclidean norm. -/
@@ -18,10 +23,13 @@ def suffixProjection (n k : ℕ) : Point (n+k) →L[ℝ] Point k where
   map_smul' c x := rfl
   cont := (PiLp.continuous_toLp 2 (fun _ : Fin k => ℝ)).comp (by fun_prop)
 
+theorem suffixProjection_apply (n k : ℕ) (x : Point (n+k)) :
+    suffixProjection n k x = WithLp.toLp 2 (fun i => x (i.natAdd n)) := rfl
+
 /-- Orthogonal coordinate decomposition, with no ambient sup-norm loss. -/
 theorem prefix_suffix_norm_sq (n k : ℕ) (z : Point (n+k)) :
     ‖prefixProjection n k z‖^2 + ‖suffixProjection n k z‖^2 = ‖z‖^2 := by
-  simp [EuclideanSpace.real_norm_sq_eq,prefixProjection,suffixProjection,Fin.sum_univ_add]
+  simp [EuclideanSpace.real_norm_sq_eq,prefixProjection_apply,suffixProjection_apply,Fin.sum_univ_add]
 
 theorem prefix_norm_le (n k : ℕ) (z : Point (n+k)) : ‖prefixProjection n k z‖ ≤ ‖z‖ := by
   have hh := prefix_suffix_norm_sq n k z

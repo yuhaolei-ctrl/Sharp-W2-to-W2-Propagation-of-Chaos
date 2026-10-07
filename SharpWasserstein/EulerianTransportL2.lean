@@ -1,5 +1,10 @@
-import SharpWasserstein.PointwiseTrajectory
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PointwiseTrajectory
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 
 /-! Bounded continuous actual velocity fields define continuous `L²` curves.
 This verifies the mixed-integrability input of the pointwise transport theorem
@@ -33,7 +38,7 @@ theorem continuous_toLp_of_uniform_bound [IsFiniteMeasure P]
   have hi : Continuous (fun s => ∫ ω, ‖F s ω - F t ω‖ ^ 2 ∂P) := by
     apply continuous_of_dominated (bound := fun _ => (2*C)^2)
     · intro s
-      exact ((h₂ s).1.sub (h₂ t).1).norm.pow 2
+      exact ((h₂ s).aestronglyMeasurable.sub (h₂ t).aestronglyMeasurable).norm.pow 2
     · intro s
       filter_upwards [hbound s, hbound t] with ω hs ht
       rw [Real.norm_eq_abs, abs_of_nonneg (sq_nonneg _)]

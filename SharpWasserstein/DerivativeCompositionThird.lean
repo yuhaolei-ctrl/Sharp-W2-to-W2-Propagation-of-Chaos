@@ -1,5 +1,10 @@
-import SharpWasserstein.DerivativeCompositionBounds
-import Mathlib.Analysis.Calculus.FDeriv.CompCLM
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DerivativeCompositionBounds
+public import Mathlib.Analysis.Calculus.FDeriv.CompCLM
+
+@[expose] public section
 
 /-! Third-order chain-rule estimates for the actual Fréchet derivative. -/
 noncomputable section

@@ -1,4 +1,9 @@
-import SharpWasserstein.BrownianSourceInitialFlux
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianSourceInitialFlux
+
+@[expose] public section
 
 /-! The bounded initial drift defect used by the switch derivative is exactly
 the initial source for the sharp propagated hierarchy. Its actual field is

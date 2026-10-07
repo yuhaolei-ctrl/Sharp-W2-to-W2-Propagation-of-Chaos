@@ -1,5 +1,10 @@
-import SharpWasserstein.PrescribedEntropyProfile
-import SharpWasserstein.SwitchCurveProperties
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedEntropyProfile
+public import SharpWasserstein.SwitchCurveProperties
+
+@[expose] public section
 
 /-! The terminal decoupled part of the proof uses the actual unnormalized
 Wasserstein cost, exact marginal commutation and the supplied reference law.

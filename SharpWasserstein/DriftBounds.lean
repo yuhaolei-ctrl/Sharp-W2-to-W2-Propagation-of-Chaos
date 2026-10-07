@@ -1,9 +1,14 @@
-import SharpWasserstein.Dynamics
-import Mathlib.Analysis.Calculus.MeanValue
-import Mathlib.Analysis.Calculus.ContDiff.Basic
-import Mathlib.Analysis.Calculus.ContDiff.Comp
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Positivity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.Dynamics
+public import Mathlib.Analysis.Calculus.MeanValue
+public import Mathlib.Analysis.Calculus.ContDiff.Basic
+public import Mathlib.Analysis.Calculus.ContDiff.Comp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+
+@[expose] public section
 
 /-! Bounds on the actual interaction and McKean--Vlasov drifts. The constants
 below are independent of the particle number. The coordinate-space norm in

@@ -1,0 +1,155 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "Sharp Wasserstein propagation of chaos from correlated initial data"
+  description: >-
+    A Lean 4 proof, checked against Mathlib, of a sharp quantitative propagation of chaos estimate
+    for mean field diffusions dX_i = (a(X_i) + N^{-1} sum_j K(X_i, X_j)) dt + sqrt 2 dW_i with a
+    globally Lipschitz one-body drift a and a bounded, globally Lipschitz pairwise interaction K.
+    If every k-particle marginal of the (possibly correlated and singular) exchangeable initial law
+    lies within squared quadratic Wasserstein distance C_0 (k/N)^2 of the corresponding power of
+    the McKean-Vlasov initial law, then the same holds on every finite time interval [0, T] with an
+    explicit constant C_T that depends neither on N nor on the dimension. No entropy bound, transport
+    inequality or independence of the initial particles is assumed.
+  authors:
+    - "Yuhao Lei"
+  license: "Apache-2.0"
+  responsible_maintainers:
+    - "Yuhao Lei"
+
+classification:
+  arxiv: ["math.PR"]
+  msc2020: ["60K35", "82C22", "60H10", "35Q84", "49Q22"]
+
+sources:
+  - title: "Sharp Wasserstein propagation of chaos from correlated initial data"
+    authors:
+      - "Yuhao Lei"
+    type: "manuscript"
+    relationship: "formalizes"
+    location: "paper/sharp_wasserstein_chaos.tex (and .pdf) in this repository: Theorem 2.1 and formulas (2.6)-(2.9)"
+    note: >-
+      The author's manuscript. The compared theorem is its Theorem 2.1, stated for strong solutions
+      of the particle system and of the McKean-Vlasov equation, with the explicit constant C_T. The
+      Lean proof follows the manuscript's architecture (reference evolution, entropy-cost
+      regularization, tangent-energy hierarchy closed by a Yule-type comparison, interpolating curve,
+      smooth approximation); deviations in the route of individual lemmas are listed under
+      fidelity.divergences.
+    license: "unknown"
+    author_endorsement: "participated"
+  - title: "Hierarchies, entropy, and quantitative propagation of chaos for mean field diffusions"
+    authors:
+      - "Daniel Lacker"
+    id: "Probab. Math. Phys. 4 (2023), no. 2, 377-432"
+    type: "paper"
+    relationship: "background"
+    note: >-
+      Context: the local (BBGKY) approach in relative entropy and the question, after its
+      Corollary 2.7, of propagating Wasserstein bounds without initial entropic chaos.
+    license: "unknown"
+    author_endorsement: "not-contacted"
+  - title: "Gradient flows in metric spaces and in the space of probability measures"
+    authors:
+      - "Luigi Ambrosio"
+      - "Nicola Gigli"
+      - "Giuseppe Savare"
+    id: "Lectures in Mathematics ETH Zurich, Birkhauser, 2nd ed., 2008"
+    type: "book"
+    relationship: "background"
+    note: >-
+      Context for tangent spaces of the Wasserstein space and the continuity-equation
+      characterization of absolutely continuous curves; the Lean development proves the transport
+      length estimate it needs directly.
+    license: "unknown"
+    author_endorsement: "not-contacted"
+
+related_formalizations:
+  - id: "https://github.com/RemyDegenne/brownian-motion/tree/0d5b6eb928e616d3b1f774ad7d233c167d9f42c9"
+    relationship: "adapts"
+    note: >-
+      The construction of Brownian motion (import closure of BrownianMotion.Gaussian.BrownianMotion)
+      is vendored in BrownianMotion/ under Apache-2.0 and adapted to Mathlib v4.35.0-rc3; it is used
+      only by the proof, never by Challenge.lean.
+  - id: "https://github.com/RemyDegenne/kolmogorov_extension4/tree/7d76e184c3d2138a2741baf923b57e9a01b9cf25"
+    relationship: "adapts"
+    note: >-
+      The Kolmogorov extension theorem is vendored in KolmogorovExtension4/ under Apache-2.0 and
+      adapted to Mathlib v4.35.0-rc3; used only by the proof.
+
+status:
+  scope: >-
+    Formalized: Theorem 2.1 with the explicit constant C_T, for all dimensions d, all N >= 1, all
+    Lipschitz a (possibly unbounded) and bounded Lipschitz K, Euclidean norms, correlated
+    exchangeable initial laws with finite second moments, and arbitrary strong solutions on
+    arbitrary probability spaces driven by Mathlib's Brownian motions. Not formalized as compared
+    theorems: the corollaries and examples of Section 2 (i.i.d. data, observables, the intrinsic and
+    off-diagonal reformulations, the microcanonical examples), Remark 2.6 (weak Fokker-Planck
+    solutions and general noise intensity), and Lemma 3.1's existence statement in its classical
+    generality (existence is proved only as needed for the bounded smooth approximations).
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: []
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["claude-opus-5-5"]
+      framework: "Claude Code"
+      tool_setup: >-
+        Claude Code agents under the author's direction: design and independent review of the Lean
+        statement against the manuscript, the Lean development, its port to Lean v4.35.0-rc3 and
+        the module system, and the proofs with the paper's exact constants.
+      cost:
+        wall_time: "several days (October 2026)"
+        spend_usd: "subscription-based"
+        hardware: "local machine for Lean builds, API-only for inference"
+      prompting_notes: >-
+        Human-directed; the author required that Challenge.lean state the manuscript's Theorem 2.1
+        exactly, with the explicit constant and strong SDE solutions.
+    - method: "manual"
+      models: []
+      framework: "n/a"
+      tool_setup: "Human direction, the mathematics of the manuscript, and the choice of statement."
+      cost:
+        wall_time: "not tracked"
+        spend_usd: "not tracked"
+        hardware: "local machine"
+      prompting_notes: "n/a"
+  spend_usd: "subscription-based; not separately tracked"
+  notes: >-
+    The mathematics is the author's. AI agents assisted with the Lean formalization under the
+    author's direction; no AI system is listed as an author.
+
+fidelity:
+  divergences: >-
+    The statement matches Theorem 2.1 of the manuscript, including the explicit constant. Solutions
+    are strong solutions in integral form with almost surely continuous paths; no filtration is
+    mentioned because, with additive noise and Lipschitz drifts, a solution is a functional of its
+    initial value and its Brownian path. Individual lemmas are sometimes proved by a different route
+    than in the manuscript (for example the entropy-cost inequality via Euler schemes and Gaussian
+    bridges instead of Girsanov's theorem).
+
+review:
+  status: "author-verified"
+  reviewers:
+    - "Yuhao Lei (author)"
+    - "independent AI referee agent (Claude Code)"
+  notes: >-
+    The author checked Challenge.lean against the manuscript. An independent AI agent also audited it
+    (quantifiers, hypotheses, casts, junk values, vacuity, constants symbol by symbol). There has
+    been no external human review.
+
+alignment:
+  namespace: "SharpChaos"
+  statements:
+    - source: "Theorem 2.1"
+      lean: "SharpChaos.sharp_propagation_of_chaos"
+      module: "Solution"
+      status: "proved"
+      note: "Compared declaration; the constant is SharpChaos.sharpConstant, formulas (2.6)-(2.9)."
+
+acknowledgements: >-
+  Built on Lean 4 and Mathlib and checked with Lean's Comparator. The Brownian motion and Kolmogorov
+  extension formalizations of Remy Degenne, Peter Pfaffelhuber and coauthors are vendored with
+  attribution.

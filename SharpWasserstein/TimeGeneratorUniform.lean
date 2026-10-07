@@ -1,6 +1,11 @@
-import SharpWasserstein.ProbabilityParameterIntegral
-import SharpWasserstein.ProbabilityUniformTests
-import SharpWasserstein.QuantitativeGenerator
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ProbabilityParameterIntegral
+public import SharpWasserstein.ProbabilityUniformTests
+public import SharpWasserstein.QuantitativeGenerator
+
+@[expose] public section
 
 /-! Uniform generator continuity for actual narrow probability curves and
 jointly continuous bounded time-dependent drifts. The time modulus follows

@@ -1,5 +1,10 @@
-import SharpWasserstein.PropagatedSourceEquationDistribution
-import SharpWasserstein.InitialSourceMarginalConfiguration
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquationDistribution
+public import SharpWasserstein.InitialSourceMarginalConfiguration
+
+@[expose] public section
 
 /-! Zero-time identification of the actual propagated initial current.
 The field is the genuine reference-minus-particle drift defect, so no

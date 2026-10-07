@@ -1,5 +1,10 @@
-import SharpWasserstein.NoiseAverageSmooth
-import Mathlib.Analysis.Calculus.ContDiff.Bounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.NoiseAverageSmooth
+public import Mathlib.Analysis.Calculus.ContDiff.Bounds
+
+@[expose] public section
 
 /-! Closure of actual bounded iterated derivatives under affine operations and
 smooth composition. The inner map may be unbounded, as an Euler mean is. -/

@@ -1,6 +1,11 @@
-import SharpWasserstein.GaussianHistoryMarginals
-import SharpWasserstein.EulerBridge
-import Mathlib.Analysis.InnerProductSpace.PiL2
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianHistoryMarginals
+public import SharpWasserstein.EulerBridge
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+
+@[expose] public section
 
 /-! # Dimension-free entropy cost of finite Gaussian meeting bridges
 The coordinate drift is measured with its genuine Euclidean norm. The initial

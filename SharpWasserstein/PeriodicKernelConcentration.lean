@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicConvolutionDensity
-import Mathlib.MeasureTheory.Integral.PeakFunction
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicConvolutionDensity
+public import Mathlib.MeasureTheory.Integral.PeakFunction
+
+@[expose] public section
 
 /-! The concrete positive product kernel is an actual approximation of the
 identity on the quotient torus. Its concentration follows from the unique

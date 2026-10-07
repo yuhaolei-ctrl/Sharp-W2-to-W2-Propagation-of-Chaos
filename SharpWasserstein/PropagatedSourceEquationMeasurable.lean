@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowSemigroupDerivativePairing
-import Mathlib.Analysis.Calculus.FDeriv.Measurable
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowSemigroupDerivativePairing
+public import Mathlib.Analysis.Calculus.FDeriv.Measurable
+
+@[expose] public section
 
 /-! Joint time/initial/path measurability of the actual Jacobian, and joint
 time/initial measurability of the differentiated actual flow expectation.

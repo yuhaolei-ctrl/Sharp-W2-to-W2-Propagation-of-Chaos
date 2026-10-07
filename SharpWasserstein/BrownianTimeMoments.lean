@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianGrid
-import SharpWasserstein.ParticleMomentBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianGrid
+public import SharpWasserstein.ParticleMomentBounds
+
+@[expose] public section
 
 /-! Exact Brownian increment moments and time-increment bounds for the actual
 integral trajectories. No supremum-in-time Brownian moment is assumed. -/

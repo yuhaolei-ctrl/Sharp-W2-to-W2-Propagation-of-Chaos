@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicParticleTangentLimitSource
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicParticleTangentLimitSource
+
+@[expose] public section
 
 /-! The carrying laws of the projected JV sources are the actual particle
 laws already used in the Wasserstein approximation theorem. -/

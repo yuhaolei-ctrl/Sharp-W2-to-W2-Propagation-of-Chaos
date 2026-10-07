@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedPeriodicFourierApproximation
-import SharpWasserstein.PeriodicSmoothGradient
-import SharpWasserstein.HierarchyAlgebra
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicFourierApproximation
+public import SharpWasserstein.PeriodicSmoothGradient
+public import SharpWasserstein.HierarchyAlgebra
+
+@[expose] public section
 
 /-! The genuine periodic gradient closure for any finite Borel measure,
 including singular measures. Uniform C¹ Fourier recovery proves density in

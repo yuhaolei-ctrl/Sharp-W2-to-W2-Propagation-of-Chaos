@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTransportContinuity
-import SharpWasserstein.SmoothCutoff
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportContinuity
+public import SharpWasserstein.SmoothCutoff
+
+@[expose] public section
 
 /-! Compact spatial tests extend to bounded smooth tests with bounded gradient
 for the actual finite-energy space-time flux. No boundedness or regularity of

@@ -1,4 +1,9 @@
-import SharpWasserstein.EulerWeakStep
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerWeakStep
+
+@[expose] public section
 
 /-! Telescoping the proved Gaussian weak step along the actual Euler histories. -/
 noncomputable section

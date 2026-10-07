@@ -1,4 +1,9 @@
-import SharpWasserstein.BrownianEnergyPeriodizationIdentification
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianEnergyPeriodizationIdentification
+
+@[expose] public section
 
 /-! The genuine sine-kernel/Jacobian limit for full Brownian marginal energy.
 Every approximation propagates the same initial L² field, under the same

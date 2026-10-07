@@ -1,6 +1,11 @@
-import SharpWasserstein.RegularizedTrialConvergencePeriodic
-import SharpWasserstein.FiniteGradientTrial
-import SharpWasserstein.WeightedPeriodicFourierPhysical
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialConvergencePeriodic
+public import SharpWasserstein.FiniteGradientTrial
+public import SharpWasserstein.WeightedPeriodicFourierPhysical
+
+@[expose] public section
 
 /-! Recovery by coefficient-regularized Fourier trials at their genuine
 physical period. The carrying measure and physical Euclidean weighted norm

@@ -1,7 +1,12 @@
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.Data.Matrix.Basic
-import Mathlib.Tactic.Linarith
-import Mathlib.Tactic.Ring
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Data.Matrix.Basic
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
+
+@[expose] public section
 
 /-!
 # Pointwise finite-dimensional algebra of the tangent hierarchy

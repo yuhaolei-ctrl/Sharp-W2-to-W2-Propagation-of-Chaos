@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicFourierDerivative
-import Mathlib.Analysis.Fourier.AddCircleMulti
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicFourierDerivative
+public import Mathlib.Analysis.Fourier.AddCircleMulti
+
+@[expose] public section
 
 /-! Exact passage between the periodic Euclidean cube and the unit torus.
 The cube carries product Lebesgue measure and the torus carries probability

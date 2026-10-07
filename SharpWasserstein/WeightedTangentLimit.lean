@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedTangent
-import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
-import Mathlib.Topology.Order.LiminfLimsup
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangent
+public import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+public import Mathlib.Topology.Order.LiminfLimsup
+
+@[expose] public section
 
 /-!
 # Varying-weight lower semicontinuity of weighted tangent energy

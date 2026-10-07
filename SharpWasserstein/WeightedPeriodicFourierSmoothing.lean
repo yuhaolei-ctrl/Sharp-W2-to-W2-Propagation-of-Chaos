@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedPeriodicFourierAverage
-import SharpWasserstein.PeriodicFourierDensity
-import SharpWasserstein.PointwiseTrajectory
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicFourierAverage
+public import SharpWasserstein.PeriodicFourierDensity
+public import SharpWasserstein.PointwiseTrajectory
+
+@[expose] public section
 
 /-! Smoothing preserves actual finite Fourier trial spaces, and turns genuine
 Haar square-integral approximation into uniform approximation. -/

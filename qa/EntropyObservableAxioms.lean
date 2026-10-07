@@ -1,9 +1,0 @@
-import SharpWasserstein.EntropyObservableVector
-
-#print axioms SharpWasserstein.integral_le_klDiv_add_log_exp
-#print axioms SharpWasserstein.integral_sq_le_entropy_of_log_mgf_bound
-#print axioms SharpWasserstein.integral_sq_le_entropy_of_subGaussian
-#print axioms SharpWasserstein.integral_difference_sq_le_klDiv
-#print axioms SharpWasserstein.kernel_integral_difference_sq_le_klDiv
-#print axioms SharpWasserstein.norm_integral_difference_sq_le_klDiv
-#print axioms SharpWasserstein.kernel_norm_integral_difference_sq_le_klDiv

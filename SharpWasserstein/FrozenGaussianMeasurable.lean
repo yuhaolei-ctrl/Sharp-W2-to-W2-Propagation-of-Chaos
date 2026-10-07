@@ -1,4 +1,9 @@
-import SharpWasserstein.FrozenGaussianError
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGaussianError
+
+@[expose] public section
 
 /-! Measurability and bounds for parameterized genuine frozen expectations. -/
 noncomputable section

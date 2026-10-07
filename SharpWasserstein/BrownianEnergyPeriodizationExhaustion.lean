@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicEnergyExhaustion
-import SharpWasserstein.KernelPeriodMultiples
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicEnergyExhaustion
+public import SharpWasserstein.KernelPeriodMultiples
+
+@[expose] public section
 
 /-! Exact passage from all admissible test periods of one fixed periodic
 kernel to the full Euclidean compact-test energy, with no change of law or

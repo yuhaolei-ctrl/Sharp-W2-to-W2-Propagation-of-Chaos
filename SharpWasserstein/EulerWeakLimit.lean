@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerWeakTelescope
-import SharpWasserstein.EulerRiemannExpectation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerWeakTelescope
+public import SharpWasserstein.EulerRiemannExpectation
+
+@[expose] public section
 
 /-! Passing the genuine Gaussian Euler telescoping identity to the constructed
 continuous-forcing trajectories. The noise law is the actual independent

@@ -1,6 +1,12 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionEnergy
-import SharpWasserstein.FiniteGeneratorPairing
-import SharpWasserstein.PhysicalFourierTrialBounds
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionEnergy
+public import SharpWasserstein.FiniteGeneratorPairing
+public import SharpWasserstein.PhysicalFourierTrialBounds
+
+@[expose] public section
 
 /-! Finite coefficient contractions are literal marginal generator integrals.
 All source and Gram terms are assembled from the actual finite potentials. -/

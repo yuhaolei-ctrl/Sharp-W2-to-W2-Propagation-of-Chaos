@@ -1,7 +1,12 @@
-import SharpWasserstein.PeriodicSourceConvolutionGenerator
-import SharpWasserstein.PropagatedSourceEquation
-import SharpWasserstein.PeriodicConvolutionWeak
-import SharpWasserstein.PeriodicBochner
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicSourceConvolutionGenerator
+public import SharpWasserstein.PropagatedSourceEquation
+public import SharpWasserstein.PeriodicConvolutionWeak
+public import SharpWasserstein.PeriodicBochner
+
+@[expose] public section
 
 /-! Genuine pointwise time derivatives of the periodic smoothing of a
 Brownian-propagated finite-energy source. Time continuity is derived by a

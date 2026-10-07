@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowSemigroupDerivative
-import SharpWasserstein.EuclideanFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowSemigroupDerivative
+public import SharpWasserstein.EuclideanFlow
+
+@[expose] public section
 
 /-! Exact conjugacy of the selected continuous-input flow and its probability
 expectation under a genuine continuous linear equivalence. -/

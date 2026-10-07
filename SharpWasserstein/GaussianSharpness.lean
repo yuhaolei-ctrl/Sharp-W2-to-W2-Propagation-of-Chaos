@@ -1,7 +1,12 @@
-import SharpWasserstein.RankOneTransport
-import SharpWasserstein.Rates
-import Mathlib.Probability.Distributions.Gaussian.HasGaussianLaw.Basic
-import Mathlib.MeasureTheory.Integral.Pi
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RankOneTransport
+public import SharpWasserstein.Rates
+public import Mathlib.Probability.Distributions.Gaussian.HasGaussianLaw.Basic
+public import Mathlib.MeasureTheory.Integral.Pi
+
+@[expose] public section
 
 /-!
 # The genuine Gaussian rank-one transport cost

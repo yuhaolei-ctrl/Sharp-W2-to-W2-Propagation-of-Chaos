@@ -1,5 +1,11 @@
-import SharpWasserstein.FiniteGeneratorCalculus
-import SharpWasserstein.FiniteCoefficientEnergy
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+public import SharpWasserstein.FiniteGeneratorCalculus
+public import SharpWasserstein.FiniteCoefficientEnergy
+
+@[expose] public section
 
 /-! Identification of the actual coefficient derivative forms with literal
 Euclidean generator integrals. Finite-sum interchange includes its genuine

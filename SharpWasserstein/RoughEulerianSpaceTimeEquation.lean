@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianSpaceTimePairing
-import SharpWasserstein.RoughEulerianTimeActionCurve
-import SharpWasserstein.RoughEulerianTransportRegularCoordinates
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSpaceTimePairing
+public import SharpWasserstein.RoughEulerianTimeActionCurve
+public import SharpWasserstein.RoughEulerianTransportRegularCoordinates
+
+@[expose] public section
 
 /-! The actual time-space convolution and stationary floor satisfy the
 compact-test continuity equation. The original input is only the integrated

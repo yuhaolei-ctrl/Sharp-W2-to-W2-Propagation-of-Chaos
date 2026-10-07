@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianDecoupledFlow
-import SharpWasserstein.MarginalMoments
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianDecoupledFlow
+public import SharpWasserstein.MarginalMoments
+
+@[expose] public section
 
 /-! # Actual all-level entropy regularization
 The initial Wasserstein profile is carried by the constructed decoupled

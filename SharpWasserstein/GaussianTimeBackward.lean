@@ -1,4 +1,9 @@
-import SharpWasserstein.BackwardEulerUniform
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BackwardEulerUniform
+
+@[expose] public section
 
 /-! Genuine backward Gaussian Euler tests with a different drift at each
 time step. Their regularity bounds are uniform in the starting time and mesh. -/

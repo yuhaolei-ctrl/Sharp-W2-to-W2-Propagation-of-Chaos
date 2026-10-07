@@ -1,4 +1,9 @@
-import SharpWasserstein.VolterraFourierLimit
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.VolterraFourierLimit
+
+@[expose] public section
 
 /-! Finite physical Fourier differential inequalities assemble into a genuine
 limiting Volterra hierarchy and its sharp quadratic comparison. The finite

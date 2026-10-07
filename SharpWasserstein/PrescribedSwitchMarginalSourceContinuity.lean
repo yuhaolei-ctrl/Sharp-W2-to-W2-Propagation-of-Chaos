@@ -1,5 +1,10 @@
-import SharpWasserstein.PrescribedSwitchMarginalSource
-import SharpWasserstein.PrescribedSwitchContinuity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedSwitchMarginalSource
+public import SharpWasserstein.PrescribedSwitchContinuity
+
+@[expose] public section
 
 /-! The genuine marginal switch curve satisfies compact-distribution
 continuity with its actual canonical marginal source. Source continuity and
@@ -20,7 +25,7 @@ variable {d N k : ℕ} [MeasurableSpace (Point (N*d))] [BorelSpace (Point (N*d))
 
 def prescribedMarginalCurve (hk : k ≤ N) (s : ℝ) : ProbabilityMeasure (Point (k*d)) :=
   (prescribedEuclideanCurve hN hb hbound hM hL₁ hL₂ hμ hT P s).map
-    (marginalProjection hk).continuous.measurable.aemeasurable
+    (marginalProjection hk)
 
 theorem prescribedMarginalCurve_continuous (hk : k ≤ N) :
     Continuous (prescribedMarginalCurve hN hb hbound hM hL₁ hL₂ hμ hT P hk) :=
@@ -34,6 +39,7 @@ theorem prescribedMarginalCurve_coe (hk : k ≤ N) {s : ℝ} (hs : s ∈ Icc 0 T
         (marginalProjection hk) := by
   simp only [prescribedMarginalCurve,ProbabilityMeasure.toMeasure_map,prescribedEuclideanCurve,
     projIcc_of_mem _ hs,ProbabilityMeasure.coe_mk]
+  rfl
 
 /-- Genuine bounded C¹ cylinder data used by the actual switch equation. -/
 theorem marginal_configuration_test_bounds (hk : k ≤ N) (φ : Test (k*d)) :

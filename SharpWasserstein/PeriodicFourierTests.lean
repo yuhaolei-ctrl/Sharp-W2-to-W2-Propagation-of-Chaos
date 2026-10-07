@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicIntegrationByParts
-import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicIntegrationByParts
+public import Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+
+@[expose] public section
 
 /-! Real Fourier trial functions on the actual periodic cube. Their genuine
 coordinate Laplacians stay in the finite trial space, the property needed to

@@ -1,5 +1,10 @@
-import SharpWasserstein.ConfigurationBrownian
-import SharpWasserstein.NarrowFlow
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ConfigurationBrownian
+public import SharpWasserstein.NarrowFlow
+
+@[expose] public section
 
 /-! Actual finite-horizon Brownian-driven particle laws. These are constructed
 from continuous integral solutions and independently generated Brownian paths.

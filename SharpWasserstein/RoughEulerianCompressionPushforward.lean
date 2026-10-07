@@ -1,4 +1,9 @@
-import SharpWasserstein.PropagatedFlux
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedFlux
+
+@[expose] public section
 
 /-! Actual pushforward of a square-integrable vector flux. The output field is
 constructed by Riesz on the full output L² space, rather than assumed as a

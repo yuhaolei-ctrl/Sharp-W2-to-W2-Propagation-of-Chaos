@@ -1,6 +1,0 @@
-VolterraEnergyLimit 0
-RegularizedTrialMarginal 0
-PhysicalFourierTrialMarginal 0
-PhysicalFourierTrialBounds 0
-PhysicalGeneratorPeriodicity 0
-PASS: 5 modules, 15 declarations, ['Classical.choice', 'Quot.sound', 'propext']

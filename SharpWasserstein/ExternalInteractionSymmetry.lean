@@ -1,7 +1,12 @@
-import SharpWasserstein.ExternalInteractionGradient
-import SharpWasserstein.PropagatedSourcePermutationParticle
-import SharpWasserstein.WeightedSourceSymmetry
-import Mathlib.Order.Interval.Finset.Fin
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionGradient
+public import SharpWasserstein.PropagatedSourcePermutationParticle
+public import SharpWasserstein.WeightedSourceSymmetry
+public import Mathlib.Order.Interval.Finset.Fin
+
+@[expose] public section
 
 /-! Actual observation maps for a prefix and one external particle. Their
 transposition identity gives the correct scalar-test and differential
@@ -37,7 +42,7 @@ def observation {d m N : ℕ} (hm : m ≤ N) (j : Fin N) :
       configurationEuclidean d m (restrictCoordinates hm x) := by
   ext k
   obtain ⟨⟨i,a⟩,rfl⟩ := finProdFinEquiv.surjective k
-  simp [prefixProjection, observation, restrictCoordinates]
+  simp [prefixProjection_apply, observation, restrictCoordinates]
   change x (Fin.castLE hm (finProdFinEquiv.symm (finProdFinEquiv (i,a))).1)
     (finProdFinEquiv.symm (finProdFinEquiv (i,a))).2 = x (Fin.castLE hm i) a
   rw [Equiv.symm_apply_apply]
@@ -53,7 +58,7 @@ def observation {d m N : ℕ} (hm : m ≤ N) (j : Fin N) :
     (x : Configuration d N) :
     externalPosition (observation hm j (configurationEuclidean d N x)) = x j := by
   funext a
-  simp [externalPosition, suffixProjection, observation]
+  simp [externalPosition, suffixProjection_apply, observation]
 
 
 /-- Every permutation fixing the retained prefix simply relabels the observed

@@ -1,4 +1,9 @@
-import SharpWasserstein.RegularizedTrialConvergencePhysicalTime
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialConvergencePhysicalTime
+
+@[expose] public section
 
 /-! Scalar measurability, integrability, and L¹ gaps for the actual physical
 Fourier ridge energies. The weighted tangent vector may live in a different

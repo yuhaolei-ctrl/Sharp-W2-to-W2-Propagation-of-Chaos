@@ -1,5 +1,10 @@
-import SharpWasserstein.ControlledBridge
-import SharpWasserstein.EulerConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ControlledBridge
+public import SharpWasserstein.EulerConvergence
+
+@[expose] public section
 
 /-! Exact deterministic conjugacy of Euler schemes under the linear meeting
 bridge. This identifies the controlled endpoint with the uncontrolled endpoint

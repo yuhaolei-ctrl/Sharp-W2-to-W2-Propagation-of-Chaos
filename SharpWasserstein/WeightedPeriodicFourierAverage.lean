@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicConvolutionTestGradient
-import SharpWasserstein.PeriodicConvolutionApproximation
-import Mathlib.Topology.ContinuousMap.SecondCountableSpace
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicConvolutionTestGradient
+public import SharpWasserstein.PeriodicConvolutionApproximation
+public import Mathlib.Topology.ContinuousMap.SecondCountableSpace
+
+@[expose] public section
 
 /-! Uniform approximation by the actual positive periodic convolution kernels.
 The norm limit is proved in the Banach space of continuous functions on the

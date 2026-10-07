@@ -1,7 +1,12 @@
-import SharpWasserstein.RoughEulerianTimeKernel
-import SharpWasserstein.RoughEulerianTransportKernel
-import Mathlib.Probability.Kernel.WithDensity
-import Mathlib.Probability.Kernel.Composition.IntegralCompProd
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeKernel
+public import SharpWasserstein.RoughEulerianTransportKernel
+public import Mathlib.Probability.Kernel.WithDensity
+public import Mathlib.Probability.Kernel.Composition.IntegralCompProd
+
+@[expose] public section
 
 /-! Actual time averaging of a joint time-space measure. The averaged spatial
 law is a measurable kernel constructed by weighting and pushing the original

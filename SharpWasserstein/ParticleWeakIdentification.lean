@@ -1,6 +1,11 @@
-import SharpWasserstein.WeakAutonomousUniqueness
-import SharpWasserstein.BoundedDerivativeLinear
-import SharpWasserstein.BrownianParticleWeak
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakAutonomousUniqueness
+public import SharpWasserstein.BoundedDerivativeLinear
+public import SharpWasserstein.BrownianParticleWeak
+
+@[expose] public section
 
 /-! The manuscript's actual arbitrary weak particle evolution is identified
 with the constructed Brownian particle law. All spatial regularity required

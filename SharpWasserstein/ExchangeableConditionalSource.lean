@@ -1,4 +1,9 @@
-import SharpWasserstein.ExchangeableEntropy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExchangeableEntropy
+
+@[expose] public section
 
 /-!
 # Conditional source bounds for actual exchangeable marginals

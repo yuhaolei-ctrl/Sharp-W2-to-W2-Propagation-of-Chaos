@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizedBrownianSourceData
-import SharpWasserstein.BrownianEnergyPeriodization
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedBrownianSourceData
+public import SharpWasserstein.BrownianEnergyPeriodization
+
+@[expose] public section
 
 /-! Sharp full Euclidean source bound for the actual regularized current,
 propagated by the original interaction for the remaining switch time. -/

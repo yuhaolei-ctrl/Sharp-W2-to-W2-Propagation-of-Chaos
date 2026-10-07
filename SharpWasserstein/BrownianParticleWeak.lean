@@ -1,5 +1,10 @@
-import SharpWasserstein.EulerWeakLimit
-import SharpWasserstein.BrownianGlobalProperties
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EulerWeakLimit
+public import SharpWasserstein.BrownianGlobalProperties
+
+@[expose] public section
 
 /-! The constructed Brownian particle laws satisfy the manuscript's actual
 weak Fokker--Planck equation, including all probability, moment and

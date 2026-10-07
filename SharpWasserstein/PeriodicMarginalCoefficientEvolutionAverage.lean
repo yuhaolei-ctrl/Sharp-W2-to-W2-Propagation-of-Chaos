@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionSource
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionSource
+
+@[expose] public section
 
 /-! The actual marginal source generator is represented by its physical
 periodic tangent and one genuine next-particle source. The coefficient is

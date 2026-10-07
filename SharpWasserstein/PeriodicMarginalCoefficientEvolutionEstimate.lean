@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionDecomposition
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionDecomposition
+
+@[expose] public section
 
 /-! The proved static finite hierarchy evaluated at the actual prefix optimizer.
 Only the genuine own-energy gap carries the auxiliary internal drift bound. -/

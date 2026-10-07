@@ -1,5 +1,0 @@
-PeriodicMarginalLift 0
-PeriodicMarginalEnergy 0
-ExternalInteractionEnergy 0
-ExternalInteractionEnergyCancellation 0
-PASS: 4 modules, 43 declarations, ['Classical.choice', 'Quot.sound', 'propext']

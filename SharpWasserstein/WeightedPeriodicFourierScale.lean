@@ -1,4 +1,9 @@
-import SharpWasserstein.WeightedPeriodicFourierApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicFourierApproximation
+
+@[expose] public section
 
 /-! Positive-period Fourier tests in the original Euclidean coordinates.
 Only the test functions are dilated; the carrying law, diffusion coefficient,

@@ -1,5 +1,10 @@
-import SharpWasserstein.TransportTriangle
-import Mathlib.MeasureTheory.Integral.Bochner.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.TransportTriangle
+public import Mathlib.MeasureTheory.Integral.Bochner.Basic
+
+@[expose] public section
 
 /-! Finite displacement energy for every coupling of the actual P₂ laws. -/
 

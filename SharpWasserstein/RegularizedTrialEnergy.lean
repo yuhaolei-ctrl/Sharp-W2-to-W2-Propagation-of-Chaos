@@ -1,5 +1,10 @@
-import SharpWasserstein.WeightedEnergyDerivative
-import Mathlib.Analysis.InnerProductSpace.Adjoint
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedEnergyDerivative
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+
+@[expose] public section
 
 /-! Coefficient-regularized Galerkin energy from an actual trial-gradient
 operator. The coefficient penalty makes the Gram operator invertible even

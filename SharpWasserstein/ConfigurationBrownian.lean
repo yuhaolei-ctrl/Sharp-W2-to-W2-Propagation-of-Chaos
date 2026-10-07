@@ -1,6 +1,11 @@
-import SharpWasserstein.BrownianNoise
-import SharpWasserstein.ParticleFlowPermutation
-import Mathlib.MeasureTheory.SpecificCodomains.Pi
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianNoise
+public import SharpWasserstein.ParticleFlowPermutation
+public import Mathlib.MeasureTheory.SpecificCodomains.Pi
+
+@[expose] public section
 
 /-! Independent Brownian coordinates assembled into actual continuous
 configuration paths. Their laws discharge the noise moment and permutation
@@ -30,11 +35,11 @@ def configurationPath {d N : ℕ} {T : ℝ}
 
 theorem configurationPath_measurable {d N : ℕ} {T : ℝ} :
     Measurable (configurationPath (d := d) (N := N) (T := T)) := by
-  apply (ContinuousMap.measurable_iff_eval _).mpr
+  apply ContinuousMap.measurable_iff_eval.mpr
   intro t
-  apply measurable_pi_lambda
+  apply Measurable.of_eval
   intro i
-  apply measurable_pi_lambda
+  apply Measurable.of_eval
   intro a
   exact (by fun_prop : Continuous (fun w : C(Icc 0 T, ℝ) => w t)).measurable.comp
     ((measurable_pi_apply a).comp (measurable_pi_apply i))
@@ -117,7 +122,7 @@ theorem configurationLaw_permutation {d N : ℕ} {T : ℝ} (e : Equiv.Perm (Fin 
     Measure.map (permutedPath e) (configurationLaw d N T) = configurationLaw d N T := by
   let R : (Fin N → Fin d → C(Icc 0 T, ℝ)) → (Fin N → Fin d → C(Icc 0 T, ℝ)) :=
     fun w i => w (e i)
-  have hR : Measurable R := measurable_pi_lambda _ fun i => measurable_pi_apply (e i)
+  have hR : Measurable R := Measurable.of_eval fun i => measurable_pi_apply (e i)
   have hmap : Measure.map R (pathLabels d N T) = pathLabels d N T := by
     simpa [R, pathLabels, MeasurableEquiv.piCongrLeft, Equiv.piCongrLeft, Equiv.piCongrLeft'] using
       (measurePreserving_piCongrLeft (fun _ : Fin N => coordinateLaw d T) e.symm).map_eq

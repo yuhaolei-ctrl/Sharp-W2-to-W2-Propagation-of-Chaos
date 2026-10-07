@@ -1,7 +1,12 @@
-import SharpWasserstein.PeriodicConvolutionDensity
-import SharpWasserstein.WeakTimeEulerConsistency
-import SharpWasserstein.BrownianForwardDerivative
-import SharpWasserstein.FlattenedEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicConvolutionDensity
+public import SharpWasserstein.WeakTimeEulerConsistency
+public import SharpWasserstein.BrownianForwardDerivative
+public import SharpWasserstein.FlattenedEuclidean
+
+@[expose] public section
 
 /-! Genuine time derivatives of product-periodic convolution densities of
 actual weak evolutions. The time continuity of generator expectations follows

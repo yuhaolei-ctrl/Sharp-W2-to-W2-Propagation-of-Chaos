@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionGenerator
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionGenerator
+
+@[expose] public section
 
 /-! The exact time derivative of the actual finite periodic marginal energy
 as a literal full-law generator/source pairing. -/

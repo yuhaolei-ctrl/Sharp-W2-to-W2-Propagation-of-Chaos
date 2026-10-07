@@ -1,5 +1,10 @@
-import SharpWasserstein.PrescribedSwitchBrownianSource
-import SharpWasserstein.PropagatedSourceEquationLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PrescribedSwitchBrownianSource
+public import SharpWasserstein.PropagatedSourceEquationLaw
+
+@[expose] public section
 
 /-! Exact identification of the measure carrying the switch source. The source
 energy is evaluated at the actual interpolation law, in unnormalized Euclidean

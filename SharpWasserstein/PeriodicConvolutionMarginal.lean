@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicConvolutionDensity
-import Mathlib.MeasureTheory.Measure.HasOuterApproxClosed
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicConvolutionDensity
+public import Mathlib.MeasureTheory.Measure.HasOuterApproxClosed
+
+@[expose] public section
 
 /-! Product periodic convolution preserves genuine prefixCoords marginals. The
 fiber density identity is obtained by actual finite-product decomposition,

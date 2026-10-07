@@ -1,5 +1,10 @@
-import SharpWasserstein.SwitchSourceDerivativeEquation
-import SharpWasserstein.FlowSemigroupDerivativePairing
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeEquation
+public import SharpWasserstein.FlowSemigroupDerivativePairing
+
+@[expose] public section
 
 /-! The derived switch derivative is identified with the actual propagated
 Jacobian-current integral. Its initial field is genuinely L², and the joint

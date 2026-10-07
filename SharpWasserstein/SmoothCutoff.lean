@@ -1,7 +1,12 @@
-import SharpWasserstein.WeightedTangent
-import Mathlib.Analysis.Calculus.BumpFunction.InnerProduct
-import Mathlib.Analysis.Calculus.ContDiff.RCLike
-import Mathlib.Analysis.Normed.MulAction
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangent
+public import Mathlib.Analysis.Calculus.BumpFunction.InnerProduct
+public import Mathlib.Analysis.Calculus.ContDiff.RCLike
+public import Mathlib.Analysis.Normed.MulAction
+
+@[expose] public section
 
 /-!
 # Smooth compact cutoffs for bounded smooth marginal lifts

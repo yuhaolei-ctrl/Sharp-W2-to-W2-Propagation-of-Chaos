@@ -1,5 +1,10 @@
-import SharpWasserstein.ParticleFlow
-import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ParticleFlow
+public import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+
+@[expose] public section
 
 /-! Narrow continuity of the actual constructed flow laws. This is proved by
 bounded continuous tests and dominated convergence, without assuming a

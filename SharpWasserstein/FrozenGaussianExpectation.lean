@@ -1,4 +1,9 @@
-import SharpWasserstein.FrozenGaussianCalculus
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGaussianCalculus
+
+@[expose] public section
 
 /-! Differentiation under the genuine Gaussian integral, followed by Stein's
 identity, gives the frozen drift plus Laplacian generator. -/

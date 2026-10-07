@@ -1,6 +1,11 @@
-import SharpWasserstein.CooperativeHierarchy
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
-import Mathlib.Tactic.FunProp
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.CooperativeHierarchy
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.FundThmCalculus
+public import Mathlib.Tactic.FunProp
+
+@[expose] public section
 
 /-! Sharp quadratic comparison for a finite positive-kernel Volterra hierarchy.
 The energy curves themselves are only interval integrable. All differentiation

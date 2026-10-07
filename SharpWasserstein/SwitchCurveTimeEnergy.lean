@@ -1,5 +1,10 @@
-import SharpWasserstein.SwitchCurveNarrow
-import SharpWasserstein.BrownianFlowTimeEnergy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchCurveNarrow
+public import SharpWasserstein.BrownianFlowTimeEnergy
+
+@[expose] public section
 
 /-! Actual common-label mean-square continuity of the switch curve. The
 coupling uses the same two Brownian path inputs at every switch time and

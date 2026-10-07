@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedConvolutionSmooth
-import SharpWasserstein.PeriodicFluxContraction
-import SharpWasserstein.PeriodicDriftEnergy
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedConvolutionSmooth
+public import SharpWasserstein.PeriodicFluxContraction
+public import SharpWasserstein.PeriodicDriftEnergy
+
+@[expose] public section
 
 /-! Actual C∞ regularization of arbitrary integrable fluxes by the periodic
 product kernel, with the derivative given by differentiation of that kernel.

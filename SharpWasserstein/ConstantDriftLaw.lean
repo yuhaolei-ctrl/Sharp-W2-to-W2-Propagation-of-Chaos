@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianForwardDerivative
-import SharpWasserstein.FrozenGaussianLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianForwardDerivative
+public import SharpWasserstein.FrozenGaussianLaw
+
+@[expose] public section
 
 /-! Exact identification of the constructed constant-drift Brownian flow with
 the concrete Gaussian transition law. This transfers actual weak-evolution
@@ -65,12 +70,12 @@ theorem law_constant_dirac {d N : ℕ} (x u : Configuration d N) {M K : ℝ≥0}
     (hb : ∀ (_ : ℝ) (_ : Configuration d N), ‖u‖ ≤ M)
     (hl : ∀ _ : ℝ,LipschitzWith K (fun _ : Configuration d N => u))
     {T : ℝ} (hT : 0 ≤ T) {t : ℝ} (ht : t ∈ Icc 0 T) :
-    law hv hb hl hT (Measure.dirac x) t = FrozenGaussian.transitionLaw x u ⟨t,ht.1⟩ := by
+    law hv hb hl hT (Measure.dirac x) t = FrozenGaussian.transitionLaw x u (NNReal.mk t ht.1) := by
   let a := configurationFlatten d N (x+t•u)
   have hpos := BrownianNoise.configurationLaw_eval_flat_hasLaw (d := d) (N := N) (⟨t,ht⟩ : Icc 0 T)
   have hshift := (gaussianVectorLaw_add_mean a (2*NNReal.mk t ht.1)).hasLaw.comp hpos
   have hunflat : MeasurePreserving (configurationFlatten d N).symm
-      (gaussianVectorLaw a (2*NNReal.mk t ht.1)) (FrozenGaussian.transitionLaw x u ⟨t,ht.1⟩) :=
+      (gaussianVectorLaw a (2*NNReal.mk t ht.1)) (FrozenGaussian.transitionLaw x u (NNReal.mk t ht.1)) :=
     ⟨(configurationFlatten d N).symm.measurable,rfl⟩
   have hfinal := hunflat.hasLaw.comp hshift
   rw [law,Measure.dirac_prod,Measure.map_map
@@ -88,7 +93,7 @@ theorem globalLaw_constant_dirac {d N : ℕ} (x u : Configuration d N) {M K : �
     (hb : ∀ (_ : ℝ) (_ : Configuration d N), ‖u‖ ≤ M)
     (hl : ∀ _ : ℝ,LipschitzWith K (fun _ : Configuration d N => u))
     {t : ℝ} (ht : 0 ≤ t) :
-    globalLaw hv hb hl (Measure.dirac x) t = FrozenGaussian.transitionLaw x u ⟨t,ht⟩ := by
+    globalLaw hv hb hl (Measure.dirac x) t = FrozenGaussian.transitionLaw x u (NNReal.mk t ht) := by
   rw [globalLaw_eq hv hb hl ht (Measure.dirac x) ⟨ht,le_rfl⟩]
   exact law_constant_dirac x u hv hb hl ht ⟨ht,le_rfl⟩
 

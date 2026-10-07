@@ -1,5 +1,10 @@
-import SharpWasserstein.ConfigurationBrownian
-import Mathlib.Probability.Independence.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ConfigurationBrownian
+public import Mathlib.Probability.Independence.Basic
+
+@[expose] public section
 
 /-! The constructed configuration Brownian law is a tensor product of actual
 one-particle continuous-path laws, followed by deterministic path assembly. -/
@@ -13,9 +18,9 @@ def positionPath {d : ℕ} {T : ℝ} (w : Fin d → C(Icc 0 T, ℝ)) : C(Icc 0 T
 
 theorem positionPath_measurable {d : ℕ} {T : ℝ} :
     Measurable (positionPath (d := d) (T := T)) := by
-  apply (ContinuousMap.measurable_iff_eval _).mpr
+  apply ContinuousMap.measurable_iff_eval.mpr
   intro t
-  exact measurable_pi_lambda _ fun a ↦ (continuous_eval_const t).measurable.comp (measurable_pi_apply a)
+  exact Measurable.of_eval fun a ↦ (continuous_eval_const t).measurable.comp (measurable_pi_apply a)
 
 def positionLaw (d : ℕ) (T : ℝ) : Measure C(Icc 0 T, Position d) :=
   (coordinateLaw d T).map positionPath
@@ -29,9 +34,9 @@ def assemblePositionPaths {d N : ℕ} {T : ℝ}
 
 theorem assemblePositionPaths_measurable {d N : ℕ} {T : ℝ} :
     Measurable (assemblePositionPaths (d := d) (N := N) (T := T)) := by
-  apply (ContinuousMap.measurable_iff_eval _).mpr
+  apply ContinuousMap.measurable_iff_eval.mpr
   intro t
-  exact measurable_pi_lambda _ fun i ↦ (continuous_eval_const t).measurable.comp (measurable_pi_apply i)
+  exact Measurable.of_eval fun i ↦ (continuous_eval_const t).measurable.comp (measurable_pi_apply i)
 
 /-- Genuine path-law product factorization of the constructed Brownian noise. -/
 theorem configurationLaw_eq_position_product (d N : ℕ) (T : ℝ) :
@@ -40,7 +45,7 @@ theorem configurationLaw_eq_position_product (d N : ℕ) (T : ℝ) :
       Measure.pi fun _ : Fin N ↦ positionLaw d T :=
     Measure.pi_map_pi (fun _ ↦ positionPath_measurable.aemeasurable)
   have hm : Measurable (fun w : Fin N → Fin d → C(Icc 0 T, ℝ) ↦ fun i ↦ positionPath (w i)) :=
-    measurable_pi_lambda _ fun i ↦ positionPath_measurable.comp (measurable_pi_apply i)
+    Measurable.of_eval fun i ↦ positionPath_measurable.comp (measurable_pi_apply i)
   rw [← hp, Measure.map_map assemblePositionPaths_measurable hm]
   rfl
 

@@ -1,6 +1,11 @@
-import SharpWasserstein.BrownianHorizon
-import SharpWasserstein.ParticleMomentBounds
-import SharpWasserstein.TestGenerator
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianHorizon
+public import SharpWasserstein.ParticleMomentBounds
+public import SharpWasserstein.TestGenerator
+
+@[expose] public section
 
 /-! Global moment and test-function regularity of the actual particle law.
 The weak generator equation is a separate analytic theorem. -/

@@ -1,5 +1,10 @@
-import SharpWasserstein.VolterraFourierRecovery
-import SharpWasserstein.VolterraEnergyLimit
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.VolterraFourierRecovery
+public import SharpWasserstein.VolterraEnergyLimit
+
+@[expose] public section
 
 /-! Actual physical Fourier recovery turns finite trial differential bounds
 into Volterra inequalities. Only finite energies are differentiated; the total

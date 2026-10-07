@@ -1,4 +1,9 @@
-import SharpWasserstein.FlowJacobianDriftEquation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianDriftEquation
+
+@[expose] public section
 
 /-! Global time continuity and the actual differential variational equation
 follow from the proved global integral identity for the initial Jacobian. -/

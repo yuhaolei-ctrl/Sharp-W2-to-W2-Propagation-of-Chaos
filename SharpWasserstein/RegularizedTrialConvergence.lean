@@ -1,7 +1,12 @@
-import SharpWasserstein.RegularizedTrialEnergy
-import Mathlib.Analysis.InnerProductSpace.PiL2
-import Mathlib.LinearAlgebra.Finsupp.LinearCombination
-import Mathlib.Order.Filter.Finite
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialEnergy
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.LinearAlgebra.Finsupp.LinearCombination
+public import Mathlib.Order.Filter.Finite
+
+@[expose] public section
 
 /-! Genuine finite-coefficient recovery for regularized trial energies.
 The approximation comes from membership in the closed span of actual atoms.

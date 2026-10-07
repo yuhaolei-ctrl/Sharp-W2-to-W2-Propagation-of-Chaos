@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianSmoothingMixture
-import SharpWasserstein.ConfigurationEuclidean
-import SharpWasserstein.TransportConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingMixture
+public import SharpWasserstein.ConfigurationEuclidean
+public import SharpWasserstein.TransportConvergence
+
+@[expose] public section
 
 /-! Actual Wasserstein convergence of the compact-convolution/Gaussian-floor
 regularization. The coupling is pushed through the exact Euclidean coordinate

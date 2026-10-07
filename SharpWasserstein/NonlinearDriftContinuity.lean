@@ -1,6 +1,11 @@
-import SharpWasserstein.DriftBounds
-import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DriftBounds
+public import Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 
 /-! The genuine mean-field drift is jointly continuous along every narrowly
 continuous probability curve. No density or moment regularity is required. -/

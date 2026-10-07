@@ -1,4 +1,0 @@
-RegularizedTrialEnergy 0
-FiniteGradientTrial 0
-FiniteGradientTrialPairing 0
-PASS: 3 modules, 29 declarations, ['Classical.choice', 'Quot.sound', 'propext']

@@ -1,5 +1,10 @@
-import SharpWasserstein.VolterraHierarchy
-import Mathlib.MeasureTheory.Integral.DominatedConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.VolterraHierarchy
+public import Mathlib.MeasureTheory.Integral.DominatedConvergence
+
+@[expose] public section
 
 /-! Integrating factors and vanishing-error limits for finite trial energies.
 The limiting energy is never differentiated. -/

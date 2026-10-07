@@ -1,5 +1,10 @@
-import SharpWasserstein.GaussianHeatCalculus
-import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianHeatCalculus
+public import Mathlib.MeasureTheory.Integral.IntervalIntegral.IntegrationByParts
+
+@[expose] public section
 
 /-! Genuine integration by parts on the unit periodic cube, with ordinary
 Fréchet coordinate derivatives and the actual finite product of interval

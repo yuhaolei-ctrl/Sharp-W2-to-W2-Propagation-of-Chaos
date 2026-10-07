@@ -1,6 +1,11 @@
-import SharpWasserstein.GaussianControlledBridge
-import SharpWasserstein.BrownianGaussianHistory
-import SharpWasserstein.CouplingMoments
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianControlledBridge
+public import SharpWasserstein.BrownianGaussianHistory
+public import SharpWasserstein.CouplingMoments
+
+@[expose] public section
 
 /-! Initial P₂ couplings supply the actual finite Euclidean displacement moment
 required by the Gaussian bridge. Flattening changes no transport normalization. -/

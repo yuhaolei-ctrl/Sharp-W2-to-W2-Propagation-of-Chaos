@@ -1,4 +1,10 @@
-import SharpWasserstein.FiniteGradientTrial
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+public import SharpWasserstein.FiniteGradientTrial
+
+@[expose] public section
 
 /-! The finite coefficient operator has the literal weighted Gram entries
 and source coefficients. These formulas connect coercive inversion to the

@@ -1,4 +1,0 @@
-SinePeriodization 0
-PeriodicKernelBounds 0
-PeriodicParticleApproximation 0
-PASS: 3 modules, 39 declarations, ['Classical.choice', 'Quot.sound', 'propext']

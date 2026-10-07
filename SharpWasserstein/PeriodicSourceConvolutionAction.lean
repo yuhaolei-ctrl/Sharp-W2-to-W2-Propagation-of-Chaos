@@ -1,4 +1,9 @@
-import SharpWasserstein.PropagatedSourceEquationIntegration
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourceEquationIntegration
+
+@[expose] public section
 
 /-! Quantitative estimates for the actual propagated source action on bounded
 smooth tests. The action is the differentiated genuine flow expectation;

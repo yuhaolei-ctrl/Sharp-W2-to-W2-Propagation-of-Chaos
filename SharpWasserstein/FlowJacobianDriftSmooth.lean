@@ -1,5 +1,10 @@
-import SharpWasserstein.FlowJacobianDriftConvergence
-import SharpWasserstein.DriftApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianDriftConvergence
+public import SharpWasserstein.DriftApproximation
+
+@[expose] public section
 
 /-! Direct bounded-smooth drift APIs. Individual bounds on second derivatives
 are derived from the actual hypotheses, and locally uniform drift convergence

@@ -1,4 +1,9 @@
-import SharpWasserstein.SwitchSourceDerivativeMovingTest
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeMovingTest
+
+@[expose] public section
 
 /-! Differentiation of actual transition comparisons with a moving C¹ test.
 The identity is proved by the pathwise moving-test theorem and a constant

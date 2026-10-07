@@ -1,5 +1,10 @@
-import SharpWasserstein.WeightedTangentLimit
-import Mathlib.MeasureTheory.Constructions.BorelSpace.Order
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangentLimit
+public import Mathlib.MeasureTheory.Constructions.BorelSpace.Order
+
+@[expose] public section
 
 /-! Scalar continuity of the source makes its genuine varying-weight variational
 energy measurable. This requires no measurability of canonical tangent vectors. -/

@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency
-import SharpWasserstein.FiniteCoefficientEnergyDerivative
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency
+public import SharpWasserstein.FiniteCoefficientEnergyDerivative
+
+@[expose] public section
 
 /-! The finite regularized energy of the exact periodic marginal tangent.
 The matrix and source coefficients are derived from the same actual Brownian

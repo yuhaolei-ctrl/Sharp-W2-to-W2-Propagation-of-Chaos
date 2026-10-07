@@ -1,4 +1,9 @@
-import SharpWasserstein.WeightedMarginal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedMarginal
+
+@[expose] public section
 
 /-! The genuine marginal representative pairs correctly with all bounded
 smooth potentials with bounded gradient, by the proved compact cutoff density.

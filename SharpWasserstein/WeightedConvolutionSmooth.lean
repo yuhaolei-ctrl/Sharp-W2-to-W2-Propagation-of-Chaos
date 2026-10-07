@@ -1,5 +1,10 @@
-import SharpWasserstein.NoiseAverageSmooth
-import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.NoiseAverageSmooth
+public import Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap
+
+@[expose] public section
 
 /-! Smooth translation integrals against integrable operator-valued weights.
 The measure need not be finite and the weights need not be bounded or

@@ -1,4 +1,9 @@
-import SharpWasserstein.ExternalInteractionGradientBase
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionGradientBase
+
+@[expose] public section
 
 /-! The actual external interaction test and its sharp-in-particle-count
 Euclidean gradient bound. All matrices below are genuine Fréchet derivatives. -/

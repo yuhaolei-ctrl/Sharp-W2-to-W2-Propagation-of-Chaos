@@ -1,5 +1,10 @@
-import SharpWasserstein.WeightedPeriodicFourierPhysical
-import SharpWasserstein.WeightedPeriodicCoefficientEvolutionFourier
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicFourierPhysical
+public import SharpWasserstein.WeightedPeriodicCoefficientEvolutionFourier
+
+@[expose] public section
 
 /-! All analytic hypotheses of the finite diffusion calculation are
 verified for the actual physical-period Fourier atoms. -/

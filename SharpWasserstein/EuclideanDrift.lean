@@ -1,5 +1,10 @@
-import SharpWasserstein.DriftBounds
-import Mathlib.Algebra.Order.BigOperators.Ring.Finset
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DriftBounds
+public import Mathlib.Algebra.Order.BigOperators.Ring.Finset
+
+@[expose] public section
 
 /-! Conversion between the coordinate sup norm and the actual Euclidean cost,
 and quadratic bounds on the mean-field drift with no particle-number loss. -/

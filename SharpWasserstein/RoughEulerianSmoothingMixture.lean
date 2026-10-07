@@ -1,4 +1,9 @@
-import SharpWasserstein.RoughEulerianSmoothingCoupling
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianSmoothingCoupling
+
+@[expose] public section
 
 /-! An actual coupling for the Gaussian-floor regularization. The compact
 convolution contributes at most ε², and the stationary floor contributes a
@@ -92,9 +97,11 @@ theorem regularizationCoupling_isCoupling {ε δ : ℝ} (hε : 0 < ε) (hδ : 0 
   refine ⟨isProbabilityMeasure_iff.mpr ?_, ?_, ?_⟩
   · simp only [regularizationCoupling, Measure.add_apply, Measure.smul_apply, smul_eq_mul,
       measure_univ, mul_one, hsum]
-  · rw [regularizationCoupling, Measure.map_add _ _ measurable_fst, Measure.map_smul, Measure.map_smul,
+  · rw [regularizationCoupling, Measure.map_add _ _ measurable_fst,
+      Measure.map_smul _ measurable_fst.aemeasurable, Measure.map_smul _ measurable_fst.aemeasurable,
       hc.2.1, Measure.map_fst_prod, measure_univ, one_smul, regularizedLaw_eq_mixture hε hδ hδ₁ μ]
-  · rw [regularizationCoupling, Measure.map_add _ _ measurable_snd, Measure.map_smul, Measure.map_smul,
+  · rw [regularizationCoupling, Measure.map_add _ _ measurable_snd,
+      Measure.map_smul _ measurable_snd.aemeasurable, Measure.map_smul _ measurable_snd.aemeasurable,
       hc.2.2, Measure.map_snd_prod, measure_univ, one_smul, ← add_smul, hsum, one_smul]
 
 theorem regularizationCoupling_cost_integrable {ε : ℝ} (hε : 0 < ε) (δ : ℝ)

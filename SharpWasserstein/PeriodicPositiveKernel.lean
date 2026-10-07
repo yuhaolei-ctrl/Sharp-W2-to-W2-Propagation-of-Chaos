@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicSmoothBounds
-import Mathlib.MeasureTheory.Integral.Pi
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicSmoothBounds
+public import Mathlib.MeasureTheory.Integral.Pi
+
+@[expose] public section
 
 /-! A concrete strictly positive smooth product kernel on the unit torus.
 Every mass normalization and lower bound is proved for actual integrals. -/
@@ -89,9 +94,9 @@ theorem kernel_bounds {n : ℕ} (κ : ℝ) (x : Coordinates n) :
     (Real.exp (-|κ|)/normalizer κ)^n ≤ kernel κ x ∧
       kernel κ x ≤ (Real.exp |κ|/normalizer κ)^n := by
   have hlow : 0 ≤ Real.exp (-|κ|)/normalizer κ := (div_pos (Real.exp_pos _) (normalizer_pos κ)).le
-  have hlo := Finset.prod_le_prod (s := Finset.univ) (f := fun _ : Fin n => Real.exp (-|κ|)/normalizer κ)
+  have hlo := Finset.prod_le_prod₀ (s := Finset.univ) (f := fun _ : Fin n => Real.exp (-|κ|)/normalizer κ)
     (g := fun i => scalar κ (x i)) (fun _ _ => hlow) (fun i _ => (scalar_bounds κ (x i)).1)
-  have hhi := Finset.prod_le_prod (s := Finset.univ) (f := fun i : Fin n => scalar κ (x i))
+  have hhi := Finset.prod_le_prod₀ (s := Finset.univ) (f := fun i : Fin n => scalar κ (x i))
     (g := fun _ => Real.exp |κ|/normalizer κ) (fun i _ => (scalar_pos κ (x i)).le)
     (fun i _ => (scalar_bounds κ (x i)).2)
   simpa only [kernel,Finset.prod_const,Finset.card_univ,Fintype.card_fin] using And.intro hlo hhi

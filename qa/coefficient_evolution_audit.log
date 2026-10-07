@@ -1,9 +1,0 @@
-FiniteGradientTrialLaplacian 0
-BoundedHessianIntegrability 0
-FiniteGradientTrialDiffusion 0
-FiniteCoefficientMatrix 0
-FiniteCoefficientEnergy 0
-WeightedEnergyDerivativeWithin 0
-FiniteCoefficientEnergyDerivative 0
-FiniteCoefficientBrownianEnergy 0
-PASS: 8 modules, 34 declarations, ['Classical.choice', 'Quot.sound', 'propext']

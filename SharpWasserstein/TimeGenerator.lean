@@ -1,4 +1,9 @@
-import SharpWasserstein.FrozenGeneratorBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGeneratorBounds
+
+@[expose] public section
 
 /-! Joint continuity and uniform spatial bounds for the actual time-dependent
 compact-test generator. No time derivative of the drift is required. -/

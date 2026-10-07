@@ -1,6 +1,11 @@
-import SharpWasserstein.SwitchSourceDerivativeEquation
-import SharpWasserstein.SwitchCurveProperties
-import SharpWasserstein.ParticleWeakIdentification
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeEquation
+public import SharpWasserstein.SwitchCurveProperties
+public import SharpWasserstein.ParticleWeakIdentification
+
+@[expose] public section
 
 /-! Direct specialization to the manuscript's actual interacting switch
 curve. Smoothness of the full particle drift is derived from the interaction,

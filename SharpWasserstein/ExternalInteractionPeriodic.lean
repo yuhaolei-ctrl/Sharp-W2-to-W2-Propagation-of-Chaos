@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedPeriodicTangentPhysical
-import SharpWasserstein.ExternalInteractionSymmetryEstimate
-import SharpWasserstein.SinePeriodization
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicTangentPhysical
+public import SharpWasserstein.ExternalInteractionSymmetryEstimate
+public import SharpWasserstein.SinePeriodization
+
+@[expose] public section
 
 /-! Genuine physical-period invariance of the external interaction and the
 internal mean-field drift test, derived from actual coordinate shifts of the

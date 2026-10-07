@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicParticleTangentLimitIdentification
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicParticleTangentLimitIdentification
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency
+
+@[expose] public section
 
 /-! Exact identification of the source used by the Brownian finite hierarchy
 with the projected random Jacobian flux used by the sine-periodization limit.
@@ -17,6 +22,18 @@ variable {d N m : ℕ} [MeasurableSpace (Point (N*d))] [BorelSpace (Point (N*d))
   (hN : 0 < N) (hb : BoundedSmoothKernel b) (hbound : KernelBounds b M L₁ L₂)
   (hM : 0 ≤ M) (hL₁ : 0 ≤ L₁) (hL₂ : 0 ≤ L₂) {T : ℝ} (hT : 0 ≤ T)
   (μ : Measure (Point (N*d))) [IsFiniteMeasure μ]
+
+/-- Instance shortcut (port to Lean 4.35): typeclass search no longer unifies the continuity
+proof `(drift_lipschitz ..).continuous.comp continuous_snd : Continuous (drift b ∘ Prod.snd)`
+with the expected `Continuous (Function.uncurry ..)` at instance transparency, so the general
+instance `Brownian.lawAt_isFiniteMeasure` is restated with the hypotheses in that form. -/
+instance driftLawAt_isFiniteMeasure {b' : Position d → Position d → Position d} {M' K' : ℝ≥0}
+    (hv' : Continuous (drift (N := N) b' ∘ Prod.snd))
+    (hb' : ∀ (_ : ℝ) (y : Point (N*d)), ‖drift b' y‖ ≤ M')
+    (hl' : ∀ _ : ℝ, LipschitzWith K' (drift (N := N) b')) {T' : ℝ} (hT' : 0 ≤ T')
+    (ν : Measure (Point (N*d))) [IsFiniteMeasure ν] (t : ℝ) :
+    IsFiniteMeasure (Brownian.lawAt hv' hb' hl' hT' ν t) :=
+  Brownian.lawAt_isFiniteMeasure _ _ _ hT' ν t
 
 instance projectedLaw_isFiniteMeasure
     (ξ : Measure C(Icc 0 T,Point (N*d))) [IsProbabilityMeasure ξ]

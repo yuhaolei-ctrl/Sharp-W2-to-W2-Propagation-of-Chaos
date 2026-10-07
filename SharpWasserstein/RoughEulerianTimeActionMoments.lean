@@ -1,4 +1,9 @@
-import SharpWasserstein.RoughEulerianTimeActionIdentification
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeActionIdentification
+
+@[expose] public section
 
 /-! Bounded spatial carrying support survives genuine time averaging. The
 regularized probability laws have actual finite quadratic moments, with a

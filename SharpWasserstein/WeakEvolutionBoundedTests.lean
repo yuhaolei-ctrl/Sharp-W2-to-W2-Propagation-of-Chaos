@@ -1,5 +1,10 @@
-import SharpWasserstein.WeakEvolutionContinuity
-import SharpWasserstein.ConfigurationGeneratorEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakEvolutionContinuity
+public import SharpWasserstein.ConfigurationGeneratorEuclidean
+
+@[expose] public section
 
 /-! Extension of the actual `WeakEvolution.equation` to bounded smooth tests
 with bounded gradient and Laplacian. Both spatial and temporal cutoff limits

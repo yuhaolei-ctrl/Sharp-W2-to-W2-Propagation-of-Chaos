@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionAverage
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionAverage
+
+@[expose] public section
 
 /-! Physical periodic coefficient equations for the actual Brownian particle
 source. Law exchangeability and source covariance are propagated from the

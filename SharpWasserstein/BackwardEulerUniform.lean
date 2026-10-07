@@ -1,5 +1,10 @@
-import SharpWasserstein.GaussianEulerBackwardThird
-import SharpWasserstein.GaussianEulerBackwardSmooth
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEulerBackwardThird
+public import SharpWasserstein.GaussianEulerBackwardSmooth
+
+@[expose] public section
 
 /-! Actual backward Gaussian Euler tests have common first-, second-, and
 third-derivative Lipschitz bounds for every mesh and every remaining step

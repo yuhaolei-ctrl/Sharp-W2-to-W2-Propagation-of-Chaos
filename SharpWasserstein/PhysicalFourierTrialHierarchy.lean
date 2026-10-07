@@ -1,4 +1,9 @@
-import SharpWasserstein.PhysicalFourierTrialExternal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PhysicalFourierTrialExternal
+
+@[expose] public section
 
 /-! A genuine finite physical Fourier hierarchy estimate. The full diffusion
 absorbs both internal trial residual and external Hessian losses; the sole

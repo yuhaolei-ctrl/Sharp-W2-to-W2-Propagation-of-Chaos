@@ -1,6 +1,11 @@
-import SharpWasserstein.RegularizedTrialMarginal
-import SharpWasserstein.RegularizedTrialConvergencePhysical
-import SharpWasserstein.WeightedPeriodicMarginalPhysical
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialMarginal
+public import SharpWasserstein.RegularizedTrialConvergencePhysical
+public import SharpWasserstein.WeightedPeriodicMarginalPhysical
+
+@[expose] public section
 
 /-! The actual next-marginal fluctuation of a finite physical Fourier
 optimizer equals next-level periodic energy minus its regularized trial

@@ -1,4 +1,9 @@
-import SharpWasserstein.GaussianEntropyChain
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEntropyChain
+
+@[expose] public section
 
 /-! Preserved label marginals of genuine recursively generated Gaussian histories. -/
 noncomputable section

@@ -1,5 +1,10 @@
-import SharpWasserstein.EntropyObservable
-import Mathlib.MeasureTheory.Function.L2Space
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.EntropyObservable
+public import Mathlib.MeasureTheory.Function.L2Space
+
+@[expose] public section
 
 /-!
 # Vector-valued bounded-observable entropy estimates

@@ -1,5 +1,10 @@
-import SharpWasserstein.WeightedEnergyDerivative
-import Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedEnergyDerivative
+public import Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional
+
+@[expose] public section
 
 /-! Coercive Galerkin solutions are constructed by genuine projected operators.
 The exact residual equation and best-approximation estimate are proved rather

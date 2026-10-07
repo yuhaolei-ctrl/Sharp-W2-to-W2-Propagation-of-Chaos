@@ -1,4 +1,9 @@
-import SharpWasserstein.ExternalInteractionSymmetryMarginal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionSymmetryMarginal
+
+@[expose] public section
 
 /-! Applying genuine source averaging to the actual interaction test. Bounds
 needed for the noncompact source action are derived from the kernel bounds

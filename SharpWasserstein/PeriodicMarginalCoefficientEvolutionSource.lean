@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionBrownian
-import SharpWasserstein.WeightedPeriodicCoefficientEvolutionFourier
-import SharpWasserstein.FiniteTrialEnergyIdentity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionBrownian
+public import SharpWasserstein.WeightedPeriodicCoefficientEvolutionFourier
+public import SharpWasserstein.FiniteTrialEnergyIdentity
+
+@[expose] public section
 
 /-! Genuine source marginalization and finite-N source-generator splitting.
 Every noncompact periodic test is represented through the actual weighted

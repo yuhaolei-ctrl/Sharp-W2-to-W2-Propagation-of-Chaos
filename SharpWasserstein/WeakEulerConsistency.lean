@@ -1,6 +1,11 @@
-import SharpWasserstein.ProbabilityUniformTests
-import SharpWasserstein.QuantitativeGenerator
-import SharpWasserstein.BoundedConfigurationTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ProbabilityUniformTests
+public import SharpWasserstein.QuantitativeGenerator
+public import SharpWasserstein.BoundedConfigurationTests
+
+@[expose] public section
 
 /-! Uniform one-step consistency of the actual weak equation over bounded
 smooth test families. The time modulus is derived from narrow continuity;

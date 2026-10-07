@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizationRates
-import Mathlib.Analysis.SpecificLimits.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizationRates
+public import Mathlib.Analysis.SpecificLimits.Basic
+
+@[expose] public section
 
 /-! Exact finite Gaussian bridge coefficients and their limiting value. -/
 noncomputable section

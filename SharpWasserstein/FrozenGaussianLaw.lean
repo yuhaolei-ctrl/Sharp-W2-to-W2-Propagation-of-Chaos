@@ -1,4 +1,9 @@
-import SharpWasserstein.FrozenGaussianStep
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGaussianStep
+
+@[expose] public section
 
 /-! The frozen expectation is the integral against the actual Gaussian vector
 transition measure, with exactly covariance 2t times the identity. -/

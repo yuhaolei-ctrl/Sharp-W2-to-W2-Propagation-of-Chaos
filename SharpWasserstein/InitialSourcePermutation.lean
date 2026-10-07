@@ -1,6 +1,11 @@
-import SharpWasserstein.PropagatedSourcePermutationParticle
-import SharpWasserstein.RegularizedSource
-import SharpWasserstein.QuantitativeGenerator
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PropagatedSourcePermutationParticle
+public import SharpWasserstein.RegularizedSource
+public import SharpWasserstein.QuantitativeGenerator
+
+@[expose] public section
 
 /-! Exchangeability of the actual generator-difference source. The diffusion
 terms cancel before changing coordinates; no transformation law for a Hessian

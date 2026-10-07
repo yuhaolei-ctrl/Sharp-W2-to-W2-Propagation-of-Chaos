@@ -1,4 +1,9 @@
-import SharpWasserstein.SwitchSourceDerivativeRight
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.SwitchSourceDerivativeRight
+
+@[expose] public section
 
 /-! The actual switch source is continuous in time. The derived right
 derivative therefore gives the full integrated source identity and the

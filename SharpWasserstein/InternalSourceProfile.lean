@@ -1,6 +1,11 @@
-import SharpWasserstein.InternalSource
-import SharpWasserstein.ExchangeableEntropy
-import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.InternalSource
+public import SharpWasserstein.ExchangeableEntropy
+public import Mathlib.Analysis.Convex.SpecificFunctions.Basic
+
+@[expose] public section
 
 /-!
 # Full-vector exponential moment and marginal source profile

@@ -1,6 +1,11 @@
-import SharpWasserstein.ConfigurationBrownian
-import SharpWasserstein.FlowCausality
-import SharpWasserstein.BrownianParticle
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ConfigurationBrownian
+public import SharpWasserstein.FlowCausality
+public import SharpWasserstein.BrownianParticle
+
+@[expose] public section
 
 /-! Restriction consistency of the actual Brownian laws and particle flows.
 The selected finite-horizon solutions therefore define a single evolution. -/
@@ -16,7 +21,7 @@ theorem BoundedFlow.restrictPath_measurable
     [MeasurableSpace E] [BorelSpace E] [SecondCountableTopology E]
     {S T : ℝ} (hST : S ≤ T) :
     Measurable (restrictPath (E := E) hST) := by
-  apply (ContinuousMap.measurable_iff_eval _).mpr
+  apply ContinuousMap.measurable_iff_eval.mpr
   intro t
   exact (by fun_prop : Continuous (fun w : C(Icc 0 T,E) =>
     w ⟨t,t.property.1,t.property.2.trans hST⟩)).measurable

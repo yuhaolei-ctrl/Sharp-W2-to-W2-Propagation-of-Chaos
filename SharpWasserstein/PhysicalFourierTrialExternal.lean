@@ -1,7 +1,12 @@
-import SharpWasserstein.PhysicalFourierTrialMarginal
-import SharpWasserstein.PhysicalFourierTrialBounds
-import SharpWasserstein.FiniteTrialEnergyInequality
-import SharpWasserstein.ExternalInteractionEnergyCancellation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PhysicalFourierTrialMarginal
+public import SharpWasserstein.PhysicalFourierTrialBounds
+public import SharpWasserstein.FiniteTrialEnergyInequality
+public import SharpWasserstein.ExternalInteractionEnergyCancellation
+
+@[expose] public section
 
 /-! Actual external interaction bound at a finite physical Fourier optimizer.
 The favourable fluctuation is the next periodic source energy minus the

@@ -1,5 +1,10 @@
-import SharpWasserstein.GaussianEulerBackward
-import SharpWasserstein.DerivativeCompositionBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianEulerBackward
+public import SharpWasserstein.DerivativeCompositionBounds
+
+@[expose] public section
 
 /-! Second derivative bounds for the actual finite Gaussian Euler backward tests.
 The recurrence is derived from the chain rule, with no backward PDE assumption. -/

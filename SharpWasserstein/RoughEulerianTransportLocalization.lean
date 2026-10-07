@@ -1,5 +1,10 @@
-import SharpWasserstein.RoughEulerianTransportSpaceTime
-import SharpWasserstein.RoughEulerianTransportKernel
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTransportSpaceTime
+public import SharpWasserstein.RoughEulerianTransportKernel
+
+@[expose] public section
 
 /-! Measurable time-localized compact tests belong to the joint gradient space.
 The Riesz flux therefore represents every integrated scalar source pairing, not

@@ -1,4 +1,9 @@
-import SharpWasserstein.InitialSourceMarginalPairing
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.InitialSourceMarginalPairing
+
+@[expose] public section
 
 /-! Successive genuine linear source marginals agree with the composed
 observation. The intermediate canonical tangent is eliminated using the

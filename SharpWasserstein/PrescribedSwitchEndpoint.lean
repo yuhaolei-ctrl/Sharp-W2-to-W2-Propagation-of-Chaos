@@ -1,5 +1,10 @@
-import SharpWasserstein.WassersteinEndpointConstants
-import SharpWasserstein.ParticleWeakIdentification
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WassersteinEndpointConstants
+public import SharpWasserstein.ParticleWeakIdentification
+
+@[expose] public section
 
 /-! Actual endpoint identification and final Wasserstein triangle assembly.
 The remaining endpoint-length estimate is stated explicitly for the genuine

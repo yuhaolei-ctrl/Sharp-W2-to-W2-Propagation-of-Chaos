@@ -1,5 +1,10 @@
-import Mathlib.MeasureTheory.Measure.LogLikelihoodRatio
-import Mathlib.Tactic.Linarith
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.MeasureTheory.Measure.LogLikelihoodRatio
+public import Mathlib.Tactic.Linarith
+
+@[expose] public section
 
 /-!
 # The direction of the entropy-cost identity

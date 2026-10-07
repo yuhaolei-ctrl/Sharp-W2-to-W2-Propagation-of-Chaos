@@ -1,4 +1,9 @@
-import SharpWasserstein.GaussianSharpness
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.GaussianSharpness
+
+@[expose] public section
 
 /-!
 # Covariance characterization of the concrete Gaussian constructions

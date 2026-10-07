@@ -1,5 +1,11 @@
-import SharpWasserstein.ExternalInteractionGradient
-import SharpWasserstein.ExternalInteractionEnergy
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.InnerProductSpace.Adjoint
+public import SharpWasserstein.ExternalInteractionGradient
+public import SharpWasserstein.ExternalInteractionEnergy
+
+@[expose] public section
 
 /-! The actual drift-test gradient and its residual estimate. The drift
 supremum enters only the coefficient multiplying the residual error; the

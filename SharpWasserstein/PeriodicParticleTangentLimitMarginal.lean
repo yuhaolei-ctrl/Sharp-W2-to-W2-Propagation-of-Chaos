@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicParticleTangentLimitPairing
-import SharpWasserstein.PeriodicParticleTangentLimitLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicParticleTangentLimitPairing
+public import SharpWasserstein.PeriodicParticleTangentLimitLaw
+
+@[expose] public section
 
 /-! Actual particle-coordinate marginals of the JV carrying laws and sources.
 The projection contracts the full Euclidean norm, and the original quadratic

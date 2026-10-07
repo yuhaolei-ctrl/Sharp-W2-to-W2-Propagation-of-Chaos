@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency
-import SharpWasserstein.WeightedPeriodicTangentPhysical
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency
+public import SharpWasserstein.WeightedPeriodicTangentPhysical
+
+@[expose] public section
 
 /-! The next-particle observation has dimension m*d+d, while the genuine
 (m+1)-particle prefix has dimension (m+1)*d. They differ only by arithmetic

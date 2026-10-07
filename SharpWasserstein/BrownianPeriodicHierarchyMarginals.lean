@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency
-import SharpWasserstein.PropagatedSourceEquationDistribution
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicMarginalCoefficientEvolutionConsistency
+public import SharpWasserstein.PropagatedSourceEquationDistribution
+
+@[expose] public section
 
 /-! A single full carrying law and source determine every level of the true
 particle hierarchy. Levels beyond N are harmless zero observations, allowing
@@ -55,9 +60,9 @@ theorem imageSource_energy_le {n k : ℕ} (ν : Measure (Point n)) [IsFiniteMeas
   let U : Lp (Point n) 2 ν := (representative ν σ).val
   let V : Lp (Point k) 2 ν := A.compLpₗ 2 ν U
   have hiU : Integrable (fun x => ‖U x‖^2) ν :=
-    (memLp_two_iff_integrable_sq_norm (Lp.memLp U).1).mp (Lp.memLp U)
+    (memLp_two_iff_integrable_sq_norm (Lp.memLp U).aestronglyMeasurable).mp (Lp.memLp U)
   have hiV : Integrable (fun x => ‖V x‖^2) ν :=
-    (memLp_two_iff_integrable_sq_norm (Lp.memLp V).1).mp (Lp.memLp V)
+    (memLp_two_iff_integrable_sq_norm (Lp.memLp V).aestronglyMeasurable).mp (Lp.memLp V)
   calc
     _ ≤ ∫ x,‖V x‖^2 ∂ν := PropagatedFlux.source_energy_le _ _ _ V
     _ ≤ ∫ x,‖U x‖^2 ∂ν := by

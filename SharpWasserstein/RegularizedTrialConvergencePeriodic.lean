@@ -1,5 +1,10 @@
-import SharpWasserstein.RegularizedTrialConvergence
-import SharpWasserstein.WeightedPeriodicFourierClosure
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RegularizedTrialConvergence
+public import SharpWasserstein.WeightedPeriodicFourierClosure
+
+@[expose] public section
 
 /-! Algebraic identification of finite periodic test ranges with the span of
 actual Fourier atom images under a genuine linear map. This works equally for

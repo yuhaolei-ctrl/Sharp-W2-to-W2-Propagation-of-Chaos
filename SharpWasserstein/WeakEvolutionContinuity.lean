@@ -1,6 +1,11 @@
-import SharpWasserstein.WeakTestContinuity
-import SharpWasserstein.ConfigurationEuclidean
-import SharpWasserstein.MarginalMoments
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeakTestContinuity
+public import SharpWasserstein.ConfigurationEuclidean
+public import SharpWasserstein.MarginalMoments
+
+@[expose] public section
 
 /-! Narrow continuity of every actual `Dynamics.WeakEvolution` is derived from
 its compact smooth test continuity and finite-horizon second moment bound.

@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicFourierPolynomials
-import SharpWasserstein.PeriodicTorusBridge
-import SharpWasserstein.TorusFourierConvergence
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicFourierPolynomials
+public import SharpWasserstein.PeriodicTorusBridge
+public import SharpWasserstein.TorusFourierConvergence
+
+@[expose] public section
 
 /-! Actual mean-square Fourier approximation on the periodic fundamental cube,
 including simultaneous approximation of every first coordinate derivative. -/

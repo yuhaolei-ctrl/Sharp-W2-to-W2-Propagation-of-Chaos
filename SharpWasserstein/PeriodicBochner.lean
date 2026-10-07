@@ -1,5 +1,10 @@
-import SharpWasserstein.PeriodicFourierTests
-import SharpWasserstein.BochnerIdentity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicFourierTests
+public import SharpWasserstein.BochnerIdentity
+
+@[expose] public section
 
 /-! The genuine Euclidean Bochner identity transported to periodic coordinates,
 then integrated over the actual fundamental domain. The Galerkin estimate uses

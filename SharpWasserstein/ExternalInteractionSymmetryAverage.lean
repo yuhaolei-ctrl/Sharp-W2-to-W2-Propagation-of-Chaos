@@ -1,4 +1,9 @@
-import SharpWasserstein.ExternalInteractionSymmetry
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.ExternalInteractionSymmetry
+
+@[expose] public section
 
 /-! Exact external-particle averaging of genuine tangent derivative pairings.
 The finite-N coefficient is derived from the cardinality of the external

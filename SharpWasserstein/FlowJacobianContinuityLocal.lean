@@ -1,4 +1,9 @@
-import SharpWasserstein.FlowInitialDerivativeGlobal
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowInitialDerivativeGlobal
+
+@[expose] public section
 
 /-! Operator-norm continuity of the actual initial Jacobian on short intervals.
 The comparison below uses constructed variational equations and synchronous

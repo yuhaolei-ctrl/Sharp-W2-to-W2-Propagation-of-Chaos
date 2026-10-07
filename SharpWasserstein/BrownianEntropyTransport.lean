@@ -1,5 +1,10 @@
-import SharpWasserstein.BrownianEntropyCost
-import SharpWasserstein.RandomMapTransport
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BrownianEntropyCost
+public import SharpWasserstein.RandomMapTransport
+
+@[expose] public section
 
 /-! Optimize the proved Brownian entropy bound over actual probability
 couplings. This yields the manuscript's Wasserstein entropy-cost inequality. -/

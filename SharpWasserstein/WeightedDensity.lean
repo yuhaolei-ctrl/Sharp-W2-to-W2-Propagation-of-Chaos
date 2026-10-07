@@ -1,7 +1,12 @@
-import SharpWasserstein.WeightedTangent
-import Mathlib.Topology.ContinuousMap.Bounded.Normed
-import Mathlib.Analysis.InnerProductSpace.LaxMilgram
-import Mathlib.Analysis.Normed.Operator.Bilinear
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedTangent
+public import Mathlib.Topology.ContinuousMap.Bounded.Normed
+public import Mathlib.Analysis.InnerProductSpace.LaxMilgram
+public import Mathlib.Analysis.Normed.Operator.Bilinear
+
+@[expose] public section
 
 /-! Actual bounded-density multiplication on weighted `L²` and its coercive
 operator on the closed space of compact smooth gradients. -/

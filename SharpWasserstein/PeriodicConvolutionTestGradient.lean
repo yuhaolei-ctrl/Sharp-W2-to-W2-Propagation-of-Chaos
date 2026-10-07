@@ -1,6 +1,11 @@
-import SharpWasserstein.PeriodicConvolutionPrefixTests
-import SharpWasserstein.PeriodicFluxEuclidean
-import SharpWasserstein.WeightedGradientApproximation
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicConvolutionPrefixTests
+public import SharpWasserstein.PeriodicFluxEuclidean
+public import SharpWasserstein.WeightedGradientApproximation
+
+@[expose] public section
 
 /-! Averaging a genuine periodic scalar potential gives a genuine bounded
 smooth potential whose Euclidean gradient is the averaged gradient. This

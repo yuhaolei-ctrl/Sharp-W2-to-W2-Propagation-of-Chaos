@@ -1,4 +1,9 @@
-import SharpWasserstein.PeriodicGalerkin
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.PeriodicGalerkin
+
+@[expose] public section
 
 /-! The actual closed periodic tangent space and strong Fourier Galerkin
 convergence. It is deliberately a subspace of the cube's compact-test gradient
@@ -147,7 +152,9 @@ theorem hasDerivAt_energy
       (weightedOperator (cubePoint (n := n)) ρ') t :=
     HasFDerivAt.comp_hasDerivAt (F := Point n →ᵇ ℝ)
       (E := gradientClosure (cubePoint (n := n)) →L[ℝ] gradientClosure (cubePoint (n := n))) t
-      (weightedOperator (cubePoint (n := n))).hasFDerivAt hρ
+      (ContinuousLinearMap.hasFDerivAt
+        (F := gradientClosure (cubePoint (n := n)) →L[ℝ] gradientClosure (cubePoint (n := n)))
+        (weightedOperator (cubePoint (n := n)))) hρ
   have hf := HasFDerivAt.comp_hasDerivAt (F := gradientClosure (cubePoint (n := n)) →L[ℝ] ℝ)
     (E := gradientClosure (cubePoint (n := n))) t (rieszMap (cubePoint (n := n))).hasFDerivAt hℓ
   have h := GalerkinApproximation.hasDerivAt_energy periodicSpace hA hf ha
@@ -171,7 +178,9 @@ theorem hasDerivAt_finiteEnergy
       (weightedOperator (cubePoint (n := n)) ρ') t :=
     HasFDerivAt.comp_hasDerivAt (F := Point n →ᵇ ℝ)
       (E := gradientClosure (cubePoint (n := n)) →L[ℝ] gradientClosure (cubePoint (n := n))) t
-      (weightedOperator (cubePoint (n := n))).hasFDerivAt hρ
+      (ContinuousLinearMap.hasFDerivAt
+        (F := gradientClosure (cubePoint (n := n)) →L[ℝ] gradientClosure (cubePoint (n := n)))
+        (weightedOperator (cubePoint (n := n)))) hρ
   have hf := HasFDerivAt.comp_hasDerivAt (F := gradientClosure (cubePoint (n := n)) →L[ℝ] ℝ)
     (E := gradientClosure (cubePoint (n := n))) t (rieszMap (cubePoint (n := n))).hasFDerivAt hℓ
   have h := GalerkinApproximation.hasDerivAt_energy (trialSpace s) hA hf ha

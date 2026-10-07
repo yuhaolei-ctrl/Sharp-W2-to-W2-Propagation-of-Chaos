@@ -1,4 +1,9 @@
-import SharpWasserstein.DenseVariational
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.DenseVariational
+
+@[expose] public section
 
 /-! Construct weak derivatives of a strong Hilbert-space limit from genuine
 distributional identities and a uniform derivative bound. No weakly convergent

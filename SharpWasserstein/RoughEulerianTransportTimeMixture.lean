@@ -1,6 +1,11 @@
-import SharpWasserstein.RoughEulerianTimeActionLaw
-import SharpWasserstein.TransportConvergence
-import SharpWasserstein.ConfigurationEuclidean
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.RoughEulerianTimeActionLaw
+public import SharpWasserstein.TransportConvergence
+public import SharpWasserstein.ConfigurationEuclidean
+
+@[expose] public section
 
 /-! Actual time-mixture transport through a supplied common-label realization.
 The coupling is constructed on the product of the normalized time kernel and

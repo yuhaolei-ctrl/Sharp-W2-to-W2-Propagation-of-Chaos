@@ -1,6 +1,11 @@
-import SharpWasserstein.WeightedPeriodicCoefficientEvolution
-import SharpWasserstein.PeriodicSmoothBounds
-import SharpWasserstein.PeriodicFourierTests
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.WeightedPeriodicCoefficientEvolution
+public import SharpWasserstein.PeriodicSmoothBounds
+public import SharpWasserstein.PeriodicFourierTests
+
+@[expose] public section
 
 /-! Concrete periodic and Fourier test instances of the actual weighted
 coefficient equations. The needed global derivative bounds are derived from

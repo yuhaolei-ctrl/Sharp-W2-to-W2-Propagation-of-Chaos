@@ -1,5 +1,10 @@
-import SharpWasserstein.FiniteGradientTrialPairing
-import SharpWasserstein.BochnerIdentity
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FiniteGradientTrialPairing
+public import SharpWasserstein.BochnerIdentity
+
+@[expose] public section
 
 /-! The Laplacian acts diagonally on an actual finite eigenfunction family.
 Testing the genuine coefficient-regularized Gram equation against that

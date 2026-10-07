@@ -1,4 +1,9 @@
-import Mathlib.Analysis.Fourier.AddCircleMulti
+module
+
+public import SharpWasserstein.Compat
+public import Mathlib.Analysis.Fourier.AddCircleMulti
+
+@[expose] public section
 
 /-! Actual mean-square convergence of complex Fourier partial sums on the unit
 torus, stated as an integral for later transfer to the real fundamental cube. -/

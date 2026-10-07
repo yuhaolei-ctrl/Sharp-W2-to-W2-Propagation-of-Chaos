@@ -1,4 +1,9 @@
-import SharpWasserstein.FrozenGeneratorBounds
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FrozenGeneratorBounds
+
+@[expose] public section
 
 /-! Quantitative frozen-step error from the actual finite Gaussian moment. -/
 noncomputable section

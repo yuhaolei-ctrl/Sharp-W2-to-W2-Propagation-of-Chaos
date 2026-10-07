@@ -1,7 +1,12 @@
-import SharpWasserstein.FlowJacobianDriftSmooth
-import SharpWasserstein.PeriodicParticleDerivative
-import SharpWasserstein.ParticleWeakIdentification
-import SharpWasserstein.PropagatedSourceEquationLaw
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.FlowJacobianDriftSmooth
+public import SharpWasserstein.PeriodicParticleDerivative
+public import SharpWasserstein.ParticleWeakIdentification
+public import SharpWasserstein.PropagatedSourceEquationLaw
+
+@[expose] public section
 
 /-! Actual initial-Jacobian convergence for the sine-periodized interacting
 particle flows in the unnormalized Euclidean configuration norm. -/

@@ -1,6 +1,11 @@
-import SharpWasserstein.BoundedFlow
-import SharpWasserstein.RandomMapTransport
-import SharpWasserstein.EuclideanDrift
+module
+
+public import SharpWasserstein.Compat
+public import SharpWasserstein.BoundedFlow
+public import SharpWasserstein.RandomMapTransport
+public import SharpWasserstein.EuclideanDrift
+
+@[expose] public section
 
 /-! Constructed coordinatewise random flows, exact preservation of tensor
 laws under independent noise, and synchronous transport stability. -/
@@ -31,7 +36,7 @@ theorem solution_measurable {N : ℕ} {T : ℝ}
     (hT : 0 ≤ T) {t : ℝ} (ht : t ∈ Icc 0 T) :
     Measurable (fun p : Configuration d N × (Fin N → C(Icc 0 T, Position d)) =>
       solution hv hb hl hT p t) := by
-  apply measurable_pi_lambda
+  apply Measurable.of_eval
   intro i
   have hi : Measurable (fun p : Configuration d N × (Fin N → C(Icc 0 T, Position d)) =>
       (p.1 i, p.2 i)) :=

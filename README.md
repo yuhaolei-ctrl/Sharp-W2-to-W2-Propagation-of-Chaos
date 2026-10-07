@@ -2,145 +2,95 @@
 
 [![CI](https://github.com/yuhaolei-ctrl/Sharp-W2-to-W2-Propagation-of-Chaos/actions/workflows/ci.yml/badge.svg)](https://github.com/yuhaolei-ctrl/Sharp-W2-to-W2-Propagation-of-Chaos/actions/workflows/ci.yml)
 
-A complete Lean 4 proof, checked against Mathlib, of Theorem 2.1 of
+A Lean 4 formalization, checked against Mathlib, of the main theorem of
 
-> Yuhao Lei, *Sharp Wasserstein propagation of chaos from correlated initial data*.
+> Yuhao Lei, *Sharp Wasserstein propagation of chaos from correlated initial data*
+> ([PDF](paper/sharp_wasserstein_chaos.pdf), [LaTeX](paper/sharp_wasserstein_chaos.tex)).
 
-The manuscript is in [`paper/`](paper/) ([PDF](paper/sharp_wasserstein_chaos.pdf), [LaTeX](paper/sharp_wasserstein_chaos.tex)); equation and lemma numbers below refer to it.
+## The theorem
 
-Consider `N` particles in `ℝᵈ`,
+Consider $N$ particles in $\mathbb R^d$ and the McKean–Vlasov equation
 
-```
-dXᵢ = (a(Xᵢ) + N⁻¹ ∑ⱼ K(Xᵢ, Xⱼ)) dt + √2 dWᵢ,      1 ≤ i ≤ N,
-```
+$$
+dX_i = \Big(a(X_i) + \frac1N\sum_{j=1}^N K(X_i,X_j)\Big)\,dt + \sqrt2\,dW_i,
+\qquad
+dX = \Big(a(X) + \int K(X,y)\,\mu_t(dy)\Big)\,dt + \sqrt2\,dW,\quad \mu_t = \mathrm{Law}(X_t),
+$$
 
-with independent Brownian motions and an exchangeable initial law `P_{N,0}`, and the
-McKean–Vlasov equation `dX = (a(X) + ∫ K(X, y) μ_t(dy)) dt + √2 dW`, `μ_t = Law(X_t)`.
-Assume that `a` is `L_a`-Lipschitz and that `K` is bounded by `M` and satisfies
-`|K(x,y) − K(x',y')| ≤ L₁|x − x'| + L₂|y − y'|` (Euclidean norms). If
+where $a$ is $L_a$-Lipschitz, $|K|\le M$ and
+$|K(x,y)-K(x',y')|\le L_1|x-x'|+L_2|y-y'|$. Let $P_{N,t}$ be the law of the particle system,
+started from an exchangeable law $P_{N,0}$ with finite second moment, and $P^{(k)}_{N,t}$ the law of
+its first $k$ particles.
 
-```
-W₂²(P^{(k)}_{N,0}, μ₀^{⊗k}) ≤ C₀ k²/N²        for 1 ≤ k ≤ N,
-```
+**Theorem 2.1.** If
+$W_2^2\big(P^{(k)}_{N,0},\mu_0^{\otimes k}\big)\le C_0\,k^2/N^2$ for $1\le k\le N$, then for every
+$T>0$
 
-then for every `T > 0`
+$$
+W_2^2\big(P^{(k)}_{N,t},\mu_t^{\otimes k}\big)\le C_T\,\frac{k^2}{N^2},
+\qquad 0\le t\le T,\ 1\le k\le N,
+$$
 
-```
-W₂²(P^{(k)}_{N,t}, μ_t^{⊗k}) ≤ C_T k²/N²       for 0 ≤ t ≤ T, 1 ≤ k ≤ N,
-```
+with
 
-with the explicit constant `C_T = (e^{LT}√C₀ + e^{ωT/2}(A₀T + 2A₁√T))²` of the paper, where
-`L = L_a + L₁`, `Λ = L_a + L₁ + L₂`, `L_c = 2L₁ + L₂`, `G = 2L₁² + L₂² + 2M²`, `λ = 2G`,
-`D = 2Λ + 2L₁ + 1`, `ω = D + 3λ`, `D_T = (1 + LT + L²T²/3)/4`, `A₀ = 2M + L_c e^{LT}√C₀`,
-`A₁ = √8 M √(C₀ D_T)`. The constant depends neither on `N` nor on the dimension `d`. The initial
-law may be correlated and singular; no entropy bound, transport inequality or independence of the
-initial particles is assumed.
+$$
+C_T=\Big(e^{LT}\sqrt{C_0}+e^{\omega T/2}\big(A_0T+2A_1\sqrt T\big)\Big)^2,
+$$
 
-## The statement
+where $L=L_a+L_1$, $\Lambda=L_a+L_1+L_2$, $G=2L_1^2+L_2^2+2M^2$, $\omega=2\Lambda+2L_1+1+6G$,
+$D_T=(1+LT+L^2T^2/3)/4$, $A_0=2M+(2L_1+L_2)e^{LT}\sqrt{C_0}$ and $A_1=\sqrt8\,M\sqrt{C_0D_T}$.
+The constant depends neither on $N$ nor on $d$, and the initial law may be correlated and singular.
 
-[`Challenge.lean`](Challenge.lean) imports only Mathlib. It defines Assumption A, the squared
-quadratic Wasserstein distance (infimum of `∑ᵢ ‖xᵢ − yᵢ‖²` over couplings), marginals,
-exchangeability, standard Brownian motions in `ℝᵈ` (coordinates are independent Mathlib
-`ProbabilityTheory.IsBrownianReal` processes), strong solutions of the particle system and of the
-McKean–Vlasov equation (integral form, almost surely continuous paths, noise independent of the
-initial value), and the constant `SharpChaos.sharpConstant` (formulas (2.6)–(2.9) of the paper).
-It then states
+## Lean statement
 
-```lean
-theorem SharpChaos.sharp_propagation_of_chaos … :
-    ∀ t ∈ Icc 0 T, ∀ k (hk : k ≤ N), 1 ≤ k →
-      wassersteinSq (marginal hk (P.map (X t))) (Measure.pi fun _ : Fin k => P'.map (Y t)) ≤
-        ENNReal.ofReal (sharpConstant C₀ T La L₁ L₂ M * k ^ 2 / N ^ 2)
-```
+[`Challenge.lean`](Challenge.lean) uses only Mathlib. Positions lie in
+`EuclideanSpace ℝ (Fin d)`, $W_2^2$ is the infimum of $\sum_i \lVert x_i-y_i\rVert^2$ over couplings,
+the noise consists of independent Mathlib Brownian motions (`ProbabilityTheory.IsBrownianReal`)
+independent of the initial value, and solutions are strong solutions in integral form. The theorem
+is `SharpChaos.sharp_propagation_of_chaos`, with the constant `SharpChaos.sharpConstant`.
+[`Solution.lean`](Solution.lean) proves it, using only the axioms `propext`, `Quot.sound` and
+`Classical.choice`.
 
-for all `d`, all `N ≥ 1`, all `a`, `K` satisfying Assumption A, all exchangeable initial laws
-with finite second moments satisfying the initial hierarchy, and all strong solutions on arbitrary
-probability spaces (the particle system and the McKean–Vlasov process may live on different
-spaces). [`Solution.lean`](Solution.lean) proves the same statement; the definitions it uses are
-those of [`SharpWasserstein/Statement.lean`](SharpWasserstein/Statement.lean), generated verbatim
-from `Challenge.lean` by [`scripts/sync-statement.py`](scripts/sync-statement.py).
-[`comparator.json`](comparator.json) lists the compared theorem and the permitted axioms
-`propext`, `Quot.sound` and `Classical.choice`.
+## Building and checking
 
-## Build and verify
+The project uses `leanprover/lean4:v4.35.0-rc3` and Mathlib `v4.35.0-rc3`.
 
 ```sh
 lake exe cache get
-lake build                       # the development, Challenge and Solution
-python3 scripts/check-lean-sources.py
-python3 scripts/sync-statement.py --check
-./scripts/verify-comparator.sh   # Linux with bubblewrap: the toolchain's `lake comparator`
+lake build
+./scripts/verify-comparator.sh   # Linux with bubblewrap
 ```
 
-The toolchain is `leanprover/lean4:v4.35.0-rc3` with Mathlib `v4.35.0-rc3`. `verify-comparator.sh`
-runs the `lake comparator` that ships with the toolchain, replaying the proof in Lean's kernel and
-in the bundled independent kernels (NanoDa and con-ron), as the Palomar registry does. CI runs all
-of these checks on every push.
+The last command runs the toolchain's `lake comparator`, which checks that `Solution.lean` proves
+the statement of `Challenge.lean` and replays the proof in Lean's kernel and in the NanoDa and
+con-ron kernels. CI runs it on every push.
 
-## How the proof is organised
+## Structure of the proof
 
-The proof follows the paper. Paths are relative to `SharpWasserstein/`.
+The proof follows the paper. Its main parts, under `SharpWasserstein/`:
 
 | Paper | Lean |
 | --- | --- |
-| Theorem 2.1 | `Solution.lean`; reduction to smooth coefficients in `Sharp/Final/Reduction.lean`, smooth case `Sharp.smoothSharpCase` in `Sharp/SmoothSharpCaseProof.lean` |
-| Constants (2.6)–(2.9) | `Sharp/Constants.lean` |
-| Lemma 3.1 (dynamics, Jacobian bound) | `BoundedFlow`, `BrownianFlow*`, `BrownianParticle*`, `FlowInitialDerivative*`; existence for bounded coefficients by Picard iteration in `Sharp/McKeanVlasovPicard.lean`; pathwise estimates in `Sharp/PathwiseEstimates.lean` |
-| Lemmas 3.2–3.3 (tangent energies) | `WeightedTangent`, `WeightedMarginal` |
-| Lemma 3.4 (transport length) | `Rough*` (continuity equation with finite action), `Sharp/EndpointLength.lean`, `Sharp/Endpoint/SwitchLength.lean` |
-| Lemma 3.5 (reference law) | `Sharp/Source/ReferenceTransport.lean`, `Sharp/Source/ReferenceBound.lean` |
-| Proposition 3.6 (source) | `Sharp/Source/Proposition.lean` |
-| Proposition 3.7 (profile) | `Sharp/Hierarchy/Main.lean` |
-| Lemma 3.8, Section 6 (interpolating curve) | `SwitchCurve*`, `SwitchSourceDerivative*`, `PrescribedSwitch*` |
-| Lemma 4.1 (entropy–cost) | `BrownianEntropyTransport` and its import closure |
-| Lemma 4.2 (increments) | `ExchangeableEntropy` |
-| Lemma 4.3 | `Sharp/Source/EntropyProfile.lean` |
-| Lemma 4.4 (representation) | `MarginalParticleCurrent`, `InitialSourceMarginalCurrent` |
-| Lemma 4.5 (internal source) | `Sharp/InternalMoment.lean`, `Sharp/Source/Internal.lean` |
-| Lemma 4.6 (external source) | `ExchangeableConditionalSource`, `Sharp/Source/External.lean` |
-| Lemmas 5.1–5.3, Proposition 5.4, Section 5.4 | `Sharp/Hierarchy/*` with the Galerkin machinery (`RegularizedTrial*`, `FiniteGradientTrial*`, `PeriodicMarginalCoefficientEvolution*`, `Volterra*`) |
-| Appendix A (Galerkin approximation) | `RegularizedTrial*`, `PeriodicEnergyExhaustion` |
-| Section 3.4, smooth case | `Sharp/Endpoint/SmoothCase.lean` |
-| Lemma 7.1 (mollification) | `Sharp/Mollify.lean`, `Sharp/ConvolutionDerivBounds.lean` |
-| Lemma 7.2 (stability) | `Sharp/ApproxParticle.lean`, `Sharp/ApproxMcKeanVlasov.lean` |
+| Theorem 2.1, reduction to smooth coefficients (§3.4, §7) | `Sharp/Final/`, `Sharp/Mollify.lean`, `Sharp/ApproxParticle.lean`, `Sharp/ApproxMcKeanVlasov.lean` |
+| Smooth case (§3.4) | `Sharp/SmoothSharpCaseProof.lean`, `Sharp/Endpoint/` |
+| Source estimate (Prop. 3.6, §4) | `Sharp/Source/`, `BrownianEntropy*`, `ExchangeableEntropy*` |
+| Tangent hierarchy (Prop. 3.7, §5, App. A) | `Sharp/Hierarchy/` and the Galerkin files |
+| Transport length (Lemma 3.4) | `Rough*`, `Sharp/EndpointLength.lean` |
+| Interpolating curve (Lemma 3.8, §6) | `SwitchCurve*`, `PrescribedSwitch*` |
+| Strong solutions and their laws | `Sharp/McKeanVlasovPicard.lean`, `Sharp/Transfer/` |
 
-Two bridges connect the public statement with the development, whose positions are coordinate
-vectors `Fin d → ℝ` and whose laws are constructed on a canonical Brownian space:
-`Sharp/EuclideanBridge.lean` identifies the two Wasserstein distances, marginals and tensor
-powers, and `Sharp/Transfer/*` shows that the laws of strong solutions on an arbitrary probability
-space coincide with the constructed laws (hence satisfy the weak Fokker–Planck equations used by
-the proof).
+A few lemmas are proved differently from the paper: the entropy–cost inequality uses Euler
+schemes and Gaussian bridges instead of Girsanov's theorem, and the tangent hierarchy is first
+proved for periodized interactions and then passed to the limit. The constants are those of the
+paper.
 
-Some lemmas are proved by a different route than in the paper; the statement is unaffected:
+The construction of Brownian motion and the Kolmogorov extension theorem are vendored from
+[RemyDegenne/brownian-motion](https://github.com/RemyDegenne/brownian-motion) and
+[RemyDegenne/kolmogorov_extension4](https://github.com/RemyDegenne/kolmogorov_extension4)
+(Apache 2.0; see `BrownianMotion/UPSTREAM.md` and `KolmogorovExtension4/UPSTREAM.md`).
 
-* the entropy–cost inequality (Lemma 4.1) is proved with Euler schemes, an explicit Gaussian
-  bridge and lower semicontinuity of relative entropy, instead of Girsanov's theorem;
-* the tangent hierarchy is first proved for sine-periodized interactions with periodic Galerkin
-  energies and then transferred to the original interaction and the full energy; all constants
-  are those of the paper (`D`, `λ`, `ω`), and the periodization never enters them;
-* the continuity-equation characterization behind Lemma 3.4 is proved for the curves needed here
-  (with a common-label realization), not in the generality of Ambrosio–Gigli–Savaré;
-* well-posedness is proved only where the proof uses it: existence by Picard iteration for the
-  bounded smooth approximations, and pathwise uniqueness for Lipschitz drifts.
+## Authorship and licence
 
-## Dependencies
-
-The proof uses Mathlib and vendored copies of two Apache-2.0 formalizations, adapted to the pinned
-Mathlib (only their import closure is kept; modified files say so in their headers):
-
-* [`BrownianMotion/`](BrownianMotion/UPSTREAM.md): the construction of Brownian motion from
-  [RemyDegenne/brownian-motion](https://github.com/RemyDegenne/brownian-motion);
-* [`KolmogorovExtension4/`](KolmogorovExtension4/UPSTREAM.md): the Kolmogorov extension theorem
-  from [RemyDegenne/kolmogorov_extension4](https://github.com/RemyDegenne/kolmogorov_extension4).
-
-`Challenge.lean` depends on Mathlib only.
-
-## Authorship and AI use
-
-The mathematics is Yuhao Lei's. The Lean formalization was produced with AI agents under the
-author's direction; [`formalization.yaml`](formalization.yaml) records the details. No AI system is
-listed as an author.
-
-## Licence
-
-Apache 2.0, see [`LICENSE`](LICENSE). The vendored libraries retain their own Apache 2.0 licences.
+The mathematics is by Yuhao Lei. The formalization was carried out with AI assistance under the
+author's direction, as recorded in [`formalization.yaml`](formalization.yaml).
+Licensed under Apache 2.0 ([`LICENSE`](LICENSE)).

@@ -69,7 +69,7 @@ jobs:
         run: lake build SharpWasserstein Challenge Solution
       - name: Print the axioms of the main theorem
         run: |
-          printf 'import Solution\n#print axioms SharpWasserstein.sharp_propagation_of_chaos\n' > "$RUNNER_TEMP/Axioms.lean"
+          printf 'import Solution\n#print axioms SharpChaos.sharp_propagation_of_chaos\n' > "$RUNNER_TEMP/Axioms.lean"
           lake env lean "$RUNNER_TEMP/Axioms.lean" | tee "$RUNNER_TEMP/axioms.log"
           grep -F "depends on axioms: [propext, Classical.choice, Quot.sound]" "$RUNNER_TEMP/axioms.log"
 
